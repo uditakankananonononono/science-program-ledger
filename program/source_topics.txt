@@ -1,0 +1,732 @@
+Part 1: The "Virtual Cell" Frontier
+Trend context: The Arc Institute's Virtual Cell Challenge (2025) represents a paradigm shift—using AI to simulate cellular responses to genetic perturbations. ISEF/STS winners increasingly tackle cellular decision-making (e.g., "Spatial Transcriptomics and Adaptive Multi-Modal Encoding" at ISEF 2025).
+1. A Generative "Virtual Organoid" for Drug Response PredictionTL;DR: Train a generative model on public organoid transcriptomics (e.g., from GEO) to simulate how a patient's tumor organoid responds to different drugs. Validate by predicting known drug responses in held-out datasets.Novelty: Moves beyond cell-line models to patient-derived organoids, a more clinically relevant system.Data: GEO organoid datasets, LINCS L1000, GDSC.
+2. Perturbation-Aware Gene Regulatory Network InferenceTL;DR: Build a model that, given a gene regulatory network, predicts how the network rewires under CRISPR knockdown of any gene. Train on Perturb-seq data (e.g., from the Virtual Cell Challenge).Novelty: Dynamic, perturbation-aware networks—not static.Data: Arc Institute Perturb-seq data.
+3. Simulating the Tumor Microenvironment as a Multi-Agent SystemTL;DR: Model the tumor microenvironment as a multi-agent system where cancer cells, immune cells, and fibroblasts interact. Use spatial transcriptomics data to parameterize the agents. Simulate immunotherapy response.Novelty: Agent-based modeling applied to spatial transcriptomics.Data: 10x Visium datasets (e.g., breast cancer, DLPFC).
+4. A "Digital Twin" of the Gut MicrobiomeTL;DR: Build a simulation of the gut microbiome that predicts metabolite production from community composition. Train on paired metagenomic-metabolomic data from the American Gut Project.Novelty: Bidirectional translation: composition ↔ metabolites.Data: curatedMetagenomicData, American Gut Project.
+5. Predicting Cell Fate Transitions with a "Molecular Weather" ModelTL;DR: Treat cell fate transitions like weather systems—use atmospheric physics-inspired models to predict transcriptomic "storms" that precede differentiation.Novelty: Imports meteorological modeling into cell biology.Data: Tabula Muris/Sapiens, Human Cell Atlas.
+6. A Virtual Immune System for CAR-T Therapy DesignTL;DR: Simulate CAR-T cell interactions with tumor cells using single-cell immune profiling data. Predict which CAR designs will be most effective.Novelty: Computational CAR-T design, not just analysis.Data: ImmPort, 10x Genomics immune datasets.
+7. Reconstructing the "Dark Transcriptome" with Generative AITL;DR: Use a generative model to reconstruct unmeasured transcripts from scRNA-seq data, focusing on low-abundance or transiently expressed genes.Novelty: Targets the "dark transcriptome"—genes missed by standard pipelines.Data: Tabula Sapiens, GTEx.
+8. A Virtual Yeast Cell for Metabolic EngineeringTL;DR: Build a genome-scale model of yeast metabolism that predicts flux distributions under different genetic modifications. Train on public metabolomics data.Novelty: Integrates flux balance analysis with machine learning.Data: Yeast metabolomics datasets, SGD.
+9. Simulating Prion Propagation in a Virtual BrainTL;DR: Model prion protein misfolding and propagation across brain regions using connectome data. Predict which regions are vulnerable first.Novelty: Prion dynamics + brain network modeling.Data: Allen Brain Atlas, Human Connectome Project.
+10. A "Virtual Patient" for Sepsis PredictionTL;DR: Train a model on ICU time-series data (e.g., MIMIC-III) to simulate sepsis progression and predict response to different interventions.Novelty: Digital twin for critical care.Data: MIMIC-III/IV (PhysioNet).
+Part 2: The Protein Language Model Frontier
+Trend context: ESM-2, Evo 2, and AlphaFold have revolutionized protein science. The 2024 CHOOSER framework demonstrated that protein language models can discover CRISPR systems with specific functions—a CRISPR-level insight. ISEF winners are beginning to use these tools (e.g., "3DICE: Interpretable 3D Cross-Modal Learning for Drug–Target Interaction Prediction" at ISEF 2026).
+11. Discovering Novel CRISPR Systems with Protein Language ModelsTL;DR: Use ESM-2 embeddings to search metagenomic databases for Cas proteins with novel PAM specificities, then predict their guide RNA compatibility.Novelty: Extends CHOOSER's approach to a specific functional target.Data: IMG/M, MGnify, NCBI RefSeq, AlphaFold DB.
+12. A Foundation Model for Enzyme Commission Number PredictionTL;DR: Fine-tune a protein language model (ESM-2) to predict EC numbers for unannotated metagenomic proteins. Benchmark against BLAST-based methods.Novelty: Hierarchical EC prediction with confidence calibration.Data: UniProt, BRENDA, IMG/M.
+13. Predicting Allosteric Communication Pathways from Protein Language Model EmbeddingsTL;DR: Train a model to predict allosteric residues from ESM-2 embeddings, then validate against known allosteric proteins in the PDB.Novelty: Sequence-only allostery prediction.Data: PDB, AlloSteric Database (ASD).
+14. Design of Novel Antimicrobial Peptides with a Generative Protein Language ModelTL;DR: Use a protein language model (e.g., ProGen2) to generate antimicrobial peptides, then screen them in silico against ESKAPE pathogens.Novelty: Generative design of AMPs, not just mining.Data: APD3, DBAASP, UniProt.
+15. Predicting Protein-Protein Interaction Interfaces with Multimodal EmbeddingsTL;DR: Combine ESM-2 sequence embeddings with AlphaFold structural embeddings to predict PPI interfaces. Benchmark against Docking benchmarks.Novelty: Multimodal fusion for PPI prediction.Data: PDB, AlphaFold DB, Docking Benchmark 5.5.
+16. Discovering Novel PET Hydrolases from MetagenomesTL;DR: Use Foldseek to search AlphaFold DB for structural homologs of known PET hydrolases, then prioritize candidates from extreme environments.Novelty: Structure-led enzyme discovery for plastic degradation.Data: AlphaFold DB, MGnify, PlasticDB.
+17. A "Protein Folding Grammar" Model for de novo DesignTL;DR: Learn a grammar of protein folding from PDB structures, then use it to generate novel folds not seen in nature.Novelty: Grammar-based generative protein design.Data: PDB, CATH, SCOP.
+18. Predicting the Impact of Non-Coding Variants with AlphaGenomeTL;DR: Use AlphaGenome to predict regulatory effects of non-coding variants, then validate against GWAS hits for autoimmune diseases.Novelty: Applying a frontier model to a specific disease class.Data: AlphaGenome (if accessible), GWAS Catalog, ENCODE.
+19. A Metagenomic "Protein Atlas" of Extreme EnvironmentsTL;DR: Build a structural atlas of proteins from deep-sea, hot spring, and Antarctic metagenomes. Identify novel folds and potential biotech enzymes.Novelty: Focus on extreme environments as a source of novelty.Data: IMG/M, MGnify, Tara Oceans.
+20. Fine-Tuning Evo 2 for Gene Editing Guide DesignTL;DR: Fine-tune the Evo 2 genome language model to predict CRISPR guide RNA efficiency across different Cas enzymes.Novelty: Genome language model for guide design.Data: Evo 2 (if accessible), CRISPR guide efficiency datasets.
+Part 3: The Single-Cell & Spatial Frontier
+Trend context: Single-cell and spatial transcriptomics are dominant in ISEF CBIO (e.g., "Spatial Transcriptomics and Adaptive Multi-Modal Encoding" at ISEF 2025). The challenge is now integration, imputation, and clinical translation.
+21. Imputing Spatial Transcriptomics with a Diffusion ModelTL;DR: Use a diffusion model to impute missing gene expression in spatial transcriptomics data, leveraging histology images as a prior.Novelty: Generative imputation for spatial data.Data: 10x Visium (DLPFC, breast cancer).
+22. A Unified Cell Embedding for Cross-Tissue IntegrationTL;DR: Train a variational autoencoder on Tabula Sapiens to create a unified cell embedding that integrates across tissues and donors.Novelty: Universal cell embedding for transfer learning.Data: Tabula Sapiens, Human Cell Atlas.
+23. Detecting Rare Cell Types with Contrastive LearningTL;DR: Build a contrastive learning framework to detect rare immune cell subsets from scRNA-seq data. Evaluate on datasets with known rare populations.Novelty: Explicitly targets class imbalance.Data: Tabula Muris, 10x Genomics PBMC datasets.
+24. Reconstructing Developmental Trajectories with RNA Velocity + Optimal TransportTL;DR: Combine RNA velocity with optimal transport to reconstruct continuous developmental trajectories from static snapshots.Novelty: Hybrid method for trajectory inference.Data: Human preimplantation embryo datasets, Mouse organogenesis.
+25. Predicting Cell-Cell Communication from Spatial TranscriptomicsTL;DR: Use spatial transcriptomics to infer ligand-receptor interactions and predict signaling networks in the tumor microenvironment.Novelty: Spatially resolved cell-cell communication.Data: 10x Visium, MERFISH, Slide-seq.
+26. A "Cell Atlas" of Viral InfectionTL;DR: Build a single-cell atlas of viral infection responses by integrating public scRNA-seq datasets from COVID-19, influenza, and HIV.Novelty: Pan-viral single-cell atlas.Data: GEO, CZ CellxGene.
+27. Spatial Deconvolution with a Graph Neural NetworkTL;DR: Use a GNN to deconvolve spatial transcriptomics spots into cell-type proportions, leveraging scRNA-seq reference data.Novelty: GNN-based deconvolution.Data: 10x Visium, scRNA-seq references.
+28. Identifying Spatial Biomarkers for Immunotherapy ResponseTL;DR: Use spatial transcriptomics to identify spatial patterns of immune infiltration that predict response to checkpoint inhibitors.Novelty: Spatial biomarker discovery.Data: TCGA, 10x Visium immune datasets.
+29. A Foundation Model for Single-Cell Multi-OmicsTL;DR: Train a multimodal foundation model on paired scRNA-seq and scATAC-seq data to learn a joint embedding of chromatin and transcriptome.Novelty: Multimodal single-cell foundation model.Data: 10x Multiome datasets, GEO.
+30. Predicting Drug Response from Single-Cell Data with Transfer LearningTL;DR: Train a model on bulk drug response data (GDSC, CCLE), then transfer to single-cell data to predict drug response at the cellular level.Novelty: Transfer learning from bulk to single-cell.Data: GDSC, CCLE, scRNA-seq datasets.
+Part 4: The Microbiome & Metagenomics Frontier
+Trend context: ISEF winners have tackled microbiome analysis for cancer detection (e.g., "Detecting Colorectal Cancer from Gut Microbiome" at ISEF 2025). The frontier is now functional discovery—finding new enzymes, antibiotics, and metabolic pathways.
+31. Discovering Novel Antibiotics from Soil MetagenomesTL;DR: Use a protein language model to mine soil metagenomes for antimicrobial peptides, then rank candidates by predicted activity and novelty.Novelty: Targeted antibiotic discovery.Data: IMG/M, MGnify, APD3.
+32. A "Metabolic Rosetta Stone" for Microbiome-Host InteractionsTL;DR: Build a bidirectional translation model from microbiome composition to metabolite profile, and from metabolites to host cellular responses.Novelty: Bidirectional translation model.Data: American Gut Project, LINCS L1000.
+33. Predicting Phage-Host Interactions with a Graph Neural NetworkTL;DR: Train a GNN on phage and bacterial genomes to predict which phages infect which bacteria, then design optimal phage cocktails.Novelty: GNN for phage therapy.Data: PhageDB, NCBI RefSeq.
+34. Discovering Novel Cellulases for Biofuel ProductionTL;DR: Use Foldseek to search for structural homologs of known cellulases in metagenomic databases, prioritizing enzymes from extreme environments.Novelty: Structure-led enzyme discovery for biofuels.Data: AlphaFold DB, IMG/M, CAZy.
+35. A "Dark Matter" Protein Function Predictor with Genomic ContextTL;DR: Combine ESM-2 embeddings with genomic neighborhood features (CAAC) to predict functions for unannotated microbial proteins.Novelty: Multi-modal function prediction.Data: IMG/M, MGnify, KEGG.
+36. Predicting Antimicrobial Resistance from MetagenomesTL;DR: Train a model on resistance gene databases to predict resistance profiles from metagenomic data.Novelty: Metagenomic AMR prediction.Data: CARD, ResFinder, MGnify.
+37. A "Microbiome Clock" for AgingTL;DR: Train a model to predict host age from microbiome composition, then identify microbial taxa associated with accelerated aging.Novelty: Microbiome aging clock.Data: American Gut Project, curatedMetagenomicData.
+38. Discovering Novel Biosynthetic Gene Clusters with Deep LearningTL;DR: Use a deep learning model to identify biosynthetic gene clusters in metagenomes and predict the chemical structures they produce.Novelty: Deep learning for BGC discovery.Data: antiSMASH, IMG/M, MIBiG.
+39. Predicting the Impact of Diet on the Gut MicrobiomeTL;DR: Train a model on dietary intervention studies to predict how specific diets alter microbiome composition and metabolite production.Novelty: Predictive diet-microbiome modeling.Data: American Gut Project, curatedMetagenomicData.
+40. A "Global Microbiome Map" of Antimicrobial ResistanceTL;DR: Map the global distribution of antimicrobial resistance genes using metagenomic data from different environments.Novelty: Global AMR surveillance.Data: MGnify, IMG/M, CARD.
+Part 5: The Cancer & Precision Medicine Frontier
+Trend context: Cancer is a perennial ISEF/STS topic. The frontier is now precision medicine—predicting treatment response, identifying novel biomarkers, and understanding tumor evolution.
+41. Predicting Immunotherapy Response from Tumor Mutational Burden and Immune InfiltrationTL;DR: Train a model on TCGA and ICGC data to predict response to checkpoint inhibitors, integrating mutational and transcriptomic features.Novelty: Multi-modal immunotherapy prediction.Data: TCGA, ICGC, GEO.
+42. A "Digital Twin" of Tumor EvolutionTL;DR: Simulate tumor evolution under different treatment regimens using agent-based modeling. Train on longitudinal patient data.Novelty: Digital twin for tumor evolution.Data: TCGA, ICGC.
+43. Discovering Novel Cancer Biomarkers from Spatial TranscriptomicsTL;DR: Use spatial transcriptomics to identify spatial patterns of gene expression associated with poor prognosis.Novelty: Spatial biomarker discovery.Data: 10x Visium, TCGA.
+44. Predicting Drug Synergy with Domain-Adversarial LearningTL;DR: Train a domain-adversarial model on bulk transcriptomics data to predict drug combination synergy in leukemia.Novelty: Domain adaptation for drug synergy.Data: GDSC, CCLE, Beat AML.
+45. A "Pan-Cancer" Atlas of Viral SignaturesTL;DR: Use a hybrid language model (ViTrace) to detect viral signatures in tumor transcriptomes across cancer types.Novelty: Pan-cancer viral detection.Data: TCGA, ViTrace datasets.
+46. Predicting Metastasis from Spatial TranscriptomicsTL;DR: Train a model on spatial transcriptomics data from primary tumors to predict metastatic potential.Novelty: Spatial prediction of metastasis.Data: 10x Visium, TCGA.
+47. Identifying Synthetic Lethal Interactions with a Graph Neural NetworkTL;DR: Use a GNN to predict synthetic lethal gene pairs from CRISPR screens and expression data.Novelty: GNN for synthetic lethality.Data: DepMap, CCLE.
+48. A "Cancer Cell Atlas" of Drug ResistanceTL;DR: Build a single-cell atlas of drug-resistant cancer cells by integrating public scRNA-seq datasets.Novelty: Pan-cancer resistance atlas.Data: GEO, CZ CellxGene.
+49. Predicting CAR-T Target Antigens with Single-Cell DataTL;DR: Use single-cell transcriptomics to identify tumor-specific surface antigens for CAR-T therapy.Novelty: Computational CAR-T target discovery.Data: TCGA, scRNA-seq datasets.
+50. A "Tumor Microenvironment" Simulator for ImmunotherapyTL;DR: Simulate the tumor microenvironment as a multi-agent system to predict immunotherapy response.Novelty: Agent-based immunotherapy simulation.Data: 10x Visium, TCGA.
+Part 6: The Neuroscience & Connectomics Frontier
+Trend context: ISEF winners have tackled Alzheimer's diagnosis (e.g., "AI tool for Alzheimer's diagnosis" at ISEF 2025). The frontier is now connectomics, brain network modeling, and computational psychiatry.
+51. Predicting Alzheimer's from Retinal Images with AITL;DR: Train a model on retinal images to detect early signs of Alzheimer's, leveraging the eye-brain connection.Novelty: Retinal biomarker for neurodegeneration.Data: UK Biobank, public retinal datasets.
+52. A "Brain Connectome" Simulation for Epilepsy Surgery PlanningTL;DR: Simulate seizure propagation across the connectome to predict outcomes of different surgical resections.Novelty: Connectome-based surgical planning.Data: Human Connectome Project, Allen Brain Atlas.
+53. Predicting Neurotransmitter Release from Single-Cell DataTL;DR: Train a model on single-cell transcriptomics to predict neurotransmitter release profiles for different neuron types.Novelty: Transcriptome-to-neurotransmitter prediction.Data: Allen Brain Atlas, Tabula Muris.
+54. A "Digital Brain" for Parkinson's DiseaseTL;DR: Simulate dopamine neuron degeneration using a computational model of the basal ganglia, parameterized with patient data.Novelty: Digital twin for Parkinson's.Data: PPMI, Allen Brain Atlas.
+55. Predicting Antidepressant Response from Gut MicrobiomeTL;DR: Train a model on microbiome data to predict response to SSRIs in depression.Novelty: Microbiome-based antidepressant response.Data: American Gut Project, curatedMetagenomicData.
+56. A "Connectome-Based" Biomarker for SchizophreniaTL;DR: Use graph neural networks on connectome data to identify network-level biomarkers for schizophrenia.Novelty: Connectome biomarker.Data: Human Connectome Project, SchizConnect.
+57. Simulating Memory Formation in a Virtual HippocampusTL;DR: Build a computational model of the hippocampus that simulates memory encoding and retrieval, parameterized with transcriptomic data.Novelty: Transcriptome-informed memory model.Data: Allen Brain Atlas, GEO.
+58. Predicting Traumatic Brain Injury Outcomes from Connectome DataTL;DR: Train a model on connectome data to predict cognitive outcomes after traumatic brain injury.Novelty: Connectome-based TBI prognosis.Data: Human Connectome Project, TBI datasets.
+59. A "Neuroimmune" Model of Multiple SclerosisTL;DR: Simulate the interaction between immune cells and neurons in multiple sclerosis using agent-based modeling.Novelty: Neuroimmune simulation.Data: GEO, ImmPort.
+60. Predicting Neurodegeneration from Protein Aggregation PropensitiesTL;DR: Use protein language models to predict aggregation propensity for proteins implicated in neurodegeneration.Novelty: Sequence-based aggregation prediction.Data: UniProt, PDB.
+Part 7: The Immunology & Immunotherapy Frontier
+Trend context: Immunotherapy is a hot topic. ISEF winners have tackled immune-related questions (e.g., "The Neuropharmacological Effects of... Network Pharmacology" at ISEF 2023). The frontier is computational immunology—predicting immune responses, designing antibodies, and modeling autoimmune diseases.
+61. Predicting Antibody-Antigen Binding Affinity with Protein Language ModelsTL;DR: Fine-tune a protein language model on antibody-antigen complexes to predict binding affinity.Novelty: Sequence-based affinity prediction.Data: SAbDab, PDB, AlphaFold DB.
+62. A "Digital Immune System" for Vaccine DesignTL;DR: Simulate the immune response to different vaccine antigens using agent-based modeling, parameterized with single-cell immune data.Novelty: Vaccine simulation.Data: ImmPort, 10x Genomics.
+63. Predicting Autoimmune Disease Risk from HLA HaplotypesTL;DR: Train a model on HLA haplotype data to predict risk for autoimmune diseases.Novelty: HLA-based risk prediction.Data: GWAS Catalog, ImmPort.
+64. Designing Bispecific Antibodies with Generative AITL;DR: Use a generative model to design bispecific antibodies that bind two targets simultaneously.Novelty: Generative bispecific design.Data: SAbDab, PDB.
+65. A "T-Cell Receptor" Atlas for Cancer ImmunotherapyTL;DR: Build a database of TCR sequences associated with tumor infiltration and response to immunotherapy.Novelty: TCR atlas.Data: TCRdb, TCGA, GEO.
+66. Predicting Cytokine Release Syndrome from Single-Cell DataTL;DR: Train a model on single-cell immune data to predict which patients will develop cytokine release syndrome after CAR-T therapy.Novelty: Single-cell prediction of CRS.Data: GEO, ImmPort.
+67. Modeling the Germinal Center Reaction with Agent-Based SimulationTL;DR: Simulate B cell evolution in germinal centers to predict antibody affinity maturation.Novelty: Germinal center simulation.Data: ImmPort, SAbDab.
+68. Predicting Immune Evasion in CancerTL;DR: Use a model to predict how tumors evade immune detection based on mutational and transcriptomic data.Novelty: Computational immune evasion.Data: TCGA, ICGC.
+69. A "Mucosal Immune Atlas" for Gut HealthTL;DR: Build a single-cell atlas of mucosal immune cells in the gut, integrating public datasets.Novelty: Mucosal immune atlas.Data: GEO, Human Cell Atlas.
+70. Predicting Transplant Rejection from Single-Cell DataTL;DR: Train a model on single-cell immune data to predict transplant rejection risk.Novelty: Single-cell transplant prediction.Data: GEO, ImmPort.
+Part 8: The Synthetic Biology & Genetic Engineering Frontier
+Trend context: CRISPR and synthetic biology are recurring themes. The frontier is computational design of genetic circuits, CRISPR tools, and synthetic genomes.
+71. Designing CRISPR Guide RNAs with a Generative ModelTL;DR: Use a generative model to design guide RNAs with high on-target efficiency and low off-target effects.Novelty: Generative guide design.Data: CRISPR guide efficiency datasets.
+72. A "Genetic Circuit Compiler" for Synthetic BiologyTL;DR: Build a compiler that takes a desired logic function and outputs a genetic circuit design using standard biological parts.Novelty: Circuit compiler.Data: SynBioHub, iGEM registry.
+73. Predicting Off-Target Effects of CRISPR with Deep LearningTL;DR: Train a deep learning model to predict off-target effects for any guide RNA and Cas enzyme.Novelty: Deep learning off-target prediction.Data: CRISPR off-target datasets.
+74. Designing Synthetic Genomes with a Language ModelTL;DR: Use a genome language model (Evo 2) to design synthetic gene clusters with desired functions.Novelty: Generative genome design.Data: Evo 2, NCBI RefSeq.
+75. A "Metabolic Engineering" CompilerTL;DR: Build a compiler that takes a target molecule and outputs a metabolic pathway design for microbial production.Novelty: Pathway compiler.Data: KEGG, MetaCyc, BRENDA.
+76. Predicting the Function of Synthetic Genetic PartsTL;DR: Train a model on iGEM registry data to predict the function of synthetic genetic parts (promoters, RBS, etc.).Novelty: Part function prediction.Data: iGEM registry, SynBioHub.
+77. Designing RNA-Based Therapeutics with a Generative ModelTL;DR: Use a generative model to design RNA aptamers and riboswitches with desired binding properties.Novelty: Generative RNA design.Data: RNAcentral, PDB.
+78. A "Genetic Toggle Switch" SimulatorTL;DR: Simulate the dynamics of genetic toggle switches under different parameter regimes to guide synthetic circuit design.Novelty: Toggle switch simulation.Data: Literature-mined parameters.
+79. Predicting the Impact of Synonymous Mutations on Protein FoldingTL;DR: Train a model to predict how synonymous mutations affect protein folding and function.Novelty: Synonymous mutation impact.Data: PDB, UniProt.
+80. Designing Phage-Based Antimicrobials with AITL;DR: Use a model to design engineered phages that target antibiotic-resistant bacteria.Novelty: Engineered phage design.Data: PhageDB, NCBI RefSeq.
+Part 9: The Aging & Longevity Frontier
+Trend context: Aging research is gaining momentum. The frontier is computational aging clocks, intervention prediction, and longevity therapeutics.
+81. A Multi-Omics Aging ClockTL;DR: Train a model on multi-omics data (transcriptomics, epigenomics, proteomics) to predict biological age with higher accuracy than single-omics clocks.Novelty: Multi-omics aging clock.Data: GTEx, GEO, Aging Atlas.
+82. Predicting Interventions That Reverse Epigenetic AgeTL;DR: Train a model on intervention studies to predict which interventions reverse epigenetic age in specific tissues.Novelty: Intervention prediction.Data: GEO, Aging Atlas.
+83. A "Cellular Senescence" AtlasTL;DR: Build a single-cell atlas of senescent cells across tissues and ages.Novelty: Senescence atlas.Data: Tabula Sapiens, GEO.
+84. Predicting Longevity from Gut MicrobiomeTL;DR: Train a model on microbiome data from centenarians to predict longevity-associated microbial signatures.Novelty: Microbiome longevity prediction.Data: American Gut Project, curatedMetagenomicData.
+85. A "Proteostasis" Model of AgingTL;DR: Simulate protein homeostasis collapse with age using a computational model of proteostasis networks.Novelty: Proteostasis simulation.Data: PDB, UniProt.
+86. Predicting the Impact of Caloric Restriction on AgingTL;DR: Train a model on caloric restriction studies to predict tissue-specific aging effects.Novelty: CR effect prediction.Data: GEO, Aging Atlas.
+87. A "Mitochondrial Aging" ClockTL;DR: Train a model on mitochondrial DNA mutations to predict biological age.Novelty: Mitochondrial aging clock.Data: GTEx, GEO.
+88. Discovering Novel Senolytics with AITL;DR: Use a model to screen compounds for senolytic activity against senescent cells.Novelty: AI-driven senolytic discovery.Data: LINCS L1000, GDSC.
+89. Predicting the Impact of Exercise on AgingTL;DR: Train a model on exercise intervention studies to predict molecular aging effects.Novelty: Exercise-aging prediction.Data: GEO, Aging Atlas.
+90. A "Stem Cell Exhaustion" ModelTL;DR: Simulate stem cell exhaustion with age using a computational model of stem cell dynamics.Novelty: Stem cell exhaustion simulation.Data: Tabula Sapiens, GEO.
+Part 10: The Frontier of Frontiers—Grand Challenge Ideas
+Trend context: These ideas are the most ambitious, drawing from multiple disciplines and targeting fundamental questions. They are the "CRISPR-level" ideas—conceptually novel and potentially paradigm-shifting.
+91. The Computational Origin of LifeTL;DR: Build a simulation of a primordial chemical soup where molecules can react, catalyze, and form compartments. Use evolutionary algorithms to search for conditions where self-replicating systems emerge.Novelty: Computational origin of life.Data: Literature-mined parameters, public chemistry databases.
+92. A "Grammar of Biological Motion" for Protein DynamicsTL;DR: Learn a generative grammar of protein motion from MD simulations, then use it to predict conformational changes.Novelty: Grammar of motion.Data: MISATO, BioExcel.
+93. The "Information Thermodynamics" of the CellTL;DR: Quantify the thermodynamic cost of cellular computation using single-cell metabolomics and transcriptomics data.Novelty: Information thermodynamics of cells.Data: GEO, MetaboLights.
+94. A "Quantum Biology" Model of Enzyme CatalysisTL;DR: Train a model to predict quantum tunneling effects in enzyme catalysis from sequence and structure.Novelty: Quantum biology meets ML.Data: PDB, Quantum chemistry databases.
+95. The "Evolutionary Game Theory" of Cancer TherapyTL;DR: Model tumors as populations of strategies using evolutionary game theory. Train on longitudinal patient data to predict optimal treatment sequences.Novelty: Game theory for cancer therapy.Data: TCGA, ICGC.
+96. A "Unified Theory of Biological Modularity"TL;DR: Run evolutionary simulations where digital organisms must solve multiple tasks. Test whether selection drives the emergence of modular structure.Novelty: Computational evolution of modularity.Data: Digital evolution platforms.
+97. The "Principle of Biological Least Action"TL;DR: Propose and test the hypothesis that evolution minimizes a quantity analogous to action—a functional combining fitness, robustness, and evolvability.Novelty: Variational principle for evolution.Data: Phylogenetic databases.
+98. A "Cellular Seismology" Model of Cell Fate TransitionsTL;DR: Apply signal processing techniques from seismology to single-cell transcriptomic data to detect "pre-transition tremors."Novelty: Seismology for cell biology.Data: Tabula Sapiens, GEO.
+99. The "Non-Coding RNA Rosetta Stone"TL;DR: Build a generative grammar for RNA structure-function prediction based on formal linguistics.Novelty: Linguistic grammar for RNA.Data: RNAcentral, PDB.
+100. "Evolvable AI" for Biological DiscoveryTL;DR: Use directed evolution to evolve neural network architectures for biological prediction tasks.Novelty: Evolution of AI.Data: Any public biological dataset.
+100 project concepts
+Part 1: Pangenomes, variants & the hidden genome
+1. The Genome Has a “Shadow Alphabet”
+Research question: Can non-reference sequences in pangenomes explain phenotype-associated regulation that a single reference genome hides?
+Novel connection: Human pangenomes × regulatory genomics × phenotype genetics
+Public data: Human Pangenome Project; 1K Chinese Pangenome; ENCODE; GTEx; gnomAD/ClinVar
+What makes it clever: Focus on how absent-from-reference sequence changes regulatory inference, not just cataloging variants.
+Validation: Train on one population/resource and test regulatory enrichment in an independent population/resource.
+2. Structural Variants as Missing eQTLs
+Research question: How much regulatory signal is lost when association analyses consider SNPs but ignore structural variants and repeats?
+Novel connection: Structural variation × eQTLs × gene regulation
+Public data: 1KCP; GTEx; ENCODE; gnomAD-SV where available
+What makes it clever: Build a pan-variant “regulatory disruption index.”
+Validation: Compare SNP-only vs SNP+SV models by held-out expression prediction.
+3. The Gene That Exists Only in the Pangenome
+Research question: Which genes or regulatory elements absent from GRCh38/CHM13 appear repeatedly in specific tissues or ancestries?
+Novel connection: Pangenomics × tissue expression × population diversity
+Public data: 1KCP; Human Pangenome; GTEx; ENCODE
+What makes it clever: Intersection of population-specific sequence presence with tissue-specific expression.
+Validation: Replication across datasets/populations; permutation controls.
+4. Repeat Expansion = Hidden Regulatory Dial
+Research question: Do tandem-repeat changes act as continuous regulatory dials rather than binary mutations?
+Novel connection: Tandem repeats × eQTL × chromatin
+Public data: 1KCP; GTEx; ENCODE; disease cohorts in NCBI/GEO
+What makes it clever: Model repeat length as a quantitative regulatory variable.
+Validation: Cross-tissue and cross-cohort consistency; nonlinear model comparison.
+5. The HLA “Grammar” Problem
+Research question: Can protein-language representations reveal functional constraints in HLA variation that standard allele labels obscure?
+Novel connection: Protein language models × immunogenetics × population diversity
+Public data: HLA sequences; UniProt; AlphaFold DB; public immune repertoire datasets
+What makes it clever: Use interpretable embedding geometry to separate conserved functional motifs from population structure.
+Validation: Benchmark against known HLA functional annotations and unseen alleles.
+6. Ancient-Looking DNA in Modern Disease
+Research question: Do evolutionarily conserved regulatory motifs remain the most robust predictors of disease-associated regulatory disruption?
+Novel connection: Comparative genomics × human disease × regulatory biology
+Public data: ENCODE; GTEx; UCSC conservation tracks; ClinVar
+What makes it clever: Quantify whether conservation and chromatin context interact to predict variant impact.
+Validation: Held-out ClinVar pathogenicity and independent GWAS loci.
+7. The “No-Map” Genome
+Research question: Can graph-based representations improve disease-variant interpretation specifically in genomic regions that are poorly represented by linear references?
+Novel connection: Pangenome graphs × clinical variant interpretation
+Public data: Human Pangenome; ClinVar; gnomAD; ENCODE
+What makes it clever: Target hard-to-map regions instead of overall average accuracy.
+Validation: Stratify by repeat/SV complexity and compare linear vs graph-aware inference.
+8. Variant Effects Without a Family Tree
+Research question: Can sequence-only protein models identify damaging missense variants when population/family information is intentionally withheld?
+Novel connection: Protein language models × rare-disease genetics
+Public data: ClinVar; UniProt; ProteinGym; AlphaFold DB
+What makes it clever: Test a “sequence-only” clinical reasoning regime and characterize where it fails.
+Validation: Strict temporal/holdout split by protein family.
+9. The Reliability Map of Protein Embeddings
+Research question: Which proteins are biologically well represented vs poorly represented in protein-language-model latent space?
+Novel connection: Embedding uncertainty × protein annotation
+Public data: UniProt; AlphaFold DB; ProteinGym; Pfam/InterPro
+What makes it clever: Extend embedding uncertainty into a protein-level quality-control map.
+Validation: Synthetic-neighbor controls, annotation agreement, and downstream task degradation.
+10. Motif Discovery From the Model’s Blind Spots
+Research question: When a protein-language model fails on a function, are the errors concentrated around previously unannotated sequence motifs?
+Novel connection: XAI × protein motifs × enzyme/function annotation
+Public data: UniProt; InterPro/Pfam; ProteinGym; PDB/AlphaFold DB
+What makes it clever: Use failure clusters rather than successes to discover candidate motifs.
+Validation: Known motif recovery + blinded functional holdout.
+Part 2: RNA structure, splicing & post-transcriptional control
+11. RNA Structure–Expression Mismatch
+Research question: Do genes with highly conserved RNA structures but variable expression reveal post-transcriptional “hidden switches”?
+Novel connection: RNA structure × transcriptomics × evolution
+Public data: Rfam; RNAcentral; GTEx; ENCODE; GEO
+What makes it clever: Combine predicted structure conservation with tissue-specific expression divergence.
+Validation: Independent tissues and phylogenetic controls.
+12. RNA Folding as a Disease Context
+Research question: Are disease-associated noncoding variants more damaging when they occur in locally stable RNA structures?
+Novel connection: RNA structure × ClinVar × noncoding variation
+Public data: RNAcentral/Rfam; ClinVar; ENCODE; eQTL catalogs
+What makes it clever: Construct a context-aware structural perturbation score.
+Validation: Compare against sequence-only conservation baselines.
+13. The Untranslated “Control Panel”
+Research question: Can 5’/3’ UTR sequence and structure jointly predict which transcripts are unusually sensitive to cellular stress?
+Novel connection: UTR grammar × RNA structure × perturbation genomics
+Public data: GTEx; ENCODE; GEO; public stress-response RNA-seq datasets
+What makes it clever: Treat UTRs as a coupled sequence–structure control system.
+Validation: Cross-study generalization across stress types.
+14. Circular RNA Survival Code
+Research question: Which sequence/structure features explain unusually stable circular RNAs across tissues?
+Novel connection: Circular RNA × structure × degradation
+Public data: GEO/SRA; RNAcentral; circRNA databases
+What makes it clever: Predict half-life/stability from structural motifs and cellular context.
+Validation: Cross-study stability prediction and ablation tests.
+15. RNA “Decoys” and Disease
+Research question: Can competing endogenous RNA relationships be distinguished from mere correlated expression using perturbation evidence?
+Novel connection: ceRNA networks × causal inference × RNA biology
+Public data: ENCODE; GEO perturbation datasets; miRBase/TargetScan resources
+What makes it clever: Require perturbation-supported edges rather than correlation alone.
+Validation: Held-out knockdown/CRISPR perturbation datasets.
+16. The Spliceome Weather Map
+Research question: Can environmental or cellular-state variables be inferred from coordinated alternative-splicing changes across public datasets?
+Novel connection: Alternative splicing × state inference × systems biology
+Public data: GTEx; ENCODE; GEO/SRA; TCGA
+What makes it clever: Infer a latent “splicing state” and test whether it predicts tissue/stress/disease context.
+Validation: External dataset and batch-robustness tests.
+17. Hidden Exons That Matter
+Research question: Which low-expression or cryptic exons are repeatedly activated across unrelated diseases, and what regulatory grammar predicts them?
+Novel connection: Splicing × disease convergence × regulatory genomics
+Public data: GEO/SRA; GTEx; TCGA; ENCODE
+What makes it clever: Look for convergent cryptic-exon programs rather than disease-specific lists.
+Validation: Replication across independent disease cohorts.
+18. RNA Structure vs Protein Function
+Research question: When a synonymous variant changes RNA structure, can that structural change explain effects missed by codon/protein analyses?
+Novel connection: Synonymous variants × RNA structure × protein phenotypes
+Public data: ClinVar; RNAcentral; ProteinGym; GTEx
+What makes it clever: Disentangle codon, conservation, expression, and structure contributions.
+Validation: Use experimentally characterized synonymous variants as benchmark.
+19. The RNA Model Hallucination Detector
+Research question: Can structural inconsistency across RNA prediction models identify low-confidence regions before they are used for biological inference?
+Novel connection: Ensemble uncertainty × RNA structure
+Public data: RNAcentral/Rfam; public RNA structure datasets
+What makes it clever: Create a model-disagreement reliability metric.
+Validation: Evaluate against experimentally solved/validated structures.
+20. Evolutionary Pressure on RNA Shapes
+Research question: Do RNA structural motifs show tissue-specific evolutionary constraint even when primary sequence conservation is weak?
+Novel connection: Structure-aware evolution × tissue biology
+Public data: Rfam; comparative genomes; GTEx; ENCODE
+What makes it clever: Replace sequence identity with structural similarity as the evolutionary object.
+Validation: Phylogenetic permutation and independent species sets.
+Part 3: Metabolism, proteomics & information
+21. A “Metabolic Language Model”
+Research question: Can metabolite co-variation encode disease state more robustly than individual biomarkers?
+Novel connection: Metabolomics × representation learning × disease
+Public data: Metabolomics Workbench; MetaboLights; TCGA/CPTAC linked studies
+What makes it clever: Learn latent metabolic states rather than predicting disease from one molecule.
+Validation: External cohorts and calibration.
+22. Gene Expression Lies—Metabolism Knows
+Research question: When transcriptomic signatures disagree with metabolic phenotypes, can a mechanistic-aware model explain the mismatch?
+Novel connection: Cancer metabolism × gene regulation × systems modeling
+Public data: TCGA; CPTAC; metabolomics public datasets
+What makes it clever: Explicitly model transcript→enzyme→metabolite bottlenecks.
+Validation: Prediction of independent metabolite measurements.
+23. Protein–Metabolite “Near Misses”
+Research question: Can protein embeddings plus metabolite fingerprints identify enzyme–substrate relationships missing from current annotations?
+Novel connection: Protein language models × metabolomics × chemistry
+Public data: UniProt; BRENDA/open enzyme annotations; PubChem; MetaboLights
+What makes it clever: Use negative examples and uncertainty rather than naive nearest-neighbor matching.
+Validation: Known enzyme–substrate held-out benchmark.
+24. Metabolic Bottlenecks That Are Not Highly Expressed
+Research question: Which cancer metabolic vulnerabilities are controlled by post-transcriptional or allosteric bottlenecks rather than expression maxima?
+Novel connection: Cancer metabolism × proteomics × network control
+Public data: CPTAC; TCGA; Reactome; public metabolomics
+What makes it clever: Rank control points using network centrality + protein abundance + metabolite context.
+Validation: Cross-cancer replication and pathway perturbation datasets.
+25. The “Second Omics” Principle
+Research question: For each disease, what is the minimum pair of omics layers needed to improve mechanistic interpretability?
+Novel connection: Multi-omics × information theory
+Public data: TCGA/CPTAC; GTEx; ENCODE; GEO
+What makes it clever: Search for minimal multimodal combinations rather than always stacking everything.
+Validation: Nested model comparisons and held-out cohorts.
+26. Metabolic Information Overlap Atlas
+Research question: Can mutual-information structure reveal which gene-expression features redundantly encode metabolic information across cancers?
+Novel connection: Information theory × transcriptomics × metabolism
+Public data: TCGA; CPTAC; Metabolomics Workbench
+What makes it clever: Extend beyond pairwise correlations to information overlap networks.
+Validation: Stability across cancer types and resampling.
+27. Proteins as Sensors of Cellular State
+Research question: Can protein post-translational modification patterns identify hidden cell states that RNA misses?
+Novel connection: Phosphoproteomics × transcriptomics × latent states
+Public data: CPTAC; PRIDE; GEO
+What makes it clever: Find discordant RNA/protein states and characterize their biology.
+Validation: Independent datasets and pathway enrichment.
+28. The Missing Middle of Multi-Omics
+Research question: Can a latent representation centered on protein function bridge RNA and metabolite layers better than generic dimensionality reduction?
+Novel connection: Protein function × multi-omics integration
+Public data: GTEx; CPTAC; Metabolomics Workbench; Reactome
+What makes it clever: Use protein functional modules as the shared coordinate system.
+Validation: Compare to PCA, CCA, MOFA-like baselines.
+29. Enzyme Function as a Graph of Constraints
+Research question: Can combining sequence embeddings with metabolic-network topology predict which mutations are consequential only in particular metabolic contexts?
+Novel connection: Protein variant effect × metabolic networks
+Public data: ProteinGym; UniProt; Reactome; TCGA
+What makes it clever: Contextualize variant effect by network position instead of sequence alone.
+Validation: Held-out variants across enzymes with diverse network roles.
+30. Metabolomic “Weather Fronts”
+Research question: Do diseases create abrupt transitions in metabolic network states analogous to phase transitions?
+Novel connection: Statistical physics × metabolomics × disease
+Public data: Metabolomics Workbench; MetaboLights; cancer metabolomics studies
+What makes it clever: Search for nonlinear tipping points instead of linear biomarkers.
+Validation: Bootstrap change-point detection and cross-cohort replication.
+Part 4: Virtual cells, causal biology & cellular state
+31. A Mini Virtual Cell for One Pathway
+Research question: Can a small, interpretable causal model reproduce a pathway’s perturbation responses while a black-box model predicts them?
+Novel connection: Mechanistic models × AI × virtual cells
+Public data: Perturb-seq; DepMap; GEO; Reactome
+What makes it clever: Build a transparent “tiny virtual cell” around one pathway.
+Validation: Hold out perturbations and compare mechanistic+AI hybrid vs either alone.
+32. Virtual Cell Failure Cartography
+Research question: Where do current cell-response models systematically fail: rare cell types, unseen drugs, unseen perturbations, or state transitions?
+Novel connection: Virtual cells × uncertainty × benchmarking
+Public data: Perturb-seq; scRNA-seq public datasets; DepMap
+What makes it clever: Create a failure taxonomy rather than another predictor.
+Validation: Leave-one-cell-type/drug family out validation.
+33. Causal Graphs From Perturbation Shadows
+Research question: Can perturbation datasets reconstruct small regulatory networks more reliably when transcriptomic covariance is constrained by known protein interactions?
+Novel connection: Perturbation biology × causal inference × PPI
+Public data: Perturb-seq; STRING/IntAct; ENCODE
+What makes it clever: Hybridize causal discovery with prior biological topology.
+Validation: Recover known edges in held-out perturbations.
+34. Cell State as a Trajectory, Not a Label
+Research question: Can disease cell states be better described by continuous trajectories shared across tissues?
+Novel connection: Single-cell trajectories × disease
+Public data: Human Cell Atlas; GEO; disease scRNA-seq datasets
+What makes it clever: Align trajectories across tissues using conserved gene programs.
+Validation: Cross-dataset trajectory reproducibility.
+35. The Missing Dimension in Single-Cell Data
+Research question: Can batch, tissue, and cell-state effects be separated using a causal hierarchy instead of conventional batch correction?
+Novel connection: Single-cell statistics × causal modeling
+Public data: Human Cell Atlas; GEO; Tabula Sapiens/open atlases
+What makes it clever: Treat technical variation as a structured causal factor.
+Validation: Synthetic batch perturbation and real cross-site validation.
+36. Detecting Cell States That Models Invent
+Research question: Can a consensus of independent single-cell models identify cell clusters that are algorithmic artifacts rather than biological states?
+Novel connection: Clustering uncertainty × single-cell biology
+Public data: HCA; GEO; Tabula Sapiens
+What makes it clever: Create a “cluster reality score” using stability across preprocessing/model families.
+Validation: Compare with experimentally annotated cell types.
+37. Perturbation Transfer Learning
+Research question: Can response to a known perturbation predict response to a biologically related but unseen perturbation using pathway geometry?
+Novel connection: Perturb-seq × graph learning
+Public data: Perturb-seq; Reactome; STRING
+What makes it clever: Transfer across perturbation families instead of random train/test splits.
+Validation: Strict unseen-perturbation benchmark.
+38. Cellular Digital Twins From Public Data
+Research question: Can a minimal patient/cell “digital twin” summarize only those variables that actually improve prediction under new conditions?
+Novel connection: Digital twins × feature selection × single-cell
+Public data: TCGA; CPTAC; HCA; perturbation datasets
+What makes it clever: Optimize for minimal sufficient state representation.
+Validation: Counterfactual test: remove one modality and measure degradation.
+39. Aging as a Network Drift
+Research question: Does aging change the topology of regulatory networks before average gene expression shifts dramatically?
+Novel connection: Network science × aging × transcriptomics
+Public data: GTEx; Tabula Sapiens; GEO aging datasets
+What makes it clever: Measure network rewiring, not simply differential expression.
+Validation: Cross-cohort network stability and permutation controls.
+40. The Cellular “Conservation Law”
+Research question: Across diseases, which cell-state transitions conserve a small set of information-bearing pathways?
+Novel connection: Information theory × single-cell state transitions
+Public data: HCA; GEO; disease scRNA-seq
+What makes it clever: Identify conserved information bottlenecks across unrelated diseases.
+Validation: Cross-disease replication and null models.
+Part 5: Cancer as an ecosystem
+41. Tumors as Ecosystems of Messages
+Research question: Can cell–cell communication networks predict treatment resistance better than tumor-cell expression alone?
+Novel connection: Tumor ecology × ligand–receptor signaling × single-cell
+Public data: Cancer scRNA-seq; TCGA; CellPhoneDB/OmniPath resources
+What makes it clever: Model communication topology rather than only tumor genotype.
+Validation: Patient-level survival/response datasets with held-out cancer types.
+42. The Immune System’s Architectural Memory
+Research question: Do immune-cell neighborhood patterns in public spatial transcriptomics predict whether tumors will be inflamed, excluded, or suppressed?
+Novel connection: Spatial transcriptomics × immunology × graph theory
+Public data: 10x public datasets; GEO; HuBMAP; TCGA
+What makes it clever: Convert spatial relationships to graphs and search for recurrent motifs.
+Validation: Cross-cancer external validation.
+43. Spatial Neighborhoods as Biomarkers
+Research question: Can spatially defined cell neighborhoods reveal clinically relevant information invisible in bulk RNA-seq?
+Novel connection: Spatial biology × bulk genomics
+Public data: Spatial transcriptomics; TCGA
+What makes it clever: Build neighborhood-to-bulk translation models.
+Validation: Predict patient phenotype using only neighborhood summaries.
+44. The “Boundary Cell” Hypothesis
+Research question: Are cells at tumor–normal boundaries molecularly distinct enough to form an early-warning state?
+Novel connection: Tumor margins × spatial omics × state transitions
+Public data: Spatial transcriptomics; H&E image datasets; TCGA
+What makes it clever: Focus on boundary distance as a biological coordinate.
+Validation: Independent spatial cohorts.
+45. Cancer Evolution Without Following One Clone
+Research question: Can repeated public snapshots reconstruct likely evolutionary routes using constraints from pathway compatibility?
+Novel connection: Cancer evolution × graph inference × multi-omics
+Public data: TCGA; cBioPortal public data; COSMIC where permitted
+What makes it clever: Infer pathway-level trajectories rather than individual mutations.
+Validation: Cross-cancer and temporal cohorts where available.
+46. The Proteomic “Echo” of Genomic Instability
+Research question: Can proteomic patterns identify genomic-instability phenotypes that mutation counts miss?
+Novel connection: Proteomics × genomic instability
+Public data: CPTAC; TCGA
+What makes it clever: Search for protein-level echoes of instability mechanisms.
+Validation: Held-out cancer types and independent cohort validation.
+47. Digital Pathology Meets Molecular Evolution
+Research question: Can image-derived tissue architecture constrain predictions of tumor evolutionary state?
+Novel connection: Histopathology × genomics × spatial biology
+Public data: TCGA pathology images; TCGA genomic data
+What makes it clever: Use tissue architecture as an independent biological view.
+Validation: Patient-level split; cross-cancer validation.
+48. Tumor Grade Without the Usual Features
+Research question: Can tumor aggressiveness be inferred using only spatial/tissue architecture and pathway-level representations, excluding common clinical variables?
+Novel connection: Computer vision × pathway biology
+Public data: TCGA images; TCGA expression; Pathway Commons/Reactome
+What makes it clever: Force the model to learn biology-relevant architecture.
+Validation: Ablation of morphology regions and pathway modules.
+49. Resistance as a State Transition
+Research question: Instead of predicting resistant vs sensitive, can models identify the latent transition that precedes resistance?
+Novel connection: Drug response × longitudinal reasoning × single-cell
+Public data: DepMap; GDSC public metadata; GEO treatment datasets
+What makes it clever: Search for pre-resistance molecular states.
+Validation: Train on one drug family; test another related family.
+50. The “Wrong Tissue” Biomarker Test
+Research question: Can a biomarker discovered in one tissue be proven to be tissue-specific—or unexpectedly transferable—using multi-tissue expression maps?
+Novel connection: Biomarker portability × tissue biology
+Public data: GTEx; TCGA; CPTAC
+What makes it clever: Turn biomarker generalization into the actual research question.
+Validation: External tissue validation and negative controls.
+Part 6: Liquid biopsy, biomarkers & evidence
+51. Liquid Biopsy Signal Before the Tumor Is Loud
+Research question: Can weak circulating nucleic-acid signals be detected by learning coordinated multi-fragment patterns rather than one marker?
+Novel connection: Liquid biopsy × fragmentation × representation learning
+Public data: GEO/SRA; published cfDNA datasets; ENCODE references
+What makes it clever: Model fragment-pattern constellations with uncertainty.
+Validation: Patient-level held-out cohorts; avoid clinical claims beyond dataset evidence.
+52. cfDNA Fragmentomics Meets Chromatin
+Research question: Can cfDNA fragment endpoints reveal tissue-of-origin through open-chromatin geometry even when mutation burden is low?
+Novel connection: Fragmentomics × chromatin accessibility
+Public data: Public cfDNA datasets; ENCODE/ATAC-seq references
+What makes it clever: Link physical fragment geometry to regulatory maps.
+Validation: Cross-study tissue-of-origin validation.
+53. The Methylation–Fragmentation Coupling
+Research question: Are DNA methylation and cfDNA fragment patterns complementary because they report different layers of the same chromatin state?
+Novel connection: Epigenomics × fragmentomics
+Public data: Public cfDNA methylation/fragmentation datasets; ENCODE
+What makes it clever: Estimate information gain between modalities.
+Validation: Nested classifier + information-theoretic tests.
+54. RNA in Blood as a “Systemic State Sensor”
+Research question: Which combinations of circulating RNA species report organ stress more consistently than single transcripts?
+Novel connection: Circulating RNA × organ-specific expression
+Public data: GEO/SRA; GTEx reference maps
+What makes it clever: Discover organ-expression projection signatures.
+Validation: Cross-cohort prediction and negative controls.
+55. The Transcriptomic Barcode of Tissue Injury
+Research question: Can injury states across organs share a small conserved regulatory “barcode”?
+Novel connection: Organ injury × conserved gene programs
+Public data: GEO/SRA; GTEx; public injury datasets
+What makes it clever: Search for cross-organ invariants and organ-specific deviations.
+Validation: Leave-one-organ-out validation.
+56. Early Disease = Coordination Failure
+Research question: Do subtle diseases manifest as disrupted coordination among moderately changing biomarkers rather than large changes in any one molecule?
+Novel connection: Network theory × biomarkers
+Public data: GEO; TCGA/CPTAC; proteomics/metabolomics public datasets
+What makes it clever: Measure loss of correlation/conditional dependence structure.
+Validation: Cross-cohort network replication.
+57. Biomarker Discovery by “Negative Space”
+Research question: Can absence of expected molecular relationships identify disease states earlier than presence of a new marker?
+Novel connection: Missingness × network biology × diagnostics
+Public data: GEO; TCGA; CPTAC
+What makes it clever: Build a diagnostic signature from broken biological couplings.
+Validation: Permutation-based false-discovery control + external validation.
+58. A Cross-Cancer Liquid Biopsy Grammar
+Research question: Are there universal fragment/RNA/methylation motifs shared across cancer types, with a second layer encoding tissue identity?
+Novel connection: Pan-cancer biomarker grammar × representation learning
+Public data: Public cfDNA/cfRNA datasets; TCGA/GTEx reference
+What makes it clever: Separate “cancer-ness” from “where” using factorized representations.
+Validation: Cross-cancer and leave-one-cancer-out testing.
+59. The Diagnostic Counterfactual
+Research question: Can a biomarker model explain which molecular measurements would change its diagnosis, making the output falsifiable rather than opaque?
+Novel connection: Explainable AI × biomedical diagnostics
+Public data: Any public molecular diagnostic dataset
+What makes it clever: Generate counterfactual measurement tests rather than feature importance only.
+Validation: Synthetic and real perturbation/holdout validation.
+60. Rare Disease Evidence Triangulation Engine
+Research question: Can three weak evidence sources combine into a stronger gene–disease hypothesis without relying on any single database?
+Novel connection: Rare disease genomics × evidence synthesis
+Public data: ClinVar; Orphanet; Gene Ontology; HPO; UniProt
+What makes it clever: Build a conflict-aware evidence graph.
+Validation: Test recovery of established gene–disease relationships while hiding one evidence type.
+Part 7: Drug response, perturbations & mechanism
+61. Drug Repurposing by Mechanism Contradictions
+Research question: Can a drug whose known target is unrelated to a disease still be prioritized because it reverses a disease-specific network state?
+Novel connection: Drug perturbations × disease networks
+Public data: LINCS; Connectivity Map resources; GEO; TCGA
+What makes it clever: Search for network-state reversal rather than target matching.
+Validation: Held-out known drug–disease pairs; permutation null.
+62. Repurposing Through Protein Geometry
+Research question: Can protein embeddings identify alternative targets for approved drugs when sequence similarity alone fails?
+Novel connection: Protein language models × drug–target relationships
+Public data: UniProt; PDB/AlphaFold DB; DrugBank-like open datasets where licensed/open; ChEMBL
+What makes it clever: Use functional embedding + structural context, not docking.
+Validation: Known interaction holdout and negative controls.
+63. The Drug–Cell-State Matrix
+Research question: Can the same drug have opposite effects depending on cell state, and can those states be predicted before testing?
+Novel connection: Single-cell states × pharmacogenomics
+Public data: DepMap; LINCS; GEO single-cell perturbations
+What makes it clever: Condition drug response on cell state rather than cell line identity.
+Validation: Unseen cell line / unseen state validation.
+64. Synergy Without Pairwise Explosion
+Research question: Can pathway-level constraints identify promising drug combinations without brute-forcing every pair?
+Novel connection: Combinatorial optimization × pathway biology
+Public data: DrugComb; LINCS; Reactome; DepMap
+What makes it clever: Search combinations at pathway-module level.
+Validation: Known synergy datasets as external validation; no wet-lab claims.
+65. The “Off-Target” That Is Actually a State Change
+Research question: Can apparent drug off-targets be separated from downstream cell-state effects using perturbation topology?
+Novel connection: Pharmacology × causal graphs
+Public data: LINCS; DepMap; GEO
+What makes it clever: Model direct target vs state-mediated signatures.
+Validation: Perturbation datasets with known targets.
+66. Drug Response Under Nutritional Context
+Research question: Can metabolic context explain why a drug response changes across tumor types?
+Novel connection: Pharmacology × metabolism × cancer
+Public data: DepMap; GDSC; CPTAC/TCGA; Metabolomics Workbench
+What makes it clever: Condition response models on metabolic network state.
+Validation: Cross-dataset generalization.
+67. Pharmacology’s Missing Dimension: Protein Abundance
+Research question: Does protein abundance explain response heterogeneity that RNA-based drug models systematically miss?
+Novel connection: Proteomics × pharmacogenomics
+Public data: CPTAC; DepMap; GDSC; PRIDE
+What makes it clever: Quantify incremental explanatory power of protein layer.
+Validation: Nested held-out evaluation.
+68. The Mechanism-First Drug Fingerprint
+Research question: Can drugs be represented by the pathways they perturb rather than their names/targets, then used to find mechanistically similar compounds?
+Novel connection: Perturbational transcriptomics × graph embeddings
+Public data: LINCS; Reactome; GEO
+What makes it clever: Create a mechanism-space and test transferability.
+Validation: Recover known pharmacological classes without using labels.
+69. Drug Failure as Information
+Research question: Can failed/weak drug-response predictions reveal missing biological variables more efficiently than successful predictions?
+Novel connection: Uncertainty × active learning × pharmacology
+Public data: DepMap; GDSC; LINCS
+What makes it clever: Use failure clusters to propose missing-context hypotheses.
+Validation: Holdout drug classes and error enrichment tests.
+70. Disease Mimicry in the Perturbome
+Research question: Which non-disease perturbations create molecular states most similar to disease, and which reverse them?
+Novel connection: Disease signatures × perturbation maps
+Public data: GEO; LINCS; TCGA
+What makes it clever: Search beyond simple signature correlation using network topology.
+Validation: External datasets and negative-control perturbations.
+Part 8: Protein language models, structure & dark proteomes
+71. Explainable Protein Design Without Designing Anything
+Research question: Can model explanations identify which sequence regions carry function-specific information, and do those regions align with known structure?
+Novel connection: Protein XAI × structure biology
+Public data: ProteinGym; UniProt; PDB/AlphaFold DB
+What makes it clever: Study explanation validity, not generation of new bioactive proteins.
+Validation: Compare explanations against known domains, catalytic residues, and mutational scans.
+72. Protein “Grammar” Across Families
+Research question: Do different protein families reuse analogous latent grammatical roles even when their sequences are unrelated?
+Novel connection: Protein language models × evolutionary analogy
+Public data: UniProt; Pfam/InterPro; AlphaFold DB
+What makes it clever: Search for cross-family latent motifs with shared functional roles.
+Validation: Holdout families and structural annotations.
+73. The Embedding Reliability–Disease Bias Question
+Research question: Do protein-language models perform differently on proteins associated with neglected diseases, rare diseases, or poorly annotated genes?
+Novel connection: AI reliability × biomedical annotation bias
+Public data: UniProt; ClinVar; Orphanet; ProteinGym
+What makes it clever: Test whether model uncertainty tracks annotation scarcity.
+Validation: Matched annotation-density controls.
+74. A Protein Annotation “Missingness” Detector
+Research question: Can embedding disagreement predict where protein function annotations are likely incomplete?
+Novel connection: Embedding uncertainty × knowledge gaps
+Public data: UniProt; InterPro/Pfam; AlphaFold DB
+What makes it clever: Turn uncertainty into a map of candidate annotation gaps.
+Validation: Known recently annotated proteins as temporal validation.
+75. Function From Structure’s Outliers
+Research question: Are proteins that are structurally similar but functionally different identifiable through local topology features?
+Novel connection: Structural biology × anomaly detection
+Public data: PDB; AlphaFold DB; SCOP/CATH where accessible
+What makes it clever: Look for “structural twins with different jobs.”
+Validation: Known fold/function pairs and held-out families.
+76. Enzyme Families as Evolutionary Laboratories
+Research question: Can naturally occurring enzyme diversity reveal which positions are evolutionarily flexible vs functionally locked?
+Novel connection: Protein evolution × variant effect prediction
+Public data: UniProt; ProteinGym; BRENDA/open enzyme annotations
+What makes it clever: Compare observed evolutionary substitutions with experimentally measured effects.
+Validation: Cross-family generalization.
+77. The Small Protein Problem
+Research question: Do short proteins systematically suffer higher representation uncertainty, and can domain/context information correct it?
+Novel connection: Protein embeddings × proteome structure
+Public data: UniProt; AlphaFold DB; InterPro
+What makes it clever: Target a neglected model regime.
+Validation: Length-stratified benchmark.
+78. Model Agreement as a Scientific Instrument
+Research question: When multiple protein models disagree, can disagreement itself predict experimentally difficult biology?
+Novel connection: Ensemble uncertainty × protein science
+Public data: ESM/other open models; ProteinGym; PDB/AlphaFold DB
+What makes it clever: Treat model disagreement as a measurable property.
+Validation: Compare disagreement with experimental variance/assay difficulty.
+79. The Protein “Dark Matter” Atlas
+Research question: Which uncharacterized proteins have strong evidence of conserved functional modules but weak annotation?
+Novel connection: Uncharacterized proteome × networks × embeddings
+Public data: UniProt; InterPro/Pfam; STRING/IntAct; AlphaFold DB
+What makes it clever: Triangulate sequence, structure, network, and evolution.
+Validation: Blind recovery of subsequently annotated proteins using dated snapshots.
+80. Functional Motifs Without Alignment
+Research question: Can motif discovery from protein-language models identify recurring functional sequence patterns without multiple-sequence alignment?
+Novel connection: Unsupervised representation learning × motif biology
+Public data: UniProt; ProteinGym; Pfam/InterPro
+What makes it clever: Benchmark against alignment-derived motifs and structural sites.
+Validation: Held-out families + motif enrichment tests.
+Part 9: Microbiome ecology & functional dark matter
+81. The Microbiome’s “Interaction Weather”
+Research question: Can microbiome health be described by interaction-network stability rather than taxonomic abundance?
+Novel connection: Microbiome ecology × network dynamics
+Public data: Human Microbiome Project; Qiita; MGnify; curated public microbiome cohorts
+What makes it clever: Focus on interaction structure across conditions.
+Validation: Cross-cohort network reproducibility.
+82. Functional Redundancy Beats Species Counts
+Research question: Does functional redundancy predict microbiome resilience better than species diversity?
+Novel connection: Ecological resilience × metagenomics
+Public data: HMP; MGnify; ENA/SRA public metagenomes
+What makes it clever: Measure pathway redundancy and network recovery.
+Validation: Perturbation/longitudinal public datasets.
+83. The Microbiome–Metabolism Bridge
+Research question: Can microbial gene pathways explain host metabolite changes without requiring species-level identification?
+Novel connection: Metagenomics × metabolomics
+Public data: HMP/MGnify; Metabolomics Workbench; paired public cohorts
+What makes it clever: Use pathway-level mediation models.
+Validation: Cross-study metabolite prediction.
+84. Viral Ecology Without Viral Engineering
+Research question: Can public metagenomes reveal ecological conditions associated with rapid shifts in viral-community structure?
+Novel connection: Metagenomic ecology × temporal dynamics
+Public data: MGnify; SRA/ENA; public wastewater metagenomics
+What makes it clever: Study ecological transitions, not pathogen enhancement.
+Validation: Independent cohorts and robust compositional statistics.
+85. Antibiotic Resistance as a Network Phenotype
+Research question: Can resistance-associated gene modules be predicted from the surrounding microbial community context rather than single ARGs?
+Novel connection: Resistome × community ecology
+Public data: CARD/ResFinder resources; MGnify; HMP
+What makes it clever: Model community context as the unit of prediction.
+Validation: Leave-one-community-type-out validation.
+86. Microbiome “Dark Matter” Functions
+Research question: Which uncharacterized microbial genes consistently co-occur with known metabolic pathways across environments?
+Novel connection: Metagenomic function discovery × network inference
+Public data: MGnify; HMP; UniProt/InterPro
+What makes it clever: Prioritize genes by conservation of neighborhood across ecosystems.
+Validation: Temporal/dataset holdout and annotation updates.
+87. Gut–Brain Signaling as a Graph
+Research question: Can microbial pathways, metabolites, and host genes form a stable cross-domain graph associated with neuroinflammation?
+Novel connection: Microbiome × metabolomics × neurobiology
+Public data: Public gut metagenomes; metabolomics; GEO/GTEx; disease cohorts
+What makes it clever: Require evidence across at least two independent layers.
+Validation: Cross-cohort graph stability.
+88. Ecological Early-Warning Signals
+Research question: Do microbiome communities exhibit mathematical warning signals before major state transitions?
+Novel connection: Dynamical systems × microbiome ecology
+Public data: Longitudinal public microbiome datasets
+What makes it clever: Search for critical-slowing-down-like statistics in community networks.
+Validation: Synthetic null models + independent longitudinal datasets.
+89. One Function, Many Microbes
+Research question: Can unrelated microbial species achieve the same host-associated function through different gene combinations?
+Novel connection: Functional convergence × metagenomics
+Public data: MGnify; HMP; KEGG/InterPro resources
+What makes it clever: Identify alternative pathway “solutions” to the same function.
+Validation: Cross-environment replication and network modularity.
+90. The Community Context of Unknown Genes
+Research question: Can community co-occurrence constrain the likely function of a gene that has no reliable annotation?
+Novel connection: Metagenomics × knowledge graphs × function inference
+Public data: MGnify; UniProt; InterPro; HMP
+What makes it clever: Combine ecological context with sequence evidence.
+Validation: Blind recovery of known functions after hiding annotations.
+Part 10: Plants, climate, cross-disease biology & scientific discovery
+91. Plants Have a Stress “Grammar”
+Research question: Can unrelated stresses share a conserved regulatory grammar in plants even when individual genes differ?
+Novel connection: Plant stress × transcriptomics × representation learning
+Public data: GEO/NCBI plant RNA-seq; Plant Cell Atlas resources where open
+What makes it clever: Represent stress as a latent program rather than a gene list.
+Validation: Leave-one-stress-out validation.
+92. Drought Before Wilting—From Public Images to Molecular State
+Research question: Can visible plant stress patterns predict hidden molecular stress programs?
+Novel connection: Computer vision × plant genomics
+Public data: Plant phenotyping image datasets; GEO plant RNA-seq; public satellite data
+What makes it clever: Link phenotype trajectories to transcriptomic programs.
+Validation: Cross-species or cross-study validation.
+93. Root Architecture as a Transcriptome Proxy
+Research question: Can root morphology encode enough information to infer hormonal or nutrient-response states?
+Novel connection: Plant morphology × gene regulation
+Public data: Root imaging datasets; GEO; Plant Ontology
+What makes it clever: Map image features to pathway-level states.
+Validation: Holdout species/conditions.
+94. Climate Stress × Gene Regulation
+Research question: Can climate variables be linked to conserved transcriptional response programs across plant species?
+Novel connection: Climate science × comparative genomics
+Public data: NOAA/public climate datasets; GEO; Ensembl Plants
+What makes it clever: Treat climate exposure as an environmental intervention.
+Validation: Geographic and species holdouts.
+95. The Biological Meaning of Satellite Green
+Research question: Can satellite vegetation indices be decomposed into ecological vs physiological components using public molecular/phenotype data?
+Novel connection: Remote sensing × plant physiology
+Public data: MODIS/Sentinel public data; plant phenotyping; GEO
+What makes it clever: Connect macro-scale pixels to molecular stress signatures.
+Validation: Independent regions/seasons and ground-truth datasets.
+96. Disease Networks From “Negative Evidence”
+Research question: Can missing expected pathway activity distinguish disease subtypes more robustly than upregulated genes?
+Novel connection: Network biology × information theory
+Public data: TCGA/GEO/CPTAC
+What makes it clever: Construct signatures from absent couplings and pathway disconnects.
+Validation: External cohort validation.
+97. The Cross-Disease “Repair Program”
+Research question: Do very different diseases activate a small conserved set of cellular repair programs, and can this reveal disease-stage transitions?
+Novel connection: Cross-disease biology × single-cell × pathways
+Public data: GEO; HCA; TCGA; Reactome
+What makes it clever: Search for conserved repair-state trajectories.
+Validation: Leave-one-disease-out validation.
+98. A Universal “Confounder Stress Test” for Bio-AI
+Research question: Which confounders—batch, tissue, ancestry, sample quality, platform—most often create apparently impressive biological predictions?
+Novel connection: ML robustness × biomedical datasets
+Public data: GTEx; TCGA; GEO; CPTAC; public single-cell datasets
+What makes it clever: Create a standardized stress-test suite for bio-AI claims.
+Validation: Synthetic confounding + real cross-site evaluation.
+99. The Discovery Graph of Biology
+Research question: Can a graph that connects genes, proteins, structures, pathways, cells, phenotypes, and publications generate better hypotheses than any one database?
+Novel connection: Knowledge graphs × scientific discovery × multimodal biology
+Public data: OpenAlex; PubMed abstracts; UniProt; Reactome; ENCODE; HCA; ClinVar
+What makes it clever: Make hypothesis generation the experiment: measure whether graph paths recover non-obvious known connections.
+Validation: Time-split evaluation: hide later discoveries and test recovery from older evidence.
+100. The “CRISPR Moment” Search Engine
+Research question: Can a computational system systematically search for intersections of two mature fields where a new third capability has just appeared—and produce testable biological hypotheses that were previously impractical?
+Novel connection: Scientific trend mining × bioinformatics × hypothesis generation
+Public data: OpenAlex/PubMed; ISEF project abstracts; Society for Science archives; major public biological databases
+What makes it clever: The project is itself a reproducible invention: detect “adjacent possible” research gaps using novelty, evidence density, and feasibility constraints.
+Validation: Backtest on historical discoveries and student projects: could the system have surfaced CRISPR-like opportunity zones before they became obvious?
+
