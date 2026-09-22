@@ -1,12 +1,12 @@
 # Science Program Status
 
 - Source topics parsed: 200
-- Experiment rounds in the central ledger: 38
-- Conservatively audited useful results: **30 / 100**
-- Counted results packaged in the science-program repository: **30 / 30**
+- Experiment rounds in the central ledger: 41
+- Conservatively audited useful results: **33 / 100**
+- Counted results packaged in the science-program repository: **33 / 33**
 - Useful-result audit: `orchestration/useful-results-ledger.csv`
 - Active major work: SP-002 / DOC-2-098 R2 source/environment gate
-- Most recently closed: SP-009 / DOC-2-076 evolutionary-flexibility add-on, locked negative
+- Most recently closed: DOC-2-009 family-held-out reliability-map negative, DOC-2-019 RNA surrogate-detector negative, DOC-2-032 virtual-cell source-feasibility stop
 - Packaging lane: complete as of 2026-09-22; SP-001 confirmed under `projects/SP-001-model-agreement-instrument/`
 
 ## Counting rule
