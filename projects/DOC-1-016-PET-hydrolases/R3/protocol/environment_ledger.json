@@ -1,0 +1,32 @@
+{
+ "tools": {
+  "foldseek": {
+   "version": "10-941cd33",
+   "commit": "941cd33ff0771cd2e3f144e3293e22a2b87e9fda",
+   "local": true
+  },
+  "biopython": {
+   "version": "1.88"
+  },
+  "python": {
+   "version": "3.10"
+  },
+  "ESMFold": {
+   "endpoint": "https://api.esmatlas.com/foldSequence/v1/pdb/",
+   "accessed": "2026-09-22",
+   "model": "ESMFold v1 (Meta AI), API-served"
+  },
+  "requests": {
+   "note": "HTTP client"
+  }
+ },
+ "databases": {
+  "RCSB PDB": "live, 2026-09-22",
+  "UniProtKB": "live, 2026-09-22",
+  "PubMed": "live, 2026-09-22"
+ },
+ "compute_ceilings": [
+  "No local structure prediction attempted (ESMFold model weights not installable in sandbox; API used instead - recorded as compute ceiling)",
+  "ESM Metagenomic Atlas fetchPredictedStructure endpoint returned 403; ESMFold foldSequence endpoint used for all 20 (recorded)"
+ ]
+}

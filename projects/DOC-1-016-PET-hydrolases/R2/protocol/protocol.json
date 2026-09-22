@@ -1,0 +1,45 @@
+{
+ "protocol_version": "SP-003-R2-v1",
+ "locked_at": "2026-09-21T21:35:00.808153+05:30",
+ "project": "SP-003 Round 2 (DOC-1-016, continued): deep orthogonal validation of the 468 Round-1 PET-hydrolase candidates",
+ "source_topic": "DOC-1-016 round 2, assigned by orchestrator via parent 2026-09-21 ~21:33 IST; user mandate: depth over breadth, multi-round 12-human-month projects",
+ "question": "Which of the 468 Round-1 MGnify PET-hydrolase candidates survive orthogonal domain, catalytic-residue, structure, provenance and false-positive scrutiny, and which 20 form an experimental-ready prioritized shortlist?",
+ "inherits_from": {
+  "round1_project_dir": "projects/SP-003-pet-hydrolase-metagenome-mining",
+  "round1_candidates": "results/candidates_filtered.csv (468, gate-locked 2026-09-21)",
+  "round1_reference_set": "data/processed/reference_set_final.json (16 live-verified PET hydrolases)"
+ },
+ "grounding_evidence_pre_lock": {
+  "uniprot_A0A0K8P6T7_features": "IsPETase ACT_SITE Ser160 (nucleophile), Asp206, His237 (charge relay); signal peptide 1-27; retrieved live 2026-09-21, SHA recorded in data/raw/grounding/",
+  "pfam_family": "PF12740 (PETase) is the UniProt-recorded Pfam xref for IsPETase; hmmscan-vs-pfam live test on the mature IsPETase sequence returned PF12740.14 as top hit E=4.46e-130, job 02f0db55-c057-4ce5-9d29-9a7f5f8f65a4, 2026-09-21",
+  "annotation_route": "EBI HMMER API hmmscan database=pfam, reachable from sandbox",
+  "structure_route": "RCSB search API (reused from Round 1, confirmed reachable)",
+  "provenance_route": "MGnify study metadata via EBI HMMER /result pages (hit-level studies) and/or MGnify API; must be validated on >= 5 sample MGYP accessions BEFORE bulk retrieval; if unreachable, G5 is reported INCOMPLETE, not relaxed"
+ },
+ "analysis_plan": {
+  "R2A_domain": "hmmscan vs Pfam-A for all 468 candidates; record all domains with E<=1e-3; domain coherence = PF12740 present as best-E domain",
+  "R2A_triad": "global pairwise alignment of each candidate to IsPETase mature sequence; catalytic triad intact iff residues aligned to IsPETase S160/D206/H237 are Ser/Asp/His respectively",
+  "R2A_structure": "extend Round-1 RCSB template check (top-50) to the top-150 by Round-1 min E-value; template E<=1e-10, coverage>=60%",
+  "R2B_provenance": "resolve each candidate to MGnify study/biome metadata; report biome distribution",
+  "R2C_false_positive": [
+   "redundancy: greedy 90%-identity clustering (kmer prefilter + pairwise confirm); cluster count reported",
+   "anti-panel: phmmer of all 468 vs decoy panel of 8 live-verified non-PET esterases/lipases (built live at execution with same retrieval discipline as Round 1); a candidate is flagged if its best anti-panel E is within 10x of its best reference E; flagged candidates are excluded from the shortlist and reported",
+   "length sanity: 200-600 aa window on retained candidates (matches characterized PETase mature+signal range)"
+  ],
+  "R2D_shortlist": "composite score over retained candidates: novelty tier (<30/<40%), Round-1 min E, PF12740 coherence, triad intact, RCSB template quality, biome diversity, thermostability proxies (aliphatic index, Cys>=2); exactly 20 with per-candidate rationale cards and full provenance"
+ },
+ "success_gate": {
+  "all_required": [
+   "G1: pre-execution grounding verified live - IsPETase ACT_SITE (S160/D206/H237) + PF12740 xref retrieved live, hmmscan-vs-pfam route validated end-to-end (met at lock time, evidence in grounding_evidence_pre_lock); provenance route validated on >=5 samples before bulk run",
+   "G2: hmmscan annotation succeeds for >= 90% of the 468 candidates (coverage floor; failures enumerated)",
+   "G3: >= 60% of annotated candidates have PF12740 as best-E domain (domain coherence)",
+   "G4: >= 200 candidates have the intact catalytic triad S-D-H at IsPETase-aligned positions",
+   "G5: >= 150 candidates resolve to >= 1 MGnify study/biome; biome distribution reported",
+   "G6: redundancy clustering reported; anti-panel flag rate reported and < 20%",
+   "G7: shortlist of exactly 20 delivered; every shortlisted candidate has triad intact, PF12740 coherence, not anti-panel flagged, and (RCSB template E<=1e-10 with >=60% coverage OR a documented exception); >= 10 of 20 at <40% identity to every reference"
+  ]
+ },
+ "failure_policy": "all gates independent and reported; negatives preserved verbatim; no gate text modified after lock; INCOMPLETE != FAIL",
+ "leakage_controls": "gate locked before any candidate-level Round-2 result is inspected; Round-1 rankings used only for stage ordering, never as evidence",
+ "provenance": "every live retrieval logged (url, timestamp, sha256) in results/r2_provenance_ledger.jsonl"
+}

@@ -1,0 +1,93 @@
+{
+ "calibration_constants": {
+  "nucleophile_elbow": "candidate Ser must sit in G-x-S-x-G (candidate[S-2]=='G' and candidate[S+2]=='G'); all 4 ACT_SITE-grounded positives match (GWSMG, GYSMG, GHSQG, GYSMG)",
+  "register_spacings": {
+   "D->H refs": [
+    31,
+    32,
+    13,
+    32
+   ],
+   "D->H window": [
+    10,
+    36
+   ],
+   "S->D refs": [
+    46,
+    45,
+    55,
+    46
+   ],
+   "S->D window": [
+    40,
+    61
+   ],
+   "margin": "reference min/max expanded ~10% and rounded to integers"
+  },
+  "source": "computed from the reference panel BEFORE any candidate execution; recorded here, frozen by protocol lock",
+  "triad_cb_distance_bounds_A": {
+   "D-H": [
+    3.4,
+    6.0
+   ],
+   "S-D": [
+    6.7,
+    11.8
+   ],
+   "S-H": [
+    5.0,
+    8.7
+   ],
+   "derivation": "panel C-beta ranges S-D 8.96-9.41, S-H 6.66-6.94, D-H 4.55-4.79 (see results/panel_triad_geometry_calibration.json), expanded 25% both sides for predicted-structure noise"
+  }
+ },
+ "created_utc": "2026-09-21T19:57:59.290431Z",
+ "gates": {
+  "G1_grounding": ">=8 positive PET-hydrolase/cutinase structures + >=3 negative controls, all live-verified at RCSB (title + download sha256); ACT_SITE triads from live UniProt for >=4 positives. MET PRE-LOCK (8 pos, 3 neg, 4 ACT_SITE).",
+  "G2_structures": "ESMFold structures acquired for >=18/20 candidates (>=90%); every structure's per-residue pLDDT recorded; failures documented as exceptions.",
+  "G3_foldseek": ">=15/20 candidates pass leg C. Calibration leg: each positive-panel structure queried against the panel DB has a positive-panel non-self best hit.",
+  "G4_model": "Calibration holds: all 4 ACT_SITE-grounded positives pass legs A and B on their UniProt sequences/PDB structures; tannase (3WA6) and feruloyl esterase (1USW) each fail >=1 leg of A. THEN >=12/20 candidates pass A AND B AND C.",
+  "G5_provenance": "Every artifact (inputs, ESMFold PDBs, foldseek outputs, scoring tables) sha256-ledgered; pinned versions recorded (foldseek 941cd33, Biopython 1.88, ESMFold API endpoint + access date); all exceptions, negative results, and compute ceilings preserved in results JSONs; no post-lock gate edits."
+ },
+ "inputs": {
+  "reference_alignment": "IsPETase mature (A0A0K8P6T7 residues 27-290), same aligner family as R2 (Biopython pairwise global, BLOSUM62 -11/-1)",
+  "sequences": "data/processed/shortlist20.fasta (extracted from SP-003-R2 data/processed/candidates_468.fasta)",
+  "shortlist": "SP-003-R2 results/shortlist_20.csv (20 candidates, locked outcome of R2)"
+ },
+ "model_definition": {
+  "candidate_pass": "A AND B AND C",
+  "leg_A_sequence_register": "candidate-local triad positions from global alignment vs IsPETase mature; PASS if order S<D<H, S->D in [40,61], D->H in [10,36], G-x-S-x-G at Ser",
+  "leg_B_3d_geometry": "on ESMFold structure: C-beta distances within calibration bounds (all three) AND mean pLDDT over the three triad residues >= 50",
+  "leg_C_structural_family": "foldseek best hit by E-value is a positive-panel member with E <= 1e-3 AND alntmscore >= 0.5"
+ },
+ "notes": [
+  "PF07519 tannase/feruloyl-esterase family work stays a separate later study; here tannase/FAE serve only as adversarial negative controls.",
+  "No simulated data; all structure predictions and searches are real API/local-tool runs with recorded failures."
+ ],
+ "overall_pass_rule": "all of G1-G5",
+ "project": "SP-005 (PET hydrolases, DOC-1-016, Round 3)",
+ "reference_panel": {
+  "negatives": {
+   "1TCA": "C. antarctica lipase B",
+   "1USW": "A. niger feruloyl esterase A (O42807 S154 D215 H268)",
+   "3WA6": "L. plantarum tannase (B3Y018, no ACT_SITE)"
+  },
+  "positives": {
+   "1CUS": "F. vanettenii cutinase 1 (P00590 S136 D191 H204)",
+   "4EB0": "LCC (G9BY57 S165 D210 H242)",
+   "5XJH": "IsPETase WT (A0A0K8P6T7 S160 D206 H237)",
+   "5ZOA": "T. fusca cutinase cut2 (Q6A0I4 S170 D216 H248)",
+   "6EQE": "PETase high-res (same accession triad)",
+   "8ETX": "Ancestral PETase 55_547 (no UniProt cross-ref; foldseek only)",
+   "8ETY": "Ancestral PETase 35_442 (no UniProt cross-ref; foldseek only)",
+   "9LMU": "FAST-ACC variant A47E (same accession triad)"
+  }
+ },
+ "stages": {
+  "A_grounding": "DONE pre-lock: RCSB live search + entry titles; UniProt ACT_SITE features; PubMed grounding; panel PDB downloads with sha256",
+  "B_structures": "ESMFold API (https://api.esmatlas.com/foldSequence/v1/pdb/) per candidate; pLDDT per residue recorded; failures retried <=3 then recorded as exceptions",
+  "C_foldseek": "local foldseek 941cd33 easy-search, candidates + panel-vs-panel calibration vs panel DB; output alntmscore + evalue",
+  "D_model": "register-aware catalytic-motif model, legs A/B/C below, scored per candidate"
+ },
+ "title": "Structure-aware validation of the 20-candidate PET-hydrolase shortlist and a register-aware catalytic-motif model"
+}

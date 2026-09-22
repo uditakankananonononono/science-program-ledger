@@ -1,0 +1,34 @@
+{
+ "protocol_sha256": "f665fc0da55e4b0e6317fa9a31a27191dffa17f609ad4009328f8ab15ce077e6",
+ "locked_at": "2026-09-21T21:35:00.808153+05:30",
+ "gate_text": [
+  "G1: pre-execution grounding verified live - IsPETase ACT_SITE (S160/D206/H237) + PF12740 xref retrieved live, hmmscan-vs-pfam route validated end-to-end (met at lock time, evidence in grounding_evidence_pre_lock); provenance route validated on >=5 samples before bulk run",
+  "G2: hmmscan annotation succeeds for >= 90% of the 468 candidates (coverage floor; failures enumerated)",
+  "G3: >= 60% of annotated candidates have PF12740 as best-E domain (domain coherence)",
+  "G4: >= 200 candidates have the intact catalytic triad S-D-H at IsPETase-aligned positions",
+  "G5: >= 150 candidates resolve to >= 1 MGnify study/biome; biome distribution reported",
+  "G6: redundancy clustering reported; anti-panel flag rate reported and < 20%",
+  "G7: shortlist of exactly 20 delivered; every shortlisted candidate has triad intact, PF12740 coherence, not anti-panel flagged, and (RCSB template E<=1e-10 with >=60% coverage OR a documented exception); >= 10 of 20 at <40% identity to every reference"
+ ],
+ "metrics": {
+  "hmmscan_annotated": 468,
+  "pf12740_best": 133,
+  "triad_intact": 45,
+  "provenance_resolved": 468,
+  "provenance_metadata": 468,
+  "distinct_studies": 141,
+  "clusters": 468,
+  "antipanel_flag_rate": 0.0
+ },
+ "checks": {
+  "G1": true,
+  "G2": true,
+  "G3": false,
+  "G4": false,
+  "G5": true,
+  "G6": true,
+  "G7": true
+ },
+ "overall": "FAIL",
+ "note": "G4 locked threshold 200 not met (45/468 intact) - preserved negative, see report"
+}

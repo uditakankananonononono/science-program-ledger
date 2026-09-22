@@ -1,0 +1,13 @@
+{
+ "purpose": "Execution environment for SP-003 Round 2. Non-gate execution detail; gate text lives only in protocol.json (sha256 f665fc0da55e4b0e6317fa9a31a27191dffa17f609ad4009328f8ab15ce077e6), locked 2026-09-21T21:35 IST. User mandate folded in: use open-source local tools where feasible, versions/parameters/db releases pinned; tool count is not evidence, compute ceilings are preserved failures.",
+ "captured_utc": "2026-09-21T21:36:00+05:30",
+ "local_tools": {
+  "mmseqs2": {"version": "18-8cc5c", "binary_sha256": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f", "archive_sha256": "bd9b0234da5949ad528d5b5f9ea4cda9c1e23dce14b46c0791d4d919a76e61ce", "source": "https://github.com/soedinglab/MMseqs2/releases/download/18-8cc5c/mmseqs-linux-avx2.tar.gz", "use": "G6 redundancy clustering: mmseqs easy-cluster --min-seq-id 0.9 -c 0.8 --cov-mode 1 (90% identity, 80% coverage, per locked G6)"},
+  "diamond": {"version": "2.1.13", "archive_sha256": "78b28a98088a0e01675fefca8e6248ab7801f779a22e15a12ff9e3881b8dd38a", "source": "https://github.com/bbuchfink/diamond/releases/download/v2.1.13/diamond-linux64.tar.gz", "use": "local cross-check of anti-panel screening (blastp --very-sensitive, evalue 1e-5) alongside protocol-locked phmmer route"},
+  "foldseek": {"version": "10-941cd33", "binary_sha256": "941cd33ff0771cd2e3f144e3293e22a2b87e9fda", "archive_sha256": "e6a3e3860e76b0b7b858736f627fe680d4d7f0fc7298301d8a92b9f711d74ac7", "source": "https://github.com/steineggerlab/foldseek/releases/download/10-941cd33/foldseek-linux-avx2.tar.gz", "status": "installed, NOT APPLICABLE unless candidate structures are predicted; no local structure-prediction capacity in sandbox (compute ceiling, recorded as preserved failure if invoked)"},
+  "hmmer_local": {"status": "NOT INSTALLABLE: no root in sandbox, apt blocked; source build not attempted to avoid unpinned toolchains", "fallback": "EBI HMMER API (protocol-locked route, already validated end-to-end)"}
+ },
+ "python": {"version": "3.10.12", "biopython": "1.88", "numpy": "2.2.6"},
+ "remote_services": {"ebi_hmmer_api": "https://www.ebi.ac.uk/Tools/hmmer/api/v1 (hmmscan db=pfam, phmmer db=uniprot/mgnify30_c2)", "uniprot_rest": "https://rest.uniprot.org/uniprotkb/", "rcsb_search": "RCSB search API (Round-1 route)"},
+ "os": "Linux 6.1.158+ x86_64"
+}

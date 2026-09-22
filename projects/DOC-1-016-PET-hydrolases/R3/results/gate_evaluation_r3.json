@@ -1,0 +1,30 @@
+{
+ "overall_pass": true,
+ "gates": {
+  "G1_grounding": {
+   "pass": true,
+   "detail": "8 positive PET-hydrolase/cutinase structures (5XJH,6EQE,9LMU,4EB0,1CUS,5ZOA,8ETX,8ETY) + 3 negatives (3WA6 tannase, 1USW FaeA, 1TCA lipase B), all live-verified at RCSB; ACT_SITE triads from live UniProt for 4 positives; met pre-lock."
+  },
+  "G2_structures": {
+   "pass": true,
+   "detail": "ESMFold structures for 20/20 candidates (>=18 required); per-residue pLDDT recorded (results/plddt_summary.json); no failures.",
+   "n": 20
+  },
+  "G3_foldseek": {
+   "pass": true,
+   "detail": "20/20 candidates pass leg C (best hit positive-panel, E<=1e-3, alntmscore>=0.5; actual TM range 0.843-0.973, E<=6.8e-13). Calibration: all 8 positive-panel queries have positive-panel non-self best hits. LIMITATION PRESERVED: all 3 negative controls also cross-hit positives at fold level (3WA6->5XJH E=2.8e-5 TM=0.576; 1TCA_A->9LMU E=7.0e-8 TM=0.537; 1USW_A->9LMU E=5.1e-4 TM=0.434) - fold-level search cannot distinguish alpha/beta-hydrolase families; discrimination is carried by register legs A/B.",
+   "n_legC": 20
+  },
+  "G4_model": {
+   "pass": true,
+   "detail": "Calibration: all 4 ACT_SITE-grounded positives pass legs A and B (panel PDB geometry in bounds; pLDDT clause applies to predicted structures only - documented interpretation for experimental structures); negatives fail >=1 leg A (B3Y018 no triad; O42807 D->H=53 outside [10,36]). Candidates: 19/20 pass A^B^C (>=12 required). Single failure MGYP001374132912 preserved: leg A fail (H237 register -> A, D_H=71) + leg B fail (S-H 18.78 A, D-H 13.75 A, triad pLDDT 58.7); its fold is intact (leg C pass, TM 0.928 to 5XJH) but the catalytic register/geometry is disrupted - exactly the failure mode the register-aware model was built to catch. NOTE: R2's triad check scored this candidate triad_intact=True; R3's register-aware scoring overrides on structure-grade evidence.",
+   "n_model_pass": 19
+  },
+  "G5_provenance": {
+   "pass": true,
+   "detail": "sha256 ledger over all artifacts below; pinned versions: foldseek 10-941cd33 (941cd33ff0771cd2e3f144e3293e22a2b87e9fda), Biopython 1.88, ESMFold API api.esmatlas.com/foldSequence/v1/pdb (accessed 2026-09-22); all exceptions and negatives preserved in results JSONs; no post-lock gate edits (protocol sha256 d8491fa9a411fefbb4a688d385ae713d0c68cd9c141c51c5d3011da7548a5fcd)."
+  }
+ },
+ "unit_documentation": "ESMFold API returns pLDDT in B-factor column on 0-1 scale; multiplied by 100 for the locked '>=50' threshold which is on the conventional 0-100 pLDDT scale. Unit normalization only; gate text unmodified.",
+ "evaluated_utc": "2026-09-21T20:18:33.467621Z"
+}

@@ -1,0 +1,827 @@
+{
+ "n_eligible": 41,
+ "ref_median_aliphatic_index": 78.04999853762686,
+ "scoring": "2*novelty + 1*(E-tier) + 1.5*template_coverage + 0.5*thermo_proxy + 0.3*min(n_studies,3); greedy biome-diversity pick",
+ "shortlist": [
+  {
+   "accession": "MGYP003583961369",
+   "score": 4.254,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.3324,
+   "min_evalue": 3.74e-58,
+   "length": 347,
+   "aliphatic_index": 82.22,
+   "cys": 6,
+   "rcsb_template": "8SPK_1",
+   "template_coverage": 0.746,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP131768"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJEB27054 data set (Global surveillance of antimicrobial resistance)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 3.5895432900790575e-86
+    },
+    {
+     "acc": "PF00561.26",
+     "evalue": 0.00023926594691118787
+    },
+    {
+     "acc": "PF00326.27",
+     "evalue": 0.0005691296232977848
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP006180250121",
+   "score": 3.701,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2901,
+   "min_evalue": 5.89e-42,
+   "length": 254,
+   "aliphatic_index": 84.61,
+   "cys": 2,
+   "rcsb_template": "8CRU_1",
+   "template_coverage": 0.654,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP137364"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJEB49834 data set (The occurrence, prevalence and fate of antibiotic resistant genes and microbial community in Ili river)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 7.661981167931508e-58
+    },
+    {
+     "acc": "PF00392.27",
+     "evalue": 1.9218967515195165e-12
+    },
+    {
+     "acc": "PF03403.19",
+     "evalue": 1.5782076803850954e-05
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP009564209523",
+   "score": 3.688,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2733,
+   "min_evalue": 1.17e-32,
+   "length": 329,
+   "aliphatic_index": 89.88,
+   "cys": 9,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.623,
+   "template_identity": 0.58,
+   "structure_exception": false,
+   "studies": [
+    "ERP129541"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJNA385854 data set (Marine metagenomes from the bioGEOTRACES project)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 2.6465700017297173e-45
+    },
+    {
+     "acc": "PF00155.27",
+     "evalue": 2.3373121904786503e-24
+    },
+    {
+     "acc": "PF01053.26",
+     "evalue": 2.4486054337753832e-05
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP007972262301",
+   "score": 3.671,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.3342,
+   "min_evalue": 1.96e-58,
+   "length": 348,
+   "aliphatic_index": 71.84,
+   "cys": 5,
+   "rcsb_template": "9XV6_1",
+   "template_coverage": 0.693,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP157538"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJNA679917 data set (Maize phylloplane metagenome)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 2.0991008787809097e-76
+    },
+    {
+     "acc": "PF00652.28",
+     "evalue": 1.9499883041370505e-11
+    },
+    {
+     "acc": "PF14200.12",
+     "evalue": 2.678936619225924e-11
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP003315078671",
+   "score": 3.66,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2707,
+   "min_evalue": 5.75e-33,
+   "length": 361,
+   "aliphatic_index": 85.15,
+   "cys": 11,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.601,
+   "template_identity": 0.581,
+   "structure_exception": false,
+   "studies": [
+    "ERP129541"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJNA385854 data set (Marine metagenomes from the bioGEOTRACES project)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 6.352321444108961e-48
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP007796739029",
+   "score": 3.647,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2997,
+   "min_evalue": 6.33e-55,
+   "length": 252,
+   "aliphatic_index": 74.05,
+   "cys": 1,
+   "rcsb_template": "8ETY_1",
+   "template_coverage": 0.631,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP156641"
+   ],
+   "study_names": [
+    "Characterisation of Microbial Diversity in a soil with Fusarium graminearum"
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 2.043520030320568e-66
+    },
+    {
+     "acc": "PF12146.15",
+     "evalue": 2.3083533653243922e-05
+    },
+    {
+     "acc": "PF12695.13",
+     "evalue": 0.0001366746215066858
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP001150387879",
+   "score": 3.574,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2012,
+   "min_evalue": 5.99e-19,
+   "length": 305,
+   "aliphatic_index": 96.23,
+   "cys": 4,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.784,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP111853"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of the Estuarine microbial communities from the Columbia River estuary - Ebb tide ETM metaG S.759 metagenome (marine metagenome) data set."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 1.516766105567473e-27
+    },
+    {
+     "acc": "PF18962.6",
+     "evalue": 1.9781528626094762e-11
+    },
+    {
+     "acc": "PF07195.17",
+     "evalue": 5.316323830789502e-10
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP006138304577",
+   "score": 3.533,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.3836,
+   "min_evalue": 1.61e-73,
+   "length": 363,
+   "aliphatic_index": 63.64,
+   "cys": 4,
+   "rcsb_template": "8IAN_1",
+   "template_coverage": 0.667,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP137364"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJEB49834 data set (The occurrence, prevalence and fate of antibiotic resistant genes and microbial community in Ili river)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 1.5834578638923843e-95
+    },
+    {
+     "acc": "PF03403.19",
+     "evalue": 6.416561471177932e-06
+    },
+    {
+     "acc": "PF12146.15",
+     "evalue": 7.0743651683509675e-06
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP006353020955",
+   "score": 3.431,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.4476,
+   "min_evalue": 5.11e-92,
+   "length": 339,
+   "aliphatic_index": 77.55,
+   "cys": 0,
+   "rcsb_template": "9QNM_1",
+   "template_coverage": 0.684,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP129176"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJEB34634 data set (Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 3.1482799971794647e-102
+    },
+    {
+     "acc": "PF12146.15",
+     "evalue": 6.891414455417459e-08
+    },
+    {
+     "acc": "PF01738.24",
+     "evalue": 2.414678868638343e-06
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP007531750528",
+   "score": 3.427,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.4067,
+   "min_evalue": 9.73e-82,
+   "length": 357,
+   "aliphatic_index": 73.56,
+   "cys": 4,
+   "rcsb_template": "8ETX_1",
+   "template_coverage": 0.627,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP157561"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJNA789701 data set (Taxonomic and functional diversity of rhizosphere microbiome recruited from compost synergistically determined by plant species and compost)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 5.756982590656968e-100
+    },
+    {
+     "acc": "PF03403.19",
+     "evalue": 5.233447864805911e-05
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP000928167295",
+   "score": 3.189,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2923,
+   "min_evalue": 1.07e-44,
+   "length": 342,
+   "aliphatic_index": 71.37,
+   "cys": 1,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.649,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP111192"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of the Marine microbial communities from the Southern Atlantic ocean transect to study dissolved organic matter and carbon cycling - Knorr_S7_td_250_ad_252m_LV_B metagenome (marine metagenome) data set."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 4.77489975611255e-59
+    },
+    {
+     "acc": "PF00326.27",
+     "evalue": 0.00030930247917401423
+    },
+    {
+     "acc": "PF00561.26",
+     "evalue": 0.00032629746750927643
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP008163862480",
+   "score": 3.114,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.3831,
+   "min_evalue": 5.53e-46,
+   "length": 214,
+   "aliphatic_index": 73.83,
+   "cys": 2,
+   "rcsb_template": "9PM2_1",
+   "template_coverage": 0.72,
+   "template_identity": null,
+   "structure_exception": false,
+   "studies": [
+    "ERP157462"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJNA780648 data set (Soil microbial gene expression in an agricultural ecosystem varies with time and neonicotinoid seed treatments)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 3.4257030509060334e-59
+    },
+    {
+     "acc": "PF03403.19",
+     "evalue": 8.77600220968423e-06
+    },
+    {
+     "acc": "PF00326.27",
+     "evalue": 8.887469138555477e-06
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": true
+  },
+  {
+   "accession": "MGYP008810575020",
+   "score": 3.594,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2746,
+   "min_evalue": 1.44e-37,
+   "length": 384,
+   "aliphatic_index": 90.7,
+   "cys": 4,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.562,
+   "template_identity": 0.528,
+   "structure_exception": true,
+   "studies": [
+    "ERP137177"
+   ],
+   "study_names": [
+    "Malaspina Expedition 2010 Microbial Vertical Profiles Metagenomes"
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 2.8132699042176695e-54
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=7PZJ_1, best_cov=0.562)"
+  },
+  {
+   "accession": "MGYP001374132912",
+   "score": 3.573,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2225,
+   "min_evalue": 9.11e-25,
+   "length": 374,
+   "aliphatic_index": 81.55,
+   "cys": 2,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.479,
+   "template_identity": 0.52,
+   "structure_exception": true,
+   "studies": [
+    "ERP104174"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of the Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for  prokaryotes. (APY) data set"
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 7.625438352206242e-41
+    },
+    {
+     "acc": "PF00561.26",
+     "evalue": 6.622955090432942e-05
+    },
+    {
+     "acc": "PF12695.13",
+     "evalue": 0.00014402596021846823
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=7PZJ_1, best_cov=0.479)"
+  },
+  {
+   "accession": "MGYP006196239677",
+   "score": 3.428,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.3178,
+   "min_evalue": 3.27e-58,
+   "length": 342,
+   "aliphatic_index": 90.06,
+   "cys": 1,
+   "rcsb_template": "7OSB_1",
+   "template_coverage": 0.509,
+   "template_identity": null,
+   "structure_exception": true,
+   "studies": [
+    "ERP137364"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJEB49834 data set (The occurrence, prevalence and fate of antibiotic resistant genes and microbial community in Ili river)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 4.589081814952549e-73
+    },
+    {
+     "acc": "PF12146.15",
+     "evalue": 6.378508165793678e-07
+    },
+    {
+     "acc": "PF12695.13",
+     "evalue": 1.8788344240105113e-06
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=7OSB_1, best_cov=0.509)"
+  },
+  {
+   "accession": "MGYP006182106587",
+   "score": 3.333,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.4157,
+   "min_evalue": 4.22e-52,
+   "length": 224,
+   "aliphatic_index": 70.13,
+   "cys": 6,
+   "rcsb_template": "8ETY_1",
+   "template_coverage": 0.576,
+   "template_identity": null,
+   "structure_exception": true,
+   "studies": [
+    "ERP137364"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJEB49834 data set (The occurrence, prevalence and fate of antibiotic resistant genes and microbial community in Ili river)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 8.282211265115459e-57
+    },
+    {
+     "acc": "PF12146.15",
+     "evalue": 3.669624060641548e-05
+    },
+    {
+     "acc": "PF00756.26",
+     "evalue": 6.552306420542937e-05
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=8ETY_1, best_cov=0.576)"
+  },
+  {
+   "accession": "MGYP009079907039",
+   "score": 3.269,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2049,
+   "min_evalue": 5.56e-20,
+   "length": 186,
+   "aliphatic_index": 79.78,
+   "cys": 2,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.586,
+   "template_identity": null,
+   "structure_exception": true,
+   "studies": [
+    "ERP117856"
+   ],
+   "study_names": [
+    "Baltic Sea metagenome assembly and MAG data sets: Coastal transect 2015 and LMO time series 2013-2014"
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 5.185307317809564e-27
+    },
+    {
+     "acc": "PF05448.18",
+     "evalue": 9.859494469395964e-05
+    },
+    {
+     "acc": "PF00561.26",
+     "evalue": 0.0007618626905147918
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=7PZJ_1, best_cov=0.586)"
+  },
+  {
+   "accession": "MGYP007820329685",
+   "score": 3.232,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.1937,
+   "min_evalue": 2.5e-15,
+   "length": 227,
+   "aliphatic_index": 94.01,
+   "cys": 4,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.546,
+   "template_identity": null,
+   "structure_exception": true,
+   "studies": [
+    "ERP135767"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJEB1788 data set (Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for  large DNA viruses)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 1.2611813556963204e-20
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=7PZJ_1, best_cov=0.546)"
+  },
+  {
+   "accession": "MGYP006223362551",
+   "score": 3.214,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.2401,
+   "min_evalue": 3.51e-25,
+   "length": 267,
+   "aliphatic_index": 91.35,
+   "cys": 1,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.596,
+   "template_identity": 0.453,
+   "structure_exception": true,
+   "studies": [
+    "ERP134737"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJNA656268 data set (Bio-GO-SHIP: Global marine 'omics studies of repeat hydrography transects)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 1.8739239252266796e-37
+    },
+    {
+     "acc": "PF00561.26",
+     "evalue": 6.316697301400941e-07
+    },
+    {
+     "acc": "PF12695.13",
+     "evalue": 6.754285406327734e-07
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=7PZJ_1, best_cov=0.596)"
+  },
+  {
+   "accession": "MGYP008118803533",
+   "score": 3.194,
+   "triad_intact": true,
+   "pf12740_best": true,
+   "antipanel_flagged": false,
+   "max_ref_identity": 0.1706,
+   "min_evalue": 8.16e-16,
+   "length": 300,
+   "aliphatic_index": 88.17,
+   "cys": 3,
+   "rcsb_template": "7PZJ_1",
+   "template_coverage": 0.49,
+   "template_identity": null,
+   "structure_exception": true,
+   "studies": [
+    "ERP136199"
+   ],
+   "study_names": [
+    "EMG produced TPA metagenomics assembly of PRJNA340003 data set (Metagenomic reconstruction of bacterioplankton community metabolism in the northern Gulf of Mexico Dead Zone)."
+   ],
+   "pfam_hits": [
+    {
+     "acc": "PF12740.14",
+     "evalue": 1.5361209186419963e-27
+    },
+    {
+     "acc": "PF00873.25",
+     "evalue": 3.3029364611840745e-05
+    },
+    {
+     "acc": "PF00561.26",
+     "evalue": 0.0004567176831116697
+    }
+   ],
+   "aligned_residues": {
+    "S160": "S",
+    "D206": "D",
+    "H237": "H"
+   },
+   "template_pass": false,
+   "exception_reason": "no RCSB template at E<=1e-10 with >=60% coverage (hits=7PZJ_1, best_cov=0.49)"
+  }
+ ]
+}
