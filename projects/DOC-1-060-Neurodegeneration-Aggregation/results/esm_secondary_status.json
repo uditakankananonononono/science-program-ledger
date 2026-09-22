@@ -1,0 +1,7 @@
+{
+  "status": "not_completed",
+  "reason": "Two deterministic CPU-only embedding runs exceeded the 120-second execution ceiling before producing an output artifact.",
+  "impact": "The ESM-2 analysis was prespecified as secondary and cannot rescue the primary aggregation-feature gate. The primary experiment and its negative result are complete.",
+  "attempts": ["unbatched per-protein pooling", "length-sorted padded batching"],
+  "fabricated_or_partial_embeddings_used": false
+}

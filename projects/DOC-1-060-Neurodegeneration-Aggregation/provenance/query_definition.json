@@ -1,0 +1,16 @@
+{
+  "positive": "reviewed:true AND organism_id:9606 AND length:[50 TO 1200] AND (cc_disease:\"Alzheimer\" OR cc_disease:\"Parkinson\" OR cc_disease:\"Huntington\" OR cc_disease:\"amyotrophic lateral sclerosis\" OR cc_disease:\"frontotemporal dementia\" OR cc_disease:\"prion disease\" OR cc_disease:\"spinocerebellar ataxia\" OR cc_disease:\"neurodegeneration\" OR cc_disease:\"neurodegenerative\")",
+  "negative": "reviewed:true AND organism_id:9606 AND length:[50 TO 1200] NOT cc_disease:*",
+  "phrases": [
+    "Alzheimer",
+    "Parkinson",
+    "Huntington",
+    "amyotrophic lateral sclerosis",
+    "frontotemporal dementia",
+    "prion disease",
+    "spinocerebellar ataxia",
+    "neurodegeneration",
+    "neurodegenerative"
+  ],
+  "fields": "accession,id,protein_name,length,sequence,cc_disease"
+}
