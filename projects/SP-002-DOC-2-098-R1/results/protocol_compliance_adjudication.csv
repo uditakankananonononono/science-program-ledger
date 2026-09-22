@@ -1,0 +1,7 @@
+gate,status,reason
+G1,NOT_DEMONSTRATED,"Observed rho exceeded 0.60, but the reported bootstrap resampled configurations within domains, not the protocol-specified independent patient/study/subject units."
+G2,NOT_DEMONSTRATED,"Two domains had point optimism >=0.05, but no paired unit-level inferential contrasts or Holm-adjusted p-values were computed."
+G3,FAIL,Leave-domain-out sensitivity 0.571 < 0.80; specificity 0.833.
+G4,FAIL,"Full AUROC 0.845; prevalence and calibration ablations were higher (0.929, 0.940)."
+G5,NOT_DEMONSTRATED,"Overlap and duplicate-injection checks passed, but the implemented permutation test did not execute all prespecified label-shuffle, random-group, and held-out batch-indicator controls as written."
+G6,NOT_DEMONSTRATED,The gate calculator reproduced semantic JSON exactly; a clean end-to-end rerun from source data was not executed.

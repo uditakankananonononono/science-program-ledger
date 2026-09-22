@@ -1,0 +1,32 @@
+{
+  "rho": 0.7699248120300751,
+  "rho_p": 7.183540419814864e-05,
+  "rho_cluster_bootstrap_ci95": [
+    0.44422676208242945,
+    1.0
+  ],
+  "material_domains": 2,
+  "lodo_sensitivity": 0.5714285714285714,
+  "lodo_specificity": 0.8333333333333334,
+  "full_auc": 0.8452380952380952,
+  "ablated_auc": {
+    "dependence": 0.7380952380952381,
+    "feature_shift": 0.75,
+    "missingness": 0.8214285714285715,
+    "prevalence": 0.9285714285714286,
+    "calibration": 0.9404761904761905,
+    "subgroup": 0.7738095238095238
+  },
+  "gates": {
+    "G1_rho": true,
+    "G2_two_domains": true,
+    "G3_lodo_detection": false,
+    "G4_ablation_superiority": false,
+    "G5_controls": false,
+    "G6_reproducibility": false
+  },
+  "success": false,
+  "status": "NEGATIVE",
+  "paper_allowed": false,
+  "note": "Controls and clean rerun are pending; an all-required protocol cannot pass. Existing G4 also fails if any ablation is within 0.02."
+}

@@ -1,0 +1,9 @@
+    domain         model          split      mean      std  count
+    breast      logistic          naive  0.750837 0.014052      5
+    breast      logistic rigorous_group  0.632270 0.134615      5
+  diabetes      logistic          naive  0.647855 0.002770      3
+  diabetes      logistic rigorous_group  0.642406 0.007535      3
+parkinsons random_forest          naive  0.746195 0.016583      5
+parkinsons random_forest rigorous_group -0.450620 0.486856      6
+parkinsons         ridge          naive  0.089841 0.007495      5
+parkinsons         ridge rigorous_group -0.218989 0.225347      6

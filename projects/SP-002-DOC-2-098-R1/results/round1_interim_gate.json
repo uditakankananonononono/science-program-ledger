@@ -1,0 +1,38 @@
+{
+  "optimism": [
+    {
+      "domain": "breast",
+      "model": "logistic",
+      "naive": 0.7508365508365509,
+      "rigorous_group": 0.6322697639073165,
+      "optimism_delta": 0.11856678692923439
+    },
+    {
+      "domain": "diabetes",
+      "model": "logistic",
+      "naive": 0.6478554503441117,
+      "rigorous_group": 0.6424064297879809,
+      "optimism_delta": 0.005449020556130835
+    },
+    {
+      "domain": "parkinsons",
+      "model": "random_forest",
+      "naive": 0.7461945370460261,
+      "rigorous_group": -0.45062034121548317,
+      "optimism_delta": 1.1968148782615093
+    },
+    {
+      "domain": "parkinsons",
+      "model": "ridge",
+      "naive": 0.0898405536541105,
+      "rigorous_group": -0.21898850637742787,
+      "optimism_delta": 0.30882906003153837
+    }
+  ],
+  "domains_with_material_optimism": 2,
+  "composite_issued": false,
+  "dimensions_available": 1,
+  "dimensions_required": 5,
+  "scientific_gate_status": "FAIL_INCOMPLETE_AUDIT_DIMENSIONS",
+  "paper_allowed": false
+}

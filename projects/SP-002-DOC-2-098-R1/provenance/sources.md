@@ -1,0 +1,10 @@
+- **Guiding questions to avoid data leakage in biological machine learning applications | Nature Methods** | https://www.nature.com/articles/s41592-024-02362-y | date: 2024-08-09 | fetched: yes
+- **Data splitting to avoid information leakage with DataSAIL | Nature Communications** | https://www.nature.com/articles/s41467-025-58606-8 | date: 2026-02-13 | fetched: yes
+- **TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods | The BMJ** | https://www.bmj.com/content/385/bmj-2023-078378 | date: 2024-04-16 | fetched: yes
+- **PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods | The BMJ** | https://www.bmj.com/content/388/bmj-2024-082505 | date: 2025-03-24 | fetched: yes
+- **** | https://pmc.ncbi.nlm.nih.gov/articles/PMC7665161/ | date: not shown | fetched: no - NO_CONTENT_RETURNED
+- **** | https://pmc.ncbi.nlm.nih.gov/articles/PMC11702098/ | date: not shown | fetched: no - NO_CONTENT_RETURNED
+- **External Validation of Deep Learning Algorithms for Radiologic Diagnosis: A Systematic Review - PMC** | https://pmc.ncbi.nlm.nih.gov/articles/PMC9152694/ | date: not shown | fetched: yes
+- **** | https://pmc.ncbi.nlm.nih.gov/articles/PMC11080237/ | date: not shown | fetched: no - NO_CONTENT_RETURNED
+- **Batch normalization followed by merging is powerful for phenotype prediction integrating multiple heterogeneous studies | PLOS Computational Biology** | https://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1010608 | date: 2023-10-16 | fetched: yes
+- **Good Machine Learning Practice for Medical Device Development: Guiding Principles | FDA** | https://www.fda.gov/medical-devices/software-medical-device-samd/good-machine-learning-practice-medical-device-development-guiding-principles | date: not shown | fetched: yes

@@ -1,0 +1,17 @@
+SP-002 Round 1 environment ledger
+Generated: 2026-09-21 Asia/Calcutta
+OS: Linux-6.1.158+-x86_64-with-glibc2.35
+Python: 3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]
+R: R unavailable
+CPU count: 2
+Packages: numpy 2.2.6; pandas 2.3.3; scipy 1.15.3; scikit-learn 1.7.2; matplotlib 3.10.9
+Random seeds: 20260921 (gate/control bootstrap); model split/model seeds recorded in run_primary.py
+Primary commands:
+  Rscript experiment/code/export_breast.R
+  python3 experiment/code/extract_domains.py
+  python3 experiment/code/run_primary.py
+  python3 experiment/code/evaluate_round1.py
+  python3 experiment/code/build_audit_configs.py
+  python3 experiment/code/final_gate.py
+  python3 experiment/code/controls_and_repro.py
+  python3 experiment/code/make_round1_deliverable.py

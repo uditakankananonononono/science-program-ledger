@@ -1,0 +1,77 @@
+{
+  "project": "SP-002 Round 1: Universal Confounder Stress Test for Bio-AI",
+  "protocol_version": "1.0-frozen-before-outcome-modeling",
+  "frozen_at": "2026-09-21T21:42:20+05:30",
+  "scientific_question": "Can a model-agnostic audit score, computed from dependence, cohort shift, missingness reliance, prevalence sensitivity, subgroup instability, calibration drift, and feature shift, identify biomedical ML configurations whose naive validation materially overstates rigorous generalization?",
+  "domains": [
+    {
+      "id": "diabetes-readmission",
+      "source": "UCI Diabetes 130-US Hospitals",
+      "license": "CC BY 4.0 per UCI metadata",
+      "n_rows": 101766,
+      "unit": "unique patient_nbr",
+      "endpoint": "readmitted == <30",
+      "rigorous_evaluation": "patient-grouped outer evaluation plus forward encounter-order stress test",
+      "naive_evaluation": "stratified random row split",
+      "exclusions": ["discharge dispositions indicating death/hospice", "identifiers as predictors", "post-outcome fields"]
+    },
+    {
+      "id": "breast-pcr",
+      "source": "curatedBreastData full CC-BY Zenodo archive",
+      "license": "CC BY 4.0 archive; source studies cited individually",
+      "unit": "dbUniquePatientID",
+      "endpoint": "pathologic complete response pCR",
+      "cohorts": ["study_16446_GPL570_all", "study_20194_GPL96_all", "study_22226_GPL1708_all", "study_22358_GPL5325_all", "study_32646_GPL570_all"],
+      "cohort_sizes": [114, 261, 129, 122, 115],
+      "endpoint_positive_counts": [16, 55, 32, 20, 26],
+      "rigorous_evaluation": "leave-one-study-out on gene-symbol-collapsed common features; all selection/scaling/imputation learned in training studies",
+      "naive_evaluation": "pooled stratified random split ignoring study",
+      "invalid_diagnostic_arm": "pooled preprocessing/harmonization before split, labeled leakage demonstration only"
+    },
+    {
+      "id": "parkinsons-longitudinal",
+      "source": "UCI Parkinsons Telemonitoring",
+      "license": "CC BY 4.0 per UCI metadata",
+      "n_rows": 5875,
+      "n_subjects": 42,
+      "unit": "subject#",
+      "endpoint": "total_UPDRS regression",
+      "rigorous_evaluation": "leave-subjects-out and forward-within-subject time-block evaluation",
+      "naive_evaluation": "random row split",
+      "exclusions": ["motor_UPDRS from predictors due direct target overlap", "subject ID as predictor"]
+    }
+  ],
+  "model_families": ["prevalence_or_mean_only", "regularized_linear_or_logistic", "random_forest", "hist_gradient_boosting"],
+  "preprocessing_configurations": ["valid_train_only", "invalid_pooled_preprocessing_diagnostic", "missingness_indicators_ablation", "group_feature_ablation", "feature_shift_robust_subset"],
+  "audit_dimensions": {
+    "dependence_leakage": "overlap or similarity between train and evaluation units; repeated-unit detectability",
+    "group_cohort_delta": "naive minus group/study-aware performance",
+    "missingness_reliance": "performance and permutation reliance on missingness indicators plus shifted-missingness stress",
+    "prevalence_sensitivity": "metric/calibration change under fixed label-prevalence resampling grids",
+    "subgroup_instability": "worst-group minus overall performance for prespecified demographic/clinical groups with adequate n",
+    "calibration_drift": "absolute calibration slope/intercept and Brier/MAE change",
+    "feature_shift": "train-test multivariate shift summarized from univariate standardized distances and classifier two-sample test"
+  },
+  "audit_score": "Before evaluation, each dimension is min-max clipped to [0,1] using prespecified physical/statistical bounds in code; composite is their unweighted mean. Missing dimensions are reported and composite is not issued unless >=5/7 dimensions exist.",
+  "primary_outcome": "configuration-level optimism delta: naive validation performance minus rigorous external/group-aware performance; AUROC scale for classification, normalized RMSE improvement scale for regression",
+  "material_optimism": "delta >= 0.05 on the domain-normalized performance scale",
+  "evaluation_design": "Configurations are the objects of evaluation. Outer leave-one-domain-out calibration: score thresholds and any dimension bounds not physically fixed are learned on two domains and evaluated on the third. No evaluation configuration contributes to threshold fitting.",
+  "success_gate_all_required": [
+    "Across configurations, audit score Spearman rho with optimism delta >=0.60 and cluster-bootstrap 95% lower bound >0, clustering by domain and resampling independent units within domains",
+    "At least two of three domains show naive-versus-rigorous optimism delta >=0.05 with Holm-adjusted p<0.05 for at least one nontrivial model configuration",
+    "Leave-one-domain-out fixed-threshold detection of material optimism has sensitivity >=0.80 and specificity >=0.60 pooled across held-out domains",
+    "Full composite detector AUROC exceeds every single-dimension audit detector and every leave-one-dimension-out ablation by >=0.02 on average under leave-one-domain-out evaluation",
+    "All negative controls pass: shuffled labels produce no above-chance rigorous model performance; random group labels do not create systematic optimism; valid pipelines have zero detected unit overlap",
+    "A clean rerun reproduces every gate metric within absolute tolerance 1e-8 or documented deterministic-library tolerance <=1e-6"
+  ],
+  "negative_controls": ["label shuffle within independent units", "random group-label permutation", "duplicate-row injection positive test for detector", "held-out-only batch indicator negative test", "valid-pipeline unit-overlap assertion"],
+  "statistics": {
+    "independent_units": ["patient", "study", "subject"],
+    "uncertainty": "cluster/bootstrap at the domain-appropriate unit with 5000 replicates for final gates",
+    "multiple_testing": "Holm adjustment across primary domain/model contrasts",
+    "reporting": "effect sizes and confidence intervals mandatory; no gate by p-value alone"
+  },
+  "failure_policy": "Failure of any required success criterion makes Round 1 a negative result. Preserve all outputs and use them to select Round 2; no success paper.",
+  "environment_requirements": "Pin Python/R and all scientific package versions; record commands, database/archive checksums, CPU/RAM/time ceilings. Use scikit-learn, pandas, numpy, scipy, R/Biobase and mature open tooling rather than hand-rolled estimators.",
+  "commercial_product_test": "Separately evaluate a CLI/report generator for deterministic schema, corrupt-input rejection, missing-dimension behavior, runtime, memory, audit trace, and human-readable evidence dossier. Product acceptance cannot rescue a failed scientific gate."
+}
