@@ -55,3 +55,7 @@ Queue selection favors novel, falsifiable directions over incremental reruns. A 
 ## Discovery-grade ambition without claim inflation
 
 Queue selection should favor questions where a genuinely original biological or methodological finding is plausible and consequential. Ambition may reach discovery-grade science, but evidence controls the claim. Reports must say plainly when a result is confirmatory, incremental, non-novel, or negative. No award-level, field-changing, or breakthrough label is permitted without independent evidence that supports it. Quality outranks quota.
+
+## Fun in the question, serious in the method
+
+Queue selection should also favor experiments that are genuinely interesting to follow: surprising biological angles, playful but falsifiable hypotheses, and results whose story is worth reading even when negative. "Fun" never weakens the protocol. The question can be imaginative; the data provenance, controls, statistics, uncertainty, and claim boundaries remain strict.
