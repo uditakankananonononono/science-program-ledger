@@ -1,0 +1,30 @@
+{
+  "targets": {
+    "emergence": {
+      "events": 4671,
+      "best_feature": "variants_base",
+      "best_enrichment": 2.2194285634065793,
+      "precision_gain_pp": 36.929141725052716,
+      "pass": false,
+      "reason": "Outcome-specific model does not yet have condition-block CI and 20% improvement over a distinct baseline; abstain under locked rule."
+    },
+    "resolution": {
+      "events": 1920,
+      "best_feature": "variants_base",
+      "best_enrichment": 2.687113119693235,
+      "precision_gain_pp": 9.492606932982683,
+      "pass": false,
+      "reason": "Outcome-specific model does not yet have condition-block CI and 20% improvement over a distinct baseline; abstain under locked rule."
+    },
+    "upgrade": {
+      "events": 1467,
+      "best_feature": "p_base",
+      "best_enrichment": 2.3738751986284665,
+      "precision_gain_pp": 4.2583454814873445,
+      "pass": false,
+      "reason": "Outcome-specific model does not yet have condition-block CI and 20% improvement over a distinct baseline; abstain under locked rule."
+    }
+  },
+  "passed_targets": 0,
+  "predictive_triage_closed": true
+}

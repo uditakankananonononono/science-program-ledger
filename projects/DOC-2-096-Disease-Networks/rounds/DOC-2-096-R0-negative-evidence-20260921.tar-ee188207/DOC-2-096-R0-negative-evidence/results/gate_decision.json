@@ -1,0 +1,27 @@
+{
+  "conditions": {
+    "min_edges": true,
+    "min_contradictory": true,
+    "adjusted_instability_positive": true,
+    "replicates_two_sources": true,
+    "projection_change": true,
+    "high_review_preserved": true,
+    "negative_control_smaller": true
+  },
+  "summary": {
+    "edges": 581228,
+    "positive_edges": 49863,
+    "contradictory_edges": 55054,
+    "positive_contradictory": 40683,
+    "genes": 21608,
+    "conditions": 31819,
+    "high_burden_threshold": 0.557347670250896,
+    "projection_pairs": 368470,
+    "top_decile_change": 0.35764105625966836,
+    "high_review_neighbor_preservation": 0.8044740662531344,
+    "stratified_rd": 0.25222412077176737,
+    "replication_positive_strata": 4
+  },
+  "negative_control_accession_initial_sd": 0.18494156361078684,
+  "passed": true
+}

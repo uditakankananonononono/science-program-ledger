@@ -1,0 +1,1 @@
+R4 reuses checksum-frozen 2020->2023 and 2023->current ClinVar transition cohorts from R2. Original source: NCBI ClinVar archived and current tab-delimited releases, https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/archive/ . No new external sources.

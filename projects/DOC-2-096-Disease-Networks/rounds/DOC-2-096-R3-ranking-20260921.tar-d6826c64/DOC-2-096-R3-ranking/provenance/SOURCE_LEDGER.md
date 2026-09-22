@@ -1,0 +1,1 @@
+R3 reuses checksum-frozen transition cohorts from DOC-2-096 R2. Original sources are archived December 2020, December 2023 and current ClinVar tab-delimited releases from https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/archive/ and the current directory. No new external data were introduced.
