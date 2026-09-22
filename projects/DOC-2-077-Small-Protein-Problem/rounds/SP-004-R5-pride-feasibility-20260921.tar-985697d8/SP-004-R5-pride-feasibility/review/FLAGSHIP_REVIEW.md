@@ -1,0 +1,2 @@
+# Internal review
+R5 followed the orchestrator's feasibility-stop option. It locked peptide uniqueness, FDR, protein inference, opportunity and support requirements, then audited live PRIDE metadata. Because metadata could not establish all gates and processing would require a separately designed 100+ GB heterogeneous harmonization effort, it stopped before outcomes. This is a valid feasibility result, not a completed detection experiment or gate success.

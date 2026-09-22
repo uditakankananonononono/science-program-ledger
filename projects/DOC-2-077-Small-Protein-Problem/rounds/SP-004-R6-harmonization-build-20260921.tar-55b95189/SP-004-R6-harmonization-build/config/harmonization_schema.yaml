@@ -1,0 +1,12 @@
+version: 1
+primary_psm_fields: [study_id, run_id, spectrum_id, peptide_sequence, modified_sequence, charge, q_value, is_decoy, is_contaminant, protein_accessions]
+acceptance:
+  q_value_max: 0.01
+  decoy: false
+  contaminant: false
+  min_unique_peptides_per_protein: 2
+  peptide_length: [7, 35]
+protein_mapping:
+  canonical_only: true
+  shared_peptide_assignment: none
+required_provenance: [source_url, source_checksum, parser_version, search_engine, database_checksum, enzyme, missed_cleavages, fixed_modifications, variable_modifications, precursor_tolerance, fragment_tolerance]
