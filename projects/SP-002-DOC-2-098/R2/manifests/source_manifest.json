@@ -1,0 +1,73 @@
+{
+  "heart": {
+    "sites": {
+      "cleveland": {
+        "rows": 303,
+        "negative": 164,
+        "positive": 139,
+        "columns": 14
+      },
+      "hungarian": {
+        "rows": 294,
+        "negative": 188,
+        "positive": 106,
+        "columns": 14
+      },
+      "switzerland": {
+        "rows": 123,
+        "negative": 8,
+        "positive": 115,
+        "columns": 14
+      },
+      "long_beach_va": {
+        "rows": 200,
+        "negative": 51,
+        "positive": 149,
+        "columns": 14
+      }
+    },
+    "total_rows": 920,
+    "all_sites_both_classes": true,
+    "license": "CC BY 4.0 (UCI dataset page metadata)"
+  },
+  "har": {
+    "observations": 10299,
+    "subjects": 30,
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "per_class": {
+      "1": 1722,
+      "2": 1544,
+      "3": 1406,
+      "4": 1777,
+      "5": 1906,
+      "6": 1944
+    },
+    "license": "CC BY 4.0 (UCI dataset page metadata)"
+  },
+  "molhiv": {
+    "molecules": 41127,
+    "positives": 1443,
+    "negatives": 39684,
+    "distinct_scaffolds": 19083,
+    "invalid_smiles": 7,
+    "published_split": {
+      "train": 32901,
+      "valid": 4113,
+      "test": 4113
+    },
+    "release": "# Release note for ogbg-mol*\n\n### v1\n\nMay 4, 2020: First major release.",
+    "license": "MIT (OGB repository; dataset compiled from MoleculeNet)"
+  },
+  "gates": {
+    "heart": true,
+    "har": true,
+    "molhiv": true
+  }
+}
