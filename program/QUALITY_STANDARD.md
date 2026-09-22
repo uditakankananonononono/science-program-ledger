@@ -59,3 +59,24 @@ Queue selection should favor questions where a genuinely original biological or 
 ## Fun in the question, serious in the method
 
 Queue selection should also favor experiments that are genuinely interesting to follow: surprising biological angles, playful but falsifiable hypotheses, and results whose story is worth reading even when negative. "Fun" never weakens the protocol. The question can be imaginative; the data provenance, controls, statistics, uncertainty, and claim boundaries remain strict.
+
+## Sculpted project standard
+
+A useful result is a scientific finding, not a finished project. Every useful result must become a complete project package before graduation:
+
+1. **Neat approximately 20-page report.** A designed, readable report with abstract, question, novelty, literature and gap, methods, provenance, locked protocol, results, uncertainty, controls, failures/substitutions, biological interpretation, limits, ethics, application, next experiments, references, figures and appendices. Page count is a design target, never padding.
+2. **Research-paper-grade write-up.** A separate manuscript with title, abstract, introduction, related work, methods, results, discussion, data/code availability, author/contribution record, references and supplement. Claims must match the evidence.
+3. **Working tool or concrete application.** Build a tested reusable tool when the science supports one: CLI/package, reproducible workflow, interactive atlas, calibrated scoring/reporting service or decision-support interface. If a tool would overstate a negative result, deliver a concrete application angle instead: a failure detector, dataset audit, benchmark, monitoring rule or experimental-priority workflow. No mocked interface counts.
+4. **External-review kit.** Include a one-page abstract, clear poster/figure set, reproducibility notebook/log, limitations sheet and a question bank for expert review.
+5. **Cumulative project synthesis.** Integrate all positive, negative, contradictory and non-estimable rounds. Do not let the final positive result erase earlier failures.
+
+A result may count toward the 100-result metric once adjudicated, but a topic graduates only after this project package and the multi-round graduation standard are complete.
+
+## External quality references
+
+The program uses official public criteria as structural references, not as evidence of entry or prize-worthiness:
+
+- Regeneron STS evaluates original, independent work through a Research Report and PhD-level review, then public explanation and interviews: https://www.societyforscience.org/regeneron-sts/judging-and-awards/
+- ISEF emphasizes a clear testable contribution, well-defined controls, systematic and reproducible analysis, appropriate statistics, creativity, potential impact, limitations, independence and quality of future-research ideas: https://www.societyforscience.org/isef/grand-award/criteria/
+- Davidson Fellows uses expert judges and category-specific project evidence, with careful authorship and attribution requirements: https://www.davidsongifted.org/gifted-programs/fellows-scholarship/eligibility/how-to-apply/
+- Nobel-level ambition is interpreted only as a long-range discovery standard. The official medicine criteria center discoveries of major importance that change scientific paradigms and benefit humankind; the program never labels its own work Nobel-level without extraordinary independent evidence: https://www.nobelprize.org/nomination/medicine/
