@@ -1,0 +1,30 @@
+{
+  "events": {
+    "development": 5132,
+    "replication": 6062
+  },
+  "brier_improvement": {
+    "2020_to_2023": 0.04497488078443319,
+    "2023_to_current": -0.0015971758265787128
+  },
+  "replication_calibration_slope": 0.13178979186648165,
+  "negative_controls": [
+    {
+      "control": "within_source_label_permutation",
+      "mean_enrichment": 1.0000938191135078,
+      "loss_fraction": 0.19095275590551186
+    },
+    {
+      "control": "ontology_label_randomization",
+      "mean_enrichment": 1.0028775623350135,
+      "loss_fraction": 0.1887007874015746
+    }
+  ],
+  "conditions": {
+    "min_edges_events": true,
+    "brier_improve_5pct_both": false,
+    "replication_slope_0_8_1_2": false,
+    "controls_lose_50pct": false
+  },
+  "passed": false
+}

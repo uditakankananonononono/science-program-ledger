@@ -1,0 +1,37 @@
+{
+  "orientations": {
+    "benign_burden_base": -1,
+    "conflict_base": -1,
+    "variants_base": -1,
+    "p_base": -1,
+    "b_base": -1,
+    "reliability_base": 1
+  },
+  "development": {
+    "top_1_enrichment": 0.6356401526028633,
+    "top_1_precision": 0.10526315789473684,
+    "top_5_enrichment": 1.1337563998021003,
+    "top_5_precision": 0.18775210854418775,
+    "top_10_enrichment": 1.2657615689970818,
+    "top_10_precision": 0.2096124031007752,
+    "ndcg": 0.8215872007405094
+  },
+  "replication": {
+    "top_1_enrichment": 0.8986459985812666,
+    "top_1_precision": 0.10994575045207956,
+    "top_5_enrichment": 0.8986459985812666,
+    "top_5_precision": 0.10994575045207956,
+    "top_10_enrichment": 1.1613217701650473,
+    "top_10_precision": 0.14208308248043347,
+    "ndcg": 0.7858489575613965
+  },
+  "replication_top10_ci": [
+    0.9744393951565652,
+    1.3843695124331343
+  ],
+  "best_simple": [
+    "conflict_base",
+    2.60351416243766
+  ],
+  "ranking_pass": false
+}

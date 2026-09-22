@@ -1,0 +1,19 @@
+{
+  "package_id": "DOC-2-096-R0-R4-package",
+  "version": "1.0.0",
+  "created": "2026-09-23",
+  "kind": "packaging-only R0-R4 negative-evidence arc submission package",
+  "source": {"repo": "https://github.com/uditakankananonononono/science-program", "commit": "9b59730945b74a7059cf09ac5ae2aa5b2be634d4", "tree": "projects/DOC-2-096-Disease-Networks", "content_commit": "b5e31ebb02ecbe762b05b9c31ae3fcb6495f62e3"},
+  "conclusion": "Predictive triage closed; bounded descriptive negative-evidence topology and simple database-activity burden queues retained",
+  "nonclaims": ["no calibrated predictor", "no clinical-risk claim", "no pathogenicity claim", "no disease-severity claim", "no cross-round combined score"],
+  "rounds": {
+    "R0": {"status": "Locked-gate success, with bounded claim", "edges": 581228, "positive_edges": 49863, "contradictory_edges": 55054, "stratified_risk_difference": 0.25222412077176737, "top_decile_change": 0.35764105625966836, "high_review_preservation": 0.8044740662531344},
+    "R1": {"status": "CLEAN TEMPORAL-IDENTIFIABILITY STOP", "identifiers": 31993, "components": 944, "ambiguous_components": 54, "mapped_identifiers": 2651, "identifiability_pass": false},
+    "R2": {"status": "LOCKED-GATE FAILURE", "development_brier_improvement": 0.04497488078443319, "replication_brier_improvement": -0.0015971758265787128, "replication_calibration_slope": 0.13178979186648165, "negative_control_loss": "~19% (gate: >=50%)"},
+    "R3": {"status": "LOCKED RANKING GATE FAILURE", "replication_top10_enrichment": 1.1613217701650473, "replication_top10_ci": [0.9744393951565652, 1.3843695124331343], "best_simple_baseline": ["conflict_base", 2.60351416243766]},
+    "R4": {"status": "PREDICTIVE TRIAGE CLOSED; DESCRIPTIVE TOPOLOGY RETAINED", "emergence_enrichment": 2.2194285634065793, "resolution_enrichment": 2.687113119693235, "upgrade_enrichment": 2.3738751986284665, "passed_targets": 0}
+  },
+  "cli": "read-only curator-queue exporter; select by explicit round/status fields; stable sorted rows carrying round, frozen status, source SHA-256, original identifier; no scoring, ranking, inference, cross-round merge, or label change",
+  "large_raw_downloads": "external references only; frozen SHA-256 and URLs retained",
+  "custody": "MANIFEST.sha256 covers every regular package file except itself; archive SHA-256 is the outer custody record"
+}

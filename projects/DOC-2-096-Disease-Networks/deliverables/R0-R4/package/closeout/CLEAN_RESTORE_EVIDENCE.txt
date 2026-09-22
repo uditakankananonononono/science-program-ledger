@@ -1,0 +1,16 @@
+DOC-2-096 R0-R4 internal clean-restore evidence
+Generated: 2026-09-23 IST
+
+This in-package record covers package-content restoration. The outer evidence and outer manifest, transferred beside the archive, carry the final archive byte count and SHA-256 because an archive cannot contain its own final hash.
+
+Validation performed before final archival:
+- internal MANIFEST.sha256 exhaustive coverage: PASS
+- locked-protocol sidecar hashes (7/7) and R1 crosswalk lock re-verify against packaged bytes: PASS
+- read-only exporter verification (manifest, frozen row counts, status-label custody, figure sidecars): PASS
+- golden, determinism, scope, and corruption tests: PASS
+- SOURCE_HASH_MAP.tsv: 87 copied frozen items, 87 MATCH, 0 mismatches
+- PDF: 23 A4 pages, one section per page, zero overfull lines
+- figure renderer: transferred; packaging-time rerender under matplotlib 3.10.9 produced byte-identical PNGs
+- R0 figure: byte-identical copy of the frozen original (cmp PASS)
+
+Scope: packaging-only. No scientific rerun, recomputation, re-ranking, threshold change, cross-round statistic, post hoc combined score, repository push, or Drive upload. Core conclusion unchanged: predictive triage closed; bounded descriptive negative-evidence topology and simple database-activity burden queues retained.

@@ -1,0 +1,29 @@
+DOC-2-096 R0-R4 clean-restore evidence
+Generated: 2026-09-23 IST
+
+Archive: DOC-2-096-R0-R4-package.tar.gz
+Archive bytes: 14849961
+Archive SHA-256: ac3f6045d678af54593fb060c6bccaaf37680c561aabfa8c67aabf44317019a5
+Internal MANIFEST.sha256 SHA-256: 8b64c541f228076793f8c2ca1227840c114e0e5c972a46b888691e2a68884acc
+Standalone PDF: DOC-2-096-R0-R4-paper.pdf
+Standalone PDF bytes: 294905
+Standalone PDF SHA-256: 9101e8ef78b1a6af736649fbe90f15a1011b1994843cb1ff9c37342980547c12
+
+Fresh restore from archive bytes only (clean directory /tmp/restore-test):
+- safe extraction: PASS
+- sha256sum -c MANIFEST.sha256: PASS (121/121 files)
+- read-only exporter verify: PASS (6 frozen tables exact rows; 5 frozen status labels; 3 figure sidecars)
+- golden/determinism/scope/corruption tests: PASS (9/9)
+- source-hash map self-check: 87 rows, 0 bad
+- deterministic figure rerender under matplotlib 3.10.9: PASS (byte-identical)
+- R0 figure byte-identical to frozen original: PASS
+- locked-protocol sidecars (7/7) and R1 crosswalk lock: PASS
+- PDF pages: 23 A4
+
+Scope: packaging-only. No scientific rerun, recomputation, re-ranking, threshold change, cross-round statistic, post hoc combined score, repository push, or Drive upload. Per-round statuses preserved: R0 locked-gate success (bounded); R1 clean temporal-identifiability stop; R2 locked-gate failure; R3 locked ranking gate failure; R4 predictive triage closed, descriptive topology retained.
+
+Preflight of the four DOC-2-033 custody defects:
+1. Source map nonempty and complete: PASS (SOURCE_HASH_MAP.tsv, 87 items, 87 MATCH, plus per-round maps R0-R4).
+2. Clean-restore evidence inside the archive (closeout/CLEAN_RESTORE_EVIDENCE.txt) AND standalone beside it (this file), both named in custody records: PASS.
+3. Every renderer/script required for restore transferred: PASS (figures/render_figures.py, cli/curator_queue_export.py, tests/run_tests.py with goldens, paper LaTeX source).
+4. Custody metadata agree: PASS (internal MANIFEST.sha256 hash, archive hash, and standalone PDF hash recorded identically here and in the outer MANIFEST.sha256; PACKAGE_MANIFEST.json custody statement matches).

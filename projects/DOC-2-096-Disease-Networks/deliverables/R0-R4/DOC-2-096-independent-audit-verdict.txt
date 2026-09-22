@@ -1,0 +1,56 @@
+DOC-2-096 R0-R4 INDEPENDENT PACKAGING AUDIT
+Audited: 2026-09-23 IST
+Verdict: APPROVE
+Binding: this verdict applies only to the exact bytes identified below.
+
+AUDITED BYTES
+- Archive: SHA-256 ac3f6045d678af54593fb060c6bccaaf37680c561aabfa8c67aabf44317019a5; 14,849,961 bytes
+- Standalone PDF: SHA-256 9101e8ef78b1a6af736649fbe90f15a1011b1994843cb1ff9c37342980547c12; 294,905 bytes
+- Outer MANIFEST.sha256: SHA-256 3ac9db38e830aca43a85b48d325d97d798f52e6f3089de46b339f510950ab224; 388 bytes
+- Standalone CLEAN_RESTORE_EVIDENCE.txt: SHA-256 fcec5b1d954caece68bf099ee5b8397cf68fe4ed2389d29b553a792ce685c455; 2,141 bytes
+- Internal MANIFEST.sha256: SHA-256 8b64c541f228076793f8c2ca1227840c114e0e5c972a46b888691e2a68884acc
+- Source repository tree: commit 9b59730945b74a7059cf09ac5ae2aa5b2be634d4, projects/DOC-2-096-Disease-Networks
+
+DEFECT LIST
+- None.
+
+INDEPENDENT EVIDENCE
+1. Transfer and custody
+- Recomputed all four transferred outer hashes. Archive, PDF, and standalone evidence match the outer manifest.
+- Safely extracted the transferred archive into a fresh directory. Archive paths contained no absolute paths, parent traversal, links, or device entries.
+- Internal manifest verified 121/121 files. Independent inventory comparison found exactly 121 regular files excluding MANIFEST.sha256, exactly 121 manifest entries, no unlisted file, and no dangling entry.
+- Packaged PDF is byte-identical to the standalone PDF.
+
+2. Frozen source custody
+- Independently checked out source commit 9b59730945b74a7059cf09ac5ae2aa5b2be634d4.
+- Compared the complete repository project tree against package/frozen: 87 files vs 87 files, no path difference, and no byte difference.
+- SOURCE_HASH_MAP.tsv has 87 data rows, all MATCH. Per-round maps account for R0=21, R1=15, R2=27, R3=11, R4=12, plus PROJECT=1, all MATCH.
+- Missing/external registry identifies six large ClinVar downloads by immutable hashes and URLs and identifies unavailable sealed tar bytes without recreating them.
+
+3. Scientific claim boundaries
+- Read the full 23-page PDF and visually inspected all pages. Layout is readable; figures, tables, status boxes, hashes, and custody sections are legible with no observed clipping or overlap.
+- The synthesis keeps the five statuses separate: R0 bounded locked-gate success; R1 clean temporal-identifiability stop; R2 locked-gate failure; R3 locked ranking gate failure; R4 0/3 passed, predictive triage closed, descriptive topology retained.
+- The paper preserves original populations, endpoints, denominators, thresholds, and caveats. It explicitly rejects recomputation, re-ranking, threshold changes, new cross-round statistics, and a post hoc combined score.
+- The 13-row claim map traces every load-bearing claim to a round, frozen artifact, and full SHA-256. I recomputed all 13 mapped artifact hashes; all match.
+- Source values spot-checked directly against frozen JSON/CSV evidence, including R0 581,228 edges/0.252224 RD/0.357641 top-decile change/0.804474 preservation; R1 6,438,819 lines and identifiability_pass=false; R2 5,132 and 6,062 events, +4.497%/-0.160% Brier change, slope 0.13179, control loss ~19%; R3 1.1613 replication enrichment, CI 0.9744-1.3844, best simple 2.6035; R4 4,671/1,920/1,467 events, 2.2194/2.6871/2.3739 enrichment, passed_targets=0.
+
+4. Figures
+- R0 figure SHA-256 e793a25bd509bcafe145bf881e644e6a98119a1ddcdccfeece03a5b80ebaf3f5 is byte-identical to the frozen R0 figure.
+- render_figures.py is transferred and reads only frozen R2 locked_temporal_metrics.csv and R4 competing_risk_metrics.csv (test rows for R4); source SHA-256 values are embedded and sidecar-recorded.
+- Under transferred contract environment matplotlib 3.10.9, rerender reproduced both PNGs byte-identically: R2 43eef0b98faeb1c7e43a439d20fbdff2370e2794d6eb67d7d4701c8952998e3; R4 51f90e90a9e1dc85d7c5645c6b91cd8ac5f04548620be5529411cc8c061f639a.
+
+5. Exporter and tests
+- Source inspection confirms stdlib-only, no network call, and no write path. Selection is by explicit round or exact frozen status. Export is stable-sorted and every row carries source_round, claim_status, source_artifact, source_sha256, and original_id.
+- No scoring, inference, thresholding, label change, or cross-round merge exists in the exporter.
+- `verify` passed exact row counts for six frozen tables, all five frozen status labels, three figure sidecars, and the exhaustive manifest.
+- Independent execution: 9/9 tests PASS, including golden outputs, deterministic full export, out-of-round scope refusal, and corruption detection.
+
+6. DOC-2-033 custody-defect preflight
+- Complete nonempty source map: PASS.
+- Clean-restore evidence inside archive and standalone beside it: PASS.
+- All required renderer/exporter/test/LaTeX sources transferred: PASS.
+- Internal and outer custody metadata agree: PASS.
+- All seven locked protocol files plus the R1 crosswalk lock independently rehashed: 8/8 target hashes PASS.
+
+APPROVAL SCOPE
+Approval covers packaging and release of only the exact audited bytes above. It is not authorization for scientific recomputation, altered files, repository mutation, or a different archive/PDF/manifest/evidence set.
