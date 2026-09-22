@@ -1,0 +1,49 @@
+{
+ "checkpoint": "R1 hard cohort checkpoint per orchestrator directive",
+ "protocol_r1_sha256": "10f39df946c45c23e713f33702c05141cf4871e1d71cf797fb6c9147a91392c6",
+ "gates": {
+  "G1_extraction_integrity": {
+   "pass": true,
+   "detail": "14/14 tables extracted from 2024-06-01 snapshot; all CRC32-verified + double-sha256; zero failures. 496,617 registry rows."
+  },
+  "G2_cohort": {
+   "pass": true,
+   "detail": "123,697 NCTs (band 50k-250k); Interventional + >=1 Drug + status in {Completed 100,812, Terminated 15,880, Withdrawn 6,399, Suspended 606}; zero duplicate NCTs (dict-keyed); 94 rows quarantined (embedded pipes, documented)."
+  },
+  "G3_mapping_coverage": {
+   "pass": false,
+   "detail": "FAIL as locked. MeSH browse condition coverage 84.33% (<85%; free-text conditions cover 100% - gap is MeSH curation lag). Drug-name->ChEMBL exact+normalized mapping 35.58% of 92,779 distinct names (<60%); trial-weighted 57.7%; coverage by frequency: >=2 trials 60.8%, >=5 82.0%, >=10 89.4%, >=100 98.8% - the locked all-distinct-names threshold is dominated by ~73k single-trial name spellings. No fuzzy matching used (locked out)."
+  },
+  "G4_reason_audit": {
+   "pass": "PARTIAL",
+   "detail": "n=240 stratified double-coded audit. Overall kappa 0.655 (>=0.60 PASS). Per-class: safety 0.33 and regulatory-hold 0.30 (<0.60) -> both classes ABSTAINED from training labels per locked rule (1,949 trials labeled terminated-reason-abstained). Trainable classes: efficacy-or-futility, business-or-sponsor, enrollment-or-accrual, operational-or-logistic, reason-missing, unclear. Disagreements are coder-strictness driven (v2 abstains), not class inversion (safety->efficacy only 2/30)."
+  },
+  "G5_freeze": {
+   "pass": true,
+   "detail": "cohort, reliability-filtered competing-risk labels, missing-reason class, per-phase base-rate baselines frozen with 14-entry sha256 manifest at 2026-09-22T02:04Z; 2026-06-01 validation snapshot NOT opened."
+  },
+  "G6_linkage_validation": {
+   "pass": null,
+   "detail": "not reached - checkpoint stopped at G3"
+  },
+  "G7_model": {
+   "pass": null,
+   "detail": "not run - locked precondition unmet (G3 FAIL)"
+  }
+ },
+ "verdict": "STOP before modeling. Bounded product delivered: frozen cohort + reliability-filtered labels + audit + histories + mappings. No ranking claims.",
+ "bounded_product_contents": [
+  "cohort_v1.json (123,697 NCTs)",
+  "frozen_labels.json (11-class competing-risk labels, reliability-filtered)",
+  "reason_audit_sample+metrics (240 double-coded)",
+  "nct_histories.json (as-of-cutoff dates/refs/retractions/pending)",
+  "chembl_name_mapping.json (33,012 mapped names, combo-aware)",
+  "base_rate_baselines.json (per-phase)",
+  "freeze_manifest_r1.json"
+ ],
+ "recalibration_evidence_for_R2": {
+  "mesh_threshold": "85% -> achievable with combined MeSH-browse OR free-text (100%) or MeSH-only threshold ~84%",
+  "drugname_threshold": "60% of all distinct names unreachable without fuzzy matching; meaningful alternatives: >=60% of names in >=2 trials (achieved 60.8%), or trial-weighted >=55% (achieved 57.7%), or >=85% of names in >=10 trials (achieved 89.4%)",
+  "reliability": "safety/regulatory-hold need stronger coders or a 3rd adjudicating coder before those classes can carry labels"
+ }
+}

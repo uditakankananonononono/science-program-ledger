@@ -1,0 +1,45 @@
+{
+ "protocol_r2_sha256": "02b1432db5a87ea1fc4f6cfbcec2a7b2811633254738e492643b45bba979d789",
+ "gates": {
+  "G1_cutoff_safety": {
+   "pass": true,
+   "route": "B",
+   "detail": "Route A blocked: ftp.ebi.ac.uk TLS failure across curl(tls1.2/http1.1)/wget/requests and ftp/http transports; ChEMBL_34 (March 2024, DOI 10.6019/CHEMBL.database.34, 4.5GB sqlite) has no official mirror (verified via web search of official download pages). Route B executed: 5,676 unique mechanism-ref PMIDs resolved via NCBI; 4,815/7,561 mechanism records retained (>=1 PubMed ref pubdate <= 2024-05); + first_approval <= 2023 -> 6,287 cutoff-evidenced molecules. ChEMBL_37 names marked diagnostic-only."
+  },
+  "G2_drugmap_coverage": {
+   "pass": false,
+   "as_locked_pool": "all distinct names in >=2 cohort trials (n=17,781), no exclusions",
+   "primary_names_pct": 49.51,
+   "primary_trial_weighted_pct": 66.64,
+   "required": "names >=60 AND trial-weighted >=80",
+   "diagnostic_full_chembl37": {
+    "names_pct": 59.02,
+    "trial_weighted_pct": 70.51
+   },
+   "detail": "FAIL on both legs under cutoff-safe mapping. Gap decomposition: 1,691 pool names lost purely by the cutoff-evidence restriction (e.g., laquinimod, anlotinib, ALT-803 - mechanism records only carry post-cutoff or non-dated refs); 7,286 pool names absent from even the full ChEMBL_37 clinical-molecule dictionary (formulations, dose-codes, combos, non-drug entries). Per-phase floors (names>=2 in each of Phase 1-4) passed at 72-83% names / 97-98% trial-weighted, but primary failure decides the gate."
+  },
+  "G3_conditions": {
+   "pass": true,
+   "detail": "normalizer + 31,246-term vocabulary frozen at cutoff (sha256 309e2a702c27dd6b); MeSH-only 84.33% carried as R1 diagnostic; combined MeSH-OR-freetext 100%."
+  },
+  "G4_clusters": {
+   "pass": null,
+   "detail": "not built - G2 failed; clusters cannot meet locked support"
+  },
+  "G5_freeze": {
+   "pass": null,
+   "detail": "no cluster freeze needed; validation snapshot remains unopened"
+  },
+  "G6_G7": {
+   "pass": null,
+   "detail": "not reached"
+  }
+ },
+ "verdict": "route_fail arm of the R2 lock: predictive mechanism work STOPS. Bounded cohort retained and preserved. No clusters, no validation access, no model, no ranking claims.",
+ "preserved": [
+  "R1 frozen cohort + labels (development evidence)",
+  "cutoff-safe mechanism reconstruction (4,815 records / 6,287 molecules) for any future round",
+  "condition vocab + disease strata freezes",
+  "G2 gap diagnostics"
+ ]
+}

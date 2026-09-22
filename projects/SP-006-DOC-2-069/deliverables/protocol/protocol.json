@@ -1,0 +1,77 @@
+{
+ "created_utc": "2026-09-21T20:24:28.656726Z",
+ "data_sources": {
+  "aact_snapshots": {
+   "license": "ClinicalTrials.gov registry data, public domain",
+   "use": "authoritative as-of-cutoff state; selective remote extraction via HTTP range + zip central directory (demonstrated)"
+  },
+  "chebi": {
+   "license": "CC BY 4.0 (about page quoted 2026-09-22)"
+  },
+  "chembl": {
+   "license": "CC BY-SA 3.0 Unported (quoted); ShareAlike: derived databases must carry same license + attribution"
+  },
+  "clinicaltrials_gov_api_v2": {
+   "license": "US government work, public domain in US (NLM web policies, quoted 2026-09-22)",
+   "use": "schema probing + live counts ONLY, never as-of-cutoff facts (current-state leakage)"
+  },
+  "drugbank": {
+   "status": "EXCLUDED (proprietary license, not legally reusable for this product)"
+  },
+  "drugcentral": {
+   "status": "EXCLUDED until license text verifiable (page JS-gated at grounding time)"
+  },
+  "mesh_browse": {
+   "license": "NLM, public domain",
+   "use": "condition/intervention normalization (browse_conditions, browse_interventions tables)"
+  },
+  "mondo": {
+   "license": "CC-BY 4.0 (mondo.monarchinitiative.org quoted)"
+  },
+  "uniprot": {
+   "license": "CC BY 4.0 (FTP LICENSE quoted 2026-09-22)"
+  }
+ },
+ "frozen_design_elements": {
+  "abstention": "model must abstain on reason-missing/unclear, ambiguous mechanism mapping, or contradictory evidence; abstentions reported as first-class output",
+  "calibration_ranking_gates": "Brier + ECE on temporally held-out post-cutoff window; PR-AUC and lift@k vs both baselines; abstention coverage reported at fixed precision floors",
+  "competing_risks": "explicit outcome classes: completed-with-results / completed-no-results / terminated-by-reason-class / withdrawn / suspended / stale-unknown. Cumulative incidence per class; never binary failure-vs-success.",
+  "controls": "negative controls: withdrawn-before-enrollment trials (efficacy information impossible); positive controls: mechanism clusters with post-cutoff confirmatory success; label-noise audit: manual sample of reason classifications",
+  "historical_cutoff": {
+   "note": "cutoff anchored to probe-verified snapshot dates only; snapshot availability is patchy per month",
+   "snapshot": "AACT 2024-06-01 monthly pipe-delimited export",
+   "validation_snapshots": [
+    "2026-06-01 (24-month window)",
+    "2025-12-01 (intermediate, optional)"
+   ],
+   "verified": "2026-09-22 probe: HTTP 206, 1,829,799,788 bytes, 47-table central directory parsed"
+  },
+  "independent_unit": "NCT trial record as of cutoff; mechanism cluster = (intervention-set -> target via ChEMBL/UniProt, condition -> MONDO/MeSH) aggregated from >=1 trials; all trials in a cluster stay in the same split (no pseudo-replication); ranking unit = mechanism cluster",
+  "mechanistic_contradiction_features": "target-disease evidence conflicts, prior same-mechanism termination counts (as-of-cutoff), modality-mechanism mismatch, retraction linkage; sources: UniProt (CC BY 4.0), MONDO (CC BY 4.0), ChEMBL (CC BY-SA 3.0, ShareAlike obligation documented), MeSH browse terms (public domain)",
+  "missing_reason_policy": "missing whyStopped = its own class 'reason-missing', never imputed; missing results = 'results-unposted' state, NEVER efficacy-failure evidence; UNKNOWN overall_status = stale cohort tracked separately; withdrawn-before-enrollment cannot carry efficacy information",
+  "reason_taxonomy": "whyStopped free text -> frozen rule-based classes: efficacy-or-futility / safety / business-or-sponsor / enrollment-or-accrual / operational-or-logistic / regulatory-hold / other / unclear(abstain). Rules versioned in code; sample-audited; unclear always abstains",
+  "simple_baselines": [
+   "phase-wise transition priors from published literature (PubMed-grounded, PMIDs in ledger)",
+   "snapshot-empirical base rates per outcome class",
+   "frozen logistic baseline on phase/sponsor-type/year features"
+  ],
+  "stop_condition": "STOP pre-model if (a) any post-cutoff dated content found inside the cutoff snapshot (leakage), or (b) whyStopped fill < 70% in the R1 cohort, or (c) cutoff/validation snapshots become unavailable",
+  "temporal_outcome": "typed post-cutoff events observable between cutoff and validation snapshots: results-posted, termination-recorded, withdrawal, publication-linked (study_references), retraction-recorded, resumption. Never a single collapsed 'failure' label."
+ },
+ "notes": [
+  "R0 verdict (GO/NO-GO) issued after gate evaluation; stop condition applies throughout R1+"
+ ],
+ "operational_user": "translational pharmacology team deciding which failed clinical mechanisms deserve manual repurposing review",
+ "product_scope": "review priority only, never treatment advice",
+ "project": "SP-006 (DOC-2-069 Drug Failure as Information), Round 0: open-data feasibility + grounding",
+ "r0_gates": {
+  "G1_access": "CT.gov API v2 + AACT snapshot access demonstrated, including selective in-zip table extraction",
+  "G2_cutoff": "cutoff + validation snapshots probe-verified (HTTP 206 + central directory parse)",
+  "G3_taxonomy": "overallStatus taxonomy enumerated with live counts; whyStopped fill >= 70% in a >=100-sample of TERMINATED drug studies",
+  "G4_licenses": "every planned source has a live-quoted open license or is explicitly excluded",
+  "G5_linkage": "publication + retraction linkage demonstrated from as-of-cutoff artifacts (study_references/retractions tables, referencesModule)",
+  "G6_design_frozen": "all frozen design elements written into this protocol before any outcome inspection",
+  "G7_operational_plan": "commercial workflow + safety/regulatory + provenance + monitoring + rollback + measured-cost plan written (report section)"
+ },
+ "r0_gates_locked_before": "any post-cutoff outcome data inspection, cohort construction, or model work"
+}

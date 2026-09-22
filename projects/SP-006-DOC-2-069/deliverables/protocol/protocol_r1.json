@@ -1,0 +1,41 @@
+{
+ "cohort_checkpoint": "explicit GO/STOP after G5 freeze; a clean cohort stop beats a leaky model",
+ "created_utc": "2026-09-21T20:27:19.875020Z",
+ "gates": {
+  "G1_extraction_integrity": "100% of extracted tables: decompressed bytes pass zip CRC32 from central directory AND double-computed sha256 recorded; any mismatch -> re-extract once, else STOP",
+  "G2_cohort": "eligible cohort = INTERVENTIONAL studies in the 2024-06-01 snapshot with >=1 'Drug' intervention and overall_status in {COMPLETED,TERMINATED,WITHDRAWN,SUSPENDED}; all phases incl. N/A as own stratum. Sanity band 50k-250k NCTs; zero duplicate NCT IDs; per-status/per-phase counts recorded. Out-of-band -> STOP and report",
+  "G3_mapping_coverage": "condition->MeSH browse coverage >=85% of cohort trials; intervention-name->ChEMBL mapping (exact + normalized-name only, no fuzzy matching in R1) >=60% of distinct intervention names; trials without any mapping kept as 'unmapped' stratum (abstained from mechanism features, never dropped); ChEMBL release + UniProt release recorded",
+  "G4_reason_audit": "stratified audit sample n=240 (30 per each of 8 reason classes where cohort support allows; if a class supports <30 take all, note support). Coder A = taxonomy rules v1; Coder B = taxonomy rules v2 written independently (different anchor terms/structure). Cohen's kappa >=0.60 overall AND per-class agreement >=60% for any class used in training; failing classes merged to 'other' or abstained. Confusion matrix + abstention counts reported. RELIABILITY CHECKPOINT: do not train if unmet",
+  "G5_freeze_before_validation": "cohort IDs, mechanism-cluster IDs, competing-risk labels, missing-reason class, and snapshot base-rate baselines frozen with sha256 manifest; manifest timestamp must precede first 2026-06-01 validation fetch (both logged)",
+  "G6_linkage_validation": "0 post-cutoff dates in cutoff features (row-level date audit); 0 duplicate NCTs across folds; >=100 typed validation events among cohort between 2024-06-01 and 2026-06-01 snapshots; retraction/publication linkage recorded as evidence flags only, never truth labels",
+  "G7_model": "run ONLY if G1-G6 pass: frozen logistic baseline + mechanistic ranking; ranking must beat both base-rate and logistic on PR-AUC, lift@50 >=1.5x base rate, ECE <=0.05 on temporal holdout; abstention coverage reported; label-noise sensitivity (labels perturbed within measured audit disagreement) reported. If any model criterion fails -> deliver bounded product (cohort+labels+events, no ranking claims)"
+ },
+ "parent_protocol": "R0 protocol sha256 a53546da17fdebc37a6d0aed829a2040b155808f3766d5275b9d401aace87bf8 (all frozen design elements unchanged)",
+ "prohibitions": [
+  "no binary drug-failure label",
+  "no inferring failure from absent results",
+  "no treatment claims",
+  "current API contributes zero cutoff facts"
+ ],
+ "project": "SP-006 (DOC-2-069), Round 1: cohort construction + checkpoint + frozen ranking",
+ "scope_note": "R1 executes the R0-locked design. Every threshold below is prespecified before the work it gates.",
+ "tables_deferred": {
+  "id_information": "not needed for R1 features",
+  "keywords": "not needed for R1 features",
+  "milestones": "optional context; fetch only if a locked feature needs it"
+ },
+ "tables_to_extract": [
+  "studies",
+  "interventions",
+  "conditions",
+  "browse_conditions",
+  "browse_interventions",
+  "study_references",
+  "retractions",
+  "pending_results",
+  "documents",
+  "sponsors",
+  "designs",
+  "calculated_values"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "tools": {
+  "python": "3.10",
+  "requests": "HTTP client",
+  "zlib": "stdlib (zip entry decompression)",
+  "curl": "range-request probes"
+ },
+ "sources": {
+  "ClinicalTrials.gov API v2": "live 2026-09-22, versionHolder 2026-09-21",
+  "AACT snapshots": "monthly pipe-delimited, static file URLs, 2026-09-22",
+  "UniProt FTP": "2026-09-22",
+  "PubMed E-utilities": "2026-09-22"
+ },
+ "compute_ceilings": [
+  "CT.gov per-study fine-grained history endpoints 403/404 from this environment; monthly AACT snapshots are the versioned source",
+  "AACT web UI pages (snapshots listing, data dictionary) are sign-in-gated; direct static file URLs bypass and were used",
+  "No local RDBMS load of AACT; selective remote extraction replaces it"
+ ]
+}

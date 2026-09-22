@@ -1,0 +1,34 @@
+{
+ "created_utc": "2026-09-21T20:36:29.741491Z",
+ "cutoff_safety_routes": {
+  "route_A": "ChEMBL_34 (pre-2024-06-01) from an official/mirrored archive, checksum-verified, license quoted (CC BY-SA 3.0)",
+  "route_B_fallback": "mechanism links reconstructed solely from ChEMBL_37 mechanism records supported by >=1 PubMed reference with publication year <= 2024 (NCBI-resolved), or molecule first_approval <= 2023; molecules lacking cutoff-era evidence excluded from clusters",
+  "route_fail": "if neither route works: retain bounded cohort, stop predictive mechanism work, report"
+ },
+ "folds": "temporal: development = R1 cohort evidence as of cutoff; validation = post-cutoff events; cluster-preserving assignment (all trials of a mechanism cluster in the same fold)",
+ "gates": {
+  "G1_cutoff_safety": "route A or route B demonstrably satisfied with evidence ledger (checksums/license or PMID-year resolution log); ChEMBL_37-only content excluded from cutoff facts",
+  "G2_drugmap_coverage": "FROZEN METRICS (locked before recomputation): primary = >=60% of names appearing in >=2 cohort trials mapped AND >=80% trial-weighted mapping over the same pool; per-phase floors = >=50% (names-in->=2-trials) AND >=70% trial-weighted within each phase stratum (Phase 1/2/3/4; smaller strata reported without floor); per-disease-strata floors = >=50% (names-in->=2-trials) within each of the top-10 most frequent MeSH browse condition terms having >=1000 cohort trials (strata frozen here as data-driven top-10, listed in results before recomputation); unmapped names form an explicit abstain stratum, reported, never dropped",
+  "G3_conditions": "eligibility/condition features via MeSH browse OR frozen cutoff free-text normalization (normalizer + vocabulary sha256 frozen before use); MeSH-only coverage 84.33% reported separately as R1 diagnostic",
+  "G4_clusters": "mechanism cluster = (cutoff-safe mapped molecule -> mechanism target set) x (normalized condition); cluster IDs + mapping tables frozen with sha256 BEFORE validation open; cluster build log records cutoff-safe evidence per molecule",
+  "G5_freeze": "cluster IDs, mappings, vocab hash frozen with timestamp logged BEFORE first 2026-06-01 fetch",
+  "G6_linkage": "0 post-cutoff dates in cutoff features (row-level audit); 0 duplicate NCTs across folds; >=100 typed validation events among cohort between 2024-06-01 and 2026-06-01; retraction/publication linkage = evidence flags only",
+  "G7_model": "unchanged from R1 lock: run only if G1-G6 pass; frozen logistic + mechanistic ranking must beat base-rate and logistic on PR-AUC, lift@50 >=1.5x base rate, ECE <=0.05 temporal holdout; abstention coverage + label-noise sensitivity reported; any failure -> bounded product, no ranking claims"
+ },
+ "invariants": {
+  "abstained_classes": "safety + regulatory-hold stay abstained; no third coder; modeling uses only reliability-qualified classes",
+  "chembl37_names": "diagnostic-only, never cutoff facts",
+  "cohort_labels": "R1 frozen cohort (123,697 NCTs) and reliability-filtered labels are development evidence only; never recomputed; validation snapshot 2026-06-01 stays unopened until G5 freeze completes",
+  "scope": [
+   "no binary drug-failure label",
+   "no inferring failure from absent results",
+   "no treatment claims",
+   "review priority only"
+  ]
+ },
+ "parent_locks": [
+  "R0 a53546da17fdebc37a6d0aed829a2040b155808f3766d5275b9d401aace87bf8",
+  "R1 10f39df946c45c23e713f33702c05141cf4871e1d71cf797fb6c9147a91392c6"
+ ],
+ "project": "SP-006 (DOC-2-069), Round 2: mapping/reliability refinement + cluster freeze + gated modeling"
+}
