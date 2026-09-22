@@ -1,0 +1,7 @@
+channel,source,historical_2020_exact_release,prospective_safe,license_or_terms,observed_url,decision
+outcome,ClinVar archived tab-delimited,yes,yes,NCBI public data,https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/archive/2020/,usable
+phenotype,HPO annotation archive,repository/tag history lead but exact 2020 annotation bundle not verified in run,no,HPO terms CC BY 4.0; annotations require source-specific review,https://github.com/iamkoehler/HPO-archive,blocked
+constraint,gnomAD v2.1.1 constraint,yes,yes,gnomAD terms/data license requires attribution,https://gnomad-public-us-east-1.s3.amazonaws.com/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz,usable
+literature,Europe PMC publication API,publication dates available but current annotations/query index can change,partially,Europe PMC API/open access varies by record,https://europepmc.org/RestfulWebService,not frozen historical index
+pathway_model,Monarch KG,historical releases found for 2024+; no verified 2020 release in observed index,no,integrated sources have heterogeneous licenses,https://data.monarchinitiative.org/,blocked
+integrated,Open Targets,FTP archive observed but exact 2020 release and evidence schema not verified,no,CC BY 4.0 for platform data with source caveats,https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/,blocked

@@ -1,0 +1,2 @@
+# DOC-2-060 R1 locked source-reconstruction protocol
+**Locked:** 2026-09-21 22:55 IST before HPO archive content inspection. Source gate: exact <=2020 HPO annotation bundle containing disease-phenotype and gene-phenotype files, stable IDs, license and checksums; cutoff synonym-only literature channel from raw PMID metadata; gnomAD v2.1.1. No model/candidate outcome inspection unless all manifests pass.

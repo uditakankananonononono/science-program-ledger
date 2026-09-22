@@ -1,0 +1,6 @@
+- HPO archive repository: https://github.com/iamkoehler/HPO-archive
+- Redirected canonical repository observed: same repository under iamkoehler.
+- Commit inspected: `183af7cd7c015c81e36b8a949ec212daa55dad5e`, dated 2017-03-09.
+- Genuine files observed under monthly archives: `*_diseases_to_genes_to_phenotypes.txt.gz`, `*_genes_to_phenotype.txt.gz`, `*_phenotype_to_genes.txt.gz`, stable OMIM/Orphanet source partitions.
+- gnomAD v2.1.1 constraint object remains reachable: https://gnomad-public-us-east-1.s3.amazonaws.com/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz
+- Europe PMC raw publication API: https://europepmc.org/RestfulWebService
