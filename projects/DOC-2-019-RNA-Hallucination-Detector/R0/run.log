@@ -1,0 +1,40 @@
+{
+  "protocol_id": "DOC-2-019-R0",
+  "seed_sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac",
+  "eligible_families": 2110,
+  "authentic_sequences": 15658,
+  "row_counts": {
+    "train": 18474,
+    "validation": 6528,
+    "test": 6314
+  },
+  "family_counts": {
+    "train": 1244,
+    "validation": 439,
+    "test": 427
+  },
+  "test_median_length": 90.0,
+  "primary_family_macro_auc": 0.7043295755070178,
+  "family_bootstrap_95_ci": [
+    0.6835291469681158,
+    0.7258345112635217
+  ],
+  "length_gc_control_auc": 0.5060673195898188,
+  "stratum_auc": {
+    "short": 0.7237313718354282,
+    "long": 0.7031330153084747
+  },
+  "gates": {
+    "data_minimum": true,
+    "primary_auc": false,
+    "bootstrap_lower": 0,
+    "negative_control": true,
+    "length_strata": true
+  },
+  "all_gates_pass": false,
+  "limitations": [
+    "Synthetic class is a controlled first-order Markov surrogate, not output from a named RNA foundation model.",
+    "Rfam seed sequences are curated positives; this R0 does not estimate performance on arbitrary genomic background or adversarial generators.",
+    "Sequence-only features do not establish structural or functional validity."
+  ]
+}
