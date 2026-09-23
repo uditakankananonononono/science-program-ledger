@@ -3,6 +3,7 @@
 Derived research project specs from the 23 highlighted ISEF CBIO parent projects
 (source doc: ISEF CBIO award abstracts 2023-2026). 10 derived projects per parent.
 Lane C covers parents 13-17 (this block: P13-xx through P17-xx).
+Lane D covers parents 18-23 (P18-xx through P23-xx).
 
 | id | title | parent | premise |
 |----|-------|--------|---------|
@@ -56,3 +57,13 @@ Lane C covers parents 13-17 (this block: P13-xx through P17-xx).
 | P17-08 | DishToBody | CBIO054 TAG-Cas | Measure and correct the cell-line-to-in-vivo decay of off-target model accuracy. |
 | P17-09 | SilenceOff | CBIO054 TAG-Cas | Off-target framework for non-cutting epigenome editors; contact-domain enrichment of expression effects. |
 | P17-10 | TopologyTax | CBIO054 TAG-Cas | Standardized ablation audit of when 3D features are worth their cost across CRISPR models. |
+| P18-01 | Clean Signal Audit | CBIO055 Microbial Detection | Re-derive taxonomy+function synergy after strict decontamination to see what signal is real. |
+| P18-02 | Stool Synergy Transfer | CBIO055 Microbial Detection | Test whether taxonomy+function synergy reappears in CRC stool metagenomes across cohorts. |
+| P18-03 | Oral Window | CBIO055 Microbial Detection | Saliva and stool microbial function for pancreatic cancer detection. |
+| P18-04 | Strain Resolution | CBIO055 Microbial Detection | Test whether strain markers (pks, bft, F. nucleatum clades) beat species and function for CRC. |
+| P18-05 | Redundancy Test | CBIO055 Microbial Detection | Directly test the parent's functional-redundancy explanation for weak function-only accuracy. |
+| P18-06 | Batch Leakage Audit | CBIO055 Microbial Detection | Split tumor-microbiome accuracy into cancer signal vs sequencing-center signal. |
+| P18-07 | Minimal Panel | CBIO055 Microbial Detection | Smallest qPCR-ready microbial panel that keeps 90% of metagenome accuracy for CRC screening. |
+| P18-08 | Response Function | CBIO055 Microbial Detection | Taxonomy+function models for immunotherapy response across melanoma cohorts. |
+| P18-09 | Phage Layer | CBIO055 Microbial Detection | Add the gut virome as a third view and test for three-way synergy. |
+| P18-10 | Cross-Kingdom Networks | CBIO055 Microbial Detection | Bacterial-fungal co-occurrence edges as cancer-type biomarkers. |
