@@ -6,8 +6,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 100 useful results is the floor, not the finish line.
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
-- New from exp200 lanes: 8 (EXP-1: 3, EXP-2: 0, EXP-3: 0, EXP-4: 5)
-- **Total: 42 / 100 minimum**
+- New from exp200 lanes: 9 (EXP-1: 4, EXP-2: 0, EXP-3: 0, EXP-4: 5)
+- **Total: 43 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
 |---|---|---|---|---|
@@ -15,7 +15,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-1-002 | EXP-1 | 2026-09-23 17:10 | done | DOCUMENTED BOUNDARY (not counted): 3 datasets, 5 gate versions, 0 targets pass size-matched QC; flagged for Replogle-scale retry |
 | DOC-1-003 | EXP-1 | 2026-09-23 17:36 | done | USEFUL (counted, main adjudication 23:19): technical floor of Visium spatial structure, held-out r=0.716 + audit CLI; G2+v2 LR boundary, not counted |
 | DOC-1-004 | EXP-1 | 2026-09-23 17:48 | done | G1 genus 7.5% vs 10% gate FAIL but 20/30 perm-sig (urobilin R2 0.57); v2 species WORSE (-6.5%) - COUNTED (main adjudication 23:34): predictability ceiling map + aggregation-beats-resolution rule + twin CLI |
-| DOC-1-005 | EXP-1 | 2026-09-23 18:03 | running | - |
+| DOC-1-005 | EXP-1 | 2026-09-23 18:03 | DONE - COUNTED (main adjudication 00:09): trained MLP fate forecaster 86.4% top-1 held-out (7.9x climatology); Markov wins NLL head-to-head; CLI + artifacts | - |
 - **USER-STEERED INSERT (main 23:57, user verbatim): postpartum-depression biomarkers** - EXP-1, claimed 2026-09-24 ~00:02 IST. Blood-transcriptome cohorts (GEO or equiv), trained classifier, FROZEN external-cohort verification (AUROC gate + single-feature baseline gate, honest-negative clause), validated biomarker panel + scoring tool. Runs ahead of DOC-1-006 after DOC-1-005 completes.
 | DOC-2-079 | EXP-4 | 2026-09-23 16:20 | closed | documented boundary, NOT counted - downgraded 2026-09-23 22:11 IST: user judged the retrospective-prediction framing non-research; line terminated (forward addendum left in place as documented work, not extended) - exp200/179 |
 | DOC-2-090 | EXP-4 | 2026-09-23 16:22 | done | pass (useful) - exp200/190 |
