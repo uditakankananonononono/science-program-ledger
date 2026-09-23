@@ -6,9 +6,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 100 useful results is the floor, not the finish line.
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
-- New from exp200 lanes: 9 (EXP-1: 4, EXP-2: 0, EXP-3: 0, EXP-4: 5)
+- New from exp200 lanes: 10 (EXP-1: 4, EXP-2: 0, EXP-3: 0, EXP-4: 6)
 - **Total: 43 / 100 minimum**
-- New from exp200 lanes: 9 (EXP-1: 3, EXP-2: 0, EXP-3: 0, EXP-4: 6)
 - **Total: 42 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
@@ -32,7 +31,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-064 | EXP-4 | 2026-09-23 17:05 | note | checked vs sp-041: sp-041 is DOC-1-044 (DANN cross-study synergy, INVALID), not DOC-2-064 - 064 stays in lane 4 queue |
 | DOC-2-068 | EXP-4 | 2026-09-23 17:12 | closed | primary + pivot fail on precision gate; documented boundary (not counted) - no-shared-target pathway fingerprint 13-14% vs 62% target identity - exp200/168 |
 | DOC-2-056 | EXP-4 | 2026-09-23 17:45 | closed | primary + 2 pivots fail (incl. trained cross-platform biomarker: external AUROC 0.78/0.80 but 1-gene SLC6A14 baseline >= model); documented boundary (not counted) - exp200/156 |
-| DOC-2-051..055, 057..059, 061, 063..067, 070..072, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
+| DOC-2-071 | EXP-4 | 2026-09-24 00:05 | pass (pivot) | primary CNN fail; ESM-2 + trained head finds catalytic residues: frozen M-CSA external AUPRC 0.205 vs 0.045 (Bartlett propensity) / 0.036 (ESM wt-marginal), median AUROC 0.90; nomination ABHD4 S146/H320/D170 - exp200/171 |
+| DOC-2-051..055, 057..059, 061, 063..067, 070, 072, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 - Lane 3: DOC-2-001..DOC-2-050 (skipping touched DOC-2-009, 019, 032, 033, 037), folders exp200/1NN-<slug> where NN = DOC-2 number. Claimed 2026-09-23 21:55 IST.
 - Lane 4 folder numbering: exp200/1NN-<slug> for DOC-2-0NN (same as lane 3).
 ## User steering 2026-09-23 ~22:10 IST (all lanes, from main)
