@@ -1,0 +1,13 @@
+unstim cells: 3259 controls: 705
+/home/sandbox/exp200/002-perturbation-grn/code/analysis_v3.py:13: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  cnt = obs[unstim & (obs.perturbation != 'control')].groupby('target').size()
+targets >=25 cells: 30 ['BACH2', 'DOK2', 'EGR1', 'EGR2', 'EGR3', 'EGR4', 'ETS1', 'FOS', 'GATA3', 'JUN', 'JUNB', 'JUND', 'LAT', 'LCK', 'MVD', 'NFAT5', 'NFATC1', 'NFATC2', 'NFATC3', 'NFKB1', 'NFKB2', 'NR4A1', 'PTPN6', 'PTPN11', 'REL', 'RELA', 'RELB', 'RUNX1', 'RUNX2', 'ZAP70']
+X: (3259, 36722) float32 max: 1352.0
+selected genes: 528
+targets passing size-matched effect-presence: 0 []
+Traceback (most recent call last):
+  File "/home/sandbox/exp200/002-perturbation-grn/code/analysis_v3.py", line 102, in <module>
+    dr = (R.r_net - R.r_base).median()
+  File "/usr/local/lib/python3.10/dist-packages/pandas/core/generic.py", line 6321, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'r_net'
