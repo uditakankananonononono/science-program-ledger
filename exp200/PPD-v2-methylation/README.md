@@ -17,9 +17,13 @@ USER-STEERED new direction (main 00:20, user verbatim "Try new directions, more 
   AUROC 0.90, bootstrap 95% CI [0.571, 1.00], lower > 0.5. PASS.
 - G2c named published baseline: Osborne/Payne HP1BP3+TTC9B candidate-region score
   (29 probes, frozen) AUROC 0.70 on the same held-out batch; panel 0.90 -> +0.20 >= 0.03. PASS.
-- G3 cross-phenotype transport to GSE201287 (MDD blood, idat-only): NOT RUN - no R/minfi
-  in environment; python idat processing (methylcheck) not attempted within timebox.
-  G3 had no pass/fail by design; remains an open follow-up, NOT silently dropped.
+- G3 cross-phenotype transport: RUN as follow-up. Frozen panel (111/113 probes
+  recoverable) applied to GSE201287 MDD-vs-healthy blood 450K (n=80, 40/40;
+  GenomeStudio control-normalized AVG_Beta): AUROC 0.763, bootstrap 95% CI
+  [0.646, 0.863]. The PPD epigenetic signature transports to major depression
+  well above chance - the first FROZEN external-cohort evidence for the panel
+  (cross-phenotype, not an independent PPD cohort; that test remains open
+  because none exists publicly).
 
 ## Mechanism check
 113 non-zero panel probes -> 110 genes. Panel CONTAINS TTC9B (one of the two published
@@ -37,4 +41,5 @@ the published locus and adds novel candidates.
 ## Honest limitations
 Batch-5 holdout is small (n=9, CI wide). Batch-grouped CV is internal, not a true
 independent cohort; the field lacks one publicly. CV optimism controlled by permutation
-discipline; transport to independent PPD data remains the decisive open test.
+discipline. G3 gives frozen cross-phenotype transport (MDD, AUROC 0.763, CI 0.646-0.863);
+transport to independent PPD data remains the decisive open test.
