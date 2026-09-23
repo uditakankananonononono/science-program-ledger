@@ -4,6 +4,7 @@ Derived research project specs from the 23 highlighted parent projects
 (source abstracts, 2023-2026). 10 derived projects per parent.
 Lane C covers parents 13-17 (this block: P13-xx through P17-xx).
 Lane D covers parents 18-23 (P18-xx through P23-xx).
+Lane A covers parents 1-6 (P01-xx through P06-xx).
 
 | id | title | parent | premise |
 |----|-------|--------|---------|
@@ -117,3 +118,63 @@ Lane D covers parents 18-23 (P18-xx through P23-xx).
 | P23-08 | What the Parameters Mean | CBIO083 Quantum Game Theory | Map QGT parameters to measurable biology across environments. |
 | P23-09 | Beyond Cancer | CBIO083 Quantum Game Theory | Test QGT on microbial cooperation game data. |
 | P23-10 | Open Game Benchmark | CBIO083 Quantum Game Theory | Standard dataset suite and leaderboard for cancer dynamics models. |
+| P01-01 | Cross-Cohort Transport Stress Test | CBIO003 CRC Gut Microbiome (2025) | Does an Indian-cohort CRC microbiome RF model transport across 6 public cohorts - and which biomarkers replicate. |
+| P01-02 | Batch and Leakage Audit | CBIO003 CRC Gut Microbiome (2025) | Adversarial batch-correction audit of how much of the 0.992 AUC is technical vs biological signal. |
+| P01-03 | Strain-Level Oncomicrobes | CBIO003 CRC Gut Microbiome (2025) | pks+/bft/F. nucleatum clade markers vs genus calls, linked to SBS88 mutational signatures. |
+| P01-04 | Function vs Taxonomy | CBIO003 CRC Gut Microbiome (2025) | Do pathway-level features out-transport genus markers across cohorts. |
+| P01-05 | Minimal qPCR Panel | CBIO003 CRC Gut Microbiome (2025) | Smallest stability-selected qPCR panel keeping 90% of metagenome AUC, with cost model. |
+| P01-06 | Early-Onset CRC Signal | CBIO003 CRC Gut Microbiome (2025) | Is EOCRC a distinct microbial signal or an age-shifted copy - age-balanced classifiers. |
+| P01-07 | Adenoma Detection Ceiling | CBIO003 CRC Gut Microbiome (2025) | Stage-resolved classifier for the harder pre-cancer detection task, with honest ceiling. |
+| P01-08 | Longitudinal Stability | CBIO003 CRC Gut Microbiome (2025) | ICC stability scorecard for top markers and a perturbation-robust weighted classifier. |
+| P01-09 | Intervention Response | CBIO003 CRC Gut Microbiome (2025) | Do CRC-linked markers predict diet/FMT responder status across public cohorts. |
+| P01-10 | Microbiome + FIT Value | CBIO003 CRC Gut Microbiome (2025) | Decision-curve test of whether the microbiome adds net benefit over FIT. |
+| P02-01 | Ferroptosis Signature Atlas | CBIO006 Ferroptosis AD Antibodies (2025) | Locked FerrDb signature replication across AMP-AD atlases plus a held-out score classifier. |
+| P02-02 | Axis Proteomics Check | CBIO006 Ferroptosis AD Antibodies (2025) | Is the hepcidin-ferroportin axis measurably dysregulated in public AD proteomics - premise test plus panel classifier. |
+| P02-03 | Antibody Design Benchmark | CBIO006 Ferroptosis AD Antibodies (2025) | End-to-end reliability certificate for the parent's ProABC-2/MODELLER/HADDOCK chain on SAbDab/SKEMPI. |
+| P02-04 | Ferroportin Variant Atlas | CBIO006 Ferroptosis AD Antibodies (2025) | gnomAD/ClinVar-mapped safe epitope surfaces with cross-population equity analysis. |
+| P02-05 | Iron Causal MR | CBIO006 Ferroptosis AD Antibodies (2025) | Pre-registered two-sample MR: is lifelong iron status causal for AD. |
+| P02-06 | Single-Cell Iron States | CBIO006 Ferroptosis AD Antibodies (2025) | Which brain cell states carry iron dysregulation; transferable cell-state classifier. |
+| P02-07 | Ferroptosis Repurposing | CBIO006 Ferroptosis AD Antibodies (2025) | L1000 signature-reversal screen for approved brain-penetrant ferroptosis modulators. |
+| P02-08 | Peptide Disruptors | CBIO006 Ferroptosis AD Antibodies (2025) | Docking + MD screen for BBB-friendly peptide blockers of hepcidin-ferroportin. |
+| P02-09 | BBB Delivery Model | CBIO006 Ferroptosis AD Antibodies (2025) | Transparent brain-exposure modeling to pick the modality before wet work. |
+| P02-10 | Ferroptosis Biomarker Panel | CBIO006 Ferroptosis AD Antibodies (2025) | Blood/CSF stratification panel for anti-ferroptosis trials from public cohort omics. |
+| P03-01 | EZH2 Screen Benchmark | CBIO008T EZH2 Drug Discovery (2023) | Open docking + GNN rescoring enrichment numbers on ChEMBL actives vs matched decoys. |
+| P03-02 | DepMap Target Check | CBIO008T EZH2 Drug Discovery (2023) | Is EZH2 really a neuroblastoma dependency - verification plus a dependency predictor. |
+| P03-03 | Cryptic Pocket Benchmark | CBIO008T EZH2 Drug Discovery (2023) | Held-out truth test of open cryptic-pocket predictors, then PRC2 application. |
+| P03-04 | Generative Reality Check | CBIO008T EZH2 Drug Discovery (2023) | MOSES-standard audit of VAE outputs through the synthesizability/docking funnel. |
+| P03-05 | PRC2 Complex Design | CBIO008T EZH2 Drug Discovery (2023) | Catalytic vs allosteric site druggability in the full complex vs monomer. |
+| P03-06 | EZH1 Selectivity | CBIO008T EZH2 Drug Discovery (2023) | Dual-paralog docking to predict and design selectivity, benchmarked on measured ratios. |
+| P03-07 | NB Repurposing | CBIO008T EZH2 Drug Discovery (2023) | PRISM mining for NB-selective approved drugs with held-out-line validation. |
+| P03-08 | Resistance Atlas | CBIO008T EZH2 Drug Discovery (2023) | Saturation in silico mutagenesis predicting EZH2 inhibitor resistance, validated on literature. |
+| P03-09 | MYCN Synthetic Lethality | CBIO008T EZH2 Drug Discovery (2023) | Co-dependency mapping of the MYCN module with a sensitivity context classifier. |
+| P03-10 | Free-Compute CADD | CBIO008T EZH2 Drug Discovery (2023) | Measured cost/accuracy frontier of a full pipeline on zero-budget compute. |
+| P04-01 | Cold-Split Audit | CBIO012 Gene-Drug Synergy (2025) | Four-regime generalization certificate for GoBERT synergy prediction. |
+| P04-02 | Embedding Validity Probes | CBIO012 Gene-Drug Synergy (2025) | Intrinsic certification: do GoBERT embeddings recover held-out GO/PPI biology. |
+| P04-03 | Metric Sensitivity | CBIO012 Gene-Drug Synergy (2025) | Bliss/Loewe/ZIP/HSA flip rates and cross-metric transfer of the model. |
+| P04-04 | Context Specificity | CBIO012 Gene-Drug Synergy (2025) | Within vs across-tissue transport matrix for synergy predictions. |
+| P04-05 | Structure Hybrid Ablation | CBIO012 Gene-Drug Synergy (2025) | What drug chemistry adds per split regime - controlled three-model ablation. |
+| P04-06 | Mechanism Recall | CBIO012 Gene-Drug Synergy (2025) | Do top function attributions rediscover curated synergy mechanisms. |
+| P04-07 | Negative-Control Certification | CBIO012 Gene-Drug Synergy (2025) | Annotation-matched permutation certificate: biology or annotation bias. |
+| P04-08 | Time-Machine Validation | CBIO012 Gene-Drug Synergy (2025) | Train pre-cutoff, freeze predictions, score against later-published screens. |
+| P04-09 | Antibiotic Transfer | CBIO012 Gene-Drug Synergy (2025) | Cross-domain test of function-embedding synergy on bacterial combinations. |
+| P04-10 | Clinical Triage Tool | CBIO012 Gene-Drug Synergy (2025) | DDI/novelty-filtered triage of top predicted pairs with audit trail. |
+| P05-01 | mcSTR Open Replication | CBIO013 mcSTR Cancers (2023) | Rebuild the 182-locus finding on fully public catalogs and genomes. |
+| P05-02 | Genotyper Benchmark | CBIO013 mcSTR Cancers (2023) | ExpansionHunter/GangSTR/HipSTR truth-set benchmark; tool-robustness per locus. |
+| P05-03 | cfDNA Feasibility | CBIO013 mcSTR Cancers (2023) | Coverage-realistic detection-limit curves for STR liquid biopsy. |
+| P05-04 | Tissue-of-Origin Classifier | CBIO013 mcSTR Cancers (2023) | Held-out-cancer-type multinomial classifier on mcSTR genotypes. |
+| P05-05 | Repair Mechanism Audit | CBIO013 mcSTR Cancers (2023) | Confounder-adjusted mediation test of the burden-TOP1/MSH2 claim. |
+| P05-06 | MSI Confound Audit | CBIO013 mcSTR Cancers (2023) | Are mcSTRs a novel class or MSI restated - MSS-only re-test. |
+| P05-07 | Population STR Reference | CBIO013 mcSTR Cancers (2023) | Ancestry-stratified baseline for the 182 loci from 1000G/HGDP, with equity impact. |
+| P05-08 | Honest Survival Models | CBIO013 mcSTR Cancers (2023) | Censoring-aware, FDR-controlled, externally validated prognosis re-test. |
+| P05-09 | HCC Liquid Biopsy | CBIO013 mcSTR Cancers (2023) | Plasma STR classifier with freeze-then-validate external cohort design. |
+| P05-10 | STR at Scale | CBIO013 mcSTR Cancers (2023) | Cost/accuracy frontier for population-scale STR genotyping pipelines. |
+| P06-01 | DTA Cold-Split Audit | CBIO013 DeepGraphDTI Nipah (2024) | Four-regime generalization certificate for DeepGraphDTI-class models. |
+| P06-02 | Nipah Hit Re-Test | CBIO013 DeepGraphDTI Nipah (2024) | Orthogonal open docking + decoys consensus verdict on the 7 reported hits. |
+| P06-03 | Active Learning DTA | CBIO013 DeepGraphDTI Nipah (2024) | How few affinity labels reach 90% performance for a brand-new target. |
+| P06-04 | Graph Shortcut Audit | CBIO013 DeepGraphDTI Nipah (2024) | Nullification probes: does the graph encoding learn structure or shortcuts. |
+| P06-05 | Henipavirus Breadth | CBIO013 DeepGraphDTI Nipah (2024) | Conserved-patch mapping + cross-species docking for genus-wide hits. |
+| P06-06 | Conformational States | CBIO013 DeepGraphDTI Nipah (2024) | Pre/post-fusion state dependence of hit rankings. |
+| P06-07 | PLM vs Graph Bake-Off | CBIO013 DeepGraphDTI Nipah (2024) | ESM-2 vs atomic-graph encodings on identical splits with cost frontier. |
+| P06-08 | Conformal Hit Triage | CBIO013 DeepGraphDTI Nipah (2024) | Calibrated hit lists with distribution-free error guarantees. |
+| P06-09 | Escape-Aware Screening | CBIO013 DeepGraphDTI Nipah (2024) | Mutant-panel robustness ranking of the NiV hits. |
+| P06-10 | Pandemic Screen Atlas | CBIO013 DeepGraphDTI Nipah (2024) | All three open drug boxes vs WHO priority pathogens, published full matrix. |
