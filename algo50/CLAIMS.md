@@ -17,3 +17,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 21 | ss-gor-vs-mlp | RES-1 | done - G1-G3 PASS (reproduction of known direction, not SOTA) | 2026-09-23T22:41Z |
 | 23 | disease-gene-rwr | RES-1 | done - G1 PASS (RWR>DN AUROC), G2 FAIL, G3 FAIL (degree correction hurts); small n=23 diseases | 2026-09-23T22:44Z |
 | 25 | missense-substitution-score | RES-1 | done - G1-G3 PASS (learned swap score beats BLOSUM62/PAM250, gene-held-out) | 2026-09-23T22:49Z |
+| 27 | coexpression-mutual-rank | RES-1 | in progress - protocol locked | 2026-09-23T22:56Z |
