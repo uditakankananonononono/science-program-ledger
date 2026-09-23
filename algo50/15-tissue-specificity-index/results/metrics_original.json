@@ -1,0 +1,31 @@
+{
+ "n_tissues": 52,
+ "n_organs": 30,
+ "n_genes": 8643,
+ "n_restricted": 1147,
+ "n_broad": 7496,
+ "auroc_tau_raw": 0.96412314989965,
+ "auroc_gini_raw": 0.9504348265020625,
+ "auroc_tsi_raw": 0.96412314989965,
+ "auroc_zmax_raw": 0.9210062861773882,
+ "auroc_entropy_raw": 0.953718298117031,
+ "auroc_tau_organ": 0.9643563460523904,
+ "best_other": "tsi_raw",
+ "d_organ_raw": 0.0002331961527404225,
+ "ci_organ_raw": [
+  -0.0011591924636541213,
+  0.0016036088966685815
+ ],
+ "d_organ_best": 0.0002331961527404225,
+ "ci_organ_best": [
+  -0.0011591924636541213,
+  0.0016036088966685815
+ ],
+ "half_spearman_mean": NaN,
+ "half_spearman_min": NaN,
+ "gates": {
+  "G1": false,
+  "G2": false,
+  "G3": false
+ }
+}

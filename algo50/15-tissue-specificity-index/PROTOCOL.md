@@ -25,3 +25,9 @@ AUROC for Restricted vs Broad. Paired bootstrap, 2000 resamples of genes, 95% CI
 - G2: AUROC(tau_organ) > the best raw-panel index other than tau (by point AUROC), CI lower bound > 0.
 - G3: mean half-panel Spearman for tau_organ >= 0.80.
 All results reported pass or fail; one post-hoc pivot allowed, locked before scoring.
+
+## Amendment 1 (POST HOC, locked before scoring the new parts)
+Original run preserved in results/metrics_original.json: G1 FAIL (tau_organ - tau_raw = +0.0002, CI -0.0012 to 0.0016), G2 FAIL, G3 not computed (bug).
+- Bug fix for G3 only: on a half-organ panel some genes are 0 in every chosen organ, so tau is undefined (NaN) and Spearman returned NaN. Fix: drop those genes from that draw's Spearman (nan_policy omit). G3 threshold unchanged.
+- Design flaw disclosed: TSI (max/sum) is a monotone transform of tau, so it has identical AUROC and G2's "best other index" was effectively tau_raw again. Not re-gated; reported as is.
+- Pivot: Restricted vs Broad is saturated (AUROC ~0.96 for every index). The harder, more useful contrast is Restricted (<= 3 tissues) vs Intermediate (4-19 tissues). P1: on that contrast, AUROC(tau_organ) - AUROC(tau_raw) >= 0.01, paired bootstrap CI lower bound > 0. P2: tau_organ beats gini_raw, entropy_raw and zmax_raw on that contrast (point AUROC). No further pivots.
