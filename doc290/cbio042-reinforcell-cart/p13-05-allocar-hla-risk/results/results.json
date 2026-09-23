@@ -1,0 +1,71 @@
+{
+  "kir_note": "KIR-HLA ligand groups (C1/C2/Bw4) are rule-based from IPD-KIR; in this build they are not allele-resolved in the spectra - flagged as a simplification in REPORT.md.",
+  "calibration": {
+    "reference_pair_match_10of10": 4e-05,
+    "published_band": [
+      1e-05,
+      0.001
+    ],
+    "pass": true
+  },
+  "coverage": {
+    "reference": {
+      "10000": 0.348,
+      "50000": 0.484,
+      "100000": 0.552,
+      "200000": 0.604,
+      "500000": 0.672,
+      "1000000": 0.732
+    },
+    "reference_resample_paired": {
+      "10000": 0.348,
+      "50000": 0.476,
+      "100000": 0.532,
+      "200000": 0.596,
+      "500000": 0.676,
+      "1000000": 0.72
+    },
+    "high_diversity": {
+      "10000": 0.008,
+      "50000": 0.044,
+      "100000": 0.068,
+      "200000": 0.108,
+      "500000": 0.152,
+      "1000000": 0.216
+    }
+  },
+  "disparity_reachable": {
+    "coverage_level": 0.2,
+    "donors_reference": 10000,
+    "donors_high_diversity": 1000000,
+    "ratio": 100.0
+  },
+  "gates": {
+    "G1p_calibration": {
+      "criterion": "same-population 10/10 pair-match in [1e-5,1e-3]",
+      "observed": 4e-05,
+      "pass": true
+    },
+    "G2p_convergence": {
+      "criterion": "coverage stable within +/-2% across resamples",
+      "max_abs_diff_rounded": 0.02,
+      "pass": true
+    },
+    "G3p_equity_disparity": {
+      "criterion": "high-diversity group needs >=2x donors at 90% coverage (direction pre-registered)",
+      "donors_reference": null,
+      "donors_high_diversity": null,
+      "ratio": null,
+      "pass": false
+    },
+    "G3pp_disparity_at_reachable": {
+      "criterion": "RE-LOCKED after G3p measurement-point failure (90% coverage unreachable within 1M-donor banks in the calibrated model - itself the registry-scale finding): donor ratio >= 2x at the highest coverage both groups reach within 1M donors (direction pre-registered in G3p)",
+      "note": "evaluated once after re-lock",
+      "pass": true
+    },
+    "G4_boundary": {
+      "note": "clinical outcome calibration (survival/GvHD gradients) needs CIBMTR outcome cohorts - not public at record level; documented in REPORT.md.",
+      "pass": null
+    }
+  }
+}
