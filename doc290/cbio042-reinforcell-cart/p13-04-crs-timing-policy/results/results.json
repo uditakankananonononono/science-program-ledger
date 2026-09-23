@@ -1,0 +1,84 @@
+{
+  "calibration": {
+    "untreated_grade_ge3_rate": 0.1265,
+    "published_band": [
+      0.1,
+      0.45
+    ],
+    "pass": true
+  },
+  "policies": {
+    "selected": "toci@1_ster@3_d0",
+    "selected_eval": [
+      1.9684499999999998,
+      0.056336310665280526
+    ],
+    "treat_at_g2": 3.4796,
+    "treat_at_g3": 5.728924999999999,
+    "train_scores_all": {
+      "toci@1_ster@3_d0": 2.0375333333333336,
+      "toci@1_ster@3_d2": 2.0375333333333336,
+      "toci@1_ster@4_d0": 2.2023333333333333,
+      "toci@1_ster@4_d2": 2.2023333333333333,
+      "toci@2_ster@3_d0": 3.6115999999999997,
+      "toci@2_ster@3_d2": 3.6115999999999997,
+      "toci@2_ster@4_d0": 3.6328,
+      "toci@2_ster@4_d2": 3.6328,
+      "toci@3_ster@3_d0": 5.979733333333334,
+      "toci@3_ster@3_d2": 5.979733333333334,
+      "toci@3_ster@4_d0": 6.063733333333333,
+      "toci@3_ster@4_d2": 6.063733333333333
+    },
+    "selected_equals_simple_treat_at_2": false
+  },
+  "sensitivity_efficacy_penalty": {
+    "0.05": {
+      "winner": "toci@1_ster@3_d0",
+      "winner_score": 2.0375333333333336,
+      "treat_at_2": 3.6115999999999997,
+      "treat_at_3": 5.979733333333334
+    },
+    "0.15": {
+      "winner": "toci@1_ster@3_d0",
+      "winner_score": 2.5622000000000003,
+      "treat_at_2": 3.8702666666666663,
+      "treat_at_3": 6.085066666666667
+    },
+    "0.3": {
+      "winner": "toci@1_ster@3_d0",
+      "winner_score": 3.3492,
+      "treat_at_2": 4.258266666666667,
+      "treat_at_3": 6.2430666666666665
+    },
+    "0.6": {
+      "winner": "toci@1_ster@3_d0",
+      "winner_score": 4.9232000000000005,
+      "treat_at_2": 5.034266666666667,
+      "treat_at_3": 6.559066666666667
+    }
+  },
+  "gates": {
+    "G1p_calibration": {
+      "criterion": "untreated grade>=3 rate in published 10-45% band",
+      "observed": 0.1265,
+      "pass": true
+    },
+    "G2p_beats_fixed_heuristics": {
+      "criterion": "learned policy composite >=10% better than BOTH treat-at-2 and treat-at-3",
+      "learned": 1.9684499999999998,
+      "treat_at_g2": 3.4796,
+      "treat_at_g3": 5.728924999999999,
+      "improvement_vs_best_fixed": 0.4342884239567767,
+      "pass": true
+    },
+    "G3p_safety_never_delay": {
+      "criterion": "0 simulated runs leave grade>=3 untreated while a treatment is available",
+      "unsafe_runs": 0,
+      "pass": true
+    },
+    "G4_boundary": {
+      "note": "spec's off-policy evaluation (doubly-robust vs physician policy) needs real serial trajectories: published datasets are figures/text, not bulk data; MIMIC-IV is credential-gated. Requirements in REPORT.md.",
+      "pass": null
+    }
+  }
+}
