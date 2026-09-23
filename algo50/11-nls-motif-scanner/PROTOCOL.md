@@ -33,3 +33,10 @@ Unannotated real NLSs inside positive proteins count as false positives, so prec
 
 ## Amendment 1 (2026-09-23T21:14Z, before any result was seen)
 Implementation only: the first run was killed for memory (dense 203k x 304 matrix) before printing anything. Feature matrices are now scipy sparse; model, features, split, thresholds and gates unchanged. run.py sha256 updated in results/lock.txt.
+
+## Amendment 2 - pivot (2026-09-23T21:24Z, POST HOC, locked before the pivot was scored)
+Original result preserved: G1 PASS, G2 FAIL, G3 PASS (results/metrics.json, unchanged). The results suggested the regex is the better net and the scanner the better filter, so this pivot was designed after seeing them and is labelled post hoc.
+- M3 cascade: take the M0 regex segments; keep a segment only if the M1 scanner's max residue score inside it is >= t. t is picked on training folds only (max segment F1 over quantiles of training-segment max scores), using the same folds, seed and M1 models as the original run. Out-of-fold scoring only.
+- Secreted control: M1 trained on all positives, t = median of the 5 fold thresholds.
+- Pivot gates: P1: M3 segment F1 - M0 segment F1 >= 0.03, paired bootstrap (2000 protein resamples) 95% CI lower bound > 0. P2: M3 secreted flag rate <= half of M0's (<= 20.1%).
+- Both reported pass or fail. No further pivots on 11.
