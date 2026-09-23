@@ -1,4 +1,4 @@
-import json, re, numpy as np
+import json, re, numpy as np, scipy.sparse as sp
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score
 from sklearn.model_selection import GroupKFold
@@ -15,7 +15,7 @@ def feats(s):
         for j,c in enumerate(w):
             if c in AA: F[i,j*20+AA.index(c)]=1
         F[i,-4]=sum(c in 'KR' for c in w); F[i,-3]=w.count('P'); F[i,-2]=w.count('H'); F[i,-1]=sum(c in 'DE' for c in w)
-    return F
+    return sp.csr_matrix(F)
 def dens(s,w=11):
     b=np.array([c in 'KR' for c in s],float); return np.convolve(b,np.ones(w),'same')
 def regex_mask(s):
@@ -58,7 +58,7 @@ order=rng.permutation(len(pos)); inv=np.argsort(order)
 S1=[None]*len(pos); T1=[]; T2=[]; R2=[None]*len(pos)
 for tr,te in GroupKFold(5).split(order,groups=[groups[i] for i in order]):
     tr=order[tr]; te=order[te]
-    clf=LogisticRegression(C=1.0,class_weight='balanced',max_iter=2000).fit(np.vstack([X[i] for i in tr]),np.concatenate([Y[i] for i in tr]))
+    clf=LogisticRegression(C=1.0,class_weight='balanced',max_iter=2000).fit(sp.vstack([X[i] for i in tr]).tocsr(),np.concatenate([Y[i] for i in tr]))
     t1=best_thr([clf.decision_function(X[i]) for i in tr],[pos[i] for i in tr]); T1.append(t1)
     t2=best_thr([D[i] for i in tr],[pos[i] for i in tr]); T2.append(t2)
     for i in te: S1[i]=(clf.decision_function(X[i]),t1); R2[i]=t2
@@ -80,7 +80,7 @@ for _ in range(2000):
     bA.append(auprc(idx,1)-auprc(idx,2)); bF.append(f1([C1[i] for i in idx])-f1([C0[i] for i in idx]))
 res['dAUPRC_M1_M2']=res['auprc_M1']-res['auprc_M2']; res['dAUPRC_ci']=list(np.percentile(bA,[2.5,97.5]))
 res['dF1_M1_M0']=res['segF1_M1']-res['segF1_M0']; res['dF1_ci']=list(np.percentile(bF,[2.5,97.5]))
-full=LogisticRegression(C=1.0,class_weight='balanced',max_iter=2000).fit(np.vstack(X),yall); tf=float(np.median(T1))
+full=LogisticRegression(C=1.0,class_weight='balanced',max_iter=2000).fit(sp.vstack(X).tocsr(),yall); tf=float(np.median(T1))
 res['neg_flag_M1']=float(np.mean([np.any(full.decision_function(feats(n['seq']))>=tf) for n in neg]))
 res['neg_flag_M0']=float(np.mean([regex_mask(n['seq']).any() for n in neg]))
 res['neg_flag_M2']=float(np.mean([np.any(dens(n['seq'])>=np.median(T2)) for n in neg]))

@@ -30,3 +30,6 @@ Classical NLS patterns (pat4, pat7, bipartite) are the standard way to spot nucl
 
 ## Caveats known upfront
 Unannotated real NLSs inside positive proteins count as false positives, so precision is a lower bound for every method equally. All results reported pass or fail; any pivot is a timestamped amendment labelled post hoc.
+
+## Amendment 1 (2026-09-23T21:14Z, before any result was seen)
+Implementation only: the first run was killed for memory (dense 203k x 304 matrix) before printing anything. Feature matrices are now scipy sparse; model, features, split, thresholds and gates unchanged. run.py sha256 updated in results/lock.txt.
