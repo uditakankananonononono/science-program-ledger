@@ -26,3 +26,20 @@ The 2019 network could not say which dark genes would be studied next. For the o
 
 ## Reproduce
 python3 code/run.py; python3 code/pivot1.py (downloads listed in GATES.md). Outputs are in results/.
+
+---
+## Addendum: forward nominations for genes still dark today (2026-09-23)
+File: results/forward_nominations_2026.csv. Code: code/forward.py. The method is the one validated in Pivot 1, applied unchanged to the current STRING v12.0 network and current HGNC names.
+
+- **746** human protein-coding genes still carry a placeholder symbol today (not ~950).
+- **110** are eligible, meaning >= 3 high-confidence neighbours with a gene group. 441 have no high-confidence STRING neighbours at all, 161 have too few, and 34 are not in STRING v12. For about 85% of dark genes, the network method has nothing to say. That is the main limit of the tool.
+- Of the 110: **97 new nominations**, and 13 are already in their top nominated HGNC group (placeholder name, but already classified).
+- Expected accuracy for eligible genes: top-3 hit rate 44% (18/41, 95% Wilson CI 30-59%), measured on the 2019->2026 retrospective test. Expect roughly 4-6 of every 10 nominations to be right, and the CI is wide.
+- Examples of new nominations: FAM89A/FAM89B -> anaphase-promoting complex (6/6 neighbours); TMEM179B -> SAGA complex (6/6); TMEM250 -> septins (5/5); C6orf15 -> RNA polymerase (11/16); FAM185A -> peroxins; CCDC63 -> outer dynein arm docking; CCDC9 -> exon junction complex; TMEM114 -> beta-gamma crystallins.
+
+How to read the list:
+1. Many "new" rows are dark by name only. HGNC groups lag the literature: CCDC47 (PAT complex), TMEM147 (BOS complex), CCDC22 (CCC complex), TMEM17/TMEM107/TMEM237 (MKS complex) and C9orf78 (spliceosome) are published. For those rows, the method re-derives known biology. That is a sanity check, not a discovery.
+2. Hub attractors: nominations to ribosome, proteasome or RNA polymerase with many neighbours (e.g. KIAA2012/CCDC74B/CCDC92 -> proteasome, CCDC124 -> ribosome) can come from co-expression with abundant machinery. Treat them as low-specificity even when the vote share is high.
+3. The best candidates for real follow-up are rows with a small, unanimous, specific neighbourhood (vote share 1.0, 3-6 neighbours, a non-hub complex) and no literature assignment yet. Checking each against PubMed is the next step. It is not done here.
+
+Display rules (the two host-gene groups dropped, the already-classified flag) were set before reading the ranked list and are recorded in GATES.md.

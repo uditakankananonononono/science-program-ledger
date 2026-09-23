@@ -42,3 +42,7 @@ P1-G1 hit rate (renamed gene's current group in its top-3) >= 20%.
 P1-G2 >= 3x the null mean, empirical p < 0.01 (1000 permutations shuffling neighbour sets across eligible genes).
 P1-G3 n eligible >= 40.
 Leakage note: gene groups are current; a group created at rename time that includes 2019 neighbours is exactly the signal claimed, but it is reported.
+
+## Addendum F (22:10, forward application requested by parent, relaying user feedback): no new gate - applies the Pivot-1 method, frozen as validated, to genes still dark today.
+Cohort: current HGNC approved protein-coding genes with a placeholder symbol (same regex). Network: STRING v12.0 (current), score >= 700. Groups: current HGNC gene groups, same exclusion list. Nomination = top-3 neighbour gene groups, reported with neighbour count and vote share. Eligibility identical to Pivot 1 (>= 3 grouped neighbours). Expected accuracy carried from the retrospective test: 44% top-3 (18/41, 95% Wilson CI shown in the writeup), valid only for eligible genes.
+Display rules (set before reading the ranked list in detail, disclosed): the host-gene groups "MicroRNA protein coding host genes" and "Small nucleolar RNA protein coding host genes" are dropped from nominations (they describe a locus, not a function; one such false hit was already noted in Pivot 1). A flag marks genes already in their top nominated group today (named placeholder, but already classified - not a new nomination).
