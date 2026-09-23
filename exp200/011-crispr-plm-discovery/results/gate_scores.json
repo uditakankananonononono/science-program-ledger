@@ -1,0 +1,39 @@
+{
+ "dev": {
+  "plm_auc": 0.9228196187819618,
+  "mmseqs_auc": 0.9891097164109717,
+  "per_family_plm": {
+   "Cas9": 0.9493733333333334,
+   "Cas12a": 0.9543111111111112,
+   "Cas13a": 0.9056388888888889
+  },
+  "n_pos": 239,
+  "n_dec": 1800
+ },
+ "frozen": {
+  "plm_auc": 0.9805777777777779,
+  "mmseqs_auc": 0.9949,
+  "n_pos": 300,
+  "n_dec": 300,
+  "drop_vs_dev": -0.057758158995816045
+ },
+ "G1_pass": false,
+ "G2_pass": true,
+ "g3_nearest_centroid": {
+  "Cas9": {
+   "Cas9": 186,
+   "Cas12a": 7,
+   "Cas13a": 7
+  },
+  "Cas12a": {
+   "Cas9": 1,
+   "Cas12a": 12,
+   "Cas13a": 2
+  },
+  "Cas13a": {
+   "Cas9": 3,
+   "Cas12a": 10,
+   "Cas13a": 11
+  }
+ }
+}
