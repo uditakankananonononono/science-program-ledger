@@ -77,3 +77,13 @@ Lane D covers parents 18-23 (P18-xx through P23-xx).
 | P19-08 | Dark Targets | CBIO056 HeLU-DTI | Ligand prediction for understudied IDG proteins via family transfer. |
 | P19-09 | Cross-Kingdom DTI | CBIO056 HeLU-DTI | Transfer human-trained DTI models to bacterial drug targets. |
 | P19-10 | Graph or Shortcut | CBIO056 HeLU-DTI | Separate real biology from node-degree shortcuts in the disease knowledge graph. |
+| P20-01 | Out-of-Cohort Test | CBIO058 Breast Recurrence | Validate the 25-gene list in METABRIC, SCAN-B and GEO against random gene sets. |
+| P20-02 | Time Matters | CBIO058 Breast Recurrence | Replace binary recurrence labels with censoring-aware survival models. |
+| P20-03 | Late Relapse | CBIO058 Breast Recurrence | Predict ER+ distant relapse after 5 years using METABRIC long follow-up. |
+| P20-04 | Integration Face-Off | CBIO058 Breast Recurrence | Fair benchmark of AIME vs MOFA+, DIABLO and single-omic baselines. |
+| P20-05 | Slides Plus Omics | CBIO058 Breast Recurrence | Fuse TCGA H&E whole-slide images with omics, with site-leakage checks. |
+| P20-06 | Protein Layer | CBIO058 Breast Recurrence | Test whether RPPA/CPTAC proteins add recurrence signal beyond RNA and CNV. |
+| P20-07 | TNBC Relapse After Chemo | CBIO058 Breast Recurrence | Pre-treatment expression model for TNBC distant relapse beyond pCR. |
+| P20-08 | Clinic-Ready Panel | CBIO058 Breast Recurrence | Distill the multi-omic model into a <= 15-gene portable panel. |
+| P20-09 | Beyond Breast | CBIO058 Breast Recurrence | Run the pipeline across 10 TCGA cancers with reliable PFI endpoints. |
+| P20-10 | More Than ER | CBIO058 Breast Recurrence | Adjust embeddings for purity, age and source site, not just ER. |
