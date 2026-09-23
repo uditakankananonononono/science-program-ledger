@@ -14,7 +14,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-1-001 | EXP-1 | 2026-09-23 16:20 | done | USEFUL: G1 PASS 21.1% median RMSE reduction, 30/30 perm-sig; G2 neg; pivot P1/P2 PASS |
 | DOC-1-002 | EXP-1 | 2026-09-23 17:10 | done | DOCUMENTED BOUNDARY (not counted): 3 datasets, 5 gate versions, 0 targets pass size-matched QC; flagged for Replogle-scale retry |
 | DOC-1-003 | EXP-1 | 2026-09-23 17:36 | done | USEFUL (counted, main adjudication 23:19): technical floor of Visium spatial structure, held-out r=0.716 + audit CLI; G2+v2 LR boundary, not counted |
-| DOC-1-004 | EXP-1 | 2026-09-23 17:48 | running | - |
+| DOC-1-004 | EXP-1 | 2026-09-23 17:48 | done | G1 genus 7.5% vs 10% gate FAIL but 20/30 perm-sig (urobilin R2 0.57); v2 species WORSE (-6.5%) - candidate boundary-map result, adjudication requested; twin CLI shipped |
+| DOC-1-005 | EXP-1 | 2026-09-23 18:03 | running | - |
 | DOC-2-079 | EXP-4 | 2026-09-23 16:20 | closed | documented boundary, NOT counted - downgraded 2026-09-23 22:11 IST: user judged the retrospective-prediction framing non-research; line terminated (forward addendum left in place as documented work, not extended) - exp200/179 |
 | DOC-2-090 | EXP-4 | 2026-09-23 16:22 | done | pass (useful) - exp200/190 |
 | DOC-2-099 | EXP-4 | 2026-09-23 16:24 | done | primary + 2 pivots fail; documented boundary (not counted) - exp200/199 |

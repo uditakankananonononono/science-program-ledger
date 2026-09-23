@@ -1,0 +1,14 @@
+# Provenance — DOC-1-004
+Borenstein-lab curated paired gut microbiome-metabolome collection (Muller et al. 2022,
+npj Biofilms & Microbiomes, s41522-022-00345-5), study FRANZOSA_IBD_2019,
+raw.githubusercontent.com/borenstein-lab/microbiome-metabolome-curated-data/main/data/processed_data/FRANZOSA_IBD_2019/
+SHA-256:
+c4a541fe198a147beccd72d52fb2ebbf75a8cdf75cb3df75f823290971409d3f  genera.tsv
+528b5e5953bd3697dd1ecf551d810d536c0679bd922e3fa3a6956c1412c6288c  mtb.tsv
+0dcdcce04a4e9b2b9b1632a410959baa4802ea9e14fc7c44f63bc17f699e5c65  mtb.map.tsv
+f7396e3d6838b3b30f78b02bd568753757f84c956cd351966dbe654d50285376  metadata.tsv
+3ca78d41301dabe3b269cd38f4df5994ee2bde030bffe3bc02e5447a12e1b2ec  species.tsv
+Gates (locked before governed outcomes):
+GATES.md dd93406093dc6f462ba6ab4deb4ac5c0b9e8771e759315c67f96f28717a115de
+GATES-addendum-1.md a69a356fe113923ac926bb5aaa229e7130f9555da90df8183afbee5dd795a6a7
+GATES-v2.md eb97d83bf6151a6ee8f608d19e7b9b9e3a735718fbba5c41c464044ad947dabd
