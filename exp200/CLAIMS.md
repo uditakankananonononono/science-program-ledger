@@ -7,7 +7,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
 - New from exp200 lanes: 10 (EXP-1: 4, EXP-2: 0, EXP-3: 0, EXP-4: 6)
-- **Total: 43 / 100 minimum**
+- **Total: 45 / 100 minimum**
 - **Total: 42 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
@@ -18,7 +18,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-1-004 | EXP-1 | 2026-09-23 17:48 | done | G1 genus 7.5% vs 10% gate FAIL but 20/30 perm-sig (urobilin R2 0.57); v2 species WORSE (-6.5%) - COUNTED (main adjudication 23:34): predictability ceiling map + aggregation-beats-resolution rule + twin CLI |
 | DOC-1-005 | EXP-1 | 2026-09-23 18:03 | DONE - COUNTED (main adjudication 00:09): trained MLP fate forecaster 86.4% top-1 held-out (7.9x climatology); Markov wins NLL head-to-head; CLI + artifacts | - |
 | DOC-1-006 | EXP-1 | 2026-09-24 00:21 | DONE - DOCUMENTED BOUNDARY (adjudication requested) | CAR-T response classifier: G1 fails both arms (logreg CV 0.552 p=0.42; MLP 0.530 p=0.70, 200 full-pipeline nulls, n=22); external untouched; streaming aggregator shipped; docking re-angle proposed |
-| PPD-v2 | EXP-1 | 2026-09-24 00:56 | COMPLETE - ALL PRIMARY GATES PASS | G1 batch-grouped CV 0.728 > all 200 perms (max 0.700); G2 batch-5 holdout 0.90 (CI 0.571-1.0); G2c +0.20 vs HP1BP3/TTC9B baseline (0.90 vs 0.70); G3 MDD transport not run (idat-only, no R) - open follow-up; CANDIDATE useful result, awaiting adjudication. exp200/PPD-v2-methylation/ |
+| PPD-v2 | EXP-1 | 2026-09-24 00:56 | DONE - COUNTED (main adjudication 00:57) | G1 batch-grouped CV 0.728 > all 200 perms (max 0.700); G2 batch-5 holdout 0.90 (CI 0.571-1.0); G2c +0.20 vs HP1BP3/TTC9B baseline (0.90 vs 0.70); G3 MDD transport not run (idat-only, no R) - open follow-up; CANDIDATE useful result, awaiting adjudication. exp200/PPD-v2-methylation/ |
 - **USER-STEERED INSERT (main 23:57, user verbatim): postpartum-depression biomarkers** - EXP-1, claimed 2026-09-24 ~00:02 IST. Blood-transcriptome cohorts (GEO or equiv), trained classifier, FROZEN external-cohort verification (AUROC gate + single-feature baseline gate, honest-negative clause), validated biomarker panel + scoring tool. CLOSED 2026-09-24 00:19 IST: DOCUMENTED BOUNDARY - 5 locked gate versions; external-cohort transport FAILED (AUROC 0.429, below chance, CI 0.273-0.591); CV-optimism (0.705->0.429) and permutation-null (0.718) findings quantified; tools shipped labeled failed-verification. exp200/PPD-postpartum-depression-biomarkers/
 | DOC-2-079 | EXP-4 | 2026-09-23 16:20 | closed | documented boundary, NOT counted - downgraded 2026-09-23 22:11 IST: user judged the retrospective-prediction framing non-research; line terminated (forward addendum left in place as documented work, not extended) - exp200/179 |
 | DOC-2-090 | EXP-4 | 2026-09-23 16:22 | done | pass (useful) - exp200/190 |
