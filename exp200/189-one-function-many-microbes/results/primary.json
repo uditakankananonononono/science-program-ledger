@@ -1,0 +1,385 @@
+{
+ "n_genomes": 149,
+ "phyla": {
+  "Pseudomonadota": 53,
+  "Actinomycetota": 28,
+  "Bacillota": 21,
+  "Bacteroidota": 8,
+  "Methanobacteriota": 7,
+  "Mycoplasmatota": 5,
+  "Thermodesulfobacteriota": 4,
+  "Cyanobacteriota": 3,
+  "Planctomycetota": 2,
+  "Spirochaetota": 2,
+  "Bdellovibrionota": 2,
+  "Thermotogota": 1,
+  "Fibrobacterota": 1,
+  "Caldisericota": 1,
+  "Verrucomicrobiota": 1,
+  "Candidatus Fervidibacterota": 1,
+  "Chloroflexota": 1,
+  "Chlamydiota": 1,
+  "Nitrososphaerota": 1,
+  "Candidatus Absconditibacteriota": 1,
+  "Thermoproteota": 1,
+  "Nitrospinota": 1,
+  "Acidobacteriota": 1,
+  "Campylobacterota": 1,
+  "Fusobacteriota": 1
+ },
+ "lysine": {
+  "n": 104,
+  "routes": {
+   "M00016": 65,
+   "M00527": 22,
+   "M00526": 7,
+   "M00526+M00527": 5,
+   "other": 5
+  },
+  "cramers_V": 0.5769127855352805,
+  "perm_p": 0.000999000999000999,
+  "route_n_phyla": {
+   "M00016": 4,
+   "M00526": 4,
+   "M00526+M00527": 3,
+   "M00527": 12,
+   "other": 2
+  },
+  "convergent_routes": [
+   "M00016",
+   "M00526",
+   "M00526+M00527",
+   "M00527"
+  ],
+  "route_by_phylum": {
+   "M00016": {
+    "Actinomycetota": 22,
+    "Bacillota": 2,
+    "Bacteroidota": 0,
+    "Campylobacterota": 1,
+    "Candidatus Fervidibacterota": 0,
+    "Cyanobacteriota": 0,
+    "Fibrobacterota": 0,
+    "Fusobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Nitrospinota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 40,
+    "Spirochaetota": 0,
+    "Thermodesulfobacteriota": 0,
+    "Verrucomicrobiota": 0
+   },
+   "M00526": {
+    "Actinomycetota": 3,
+    "Bacillota": 2,
+    "Bacteroidota": 1,
+    "Campylobacterota": 0,
+    "Candidatus Fervidibacterota": 0,
+    "Cyanobacteriota": 0,
+    "Fibrobacterota": 0,
+    "Fusobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Nitrospinota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 1,
+    "Spirochaetota": 0,
+    "Thermodesulfobacteriota": 0,
+    "Verrucomicrobiota": 0
+   },
+   "M00526+M00527": {
+    "Actinomycetota": 0,
+    "Bacillota": 3,
+    "Bacteroidota": 1,
+    "Campylobacterota": 0,
+    "Candidatus Fervidibacterota": 0,
+    "Cyanobacteriota": 0,
+    "Fibrobacterota": 1,
+    "Fusobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Nitrospinota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 0,
+    "Spirochaetota": 0,
+    "Thermodesulfobacteriota": 0,
+    "Verrucomicrobiota": 0
+   },
+   "M00527": {
+    "Actinomycetota": 2,
+    "Bacillota": 4,
+    "Bacteroidota": 2,
+    "Campylobacterota": 0,
+    "Candidatus Fervidibacterota": 1,
+    "Cyanobacteriota": 3,
+    "Fibrobacterota": 0,
+    "Fusobacteriota": 1,
+    "Methanobacteriota": 1,
+    "Nitrospinota": 1,
+    "Planctomycetota": 1,
+    "Pseudomonadota": 0,
+    "Spirochaetota": 1,
+    "Thermodesulfobacteriota": 4,
+    "Verrucomicrobiota": 1
+   },
+   "other": {
+    "Actinomycetota": 0,
+    "Bacillota": 4,
+    "Bacteroidota": 0,
+    "Campylobacterota": 0,
+    "Candidatus Fervidibacterota": 0,
+    "Cyanobacteriota": 0,
+    "Fibrobacterota": 0,
+    "Fusobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Nitrospinota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 1,
+    "Spirochaetota": 0,
+    "Thermodesulfobacteriota": 0,
+    "Verrucomicrobiota": 0
+   }
+  }
+ },
+ "isoprenoid": {
+  "n": 41,
+  "routes": {
+   "M00096": 31,
+   "M00849": 7,
+   "other": 3
+  },
+  "cramers_V": 0.824686320295008,
+  "perm_p": 0.000999000999000999,
+  "route_n_phyla": {
+   "M00096": 4,
+   "M00849": 1,
+   "other": 2
+  },
+  "convergent_routes": [],
+  "route_by_phylum": {
+   "M00096": {
+    "Actinomycetota": 14,
+    "Bacillota": 4,
+    "Cyanobacteriota": 2,
+    "Methanobacteriota": 0,
+    "Pseudomonadota": 11,
+    "Thermoproteota": 0
+   },
+   "M00849": {
+    "Actinomycetota": 0,
+    "Bacillota": 0,
+    "Cyanobacteriota": 0,
+    "Methanobacteriota": 7,
+    "Pseudomonadota": 0,
+    "Thermoproteota": 0
+   },
+   "other": {
+    "Actinomycetota": 2,
+    "Bacillota": 0,
+    "Cyanobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Pseudomonadota": 0,
+    "Thermoproteota": 1
+   }
+  }
+ },
+ "glycolysis": {
+  "n": 93,
+  "routes": {
+   "M00001": 62,
+   "M00001+M00008": 16,
+   "M00008": 14,
+   "other": 1
+  },
+  "cramers_V": 0.7187567355773842,
+  "perm_p": 0.006993006993006993,
+  "route_n_phyla": {
+   "M00001": 17,
+   "M00001+M00008": 3,
+   "M00008": 2,
+   "other": 1
+  },
+  "convergent_routes": [
+   "M00001",
+   "M00001+M00008"
+  ],
+  "route_by_phylum": {
+   "M00001": {
+    "Actinomycetota": 18,
+    "Bacillota": 15,
+    "Bacteroidota": 4,
+    "Bdellovibrionota": 1,
+    "Caldisericota": 1,
+    "Candidatus Fervidibacterota": 1,
+    "Cyanobacteriota": 2,
+    "Fusobacteriota": 1,
+    "Methanobacteriota": 2,
+    "Mycoplasmatota": 1,
+    "Nitrospinota": 1,
+    "Planctomycetota": 1,
+    "Pseudomonadota": 7,
+    "Spirochaetota": 2,
+    "Thermodesulfobacteriota": 3,
+    "Thermoproteota": 0,
+    "Thermotogota": 1,
+    "Verrucomicrobiota": 1
+   },
+   "M00001+M00008": {
+    "Actinomycetota": 3,
+    "Bacillota": 0,
+    "Bacteroidota": 0,
+    "Bdellovibrionota": 0,
+    "Caldisericota": 0,
+    "Candidatus Fervidibacterota": 0,
+    "Cyanobacteriota": 0,
+    "Fusobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Mycoplasmatota": 0,
+    "Nitrospinota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 12,
+    "Spirochaetota": 0,
+    "Thermodesulfobacteriota": 1,
+    "Thermoproteota": 0,
+    "Thermotogota": 0,
+    "Verrucomicrobiota": 0
+   },
+   "M00008": {
+    "Actinomycetota": 1,
+    "Bacillota": 0,
+    "Bacteroidota": 0,
+    "Bdellovibrionota": 0,
+    "Caldisericota": 0,
+    "Candidatus Fervidibacterota": 0,
+    "Cyanobacteriota": 0,
+    "Fusobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Mycoplasmatota": 0,
+    "Nitrospinota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 13,
+    "Spirochaetota": 0,
+    "Thermodesulfobacteriota": 0,
+    "Thermoproteota": 0,
+    "Thermotogota": 0,
+    "Verrucomicrobiota": 0
+   },
+   "other": {
+    "Actinomycetota": 0,
+    "Bacillota": 0,
+    "Bacteroidota": 0,
+    "Bdellovibrionota": 0,
+    "Caldisericota": 0,
+    "Candidatus Fervidibacterota": 0,
+    "Cyanobacteriota": 0,
+    "Fusobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Mycoplasmatota": 0,
+    "Nitrospinota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 0,
+    "Spirochaetota": 0,
+    "Thermodesulfobacteriota": 0,
+    "Thermoproteota": 1,
+    "Thermotogota": 0,
+    "Verrucomicrobiota": 0
+   }
+  }
+ },
+ "heme": {
+  "n": 56,
+  "routes": {
+   "M00121": 30,
+   "M00926": 18,
+   "other": 8
+  },
+  "cramers_V": 0.8142913707684348,
+  "perm_p": 0.000999000999000999,
+  "route_n_phyla": {
+   "M00121": 5,
+   "M00926": 3,
+   "other": 3
+  },
+  "convergent_routes": [],
+  "route_by_phylum": {
+   "M00121": {
+    "Acidobacteriota": 0,
+    "Actinomycetota": 0,
+    "Bacillota": 0,
+    "Bacteroidota": 5,
+    "Campylobacterota": 1,
+    "Cyanobacteriota": 3,
+    "Methanobacteriota": 0,
+    "Planctomycetota": 1,
+    "Pseudomonadota": 20
+   },
+   "M00926": {
+    "Acidobacteriota": 1,
+    "Actinomycetota": 10,
+    "Bacillota": 7,
+    "Bacteroidota": 0,
+    "Campylobacterota": 0,
+    "Cyanobacteriota": 0,
+    "Methanobacteriota": 0,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 0
+   },
+   "other": {
+    "Acidobacteriota": 0,
+    "Actinomycetota": 4,
+    "Bacillota": 1,
+    "Bacteroidota": 0,
+    "Campylobacterota": 0,
+    "Cyanobacteriota": 0,
+    "Methanobacteriota": 3,
+    "Planctomycetota": 0,
+    "Pseudomonadota": 0
+   }
+  }
+ },
+ "menaquinone": {
+  "n": 18,
+  "routes": {
+   "M00116": 12,
+   "M00930": 5,
+   "other": 1
+  },
+  "cramers_V": 1.0,
+  "perm_p": 0.000999000999000999,
+  "route_n_phyla": {
+   "M00116": 3,
+   "M00930": 2,
+   "other": 1
+  },
+  "convergent_routes": [],
+  "route_by_phylum": {
+   "M00116": {
+    "Actinomycetota": 0,
+    "Bacillota": 4,
+    "Campylobacterota": 0,
+    "Chloroflexota": 1,
+    "Pseudomonadota": 7,
+    "Thermodesulfobacteriota": 0
+   },
+   "M00930": {
+    "Actinomycetota": 3,
+    "Bacillota": 0,
+    "Campylobacterota": 0,
+    "Chloroflexota": 0,
+    "Pseudomonadota": 0,
+    "Thermodesulfobacteriota": 2
+   },
+   "other": {
+    "Actinomycetota": 0,
+    "Bacillota": 0,
+    "Campylobacterota": 1,
+    "Chloroflexota": 0,
+    "Pseudomonadota": 0,
+    "Thermodesulfobacteriota": 0
+   }
+  }
+ },
+ "summary": {
+  "median_V": 0.8142913707684348,
+  "n_p_lt_0.01": 5,
+  "n_functions_convergent": 2
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "lysine": {
+  "n": 89,
+  "V_corrected": 0.46201831507423574,
+  "p": 0.000999000999000999,
+  "modal_route_by_phylum": {
+   "Actinomycetota": "M00016",
+   "Bacillota": "other",
+   "Bacteroidota": "M00527",
+   "Methanobacteriota": "M00527",
+   "Pseudomonadota": "M00016"
+  },
+  "lineage_split": true,
+  "pass": true
+ },
+ "isoprenoid": {
+  "n": 38,
+  "V_corrected": 0.69067504638899,
+  "p": 0.000999000999000999,
+  "modal_route_by_phylum": {
+   "Actinomycetota": "M00096",
+   "Bacillota": "M00096",
+   "Methanobacteriota": "M00849",
+   "Pseudomonadota": "M00096"
+  },
+  "lineage_split": true,
+  "pass": true
+ },
+ "glycolysis": {
+  "n": 76,
+  "V_corrected": 0.4466941423368183,
+  "p": 0.000999000999000999,
+  "modal_route_by_phylum": {
+   "Actinomycetota": "M00001",
+   "Bacillota": "M00001",
+   "Bacteroidota": "M00001",
+   "Methanobacteriota": "M00001",
+   "Mycoplasmatota": "M00001",
+   "Pseudomonadota": "M00008"
+  },
+  "lineage_split": true,
+  "pass": true
+ },
+ "heme": {
+  "n": 50,
+  "V_corrected": 0.7744817900886849,
+  "p": 0.000999000999000999,
+  "modal_route_by_phylum": {
+   "Actinomycetota": "M00926",
+   "Bacillota": "M00926",
+   "Bacteroidota": "M00121",
+   "Methanobacteriota": "other",
+   "Pseudomonadota": "M00121"
+  },
+  "lineage_split": true,
+  "pass": true
+ },
+ "menaquinone": {
+  "n": 14,
+  "status": "too few genomes (fail)"
+ },
+ "summary": {
+  "functions_passing": 4
+ }
+}
