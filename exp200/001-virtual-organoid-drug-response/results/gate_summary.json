@@ -1,0 +1,46 @@
+{
+  "panel": [
+    "Gemcitabine",
+    "AZD5991",
+    "Daporinad",
+    "Docetaxel",
+    "BI-2536",
+    "Methotrexate",
+    "AZD5582",
+    "Dasatinib",
+    "LMP744",
+    "Schweinfurthin A",
+    "Alisertib",
+    "Cytarabine",
+    "Trametinib",
+    "Talazoparib",
+    "Mitoxantrone",
+    "Vinblastine",
+    "Pevonedistat",
+    "BEN",
+    "Bleomycin (50 uM)",
+    "Vinorelbine",
+    "Acetalax",
+    "PD0325901",
+    "BMS-754807",
+    "ABT737",
+    "Teniposide",
+    "SN-38",
+    "JQ1",
+    "AZD5153",
+    "Fludarabine",
+    "Navitoclax"
+  ],
+  "G1": {
+    "median_rel_rmse_reduction": 0.21139074117473916,
+    "frac_drugs_perm_sig": 1.0,
+    "PASS": true
+  },
+  "G2": {
+    "median_r2_targeted": 0.3759388949182955,
+    "median_r2_cytotoxic": 0.36879249770553396,
+    "mannwhitney_p": 0.18692939244663379,
+    "PASS": false
+  },
+  "runtime_min": 23.467129035790762
+}
