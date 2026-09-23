@@ -5,3 +5,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | # | slug | lane | status | claimed (UTC) |
 |---|------|------|--------|---------------|
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
+| 03 | signal-peptide-scoring | RES-1 | in progress | 2026-09-23T16:27Z |
