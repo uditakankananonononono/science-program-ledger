@@ -46,3 +46,13 @@ Lane C covers parents 13-17 (this block: P13-xx through P17-xx).
 | P16-08 | TernaryBench | CBIO046T LatentGlue | Definitive benchmark: how reliable structure predictors are on induced glue ternary complexes. |
 | P16-09 | GlueScope | CBIO046T LatentGlue | Proteome-wide off-target (neosubstrate) degradation prediction as a preclinical safety screen. |
 | P16-10 | ReleaseSim | CBIO046T LatentGlue | Mechanistic release-kinetics models for in silico design of pH-responsive degrader microparticles. |
+| P17-01 | Base3D | CBIO054 TAG-Cas | Port 3D-topology gating to base editors; test whether chromatin gates deamination like cleavage. |
+| P17-02 | PrimeContext | CBIO054 TAG-Cas | Chromatin/3D-aware prime-editing efficiency and off-target modeling on public pegRNA screens. |
+| P17-03 | Cas12-3D | CBIO054 TAG-Cas | Cas12a off-target prediction and the universality test of topological gating across nucleases. |
+| P17-04 | GuidePilot | CBIO054 TAG-Cas | Unified joint efficacy + 3D off-target guide selection with per-site Pareto frontiers. |
+| P17-05 | OffTarget-1000G | CBIO054 TAG-Cas | Population-variant-aware off-target risk across ancestry groups; equity ranking of clinical guides. |
+| P17-06 | ContextShift | CBIO054 TAG-Cas | Cross-cell-type transport matrix for 3D off-target models; minimal-epigenome verdict. |
+| P17-07 | TranslocaScan | CBIO054 TAG-Cas | Predict chromosomal translocations from multiplex cutting using Hi-C contact physics. |
+| P17-08 | DishToBody | CBIO054 TAG-Cas | Measure and correct the cell-line-to-in-vivo decay of off-target model accuracy. |
+| P17-09 | SilenceOff | CBIO054 TAG-Cas | Off-target framework for non-cutting epigenome editors; contact-domain enrichment of expression effects. |
+| P17-10 | TopologyTax | CBIO054 TAG-Cas | Standardized ablation audit of when 3D features are worth their cost across CRISPR models. |
