@@ -1,0 +1,3 @@
+https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true+AND+ft_motif:%22Nuclear%20localization%20signal%22&format=tsv&fields=accession,organism_id,protein_families,ft_motif,sequence
+x-uniprot-release: 2026_03
+https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true+AND+organism_id:9606+AND+cc_scl_term_exp:SL-0243+NOT+cc_scl_term:SL-0191+NOT+ft_motif:%22Nuclear%20localization%20signal%22&format=tsv&fields=accession,protein_families,sequence
