@@ -1,7 +1,7 @@
 ---
 id: P15-10
 title: "Annotation Drift: Temporal Validation of Viral Genome Annotators on Post-Training Deposits"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # Annotation Drift

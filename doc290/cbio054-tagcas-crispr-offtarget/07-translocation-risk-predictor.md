@@ -1,7 +1,7 @@
 ---
 id: P17-07
 title: "TranslocaScan: Predicting Chromosomal Translocations From Multi-Guide Cutting"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # TranslocaScan

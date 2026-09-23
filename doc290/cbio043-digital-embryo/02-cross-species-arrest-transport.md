@@ -1,7 +1,7 @@
 ---
 id: P14-02
 title: "Mouse-to-Human Arrest Transport: Cross-Species Stress Test of Multi-Omic Embryo Signatures"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # Mouse-to-Human Arrest Transport

@@ -1,7 +1,7 @@
 ---
 id: P15-06
 title: "Overlap Resolver: Systematic Detection of Overlapping Viral Genes"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # Overlap Resolver

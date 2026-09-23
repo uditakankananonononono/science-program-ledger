@@ -1,7 +1,7 @@
 ---
 id: P16-09
 title: "GlueScope: Proteome-Wide Off-Target Degradation Prediction for Molecular Glues"
-parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (ISEF 2026 Grand Award)"
+parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (source abstract, 2026)"
 ---
 
 # GlueScope

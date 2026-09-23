@@ -1,7 +1,7 @@
 ---
 id: P15-05
 title: "FrameShift Finder: Deep Detection of Programmed Ribosomal Frameshifting in Viral Genomes"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # FrameShift Finder

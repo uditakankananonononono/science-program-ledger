@@ -1,7 +1,7 @@
 ---
 id: P14-08
 title: "MorphoKinetic Ploidy: Predicting Euploidy From Time-Lapse Parameters and Omic Anchors"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # MorphoKinetic Ploidy

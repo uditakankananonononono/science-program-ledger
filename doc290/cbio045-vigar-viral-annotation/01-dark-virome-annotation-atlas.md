@@ -1,7 +1,7 @@
 ---
 id: P15-01
 title: "Dark Virome Atlas: Annotating the 45,000 Unannotated GenBank Viral Genomes"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # Dark Virome Atlas

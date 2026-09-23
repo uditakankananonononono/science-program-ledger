@@ -1,7 +1,7 @@
 ---
 id: P17-04
 title: "GuidePilot: Unified On-Target Efficacy + 3D Off-Target Risk Guide Selection"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # GuidePilot

@@ -1,7 +1,7 @@
 ---
 id: P16-08
 title: "TernaryBench: How Well Do Structure Predictors Really Do on Glue Ternary Complexes?"
-parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (ISEF 2026 Grand Award)"
+parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (source abstract, 2026)"
 ---
 
 # TernaryBench

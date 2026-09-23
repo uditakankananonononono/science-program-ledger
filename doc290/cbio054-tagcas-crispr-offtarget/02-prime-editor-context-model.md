@@ -1,7 +1,7 @@
 ---
 id: P17-02
 title: "PrimeContext: Chromatin- and 3D-Aware Prime-Editing Efficiency and Off-Target Modeling"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # PrimeContext

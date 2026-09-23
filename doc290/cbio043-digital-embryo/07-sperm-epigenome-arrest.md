@@ -1,7 +1,7 @@
 ---
 id: P14-07
 title: "Paternal Layer: Sperm Epigenome and Small-RNA Contributions to Embryo Arrest"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # Paternal Layer

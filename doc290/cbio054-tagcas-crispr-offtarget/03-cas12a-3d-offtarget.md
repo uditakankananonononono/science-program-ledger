@@ -1,7 +1,7 @@
 ---
 id: P17-03
 title: "Cas12-3D: Topological Off-Target Prediction for Cas12a Nucleases"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # Cas12-3D

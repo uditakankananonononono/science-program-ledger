@@ -1,7 +1,7 @@
 ---
 id: P13-03
 title: "Spatial TME Trafficking Atlas: Predicting CAR-T Infiltration Failure From Spatial Transcriptomics"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # Spatial TME Trafficking Atlas

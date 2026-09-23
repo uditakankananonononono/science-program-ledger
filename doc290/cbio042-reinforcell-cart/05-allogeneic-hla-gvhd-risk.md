@@ -1,7 +1,7 @@
 ---
 id: P13-05
 title: "AlloCAR Risk Engine: HLA-Mismatch GvHD and Rejection Prediction for Off-the-Shelf Cell Therapy"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # AlloCAR Risk Engine

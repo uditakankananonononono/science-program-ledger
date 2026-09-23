@@ -1,7 +1,7 @@
 ---
 id: P17-05
 title: "OffTarget-1000G: Population-Variant Personalization of CRISPR Off-Target Risk"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # OffTarget-1000G

@@ -1,7 +1,7 @@
 ---
 id: P15-07
 title: "Viral Druggable Proteome: Ranking Antiviral Targets Across Annotated Viral Genomes"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # Viral Druggable Proteome

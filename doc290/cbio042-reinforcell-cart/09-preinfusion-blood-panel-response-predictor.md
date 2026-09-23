@@ -1,7 +1,7 @@
 ---
 id: P13-09
 title: "Pre-Infusion Triage: Predicting CAR-T Response From Routine Blood Panels"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # Pre-Infusion Triage

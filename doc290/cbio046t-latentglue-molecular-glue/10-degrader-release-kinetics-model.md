@@ -1,7 +1,7 @@
 ---
 id: P16-10
 title: "ReleaseSim: In Silico Design of pH-Responsive Degrader Delivery Particles"
-parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (ISEF 2026 Grand Award)"
+parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (source abstract, 2026)"
 ---
 
 # ReleaseSim

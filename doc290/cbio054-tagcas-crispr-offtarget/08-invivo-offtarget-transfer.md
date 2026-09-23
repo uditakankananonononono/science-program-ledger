@@ -1,7 +1,7 @@
 ---
 id: P17-08
 title: "DishToBody: Transferring Off-Target Models From Cell Lines to In Vivo Editing"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # DishToBody

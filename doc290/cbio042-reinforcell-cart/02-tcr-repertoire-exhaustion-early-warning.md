@@ -1,7 +1,7 @@
 ---
 id: P13-02
 title: "TCR-Repertoire Early Warning: Predicting T-Cell Exhaustion From Repertoire Dynamics"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # TCR-Repertoire Early Warning

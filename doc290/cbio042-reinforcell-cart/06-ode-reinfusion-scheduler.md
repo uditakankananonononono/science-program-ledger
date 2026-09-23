@@ -1,7 +1,7 @@
 ---
 id: P13-06
 title: "Reinfusion Scheduler: Mechanistic ODE-Guided Timing of Repeat CAR-T Dosing"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # Reinfusion Scheduler

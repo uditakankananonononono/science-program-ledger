@@ -1,7 +1,7 @@
 ---
 id: P16-07
 title: "Glue the Neglected: Degrader Discovery for Parasitic-Disease Targets"
-parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (ISEF 2026 Grand Award)"
+parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (source abstract, 2026)"
 ---
 
 # Glue the Neglected

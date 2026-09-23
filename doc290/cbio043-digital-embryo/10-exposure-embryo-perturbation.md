@@ -1,7 +1,7 @@
 ---
 id: P14-10
 title: "Exposure-Embryo Map: Environmental Exposures and Arrest Risk via Cohort + Perturbation Fusion"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # Exposure-Embryo Map

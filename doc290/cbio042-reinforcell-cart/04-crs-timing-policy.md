@@ -1,7 +1,7 @@
 ---
 id: P13-04
 title: "CRS Timing Policy: Learned Intervention Scheduling for Cytokine Release Syndrome"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # CRS Timing Policy

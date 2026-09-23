@@ -1,7 +1,7 @@
 ---
 id: P13-01
 title: "CAR-NK Bioreactor RL: Reinforcement-Learning Optimization of Natural Killer Cell Expansion"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # CAR-NK Bioreactor RL

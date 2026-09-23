@@ -1,7 +1,7 @@
 ---
 id: P17-01
 title: "Base3D: 3D-Aware Off-Target Prediction for Adenine and Cytosine Base Editors"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # Base3D

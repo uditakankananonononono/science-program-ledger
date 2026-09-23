@@ -1,7 +1,7 @@
 ---
 id: P16-04
 title: "SelectiveDegrade: Predicting Cell-Type-Selective Protein Degradation From Proteomics"
-parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (ISEF 2026 Grand Award)"
+parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (source abstract, 2026)"
 ---
 
 # SelectiveDegrade

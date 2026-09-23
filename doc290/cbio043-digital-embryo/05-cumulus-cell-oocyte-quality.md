@@ -1,7 +1,7 @@
 ---
 id: P14-05
 title: "Cumulus Readout: Oocyte Quality Prediction From Surrounding-Cell Transcriptomics"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # Cumulus Readout

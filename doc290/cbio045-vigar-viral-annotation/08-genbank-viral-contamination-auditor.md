@@ -1,7 +1,7 @@
 ---
 id: P15-08
 title: "VirAudit: Contamination and Mislabel Detection in Public Viral Genome Records"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # VirAudit

@@ -1,7 +1,7 @@
 ---
 id: P17-06
 title: "ContextShift: Cross-Cell-Type Transport of 3D Off-Target Models"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # ContextShift

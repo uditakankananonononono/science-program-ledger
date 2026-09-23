@@ -1,7 +1,7 @@
 ---
 id: P15-04
 title: "SRA Virus Hunt: Discovery and Annotation of Novel Viruses in Public Metatranscriptomes"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # SRA Virus Hunt

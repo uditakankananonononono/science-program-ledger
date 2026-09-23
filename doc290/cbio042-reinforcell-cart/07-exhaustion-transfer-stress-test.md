@@ -1,7 +1,7 @@
 ---
 id: P13-07
 title: "Exhaustion Transfer Stress Test: Cross-Cohort Transport of T-Cell Exhaustion Signatures"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # Exhaustion Transfer Stress Test

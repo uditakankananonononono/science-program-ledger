@@ -1,7 +1,7 @@
 ---
 id: P13-08
 title: "Deviation Detector: Anomaly Detection for Cell-Therapy Manufacturing Runs"
-parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (ISEF 2026 Grand Award)"
+parent: "CBIO042 - ReinforCell: CAR-T Cell Optimization Solution (source abstract, 2026)"
 ---
 
 # Deviation Detector

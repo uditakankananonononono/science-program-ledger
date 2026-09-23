@@ -1,7 +1,7 @@
 ---
 id: P16-01
 title: "TF-Glue: Molecular Glue Discovery for Transcription Factor Oncoproteins"
-parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (ISEF 2026 Grand Award)"
+parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (source abstract, 2026)"
 ---
 
 # TF-Glue

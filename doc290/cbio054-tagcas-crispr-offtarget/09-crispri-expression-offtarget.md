@@ -1,7 +1,7 @@
 ---
 id: P17-09
 title: "SilenceOff: Off-Target Prediction for Epigenome Editors (dCas9 Effectors)"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # SilenceOff

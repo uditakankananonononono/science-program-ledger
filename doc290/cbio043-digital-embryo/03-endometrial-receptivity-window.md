@@ -1,7 +1,7 @@
 ---
 id: P14-03
 title: "Receptivity Window Engine: Multi-Omic Timing of Endometrial Implantation"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # Receptivity Window Engine

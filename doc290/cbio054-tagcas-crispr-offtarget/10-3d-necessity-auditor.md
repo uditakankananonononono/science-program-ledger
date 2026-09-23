@@ -1,7 +1,7 @@
 ---
 id: P17-10
 title: "TopologyTax: An Auditor for Whether 3D Features Earn Their Cost in CRISPR Models"
-parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO054 - 3D-Aware CRISPR Off-Target Prediction (source abstract, 2026)"
 ---
 
 # TopologyTax

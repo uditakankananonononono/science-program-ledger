@@ -1,7 +1,7 @@
 ---
 id: P16-06
 title: "bRo5 Navigator: Property Prediction for Beyond-Rule-of-5 Degraders"
-parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (ISEF 2026 Grand Award)"
+parent: "CBIO046T - Expanding the Druggable Human Proteome Five-Fold (source abstract, 2026)"
 ---
 
 # bRo5 Navigator

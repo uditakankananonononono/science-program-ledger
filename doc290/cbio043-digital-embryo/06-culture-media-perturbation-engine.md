@@ -1,7 +1,7 @@
 ---
 id: P14-06
 title: "MediaFormulator: In Silico Culture-Media Optimization via Perturbation Modeling"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # MediaFormulator

@@ -1,7 +1,7 @@
 ---
 id: P15-03
 title: "Beyond Hypothetical: Protein-Language-Model Function Assignment for Viral Dark Proteins"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # Beyond Hypothetical

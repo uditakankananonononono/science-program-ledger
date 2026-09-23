@@ -1,7 +1,7 @@
 ---
 id: P14-04
 title: "RPL Signature: Maternal Multi-Omic Prediction of Recurrent Pregnancy Loss"
-parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (ISEF 2026 Grand Award)"
+parent: "CBIO043 - Digital Embryo: Multi-Omic Arrest Prediction (source abstract, 2026)"
 ---
 
 # RPL Signature

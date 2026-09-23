@@ -1,7 +1,7 @@
 ---
 id: P15-02
 title: "Phage Arsenal: Mining Annotated Phage Genomes for Anti-AMR Lysins and Depolymerases"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # Phage Arsenal

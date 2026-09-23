@@ -1,7 +1,7 @@
 ---
 id: P15-09
 title: "MicroViral: Small-ORF Discovery in Viral Genomes With Ribo-seq Evidence"
-parent: "CBIO045 - Viral Genome Annotation with RNNs (ISEF 2024 Grand Award)"
+parent: "CBIO045 - Viral Genome Annotation with RNNs (source abstract, 2024)"
 ---
 
 # MicroViral
