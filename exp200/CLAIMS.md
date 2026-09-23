@@ -20,3 +20,9 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-051..059, 061..068, 070..073, 081..089, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 - Lane 3: DOC-2-001..DOC-2-050 (skipping touched DOC-2-009, 019, 032, 033, 037), folders exp200/1NN-<slug> where NN = DOC-2 number. Claimed 2026-09-23 21:55 IST.
 - Lane 4 folder numbering: exp200/1NN-<slug> for DOC-2-0NN (same as lane 3).
+
+## User steering 2026-09-23 ~22:10 IST (all lanes, from main)
+Meta-science framing does NOT count as research: a topic must produce a biological or
+methodological payload (tool, nomination list, measured property of real data). If a
+topic's only honest output is meta, run it as a documented boundary (template: 199/099)
+and do NOT count it. 179 downgraded to boundary on direct user instruction (EXP-4 count 3).
