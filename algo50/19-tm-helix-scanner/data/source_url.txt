@@ -1,0 +1,2 @@
+https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true%20AND%20keyword:KW-0002%20AND%20ft_transmem:*&format=tsv&fields=accession,protein_families,organism_id,ft_transmem,sequence
+https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true%20AND%20keyword:KW-0002%20AND%20organism_id:9606%20NOT%20ft_transmem:*%20NOT%20keyword:KW-0472%20NOT%20keyword:KW-0732&format=tsv&fields=accession,protein_families,sequence
