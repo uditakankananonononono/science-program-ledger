@@ -6,8 +6,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 100 useful results is the floor, not the finish line.
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
-- New from exp200 lanes: 4 (EXP-1: 1, EXP-2: 0, EXP-3: 0, EXP-4: 3)
-- **Total: 38 / 100 minimum**
+- New from exp200 lanes: 5 (EXP-1: 1, EXP-2: 0, EXP-3: 0, EXP-4: 4)
+- **Total: 39 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
 |---|---|---|---|---|
@@ -18,6 +18,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-099 | EXP-4 | 2026-09-23 16:24 | done | primary + 2 pivots fail; documented boundary (not counted) - exp200/199 |
 | DOC-2-080 | EXP-4 | 2026-09-23 16:35 | done | pass (useful) - exp200/180 |
 | DOC-2-075 | EXP-4 | 2026-09-23 16:38 | done | pass on locked gates, fragile (LOFO OR 2.6-4.2) - exp200/175 |
+| DOC-2-062 | EXP-4 | 2026-09-23 17:18 | done | primary pass (AUROC 0.775 low-seq stratum, +0.076 over sequence); forward validation enrichment pass / absolute-rate fail (5.3% vs 0%) - exp200/162 |
 | DOC-2-051..059, 061..068, 070..073, 081..089, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 | DOC-2-089 | EXP-4 | 2026-09-23 16:40 | done | primary fail (convergence gate); pivot 1 pass 4/5 (lineage lock), low novelty flagged - exp200/189 |
 | DOC-2-073 | EXP-4 | 2026-09-23 16:52 | closed | primary + pivot fail; documented boundary (not counted) - null: AlphaMissense equally reliable on poorly vs well-studied rare-disease genes - exp200/173 |
