@@ -22,3 +22,22 @@ A trained cross-platform blood-RNA classifier for bacterial vs viral infection, 
 
 ## Pivot rule
 If a gate fails, keep the negative result, amend and lock here before new results, and never re-fish.
+
+## Primary result (00:42) - G1 PASS, G2 FAIL, preserved
+- Model: 5-fold CV AUROC in training. On E1 (GSE42026, 18 bacterial / 41 viral) AUROC 0.855; on E2 (GSE40396, 8 / 35) AUROC 0.896. G1 PASS.
+- Baselines: B1 Herberg 0.870 / 0.857; B2 Sweeney 0.912 / 0.893.
+- Pooled: model 0.861 vs B2 0.898, difference -0.036 (CI -0.086 to +0.009). G2 FAIL: the trained model does not beat the published 7-gene Sweeney score. It is at best equivalent.
+
+## Pivot 1 (locked 00:44, before any Pivot 1 data was downloaded or scored)
+- Question: does the trained model add information on top of the published Sweeney score? Combined score = mean of the within-cohort percentile ranks of the frozen model and B2, with no fitted weights. The idea came after seeing that B2 won, so it is tested ONLY on a cohort I have not touched.
+- E3 (fresh): GSE6269 (Ramilo et al., Blood 2007) sub-series GPL570 and GPL96. Bacterial (S. aureus, E. coli, S. pneumoniae) vs influenza A. Scores ranked within each sub-series, then pooled.
+- P1-G1: combined AUROC on E3 >= 0.85.
+- P1-G2: combined AUROC minus max(B1, B2) on E3 >= 0.02, with a 2,000x stratified bootstrap CI lower bound > 0.
+- Reported: model-alone, B1 and B2 on E3.
+Pre-scoring notes (00:46, from series metadata only): GSE6269 profiles PBMCs, not whole blood, so it is a tissue shift. It is disclosed and kept, because the lock came first. Influenza B samples are excluded, as locked. GPL570 has no GEO annot file, so its probes are mapped with the GPL96 annotation (shared HG-U133A probe IDs).
+
+## Pivot 1 result (00:44) - P1-G1 PASS, P1-G2 FAIL, preserved
+- E3 (GSE6269, PBMC): 91 bacterial vs 25 influenza A. Combined AUROC 0.931 (P1-G1 PASS). Model alone 0.914; B2 Sweeney 0.922.
+- P1-G2 FAIL: difference +0.009, CI -0.018 to +0.035.
+- B1 is invalid on E3 (FAM89A is absent from U133A, so the score collapses to a constant). This does not change the gate, because B2 was the max.
+Closed as a documented boundary: the frozen model transfers but does not beat the named published 7-gene score.
