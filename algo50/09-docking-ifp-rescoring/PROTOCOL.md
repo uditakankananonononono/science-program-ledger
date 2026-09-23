@@ -27,3 +27,6 @@ AUROC, EF5% (top 5% of 558 = 28 cmpds), BEDROC(alpha=20). 95% CIs by 2000 strati
 
 ## Honest-negative policy
 All gate results are reported whether pass or fail. Any pivot after results is a written, timestamped amendment below the lock and is labelled post hoc.
+
+## Disclosure note (2026-09-23T21:24Z, added while docking was running, before any analysis)
+The earlier, lost attempt at 09 (previous sandbox) ran a single-ligand timing test on an ADA active and docked about 3 library compounds before it died. Those outputs were never pushed and were not available to or seen by this restart. The "LOCKED before any active or decoy was docked" statement applies to this restart's run.
