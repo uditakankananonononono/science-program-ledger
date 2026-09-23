@@ -1,0 +1,112 @@
+{
+  "calibration": {
+    "peak_day": 7.014613778705637,
+    "published_band_days": [
+      7,
+      21
+    ],
+    "pass": true
+  },
+  "optimization": {
+    "no_reinfusion_burden": 2.1150322309541907,
+    "tox_ceiling_rel_base_peak": 3.0,
+    "best": {
+      "burden": 2.1150328784689756,
+      "day": 210,
+      "dose": 0.5,
+      "final_T": -3.152336516685236e-12
+    },
+    "reduction_frac": -3.0614889713029807e-07
+  },
+  "clearance_regime_sweep": {
+    "0.55": {
+      "no_reinfusion_burden": 2.1150322309541907,
+      "base_peak_E": 0.2678225588028118,
+      "best": {
+        "day": 210,
+        "dose": 0.5,
+        "burden": 2.1150328784689756,
+        "final_T": -3.152336516685236e-12
+      },
+      "reduction_frac": -3.0614889713029807e-07
+    },
+    "0.4": {
+      "no_reinfusion_burden": 2.7103462170432127,
+      "base_peak_E": 0.32755737869624213,
+      "best": {
+        "day": 210,
+        "dose": 0.5,
+        "burden": 2.710346658404559,
+        "final_T": 4.1162062238225675e-11
+      },
+      "reduction_frac": -1.6284316127659241e-07
+    },
+    "0.3": {
+      "no_reinfusion_burden": 3.350182275512536,
+      "base_peak_E": 0.403449397024854,
+      "best": {
+        "day": 210,
+        "dose": 0.5,
+        "burden": 3.350182580420209,
+        "final_T": 1.0588772221118812e-11
+      },
+      "reduction_frac": -9.101226375546234e-08
+    },
+    "0.22": {
+      "no_reinfusion_burden": 4.153290549298121,
+      "base_peak_E": 0.5165909477317728,
+      "best": {
+        "day": 210,
+        "dose": 1.5,
+        "burden": 4.153290743025949,
+        "final_T": 2.6333395138814315e-12
+      },
+      "reduction_frac": -4.664441992351898e-08
+    }
+  },
+  "identifiability": {
+    "fisher_scores": {
+      "a": 26958.63874343996,
+      "tau": 0.0,
+      "d0": 574984.6745236336,
+      "x": 27412.16193327202,
+      "k": 3458.519631297708
+    },
+    "identifiable_rel_sd_lt_50pct": {
+      "a": true,
+      "tau": false,
+      "d0": true,
+      "x": true,
+      "k": true
+    }
+  },
+  "gates": {
+    "G1p_calibration": {
+      "criterion": "effector peak day in published 7-21 band",
+      "observed": 7.014613778705637,
+      "pass": true
+    },
+    "G2p_optimization_changes_plan": {
+      "criterion": "optimal reinfusion differs meaningfully from none (burden reduction >= 15%) OR honest near-optimal documented",
+      "reduction_frac": -3.0614889713029807e-07,
+      "pass": true,
+      "branch": "honest near-optimal documented: max burden reduction from any reinfusion (day 30-210 x dose 0.5-2.0) is <1e-6 in the base regime and across the pre-committed clearance sweep (k=0.55..0.22). Mechanism: antigen-driven expansion is self-sustaining whenever tumor retains antigen, so a single infusion clears without help; reinfusion then adds only toxicity risk. Antigen-escape extension (post-hoc, results/escape_extension.json): same-CAR reinfusion is futile against escape relapse at every timing/dose (reduction <1e-6); escape clones need a different-target product."
+    },
+    "G3_identifiability": {
+      "criterion": ">=3 core parameters identifiable (rel. sd<50%) from weekly ddPCR, else boundary documented",
+      "identifiable": {
+        "a": true,
+        "tau": false,
+        "d0": true,
+        "x": true,
+        "k": true
+      },
+      "n_identifiable": 4,
+      "pass": true
+    },
+    "G4_boundary": {
+      "note": "retrospective redosing validation + Bayesian fitting need published trial kinetic series (figure-digitization beyond run scope); documented in REPORT.md.",
+      "pass": null
+    }
+  }
+}
