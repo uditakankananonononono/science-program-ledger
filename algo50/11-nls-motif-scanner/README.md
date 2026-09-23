@@ -25,3 +25,10 @@ The old regex rules are still the better finder of experimentally mapped NLSs: a
 
 ## Reproduce
 python3 code/parse.py && python3 code/run.py  (about 10 min on 2 cores)
+
+## Post-hoc pivot (Amendment 2, locked before scoring; results/pivot_metrics.json)
+Cascade M3: keep a regex hit only if the scanner also scores it highly (threshold tuned on training folds).
+- Segment F1 0.566 vs regex 0.546: +0.020, 95% CI -0.0003 to 0.040. Precision rises 0.44 -> 0.51, recall drops 0.71 -> 0.63.
+- Secreted proteins flagged: 31.2% vs 40.1% for regex.
+- P1 FAIL (needed +0.03 with CI above 0). P2 FAIL (needed <= 20.1%).
+The cascade is a small, borderline improvement, not a clear win. Project 11 closes as a documented negative: on experimentally mapped NLSs, a small learned scanner does not beat the classical regex rules, and gating the regex with it only trims a little noise.
