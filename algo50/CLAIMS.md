@@ -1,0 +1,7 @@
+# algo50 - project number claims
+
+Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane split: RES-1 takes ODD numbers, RES-2 takes EVEN. Claim a number here before starting; pull --rebase before editing.
+
+| # | slug | lane | status | claimed (UTC) |
+|---|------|------|--------|---------------|
+| 01 | spaced-seed-minhash | RES-1 | in progress | 2026-09-23T16:18Z |
