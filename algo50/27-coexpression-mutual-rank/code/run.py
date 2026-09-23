@@ -16,9 +16,7 @@ Rk=np.empty((N,N),np.float32)
 for i in range(N):
     row=C[i].copy(); row[i]=-np.inf; Rk[i]=rankdata(-row,method='average')
 mu=np.nanmean(C,1); sd=np.nanstd(C,1)
-Z=((C-mu[:,None])/sd[:,None]); Z=np.nan_to_num(Z,nan=0.0).clip(min=0)
 Xr=np.apply_along_axis(rankdata,1,g[tis].values.astype(float)); Xr=(Xr-Xr.mean(1,keepdims=True))/Xr.std(1,keepdims=True)
-S_=(Xr@Xr.T/Xr.shape[1]).astype(np.float32)
 mem=[set() for _ in range(N)]
 for k,(p,s) in enumerate(pw.items()):
     for x in s:
@@ -29,7 +27,8 @@ for i in range(N):
     lab=np.array([bool(mem[i]&mem[j]) for j in range(N)]); lab[i]=False
     if lab.sum()==0: continue
     msk=np.ones(N,bool); msk[i]=False; y=lab[msk]
-    sc={'PCC':C[i],'SCC':S_[i],'MR':-np.sqrt(Rk[i]*Rk[:,i]),'CLR':np.sqrt(Z[i]**2+Z[:,i]**2)}
+    zi=np.nan_to_num((C[i]-mu[i])/sd[i]).clip(min=0); zj=np.nan_to_num((C[:,i]-mu)/sd).clip(min=0)
+    sc={'PCC':np.nan_to_num(C[i]),'SCC':(Xr[i]@Xr.T/Xr.shape[1]),'MR':-np.sqrt(Rk[i]*Rk[:,i]),'CLR':np.sqrt(zi**2+zj**2)}
     r={'gene':genes[i],'n_partners':int(y.sum())}
     for k,s in sc.items():
         s=s[msk].astype(np.float64); rk=rankdata(s); npos=y.sum(); nneg=len(y)-npos

@@ -23,3 +23,11 @@ For every gene with >= 1 partner: AUROC for ranking all other genes (partner vs 
 - G2: P@50(MR) - P@50(PCC) >= 0.005, CI lower bound > 0.
 - G3: AUROC(MR) - AUROC(CLR) > 0, CI lower bound > 0.
 All reported pass or fail; one post-hoc pivot allowed, locked first.
+
+## Amendment 1 (implementation only, before any output)
+The first run was killed for memory (four full 8124x8124 matrices) before printing anything. CLR z-scores and Spearman rows are now computed per query gene from the same quantities. No method change.
+
+## Amendment 2 - pivot (POST HOC, locked before the pivot was scored)
+Original result preserved (results/metrics_original.json): G1 FAIL (MR - PCC AUROC +0.003), G2 FAIL (MR slightly worse at P@50), G3 PASS (MR > CLR by +0.0025). All measures are weak here (AUROC ~0.61) and within 0.02 of each other. Pivot, designed after seeing that: a second-order measure that may denoise a 52-dimensional profile.
+- SNN (shared nearest neighbours, Jarvis & Patrick 1973): each gene's top-50 genes by PCC; score(i,j) = |N_i intersect N_j| / 50, ties broken by PCC (+ 0.001 x PCC).
+- P1: AUROC(SNN) - AUROC(PCC) >= 0.01, CI lower bound > 0. P2: P@50(SNN) - P@50(PCC) >= 0.005, CI lower bound > 0. Same genes, truth, metrics and bootstrap. No further pivots.
