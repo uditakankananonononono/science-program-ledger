@@ -10,4 +10,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 07 | disorder-segmentation-hmm | RES-1 | done - G1-G3 PASS, G4 transfer narrow FAIL | 2026-09-23T17:37Z |
 | 09 | docking-ifp-rescoring | RES-1 | in progress - restarted 2026-09-23T21:05Z (prior sandbox lost, nothing pushed); protocol locked, docking running | 2026-09-23T18:28Z |
 | 11 | nls-motif-scanner | RES-1 | done - G1+G3 PASS, G2 FAIL; pivot P1+P2 FAIL (documented negative) | 2026-09-23T21:11Z |
-| 13 | amp-rule-vs-learned | RES-1 | G1-G3 FAIL (rule beats learned); post-hoc pivot locked, running | 2026-09-23T21:28Z |
+| 13 | amp-rule-vs-learned | RES-1 | done - G1-G3 FAIL, pivot P1+P2 FAIL (documented negative: rule beats learned) | 2026-09-23T21:28Z |
