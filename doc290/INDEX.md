@@ -97,3 +97,13 @@ Lane D covers parents 18-23 (P18-xx through P23-xx).
 | P21-08 | Ligand Response Check | CBIO060 IL-6 TNBC Model | Validate pathway dynamics against LINCS MCF10A ligand perturbation data. |
 | P21-09 | Stemness Loop | CBIO060 IL-6 TNBC Model | Link IL-6 signaling to cancer stem cell population dynamics under chemo. |
 | P21-10 | Beyond IL-6 | CBIO060 IL-6 TNBC Model | Extend to the IL-6/IL-8/TNF network and test compensation. |
+| P22-01 | Stitch or Native 3D | CBIO064T 3D Cell Visualization | Benchmark slice-and-stitch vs native 3D segmentation and find where stitching breaks. |
+| P22-02 | Linking Benchmark | CBIO064T 3D Cell Visualization | Score the cross-height/time linking step against standard trackers on CTC data. |
+| P22-03 | Fewer Slices | CBIO064T 3D Cell Visualization | Find the coarsest z-spacing that keeps 3D shape measurements accurate. |
+| P22-04 | Shape Tells State | CBIO064T 3D Cell Visualization | Predict cell-cycle stage from 3D morphology in the Allen Cell dataset. |
+| P22-05 | How Many Labels | CBIO064T 3D Cell Visualization | Minimal annotation budget and active learning to adapt Cellpose to new tissues. |
+| P22-06 | Show the Doubt | CBIO064T 3D Cell Visualization | Per-cell segmentation uncertainty that tracks errors, shown in 3D. |
+| P22-07 | Lighter Meshes | CBIO064T 3D Cell Visualization | Mesh simplification vs shape-measurement fidelity trade-off. |
+| P22-08 | Inside the Cell | CBIO064T 3D Cell Visualization | Multichannel organelle visualization and radial position analysis. |
+| P22-09 | Whole-Tissue 4D | CBIO064T 3D Cell Visualization | Scale the pipeline to light-sheet embryos and find what breaks first. |
+| P22-10 | Quantified Comparison | CBIO064T 3D Cell Visualization | Replace side-by-side viewing with statistical 3D shape comparison. |
