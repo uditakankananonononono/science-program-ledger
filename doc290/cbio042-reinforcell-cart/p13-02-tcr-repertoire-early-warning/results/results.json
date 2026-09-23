@@ -1,0 +1,33 @@
+{
+  "dataset": "VDJdb 2026-06-03 (human TRB, antigen-specific)",
+  "n_epitopes": 162,
+  "n_viral": 127,
+  "n_self": 35,
+  "gates": {
+    "G1p_INSTRUMENT_FAILURE": {
+      "criterion": "real epitope clonality exceeds synthetic naive by >=0.10 mean",
+      "real_clonality_mean": 0.00019743220722040077,
+      "note": "instrument invalid for curated-unique-record data; see G1pp. Failure documented, not hidden.",
+      "pass": false
+    },
+    "G1pp_machinery_sanity": {
+      "criterion": "real 3-mer convergence / synthetic naive convergence >= 2 (geometric means), re-locked after G1p instrument failure, before evaluation",
+      "real_convergence_geomean": 516799.17699819454,
+      "synth_convergence_geomean": 2288301.2046874957,
+      "pass": false
+    },
+    "G2p_classification_auc": {
+      "criterion": "viral-vs-self AUC >= 0.70 (repeated stratified 5-fold x6)",
+      "auc_full": 0.7392087912087911,
+      "pass": true
+    },
+    "G3p_feature_value": {
+      "criterion": "full features beat length+V/J baseline by >=0.03 AUC",
+      "auc_full": 0.7392087912087911,
+      "auc_baseline_logreg": 0.6644542124542123,
+      "auc_baseline_gbm": 0.7044249084249085,
+      "delta_vs_best_baseline": 0.03478388278388267,
+      "pass": true
+    }
+  }
+}
