@@ -6,14 +6,14 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 100 useful results is the floor, not the finish line.
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
-- New from exp200 lanes: 6 (EXP-1: 1, EXP-2: 0, EXP-3: 0, EXP-4: 5)
-- **Total: 40 / 100 minimum**
+- New from exp200 lanes: 7 (EXP-1: 2, EXP-2: 0, EXP-3: 0, EXP-4: 5)
+- **Total: 41 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
 |---|---|---|---|---|
 | DOC-1-001 | EXP-1 | 2026-09-23 16:20 | done | USEFUL: G1 PASS 21.1% median RMSE reduction, 30/30 perm-sig; G2 neg; pivot P1/P2 PASS |
 | DOC-1-002 | EXP-1 | 2026-09-23 17:10 | done | DOCUMENTED BOUNDARY (not counted): 3 datasets, 5 gate versions, 0 targets pass size-matched QC; flagged for Replogle-scale retry |
-| DOC-1-003 | EXP-1 | 2026-09-23 17:36 | done | G1 inverted (technical covariates predict Moran I r=0.716 held-out) - CANDIDATE methodological result, adjudication requested; G2+v2 LR boundary, not counted; audit CLI shipped |
+| DOC-1-003 | EXP-1 | 2026-09-23 17:36 | done | USEFUL (counted, main adjudication 23:19): technical floor of Visium spatial structure, held-out r=0.716 + audit CLI; G2+v2 LR boundary, not counted |
 | DOC-1-004 | EXP-1 | 2026-09-23 17:48 | running | - |
 | DOC-2-079 | EXP-4 | 2026-09-23 16:20 | closed | documented boundary, NOT counted - downgraded 2026-09-23 22:11 IST: user judged the retrospective-prediction framing non-research; line terminated (forward addendum left in place as documented work, not extended) - exp200/179 |
 | DOC-2-090 | EXP-4 | 2026-09-23 16:22 | done | pass (useful) - exp200/190 |
