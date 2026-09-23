@@ -18,3 +18,6 @@ Gates:
 - G3: FPR90(M2) <= 0.8 x FPR90(M0), and CI of FPR90(M0) - FPR90(M2) lower bound > 0.
 If G1 fails: one post-hoc pivot, locked and pushed before scoring.
 Caveats declared up front: decoys are random GT sites, not cryptic splice sites, so absolute numbers overstate real-genome accuracy; 9-mer only; known direction in the literature (this is a reproduction, not SOTA).
+
+## Amendment 1 (engineering only, before any score was produced)
+First run was killed for memory (2 GB sandbox) before fitting finished; no metric was computed. Changes, all mathematically equivalent: M2 is fit on unique 9-mers with duplicate counts as sample weights (identical L2 objective); bootstrap resampling is done as multinomial count weights with a weighted average-precision / FPR90 routine (sklearn AP also reported on the full test set as a check). Models, data, gates unchanged.
