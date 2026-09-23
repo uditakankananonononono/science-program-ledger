@@ -16,3 +16,13 @@ Lane C covers parents 13-17 (this block: P13-xx through P17-xx).
 | P13-08 | Deviation Detector | CBIO042 ReinforCell | Anomaly detection for cell-therapy manufacturing runs, pretrained on IndPenSim, with microbial-to-mammalian transfer test. |
 | P13-09 | Pre-Infusion Triage | CBIO042 ReinforCell | Predict CAR-T response from routine blood panels and map exactly where cheap data runs out of information. |
 | P13-10 | Antigen-Escape Atlas | CBIO042 ReinforCell | Pan-cancer single-cell antigen co-expression atlas powering escape-risk scoring and dual-target CAR selection. |
+| P14-01 | Secretome-Only Viability | CBIO043 Digital Embryo | How much arrest signal survives in non-invasive spent-media metabolomics alone - and the minimal analyte panel. |
+| P14-02 | Mouse-to-Human Arrest Transport | CBIO043 Digital Embryo | Bidirectional cross-species stress test certifying which arrest biology transports from mouse to human. |
+| P14-03 | Receptivity Window Engine | CBIO043 Digital Embryo | Transcriptome+microbiome molecular clock for the endometrial implantation window. |
+| P14-04 | RPL Signature | CBIO043 Digital Embryo | Test whether unexplained recurrent pregnancy loss splits into replicating molecular subtypes. |
+| P14-05 | Cumulus Readout | CBIO043 Digital Embryo | Predict oocyte quality from discarded cumulus-cell transcriptomes; minimal qPCR panel for clinics. |
+| P14-06 | MediaFormulator | CBIO043 Digital Embryo | Composition-to-outcome response surface for embryo culture media with ranked in silico formulation tweaks. |
+| P14-07 | Paternal Layer | CBIO043 Digital Embryo | Quantify the sperm epigenome/small-RNA contribution to embryo arrest - the missing seventh omic. |
+| P14-08 | MorphoKinetic Ploidy | CBIO043 Digital Embryo | Non-invasive ploidy prediction from time-lapse morphokinetics with an honest clinical ceiling. |
+| P14-09 | Embryo Omic Clock | CBIO043 Digital Embryo | Developmental-stage clock for preimplantation embryos; arrest as measurable deceleration. |
+| P14-10 | Exposure-Embryo Map | CBIO043 Digital Embryo | Fuse cohort epidemiology with perturbation signatures to triage environmental risks for arrest. |
