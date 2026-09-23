@@ -1,0 +1,38 @@
+{
+ "eco": {
+  "calibration": {
+   "(0.0, 0.5]": {
+    "precision": 0.3305785123966942,
+    "n": 121
+   },
+   "(0.5, 0.8]": {
+    "precision": 0.6594427244582043,
+    "n": 323
+   },
+   "(0.8, 1.0]": {
+    "precision": 0.8588235294117647,
+    "n": 850
+   }
+  },
+  "unannotated_with_prediction": 1119,
+  "unannotated_share>0.8": 502
+ },
+ "bsu": {
+  "calibration": {
+   "(0.0, 0.5]": {
+    "precision": 0.288135593220339,
+    "n": 59
+   },
+   "(0.5, 0.8]": {
+    "precision": 0.6146788990825688,
+    "n": 218
+   },
+   "(0.8, 1.0]": {
+    "precision": 0.8481012658227848,
+    "n": 632
+   }
+  },
+  "unannotated_with_prediction": 949,
+  "unannotated_share>0.8": 502
+ }
+}

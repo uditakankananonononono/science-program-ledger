@@ -1,0 +1,82 @@
+{
+ "eco": {
+  "n_known": 1788,
+  "n_genes_string": 4125,
+  "cooccurence": {
+   "coverage": 0.7237136465324385,
+   "precision": 0.759659969088099,
+   "n_pred": 1294,
+   "null_mean": 0.04538253477588871,
+   "fold": 16.73903788846318,
+   "p_emp": 0.004975124378109453
+  },
+  "neighborhood": {
+   "coverage": 0.8042505592841164,
+   "precision": 0.631432545201669,
+   "n_pred": 1438,
+   "null_mean": 0.0409596662030598,
+   "fold": 15.415959252971142,
+   "p_emp": 0.004975124378109453
+  },
+  "coexpression": {
+   "coverage": 0.5486577181208053,
+   "precision": 0.672782874617737,
+   "n_pred": 981
+  },
+  "experimental": {
+   "coverage": 0.3394854586129754,
+   "precision": 0.71334431630972,
+   "n_pred": 607
+  },
+  "textmining": {
+   "coverage": 0.8987695749440716,
+   "precision": 0.7436216552582452,
+   "n_pred": 1607
+  },
+  "database": {
+   "coverage": 0.790268456375839,
+   "precision": 0.8796886058032555,
+   "n_pred": 1413
+  }
+ },
+ "bsu": {
+  "n_known": 1402,
+  "n_genes_string": 4181,
+  "cooccurence": {
+   "coverage": 0.6483594864479315,
+   "precision": 0.7513751375137514,
+   "n_pred": 909,
+   "null_mean": 0.04394939493949395,
+   "fold": 17.09637046307885,
+   "p_emp": 0.004975124378109453
+  },
+  "neighborhood": {
+   "coverage": 0.8231098430813124,
+   "precision": 0.5632582322357019,
+   "n_pred": 1154,
+   "null_mean": 0.04283795493934143,
+   "fold": 13.148578942045107,
+   "p_emp": 0.004975124378109453
+  },
+  "coexpression": {
+   "coverage": 0.4051355206847361,
+   "precision": 0.6778169014084507,
+   "n_pred": 568
+  },
+  "experimental": {
+   "coverage": 0.4942938659058488,
+   "precision": 0.5930735930735931,
+   "n_pred": 693
+  },
+  "textmining": {
+   "coverage": 0.8894436519258203,
+   "precision": 0.7465918203688853,
+   "n_pred": 1247
+  },
+  "database": {
+   "coverage": 0.7503566333808844,
+   "precision": 0.8811787072243346,
+   "n_pred": 1052
+  }
+ }
+}
