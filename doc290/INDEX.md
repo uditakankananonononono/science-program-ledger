@@ -87,3 +87,13 @@ Lane D covers parents 18-23 (P18-xx through P23-xx).
 | P20-08 | Clinic-Ready Panel | CBIO058 Breast Recurrence | Distill the multi-omic model into a <= 15-gene portable panel. |
 | P20-09 | Beyond Breast | CBIO058 Breast Recurrence | Run the pipeline across 10 TCGA cancers with reliable PFI endpoints. |
 | P20-10 | More Than ER | CBIO058 Breast Recurrence | Adjust embeddings for purity, age and source site, not just ER. |
+| P21-01 | Which Conclusions Hold | CBIO060 IL-6 TNBC Model | Identifiability and parameter-ensemble robustness of the 48-ODE model's target ranking. |
+| P21-02 | Minimal IL-6 Model | CBIO060 IL-6 TNBC Model | Reduce 48 equations to a <= 12-equation core that preserves predictions. |
+| P21-03 | Model Meets DepMap | CBIO060 IL-6 TNBC Model | Check model-predicted targets against CRISPR dependencies in IL-6-high TNBC lines. |
+| P21-04 | Combo Screen | CBIO060 IL-6 TNBC Model | In silico combination synergy checked against DrugComb and NCI ALMANAC. |
+| P21-05 | Tumor-Stroma Loop | CBIO060 IL-6 TNBC Model | Three-compartment IL-6 model constrained by the TNBC single-cell atlas. |
+| P21-06 | Patient-Level IL-6 Models | CBIO060 IL-6 TNBC Model | Personalize the model by tumor expression and test prognosis. |
+| P21-07 | Dose to Signal | CBIO060 IL-6 TNBC Model | Couple real drug PK to pathway dynamics to compare dosing schedules. |
+| P21-08 | Ligand Response Check | CBIO060 IL-6 TNBC Model | Validate pathway dynamics against LINCS MCF10A ligand perturbation data. |
+| P21-09 | Stemness Loop | CBIO060 IL-6 TNBC Model | Link IL-6 signaling to cancer stem cell population dynamics under chemo. |
+| P21-10 | Beyond IL-6 | CBIO060 IL-6 TNBC Model | Extend to the IL-6/IL-8/TNF network and test compensation. |
