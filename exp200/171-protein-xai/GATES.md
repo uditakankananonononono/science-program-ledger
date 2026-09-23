@@ -48,3 +48,6 @@ Re-angle: drop enzyme class as a proxy. Train a DL model directly to find cataly
 - P1-G2 PASS: type-matched AUROC mean 0.776 (n=930), Wilcoxon p=2e-144.
 - Mechanism (locked hypothesis supported): top-5 recall is 0.41 for reactant residues (n=1,464) vs 0.20 for spectator-only residues (n=3,100).
 - Nomination: ABHD4 (Q8TB40) S146, within the GHSLG (GXSXG) motif. Its predicted triad partners are H320 and D170.
+
+## Label-shuffled control (primary, reported, not gated; finished 01:05)
+Test macro-F1 0.126 (chance). G2 median AUROC 0.589. G3 mean 0.522 (p=1e-4). Architecture and positional priors alone give attributions a little above chance. The trained primary model (0.699 / 0.608) sits well above this control. The Pivot 1 result is not affected.

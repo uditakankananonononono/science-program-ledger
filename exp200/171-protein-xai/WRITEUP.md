@@ -33,7 +33,7 @@
 - The nomination follows from homology, so it is plausible rather than surprising.
 - Many UniProt ACT_SITE labels are inferred by similarity; family exclusion reduces overlap with M-CSA but does not remove it.
 - Small 8M model, CPU only.
-- The label-shuffled control for the primary was still running when this was written.
+- Label-shuffled control for the primary: macro-F1 0.13, localization 0.59, type-matched 0.52. Attributions carry little signal without learning.
 
 ## Reproduce
 code/train.py (primary), code/pivot1.py, code/nominate.py. Data: UniProt REST and M-CSA API, checksums in data/SHA256SUMS.
