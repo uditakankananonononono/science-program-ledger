@@ -1,0 +1,2 @@
+https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true%20AND%20keyword:KW-0929%20AND%20length:%5B10%20TO%2060%5D&format=tsv&fields=accession,protein_families,organism_id,sequence
+https://rest.uniprot.org/uniprotkb/stream?query=reviewed:true%20AND%20length:%5B10%20TO%2060%5D%20AND%20cc_scl_term:SL-0243%20NOT%20keyword:KW-0929%20NOT%20keyword:KW-0044%20NOT%20keyword:KW-0800&format=tsv&fields=accession,protein_families,organism_id,keyword,sequence
