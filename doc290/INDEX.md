@@ -107,3 +107,13 @@ Lane D covers parents 18-23 (P18-xx through P23-xx).
 | P22-08 | Inside the Cell | CBIO064T 3D Cell Visualization | Multichannel organelle visualization and radial position analysis. |
 | P22-09 | Whole-Tissue 4D | CBIO064T 3D Cell Visualization | Scale the pipeline to light-sheet embryos and find what breaks first. |
 | P22-10 | Quantified Comparison | CBIO064T 3D Cell Visualization | Replace side-by-side viewing with statistical 3D shape comparison. |
+| P23-01 | Is It Quantum or Memory | CBIO083 Quantum Game Theory | Give classical models the same leaky integrator and parameter budget to test the quantum gain. |
+| P23-02 | Second Assay Test | CBIO083 Quantum Game Theory | Transfer the QGT structure to the Farrokhian 2022 gefitinib game assay. |
+| P23-03 | Patient Data Test | CBIO083 Quantum Game Theory | Test game models on Bruchovsky intermittent androgen suppression PSA data. |
+| P23-04 | Schedule Designer | CBIO083 Quantum Game Theory | Design adaptive on/off schedules and test whether model choice changes them. |
+| P23-05 | Space, Not Quantum | CBIO083 Quantum Game Theory | Test whether spatial structure explains the quantum model's advantage. |
+| P23-06 | Noise Model Check | CBIO083 Quantum Game Theory | Stochastic classical dynamics vs Lindblad dissipation on held-out likelihood. |
+| P23-07 | Three-Player Game | CBIO083 Quantum Game Theory | Model fibroblasts as an explicit third strategy. |
+| P23-08 | What the Parameters Mean | CBIO083 Quantum Game Theory | Map QGT parameters to measurable biology across environments. |
+| P23-09 | Beyond Cancer | CBIO083 Quantum Game Theory | Test QGT on microbial cooperation game data. |
+| P23-10 | Open Game Benchmark | CBIO083 Quantum Game Theory | Standard dataset suite and leaderboard for cancer dynamics models. |
