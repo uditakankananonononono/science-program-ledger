@@ -67,3 +67,13 @@ Lane D covers parents 18-23 (P18-xx through P23-xx).
 | P18-08 | Response Function | CBIO055 Microbial Detection | Taxonomy+function models for immunotherapy response across melanoma cohorts. |
 | P18-09 | Phage Layer | CBIO055 Microbial Detection | Add the gut virome as a third view and test for three-way synergy. |
 | P18-10 | Cross-Kingdom Networks | CBIO055 Microbial Detection | Bacterial-fungal co-occurrence edges as cancer-type biomarkers. |
+| P19-01 | Cold-Split Audit | CBIO056 HeLU-DTI | Measure DTI accuracy on unseen drugs, unseen targets and both, with KG-leakage checks. |
+| P19-02 | Affinity, Not Yes/No | CBIO056 HeLU-DTI | Turn HeLU into a calibrated binding-affinity regressor and test the KG's value per split. |
+| P19-03 | Trustworthy Hits | CBIO056 HeLU-DTI | Conformal prediction to rank novel DTI predictions with controlled error rates. |
+| P19-04 | Pocket-Aware DTI | CBIO056 HeLU-DTI | Add AlphaFold-predicted binding-pocket structure to sequence embeddings for unseen targets. |
+| P19-05 | Time Machine Test | CBIO056 HeLU-DTI | Train on ChEMBL up to 2019, check predictions against interactions reported 2020-2024. |
+| P19-06 | Off-Target to Side Effect | CBIO056 HeLU-DTI | Predict adverse drug reactions from predicted proteome-wide off-target profiles. |
+| P19-07 | Selectivity Map | CBIO056 HeLU-DTI | Predict whole kinome selectivity profiles for new inhibitors. |
+| P19-08 | Dark Targets | CBIO056 HeLU-DTI | Ligand prediction for understudied IDG proteins via family transfer. |
+| P19-09 | Cross-Kingdom DTI | CBIO056 HeLU-DTI | Transfer human-trained DTI models to bacterial drug targets. |
+| P19-10 | Graph or Shortcut | CBIO056 HeLU-DTI | Separate real biology from node-degree shortcuts in the disease knowledge graph. |
