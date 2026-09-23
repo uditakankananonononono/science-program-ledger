@@ -20,3 +20,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 27 | coexpression-mutual-rank | RES-1 | done - NEGATIVE (G1+G2 FAIL, G3 PASS; SNN pivot FAIL) | 2026-09-23T22:56Z |
 | 29 | splice-donor-wam | RES-1 | done - G1-G3 PASS (pairwise LR and WAM beat PWM, chrom-held-out; reproduction) | 2026-09-23T23:02Z |
 | 31 | go-semsim-ppi | RES-1 | done - G1+G3 FAIL, G2 PASS; post-hoc combination pivot P1+P2 PASS | 2026-09-23T23:29Z |
+| 33 | ecg-qrs-consensus | RES-1 | claimed - protocol in prep | 2026-09-23T23:33Z |
