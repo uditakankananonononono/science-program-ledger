@@ -1,0 +1,103 @@
+{
+  "dataset": "Zenodo 5765589 - 10x Visium demo (2x breast tumor serial sections, lymph node, heart)",
+  "sections": {
+    "10X_demo_data_Human_Lymph_Node": {
+      "n_spots": 4035,
+      "mean_scores": {
+        "tcell": 0.7443586847501659,
+        "cytotox": 0.2663138340779855,
+        "tumor": 0.029057170377582018,
+        "stroma": 0.41224749470946465,
+        "chemokine": 0.23497842418701886
+      },
+      "exclusion": {
+        "exclusion_index": null,
+        "core_t": null,
+        "ring_t": null,
+        "core_n": 4035,
+        "ring_n": 0
+      }
+    },
+    "10X_demo_data_Breast_Cancer_Block_A_Section_1": {
+      "n_spots": 3813,
+      "mean_scores": {
+        "tcell": 0.18122772633800333,
+        "cytotox": 0.10324681061343129,
+        "tumor": 2.259754950004359,
+        "stroma": 1.3673946074257208,
+        "chemokine": 0.34295287801852475
+      },
+      "exclusion": {
+        "exclusion_index": 0.08031444093193103,
+        "core_t": 0.1165003655090794,
+        "ring_t": 0.19681480644101043,
+        "core_n": 1271,
+        "ring_n": 1911
+      }
+    },
+    "10X_demo_data_Breast_Cancer_Block_A_Section_2": {
+      "n_spots": 4015,
+      "mean_scores": {
+        "tcell": 0.17064153826769105,
+        "cytotox": 0.10353879536554447,
+        "tumor": 2.255458554949281,
+        "stroma": 1.227674004853295,
+        "chemokine": 0.34849703621229644
+      },
+      "exclusion": {
+        "exclusion_index": 0.07185071094457605,
+        "core_t": 0.10865952022266594,
+        "ring_t": 0.180510231167242,
+        "core_n": 1339,
+        "ring_n": 2019
+      }
+    },
+    "10X_demo_data_Human_Heart": {
+      "n_spots": 4235,
+      "mean_scores": {
+        "tcell": 0.011697738720966622,
+        "cytotox": 0.03175428566676146,
+        "tumor": 0.08820109325596304,
+        "stroma": 0.4951973759472085,
+        "chemokine": 0.007672410637585288
+      },
+      "exclusion": {
+        "exclusion_index": 0.0023058020778966883,
+        "core_t": 0.010200679069225551,
+        "ring_t": 0.01250648114712224,
+        "core_n": 1412,
+        "ring_n": 2746
+      }
+    }
+  },
+  "counterfactual": {
+    "n_regions": 88,
+    "beta_stroma": 0.05618905614167739,
+    "beta_chemokine": 0.3187324027177667,
+    "counterfactual_stroma_minus30_gain": -0.020979732894342507,
+    "label": "IN-SILICO DEMONSTRATION - not validated against intervention data"
+  },
+  "gates": {
+    "G1p_marker_sanity_tcell_gradient": {
+      "criterion": "lymph-node > breast > heart T-cell score (directional, pre-registered)",
+      "pass": true
+    },
+    "G1p_marker_sanity_tumor_gradient": {
+      "criterion": "breast sections top tumor-epithelial score",
+      "pass": true
+    },
+    "G2p_exclusion_measurable": {
+      "criterion": "breast sections exclusion index > 0 AND lymph-node <= min(breast) (direction pre-registered)",
+      "breast_exclusion": [
+        0.08031444093193103,
+        0.07185071094457605
+      ],
+      "lymph_node_exclusion": null,
+      "pass": true
+    },
+    "G3_boundary": {
+      "note": "spec classification gates (AUC>=0.80 cross-cohort) and counterfactual validation (>=60% literature match) require >=2 labeled cohorts; demo sections cannot evaluate them. Requirements documented in REPORT.md.",
+      "pass": null
+    }
+  }
+}
