@@ -19,4 +19,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 25 | missense-substitution-score | RES-1 | done - G1-G3 PASS (learned swap score beats BLOSUM62/PAM250, gene-held-out) | 2026-09-23T22:49Z |
 | 27 | coexpression-mutual-rank | RES-1 | done - NEGATIVE (G1+G2 FAIL, G3 PASS; SNN pivot FAIL) | 2026-09-23T22:56Z |
 | 29 | splice-donor-wam | RES-1 | done - G1-G3 PASS (pairwise LR and WAM beat PWM, chrom-held-out; reproduction) | 2026-09-23T23:02Z |
-| 31 | go-semsim-ppi | RES-1 | claimed - protocol in prep | 2026-09-23T23:29Z |
+| 31 | go-semsim-ppi | RES-1 | protocol locked, running | 2026-09-23T23:29Z |
