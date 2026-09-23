@@ -7,3 +7,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
+| 07 | disorder-segmentation-hmm | RES-1 | in progress | 2026-09-23T17:37Z |
