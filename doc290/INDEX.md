@@ -36,3 +36,13 @@ Lane C covers parents 13-17 (this block: P13-xx through P17-xx).
 | P15-08 | VirAudit | CBIO045 ViGAR | Audit GenBank viral records for contamination and mislabels; measure the substrate error rate. |
 | P15-09 | MicroViral | CBIO045 ViGAR | Ribo-seq-backed small-ORF catalog across viruses; test microprotein enrichment for immune evasion. |
 | P15-10 | Annotation Drift | CBIO045 ViGAR | Temporal train/test validation quantifying random-split optimism and annotation-model decay. |
+| P16-01 | TF-Glue | CBIO046T LatentGlue | Glue discovery for transcription-factor oncoproteins with DepMap-dependency-driven target selection. |
+| P16-02 | LinkerSmith | CBIO046T LatentGlue | Generative PROTAC linker design plus the first open linker-design rules mined from PROTAC-DB. |
+| P16-03 | GlueBreak | CBIO046T LatentGlue | Prospective resistance-mutation atlas for glue recruitment pathways with backup-recruiter proposals. |
+| P16-04 | SelectiveDegrade | CBIO046T LatentGlue | Predict cell-type-selective degradation from baseline proteomes; selectivity-by-design safety scoring. |
+| P16-05 | LigaseFrontier | CBIO046T LatentGlue | Tractability ranking of the ~600-ligase E3 ligaseome to recruit beyond CRBN/VHL. |
+| P16-06 | bRo5 Navigator | CBIO046T LatentGlue | Degrader-specific ADME models quantifying where conventional property prediction fails. |
+| P16-07 | Glue the Neglected | CBIO046T LatentGlue | Adapt glue screening to malaria/parasite essential proteins with parasite-selective recruitment. |
+| P16-08 | TernaryBench | CBIO046T LatentGlue | Definitive benchmark: how reliable structure predictors are on induced glue ternary complexes. |
+| P16-09 | GlueScope | CBIO046T LatentGlue | Proteome-wide off-target (neosubstrate) degradation prediction as a preclinical safety screen. |
+| P16-10 | ReleaseSim | CBIO046T LatentGlue | Mechanistic release-kinetics models for in silico design of pH-responsive degrader microparticles. |
