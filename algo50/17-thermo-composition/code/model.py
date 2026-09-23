@@ -8,7 +8,7 @@ AA=list('ACDEFGHIKLMNPQRSTVWY')
 s=pd.read_csv('../data/selected.tsv',sep='\t'); c=pd.read_csv('../results/composition.tsv',sep='\t')
 d=s.merge(c,on='upid'); F=d[AA].div(d[AA].sum(1),axis=0).values; y=d['Topt_ave'].values
 iv=F[:,[AA.index(a) for a in 'IVYWREL']].sum(1).reshape(-1,1)
-fams=d['family'].values; uf=np.unique(fams); rng=np.random.default_rng(17); perm=dict(zip(uf,rng.permutation(len(uf)))); g=np.array([perm[f] for f in fams])
+fams=d['family'].fillna(d['genus']).astype(str).values; uf=np.unique(fams); rng=np.random.default_rng(17); perm=dict(zip(uf,rng.permutation(len(uf)))); g=np.array([perm[f] for f in fams])
 def L(): return make_pipeline(StandardScaler(),RidgeCV(alphas=[0.01,0.1,1,10,100],cv=5))
 pB=np.zeros(len(y)); pL=np.zeros(len(y))
 for tr,te in GroupKFold(5).split(F,y,g):

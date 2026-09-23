@@ -23,3 +23,6 @@ MAE and Pearson r, out-of-fold. Paired bootstrap over organisms (2000) for MAE d
 - G2: Pearson r(L) >= 0.85.
 - G3 (domain transfer): train on Bacteria only, test on Archaea: MAE(L) <= MAE(B), both refit on Bacteria.
 All reported pass or fail; one post-hoc pivot allowed, locked before scoring.
+
+## Amendment 1 (implementation only, before any score was produced)
+model.py crashed on a missing family value read back from selected.tsv (pandas reads the literal family name as NaN). Fix: fill missing family with genus as already stated in the split rule. No method change.
