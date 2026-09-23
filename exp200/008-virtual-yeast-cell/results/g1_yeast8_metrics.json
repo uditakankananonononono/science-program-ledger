@@ -1,0 +1,47 @@
+{
+ "wt_yeast8": 0.08110026778360632,
+ "wt_imm904": 0.2878657037040165,
+ "common_set_size": 807,
+ "yeast8_common": {
+  "BA": 0.746986531986532,
+  "sensitivity": 0.6287878787878788,
+  "specificity": 0.8651851851851852,
+  "tp": 83,
+  "tn": 584,
+  "fp": 91,
+  "fn": 49,
+  "unsolvable": [],
+  "n_scored": 807
+ },
+ "imm904_common": {
+  "BA": 0.6176936026936027,
+  "sensitivity": 0.32575757575757575,
+  "specificity": 0.9096296296296297,
+  "tp": 43,
+  "tn": 614,
+  "fp": 61,
+  "fn": 89,
+  "unsolvable": [],
+  "n_scored": 807
+ },
+ "yeast8_own_intersect": {
+  "n": 1071,
+  "BA": 0.6932184431046904,
+  "sensitivity": 0.4971751412429379,
+  "specificity": 0.889261744966443,
+  "tp": 88,
+  "tn": 795,
+  "fp": 99,
+  "fn": 89,
+  "unsolvable": [],
+  "n_scored": 1071
+ },
+ "gate_G1": {
+  "threshold_BA": 0.85,
+  "yeast8_BA": 0.746986531986532,
+  "imm904_BA": 0.6176936026936027,
+  "pass_BA": false,
+  "beat_baseline": true,
+  "PASS": false
+ }
+}
