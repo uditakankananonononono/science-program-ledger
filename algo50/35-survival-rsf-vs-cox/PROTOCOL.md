@@ -18,3 +18,6 @@ Gates (pooled = unweighted mean over the 5 datasets of per-dataset mean paired d
 - G3: RSF mean C > Cox mean C in >= 4 of 5 datasets.
 If G1 fails: one post-hoc pivot, locked and pushed before scoring.
 Caveats declared: small cohorts; default (untuned) forest hyperparameters; Cox is linear with no interactions or splines.
+
+## Amendment 1 (bug fix; crash during the first dataset)
+The first run crashed in integrated_brier_score: a test-fold follow-up time exceeded the largest training time, which the censoring estimator cannot evaluate. The crashed log (results/run_crashed_attempt1.log) printed some gbsg2 fold lines before the crash; they were not used for any decision. Fix: IBS is computed on test samples with follow-up below the training maximum (C-index still uses all test samples), and the IBS time grid is clipped to that subset. Models, data, gates unchanged.

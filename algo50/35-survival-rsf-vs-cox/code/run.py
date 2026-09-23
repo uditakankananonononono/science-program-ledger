@@ -18,7 +18,7 @@ for n in ['gbsg2','whas500','flchain','aids','veterans_lung_cancer']:
         Xtr,Xte=X.iloc[tr].copy(),X.iloc[te].copy(); med=Xtr.median(); Xtr=Xtr.fillna(med); Xte=Xte.fillna(med)
         sc=StandardScaler().fit(Xtr); Str,Ste=sc.transform(Xtr),sc.transform(Xte)
         ytr,yte=y[tr],y[te]
-        ev=ytr[t][ytr[f]]; lo,hi=np.percentile(ev,[10,80]); hi=min(hi,yte[t].max()-1e-6); lo=max(lo,yte[t].min())
+        ev=ytr[t][ytr[f]]; lo,hi=np.percentile(ev,[10,80]); ok0=yte[t]<ytr[t].max(); hi=min(hi,yte[t][ok0].max()-1e-6); lo=max(lo,yte[t][ok0].min())
         grid=np.linspace(lo,hi,50)
         out={'dataset':n,'fold':k}
         for m,mod,A,B in [('COX',CoxPHSurvivalAnalysis(alpha=1e-4,ties='breslow'),Str,Ste),
@@ -27,7 +27,7 @@ for n in ['gbsg2','whas500','flchain','aids','veterans_lung_cancer']:
             mod.fit(A,ytr); r=mod.predict(B)
             out['C_'+m]=concordance_index_censored(yte[f],yte[t],r)[0]
             sf=mod.predict_survival_function(B); P=np.array([s(grid) for s in sf])
-            out['IBS_'+m]=integrated_brier_score(ytr,yte,P,grid)
+            ok=yte[t]<ytr[t].max(); out['IBS_'+m]=integrated_brier_score(ytr,yte[ok],P[ok],grid)
         rows.append(out); print(out,flush=True)
 df=pd.DataFrame(rows); df.to_csv('../results/fold_metrics.tsv',sep='\t',index=False)
 df['dC']=df.C_RSF-df.C_COX; df['dI']=df.IBS_COX-df.IBS_RSF
