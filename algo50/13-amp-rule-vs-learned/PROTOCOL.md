@@ -24,3 +24,9 @@ AUROC and AUPRC, out-of-fold. Paired bootstrap (2000 resamples of groups) 95% CI
 - G2: L AUROC - NN AUROC > 0, CI lower bound > 0.
 - G3: on the cysteine-rich subset (>= 4 Cys, both classes), L AUROC >= 0.80.
 All reported pass or fail; any pivot is a timestamped post-hoc amendment.
+
+## Amendment 1 - pivot (POST HOC, locked before the pivot was scored)
+Original result preserved (results/metrics.json): G1, G2, G3 all FAIL; the rule R (AUROC 0.778) beat the learned composition model L (0.701) and NN homology (0.730) under the homology-aware split. L's 424 composition features look like they learn family make-up that does not carry to new groups. Pivot, designed after seeing that:
+- LP low-dim learned model: logistic regression (C=1, balanced, standardized) on 8 physicochemical features: net charge, hydrophobic moment, length, hydrophobic fraction (AILMFVWC), Cys count, aromatic fraction (FWY), Gly+Pro fraction, R rule score. Same folds, seed, bootstrap.
+- P1: LP AUROC - R AUROC >= 0.03, CI lower bound > 0. P2: LP AUROC on the Cys-rich subset >= 0.80.
+No further pivots on 13.
