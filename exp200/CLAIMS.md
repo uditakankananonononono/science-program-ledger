@@ -7,7 +7,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
 - New from exp200 lanes: 13 (EXP-1: 7, EXP-2: 0, EXP-3: 0, EXP-4: 6)
-- **Total: 47 / 100 minimum**
+- **Total: 48 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
 |---|---|---|---|---|
@@ -23,7 +23,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-1-008 | EXP-1 | 2026-09-24 03:31 | done | DOCUMENTED BOUNDARY (not counted, adjudication reported): Yeast8 virtual cell - G1 FAILS both arms on frozen SGD essentiality (minimal BA 0.747, rich 0.6979 vs locked 0.85; both beat named baseline iMM904 +0.13/+0.095); G2 literal pass degenerate; growth-coupled scan recovers published designs FUM1/SDH3/SDH2 (mechanism check STRONG vs Otero 2012/Arikawa 1999); yeast_cell.py CLI + FUM1-KO + sdh3-ser3-ser33 wet-lab nominations; exp200/008-virtual-yeast-cell/ |
 | DOC-1-009 | EXP-1 | 2026-09-24 03:34 | deferred | design-weaker than METENG insert (main 03:31 swap criterion): no public frozen prion-specific regional validation dataset (ESM validation literature is AD-centric; sCJD/mouse-strain data locked in supplements/PDFs) - revisit if a clean CJD regional dataset surfaces |
 | METENG-insert | EXP-1 | 2026-09-24 04:40 | done | DOCUMENTED BOUNDARY (not counted): blind gc90 KO scan GATE FAIL 1/5 (locked >=3) - recovers direct-consumption KOs (FUM1 rank1/949 fumarate; succinate calibration PASS 0.998>all 200 nulls) but NOT redox/regulatory targets (PDC/GPD/ADH class); product-class-specific capability; RPE1-KO fumarate nomination; exp200/METENG-target-rediscovery/ |
-| DOC-1-010 | EXP-1 | 2026-09-24 04:49 | completed (all 4 locked gates PASS - pending adjudication) | sepsis virtual patient: HGB on Challenge-2019 set A, frozen cross-hospital set-B AUROC 0.8813 vs best clinical score NEWS 0.7022 (+0.179); drop 0.0735 within locked 0.08 bound; sepsis_risk.py CLI; exp200/010-sepsis-virtual-patient/ |
+| DOC-1-010 | EXP-1 | 2026-09-24 04:49 | COUNTED (all 4 locked gates PASS; adjudicated 04:50) | sepsis virtual patient: HGB on Challenge-2019 set A, frozen cross-hospital set-B AUROC 0.8813 vs best clinical score NEWS 0.7022 (+0.179); drop 0.0735 within locked 0.08 bound; sepsis_risk.py CLI; exp200/010-sepsis-virtual-patient/ |
 - **USER-STEERED INSERT (main 23:57, user verbatim): postpartum-depression biomarkers** - EXP-1, claimed 2026-09-24 ~00:02 IST. Blood-transcriptome cohorts (GEO or equiv), trained classifier, FROZEN external-cohort verification (AUROC gate + single-feature baseline gate, honest-negative clause), validated biomarker panel + scoring tool. CLOSED 2026-09-24 00:19 IST: DOCUMENTED BOUNDARY - 5 locked gate versions; external-cohort transport FAILED (AUROC 0.429, below chance, CI 0.273-0.591); CV-optimism (0.705->0.429) and permutation-null (0.718) findings quantified; tools shipped labeled failed-verification. exp200/PPD-postpartum-depression-biomarkers/
 | DOC-2-079 | EXP-4 | 2026-09-23 16:20 | closed | documented boundary, NOT counted - downgraded 2026-09-23 22:11 IST: user judged the retrospective-prediction framing non-research; line terminated (forward addendum left in place as documented work, not extended) - exp200/179 |
 | DOC-2-090 | EXP-4 | 2026-09-23 16:22 | done | pass (useful) - exp200/190 |
