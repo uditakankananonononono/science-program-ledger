@@ -6,9 +6,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 100 useful results is the floor, not the finish line.
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
-- New from exp200 lanes: 10 (EXP-1: 4, EXP-2: 0, EXP-3: 0, EXP-4: 6)
+- New from exp200 lanes: 13 (EXP-1: 7, EXP-2: 0, EXP-3: 0, EXP-4: 6)
 - **Total: 47 / 100 minimum**
-- **Total: 42 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
 |---|---|---|---|---|
