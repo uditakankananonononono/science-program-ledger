@@ -26,7 +26,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-073 | EXP-4 | 2026-09-23 16:52 | closed | primary + pivot fail; documented boundary (not counted) - null: AlphaMissense equally reliable on poorly vs well-studied rare-disease genes - exp200/173 |
 | DOC-2-064 | EXP-4 | 2026-09-23 17:05 | note | checked vs sp-041: sp-041 is DOC-1-044 (DANN cross-study synergy, INVALID), not DOC-2-064 - 064 stays in lane 4 queue |
 | DOC-2-068 | EXP-4 | 2026-09-23 17:12 | closed | primary + pivot fail on precision gate; documented boundary (not counted) - no-shared-target pathway fingerprint 13-14% vs 62% target identity - exp200/168 |
-| DOC-2-051..059, 061, 063..067, 070..072, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
+| DOC-2-056 | EXP-4 | 2026-09-23 17:45 | closed | primary + 2 pivots fail (incl. trained cross-platform biomarker: external AUROC 0.78/0.80 but 1-gene SLC6A14 baseline >= model); documented boundary (not counted) - exp200/156 |
+| DOC-2-051..055, 057..059, 061, 063..067, 070..072, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 - Lane 3: DOC-2-001..DOC-2-050 (skipping touched DOC-2-009, 019, 032, 033, 037), folders exp200/1NN-<slug> where NN = DOC-2 number. Claimed 2026-09-23 21:55 IST.
 - Lane 4 folder numbering: exp200/1NN-<slug> for DOC-2-0NN (same as lane 3).
 ## User steering 2026-09-23 ~22:10 IST (all lanes, from main)
