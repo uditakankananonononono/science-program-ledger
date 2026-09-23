@@ -1,5 +1,7 @@
 # DOC-2-079 Protein "Dark Matter" Atlas - sandbox slice (exp200/079)
 
+> **Status 2026-09-23 22:11 IST: DOWNGRADED to documented boundary, not counted toward the useful tally.** The user judged the retrospective-prediction framing non-research and terminated this line. The forward addendum below shipped before the stop and is kept as documented work; it will not be extended.
+
 **Outcome: primary hypothesis FAILED (preserved); Pivot 1 PASSED its locked gates.**
 
 ## Setup
