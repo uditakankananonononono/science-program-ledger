@@ -44,7 +44,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-071 | EXP-4 | 2026-09-24 00:05 | pass (pivot) | primary CNN fail; ESM-2 + trained head finds catalytic residues: frozen M-CSA external AUPRC 0.205 vs 0.045 (Bartlett propensity) / 0.036 (ESM wt-marginal), median AUROC 0.90; nomination ABHD4 S146/H320/D170 - exp200/171 |
 | DOC-2-054 | EXP-4 | 2026-09-24 00:45 | closed | trained blood-RNA bacterial-vs-viral model transfers (external AUROC 0.86/0.90/0.91) but does not beat Sweeney 2016 7-gene score (primary -0.036, pivot combo +0.009 CI spans 0); documented boundary (not counted) - exp200/154 |
 | DOC-2-065 | EXP-4 | 2026-09-24 01:22 | closed | Vina docking of imatinib/erlotinib into 60 PDB kinases vs Davis Kd: AUROC 0.66/0.53 (gate 0.70) - documented boundary (not counted); receptor bias; MASC pivot proposed - exp200/165 |
-| DOC-2-051..053, 055, 057..059, 061, 063, 064, 066, 067, 070, 072, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
+| DOC-2-072 | EXP-4 | 2026-09-24 09:16 | claimed | ESM-2 fold recognition across superfamilies vs Smith-Waterman on SCOPe 2.08 - exp200/172 |
+| DOC-2-051..053, 055, 057..059, 061, 063, 064, 066, 067, 070, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 - Lane 3: DOC-2-001..DOC-2-050 (skipping touched DOC-2-009, 019, 032, 033, 037), folders exp200/1NN-<slug> where NN = DOC-2 number. Claimed 2026-09-23 21:55 IST.
 - Lane 4 folder numbering: exp200/1NN-<slug> for DOC-2-0NN (same as lane 3).
 ## User steering 2026-09-23 ~22:10 IST (all lanes, from main)
