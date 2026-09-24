@@ -65,3 +65,9 @@ Note: GitHub allows a given deploy key on only one repository, so a builder that
 Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, killing private key halves; expect further same-shape rotations (relayed via Main).
 
 | 2026-09-24 15:37 IST | ADD | account-level | orchestrator-qc-readback-v5 | SHA256:E6dQmCYJrD3ih8z/91TPvoUZp2nyDI5qw7eV9oCrEps | qc v4 private half lost in workspace rebuild ~15:36 (same sandbox-reset wave hitting builders); v5 = same-shape restore under sprint instruction, same precedent as v3->v4 accepted by Main 14:08 | SSH auth tested OK |
+
+| 2026-09-24 15:38 IST | REVOKE | account-level | orchestrator-qc-readback-v4 | SHA256:r0pgaWby7mgWhu9smt3Ss+GCfy4A8xezKx8j2gd4n+w | private half dead (workspace rebuild); revoke directed by Main 15:38; v3 left per prior decision | verified gone on-page |
+| 2026-09-24 15:39 IST | REVOKE | shared-models | atlas-shared-models-builder | SHA256:R2+AbedqBh8Kp0KIO3FEr1hCWQep23Gd39l6mjgUJ5I | private half dead (atlas lead sandbox reset, relayed via Main 15:38) | verified gone on-page |
+| 2026-09-24 15:39 IST | ADD | shared-models | atlas-shared-models-builder-2 | SHA256:kHfbsf9GFc4Gv5lrdvXugc1/YjC4E5Ovgz7eLPeAI/g | write deploy key, replacement; relayed via Main | Read/write verified on-page |
+| 2026-09-24 15:39 IST | REVOKE | atlas-ai | instinct-atlas-builder-2026-09-24-b | SHA256:ggnUZybh... | private half dead (same reset); relayed via Main 15:38 | verified gone on-page |
+| 2026-09-24 15:39 IST | ADD | atlas-ai | instinct-atlas-builder-2026-09-24-c | SHA256:T0XCTFxMVTDz2+GzpdXKQ5SjNcL24mR0Vhghzr2hBVQ | write deploy key, replacement; relayed via Main | Read/write verified on-page |
