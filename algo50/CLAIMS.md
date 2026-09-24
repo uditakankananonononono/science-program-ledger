@@ -22,7 +22,6 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 32 | fmindex-exact-match | RES-2 | DONE - G1+G2 PASS (500/500 agreement, byte-exact BWT inversion); G3+G4 FAIL (FM 7x slower than SA binary search at 4.6Mbp in pure Python) | 2026-09-24T08:15Z |
 | 34 | quality-weighted-consensus | RES-2 | DONE - PASS all gates: QW strictly dominates, 2.5x lower error at cov=3; cov>=5 both at 0-error floor (G4 vacuous, documented) | 2026-09-24T08:17Z |
 | 36 | dust-masking | RES-2 | DONE - masker: 100% region recall, 0.96% false-mask, 100% spurious removal; retention 48/50 misses 98% gate (Q2 FAIL); two earlier FAILs were diagnosed harness artifacts | 2026-09-24T08:20Z |
-| 38 | seed-hit-probability | RES-2 | claimed - protocol in prep | 2026-09-24T08:21Z |
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
