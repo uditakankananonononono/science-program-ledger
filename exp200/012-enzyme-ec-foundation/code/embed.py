@@ -4,8 +4,8 @@ FILES=[('train','data/train.fasta'),('dev','data/dev.fasta'),('frozen','data/fro
 os.makedirs('results/emb',exist_ok=True)
 def read_fasta(p):
     recs=[]
-    for blk in open(p).read().split('>'):
-        if not blk: continue
+    for blk in open(p).read().split('\n>'):
+        if not blk or '\n' not in blk: continue
         hdr,seq=blk.split('\n',1)
         recs.append((hdr.split('|')[1] if '|' in hdr else hdr.split()[0], seq.replace('\n','')[:512]))
     return recs
