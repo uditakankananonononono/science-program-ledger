@@ -54,7 +54,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 57 | bioplex-ppi-validation | RES-1 | claimed - user-directed BioPlex follow-up to 31 | 2026-09-24T08:12Z |
 | 58 | hmm-viterbi-vs-posterior | RES-2 | DONE - G1-G3 PASS (36% disagreement in hard regime, MPM strictly >= Viterbi); G4 FAIL documented: 98% unreachable at stay=0.90, information-theoretic boundary limit | 2026-09-24T08:26Z |
 | 60 | wahlund-heterozygosity | RES-2 | DONE - PASS all gates: F_IS sim matches theory within 0.006 all cells; Ho/He 0.51-0.99 across d; control clean | 2026-09-24T08:28Z |
-| 62 | local-vs-global-alignment | RES-2 | claimed - protocol in prep | 2026-09-24T08:29Z |
+| 62 | local-vs-global-alignment | RES-2 | DONE - G2+G3 FAIL (detection premise false: SW=NW power vs length-matched null); localization pivot PASS (SW recovers domain 30/30, NW precision 2.9%) | 2026-09-24T08:31Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |

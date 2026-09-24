@@ -22,3 +22,17 @@ PASS if all.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before any pivot scoring)
+Pure-Python DP cannot complete 300 pairs/cell at F=1000 within compute budget (est. 13 min). Amendment: (a) numpy anti-diagonal vectorization of the identical recurrences (no affine gaps); (b) N per cell = 120 (F=0), 60 (F=200), 30 (F=1000); null sets same sizes. Thresholds unchanged. Detection-rate CIs widen at F=1000 (+/-1/30 quantization); reported. The abandoned pure-Python run's partial output (F=0 and one F=200 cell) is discarded; pivot scores come only from the vectorized implementation.
+
+---
+
+# AMENDMENT 2 (locked before pivot scoring)
+G2+G3 failed and the failure is the finding: against length-matched nulls, local and global detection power are nearly identical (F=1000,i=0.8: SW 0.43 vs NW 0.37) because the null score distribution shifts up with sequence length for both. The textbook local-vs-global difference is about LOCALIZATION, not raw detection.
+Pivot P: measure localization. SW best alignment (traceback from argmax) vs true domain interval on F=1000 cells.
+- P1: at i=0.8 and i=1.0, the SW interval covers >= 50% of the true 60 bp domain in >= 90% of pairs.
+- P2: NW precision for the domain <= 10% by construction (domain is 60/2060 of the forced full-length alignment) - reported as the localization cost of global alignment.
+PASS if P1.
