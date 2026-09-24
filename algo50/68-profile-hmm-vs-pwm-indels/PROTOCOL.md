@@ -22,3 +22,13 @@ PASS if all.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot run on FRESH seed 41)
+All detection gates failed as locked, and the cause is design, not method: a 12-position motif at 70% preference carries ~7.7 bits, but locating it in 400 bp needs ~log2(400)=8.6 bits - NO scorer can exceed ~0.7-0.85 AUROC there (both PWM and HMM landed at 0.69-0.73). One pre-scoring bug fixed and documented: HMM begin state unreachable past j=0 (M[0,j] never initialized; fixed to free-start local mode).
+Pivot P (fresh seed 41): motif length 18 (70% preference, ~11.6 bits), background 200 bp, same indel rates and methods, HMM match-state count 18.
+- P1: at r=0, PWM AUROC >= 0.95 and |PWM-HMM| <= 0.03.
+- P2: HMM-PWM AUROC gap monotone non-decreasing across r = 0, 0.02, 0.05, 0.10.
+- P3: at r=0.10, HMM >= 0.95 AND PWM <= 0.95 (divergence at high indel rate).
+PASS if P1+P2.
