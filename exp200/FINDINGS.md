@@ -107,6 +107,7 @@ tool, not a gate.
 - **Unordered residue matching is worse than mean-pooling (172F)**: per-residue ESM-2 8M max-match fold search 0.10/0.12 vs mean-pool 0.14/0.18 on two splits (p=0.036/0.009); residue detail only helps with an order-preserving alignment.
 - **Order flips fix negative-space transport (157F)**: stably ordered pairs that flip in UC score 0.71-0.91 across 3 externals (157 residual couplings 0.46-0.84); only +0.02 over k-TSP; flipped pairs are stromal/inflammatory, not epithelial-metabolic.
 - **Order rules do not fix gene-specific protocol bias (151F)**: k-TSP on cfDNA 5hmC 0.77 in-lab -> 0.61 cross-lab (one gene 0.73); pair orderings cancel per-sample scaling but not per-gene protocol shifts. This bounds the order-rule pattern of section 7.
+- **Pooling cohorts does not beat a meta-analysis signature (154F)**: 6-cohort leave-one-out L1 vs Sweeney 7-gene -0.015 (CI -0.05..+0.02); pooled learner picks platform-specific genes; cross-cohort effect-size selection, not sample count, is what the published score already has.
 
 ## 9. Mechanism-targeted repairs act only on residual homologs (031F)
 Both canonical fixes for the 031 AMP boundary (explicit Cys/cationic motif features; per-family
