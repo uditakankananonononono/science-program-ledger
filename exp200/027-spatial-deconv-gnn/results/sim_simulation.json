@@ -1,0 +1,46 @@
+{
+ "simulation_spec": {
+  "grf_grid": 8,
+  "bands": 10,
+  "dominant_weight": 0.45,
+  "dirichlet": {
+   "dev_alpha": 2.0,
+   "frozen_alpha": 0.5,
+   "concentration": 20
+  },
+  "cells_per_spot": "5-10",
+  "n_spots": 2000,
+  "graph": "kNN k=6 on coords",
+  "seeds": {
+   "split": 3,
+   "dev": 11,
+   "frozen": 23
+  },
+  "types": [
+   "B cell",
+   "T cell",
+   "dendritic cell",
+   "endothelial cell",
+   "leukocyte",
+   "macrophage",
+   "monocyte",
+   "natural killer cell",
+   "stromal cell",
+   "type II pneumocyte"
+  ],
+  "n_halfA": 786,
+  "n_halfB": 792,
+  "hvg": 2000,
+  "signature": "mean log1p expr per type on halfA"
+ },
+ "file_hashes": {
+  "spots_dev.npy": "d561aae8214b9661",
+  "spots_frozen.npy": "9ece3a6c1a1632b4",
+  "props_dev.npy": "66db38127c3ed35e",
+  "props_frozen.npy": "32594dd22bc15c66",
+  "sig.npy": "4976087966070a09",
+  "hvg.npy": "84e5196b7029de81",
+  "split.json": "3e61bb09cc178134"
+ },
+ "note": "all simulation artifacts frozen BEFORE any metric computation; splits/params committed here"
+}
