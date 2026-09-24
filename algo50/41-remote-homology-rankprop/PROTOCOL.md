@@ -20,3 +20,9 @@ Caveats declared: RankProp's original used PSI-BLAST E-values on a larger databa
 
 ## Amendment 1 (engineering, before any score)
 evaluate.py: the RankProp iteration is run for all queries at once as a matrix product (identical math, same 20 iterations) instead of one query at a time, for runtime.
+
+## Amendment 2 - pivot (POST HOC, locked before the pivot was scored)
+Original result preserved (results/metrics_original.json): G1-G3 FAIL; RankProp was worse than SW E-value ranking (AUROC -0.048). Diagnosis made without further scoring: with sigma = 100 on these E-values, the thousands of unrelated pairs with E in the 10s-100s get small but non-zero weights that add up, and column normalization inflates weak columns, so the walk spreads into noise. Pivot: sparsify the database graph before normalization - keep only edges with E_ij <= 10 (BLAST's usual significance scale), sigma 100, alpha 0.95, 20 iterations and the query vector y0 unchanged. Columns with no edges stay zero.
+- P1: mean AUROC (pivot - B1) >= 0.03 (bar unchanged), CI lower bound > 0.
+- P2: mean ROC50 (pivot - B1) > 0, CI lower bound > 0.
+No further pivots.
