@@ -114,3 +114,16 @@ calibration) act almost entirely on the 10.9% of frozen positives that retain a 
 under strict short-peptide homology detection (blastp-short pident>=80 & qcovs>=80). The
 family-disjoint core (89.1%) stays at TPR ~0.29 regardless. Repairs that presuppose homology
 cannot repair a homology boundary; "repairs act only on residual homologs."
+
+## 10. Conservative nulls can manufacture boundaries (002F)
+002's "effects inseparable from noise" boundary (0/10 targets) reversed to 1088/1299 passing
+once the conservative 100v100 disjoint-split null was replaced by the named n-vs-full-reference
+repair (10,691 controls). A boundary under a conservative null is a statement about the null,
+not the biology; check null calibration before declaring impossibility.
+
+## 11. Control-space regulatory networks lose to shared-program baselines (002F)
+At Replogle-essential scale (adequate power, assay QC passed), control-cell correlation
+networks predict per-target DE profiles at median r 0.317 vs 0.621 for the mean-of-other-
+perturbations baseline. The shared essential-response program dominates; control-space
+covariance adds nothing above it. Network-from-controls only has room to matter where the
+shared program is weak (nominated: non-essential perturbation contexts).
