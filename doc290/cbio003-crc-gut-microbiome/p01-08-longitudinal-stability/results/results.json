@@ -1,0 +1,137 @@
+{
+ "healthy_n_samples": 426,
+ "healthy_n_subjects": 27,
+ "ibd_n_samples": 1182,
+ "ibd_n_subjects": 84,
+ "abx_n_subjects": 18,
+ "G1": {
+  "n_with_icc": 46,
+  "missing": [
+   "Gemella_morbillorum",
+   "Peptostreptococcus_stomatis",
+   "Solobacterium_moorei",
+   "Dialister_pneumosintes"
+  ]
+ },
+ "G2": {
+  "frac_icc_ge_0.4": 0.72,
+  "median_icc_top50": 0.6154348671346876
+ },
+ "G3": {
+  "per_cohort": {
+   "FengQ_2015": {
+    "rf": {
+     "clean": 0.8186029935851745,
+     "abx": 0.8303635067712045,
+     "temporal": 0.8199215965787598
+    },
+    "weighted": {
+     "clean": 0.733784746970777,
+     "abx": 0.7295081967213114,
+     "temporal": 0.7130078403421242
+    },
+    "logit_unweighted": {
+     "clean": 0.7473271560940841,
+     "abx": 0.7476835352815395,
+     "temporal": 0.7403064861012117
+    }
+   },
+   "HanniganGD_2017": {
+    "rf": {
+     "clean": 0.5628306878306879,
+     "abx": 0.6474867724867726,
+     "temporal": 0.5789351851851853
+    },
+    "weighted": {
+     "clean": 0.5701058201058201,
+     "abx": 0.5661375661375662,
+     "temporal": 0.5724867724867724
+    },
+    "logit_unweighted": {
+     "clean": 0.6150793650793651,
+     "abx": 0.6111111111111112,
+     "temporal": 0.6252645502645502
+    }
+   },
+   "ThomasAM_2018a": {
+    "rf": {
+     "clean": 0.7535919540229885,
+     "abx": 0.742816091954023,
+     "temporal": 0.7178520114942529
+    },
+    "weighted": {
+     "clean": 0.6163793103448276,
+     "abx": 0.6336206896551724,
+     "temporal": 0.6205459770114942
+    },
+    "logit_unweighted": {
+     "clean": 0.5502873563218391,
+     "abx": 0.557471264367816,
+     "temporal": 0.5695402298850575
+    }
+   },
+   "YachidaS_2019": {
+    "rf": {
+     "clean": 0.6804719108063868,
+     "abx": 0.6600574446400445,
+     "temporal": 0.668924688841533
+    },
+    "weighted": {
+     "clean": 0.5614595880045709,
+     "abx": 0.5635133883072362,
+     "temporal": 0.5569643905000154
+    },
+    "logit_unweighted": {
+     "clean": 0.619637728157139,
+     "abx": 0.6178541647364032,
+     "temporal": 0.615009342475061
+    }
+   },
+   "ZellerG_2014": {
+    "rf": {
+     "clean": 0.8122486854314879,
+     "abx": 0.81302196102691,
+     "temporal": 0.8007732755954222
+    },
+    "weighted": {
+     "clean": 0.6987318280235075,
+     "abx": 0.6894525208784411,
+     "temporal": 0.6944788122486855
+    },
+    "logit_unweighted": {
+     "clean": 0.7448190535106711,
+     "abx": 0.7386328487472934,
+     "temporal": 0.7348437983297247
+    }
+   }
+  },
+  "means": {
+   "rf": {
+    "clean": 0.725549246335345,
+    "abx": 0.738749155375791,
+    "temporal": 0.7172813515390306,
+    "loss_abx": -0.01319990904044599,
+    "loss_temporal": 0.008267894796314401
+   },
+   "weighted": {
+    "clean": 0.6360922586899006,
+    "abx": 0.6364464723399454,
+    "temporal": 0.6314967585178183,
+    "loss_abx": -0.0003542136500448434,
+    "loss_temporal": 0.004595500172082323
+   },
+   "logit_unweighted": {
+    "clean": 0.6554301318326197,
+    "abx": 0.6545505848488327,
+    "temporal": 0.656992881411121,
+    "loss_abx": 0.0008795469837870051,
+    "loss_temporal": -0.0015627495785013323
+   }
+  }
+ },
+ "gates": {
+  "G1_pass": false,
+  "G2_pass": true,
+  "G3_pass": false
+ }
+}
