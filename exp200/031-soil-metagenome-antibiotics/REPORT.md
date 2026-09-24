@@ -67,3 +67,34 @@ Compact k-mer models degrade more gracefully than physicochemical RFs under prun
 (0.798 vs 0.592) and frozen transfer (0.373 vs 0.227). Sibling to the 028 label-granularity
 rule: cohort DISJOINTNESS granularity must match the discovery claim's granularity - verified
 pre-lock from now on.
+
+## AMPSphere soil-subset nomination (remainder completed 2026-09-24 10:47 IST)
+Source resolved: Zenodo record 6511404 (AMPSphere v.2022-03, CC BY 4.0; the big-data-biology.org
+file URLs remain dead). Files: AMPSphere_v.2022-03.faa.gz (863,498 peptides),
+AMPSphere_v.2022-03.general_geneinfo.tsv.gz (habitat per gene),
+DRAMP_anno_AMPSphere_v.2021-03.parsed.tsv.gz (novelty).
+
+Protocol: genes with general_envo_name == "soil" -> 266,287 unique peptides; novelty filter
+(excluded 1,774 peptides with a DRAMP alignment identity > 0.80) -> 265,727 scored with
+tools/amp_predict.py + results/amp_model_pruned.npz. 58,135 scored p >= 0.5 (21.9%), spanning
+41,119 SPHERE-III families. Nomination: best-scoring peptide per SPHERE-III family (diversity),
+ties at p = 1.0 broken by AMP accession ascending (more observed copies first, per AMPSphere
+numbering).
+
+TOP 10 (results/soil_top10.json):
+| # | AMP | SPHERE-III family | p | len | Cys | net chg |
+|---|---|---|---|---|---|---|
+| 1 | AMP10.013_525 | 434_459 | 1.0000 | 39 | 1 | +2 |
+| 2 | AMP10.015_859 | 290_216 | 1.0000 | 30 | 0 | +3 |
+| 3 | AMP10.020_263 | 002_214 | 1.0000 | 26 | 0 | +15 |
+| 4 | AMP10.027_113 | 000_276 | 1.0000 | 41 | 2 | +3 |
+| 5 | AMP10.031_875 | 001_688 | 1.0000 | 31 | 1 | +6 |
+| 6 | AMP10.037_460 | 054_457 | 1.0000 | 37 | 0 | +4 |
+| 7 | AMP10.045_928 | 000_551 | 1.0000 | 47 | 5 | +6 |
+| 8 | AMP10.056_456 | 027_934 | 1.0000 | 57 | 0 | +6 |
+| 9 | AMP10.056_498 | 013_960 | 1.0000 | 64 | 0 | +11 |
+| 10 | AMP10.077_203 | 000_336 | 1.0000 | 36 | 0 | +5 |
+
+Consistent with the locked lab-nomination guidance: strongly cationic candidates (#3 +15,
+#9 +11) and a Cys-rich candidate (#7, 5 Cys) both surface. All rankings hypothesis-generating
+(frozen MCC 0.37); sequences in results/soil_top10.json for the wet-lab screen.
