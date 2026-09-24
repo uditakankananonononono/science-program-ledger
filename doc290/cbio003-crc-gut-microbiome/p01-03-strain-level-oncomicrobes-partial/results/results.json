@@ -1,0 +1,185 @@
+{
+ "loco_auc": {
+  "genus": {
+   "AT-Feng": 0.9309868875086267,
+   "CN-Yu": 0.8612379502790461,
+   "DE-Wirbel": 0.8405555555555556,
+   "FR-Zeller": 0.8125579956696567,
+   "IT1-Thomas": 0.728448275862069,
+   "IT2-Thomas": 0.8571428571428571,
+   "JP-Yachida": 0.861875,
+   "US-Vogtmann": 0.746301775147929
+  },
+  "species": {
+   "AT-Feng": 0.8961352657004831,
+   "CN-Yu": 0.8886352105530188,
+   "DE-Wirbel": 0.8216666666666665,
+   "FR-Zeller": 0.809155583049799,
+   "IT1-Thomas": 0.7183908045977011,
+   "IT2-Thomas": 0.8370535714285714,
+   "JP-Yachida": 0.85625,
+   "US-Vogtmann": 0.7329881656804734
+  },
+  "locus": {
+   "AT-Feng": 0.6418219461697723,
+   "CN-Yu": 0.7271689497716894,
+   "DE-Wirbel": 0.7508333333333332,
+   "FR-Zeller": 0.5034024126198577,
+   "IT1-Thomas": 0.5545977011494254,
+   "IT2-Thomas": 0.5943080357142856,
+   "JP-Yachida": 0.6346875000000001,
+   "US-Vogtmann": 0.6527366863905326
+  },
+  "genus+locus": {
+   "AT-Feng": 0.9175293305728088,
+   "CN-Yu": 0.8658041603247083,
+   "DE-Wirbel": 0.8405555555555556,
+   "FR-Zeller": 0.788122486854315,
+   "IT1-Thomas": 0.7614942528735632,
+   "IT2-Thomas": 0.786830357142857,
+   "JP-Yachida": 0.8525,
+   "US-Vogtmann": 0.7403846153846153
+  }
+ },
+ "mean_loco": {
+  "genus": 0.8298882871457176,
+  "species": 0.8200344084595892,
+  "locus": 0.632444570643612,
+  "genus+locus": 0.819152594838553
+ },
+ "vs_genus": {
+  "locus": {
+   "AT-Feng": {
+    "diff": -0.2891649413388544,
+    "p": 1.0,
+    "counts": false
+   },
+   "CN-Yu": {
+    "diff": -0.1340690005073567,
+    "p": 0.996,
+    "counts": false
+   },
+   "DE-Wirbel": {
+    "diff": -0.08972222222222237,
+    "p": 0.962,
+    "counts": false
+   },
+   "FR-Zeller": {
+    "diff": -0.30915558304979895,
+    "p": 1.0,
+    "counts": false
+   },
+   "IT1-Thomas": {
+    "diff": -0.17385057471264354,
+    "p": 0.962,
+    "counts": false
+   },
+   "IT2-Thomas": {
+    "diff": -0.2628348214285715,
+    "p": 0.999,
+    "counts": false
+   },
+   "JP-Yachida": {
+    "diff": -0.22718749999999988,
+    "p": 0.999,
+    "counts": false
+   },
+   "US-Vogtmann": {
+    "diff": -0.09356508875739633,
+    "p": 0.933,
+    "counts": false
+   }
+  },
+  "genus+locus": {
+   "AT-Feng": {
+    "diff": -0.01345755693581785,
+    "p": 0.851,
+    "counts": false
+   },
+   "CN-Yu": {
+    "diff": 0.004566210045662156,
+    "p": 0.307,
+    "counts": false
+   },
+   "DE-Wirbel": {
+    "diff": 0.0,
+    "p": 0.488,
+    "counts": false
+   },
+   "FR-Zeller": {
+    "diff": -0.024435508815341733,
+    "p": 0.938,
+    "counts": false
+   },
+   "IT1-Thomas": {
+    "diff": 0.033045977011494254,
+    "p": 0.14,
+    "counts": false
+   },
+   "IT2-Thomas": {
+    "diff": -0.07031250000000011,
+    "p": 0.997,
+    "counts": false
+   },
+   "JP-Yachida": {
+    "diff": -0.009374999999999911,
+    "p": 0.759,
+    "counts": false
+   },
+   "US-Vogtmann": {
+    "diff": -0.00591715976331364,
+    "p": 0.647,
+    "counts": false
+   }
+  },
+  "species": {
+   "AT-Feng": {
+    "diff": -0.03485162180814361,
+    "p": 0.935,
+    "counts": false
+   },
+   "CN-Yu": {
+    "diff": 0.0273972602739726,
+    "p": 0.171,
+    "counts": false
+   },
+   "DE-Wirbel": {
+    "diff": -0.018888888888889066,
+    "p": 0.775,
+    "counts": false
+   },
+   "FR-Zeller": {
+    "diff": -0.003402412619857742,
+    "p": 0.573,
+    "counts": false
+   },
+   "IT1-Thomas": {
+    "diff": -0.010057471264367845,
+    "p": 0.547,
+    "counts": false
+   },
+   "IT2-Thomas": {
+    "diff": -0.0200892857142857,
+    "p": 0.677,
+    "counts": false
+   },
+   "JP-Yachida": {
+    "diff": -0.005624999999999991,
+    "p": 0.598,
+    "counts": false
+   },
+   "US-Vogtmann": {
+    "diff": -0.013313609467455523,
+    "p": 0.656,
+    "counts": false
+   }
+  }
+ },
+ "G1": {
+  "n_cohorts_locus_better": 0
+ },
+ "gates": {
+  "G1_pass": false,
+  "G3_identical_folds": true
+ }
+}
