@@ -101,3 +101,19 @@ Note 2026-09-24 16:02 IST: ledger also carries "RES-2 v3 algo50 even" (SHA256:vA
 Note: doc230-laneB-main / doc230-laneD-science work keys NOT FOUND on any of the 13 fleet repos (checked all deploy-key pages 16:03 IST) - they were never deployed anywhere. Nothing to revoke.
 
 | 2026-09-24 20:53 IST | ADD | mega27-02-virtual-cell (deploy key) | instinct-mega27-item2-virtual-cell-v2 | SHA256:QLpfIdVo7yksfQKXv2azFzW8Br2a7mhwctiVLhnHY/E | item-2 sandbox rebuilt; v2 key relayed by Main 20:51; replaces dead v1 (dropped from queue, never added) | verified on-page: title + fingerprint + Read/write |
+
+Account-level mega27 builder keys added 2026-09-24 20:54-20:57 IST after GitHub sudo-mode email verification (throttle lifted). All added via github.com/settings/ssh/new, each verified on-page (title + SHA256 fingerprint match vs relayed pubkey, Read/write). Old item2 account key dropped from queue (sandbox rebuilt, replaced by repo deploy key item2-virtual-cell-v2). Relays via Main; mega27 program authorized by user WhatsApp 19:49:23 (verified phone_messages).
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-builder | SHA256:7avQE9lZDC8Qo+d4ydX5W9/JsK4IrO2eX4VZvzId8ds | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-laneB | SHA256:r4vhN2ugxM+EkgtIzocHYnYhkqzAYT8IQtblWvIQmgA | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-laneC | SHA256:A+b92+oJ1xvS81IUCwPJwq+emlNafpNnKzuHGPym8Us | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-laneD | SHA256:vGPsaxW6Zfr7uoOfDvzzcsNX03w4bO5py9CSCPfTOlA | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-laneE | SHA256:YQ5JjCddrVLEgGlgLdRWoNgw4hBrjWt/1GRbJ1e1aQU | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-laneF | SHA256:8oSz4e/hVMd1Kimi+x0cKWCvgOltwvBPizpyrpZYe0Y | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-laneG-builder | SHA256:OXbdiREgyIWXgtH+ZT+1D81R20h5OTS88U4fi5ll+Ns | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-item5-yeast | SHA256:rKxV9lgalSMgASaQ6iBCe9JryKSMpxPhhRhveK7tWM4 | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-06a | SHA256:uPBfG1HhFdakvbkshT5t2S5Tan3IGPQQTdX2whQILA8 | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-lane06b | SHA256:+P1sNFJj+5ZfEVwBZyWhq0/dBWvAYLGRhHPtOP4aPHQ | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-item8-phage | SHA256:Vfzqc3Z/sM8PKGkANRhigc6gexQ+2wVDJjgKaMR1eKQ | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-09a-amp | SHA256:eFCtEj4PLech+WTG8m1ujk6XoF2QwLPYEm3udk/kqOQ | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-09b-peptide-hla-cpp | SHA256:IKsTzR4ApU2dhFn5736Eyfcsk5Cq748KBT/TIUhLz3U | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-11b-protein-redesign-4-5 | SHA256:yn6x2Vvl+lHhGcrgAWdWIqoZHgieNaZC5GpZJEXWcaE | mega27 builder key, relayed by Main | verified on-page |
