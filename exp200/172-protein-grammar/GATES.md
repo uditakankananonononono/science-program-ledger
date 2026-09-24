@@ -39,3 +39,10 @@ Negatives are kept; amend and lock before new results.
 - Same 300 queries, same methods, same gates.
 - References: for each query fold, up to 8 seed-0 domains from each other superfamily of that fold. Fill with seed-0 other-fold domains up to 1,500 total.
 - The per-class breakdown and mechanism hypothesis are unchanged.
+
+## Pivot 1 result (09:49) - G1 FAIL, G2 pass, preserved
+- 1-NN fold accuracy with the superfamily held out: ESM 0.143, SW 0.033. G1 FAIL (needed 0.40).
+- G2: +0.110, McNemar 37 vs 4, p=1e-7. PASS.
+- By class (ESM / SW): a 0.30 / 0.04; b 0.22 / 0.04; c 0.09 / 0.05; d 0.00 / 0.00.
+- 253 of 300 queries had a same-fold reference; the 1,500 cap still bit for a few folds.
+Closed as a documented boundary.
