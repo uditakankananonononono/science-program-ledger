@@ -1,0 +1,270 @@
+{
+ "coverage": {
+  "propionate": {
+   "producers": 167,
+   "trainable": 42,
+   "hmp2_present": 42
+  },
+  "butyrate...isobutytare.": {
+   "producers": 169,
+   "trainable": 51,
+   "hmp2_present": 51
+  },
+  "cholate": {
+   "producers": 119,
+   "trainable": 84,
+   "hmp2_present": 83
+  },
+  "chenodeoxycholate": {
+   "producers": 119,
+   "trainable": 84,
+   "hmp2_present": 83
+  },
+  "deoxycholic.acid": {
+   "producers": 3,
+   "trainable": 1,
+   "hmp2_present": 1
+  },
+  "lithocholic.acid": {
+   "producers": 3,
+   "trainable": 1,
+   "hmp2_present": 1
+  },
+  "chenodeoxycholate.deoxycholate.": {
+   "producers": 121,
+   "trainable": 85,
+   "hmp2_present": 84
+  },
+  "putrescine": {
+   "producers": 9,
+   "trainable": 5,
+   "hmp2_present": 5
+  },
+  "glutamate": {
+   "producers": 1,
+   "trainable": 1,
+   "hmp2_present": 1
+  },
+  "N.acetylspermidine": {
+   "producers": 1,
+   "trainable": 0,
+   "hmp2_present": 0
+  }
+ },
+ "dev_rhos": {
+  "propionate": 0.34508064516129033,
+  "butyrate...isobutytare.": 0.5858870967741936,
+  "cholate": 0.6436290322580647,
+  "chenodeoxycholate": 0.6410139336580043,
+  "deoxycholic.acid": 0.38724940059945656,
+  "lithocholic.acid": 0.36185763592812054,
+  "chenodeoxycholate.deoxycholate.": 0.4581451612903226,
+  "putrescine": 0.3015096700565061,
+  "glutamate": 0.06250000000000001,
+  "N.acetylspermidine": null
+ },
+ "frozen_rhos": {
+  "propionate": -0.14153427305202335,
+  "butyrate...isobutytare.": 0.2414101372671133,
+  "cholate": 0.3797326625518102,
+  "chenodeoxycholate": 0.36867824427701246,
+  "deoxycholic.acid": 0.10768577330154269,
+  "lithocholic.acid": 0.136515563553321,
+  "chenodeoxycholate.deoxycholate.": 0.07176804950985821,
+  "putrescine": 0.1933860269104747,
+  "glutamate": -0.047967322644603516,
+  "N.acetylspermidine": null
+ },
+ "drivers": {
+  "propionate": [
+   [
+    "ruminococcus sp",
+    8.635559253895863e-06
+   ],
+   [
+    "megamonas hypermegale",
+    7.630993822469655e-06
+   ],
+   [
+    "bacteroides finegoldii",
+    -7.219868545572875e-06
+   ],
+   [
+    "akkermansia muciniphila",
+    7.198939653397799e-06
+   ],
+   [
+    "bacteroides xylanisolvens",
+    7.192133085582761e-06
+   ]
+  ],
+  "butyrate...isobutytare.": [
+   [
+    "lachnospiraceae bacterium",
+    5.9325304913850786e-05
+   ],
+   [
+    "roseburia intestinalis",
+    5.258387650758905e-05
+   ],
+   [
+    "oscillibacter sp",
+    -4.9757351870722004e-05
+   ],
+   [
+    "lachnospiraceae bacterium",
+    3.996895288588872e-05
+   ],
+   [
+    "odoribacter splanchnicus",
+    -3.749254744063801e-05
+   ]
+  ],
+  "cholate": [
+   [
+    "lachnospiraceae bacterium",
+    -0.00020015812245486383
+   ],
+   [
+    "coprococcus comes",
+    -0.00019348496800432495
+   ],
+   [
+    "lachnospiraceae bacterium",
+    -0.00016288891931026987
+   ],
+   [
+    "bifidobacterium dentium",
+    -0.00016208049497626385
+   ],
+   [
+    "clostridium perfringens",
+    0.0001551855220940771
+   ]
+  ],
+  "chenodeoxycholate": [
+   [
+    "erysipelotrichaceae bacterium",
+    -3.584680983168002e-05
+   ],
+   [
+    "lachnospiraceae bacterium",
+    -3.3838280467069223e-05
+   ],
+   [
+    "lachnospiraceae bacterium",
+    -2.892455844525562e-05
+   ],
+   [
+    "bifidobacterium dentium",
+    -2.8147235768112858e-05
+   ],
+   [
+    "clostridium perfringens",
+    2.7083893982466388e-05
+   ]
+  ],
+  "deoxycholic.acid": [
+   [
+    "clostridium scindens",
+    0.0005918409208678792
+   ]
+  ],
+  "lithocholic.acid": [
+   [
+    "clostridium scindens",
+    0.00010877367305027762
+   ]
+  ],
+  "chenodeoxycholate.deoxycholate.": [
+   [
+    "eubacterium eligens",
+    -0.00013525794117503568
+   ],
+   [
+    "lachnospiraceae bacterium",
+    0.00013096544948983666
+   ],
+   [
+    "eubacterium siraeum",
+    -0.00011245357654078101
+   ],
+   [
+    "coprococcus catus",
+    0.00010977362969909188
+   ],
+   [
+    "lachnospiraceae bacterium",
+    0.00010588408572262011
+   ]
+  ],
+  "putrescine": [
+   [
+    "escherichia coli",
+    1.2707629235445997e-05
+   ],
+   [
+    "bacteroides ovatus",
+    -5.017186199418186e-06
+   ],
+   [
+    "bacteroides fragilis",
+    -1.3282603027058148e-06
+   ],
+   [
+    "lactobacillus acidophilus",
+    5.095462215953146e-07
+   ],
+   [
+    "enterobacter cloacae",
+    4.785971271013571e-07
+   ]
+  ],
+  "glutamate": [
+   [
+    "eubacterium rectale",
+    3.152493842985948e-05
+   ]
+  ]
+ },
+ "g1_dev_mean": 0.42076361952510655,
+ "frozen_well_predicted": 0.2,
+ "armA_well": 0.3,
+ "armB_well": 0.5,
+ "clusters": {
+  "propionate": "HILIC-neg_Cluster_0003",
+  "butyrate...isobutytare.": "HILIC-neg_Cluster_0013",
+  "cholate": "C18-neg_Cluster_0930",
+  "chenodeoxycholate": "C18-neg_Cluster_0832",
+  "deoxycholic.acid": "C18-neg_Cluster_0833",
+  "lithocholic.acid": "C18-neg_Cluster_0731",
+  "chenodeoxycholate.deoxycholate.": "HILIC-neg_Cluster_1360",
+  "putrescine": "HILIC-pos_Cluster_0007",
+  "glutamate": "HILIC-neg_Cluster_0166",
+  "N.acetylspermidine": "HILIC-pos_Cluster_0374"
+ },
+ "armA_rhos_on_10": {
+  "propionate": -0.025571465096079854,
+  "butyrate...isobutytare.": 0.25638601953639295,
+  "cholate": 0.2812415512014713,
+  "chenodeoxycholate": 0.3131619369409513,
+  "deoxycholic.acid": 0.11946189789041942,
+  "lithocholic.acid": 0.155192054801185,
+  "chenodeoxycholate.deoxycholate.": 0.08788360144898827,
+  "putrescine": 0.42652513322071073,
+  "glutamate": 0.2762119223692605,
+  "N.acetylspermidine": 0.3450698163370249
+ },
+ "armB_rhos_on_10": {
+  "propionate": -0.05917321563979631,
+  "butyrate...isobutytare.": 0.1638049641740199,
+  "cholate": 0.4661182190573217,
+  "chenodeoxycholate": 0.34886966911738265,
+  "deoxycholic.acid": 0.12946083630864516,
+  "lithocholic.acid": 0.3137156894105194,
+  "chenodeoxycholate.deoxycholate.": 0.06355241448636348,
+  "putrescine": 0.42016454708432144,
+  "glutamate": 0.17854911611718155,
+  "N.acetylspermidine": 0.30816834810563076
+ }
+}
