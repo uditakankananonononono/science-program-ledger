@@ -21,10 +21,26 @@ for name,acc in G.items():
         p=f1[s[0]]
         for i in range(5): p*=f2[s[i:i+2]]/f1[s[i]]
         return p*(n-5)
-    oe={}
-    for h in hexamers:
-        c=g.count(h)
-        oe[h]=c/max(1e-9,expc(h))
+    val={'A':0,'C':1,'G':2,'T':3}
+    codes=np.array([val.get(c,0) for c in g],dtype=np.int64)
+    n_=len(codes)
+    kmer=np.zeros(n_-5,dtype=np.int64)
+    for i in range(6):
+        kmer|=codes[i:n_-5+i]<<(2*(5-i))
+    # mask windows containing non-ACGT
+    valid=np.ones(n_,bool)
+    for c in 'ACGT': pass
+    bad=np.array([c not in 'ACGT' for c in g])
+    if bad.any():
+        winbad=np.zeros(n_-5,bool)
+        for i in range(6): winbad|=bad[i:n_-5+i]
+        kmer[winbad]=-1
+    cnt=np.bincount(kmer[kmer>=0],minlength=4096)
+    def code6(h):
+        v=0
+        for c in h: v=(v<<2)|val[c]
+        return v
+    oe={h:cnt[code6(h)]/max(1e-9,expc(h)) for h in hexamers}
     pal_oe=np.array([oe[h] for h in pals])
     rs_oe=np.array([oe[h] for h in RS])
     other_oe=np.array([oe[h] for h in pals if h not in RS])
