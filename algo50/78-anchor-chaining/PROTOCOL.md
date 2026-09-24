@@ -23,3 +23,13 @@ PASS if G1+G2+G4; G3 boundary.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot run on FRESH seed 73)
+G1 failed for a structural reason in my own simulation: 3/30 anchors sit on a shifted diagonal (the modeled rearrangement) and CANNOT be in a colinear chain - correct behavior is to DROP them, capping recall at ~0.90 minus jitter violations. Counting them as misses penalizes correct rejection.
+Pivot P (fresh seed 73): recall computed over the 27 non-rearranged anchors; correct-rejection measured on the 3 shifted ones.
+- P1: DP recall over non-rearranged anchors >= 0.90 at r <= 0.5.
+- P2: shifted anchors excluded from DP chain in >= 80% of replicates at r <= 0.5.
+- P3: greedy recall <= DP recall - 0.05 at r = 0.5 and r = 1.0 (both, tightened).
+PASS if all.
