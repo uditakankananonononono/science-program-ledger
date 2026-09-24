@@ -48,7 +48,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-051 | EXP-4 | 2026-09-24 10:20 | closed | cfDNA 5hmC classifiers: train CV 0.76-0.79 but frozen cross-lab external 0.61 (modules) / 0.73 (1 gene) / 0.64 (elastic-net); documented boundary (not counted) - exp200/151 |
 | DOC-2-057 | EXP-4 | 2026-09-24 10:50 | closed | broken-coupling UC detector: external 0.84 (GSE38713) but 0.46 (GSE9452); k-TSP more stable (0.76/0.78); documented boundary (not counted) - exp200/157 |
 | DOC-2-052, 053 | EXP-4 | 2026-09-24 11:18 | skipped (infeasible, not counted) | cfDNA fragmentomics needs read-level fragment endpoints (BAM/FASTQ, tens of GB); public processed sets checked: GSE71378 has only ~5 per-sample nucleosome tracks, GSE149438 is methylation RAW tar - no cohort-scale processed fragment data fits the sandbox. Revisit only with a processed fragment-feature table. |
-| DOC-2-058 | EXP-4 | 2026-09-24 11:20 | claimed | leave-one-cancer-out shared cfDNA 5hmC axis vs Li 2017 elastic-net + 1-gene (GSE89570; transfer GSE81314) - exp200/158 |
+| DOC-2-058 | EXP-4 | 2026-09-24 11:20 | closed | LOCO shared cfDNA 5hmC axis 0.65 mean (= elastic-net 0.65; thyroid < chance); shared axis = hepatocyte genes; documented boundary (not counted) - exp200/158 |
 | DOC-2-055, 059, 061, 063, 064, 066, 067, 070, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 - Lane 3: DOC-2-001..DOC-2-050 (skipping touched DOC-2-009, 019, 032, 033, 037), folders exp200/1NN-<slug> where NN = DOC-2 number. Claimed 2026-09-23 21:55 IST.
 - Lane 4 folder numbering: exp200/1NN-<slug> for DOC-2-0NN (same as lane 3).

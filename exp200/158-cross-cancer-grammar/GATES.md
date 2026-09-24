@@ -26,3 +26,15 @@ GSE89570 plasma, 5 cancer types (colon 78, stomach 62, thyroid 46, pancreas 34, 
 
 ## Pivot rule
 Negatives are kept; amend and lock before new results.
+
+## Primary result (11:20) - G1 FAIL, G2 FAIL, preserved
+- LOCO AUROC (F / elastic-net B1 / 1-gene B2):
+  - colon 0.72 / 0.84 / 0.70
+  - stomach 0.84 / 0.88 / 0.88
+  - thyroid 0.44 / 0.33 / 0.43
+  - pancreas 0.59 / 0.56 / 0.49
+  - liver 0.65 / 0.67 / 0.64
+- Means: F 0.647, B1 0.654, B2 0.626. F >= B1 in 2 of 5 types.
+- Transfer of F to GSE81314: 0.56.
+- Shared-axis genes are dominated by hepatocyte genes (PROX1, HNF4G, C6, PLG, PAH, NR1H4, LPA, CFH, AGXT2, IGF1, ONECUT2).
+Closed as a documented boundary.
