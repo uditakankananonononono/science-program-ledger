@@ -30,12 +30,8 @@ invert. Six instances:
 Rule: out-of-domain, prefer the mechanistic baseline; treat dev-CV gains of learned models as
 evidence ABOUT the dev distribution only.
 
-- **033F cold-host-hybrid (boundary extension of the 033 instance)**: exact CRISPR-spacer
-  signals name hosts KNN-d2 cannot name BY CONSTRUCTION (cold 36.11% vs 0%, 63.4% precision
-  among covered), but universal override bleeds the warm regime (48.8% vs 67.0%) and the
-  cold regime is UNDETECTABLE from sequence (cold vs warm median maxsim 0.984 vs 0.997;
-  flat train-LOO tau curve). Regime-aware deployment requires a signal this feature space
-  does not contain.
+- **033F cold-host-hybrid** extends the 033 instance: CRISPR exact signals recover the cold
+  regime (36.11% vs 0% structural floor) - and exposes a new finding class, section 8.
 
 ## 2. Task-type map
 - **029 sc-multiomics-foundation**: foundation-model protocol strictly dominated at sub-atlas
@@ -72,6 +68,23 @@ Small models win at compressing and aligning existing signal (021 kNN-style refe
 remains the bar tiny diffusion cannot beat; 022 cross-tissue embedding alignment - see report)
 and lose at generating or cross-library synthesis. Matches finding 1's mechanism: alignment
 stays in-domain; generation is evaluated out-of-domain.
+
+## 8. Regime undetectability: the failure regime can be invisible to the feature space
+A model can fail in a regime that its own features cannot identify, making regime-aware
+gating impossible from sequence alone. First instance:
+
+- **033F cold-host-hybrid**: KNN-d2 is structurally blind on cold hosts (0.00%) and CRISPR
+  spacer votes name them (36.11% overall, 63.4% precision among the 41/72 covered). But
+  cold test viruses are compositionally indistinguishable from warm (median max cosine to
+  train 0.984 vs 0.997), the train panel contains no cold-regime analogs (1239/1260 LOO
+  maxsim >= 0.95), and the train-LOO gate-selection curve is flat at every threshold - so
+  no sequence-computable gate can route predictions between the regimes. Universal override
+  bleeds the warm regime (48.8% vs 67.0%). Deployable form: two-output tool reporting both
+  channels, not a gated single predictor.
+
+Rule: before proposing a regime-gated hybrid, verify the regime is detectable in the
+available features (e.g., train-CV separation); an undetectable regime means a two-output
+tool, not a gate.
 
 ## 7. EXP-4 lane boundaries (DOC-2-051..100)
 - **Single marker beats multi-gene cross-lab (151, 156, 154)**: 151 cfDNA 5hmC one gene 0.73 vs module model 0.61 / elastic-net 0.64 on a frozen other-lab cohort (train CV 0.76-0.79). 156 SLC6A14 alone 0.83 >= 19-gene model 0.78. 154 published Sweeney 7-gene >= trained genome-wide model (pooled -0.036). Matches finding 1.
