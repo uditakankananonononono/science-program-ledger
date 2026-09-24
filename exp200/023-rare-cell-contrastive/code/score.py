@@ -24,7 +24,10 @@ def hvg_standardize(Xl, k=2000):
     Z=Xl[:,hv]; mu=Z.mean(0); sd=Z.std(0); sd[sd==0]=1
     return ((Z-mu)/sd).astype(np.float32)
 
-def contrastive_embed(Z, epochs=30, proj=64, bs=128, seed=7):
+import os
+EPOCHS=int(os.environ.get('CL_EPOCHS','30')); PROJ=int(os.environ.get('CL_PROJ','64'))
+def contrastive_embed(Z, epochs=None, proj=None, bs=128, seed=7):
+    epochs=epochs or EPOCHS; proj=proj or PROJ
     torch.manual_seed(seed); np.random.seed(seed)
     enc=torch.nn.Sequential(torch.nn.Linear(Z.shape[1],256), torch.nn.ReLU(), torch.nn.Linear(256,proj))
     opt=torch.optim.Adam(enc.parameters(), lr=1e-3)
@@ -56,10 +59,10 @@ def run_cohort(X_raw, y, grid, bg_idx, target, lognorm, out_path):
         Z=hvg_standardize(X)
         P=TruncatedSVD(n_components=50, random_state=7).fit_transform(Z)
         f1b,reb,ncb=leiden_labels(P, yy, target)
-        E=contrastive_embed(Z)
+        E=contrastive_embed(Z) if os.environ.get('P1')!='1' else contrastive_embed(Z, epochs=60, proj=128)
         f1c,rec,ncc=leiden_labels(E, yy, target)
         res['baseline'][r]={'f1':f1b,'recall':reb,'n_clusters':ncb}
-        res['contrastive'][r]={'f1':f1c,'recall':rec,'n_clusters':ncc}
+        res['contrastive'][r]={'f1':f1c,'recall':rec,'n_clusters':ncc,'p1':os.environ.get('P1')=='1'}
         print(f'r={r} baseline F1 {f1b:.3f} rec {reb:.3f} ({ncb} cl) | contrastive F1 {f1c:.3f} rec {rec:.3f} ({ncc} cl)', flush=True)
     mb=float(np.mean([v['f1'] for v in res['baseline'].values()]))
     mc=float(np.mean([v['f1'] for v in res['contrastive'].values()]))
