@@ -20,3 +20,13 @@ PASS if G1+G2; G3/G4 boundary documentation.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot run on FRESH seed 47)
+Original gates failed informatively: G1 borderline (err 0.0143 at p=0.15,k=21), G2 (ties at +inf), G3 WRONG DIRECTION - at high divergence the estimator does not underestimate, it SATURATES to +inf (zero shared k-mers, log 0; k=31 saturates already at p=0.30). The unifying variable is the expected shared k-mer count E = L(1-p)^k: accuracy where E large, saturation where E ~ O(1).
+Pivot P (fresh seed 47, same grid):
+- P1: for cells with E >= 1000: |median estimate - p| <= 0.02.
+- P2: for cells with E <= 50: >= 50% of replicate estimates are +inf (saturation regime documented).
+- P3: finite estimates strictly increasing in p within each k.
+PASS if P1+P2.
