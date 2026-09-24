@@ -21,4 +21,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 29 | splice-donor-wam | RES-1 | done - G1-G3 PASS (pairwise LR and WAM beat PWM, chrom-held-out; reproduction) | 2026-09-23T23:02Z |
 | 31 | go-semsim-ppi | RES-1 | done - G1+G3 FAIL, G2 PASS; post-hoc combination pivot P1+P2 PASS | 2026-09-23T23:29Z |
 | 33 | ecg-qrs-consensus | RES-1 | done - NEGATIVE (G1-G3 FAIL; pivot P1+P2 FAIL; Pan-Tompkins F1 0.998 unbeaten) | 2026-09-23T23:33Z |
-| 35 | survival-rsf-vs-cox | RES-1 | protocol locked, running | 2026-09-23T23:50Z |
+| 35 | survival-rsf-vs-cox | RES-1 | G1-G3 FAIL; post-hoc rank-ensemble pivot locked, running | 2026-09-23T23:50Z |

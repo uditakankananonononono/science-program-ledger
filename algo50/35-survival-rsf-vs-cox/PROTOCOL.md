@@ -21,3 +21,10 @@ Caveats declared: small cohorts; default (untuned) forest hyperparameters; Cox i
 
 ## Amendment 1 (bug fix; crash during the first dataset)
 The first run crashed in integrated_brier_score: a test-fold follow-up time exceeded the largest training time, which the censoring estimator cannot evaluate. The crashed log (results/run_crashed_attempt1.log) printed some gbsg2 fold lines before the crash; they were not used for any decision. Fix: IBS is computed on test samples with follow-up below the training maximum (C-index still uses all test samples), and the IBS time grid is clipped to that subset. Models, data, gates unchanged.
+
+## Amendment 2 - pivot (POST HOC, locked before the pivot was scored)
+Original result preserved (results/metrics_original.json): G1 FAIL (pooled delta C -0.0012, CI -0.0062 to +0.0033), G2 FAIL (RSF IBS worse, pooled -0.0042), G3 FAIL (RSF wins 2/5). Chosen after seeing that RSF and Cox trade wins by dataset. Generic pivot, no per-dataset choice:
+- E: rank-average ensemble. Within each test fold, average the rank-normalized (0-1) risk scores of the same Cox and RSF models (same configs, same CV splits and seeds).
+- P1: pooled delta C (E - Cox) >= 0.005, CI lower bound > 0 (same bootstrap as G1).
+- P2: E mean C >= Cox mean C in >= 4 of 5 datasets.
+No IBS gate (a rank ensemble has no survival function). No further pivots.
