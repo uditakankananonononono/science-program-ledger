@@ -48,3 +48,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 55 | molnet-task-pattern | RES-1 | claimed - protocol in prep | 2026-09-24T02:16Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
+| 42 | bootstrap-ci-coverage-skewed | RES-3 | claimed - protocol in prep | 2026-09-24T08:07Z |
