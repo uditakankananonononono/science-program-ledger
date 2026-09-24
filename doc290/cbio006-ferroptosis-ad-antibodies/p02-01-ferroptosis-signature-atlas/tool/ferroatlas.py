@@ -56,11 +56,11 @@ def load(g):
 cohorts={}
 E,K=load('GSE33000'); K['ad']=K['disease status'].map({"Alzheimer's disease":1,'non-demented':0}); K['age']=K['age'].str.extract(r'(\d+)')[0].astype(float); K['sex']=(K['gender']=='male').astype(float); cohorts['GSE33000']=(E,K)
 E,K=load('GSE132903'); K['ad']=K['diagnosis'].map({'AD':1,'ND':0}); K['age']=K['expired_age (years)'].str.replace('+','',regex=False).astype(float); K['sex']=(K['sex']=='male').astype(float); cohorts['GSE132903']=(E,K)
-E,K=load('GSE118553'); K=K[K['tissue']=='Temporal_Cortex'].copy(); K['ad']=K['disease state'].map({'AD':1,'control':0}); K['age']=K['age'].astype(float); K['sex']=(K['gender']=='MALE').astype(float); cohorts['GSE118553']=(E,K)
-E,K=load('GSE122063'); K=K[K['brain region']=='temporal cortex'].copy(); K['ad']=K['patient diagnosis'].map({"Alzheimer's disease":1,'Control':0}); K['age']=K['age'].astype(float); K['sex']=(K['sex']=='Male').astype(float)
+E,K=load('GSE118553'); K=K[K['tissue']=='Temporal_Cortex'].copy(); K['ad']=K['disease state'].map({'AD':1,'control':0}); K['age']=pd.to_numeric(K['age'],errors='coerce'); K['sex']=(K['gender']=='MALE').astype(float); cohorts['GSE118553']=(E,K)
+E,K=load('GSE122063'); K=K[K['brain region']=='temporal cortex'].copy(); K['ad']=K['patient diagnosis'].map({"Alzheimer's disease":1,'Control':0}); K['age']=pd.to_numeric(K['age'],errors='coerce'); K['sex']=(K['sex']=='Male').astype(float)
 K=K[K.ad.notna()]; grp=K.groupby('subject id'); Em=pd.DataFrame({s:E[idx].mean(1) for s,idx in grp.groups.items()}); Km=grp.first(); cohorts['GSE122063']=(Em,Km)
 E,K=load('GSE48350'); K=K[K['brain region']=='superior frontal gyrus'].copy(); K['ad']=K['source'].str.contains('_AD').astype(int)
-K['age']=K['age (yrs)'].astype(float); K['sex']=(K['gender']=='male').astype(float); K=K[(K.ad==1)|(K.age>=60)].copy(); cohorts['GSE48350']=(E,K)
+K['age']=pd.to_numeric(K['age (yrs)'],errors='coerce'); K['sex']=(K['gender']=='male').astype(float); K=K[(K.ad==1)|(K.age>=60)].copy(); cohorts['GSE48350']=(E,K)
 summary={}; T={}; B={}; SEb={}
 for g,(E,K) in cohorts.items():
     K=K[K.ad.notna()&K.age.notna()]; E=E[K.index].dropna(); E=E[E.var(1)>0]
