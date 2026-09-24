@@ -10,7 +10,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 08 | nj-vs-upgma-clock | RES-2 | done - G1-G4 all PASS (rate variation: UPGMA nRF 0.228 vs NJ 0.067) | 2026-09-24T07:45Z |
 | 10 | tetranuc-contig-binning | RES-2 | done - G1+G2 FAIL (ceiling), G3+G4 PASS; pivot P1 PASS, P2+P3 FAIL (K4 0.768 on close relatives) | 2026-09-24T07:46Z |
 | 12 | cpg-hmm-vs-rule | RES-2 | done - G1+G3+G4 FAIL (margin miss, LLR ties rule, over-segments), G2 PASS; pivot P1-P3 PASS | 2026-09-24T07:50Z |
-| 14 | shine-dalgarno-scanner | RES-2 | claimed - protocol in prep | 2026-09-24T07:52Z |
+| 14 | shine-dalgarno-scanner | RES-2 | done - G1+G2+G4 PASS (ecoli AUROC 0.79, bsub 0.92, mtb 0.66 boundary), G3 FAIL (position ratio 1.37<1.5) | 2026-09-24T07:52Z |
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
