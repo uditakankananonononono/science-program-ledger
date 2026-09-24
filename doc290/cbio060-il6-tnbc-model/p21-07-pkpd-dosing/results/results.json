@@ -1,0 +1,183 @@
+{
+ "G1": {
+  "values_[model,label]": {
+   "rux_cmax_nM": [
+    627.0556560086599,
+    710.0
+   ],
+   "rux_thalf_h": [
+    2.507869195995782,
+    3.0
+   ],
+   "toc_A_ss_cmax": [
+    294.3511799519624,
+    176.0
+   ],
+   "toc_A_thalf_d": [
+    21.5,
+    21.5
+   ],
+   "toc_B_ss_trough_info": [
+    14.762227386782168,
+    13.4
+   ],
+   "sil_ss_cmax": [
+    259.9947525772649,
+    332.0
+   ],
+   "sil_thalf_d": [
+    13.561575271825015,
+    20.6
+   ]
+  },
+  "checks": {
+   "rux_cmax_nM": true,
+   "rux_thalf_h": true,
+   "toc_A_ss_cmax": false,
+   "toc_A_thalf_d": true,
+   "sil_ss_cmax": false,
+   "sil_thalf_d": false
+  },
+  "pass": false
+ },
+ "nominal": {
+  "ruxolitinib": {
+   "dynamic_tavg": 0.10515316703524882,
+   "static_at_cmax": 0.36389737086575324,
+   "peak_last": 0.1427776620397967,
+   "trough_last": 0.05223357524750549,
+   "sustained": false,
+   "rebound": true,
+   "free_cmax_nM": 18.811655739398603,
+   "deviating_first_impl_peak_trough": [
+    0.1427776620397967,
+    0.05223173456548147
+   ],
+   "onset_t_to_90pct_of_peak_h": 16.0
+  },
+  "tocilizumab_A": {
+   "dynamic_tavg": 0.5770278212233306,
+   "static_at_cmax": 0.9976650018816237,
+   "peak_last": 0.9813235342714349,
+   "trough_last": 0.9813235342714349,
+   "sustained": true,
+   "rebound": false,
+   "free_cmax_nM": 1182.4324324324325,
+   "deviating_first_impl_peak_trough": [
+    0.9813235342714349,
+    0.9813235342714349
+   ],
+   "onset_t_to_90pct_of_peak_h": 444.0
+  },
+  "tocilizumab_B": {
+   "dynamic_tavg": 0.5593282945091642,
+   "static_at_cmax": 0.9976650018816471,
+   "peak_last": 0.9443657698886527,
+   "trough_last": 0.9443657698886527,
+   "sustained": true,
+   "rebound": false,
+   "free_cmax_nM": 1182.4324324324325,
+   "deviating_first_impl_peak_trough": [
+    0.9443657698886527,
+    0.9443657698886527
+   ],
+   "onset_t_to_90pct_of_peak_h": 444.0
+  },
+  "siltuximab": {
+   "dynamic_tavg": 0.5910888390497961,
+   "static_at_cmax": 0.9999983137019336,
+   "peak_last": 0.9523544690790247,
+   "trough_last": 0.9523544690790247,
+   "sustained": true,
+   "rebound": false,
+   "free_cmax_nM": 1551.407861215593,
+   "deviating_first_impl_peak_trough": [
+    0.9915316992016285,
+    0.20112339524024914
+   ],
+   "onset_t_to_90pct_of_peak_h": 432.0
+  }
+ },
+ "G2": {
+  "arm_A": {
+   "dynamic_order": [
+    "siltuximab",
+    "tocilizumab_A",
+    "ruxolitinib"
+   ],
+   "static_order": [
+    "siltuximab",
+    "tocilizumab_A",
+    "ruxolitinib"
+   ],
+   "pairs": {
+    "ruxolitinib vs tocilizumab_A": {
+     "static_winner": "tocilizumab_A",
+     "dynamic_winner": "tocilizumab_A",
+     "reversed": false
+    },
+    "ruxolitinib vs siltuximab": {
+     "static_winner": "siltuximab",
+     "dynamic_winner": "siltuximab",
+     "reversed": false
+    },
+    "tocilizumab_A vs siltuximab": {
+     "static_winner": "siltuximab",
+     "dynamic_winner": "siltuximab",
+     "reversed": false
+    }
+   },
+   "any_reversal": false
+  },
+  "arm_B": {
+   "dynamic_order": [
+    "siltuximab",
+    "tocilizumab_B",
+    "ruxolitinib"
+   ],
+   "static_order": [
+    "siltuximab",
+    "tocilizumab_B",
+    "ruxolitinib"
+   ],
+   "pairs": {
+    "ruxolitinib vs tocilizumab_B": {
+     "static_winner": "tocilizumab_B",
+     "dynamic_winner": "tocilizumab_B",
+     "reversed": false
+    },
+    "ruxolitinib vs siltuximab": {
+     "static_winner": "siltuximab",
+     "dynamic_winner": "siltuximab",
+     "reversed": false
+    },
+    "tocilizumab_B vs siltuximab": {
+     "static_winner": "siltuximab",
+     "dynamic_winner": "siltuximab",
+     "reversed": false
+    }
+   },
+   "any_reversal": false
+  },
+  "pass": true
+ },
+ "hypothesis_nominal": {
+  "toc_sustained": true,
+  "sil_sustained": true,
+  "rux_rebound": true,
+  "any_reversal": false
+ },
+ "ensemble_regen": {
+  "members": 300,
+  "chi2_nominal": 26.526747395242044
+ },
+ "member_retries": 1,
+ "G3": {
+  "members": 100,
+  "frac_same_conclusions": 0.95,
+  "dynamic_order_counts": {
+   "siltuximab > tocilizumab_A > ruxolitinib": 100
+  },
+  "pass": true
+ }
+}
