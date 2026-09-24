@@ -95,3 +95,7 @@ Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, kil
 | 2026-09-24 16:02 IST | REVOKE | science-program-ledger | instinct-res3 | SHA256:EqrnVXIhJMpr5g89GiP/qTwJc1esAM537t5uuFSD04U | RES-3 deleted; same direction | verified gone on-page |
 
 Note 2026-09-24 16:02 IST: ledger also carries "RES-2 v3 algo50 even" (SHA256:vAQ6rIzEdj3mSggONoHJBZYyBm+1JBH8eGjfDHuaZnM, never used, no KEYS.md add-row) - title suggests RES-2 but unconfirmed; HELD pending Main confirmation. Doc230 lane "work keys" (doc230-laneB-main, doc230-laneD-science) are NOT deployed on the ledger; if they exist on other repos they remain live.
+
+| 2026-09-24 16:03 IST | REVOKE | science-program-ledger | RES-2 v3 algo50 even | SHA256:vAQ6rIzEdj3mSggONoHJBZYyBm+1JBH8eGjfDHuaZnM | RES-2 lane deleted; revoke confirmed by Main 16:03 ("no key carrying its name should stay live") | verified gone on-page |
+
+Note: doc230-laneB-main / doc230-laneD-science work keys NOT FOUND on any of the 13 fleet repos (checked all deploy-key pages 16:03 IST) - they were never deployed anywhere. Nothing to revoke.
