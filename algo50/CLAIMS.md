@@ -7,6 +7,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 02 | minimizer-read-overlap | RES-2 | done - G1+G2+G4 PASS, G3 speed FAIL (sketch 5.5x smaller, only ~2x wall-time in pure Python) | 2026-09-24T07:34Z |
 | 04 | cds-hexamer-discrimination | RES-2 | done - G1 PASS, G2-G4 FAIL (hexamer Markov loses to aa-usage); pivot P1-P3 PASS | 2026-09-24T07:38Z |
 | 06 | rna-fold-energy-vs-nussinov | RES-2 | done - G1+G2+G4 PASS, G3 sanity FAIL (Nussinov recall 0.336 < textbook 0.40) | 2026-09-24T07:43Z |
+| 08 | nj-vs-upgma-clock | RES-2 | claimed - protocol in prep | 2026-09-24T07:45Z |
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
