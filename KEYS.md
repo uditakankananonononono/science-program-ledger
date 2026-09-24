@@ -56,3 +56,10 @@ Note: GitHub allows a given deploy key on only one repository, so a builder that
 | 2026-09-24 15:06 IST | ADD | shared-models | atlas-shared-models-builder | SHA256:R2+AbedqBh8Kp0KIO3FEr1hCWQep23Gd39l6mjgUJ5I | write deploy key, per-lead fresh; relayed via Main from atlas lead | Read/write verified on-page |
 | 2026-09-24 15:06 IST | ADD | shared-models | sugarcode-shared-models-builder | SHA256:IxTG8Bk0uJlSGnFz1IJPtdyKHcPzTzYkjsR2wv6O99A | write deploy key, per-lead fresh; relayed via Main from sugarcode lead | Read/write verified on-page |
 | 2026-09-24 15:07 IST | REVOKE | meemee | meemee-phaseB-builder | SHA256:Y6Ie5sNkJ6P4nxWk42f0YHtVBxBSjnItrITESAZelCA | private half destroyed per lead (relayed via Main 15:59:48); other meemee lanes untouched | verified gone on-page |
+
+| 2026-09-24 15:32 IST | REVOKE | meemee | meemee-builder-2 | SHA256:QiOJEbTG/Q5r6WIjKApExS3jZLukt0A2FqhP0ANx4DQ | private half dead (lead sandbox rebuilt, relayed via Main 15:32) | verified gone on-page |
+| 2026-09-24 15:32 IST | ADD | meemee | meemee-builder-3 | SHA256:qPEg1RaYn43Q48tOwF7A7H/7VmebSe9LeuDHqSpCj44 | write deploy key, replacement for builder-2; relayed via Main | Read/write verified on-page |
+| 2026-09-24 15:33 IST | REVOKE | shared-models | meemee-shared-models-builder | SHA256:TQhGf6L/rAjpH4ViieinHsUBubiFLsSg9U1KLmeca5s | private half dead (same sandbox rebuild) | verified gone on-page |
+| 2026-09-24 15:33 IST | ADD | shared-models | meemee-shared-models-builder-2 | SHA256:7RaOHwlxBfZtW0nw0Elj1OviW6QeSwfRr/cfIh3+Kys | write deploy key, replacement; relayed via Main | Read/write verified on-page |
+
+Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, killing private key halves; expect further same-shape rotations (relayed via Main).
