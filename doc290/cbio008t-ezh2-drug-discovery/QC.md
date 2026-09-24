@@ -1,16 +1,20 @@
-# QC audit: cbio008t-ezh2-drug-discovery
+# QC audit - P03 CBIO008(2024) EZH2 drug discovery
 
-Audited 2026-09-24 by doc290 lane D. Checks: required sections present (Premise, Hypothesis where the spec format includes it, Data sources, Method, locked Success gates, Failure/pivot rule), numbered method steps, and data-source verification (GEO/figshare accessions and named papers resolved live; well-known public resources confirmed by name).
+Auditor: Doc230 lane A v6 | 2026-09-24 11:03 IST | Every spec read in full; named data sources spot-checked by live fetch (HTTP 200 on portal/API, or an API query returning records). Specs name resources, not accession URLs - OK means the named resource is live and openly fetchable.
 
-| spec | structure | data sources | verdict |
-|------|-----------|--------------|---------|
-| 01-ezh2-virtual-screen-benchmark | steps=3 sources=2 | checked | PASS |
-| 02-depmap-dependency-check | steps=3 sources=2 | checked | PASS |
-| 03-cryptic-pocket-benchmark | steps=3 sources=2 | checked | PASS |
-| 04-generative-reality-check | steps=3 sources=2 | checked | PASS |
-| 05-prc2-complex-design | steps=3 sources=2 | checked | PASS |
-| 06-ezh1-selectivity | steps=3 sources=2 | checked | PASS |
-| 07-prism-repurposing | steps=3 sources=2 | checked | PASS |
-| 08-resistance-atlas | steps=3 sources=3 | checked | PASS |
-| 09-synthetic-lethality-map | steps=3 sources=2 | checked | PASS |
-| 10-free-compute-cadd | steps=3 sources=2 | checked | PASS |
+Verdicts: OK (build-ready) | FIX (small source/method edit before build) | REWRITE (controlled-access/dead core data or hand-wavy method)
+
+Live checks: ChEMBL target API 200; RCSB full-text search returns 43 EZH2/PRC2 entries; DUD-E 200; DepMap portal 200; PRISM repurposing page 200; CryptoSite 200; MOSES repo 200; PubChem resolves tazemetostat (CID 66558664).
+
+| id | verdict | note |
+|----|---------|------|
+| P03-01 | OK | PDB + ChEMBL actives + decoy generators all live; strongest docking build. |
+| P03-02 | OK | DepMap 24Q public downloads live. |
+| P03-03 | OK | CryptoSite + PocketMiner sets live; GROMACS open. |
+| P03-04 | FIX | "Pocket2Mol weights if license permits" is a hedge; lock the generator + license check as step 0, fallback MOSES-only. |
+| P03-05 | OK | PRC2 holo structures verified via RCSB search. |
+| P03-06 | OK | ChEMBL dual-potency query is concrete; AlphaFold EZH1 available. |
+| P03-07 | OK | PRISM 19Q/24Q public on DepMap portal. |
+| P03-08 | OK | Co-crystals + COSMIC public tier; FoldX/Rosetta academic-free. |
+| P03-09 | OK | DepMap co-dependency public; NB screens on GEO. |
+| P03-10 | OK | Meta-build over P03-01..06 data; all free tooling named. |

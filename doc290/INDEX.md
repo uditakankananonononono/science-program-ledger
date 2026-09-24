@@ -178,3 +178,7 @@ Lane A covers parents 1-6 (P01-xx through P06-xx).
 | P06-08 | Conformal Hit Triage | CBIO013 DeepGraphDTI Nipah (2024) | Calibrated hit lists with distribution-free error guarantees. |
 | P06-09 | Escape-Aware Screening | CBIO013 DeepGraphDTI Nipah (2024) | Mutant-panel robustness ranking of the NiV hits. |
 | P06-10 | Pandemic Screen Atlas | CBIO013 DeepGraphDTI Nipah (2024) | All three open drug boxes vs WHO priority pathogens, published full matrix. |
+
+## QC audit (lane A v6, 2026-09-24)
+
+Per-parent verdict tables live in `doc290/<parent>/QC.md`. Summary: P01 6 OK / 4 FIX; P02 7 OK / 3 FIX; P03 9 OK / 1 FIX; P04 1 OK / 9 FIX (DrugComb portal down -> Zenodo mirror 18756096; DrugBank open tier limited); P05 1 OK / 4 FIX / 5 REWRITE (TCGA WGS BAMs are controlled-access - verified via GDC API: 23,723 files, all controlled; pivot to CCLE/1000G open WGS); P06 4 OK / 6 FIX (DeepGraphDTI code not public - 0 GitHub repos; substitute GraphDTA/DGraphDTA; MMV boxes via ChEMBL docs). No spec needs a full REWRITE except the P05 TCGA-dependent cluster.

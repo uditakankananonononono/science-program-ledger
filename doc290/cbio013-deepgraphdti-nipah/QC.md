@@ -1,16 +1,20 @@
-# QC audit: cbio013-deepgraphdti-nipah
+# QC audit - P06 CBIO013(2024) DeepGraphDTI pandemic screening
 
-Audited 2026-09-24 by doc290 lane D. Checks: required sections present (Premise, Hypothesis where the spec format includes it, Data sources, Method, locked Success gates, Failure/pivot rule), numbered method steps, and data-source verification (GEO/figshare accessions and named papers resolved live; well-known public resources confirmed by name).
+Auditor: Doc230 lane A v6 | 2026-09-24 11:03 IST | Every spec read in full; named data sources spot-checked by live fetch (HTTP 200 on portal/API, or an API query returning records). Specs name resources, not accession URLs - OK means the named resource is live and openly fetchable.
 
-| spec | structure | data sources | verdict |
-|------|-----------|--------------|---------|
-| 01-cold-split-dta-audit | steps=3 sources=2 | checked | PASS |
-| 02-nipah-hit-replication | steps=3 sources=2 | checked | PASS |
-| 03-active-learning-dta | steps=3 sources=2 | checked | PASS |
-| 04-structure-leakage-audit | steps=3 sources=2 | checked | PASS |
-| 05-henipavirus-breadth | steps=3 sources=2 | checked | PASS |
-| 06-conformational-state-screening | steps=3 sources=2 | checked | PASS |
-| 07-plm-vs-graph-encodings | steps=3 sources=2 | checked | PASS |
-| 08-conformal-hit-triage | steps=3 sources=2 | checked | PASS |
-| 09-resistance-aware-screening | steps=3 sources=2 | checked | PASS |
-| 10-pandemic-box-atlas | steps=3 sources=2 | checked | PASS |
+Verdicts: OK (build-ready) | FIX (small source/method edit before build) | REWRITE (controlled-access/dead core data or hand-wavy method)
+
+Live checks: GitHub search for DeepGraphDTI returns 0 repos - the model code is NOT public. BindingDB 200; TDC (DAVIS/KIBA) 200; RCSB Nipah glycoprotein search returns 53 entries; NCBI Virus 200; MMV site 403 (bot-blocked) but Pathogen Box / Pandemic Response Box compound data is in ChEMBL (CHEMBL3637841, CHEMBL4513161 CO-ADD screen) - the open route.
+
+| id | verdict | note |
+|----|---------|------|
+| P06-01 | FIX | DeepGraphDTI code is not public; substitute an open DTA model with structure graphs (GraphDTA/DGraphDTA public repos) and state the substitution in the header. Benchmarks live. |
+| P06-02 | OK | NiV G/F structures verified (53 RCSB hits); Vina/smina/Gnina open. Hit identities must come from the parent abstract/paper. |
+| P06-03 | FIX | Same model substitution as P06-01. |
+| P06-04 | FIX | Same substitution; null-encoding design is concrete. |
+| P06-05 | FIX | Henipavirus structures fine (AlphaFold API live); get box compound lists from ChEMBL, not mmv.org. |
+| P06-06 | OK | Conformational-state structures + boxes via ChEMBL. |
+| P06-07 | FIX | ESM-2 public; graph encoder side inherits the P06-01 substitution. |
+| P06-08 | FIX | Inherits substitution; conformal libs open. |
+| P06-09 | OK | NCBI Virus variation + ESM-2 + AlphaFold all live. |
+| P06-10 | FIX | WHO list fine; box lists via ChEMBL documents (Pathogen Box CHEMBL3637841, Pandemic Response Box CO-ADD screen CHEMBL4513161). |

@@ -1,16 +1,20 @@
-# QC audit: cbio003-crc-gut-microbiome
+# QC audit - P01 CBIO003 CRC gut microbiome
 
-Audited 2026-09-24 by doc290 lane D. Checks: required sections present (Premise, Hypothesis where the spec format includes it, Data sources, Method, locked Success gates, Failure/pivot rule), numbered method steps, and data-source verification (GEO/figshare accessions and named papers resolved live; well-known public resources confirmed by name).
+Auditor: Doc230 lane A v6 | 2026-09-24 11:02 IST | Method: every spec read in full; named data sources spot-checked by live fetch (HTTP 200 on portal/API, or real API query returning records). Specs name resources, not accession URLs - a verdict of OK means the named resource is live and openly fetchable, not that every cohort was downloaded.
 
-| spec | structure | data sources | verdict |
-|------|-----------|--------------|---------|
-| 01-cross-cohort-transport | steps=4 sources=2 | checked | PASS |
-| 02-batch-leakage-audit | steps=4 sources=2 | checked | PASS |
-| 03-strain-level-oncomicrobes | steps=3 sources=3 | checked | PASS |
-| 04-function-vs-taxonomy | steps=3 sources=2 | checked | PASS |
-| 05-minimal-qcpr-panel | steps=4 sources=3 | checked | PASS |
-| 06-early-onset-crc | steps=3 sources=2 | checked | PASS |
-| 07-adenoma-detection | steps=3 sources=2 | checked | PASS |
-| 08-longitudinal-stability | steps=3 sources=3 | checked | PASS |
-| 09-intervention-response | steps=3 sources=2 | checked | PASS |
-| 10-microbiome-plus-fit | steps=3 sources=2 | checked | PASS |
+Verdicts: OK (build-ready) | FIX (small source/method edit before build) | REWRITE (dead or controlled-access core data, or hand-wavy method)
+
+Live checks: curatedMetagenomicData Bioconductor page 200; SRA runinfo API for PRJEB10878 (Zeller) 200; GMrepo 200; MGnify studies API 200; ENA read_run for PRJNA743918 (Wastyk 2021) returns runs; IBDMDB/HMP2 200.
+
+| id | verdict | note |
+|----|---------|------|
+| P01-01 | OK | 6 named cMD cohorts all in the package; Indian cohort must be named by BioProject before build (GMrepo search). Strongest build candidate. |
+| P01-02 | OK | cMD metadata + SRA run tables both live. |
+| P01-03 | FIX | SBS88 annotations need paired tumor WGS (PCAWG/TCGA raw = controlled). Drop the SBS88 link or use published summary tables only. |
+| P01-04 | OK | cMD ships HUMAnN pathway tables. Note: Hannigan 2018 is not in current cMD - swap for Vogtmann 2016. |
+| P01-05 | OK | Concrete stability selection + cost model. |
+| P01-06 | FIX | "EOCRC-focused SRA submissions" is unnamed; lock the cohort list (age metadata exists in Yachida/Wirbel). TCGA tissue microbiome = use published contamination-corrected tables (Poore 2020 revised / Sepich-Poore), not raw reads. |
+| P01-07 | OK | Zeller/Feng adenoma arms + Yachida stage labels are in cMD. |
+| P01-08 | OK | iHMP-IBD live; CRC repeat-sampling "where available" is optional. |
+| P01-09 | FIX | Wastyk verified; "Mediterranean-diet Prevotella studies" and FMT cohorts are unnamed - name BioProjects or cut to Wastyk + one named FMT cohort. |
+| P01-10 | FIX | Paired FIT + metagenome is thin publicly (Zeller 2014 has FOBT). Lock the exact cohort(s) with FIT/FOBT columns before build; else it is a pure simulation and must say so. |

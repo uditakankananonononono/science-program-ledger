@@ -1,16 +1,22 @@
-# QC audit: cbio006-ferroptosis-ad-antibodies
+# QC audit - P02 CBIO006 ferroptosis / AD antibodies
 
-Audited 2026-09-24 by doc290 lane D. Checks: required sections present (Premise, Hypothesis where the spec format includes it, Data sources, Method, locked Success gates, Failure/pivot rule), numbered method steps, and data-source verification (GEO/figshare accessions and named papers resolved live; well-known public resources confirmed by name).
+Auditor: Doc230 lane A v6 | 2026-09-24 11:02 IST | Every spec read in full; named data sources spot-checked by live fetch (HTTP 200 on portal/API, or an API query returning records). Specs name resources, not accession URLs - OK means the named resource is live and openly fetchable.
 
-| spec | structure | data sources | verdict |
-|------|-----------|--------------|---------|
-| 01-ferroptosis-signature-atlas | steps=3 sources=3 | checked | PASS |
-| 02-axis-proteomics | steps=3 sources=2 | checked | PASS |
-| 03-antibody-design-benchmark | steps=3 sources=2 | checked | PASS |
-| 04-ferroportin-variant-atlas | steps=3 sources=2 | checked | PASS |
-| 05-iron-causal-mr | steps=3 sources=2 | checked | PASS |
-| 06-single-cell-iron-states | steps=3 sources=2 | checked | PASS |
-| 07-repurposing-screen | steps=3 sources=2 | checked | PASS |
-| 08-peptide-disruptors | steps=3 sources=2 | checked | PASS |
-| 09-bbb-delivery-audit | steps=3 sources=2 | checked | PASS |
-| 10-ferroptosis-biomarker-panel | steps=3 sources=2 | checked | PASS |
+Verdicts: OK (build-ready) | FIX (small source/method edit before build) | REWRITE (controlled-access/dead core data or hand-wavy method)
+
+Live checks: AD Knowledge Portal, SEA-AD, CELLxGENE, FerrDb V2, SAbDab, SKEMPI 2.0, FinnGen R10, iLINCS all 200; AlphaFold Q9NP59 200; RCSB 6W4S 200; gnomAD GraphQL returns SLC40A1. OpenGWAS API 401 without token.
+
+Access: AMP-AD on Synapse needs a free account + terms. UK Biobank and ADNI need applications.
+
+| id | verdict | note |
+|----|---------|------|
+| P02-01 | OK | Synapse + GEO + FerrDb; concrete classifier. |
+| P02-02 | FIX | CSF SomaScan/Olink sets unnamed; name PRIDE accessions or restrict to AMP-AD TMT. |
+| P02-03 | OK | SAbDab/SKEMPI live; good docking/DL candidate. |
+| P02-04 | OK | Structure + variant sources verified. |
+| P02-05 | FIX | OpenGWAS needs free token; add GWAS Catalog FTP route. |
+| P02-06 | OK | Census live; cohorts present. |
+| P02-07 | OK | L1000 public via iLINCS. |
+| P02-08 | OK | Hepcidin-ferroportin PDB structures live; ChEMBL + open ADMET tools named. |
+| P02-09 | OK | Literature PK compilations + TfR shuttle factors; analysis spec, no data block. |
+| P02-10 | FIX | ADNI + UK Biobank Olink both need applications; restrict to AMP-AD/Emory public CSF-plasma sets or mark as registered-access. |
