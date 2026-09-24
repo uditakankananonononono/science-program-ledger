@@ -55,3 +55,13 @@ Amended frame (no threshold, judge, or outcome changes):
 - Samples re-drawn: rng-seed-7 over each eligible pool (halo100; therm100), same procedure as locked. Control100 unchanged (all reference proteomes, all covered).
 - Proteomes already downloaded that remain in the re-drawn samples are reused; compositions recomputed identically.
 - Audit: eligibility lists, draws, and any residual empty-stream proteomes recorded in PROVENANCE.md.
+
+## Addendum B (locked 2026-09-24 13:51 IST, BEFORE any gate scoring on the amended samples)
+Sampling-frame repair, second stage. Discovery: UniProtKB `proteome:` sequence queries cover Reference proteomes only - 'Non Reference proteome' records carry proteinCount but have zero UniProtKB entries indexed (verified: UP000297053, UP000011618, UP000011673 all x-total-results 0). Addendum A's non-Excluded filter is therefore insufficient for data retrieval.
+Amended frame (no threshold, judge, or outcome changes):
+- Eligibility: proteomeType == 'Reference proteome'. Halobacteria eligible: 283/988. Thermophile eligible: 83/662.
+- halo100: re-drawn rng-seed-7 from the 283 eligible (unchanged procedure). G0(i) bar unchanged (median D+E >= control median +5pp).
+- Thermophile panel: all 83 eligible reference proteomes (pool smaller than 100 - no sampling possible). G0(ii) bar unchanged (median IVYWREL > control median, strict).
+- Control100 unchanged.
+- Diagnostic partial medians computed during frame debugging (halo n=40, therm n=35, pre-amendment frames) are recorded in PROVENANCE.md as diagnostics only and are NOT gate outcomes.
+- Audit: eligibility lists, draws, download coverage recorded in PROVENANCE.md.
