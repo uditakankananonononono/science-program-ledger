@@ -16,3 +16,10 @@ Gates:
 - G3: R >= B in F1@0.5 on >= 70% of test images.
 If G1 fails: one post-hoc pivot, locked and pushed before scoring.
 Caveats declared: a single cell line and stain; deep learning (e.g. U-Net, reported ~0.9 F1 by Caicedo 2019) is stronger and out of scope; the RF is a learned-feature-free classical pipeline.
+
+## Amendment 1 - pivot (POST HOC, locked before the pivot was scored)
+Original result preserved (results/metrics_original.json): G1 FAIL (F1@0.5 R - B = +0.024, CI 0.016-0.033, below the 0.03 bar), G2 PASS (+0.030 at IoU 0.75), G3 PASS (86% of images). Both validation-selected settings sat on the edge of their grids (B: min_distance 10 = max; R: t 0.6 = max), so neither method was tuned to its optimum. Pivot: extend both grids outward on validation only, same everything else, and re-score test once.
+- B grid: sigma {1,2} x min_distance {10,13,16,20}. R grid: t {0.6,0.7,0.8}.
+- P1: mean F1@0.5 (R - B) >= 0.03 (bar unchanged), CI lower bound > 0.
+- P2: mean F1@0.75 (R - B) > 0, CI lower bound > 0.
+Known when choosing: R led on test in the original run; extending both grids equally can help either method. No further pivots.
