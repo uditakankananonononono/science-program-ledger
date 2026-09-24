@@ -53,18 +53,28 @@ def standardize(Xtr, Xte):
     return (Xtr - mu) / sd, (Xte - mu) / sd
 
 def fit_logreg(X, y, g):
+    if X.shape[1] == 1:
+        return 1.0
     best_c, best_a = None, -1
+    recs = np.unique(g)
+    rng = np.random.RandomState(0)
     for c in (0.1, 1.0, 10.0):
         aucs = []
-        for r in np.unique(g):
+        for r in recs:
             tr, te = g != r, g == r
-            Xtr, Xte = standardize(X[tr], X[te])
-            m = LogisticRegression(C=c, max_iter=2000).fit(Xtr, y[tr])
+            if len(np.unique(y[te])) < 2:
+                continue
+            tri = np.where(tr)[0]
+            if len(tri) > 6000:
+                tri = rng.choice(tri, 6000, replace=False)
+            Xtr, Xte = standardize(X[tri], X[te])
+            m = LogisticRegression(C=c, max_iter=2000).fit(Xtr, y[tri])
             aucs.append(roc_auc_score(y[te], m.predict_proba(Xte)[:, 1]))
-        a = float(np.mean(aucs))
-        if a > best_a:
-            best_a, best_c = a, c
-    return best_c
+        if aucs:
+            a = float(np.mean(aucs))
+            if a > best_a:
+                best_a, best_c = a, c
+    return best_c if best_c is not None else 1.0
 
 def logo_probs(Xf, kind):
     probs = np.full(len(y), np.nan)

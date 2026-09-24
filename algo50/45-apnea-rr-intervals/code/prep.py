@@ -1,7 +1,7 @@
 import os, subprocess
 recs = ([f'a{i:02d}' for i in range(1,21)] + [f'b{i:02d}' for i in range(1,6)]
         + [f'c{i:02d}' for i in range(1,11)])
-base = 'https://physionet.org/files/apnea-ecg/1.0.0/'
+base = 'https://physionet-open.s3.amazonaws.com/apnea-ecg/1.0.0/'
 os.makedirs('data', exist_ok=True)
 for r in recs:
     for ext in ('dat', 'hea', 'apn'):
