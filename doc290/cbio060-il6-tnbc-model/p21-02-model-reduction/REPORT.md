@@ -41,8 +41,8 @@ Run: `python3 tool/reduce.py results/results.json` (~3 min).
   freezing, not for model reduction in general.
 - The 18-ODE model on the error path was NOT scored on the gate conditions. That would be a post-hoc change
   of the <= 12 target. Needs next: pre-lock a QSSA or <= 18-ODE variant as its own direction.
-- The full-model refit started from the data-generating values (7 evaluations); the reduced refit hit its
-  budget-free optimum within bounds (20 evaluations). k = 33 for both.
+- The full-model refit started from the data-generating values (7 evaluations); the reduced refit stopped
+  after 20 evaluations (budget 60). k = 33 for both.
 
 ## Data / sources
 - Model: BIOMD0000000535 (PMID 24402116) via github.com/sys-bio/temp-biomodels; vendored in `tool/`.
