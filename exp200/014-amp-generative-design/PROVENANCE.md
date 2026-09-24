@@ -1,0 +1,5 @@
+# DOC-1-014 PROVENANCE
+- APD natural AMPs: https://aps.unmc.edu/assets/sequences/naturalAMPs_APD2024a.fasta (APD2024a release, 3,306 records; 2,748 usable 12-50 aa canonical). SHA-256 b2d30bbbe57a383220d5fa68fda5a73728d2345f88585a78aa5f9e9546cd3d66. Wang et al., Nucleic Acids Res 2016 (APD3).
+- Generator: ESM-2 esm2_t6_8M_UR50D (Lin et al., Science 2023; dl.fbaipublicfiles.com) per GATES_ADDENDUM_A.md; ProtGPT2 (nferruz/ProtGPT2, HF) downloaded and found RAM-infeasible (738M params, 3,134,053,001-byte fp32 checkpoint, mmap ENOMEM at 1.9GB RAM); weights deleted, infeasibility documented in the addendum.
+- Scorer: Macrel v1.6.1 pip (Santos-Junior et al., PeerJ 2020;8:e10555) with --keep-negatives for full-set probabilities (default output is positives-only - instrument contract documented in REPORT.md). Novelty: MMseqs2 15-6f452 vs full APD set.
+- Sets: 500 candidates (seeds 123/124), 500 shuffled baseline (seed 43), 500 held-out APD (seed 44), 200 calibration (seed 42); calibration in results/calibration.json.
