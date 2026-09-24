@@ -65,3 +65,12 @@ Small models win at compressing and aligning existing signal (021 kNN-style refe
 remains the bar tiny diffusion cannot beat; 022 cross-tissue embedding alignment - see report)
 and lose at generating or cross-library synthesis. Matches finding 1's mechanism: alignment
 stays in-domain; generation is evaluated out-of-domain.
+
+## 7. EXP-4 lane boundaries (DOC-2-051..100)
+- **Single marker beats multi-gene cross-lab (151, 156, 154)**: 151 cfDNA 5hmC one gene 0.73 vs module model 0.61 / elastic-net 0.64 on a frozen other-lab cohort (train CV 0.76-0.79). 156 SLC6A14 alone 0.83 >= 19-gene model 0.78. 154 published Sweeney 7-gene >= trained genome-wide model (pooled -0.036). Matches finding 1.
+- **Order-based rules transport; residual rules do not (157)**: k-TSP 0.76/0.78 stable across two external UC cohorts; broken-coupling residual score 0.84 then 0.46.
+- **Raw docking scores carry receptor bias (165)**: Vina AUROC 0.66 imatinib / 0.53 erlotinib vs Davis Kd; ATP/ADP-crystallized non-binder pockets score near the top.
+- **Mean-pooled small PLM: topology-simple folds only (172)**: fold 1-NN across superfamilies 0.14 vs Smith-Waterman 0.03; all-alpha 0.30, all-beta 0.22, alpha+beta 0. Extends finding 3.
+- **Counterexample to finding 3 (171, PASS)**: frozen ESM-2 + trained per-residue head beats named baselines for catalytic residues on the literature-curated M-CSA atlas (AUPRC 0.205 vs 0.045). A small PLM works when the task is local (per-residue) and has dense labels.
+- **Topology-only link prediction = degree (199)**: Adamic-Adar 0.753 vs preferential attachment 0.750 on the STRING v11->v12 time split.
+- Terminal: 173 (clean null: AlphaMissense equally reliable on poorly and well studied genes); 179/079 (terminated on user instruction).
