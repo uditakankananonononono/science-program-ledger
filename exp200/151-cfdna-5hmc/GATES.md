@@ -22,3 +22,12 @@ Cell-free DNA 5hmC gene-body profiles: is a coordinated multi-gene module signat
 
 ## Pivot rule
 Negatives are kept; amend and lock before new results.
+
+## Amendment A (10:31, before any results were produced)
+B2 elastic-net with saga did not converge in reasonable CPU on 15,011 genes. B2 now uses the same 2,000 most-variable training genes as M, with saga tol 1e-3 and max_iter 1000. Nothing else changes.
+
+## Primary result (10:32) - G1 FAIL, G2 FAIL, preserved
+- Training 5-fold CV AUROC: M 0.76, B2 0.78.
+- Frozen external AUROC on GSE81314: M 0.61, B1 (SNCAIP, one gene) 0.73, B2 elastic-net 0.64.
+- Difference vs B1: -0.12 (CI -0.27 to +0.04).
+Closed as a documented boundary. Cross-lab transfer of cfDNA 5hmC gene-body signatures fails in this setting.
