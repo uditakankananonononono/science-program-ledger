@@ -47,3 +47,11 @@ halt and report"). All thresholds numeric below.
 - Failure tree: G0 halt -> report (no patch). G1 fail -> the inversion is ecology
   (community not salt-in), documented with numbers; parent adjudicates. G2 fail ->
   decomposition does not transport; boundary documented.
+
+## Addendum A (locked 2026-09-24 13:45 IST, BEFORE any G0/G1/G2 outcome computation)
+Sampling-frame repair. Discovery during data build: UniProtKB `proteome:` queries return zero sequences for proteomes with proteomeType 'Excluded' (no UniProtKB sequence coverage). 67/100 of the original rng-seed-7 halo100 drew Excluded proteomes; no outcome data have been computed.
+Amended frame (no threshold, judge, or outcome changes):
+- Eligibility: a proteome is G0/G1-eligible iff its UniProt proteomeType is not 'Excluded' (i.e., UniProtKB-covered). Halobacteria: 746/988 eligible (Reference 283 + Non Reference 463). Thermophile pool filtered the same way.
+- Samples re-drawn: rng-seed-7 over each eligible pool (halo100; therm100), same procedure as locked. Control100 unchanged (all reference proteomes, all covered).
+- Proteomes already downloaded that remain in the re-drawn samples are reused; compositions recomputed identically.
+- Audit: eligibility lists, draws, and any residual empty-stream proteomes recorded in PROVENANCE.md.
