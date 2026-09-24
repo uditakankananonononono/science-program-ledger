@@ -29,3 +29,13 @@ B1: Smith-Waterman local alignment score (BLOSUM62, gap open 11, extend 1; the S
 
 ## Pivot rule
 Negatives are kept; amend and lock before new results.
+
+## Primary result (09:18) - INVALID by design defect, preserved
+- Raw: ESM 0.057 vs SW 0.017 (McNemar p=0.004). G1 and G2 fail.
+- Defect: the 1,500-reference cap truncated the sorted list, so only 49 of 300 queries had any same-fold reference (reference set was class a/b only). I checked this from reference coverage, not from the new scores.
+- In class a, where references existed: ESM 0.32 vs SW 0.09.
+
+## Pivot 1 (locked 09:45, before any rerun)
+- Same 300 queries, same methods, same gates.
+- References: for each query fold, up to 8 seed-0 domains from each other superfamily of that fold. Fill with seed-0 other-fold domains up to 1,500 total.
+- The per-class breakdown and mechanism hypothesis are unchanged.
