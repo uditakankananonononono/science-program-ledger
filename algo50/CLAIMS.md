@@ -21,6 +21,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 30 | banded-edit-distance | RES-2 | DONE - oracle band exact 100%, 5-6x faster; stable-doubling rule unsound (silent wrong answer); k>=d termination provably exact 300/300 | 2026-09-24T08:12Z |
 | 32 | fmindex-exact-match | RES-2 | DONE - G1+G2 PASS (500/500 agreement, byte-exact BWT inversion); G3+G4 FAIL (FM 7x slower than SA binary search at 4.6Mbp in pure Python) | 2026-09-24T08:15Z |
 | 34 | quality-weighted-consensus | RES-2 | DONE - PASS all gates: QW strictly dominates, 2.5x lower error at cov=3; cov>=5 both at 0-error floor (G4 vacuous, documented) | 2026-09-24T08:17Z |
+| 36 | dust-masking | RES-2 | claimed - protocol in prep | 2026-09-24T08:18Z |
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
