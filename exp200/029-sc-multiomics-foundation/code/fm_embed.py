@@ -11,7 +11,7 @@ use for visualization/QC, not for quantitative protein prediction - use the ridg
 import argparse, numpy as np, torch, torch.nn as nn
 torch.set_num_threads(2)
 ap=argparse.ArgumentParser(); ap.add_argument('--x', required=True); ap.add_argument('--out', default='Z.npy')
-ap.add_argument('--weights', default='results/local/fm_encoder.pt')
+ap.add_argument('--weights', default='results/fm_encoder.pt')
 a=ap.parse_args()
 sd=torch.load(a.weights)
 enc=nn.Sequential(nn.Linear(2000,256), nn.ReLU())
