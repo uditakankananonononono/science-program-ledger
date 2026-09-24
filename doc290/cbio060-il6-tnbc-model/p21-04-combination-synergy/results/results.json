@@ -1,0 +1,103 @@
+{
+ "G1": {
+  "source": "NCI-ALMANAC ComboDrugGrowth_Nov2017 (DrugComb API unreachable from sandbox)",
+  "mapped_drugs_in_almanac": [
+   "Ruxolitinib (NSC 763371) -> JAK -> kcatSTATPhos"
+  ],
+  "rux_combo_rows_tnbc": 3945,
+  "rux_partners_tnbc": 102,
+  "matched_pairs_both_mapped": 0,
+  "verdict": "UNDERPOWERED (0 < 10)",
+  "pass": false
+ },
+ "G2": {
+  "verdict": "NOT EVALUABLE (0 matched pairs)",
+  "pass": null
+ },
+ "mapped_mechanism_bliss": {
+  "JAK_or_STAT3+JAK_or_STAT3": 0.12306998122769208,
+  "JAK_or_STAT3+IL6_or_IL6R_antibody": 0.08113078340499685,
+  "JAK_or_STAT3+gp130": 0.019748046364426525,
+  "IL6_or_IL6R_antibody+IL6_or_IL6R_antibody": 0.08115265400683908,
+  "IL6_or_IL6R_antibody+gp130": 0.014347273116202007,
+  "gp130+gp130": 0.013375232767385626
+ },
+ "atlas_top10": [
+  [
+   "kcatSTATPhos+ksynthIL6Gut",
+   0.062248679468476675
+  ],
+  [
+   "kRLOn+kcatSTATPhos",
+   0.033572068357130905
+  ],
+  [
+   "kRLOn+ksynthIL6Gut",
+   0.032112147910157596
+  ],
+  [
+   "kRLOn+kdistSerumToTissue",
+   0.028938055737246997
+  ],
+  [
+   "kcatSTATPhos+kRShedding",
+   0.02873116105866548
+  ],
+  [
+   "kcatSTATPhos+VmProtSynth",
+   0.028404695970392413
+  ],
+  [
+   "kcatSTATPhos+kCRPSecretion",
+   0.028404695970392413
+  ],
+  [
+   "kcatSTATPhos+kdistSerumToTissue",
+   0.02783656602552488
+  ],
+  [
+   "kRLOn+kRShedding",
+   0.02711585963588714
+  ],
+  [
+   "ksynthIL6Gut+kRShedding",
+   0.0269384077166413
+  ]
+ ],
+ "atlas_bottom5": [
+  [
+   "KmSTATPhos+ksynthIL6Gut",
+   -0.03115248627959731
+  ],
+  [
+   "VmSTATDephos+ksynthIL6Gut",
+   -0.031275193492356634
+  ],
+  [
+   "kcatSTATPhos+kintActiveR",
+   -0.03421424869947112
+  ],
+  [
+   "kcatSTATPhos+KmSTATPhos",
+   -0.03423283179714271
+  ],
+  [
+   "VmSTATDephos+kcatSTATPhos",
+   -0.03437214207038338
+  ]
+ ],
+ "atlas_n_pairs": 528,
+ "atlas_frac_positive_bliss": 0.3390151515151515,
+ "G3": {
+  "members": 50,
+  "fails": 0,
+  "frac_in_top20": {
+   "kcatSTATPhos+ksynthIL6Gut": 1.0,
+   "kRLOn+kcatSTATPhos": 1.0,
+   "kRLOn+ksynthIL6Gut": 0.96,
+   "kRLOn+kdistSerumToTissue": 0.98,
+   "kcatSTATPhos+kRShedding": 1.0
+  },
+  "pass": true
+ }
+}
