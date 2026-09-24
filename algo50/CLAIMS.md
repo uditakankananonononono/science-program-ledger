@@ -14,7 +14,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 16 | kmer-spectrum-genomesize | RES-2 | done - G1+G4 FAIL (naive area estimator -13%/-30%), G2+G3 PASS; pivot P1+P3 PASS (Poisson fit fixes 30x), P2 FAIL (5x unrecoverable) | 2026-09-24T07:53Z |
 | 18 | pileup-variant-calling | RES-2 | done - G1 FAIL (30x ceiling, both ~0.999), G2+G3+G4 PASS; 4x pivot P1-P3 PASS (BB het F1 0.513 vs 0.175) | 2026-09-24T07:56Z |
 | 20 | hwe-exact-vs-chi2 | RES-2 | done - G1-G4 all PASS (chi2 type-I 4.4x exact at MAF 0.05; power cost 0.034) | 2026-09-24T08:03Z |
-| 22 | ld-decay-r2 | RES-2 | claimed - protocol in prep | 2026-09-24T08:04Z |
+| 22 | ld-decay-r2 | RES-2 | done - G1+G4 FAIL (naive exp fit recovers 8.8kb of 50kb), G2+G3 PASS; pivot P1-P3 PASS (A+c fit recovers l=18.8kb ~ lambda/2) | 2026-09-24T08:04Z |
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
