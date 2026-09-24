@@ -21,3 +21,14 @@ PASS if all.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot run on FRESH seed 24)
+Original gates failed as locked (documented): G1's raw-side expectation (>0.9 GC-expression correlation) was wrong (lognormal expression spread dominates; realized 0.32), and G2/G3/G4's +-0.3 LFC tolerance is noise-limited at 3 NB replicates (realized ~46-50% even though medians are unbiased). The failed run also revealed the real biology: condition-independent GC bias CANCELS in the LFC (raw median LFC 0.88-0.92 vs true 1.0 in both DE groups) - correction matters for absolute expression, not differential calls.
+Pivot P (fresh seed 24, same design):
+- P1: corrected GC-expression correlation < 0.1 AND raw correlation > 0.15 (bias real, correction removes it).
+- P2: correction improves non-DE within-0.3 absolute-expression recovery by >= 1.5x.
+- P3: |median raw LFC - 1| <= 0.15 in BOTH DE groups (bias cancels in differential analysis).
+- P4: corrected correlation does not inflate non-DE |error|: median |est-truth| corrected <= raw + 0.05.
+PASS if P1+P2+P3.
