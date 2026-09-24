@@ -75,3 +75,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 50 | trial-peeking-pocock | RES-3 | done - G1-G3 PASS (peeking type-I 0.195 -> Pocock 0.050), G4 FAIL narrow (power 0.743 vs 0.750 floor) | 2026-09-24T08:09Z |
 | 52 | missing-mar-cc-vs-imputation | RES-3 | done - G1-G4 all PASS (CC bias -0.35; reg-imp +0.002; IPW -0.001; mean-imp SD 0.70; reproduction) | 2026-09-24T08:09Z |
 | 54 | epi-growth-rate-poisson-vs-loglinear | RES-3 | done - G1 FAIL narrow (log-linear bias -0.008 < 0.01 gate), G2-G4 PASS (Poisson GLM bias +0.0003, RMSE 0.67x) | 2026-09-24T08:10Z |
+| 86 | em-transcript-quantification | RES-2 | claimed | 2026-09-24T09:00Z |
