@@ -1,0 +1,21 @@
+{
+ "n_bace": 1513,
+ "parse_failed_bace": 0,
+ "base_rate_bace": 0.456708526107072,
+ "bace_classification": {
+  "B0_3desc": 0.6589087714479879,
+  "B1_binECFP": 0.839292819391481,
+  "M1_gbm": 0.8804528857292755
+ },
+ "transfer_bbbp_to_bace_M1": 0.36791771859958244,
+ "regression_pIC50": {
+  "ridge_8desc_spearman": 0.4528874696574058,
+  "gbm_full_spearman": 0.7948855893368022
+ },
+ "gates": {
+  "G1_B1_ge_B0+0.05": true,
+  "G2_M1_ge_B1+0.02": true,
+  "G3_transfer_ge_0.60": false,
+  "G4_gbm_ge_ridge+0.05": true
+ }
+}
