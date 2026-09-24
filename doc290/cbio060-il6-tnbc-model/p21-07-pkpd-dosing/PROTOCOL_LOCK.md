@@ -43,3 +43,12 @@ simulation is run.
   regeneration checked by matching the member count and nominal chi2 26.525). Pass iff the nominal dynamic
   ranking order AND the nominal verdicts (sustained/rebound per drug, any-pair reversal) hold in >= 80%.
 - Spec failure rule: if PK changes no ranking, report that static screens are enough for this pathway.
+
+## Amendment A5b - locked 2026-09-24 ~12:13 IST, before the gated run (disclosed deviation fix)
+While smoke-testing the code at nominal parameters (before any G2/G3 evaluation run), I found that the first
+implementation did not follow the A5 text for siltuximab: it measured peak/trough over the last 504 h of the
+window (168-672 h), which mixes the first-interval onset with the second dose. This was noticed only after
+seeing the nominal siltuximab numbers (trough 0.20, peak 0.99, flagged "rebound"), so the fix is disclosed
+here and both values go in the report. Clarified implementation of A5 text "last dosing interval inside the
+window" = last COMPLETE dosing interval: rux 660-672 h, toc 0-672 h, sil 0-504 h; peak = max suppression in
+that interval; trough = suppression at the interval end (pre-next-dose, the PK trough time). Nothing else changes.
