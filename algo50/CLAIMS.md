@@ -59,7 +59,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 66 | msa-guide-tree-order | RES-2 | DONE - documented negative: no systematic true-order advantage (mean gap +0.01 over 3 seeds) under order-to-order spread 0.09-0.16; collapse at t=0.30 all orders replicated | 2026-09-24T08:37Z |
 | 68 | profile-hmm-vs-pwm-indels | RES-2 | DONE - documented negative: HMM edge <= +0.03 AUROC, non-monotone; robust finding: detection is information-limited (7.7 bits caps both at 0.72) before model-limited | 2026-09-24T08:41Z |
 | 70 | mash-distance-accuracy | RES-2 | DONE - both gate sets FAIL on E-boundary miscalibration (documented, re-gating stopped per discipline); finding: |err| tracks E=L(1-p)^k, saturation only at E~<3 | 2026-09-24T08:44Z |
-| 72 | spaced-seed-sensitivity | RES-2 | claimed - protocol in prep | 2026-09-24T08:45Z |
+| 72 | spaced-seed-sensitivity | RES-2 | DONE - original saturated (documented); pivot P1+P2+P4 PASS: spaced-8 +0.14 over contig-8, +0.61 over contig-12 at q=0.70; no background inflation | 2026-09-24T08:46Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |

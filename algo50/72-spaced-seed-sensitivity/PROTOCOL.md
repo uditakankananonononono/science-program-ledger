@@ -22,3 +22,14 @@ PASS if all.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot run on FRESH seed 59)
+Original design saturated: 200 bp windows give weight-8 seeds ~99-100% hit rates even at q=0.70 (no headroom for the spaced-seed advantage), and 400 background pairs cannot measure a 0.3%/0.001% rate (expected counts ~1). Also one gate-check bug (G4 comparison direction reversed; data was monotone as expected) - fixed, documented.
+Pivot P (fresh seed 59): window 60 bp; q in {0.60,0.65,0.70,0.75}; N=1000 homology, N=4000 background pairs.
+- P1: spaced-8 sensitivity >= contig-8 + 0.05 at q=0.70.
+- P2: contig-12 <= spaced-8 - 0.15 at q=0.70 (weight penalty of length).
+- P3: background rates within 3x of theory (1/4)^w-window-corrected for the two weight-8 seeds (contig-12 underpowered, reported only).
+- P4: sensitivity non-decreasing in q for all seeds (corrected check direction).
+PASS if P1+P2+P4.
