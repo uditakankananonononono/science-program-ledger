@@ -1,0 +1,8 @@
+Environment (2 cores, 2 GB RAM):
+- torch 2.14.0+cpu, ImmuneBuilder 1.2, DockQ 2.1.3, lightdock 0.9.4, anarci (pip --user).
+- openmm/pdbfixer unavailable: ImmuneBuilder/refine.py replaced by a raising stub (original kept as
+  refine.py.orig); pdbfixer.py and openmm/__init__.py are import stubs. Only UNREFINED ABodyBuilder2
+  models are used (locked amendment).
+- numpy pinned to 1.23.5 in user site by lightdock (system had 2.2.6); pandas/sklearn still import.
+- RCSB downloads: https://files.rcsb.org/download/<PDB>.pdb
+- RaSP for G2 cloned from github.com/KULL-Centre/_2022_ML-ddG-Blaabjerg (/tmp/rasp at lock time).
