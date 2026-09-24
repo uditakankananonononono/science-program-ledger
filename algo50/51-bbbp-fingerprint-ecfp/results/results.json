@@ -1,0 +1,18 @@
+{
+ "n": 2039,
+ "parse_failed": 11,
+ "base_rate": 0.7650809220205983,
+ "auroc": {
+  "B0": 0.8261341737594348,
+  "B1": 0.8436011187837911,
+  "B2": 0.7788100208768267,
+  "M1": 0.905909078743108
+ },
+ "top_decile_precision_M1": 0.9852216748768473,
+ "gates": {
+  "G1_M1_ge_B1+0.02": true,
+  "G2_B1_ge_B0+0.05": false,
+  "G3_M1_ge_Tanimoto1NN+0.02": true,
+  "G4_topdecile_ge_1.5x_base": false
+ }
+}
