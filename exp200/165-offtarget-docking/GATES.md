@@ -33,3 +33,18 @@ B1: global sequence identity of each kinase to the primary target (BLOSUM62 glob
 
 ## Pivot rule
 Negatives are kept; amend and lock before new results.
+
+## Amendment A (01:42, before structure selection or docking)
+- ABL1p (phosphorylated ABL1) is excluded under the non-phosphorylated rule.
+- The cap is resolved as: per drug, seed-0 sample of 10 binders (all if fewer) plus 20 non-binders, drawn from kinases with a usable structure. Candidates are tried in seed-0 shuffled order until the quota is filled.
+- Gene symbols map to UniProt through a reviewed human UniProt gene search (synonyms included).
+- Amendment B (01:44, before any docking): the structure picker was fixed to skip modified residues (MODRES, e.g. phosphotyrosine PTR). Those were being mistaken for ligands. The search now looks at the top 25 entries instead of the top 8.
+
+## Primary result (04:49) - G1 FAIL, preserved
+- Vina AUROC: imatinib 0.66, erlotinib 0.525; mean 0.593 (needed >= 0.70).
+- B1 homology: 0.545 / 0.495, mean 0.52. G2 +0.07 passes; not meaningful given G1.
+- Non-binders in nucleotide-bound structures (JNK2, DAPK1, CDC2L5) scored near the top: receptor bias of inverse docking.
+- The make3D conformer is unseeded; an ABL2 re-dock gave -9.05 vs -7.70.
+
+## Closure (09:08)
+Closed as a documented boundary. The planned pivot, MASC receptor-bias correction (Vigers & Rizzi, J Med Chem 2004), needs about 3 reference-ligand docks per receptor (~2 h of active CPU in this sandbox). It is proposed as future work, not run.
