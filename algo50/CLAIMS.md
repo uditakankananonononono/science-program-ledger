@@ -46,3 +46,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 53 | bace-scaffold-transfer | RES-1 | done - G1+G2+G4 PASS (BACE substructure-dominated, contrast to BBBP); G3+P1 FAIL (cross-task transfer anti-predictive 0.368/0.378) | 2026-09-24T02:07Z |
 | 55 | molnet-task-pattern | RES-1 | claimed - protocol in prep | 2026-09-24T02:16Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | claimed - protocol in prep | 2026-09-24T08:05Z |
+| 40 | km-vs-naive-censoring | RES-3 | claimed - protocol in prep | 2026-09-24T08:05Z |
