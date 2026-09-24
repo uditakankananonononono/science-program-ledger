@@ -79,3 +79,8 @@ Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, kil
 
 | 2026-09-24 15:46 IST | REVOKE | atlas-ai | instinct-merge-m15m16 | SHA256:QZ8TjV7PEDCBzkYKWcXyT3gILRRutza5jZBdXoH+DQM | private half dead (integrator hit twice in reset waves, relayed via Main 15:46) | verified gone on-page |
 | 2026-09-24 15:46 IST | ADD | atlas-ai | instinct-merge3 | SHA256:Fk/DGBLrizYR6oiC/w4f7NiKXCPxujptIeNWcEymc0s | write deploy key, replacement for M15/M16 integrator; relayed via Main | Read/write verified on-page |
+
+| 2026-09-24 15:59 IST | ADD | sugarcode-ai | audit5-sugarcode-read | SHA256:qaMLkd37e5hmFY0NfopURartEJ9PGmRrtmTilFM44K4 | READ-only audit key; relayed via Main | Read-only verified on-page |
+| 2026-09-24 16:00 IST | ADD | sugarcode-ai | audit4-sugarcode-read | SHA256:5YuixF9xTDacRUrgCowgdVUE8CU3/Mt/K3494ddLzos | READ-only audit key; relayed via Main | Read-only verified on-page |
+| 2026-09-24 16:00 IST | ADD | sugarcode-ai | audit6-sugarcode-read | SHA256:5A2JbqQYQTsLyA2auu9u7Ea7ut8Ar+1AcSEX5eoXA7E | READ-only audit key; relayed via Main | Read-only verified on-page |
+| 2026-09-24 16:00 IST | REVOKE | sugarcode-ai | audit4/5/6-sugarcode-read (all 3) | fingerprints as above | audit distribution moved to source snapshot; keys unused; revoke directed by Main 16:00 | verified all gone on-page |
