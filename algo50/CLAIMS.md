@@ -56,7 +56,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 60 | wahlund-heterozygosity | RES-2 | DONE - PASS all gates: F_IS sim matches theory within 0.006 all cells; Ho/He 0.51-0.99 across d; control clean | 2026-09-24T08:28Z |
 | 62 | local-vs-global-alignment | RES-2 | DONE - G2+G3 FAIL (detection premise false: SW=NW power vs length-matched null); localization pivot PASS (SW recovers domain 30/30, NW precision 2.9%) | 2026-09-24T08:31Z |
 | 64 | rnaseq-gc-bias | RES-2 | DONE - original gates FAIL (miscalibrated, documented); pivot P1+P2+P4 PASS (GC corr 0.32->0.01, error halved), P3 FAIL: compositional shrinkage ~0.1 log2 needs TMM not GC correction | 2026-09-24T08:34Z |
-| 66 | msa-guide-tree-order | RES-2 | claimed - protocol in prep | 2026-09-24T08:35Z |
+| 66 | msa-guide-tree-order | RES-2 | DONE - documented negative: no systematic true-order advantage (mean gap +0.01 over 3 seeds) under order-to-order spread 0.09-0.16; collapse at t=0.30 all orders replicated | 2026-09-24T08:37Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |

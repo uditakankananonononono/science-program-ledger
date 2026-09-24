@@ -22,3 +22,23 @@ PASS if all.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot run on FRESH seed 31)
+Original G1+G2 failed as locked, and the pattern is the finding: the guide-order effect is non-monotone in divergence - nothing to lose at t=0.05 (random orders slightly WIN, 0.972 vs 0.956), a real +0.077 gap at t=0.15, and total collapse at t=0.30 (~10% SP accuracy for ALL orders - progressive alignment itself breaks, order irrelevant).
+Pivot P (fresh seed 31, same simulator):
+- P1: true-order accuracy - mean(random-order accuracy) >= +0.03 at t=0.15.
+- P2: at t=0.30, accuracy <= 0.20 for true AND all random orders (collapse replicated).
+- P3: at t=0.05, all orders >= 0.95 (easy regime; order-independence: |true - mean random| <= 0.03).
+PASS if all.
+
+---
+
+# AMENDMENT 2 (locked before pivot run on FRESH seeds 41/43/45)
+Amendment 1's P1 failed: the +0.077 true-order gap at t=0.15 (seed 29) did not replicate on seed 31 (-0.004). Within-seed order-to-order spread (~0.10 between random orders) exceeds any systematic true-order advantage - the effect, if real, is smaller than run noise. P2+P3 passed and stand.
+Pivot Q (seeds 41,43,45; t=0.15 only; true order + 5 random orders per seed):
+- Q1: mean gap (true - mean random) over 3 seeds >= +0.02.
+- Q2: within-seed random-order spread (max-min) >= 0.05 in >= 2/3 seeds (variance dominance).
+- Q3: gap positive in >= 2/3 seeds.
+PASS if Q1+Q2; Q3 reported.
