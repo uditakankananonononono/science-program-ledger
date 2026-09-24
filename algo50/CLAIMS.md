@@ -52,7 +52,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 55 | molnet-task-pattern | RES-1 | done - G1-G4 ALL PASS (ClinTox gap +0.032, HIV +0.069; 4/4 sign-consistent with 51/53: bulk=descriptor, pocket=substructure) | 2026-09-24T02:16Z |
 | 56 | debruijn-contig-vs-k | RES-2 | DONE - original G3+G4 FAIL (gate miscalibration, documented); Amd2 pivot P1-P3 PASS: unresolved = #{R>=k} exactly, N50 3.8k->120kb single contig at k=7000 | 2026-09-24T08:23Z |
 | 57 | bioplex-ppi-validation | RES-1 | claimed - user-directed BioPlex follow-up to 31 | 2026-09-24T08:12Z |
-| 58 | hmm-viterbi-vs-posterior | RES-2 | claimed - protocol in prep | 2026-09-24T08:24Z |
+| 58 | hmm-viterbi-vs-posterior | RES-2 | DONE - G1-G3 PASS (36% disagreement in hard regime, MPM strictly >= Viterbi); G4 FAIL documented: 98% unreachable at stay=0.90, information-theoretic boundary limit | 2026-09-24T08:26Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |
