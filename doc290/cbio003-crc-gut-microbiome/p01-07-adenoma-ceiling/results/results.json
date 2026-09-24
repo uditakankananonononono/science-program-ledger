@@ -1,0 +1,190 @@
+{
+ "n_by_cohort": {
+  "FengQ_2015": {
+   "CRC": 46,
+   "adenoma": 47,
+   "control": 61
+  },
+  "HanniganGD_2017": {
+   "CRC": 27,
+   "adenoma": 26,
+   "control": 28
+  },
+  "ThomasAM_2018a": {
+   "CRC": 29,
+   "adenoma": 27,
+   "control": 24
+  },
+  "YachidaS_2019": {
+   "CRC": 258,
+   "adenoma": 67,
+   "control": 251
+  },
+  "ZellerG_2014": {
+   "CRC": 53,
+   "adenoma": 42,
+   "control": 61
+  }
+ },
+ "G1": {
+  "advanced_auc_by_cohort": {
+   "FengQ_2015": 0.543250784792466,
+   "ZellerG_2014": 0.4918032786885246
+  },
+  "mean": 0.5175270317404953,
+  "boot95_ci": [
+   0.4100726659690734,
+   0.6252007034065805
+  ],
+  "n_advanced": {
+   "FengQ_2015": 47,
+   "ZellerG_2014": 15
+  },
+  "secondary_any_adenoma_loco_auc": {
+   "FengQ_2015": 0.543250784792466,
+   "HanniganGD_2017": 0.5583791208791208,
+   "ThomasAM_2018a": 0.5794753086419753,
+   "YachidaS_2019": 0.5058869001605518,
+   "ZellerG_2014": 0.5554254488680718
+  },
+  "secondary_mean": 0.5484835126684371
+ },
+ "G2": {
+  "by_cohort": {
+   "FengQ_2015": {
+    "p_adenoma_gt_control": 0.06027279233705868,
+    "p_crc_gt_adenoma": 2.5633826044281825e-05,
+    "median_score": {
+     "control": 0.4,
+     "adenoma": 0.43,
+     "CRC": 0.524
+    },
+    "continuum": false
+   },
+   "HanniganGD_2017": {
+    "p_adenoma_gt_control": 0.4861870030894175,
+    "p_crc_gt_adenoma": 0.19648104402472977,
+    "median_score": {
+     "control": 0.29,
+     "adenoma": 0.277,
+     "CRC": 0.296
+    },
+    "continuum": false
+   },
+   "ThomasAM_2018a": {
+    "p_adenoma_gt_control": 0.10131910689177853,
+    "p_crc_gt_adenoma": 0.03758619981111012,
+    "median_score": {
+     "control": 0.515,
+     "adenoma": 0.528,
+     "CRC": 0.562
+    },
+    "continuum": false
+   },
+   "YachidaS_2019": {
+    "p_adenoma_gt_control": 0.06534184761650567,
+    "p_crc_gt_adenoma": 0.0005846331795356753,
+    "median_score": {
+     "control": 0.498,
+     "adenoma": 0.518,
+     "CRC": 0.558
+    },
+    "continuum": false
+   },
+   "ZellerG_2014": {
+    "p_adenoma_gt_control": 0.3228470325940437,
+    "p_crc_gt_adenoma": 5.873464038066486e-07,
+    "median_score": {
+     "control": 0.432,
+     "adenoma": 0.449,
+     "CRC": 0.594
+    },
+    "continuum": false
+   }
+  },
+  "n_cohorts_continuum": 0
+ },
+ "G3": {
+  "stage_consistent_species": [],
+  "n": 0,
+  "all_hits": {
+   "Phascolarctobacterium_succinatutens": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Collinsella_stercoris": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Parascardovia_denticolens": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Alloscardovia_omnicolens": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Atopobium_parvulum": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Lachnoanaerobaculum_saburreum": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Streptococcus_pasteurianus": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Oribacterium_parvum": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Haemophilus_parahaemolyticus": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Neisseria_subflava": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Prevotella_histicola": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ],
+   "Prevotella_sp_oral_taxon_306": [
+    [
+     "YachidaS_2019",
+     1
+    ]
+   ]
+  }
+ },
+ "gates": {
+  "G1_pass": false,
+  "G2_pass": false,
+  "G3_pass": false
+ }
+}
