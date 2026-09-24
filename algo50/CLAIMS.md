@@ -65,7 +65,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 78 | anchor-chaining | RES-2 | DONE - DP >> greedy (recall gap 0.16-0.19 at high spurious, P3 PASS); documented boundaries: jitter caps recall ~0.86, weight-max absorbs rearrangements (rejection 62-70% vs 80% gate) | 2026-09-24T08:52Z |
 | 80 | pca-population-structure | RES-2 | DONE - PASS all gates: Fst=0.01 separable with 5000 SNPs (silhouette 0.83); monotone in L; PC1/PC3 ratio 1.1->14.7 | 2026-09-24T08:54Z |
 | 82 | transmission-snp-threshold | RES-2 | DONE - documented negative: at 0.34 SNPs/transmission no threshold recovers direct pairs (F1 0.26) or 2-step linkage (F1 0.49); mutation-rate ceiling, matches phylodynamics rationale | 2026-09-24T08:56Z |
-| 84 | gibbs-motif-recovery | RES-2 | claimed - protocol in prep | 2026-09-24T08:57Z |
+| 84 | gibbs-motif-recovery | RES-2 | DONE - G1 FAIL informative (recovery cliff q0.65 to q0.8), G2-G4 PASS | 2026-09-24T08:57Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |
