@@ -151,3 +151,9 @@ present but below the locked dev bar in verified remote homology (011F: 0.757 de
 frozen vs chance-level MMseqs2 0.496/0.487). The frozen temporal-validation pass (no drop)
 shows the remote-regime signal is durable across the annotation cutoff; the missed dev
 0.80 bar keeps it a documented boundary, not a counted discovery engine.
+
+## 15. Independent published AMP judges are composition-gullible (014F)
+Independent published AMP judges are composition-gullible (amPEPpy 0.825, AMPlify 0.655
+AMP+ on shuffled decoys); single-judge AMP+ rates do not evidence design success (014F).
+The judges' intersection (0.575 on the same shuffles) is the stricter and more honest
+design metric.
