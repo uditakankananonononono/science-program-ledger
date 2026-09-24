@@ -63,3 +63,5 @@ Note: GitHub allows a given deploy key on only one repository, so a builder that
 | 2026-09-24 15:33 IST | ADD | shared-models | meemee-shared-models-builder-2 | SHA256:7RaOHwlxBfZtW0nw0Elj1OviW6QeSwfRr/cfIh3+Kys | write deploy key, replacement; relayed via Main | Read/write verified on-page |
 
 Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, killing private key halves; expect further same-shape rotations (relayed via Main).
+
+| 2026-09-24 15:37 IST | ADD | account-level | orchestrator-qc-readback-v5 | SHA256:E6dQmCYJrD3ih8z/91TPvoUZp2nyDI5qw7eV9oCrEps | qc v4 private half lost in workspace rebuild ~15:36 (same sandbox-reset wave hitting builders); v5 = same-shape restore under sprint instruction, same precedent as v3->v4 accepted by Main 14:08 | SSH auth tested OK |
