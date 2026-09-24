@@ -1,0 +1,143 @@
+{
+ "per_gene": [
+  {
+   "gene": "Gad2",
+   "morans_i": 0.142,
+   "detection": 0.933,
+   "spage": 0.702,
+   "ddpm_p1": 0.285,
+   "adv": -0.417
+  },
+  {
+   "gene": "Pthlh",
+   "morans_i": 0.14,
+   "detection": 0.388,
+   "spage": 0.665,
+   "ddpm_p1": 0.239,
+   "adv": -0.427
+  },
+  {
+   "gene": "Tbr1",
+   "morans_i": 0.266,
+   "detection": 0.979,
+   "spage": 0.548,
+   "ddpm_p1": 0.334,
+   "adv": -0.214
+  },
+  {
+   "gene": "Lamp5",
+   "morans_i": 0.534,
+   "detection": 0.869,
+   "spage": 0.866,
+   "ddpm_p1": 0.525,
+   "adv": -0.34
+  },
+  {
+   "gene": "Rorb",
+   "morans_i": 0.648,
+   "detection": 0.623,
+   "spage": 0.884,
+   "ddpm_p1": 0.292,
+   "adv": -0.591
+  },
+  {
+   "gene": "Syt6",
+   "morans_i": 0.461,
+   "detection": 0.572,
+   "spage": 0.833,
+   "ddpm_p1": 0.383,
+   "adv": -0.45
+  },
+  {
+   "gene": "Gfap",
+   "morans_i": 0.471,
+   "detection": 0.694,
+   "spage": 0.684,
+   "ddpm_p1": 0.367,
+   "adv": -0.317
+  },
+  {
+   "gene": "Serpinf1",
+   "morans_i": 0.306,
+   "detection": 0.892,
+   "spage": 0.605,
+   "ddpm_p1": 0.258,
+   "adv": -0.346
+  },
+  {
+   "gene": "Mfge8",
+   "morans_i": 0.141,
+   "detection": 0.791,
+   "spage": 0.737,
+   "ddpm_p1": 0.226,
+   "adv": -0.511
+  },
+  {
+   "gene": "Bmp4",
+   "morans_i": 0.173,
+   "detection": 0.297,
+   "spage": 0.312,
+   "ddpm_p1": 0.209,
+   "adv": -0.103
+  },
+  {
+   "gene": "Tmem2",
+   "morans_i": 0.315,
+   "detection": 0.684,
+   "spage": 0.807,
+   "ddpm_p1": 0.283,
+   "adv": -0.524
+  },
+  {
+   "gene": "Ctps",
+   "morans_i": 0.3,
+   "detection": 0.916,
+   "spage": 0.565,
+   "ddpm_p1": 0.238,
+   "adv": -0.327
+  },
+  {
+   "gene": "Anln",
+   "morans_i": 0.289,
+   "detection": 0.868,
+   "spage": 0.607,
+   "ddpm_p1": 0.296,
+   "adv": -0.311
+  },
+  {
+   "gene": "Mrc1",
+   "morans_i": 0.168,
+   "detection": 0.895,
+   "spage": 0.61,
+   "ddpm_p1": 0.101,
+   "adv": -0.509
+  },
+  {
+   "gene": "Hexb",
+   "morans_i": 0.217,
+   "detection": 0.814,
+   "spage": 0.779,
+   "ddpm_p1": 0.181,
+   "adv": -0.598
+  },
+  {
+   "gene": "Vtn",
+   "morans_i": 0.222,
+   "detection": 0.664,
+   "spage": 0.695,
+   "ddpm_p1": 0.255,
+   "adv": -0.44
+  },
+  {
+   "gene": "Flt1",
+   "morans_i": 0.249,
+   "detection": 0.195,
+   "spage": 0.619,
+   "ddpm_p1": 0.146,
+   "adv": -0.473
+  }
+ ],
+ "spearman_adv_vs_moransI": 0.06617647058823531,
+ "spearman_adv_vs_detection": 0.25490196078431376,
+ "note": "dev genes only (P1 arm never reached frozen); hypothesis was diffusion wins on locally-structured genes"
+}
