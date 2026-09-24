@@ -7,7 +7,7 @@ Lanes append their entries as experiments close. Created 2026-09-24 (EXP-1 seed)
 ## 1. Dev-to-frozen inversion: mechanistic baselines win out-of-domain
 The program's strongest cross-cutting finding. Learned models that beat mechanistic baselines
 in dev cross-validation LOSE to them on frozen independent cohorts; dev-CV gains routinely
-invert. Five instances:
+invert. Six instances:
 
 - **026 viral-infection-atlas**: learned NMF top-50 signature wins dev (AUROC 0.6189 vs 0.5886)
   but loses frozen cross-virus transfer to the plain ISG signature (0.5605 vs 0.6193).
@@ -20,6 +20,12 @@ invert. Five instances:
   Harness validated by reproducing the published ENVIM 37% cross-cohort rate EXACTLY (37.1%).
 - **033 phage-host-gnn**: dev graph gains (20.95%, +7.3pp over no-graph, all 10 folds) collapse
   frozen to 12.20% vs ARM A KNN-d2 59.35%; CRISPR-spacer rescue real but neutral (+0.00pp).
+- **035 dark-matter-function**: dev ARM B 3-channel model 32.22% vs ARM A Huynen-vote 27.76%
+  (G2 FAIL, -0.54pp vs +5pp bar; P1 label-propagation rescue 28.32% also short) inverts on
+  the temporally frozen newly-lit cohort: ARM A 24.34% > ARM B 20.45% (popularity 8.55%).
+  G4 confirms Huynen hierarchy (neighborhood 26.69% > fusion 23.35% > co-occurrence 19.04%;
+  fusion highest precision 33.58% at 7.7% coverage; 20% context-isolated = 0.00% - the real
+  ceiling is coverage, not model capacity).
 
 Rule: out-of-domain, prefer the mechanistic baseline; treat dev-CV gains of learned models as
 evidence ABOUT the dev distribution only.
