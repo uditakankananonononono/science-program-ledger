@@ -69,3 +69,19 @@ candidate hosts from a patient isolate panel, validated by spot assays.
 Sample manifest (pair lists, disjointness stats, edge thresholds, file hashes) committed BEFORE
 any training. Thresholds never relax after seeing results; errata in GATES_ADDENDUM files
 locked before the outcomes they govern.
+
+## Addendum E (locked 2026-09-24 10:20 IST, before parsing full CRISPR results)
+
+**Execution note: blast word size.** P1 CRISPR spacer search (Addendum B) is executed with
+`-word_size 11` instead of the blastn-short default 7. All other paper parameters unchanged
+(evalue 1, gapopen 10, penalty -1, perc_identity 90, task blastn-short; filter length/slen>0.95
+AND pident>95; first qualifying hit per virus).
+
+Justification: word 7 costs ~14 s/genome against the 1,236,304-spacer DB (~7 h total), unworkable
+in this sandbox. Word 11 is lossless for the locked filter: any match with >=95% identity over
+>=95% of a ~28-60 bp spacer contains at least one exact 11-mer seed, so no edge that passes the
+filter can be missed. Verified empirically BEFORE full execution on an 8-genome sample:
+paper-exact params (word 7) yielded 915 raw hits -> 165 filtered edges; word 11 yielded the
+identical 165 filtered edges (symmetric difference 0), at ~86x speed.
+
+Scope: execution mechanics only. No threshold, gate, edge-criterion, or protocol change.
