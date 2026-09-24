@@ -23,3 +23,13 @@ PASS if G1+G4 plus one of G2/G3.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot scoring)
+All original gates failed with a real finding: in a slow-mutation outbreak, sibling and aunt-niece pairs are as close as direct pairs (at T=1, recall=1.0 but precision=0.13 - ~280 non-direct pairs within 1 SNP). A SNP threshold cannot isolate DIRECT transmission; it identifies epidemiological CLUSTERS. Time-filter added only +0.016.
+Pivot P (same simulated outbreak, seed 83 - the finding is a metric re-aim, not a new dataset; no parameter of the sim is touched): truth = pairs within 2 transmission steps on the chain tree (direct OR share an infector OR grandparent).
+- P1: best-T F1 >= 0.70 for within-2-steps linkage.
+- P2: precision at best T >= 0.80.
+- P3: best T in {1,2,3}.
+PASS if P1+P2.
