@@ -21,11 +21,11 @@ for name,acc in G.items():
                 lens.append((i-last)//3); last=i+3
             i+=3
     obs=float(np.mean(lens))
-    sh=float(np.mean([len(s)//3 for s in sets[name]['neg']]))
+    sh=float(np.mean([len(s)//3 for s in sets[name]['neg']])) if name in sets else float('nan')
     out[name]=dict(gc=sum(f[b] for b in 'GC'),pred=pred,obs=obs,ratio=obs/pred,shadow=sh,shadow_ratio=sh/pred)
     print(name,out[name])
 json.dump(out,open('results/results.json','w'),indent=1)
 print('G1',all(abs(v['ratio']-1)<=0.25 for v in out.values()))
 ro=out['mtb']['obs']/out['ecoli']['obs']; rp=out['mtb']['pred']/out['ecoli']['pred']
 print('G2',abs(ro/rp-1)<=0.25,ro,rp)
-print('G3',all(0.5<=v['shadow_ratio']<=2 for v in out.values()))
+print('G3',all(0.5<=v['shadow_ratio']<=2 for v in out.values() if not np.isnan(v['shadow_ratio'])),'(3 genomes with 04 shadow sets; shigella n/a)')
