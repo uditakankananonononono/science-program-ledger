@@ -99,3 +99,5 @@ Note 2026-09-24 16:02 IST: ledger also carries "RES-2 v3 algo50 even" (SHA256:vA
 | 2026-09-24 16:03 IST | REVOKE | science-program-ledger | RES-2 v3 algo50 even | SHA256:vAQ6rIzEdj3mSggONoHJBZYyBm+1JBH8eGjfDHuaZnM | RES-2 lane deleted; revoke confirmed by Main 16:03 ("no key carrying its name should stay live") | verified gone on-page |
 
 Note: doc230-laneB-main / doc230-laneD-science work keys NOT FOUND on any of the 13 fleet repos (checked all deploy-key pages 16:03 IST) - they were never deployed anywhere. Nothing to revoke.
+
+| 2026-09-24 20:53 IST | ADD | mega27-02-virtual-cell (deploy key) | instinct-mega27-item2-virtual-cell-v2 | SHA256:QLpfIdVo7yksfQKXv2azFzW8Br2a7mhwctiVLhnHY/E | item-2 sandbox rebuilt; v2 key relayed by Main 20:51; replaces dead v1 (dropped from queue, never added) | verified on-page: title + fingerprint + Read/write |
