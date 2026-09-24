@@ -117,3 +117,4 @@ Account-level mega27 builder keys added 2026-09-24 20:54-20:57 IST after GitHub 
 | 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-09a-amp | SHA256:eFCtEj4PLech+WTG8m1ujk6XoF2QwLPYEm3udk/kqOQ | mega27 builder key, relayed by Main | verified on-page |
 | 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-09b-peptide-hla-cpp | SHA256:IKsTzR4ApU2dhFn5736Eyfcsk5Cq748KBT/TIUhLz3U | mega27 builder key, relayed by Main | verified on-page |
 | 2026-09-24 20:57 IST | ADD | account-level (all repos) | instinct-mega27-11b-protein-redesign-4-5 | SHA256:yn6x2Vvl+lHhGcrgAWdWIqoZHgieNaZC5GpZJEXWcaE | mega27 builder key, relayed by Main | verified on-page |
+| 2026-09-24 20:59 IST | ADD | account-level (all repos) | instinct-mega27-10a-dl-diagnosis | SHA256:/1wNORT1dOFlj8vD5Z81xP0AjBg7d02O8H+79uKGT4U | 10a sandbox rebuilt 19:56-20:58, new keypair relayed by Main 20:59 | verified on-page |
