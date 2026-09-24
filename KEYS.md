@@ -35,3 +35,4 @@ Note: GitHub allows a given deploy key on only one repository, so a builder that
 | 2026-09-24 | instinct-pb3-sugarcode | a9fNM2iTcbOJMFy4IJhYBlL8g7p3L7hsvDoBRfC/vlY | sugarcode-ai builder pb3 | sugarcode-ai (write) | Same verified batch. Read/write on-page. |
 | 2026-09-24 | sugarcode-pb6-builder | L1Tjk69xTZsrjJFMIZYudtyHXJfnb+VIAWZfk/4vML4 | sugarcode-ai builder pb6 | sugarcode-ai (write) | Same verified batch. Read/write on-page. |
 | 2026-09-24 | sugarcode-builder-2026-09-24 | FXQ2m7jjI7CZq5514VoilQQNBwSwgowW6x9Xbo6DRwQ | sugarcode-ai builder | sugarcode-ai (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | atlas-ai-merge-agent | XR9BLOThGlpAwo8JEcTz1ACPpg8o0Tmql8PJbm2SyxY | atlas-ai merge agent | atlas-ai (write) | Continuation of the user-verified "You add" batch (11:03:07 IST). Verified on-page: Read/write. |
