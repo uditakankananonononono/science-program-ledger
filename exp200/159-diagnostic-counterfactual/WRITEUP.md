@@ -17,7 +17,7 @@ Gates were locked before results (commits bfc1b20d and 3d90a105).
 - The failure is sparsity, not the counterfactual idea.
 
 ## Prospective nomination
-A one-gene falsification test for anti-TNF response: if mucosal SLC6A14 does not fall after the first infliximab dose, the model predicts the UC call persists. Of the 3 non-responders whose CF genes did not move (precision 0.0), all stay at P(UC) >= 0.77 after treatment (UC_NR_8, UC_NR_14, CDc_NR_1). SLC6A14 is already known in UC (Arijs et al. 2009 list it among anti-TNF response genes), so this is a restatement, not a new marker.
+A one-gene falsification test for anti-TNF response: if mucosal SLC6A14 does not fall after the first infliximab dose, the model predicts the UC call persists. Of the 3 non-responders whose CF genes did not move (precision 0.0), all stay at P(UC) >= 0.77 after treatment (UC_NR_8, UC_NR_14, CDc_NR_1). SLC6A14 is already a known UC-inflamed-mucosa gene (it was the single-gene baseline in exp200/156), so this repackages a known marker as a falsification test. It is not a new marker.
 
 ## Follow-up that attacks the mechanism (not a gate retry)
 - Use a dense or grouped model (elastic-net or group-lasso over pathways) so counterfactuals have several routes.
