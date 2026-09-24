@@ -144,3 +144,10 @@ primary T cells (0.196) and Bae-MH mechanism dominance does not transfer (020F).
 K562 transport number (0.337) sits between 020's U2OS transport (0.657) and its T3
 cross-library fail (0.279); the weak T-cell signal is not a depth artifact
 (complexity-depth rho 0.387 post-floor).
+
+## 14. PLM discovery value at 8M scale is regime-dependent (011F)
+PLM discovery value at 8M scale is regime-dependent: absent on alignable families (011),
+present but below the locked dev bar in verified remote homology (011F: 0.757 dev / 0.821
+frozen vs chance-level MMseqs2 0.496/0.487). The frozen temporal-validation pass (no drop)
+shows the remote-regime signal is durable across the annotation cutoff; the missed dev
+0.80 bar keeps it a documented boundary, not a counted discovery engine.
