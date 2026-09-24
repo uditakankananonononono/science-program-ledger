@@ -24,3 +24,14 @@ Note: GitHub allows a given deploy key on only one repository, so a builder that
 | 2026-09-24 | Doc290 lane B v4 | YFCa9ZwbU29XSCo4JwNtPMft8XSekP6S4VfKUvG/5d0 | Doc230 lane B v4 (dead, failed overnight) | science-program-ledger (write) | REVOKED 2026-09-24: replaced by lane B v5 (DuGa1OFa...). |
 | 2026-09-24 | Doc290 lane C | q92McUAmnlbHLhZh8eEb1+YqyHkYIPPUNTXvi11YeO8 | Doc230 lane C (dead, failed overnight) | science-program-ledger (write) | REVOKED 2026-09-24: replaced by lane C v2 (TjYmityE...). |
 | 2026-09-24 | Doc290 lane D v2 | VExnCLG5QbYiat92LQEX3E3PMiktMzCPi53noBA3ZhU | Doc230 lane D v2 (dead, completed-state) | science-program-ledger (write) | REVOKED 2026-09-24: replaced by lane D v3 (wzKLGJ1V...). |
+| 2026-09-24 | meemee-phaseB-builder | Y6Ie5sNkJ6P4nxWk42f0YHtVBxBSjnItrITESAZelCA | meemee phase-B builder | meemee (write) | User-verified batch (WhatsApp "You add" 11:03:07 IST, wamid ...QUNBOTAwRjZBQzFGMUQ1RTQ0Q0Y3NzRGQUQyQjBCQkQA): batch-add public builder keys to meemee/atlas-ai/sugarcode-ai. Verified on-page: Read/write. |
+| 2026-09-24 | instinct-meemee-pb4 | JznCq0rlssBSGi3Xz6iy5+2bLyMbvMPBxd2sSDMI/2c | meemee builder pb4 | meemee (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | instinct-pb7-meemee | w4CVTSnAOHg+IYmbwJPrk7ViM5rzU3bdjdBa81ureNM | meemee builder pb7 | meemee (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | instinct-pb1-meemee | ehUSoey8Ahg1OmGFDDKJu6jwR4/X3xr38f1/Lpl7BhM | meemee builder pb1 | meemee (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | atlas-builder-2026-09-24 | 003NWfsBmdtFt9SPU+4HmRqUO3lyDsu8j+zSvxyvWq8 | atlas-ai builder | atlas-ai (write) | Same verified batch. Read/write on-page. Note: atlas-ai intentionally public per user 11:03:55 IST ("Nope it okay"). |
+| 2026-09-24 | instinct-atlas-pb5 | ZNer6QwfO4Q5mYq7nFwdd+dETSyJfUsUIpXYVYrzdE4 | atlas-ai builder pb5 | atlas-ai (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | atlas-pb2 | 8+jB3Lr9/UrwTPcFH3FpKwK6gMwvnAF+A9zzof3fCJU | atlas-ai builder pb2 | atlas-ai (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | atlas-pb8-builder | jMqoT0XFi3gW3Gp+gb7rC8awLpybqxbwLy5XyicIIdI | atlas-ai builder pb8 | atlas-ai (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | instinct-pb3-sugarcode | a9fNM2iTcbOJMFy4IJhYBlL8g7p3L7hsvDoBRfC/vlY | sugarcode-ai builder pb3 | sugarcode-ai (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | sugarcode-pb6-builder | L1Tjk69xTZsrjJFMIZYudtyHXJfnb+VIAWZfk/4vML4 | sugarcode-ai builder pb6 | sugarcode-ai (write) | Same verified batch. Read/write on-page. |
+| 2026-09-24 | sugarcode-builder-2026-09-24 | FXQ2m7jjI7CZq5514VoilQQNBwSwgowW6x9Xbo6DRwQ | sugarcode-ai builder | sugarcode-ai (write) | Same verified batch. Read/write on-page. |
