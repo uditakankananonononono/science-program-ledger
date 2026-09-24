@@ -19,7 +19,7 @@ def kvec(seq,k,kms):
     rc_all=str.maketrans('ACGT','TGCA')
     for i in range(len(seq)-k+1):
         s=seq[i:i+k]
-        if 'N' in s: continue
+        if set(s)-set('ACGT'): continue
         rc=s.translate(rc_all)[::-1]
         v[idx[min(s,rc)]]+=1
     return v
