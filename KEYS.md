@@ -76,3 +76,6 @@ Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, kil
 | 2026-09-24 15:41 IST | ADD | sugarcode-ai | sugarcode-builder-2026-09-24-c | SHA256:q3KokKBBxictu5Q56cStT4CjPukaKu3LZTK8RNN8okc | write deploy key, replacement; relayed via Main | Read/write verified on-page |
 | 2026-09-24 15:42 IST | REVOKE | shared-models | sugarcode-shared-models-builder | SHA256:IxTG8Bk0uJlSGnFz1IJPtdyKHcPzTzYkjsR2wv6O99A | private half dead (same reset) | verified gone on-page |
 | 2026-09-24 15:42 IST | ADD | shared-models | sugarcode-shared-models-builder-b | SHA256:1ExIU+uy58i5TufHomz/dXwtmBluVixN1kQOKLYZim0 | write deploy key, replacement; relayed via Main | Read/write verified on-page |
+
+| 2026-09-24 15:46 IST | REVOKE | atlas-ai | instinct-merge-m15m16 | SHA256:QZ8TjV7PEDCBzkYKWcXyT3gILRRutza5jZBdXoH+DQM | private half dead (integrator hit twice in reset waves, relayed via Main 15:46) | verified gone on-page |
+| 2026-09-24 15:46 IST | ADD | atlas-ai | instinct-merge3 | SHA256:Fk/DGBLrizYR6oiC/w4f7NiKXCPxujptIeNWcEymc0s | write deploy key, replacement for M15/M16 integrator; relayed via Main | Read/write verified on-page |
