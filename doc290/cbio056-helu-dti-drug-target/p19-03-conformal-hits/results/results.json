@@ -1,0 +1,88 @@
+{
+ "alpha": 0.1,
+ "label": "pKd>=7",
+ "n_pairs": 30056,
+ "positive_rate": 0.08324461006121905,
+ "random": {
+  "n_train": 18033,
+  "base_rate_test": 0.08599467731204258,
+  "split_conformal": {
+   "coverage": 0.8958749168330007,
+   "mean_set_size": 0.9362940785096474,
+   "frac_low_conf": 0.06370592149035263,
+   "point_error_rate": 0.06453759148369927,
+   "frac_errors_in_low_conf": 0.37371134020618557,
+   "n_test": 6012
+  },
+  "qhat": 0.25978069272519533,
+  "mondrian": {
+   "coverage": 0.905688622754491,
+   "mean_set_size": 1.191783100465735,
+   "frac_low_conf": 0.19178310046573518,
+   "point_error_rate": 0.06453759148369927,
+   "frac_errors_in_low_conf": 0.22938144329896906,
+   "n_test": 6012
+  }
+ },
+ "cold_drug": {
+  "n_train": 17680,
+  "base_rate_test": 0.07563025210084033,
+  "split_conformal": {
+   "coverage": 0.8965740142210731,
+   "mean_set_size": 0.959114414996768,
+   "frac_low_conf": 0.04088558500323206,
+   "point_error_rate": 0.07773109243697479,
+   "frac_errors_in_low_conf": 0.19542619542619544,
+   "n_test": 6188
+  },
+  "qhat": 0.27174569131311876,
+  "mondrian": {
+   "coverage": 0.8636069812540401,
+   "mean_set_size": 1.5135746606334841,
+   "frac_low_conf": 0.5135746606334841,
+   "point_error_rate": 0.07773109243697479,
+   "frac_errors_in_low_conf": 0.4178794178794179,
+   "n_test": 6188
+  }
+ },
+ "cold_target": {
+  "n_train": 18020,
+  "base_rate_test": 0.08079973562458691,
+  "split_conformal": {
+   "coverage": 0.8962326503635162,
+   "mean_set_size": 0.9439854593522803,
+   "frac_low_conf": 0.05601454064771976,
+   "point_error_rate": 0.07038995373430271,
+   "frac_errors_in_low_conf": 0.3215962441314554,
+   "n_test": 6052
+  },
+  "qhat": 0.26897381543275134,
+  "mondrian": {
+   "coverage": 0.885822868473232,
+   "mean_set_size": 1.2539656311962988,
+   "frac_low_conf": 0.2539656311962987,
+   "point_error_rate": 0.07038995373430271,
+   "frac_errors_in_low_conf": 0.27699530516431925,
+   "n_test": 6052
+  }
+ },
+ "G1": {
+  "coverage": 0.8958749168330007,
+  "pass": true
+ },
+ "G2": {
+  "frac_errors_in_low_conf": {
+   "cold_drug": 0.19542619542619544,
+   "cold_target": 0.3215962441314554
+  },
+  "coverage_loss": {
+   "cold_drug": 0.0034259857789269432,
+   "cold_target": 0.003767349636483841
+  },
+  "pass": false
+ },
+ "G3": {
+  "verdict": "NOT EVALUABLE - no post-cutoff ChEMBL release fetchable (A7)",
+  "pass": null
+ }
+}
