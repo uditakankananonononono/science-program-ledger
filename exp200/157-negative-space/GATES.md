@@ -31,3 +31,11 @@ Can broken gene-gene couplings (relationships present in healthy colon and lost 
 
 ## Pivot rule
 Negatives are kept; amend and lock before new results.
+
+## Primary result (10:56) - G1 FAIL, G2 FAIL, preserved
+- 5,229 coupled pairs in normals. The 100 selected broken pairs had training AUROC 0.98 (permutation p=0.005).
+- E1 GSE38713: N 0.84, k-TSP 0.76, L1 0.79, 1-gene (SLC16A1) 0.79.
+- E2 GSE9452: N 0.46, k-TSP 0.78, L1 0.68, 1-gene 0.54.
+- Pooled: N 0.70 vs k-TSP 0.76; difference -0.06 (CI -0.23 to +0.11).
+- Note: SLC6A14 is absent under the GPL96 mapping, so B3 became SLC16A1.
+Closed as a documented boundary.
