@@ -52,4 +52,4 @@ Meta-science framing does NOT count as research: a topic must produce a biologic
 methodological payload (tool, nomination list, measured property of real data). If a
 topic's only honest output is meta, run it as a documented boundary (template: 199/099)
 and do NOT count it. 179 downgraded to boundary on direct user instruction (EXP-4 count 3).
-| DOC-1-018 | EXP-1 | 2026-09-24 06:39 | claimed | non-coding variant impact: AlphaGenome access check done (needs user-held API key via Google sign-in + ToS acceptance - user-side action); executing public-data substitute arm (ClinVar non-coding SNVs vs phyloP baseline, chr21 dev / chr22 frozen), AlphaGenome head-to-head named as future addendum pending key |
+| DOC-1-018 | EXP-1 | 2026-09-24 06:53 | completed (pending adjudication) | non-coding variant impact: G1 boundary at whole-non-coding scale (composite 0.921 vs phastCons 0.916, +0.005); P1 3-mers hurt; splice degenerate (99.6% P policy fact); P2 UTR stratum PASS dev (+0.127 phyloP, +0.045 phastCons) AND frozen chr22 (0.9015, +0.052 vs best baseline, locked thresholds); CLI smoke PASS; AlphaGenome A1 pending user key; exp200/018-noncoding-variant-impact/ |
