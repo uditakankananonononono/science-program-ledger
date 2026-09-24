@@ -1,0 +1,30 @@
+{
+ "ae": {
+  "acc": 0.9085923217550275,
+  "detail": {
+   "Spleen": {
+    "acc": 0.9085923217550275,
+    "n_test": 1641
+   }
+  }
+ },
+ "harmony": {
+  "acc": 0.8915295551492992,
+  "detail": {
+   "Spleen": {
+    "acc": 0.8915295551492992,
+    "n_test": 1641
+   }
+  }
+ },
+ "pca_only": {
+  "acc": 0.9171237050578915,
+  "detail": {
+   "Spleen": {
+    "acc": 0.9171237050578915,
+    "n_test": 1641
+   }
+  }
+ },
+ "note": "Harmony refit unsupervised incl frozen cells (scIB practice); AE is pure out-of-sample transform"
+}

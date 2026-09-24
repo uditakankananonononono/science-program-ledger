@@ -1,0 +1,80 @@
+{
+ "per_class": {
+  "B cell": {
+   "mean_acc": 0.963,
+   "by_tissue": {
+    "Marrow": 0.912,
+    "Lung": 0.982,
+    "Spleen": 0.997
+   }
+  },
+  "T cell": {
+   "mean_acc": 0.604,
+   "by_tissue": {
+    "Marrow": 0.593,
+    "Lung": 0.582,
+    "Spleen": 0.638
+   }
+  },
+  "monocyte": {
+   "mean_acc": 0.856,
+   "by_tissue": {
+    "Marrow": 0.804,
+    "Lung": 0.908
+   }
+  },
+  "natural killer cell": {
+   "mean_acc": 0.853,
+   "by_tissue": {
+    "Marrow": 0.789,
+    "Lung": 0.917
+   }
+  },
+  "endothelial cell": {
+   "mean_acc": 0.987,
+   "by_tissue": {
+    "Lung": 0.98,
+    "Heart": 0.994
+   }
+  },
+  "leukocyte": {
+   "mean_acc": 0.481,
+   "by_tissue": {
+    "Lung": 0.935,
+    "Heart": 0.027
+   }
+  }
+ },
+ "silhouette": {
+  "by_cell_type": 0.1898,
+  "by_tissue": 0.1185
+ },
+ "marker_W1_loadings": {
+  "Ptprc(CD45,immune)": {
+   "in_hvg": true,
+   "W1_abs_mean": 0.0141,
+   "rank_pct": 0.025
+  },
+  "Pecam1(CD31,endothelial)": {
+   "in_hvg": true,
+   "W1_abs_mean": 0.0164,
+   "rank_pct": 0.144
+  },
+  "Epcam(epithelial)": {
+   "in_hvg": false
+  },
+  "Col1a1(fibroblast)": {
+   "in_hvg": true,
+   "W1_abs_mean": 0.016,
+   "rank_pct": 0.118
+  },
+  "Cd79a(B cell)": {
+   "in_hvg": true,
+   "W1_abs_mean": 0.0158,
+   "rank_pct": 0.105
+  },
+  "Cd3d(T cell)": {
+   "in_hvg": false
+  }
+ }
+}

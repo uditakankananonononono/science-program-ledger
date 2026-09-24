@@ -1,36 +1,36 @@
 {
  "n_pcs": 50,
  "pca_only": {
-  "mean": 0.3946,
+  "mean": 0.8342667870270398,
   "per_tissue": {
-   "Liver": {
-    "acc": 0.453125,
-    "n_test": 64
+   "Marrow": {
+    "acc": 0.846,
+    "n_test": 1500
    },
-   "Spleen": {
-    "acc": 0.7306520414381474,
-    "n_test": 1641
+   "Lung": {
+    "acc": 0.9438775510204082,
+    "n_test": 980
    },
-   "Pancreas": {
-    "acc": 0.0,
-    "n_test": 94
+   "Heart": {
+    "acc": 0.7129228100607112,
+    "n_test": 1153
    }
   }
  },
  "harmony": {
-  "mean": 0.3945923471460491,
+  "mean": 0.8169572779675617,
   "per_tissue": {
-   "Liver": {
-    "acc": 0.453125,
-    "n_test": 64
+   "Marrow": {
+    "acc": 0.798,
+    "n_test": 1500
    },
-   "Spleen": {
-    "acc": 0.7306520414381474,
-    "n_test": 1641
+   "Lung": {
+    "acc": 0.9408163265306122,
+    "n_test": 980
    },
-   "Pancreas": {
-    "acc": 0.0,
-    "n_test": 94
+   "Heart": {
+    "acc": 0.7120555073720729,
+    "n_test": 1153
    }
   }
  }
