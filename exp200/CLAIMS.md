@@ -6,8 +6,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 100 useful results is the floor, not the finish line.
 ## Cumulative useful results (lead-lane tracker)
 - Baseline from prior program (orchestration/useful-results-ledger.csv): **34**
-- New from exp200 lanes: 14 (EXP-1: 8, EXP-2: 0, EXP-3: 0, EXP-4: 6)
-- **Total: 49 / 100 minimum**
+- New from exp200 lanes: 15 (EXP-1: 9, EXP-2: 0, EXP-3: 0, EXP-4: 6)
+- **Total: 50 / 100 minimum**
 ## Claims (first-come; claim BEFORE starting a topic)
 | topic | lane | claimed_utc | status | outcome |
 |---|---|---|---|---|
@@ -52,4 +52,5 @@ Meta-science framing does NOT count as research: a topic must produce a biologic
 methodological payload (tool, nomination list, measured property of real data). If a
 topic's only honest output is meta, run it as a documented boundary (template: 199/099)
 and do NOT count it. 179 downgraded to boundary on direct user instruction (EXP-4 count 3).
-| DOC-1-018 | EXP-1 | 2026-09-24 06:53 | completed (pending adjudication) | non-coding variant impact: G1 boundary at whole-non-coding scale (composite 0.921 vs phastCons 0.916, +0.005); P1 3-mers hurt; splice degenerate (99.6% P policy fact); P2 UTR stratum PASS dev (+0.127 phyloP, +0.045 phastCons) AND frozen chr22 (0.9015, +0.052 vs best baseline, locked thresholds); CLI smoke PASS; AlphaGenome A1 pending user key; exp200/018-noncoding-variant-impact/ |
+| DOC-1-018 | EXP-1 | 2026-09-24 06:53 | DONE - COUNTED (main adjudication 06:53, 50/100) | non-coding variant impact: G1 boundary at whole-non-coding scale (composite 0.921 vs phastCons 0.916, +0.005); P1 3-mers hurt; splice degenerate (99.6% P policy fact); P2 UTR stratum PASS dev (+0.127 phyloP, +0.045 phastCons) AND frozen chr22 (0.9015, +0.052 vs best baseline, locked thresholds); CLI smoke PASS; AlphaGenome A1 pending user key; exp200/018-noncoding-variant-impact/ |
+| DOC-1-019 | EXP-1 | 2026-09-24 06:55 | claimed | A Metagenomic Protein Atlas of Extreme Environments: environment fingerprints on protein inventories, IVYWREL (Zeldovich 2007) named baseline, study-level frozen holdout (batch-effect guard), MGnify public API |
