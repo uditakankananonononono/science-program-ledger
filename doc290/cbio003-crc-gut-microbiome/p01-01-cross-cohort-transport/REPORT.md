@@ -76,3 +76,16 @@ IT2 0.820, IT1 0.763, US 0.736.
 - Genus aggregation sums mOTU "unknown <genus>" clades into their named genus
   where possible; 164 genera, 1% prevalence filter (locked).
 - All randomness seeded (7); full results in results/results.json.
+
+## Erratum (2026-09-24, cohort names only - no numbers change)
+Two cohort labels in data/samples.csv and in this report are misnamed. Checked against the
+`block` column of Wirbel 2019 MOESM8 Panel_b (all 574 discovery samples join, 0 label mismatches):
+| label used here | correct cohort | evidence |
+|---|---|---|
+| AT-Wirbel (CCIS ids, 114) | **FR-Zeller** (Zeller et al. 2014, France) | block = FR-CRC for all 114 |
+| CN-Feng (SAMEA ids, 109) | **AT-Feng** (Feng et al. 2015, Austria, PRJEB7774) | block = AT-CRC for all 109 |
+The sample groupings are correct, so every LOCO fold, AUC, and gate verdict is unchanged; the
+geography-only baseline uses cohort one-hot, not country, so it is also unaffected. Read
+"AT-Wirbel" as FR-Zeller and "CN-Feng" as AT-Feng wherever they appear. Frozen data files are
+left byte-identical so results stay reproducible. Also noted: CN-Yu is two sequencing batches in
+the source (CN-CRC_BEFORE 51 / CN-CRC_AFTER 76), relevant to P01-02.

@@ -78,3 +78,16 @@ The taxonomy LOCO mean (0.830, gradient boosting) reproduces P01-01's Random For
   a machine with more memory, so function can use all COGs without an abundance cap.
 - Use the 293 replicated COGs as a candidate list for P01-05 (minimal qPCR panel), noting they
   failed as a whole-model feature set.
+
+## Erratum (2026-09-24, cohort names only - no numbers change)
+Two cohort labels in data/samples.csv and in this report are misnamed. Checked against the
+`block` column of Wirbel 2019 MOESM8 Panel_b (all 574 discovery samples join, 0 label mismatches):
+| label used here | correct cohort | evidence |
+|---|---|---|
+| AT-Wirbel (CCIS ids, 114) | **FR-Zeller** (Zeller et al. 2014, France) | block = FR-CRC for all 114 |
+| CN-Feng (SAMEA ids, 109) | **AT-Feng** (Feng et al. 2015, Austria, PRJEB7774) | block = AT-CRC for all 109 |
+The sample groupings are correct, so every LOCO fold, AUC, and gate verdict is unchanged; the
+geography-only baseline uses cohort one-hot, not country, so it is also unaffected. Read
+"AT-Wirbel" as FR-Zeller and "CN-Feng" as AT-Feng wherever they appear. Frozen data files are
+left byte-identical so results stay reproducible. Also noted: CN-Yu is two sequencing batches in
+the source (CN-CRC_BEFORE 51 / CN-CRC_AFTER 76), relevant to P01-02.
