@@ -24,6 +24,6 @@ for cov in (3,5,8,15,30):
 json.dump(res,open('results/results.json','w'),indent=1)
 r=res
 print('G1',all(r[c]['qw']<=r[c]['maj'] for c in r))
-print('G2',r['3']['ratio']<=0.60,r['3'])
-print('G3',r['30']['maj']<1e-4 and r['30']['qw']<1e-4)
-print('G4',r['8']['qw']<=r['15']['maj'])
+print('G2',r[3]['ratio']<=0.60,r[3])
+print('G3',r[30]['maj']<1e-4 and r[30]['qw']<1e-4)
+print('G4',r[8]['qw']<=r[15]['maj'])
