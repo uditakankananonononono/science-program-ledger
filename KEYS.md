@@ -43,3 +43,4 @@ Note: GitHub allows a given deploy key on only one repository, so a builder that
 | 2026-09-24 13:33 IST | ADD | science-program-ledger | instinct-res3 | SHA256:EqrnVXIhJMpr5g89GiP/qTwJc1esAM537t5uuFSD04U | write | RES-3 lane; verified on-page Read/write |
 | 2026-09-24 13:34 IST | ADD | atlas-ai | instinct-m16-builder | SHA256:ZAKRYDKE6M3ylAp1ZDeAuTWRiTrlT2lsu3JeHLbxkkQ | write | M16 sprint builder; verified on-page Read/write |
 | 2026-09-24 13:34 IST | ADD | atlas-ai | instinct-atlas-m15-keys | SHA256:ZAvRCG/5GSC4WhTEiD2wS465/WL1vJ3Eqa8VVu8CwZ8 | write | M15 sprint builder; verified on-page Read/write |
+| 2026-09-24 13:40 IST | ADD | atlas-ai | instinct-merge-m15m16 | SHA256:Tf82h6nSgW9o2YOmD5b7YLXkUWWS3+/1hyMHd7zIxt0 | write | M15/M16 integrator; verified on-page Read/write |
