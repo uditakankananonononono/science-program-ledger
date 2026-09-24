@@ -22,3 +22,13 @@ PASS if all.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot scoring)
+Original scored variant has a known modeling flaw plus a hard design regime: (a) MEAN log-odds per codon favors short ORFs (variance ~ 1/length) - the standard fix is TOTAL log-odds; (b) +/-3kb flanks include real neighboring genes, so longest-ORF-in-region often legitimately picks a neighbor (both methods ~2-16% correct-stop). Both documented as the original's findings.
+Pivot P (same lock, same genome): score = TOTAL log-odds (sum over codons); report flank +/-1kb AND +/-3kb.
+- P1: total-scored correct-stop >= longest + 0.10 at both flank sizes.
+- P2: total-scored correct-stop >= 0.60 at +/-1kb.
+- P3: at +/-3kb, longest-ORF picks a DIFFERENT REAL gene (neighbor) in >= 30% of its errors - the "longest is real, just elsewhere" effect, measured by checking whether the longest ORF's stop matches any other true CDS stop in the test set.
+PASS if P1+P3.

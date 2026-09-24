@@ -61,7 +61,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 70 | mash-distance-accuracy | RES-2 | DONE - both gate sets FAIL on E-boundary miscalibration (documented, re-gating stopped per discipline); finding: |err| tracks E=L(1-p)^k, saturation only at E~<3 | 2026-09-24T08:44Z |
 | 72 | spaced-seed-sensitivity | RES-2 | DONE - original saturated (documented); pivot P1+P2+P4 PASS: spaced-8 +0.14 over contig-8, +0.61 over contig-12 at q=0.70; no background inflation | 2026-09-24T08:46Z |
 | 74 | greedy-set-cover-baits | RES-2 | DONE - original degenerate (documented); pivot all PASS: 31 baits vs 132 random, 1.24x LB; k-mer sharing needs ~95% identity at k=15 | 2026-09-24T08:48Z |
-| 76 | orf-six-frame-scoring | RES-2 | claimed - protocol in prep | 2026-09-24T08:49Z |
+| 76 | orf-six-frame-scoring | RES-2 | DONE - mean-per-codon scoring broken (2.3% vs 34.7% for total, same loci); scoring ~= longest under neighbor-gene confusion; 41% of longest's errors are real neighbors (P3 PASS) | 2026-09-24T08:50Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |
