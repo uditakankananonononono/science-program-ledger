@@ -102,3 +102,4 @@ tool, not a gate.
 - **Topology-only link prediction = degree (199)**: Adamic-Adar 0.753 vs preferential attachment 0.750 on the STRING v11->v12 time split.
 - Terminal: 173 (clean null: AlphaMissense equally reliable on poorly and well studied genes); 179/079 (terminated on user instruction).
 - **Pan-cancer cfDNA axis = liver signal (158)**: leave-one-cancer-out shared 5hmC axis 0.65 (elastic-net 0.65); top genes hepatocyte (PROX1, HNF4G, PLG, NR1H4); thyroid <= chance for all methods.
+- **Injury barcode = repair clock (155)**: leave-one-organ-out 25-gene barcode 0.82 vs Hallmark inflammatory 0.79 (+0.03, below locked +0.05); external kidney RNA-seq 0.60; genes are proliferation + myeloid + matrix (days-scale repair), blind to 0-120 min jejunal ischaemia-reperfusion.

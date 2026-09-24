@@ -1,0 +1,212 @@
+{
+ "LOOO": {
+  "kidney": {
+   "barcode": 0.825187969924812,
+   "B1": 0.731203007518797,
+   "B2": 0.5676691729323309,
+   "rand_p": 0.006,
+   "genes": [
+    "CXCL6",
+    "MMP1",
+    "RRM2",
+    "BCL2A1",
+    "NABP1",
+    "GLUL",
+    "PTX3",
+    "GLIPR1",
+    "CYBB",
+    "CEP55",
+    "CDKN3",
+    "TIMP1",
+    "SIGLEC7",
+    "MCM10",
+    "CCNA2",
+    "EPSTI1",
+    "TRIP13",
+    "FCGR2A",
+    "CHEK1",
+    "SLAMF8",
+    "CKS2",
+    "TYMS",
+    "PRR11",
+    "SERPINB1",
+    "IGF2BP3"
+   ]
+  },
+  "liver": {
+   "barcode": 1.0,
+   "B1": 0.9941176470588236,
+   "B2": 0.8823529411764707,
+   "rand_p": 0.058,
+   "genes": [
+    "MMP1",
+    "CXCL6",
+    "RRM2",
+    "BCL2A1",
+    "NABP1",
+    "PTX3",
+    "GLUL",
+    "GLIPR1",
+    "SCG5",
+    "CYBB",
+    "CEP55",
+    "CDKN3",
+    "TIMP1",
+    "MCM10",
+    "SIGLEC7",
+    "CCNA2",
+    "EPSTI1",
+    "TRIP13",
+    "FCGR2A",
+    "CKS2",
+    "SLAMF8",
+    "TYMS",
+    "SERPINB1",
+    "KIF14",
+    "PBK"
+   ]
+  },
+  "skin": {
+   "barcode": 0.9431818181818181,
+   "B1": 1.0,
+   "B2": 1.0,
+   "rand_p": 0.085,
+   "genes": [
+    "LPXN",
+    "KRT7",
+    "CMTM7",
+    "S100A11",
+    "CFP",
+    "PLP2",
+    "FOLR2",
+    "CXCR6",
+    "KRT19",
+    "PYCARD",
+    "CHST2",
+    "SGK223",
+    "TMED3",
+    "CYBA",
+    "CMKLR1",
+    "AKR1B1",
+    "CFTR",
+    "ARMCX6",
+    "XPNPEP1",
+    "PARVG",
+    "GZMA",
+    "IL18",
+    "SIGLEC7",
+    "PRF1",
+    "TRA2A"
+   ]
+  },
+  "jejunum": {
+   "barcode": 0.5238095238095238,
+   "B1": 0.44217687074829937,
+   "B2": 0.4557823129251701,
+   "rand_p": 0.426,
+   "genes": [
+    "CXCL6",
+    "MMP1",
+    "PCSK1",
+    "RRM2",
+    "BCL2A1",
+    "S100A9",
+    "CEMIP",
+    "SOCS3",
+    "NABP1",
+    "GLUL",
+    "PTX3",
+    "CCR1",
+    "C5AR1",
+    "TYMP",
+    "GLIPR1",
+    "IGSF6",
+    "S100A8",
+    "CYBB",
+    "CCNB1",
+    "FPR3",
+    "CEP55",
+    "TIMP1",
+    "CDKN3",
+    "FPR1",
+    "GZMB"
+   ]
+  }
+ },
+ "mean_barcode": 0.8230448279790386,
+ "mean_best_baseline": 0.7918743813314799,
+ "wins": 3,
+ "perm_null_mean": 0.5246000206302617,
+ "perm_null_p": 0.02,
+ "final_barcode": [
+  "CXCL6",
+  "MMP1",
+  "RRM2",
+  "BCL2A1",
+  "NABP1",
+  "GLUL",
+  "PTX3",
+  "GLIPR1",
+  "CYBB",
+  "CEP55",
+  "CDKN3",
+  "TIMP1",
+  "SIGLEC7",
+  "MCM10",
+  "CCNA2",
+  "EPSTI1",
+  "FCGR2A",
+  "TRIP13",
+  "SLAMF8",
+  "CKS2",
+  "TYMS",
+  "SERPINB1",
+  "KIF14",
+  "TNC",
+  "PBK"
+ ],
+ "external": {
+  "barcode": 0.6011396011396011,
+  "B1": 0.6011396011396011,
+  "B2": 0.3561253561253561
+ },
+ "enrichment": {
+  "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+   "overlap": 4,
+   "genes": [
+    "BCL2A1",
+    "CXCL6",
+    "PTX3",
+    "TNC"
+   ],
+   "p": 0.00018622476682604293
+  },
+  "HALLMARK_P53_PATHWAY": {
+   "overlap": 0,
+   "genes": [],
+   "p": 1.0
+  },
+  "HALLMARK_HYPOXIA": {
+   "overlap": 0,
+   "genes": [],
+   "p": 1.0
+  },
+  "HALLMARK_UNFOLDED_PROTEIN_RESPONSE": {
+   "overlap": 1,
+   "genes": [
+    "NABP1"
+   ],
+   "p": 0.1470611130187979
+  },
+  "HALLMARK_APOPTOSIS": {
+   "overlap": 1,
+   "genes": [
+    "TIMP1"
+   ],
+   "p": 0.21828096301021283
+  }
+ },
+ "G1": false,
+ "G2": false,
+ "G3": true
+}
