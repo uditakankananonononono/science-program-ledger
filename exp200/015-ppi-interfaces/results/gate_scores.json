@@ -1,0 +1,29 @@
+{
+ "multi": {
+  "dset72_auroc": 0.6696747630074197,
+  "dset72_auprc": 0.2279692832481394,
+  "dset164_auroc": 0.6309900948829498,
+  "dset164_auprc": 0.260589936462368
+ },
+ "esm": {
+  "dset72_auroc": 0.6674497718702763,
+  "dset72_auprc": 0.2237526239924708,
+  "dset164_auroc": 0.6306747064457704,
+  "dset164_auprc": 0.26113476949846576
+ },
+ "pssm": {
+  "dset72_auroc": 0.5853369441506795,
+  "dset72_auprc": 0.15039642126454938,
+  "dset164_auroc": 0.559514963141596,
+  "dset164_auprc": 0.21492978761824527
+ },
+ "G1_pass": true,
+ "G2_pass": false,
+ "g3_enrichment": {
+  "top_decile_hydrophobic": 0.175,
+  "bottom_decile_hydrophobic": 0.306875,
+  "top_decile_aromatic_WY": 0.126875,
+  "bottom_decile_aromatic_WY": 0.01875
+ },
+ "G3_pass": true
+}
