@@ -1,0 +1,6 @@
+# DOC-1-018 PROVENANCE
+- ClinVar VCF GRCh38 release 2026-09-14: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz (193,709,143 bytes, Last-Modified Mon 14 Sep 2026 13:55:21 GMT per HTTP HEAD). Stream-filtered to chr21/chr22 SNVs with non-coding MC consequences and clean CLNSIG labels (results/clinvar_chr21_22_noncoding.tsv, 19,370 rows). NCBI/ClinVar: Landrum et al., Nucleic Acids Res 2018.
+- Features via UCSC Genome Browser REST API (api.genome.ucsc.edu), hg38: phyloP100way (Pollard et al., Genome Res 2010), phastCons100way (Siepel et al., Genome Res 2005), encodeCcreCombined (ENCODE cCRE v3, ENCODE Project Consortium 2020), reference sequence. All fetched 2026-09-24; per-variant values in results/*_features.tsv.
+- Local caches (gitignored, re-fetch scripts in code/): results/local/chr21.fa, chr22.fa (fetch_seq.py), ccre_chr21.txt (11,376 intervals), ccre_chr22.txt (16,788 intervals) (ccre_cache.py).
+- AlphaGenome access check 2026-09-24: API free for non-commercial use but requires a user-held API key via Google sign-in + ToS acceptance (deepmind.google.com/science/alphagenome; alphagenomedocs.com; github.com/google-deepmind/alphagenome). No key in the user vault (checked 06:39 IST). Addendum A1 head-to-head pending key.
+- No money spent; all sources free public.
