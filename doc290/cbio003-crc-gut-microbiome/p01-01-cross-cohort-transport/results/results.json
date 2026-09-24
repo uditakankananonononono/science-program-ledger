@@ -1,0 +1,187 @@
+{
+ "n_samples": 767,
+ "n_genera_used": 164,
+ "cohorts": {},
+ "within_cohort_cv_auc": {
+  "AT-Wirbel": 0.8243117847200743,
+  "CN-Feng": 0.9413388543823326,
+  "CN-Yu": 0.8798833079654999,
+  "DE-Wirbel": 0.897361111111111,
+  "IT1-Thomas": 0.5962643678160919,
+  "IT2-Thomas": 0.7494419642857143,
+  "JP-Yachida": 0.826875,
+  "US-Vogtmann": 0.6325813609467456
+ },
+ "loco_auc": {
+  "AT-Wirbel": 0.825239715434581,
+  "CN-Feng": 0.8842305037957213,
+  "CN-Yu": 0.9082952815829528,
+  "DE-Wirbel": 0.8420833333333334,
+  "IT1-Thomas": 0.7629310344827587,
+  "IT2-Thomas": 0.8197544642857142,
+  "JP-Yachida": 0.8809374999999999,
+  "US-Vogtmann": 0.7361316568047337
+ },
+ "G1": {
+  "mean_loco_auc": 0.8324504362149744,
+  "boot95_ci": [
+   0.7929055356560482,
+   0.8694043205736295
+  ],
+  "n_cohorts": 8
+ },
+ "G3": {
+  "geography_only_auc": 0.5111375535459306
+ },
+ "importance_method": "shap",
+ "G2": {
+  "pairs": [
+   {
+    "pair": "AT-Wirbel|CN-Feng",
+    "rho": -0.2857620320855615,
+    "perm_p": 0.954045954045954
+   },
+   {
+    "pair": "AT-Wirbel|CN-Yu",
+    "rho": 0.11572580645161293,
+    "perm_p": 0.2727272727272727
+   },
+   {
+    "pair": "AT-Wirbel|DE-Wirbel",
+    "rho": -0.23362299465240643,
+    "perm_p": 0.9140859140859141
+   },
+   {
+    "pair": "AT-Wirbel|IT1-Thomas",
+    "rho": -0.5243697478991597,
+    "perm_p": 0.998001998001998
+   },
+   {
+    "pair": "AT-Wirbel|IT2-Thomas",
+    "rho": -0.07177419354838711,
+    "perm_p": 0.6533466533466533
+   },
+   {
+    "pair": "AT-Wirbel|JP-Yachida",
+    "rho": -0.04637096774193549,
+    "perm_p": 0.5764235764235764
+   },
+   {
+    "pair": "AT-Wirbel|US-Vogtmann",
+    "rho": -0.3246498599439776,
+    "perm_p": 0.978021978021978
+   },
+   {
+    "pair": "CN-Feng|CN-Yu",
+    "rho": -0.3101673101673102,
+    "perm_p": 0.97002997002997
+   },
+   {
+    "pair": "CN-Feng|DE-Wirbel",
+    "rho": -0.11841100076394193,
+    "perm_p": 0.7382617382617382
+   },
+   {
+    "pair": "CN-Feng|IT1-Thomas",
+    "rho": -0.7095141700404859,
+    "perm_p": 1.0
+   },
+   {
+    "pair": "CN-Feng|IT2-Thomas",
+    "rho": -0.3103641456582633,
+    "perm_p": 0.964035964035964
+   },
+   {
+    "pair": "CN-Feng|JP-Yachida",
+    "rho": -0.19938884644766997,
+    "perm_p": 0.8631368631368631
+   },
+   {
+    "pair": "CN-Feng|US-Vogtmann",
+    "rho": -0.4504201680672269,
+    "perm_p": 0.997002997002997
+   },
+   {
+    "pair": "CN-Yu|DE-Wirbel",
+    "rho": 0.11590656284760845,
+    "perm_p": 0.3166833166833167
+   },
+   {
+    "pair": "CN-Yu|IT1-Thomas",
+    "rho": -0.6443812233285917,
+    "perm_p": 1.0
+   },
+   {
+    "pair": "CN-Yu|IT2-Thomas",
+    "rho": -0.0250668449197861,
+    "perm_p": 0.5504495504495505
+   },
+   {
+    "pair": "CN-Yu|JP-Yachida",
+    "rho": -0.013709677419354839,
+    "perm_p": 0.5214785214785215
+   },
+   {
+    "pair": "CN-Yu|US-Vogtmann",
+    "rho": -0.42368220015278835,
+    "perm_p": 0.995004995004995
+   },
+   {
+    "pair": "DE-Wirbel|IT1-Thomas",
+    "rho": -0.7245139876718824,
+    "perm_p": 1.0
+   },
+   {
+    "pair": "DE-Wirbel|IT2-Thomas",
+    "rho": -0.06684491978609626,
+    "perm_p": 0.6543456543456544
+   },
+   {
+    "pair": "DE-Wirbel|JP-Yachida",
+    "rho": -0.26638655462184874,
+    "perm_p": 0.932067932067932
+   },
+   {
+    "pair": "DE-Wirbel|US-Vogtmann",
+    "rho": -0.31764705882352934,
+    "perm_p": 0.965034965034965
+   },
+   {
+    "pair": "IT1-Thomas|IT2-Thomas",
+    "rho": -0.6131274131274131,
+    "perm_p": 1.0
+   },
+   {
+    "pair": "IT1-Thomas|JP-Yachida",
+    "rho": -0.6717086834733894,
+    "perm_p": 1.0
+   },
+   {
+    "pair": "IT1-Thomas|US-Vogtmann",
+    "rho": -0.4728442728442729,
+    "perm_p": 0.997002997002997
+   },
+   {
+    "pair": "IT2-Thomas|JP-Yachida",
+    "rho": -0.21824866310160426,
+    "perm_p": 0.8791208791208791
+   },
+   {
+    "pair": "IT2-Thomas|US-Vogtmann",
+    "rho": -0.36653796653796655,
+    "perm_p": 0.987012987012987
+   },
+   {
+    "pair": "JP-Yachida|US-Vogtmann",
+    "rho": -0.44151069518716585,
+    "perm_p": 0.994005994005994
+   }
+  ],
+  "n_pass_pairs": 0
+ },
+ "gates": {
+  "G1_pass": true,
+  "G2_pass": false,
+  "G3_pass": true
+ }
+}
