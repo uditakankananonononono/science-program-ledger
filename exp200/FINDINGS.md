@@ -103,3 +103,4 @@ tool, not a gate.
 - Terminal: 173 (clean null: AlphaMissense equally reliable on poorly and well studied genes); 179/079 (terminated on user instruction).
 - **Pan-cancer cfDNA axis = liver signal (158)**: leave-one-cancer-out shared 5hmC axis 0.65 (elastic-net 0.65); top genes hepatocyte (PROX1, HNF4G, PLG, NR1H4); thyroid <= chance for all methods.
 - **Injury barcode = repair clock (155)**: leave-one-organ-out 25-gene barcode 0.82 vs Hallmark inflammatory 0.79 (+0.03, below locked +0.05); external kidney RNA-seq 0.60; genes are proliferation + myeloid + matrix (days-scale repair), blind to 0-120 min jejunal ischaemia-reperfusion.
+- **Sparse-model counterfactuals collapse to global importance (159)**: L1 UC model (external AUROC 0.997) flips after about 2 genes; per-patient CFs match infliximab-induced changes 0.88 but a pairing-shuffle null gives 0.85 (p=0.26). CFs read out healing (responders 0.88 vs non-responders 0.59), but carry no patient-specific signal.

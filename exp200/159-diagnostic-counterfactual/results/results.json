@@ -1,0 +1,46 @@
+{
+ "G1": true,
+ "auc_model": 0.9968253968253967,
+ "auc_calprotectin": 1.0,
+ "n_nonzero": 9,
+ "R_cf": 0.8771929824561402,
+ "R_imp": 0.8187134502923976,
+ "NR_cf": 0.5942028985507246,
+ "NR_imp": 0.5845410628019324,
+ "null_mean": 0.8466315789473684,
+ "perm_p": 0.2555,
+ "G2": false,
+ "enrichment": {
+  "HALLMARK_INFLAMMATORY_RESPONSE": {
+   "k": 1,
+   "n": 3,
+   "genes": [
+    "TIMP1"
+   ],
+   "p": 0.029366454825377312
+  },
+  "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+   "k": 0,
+   "n": 3,
+   "genes": [],
+   "p": 1.0
+  }
+ },
+ "G3": false,
+ "imp_genes": [
+  "DPP10-AS1",
+  "SLC6A14",
+  "TIMP1",
+  "DPP10",
+  "PARP8",
+  "SERPINA1",
+  "SLC38A4",
+  "CNTN4",
+  "MEP1B"
+ ],
+ "cf_gene_freq": {
+  "DPP10-AS1": 16,
+  "SLC6A14": 16,
+  "TIMP1": 3
+ }
+}

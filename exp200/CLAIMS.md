@@ -50,7 +50,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-052, 053 | EXP-4 | 2026-09-24 11:18 | skipped (infeasible, not counted) | cfDNA fragmentomics needs read-level fragment endpoints (BAM/FASTQ, tens of GB); public processed sets checked: GSE71378 has only ~5 per-sample nucleosome tracks, GSE149438 is methylation RAW tar - no cohort-scale processed fragment data fits the sandbox. Revisit only with a processed fragment-feature table. |
 | DOC-2-058 | EXP-4 | 2026-09-24 11:20 | closed | LOCO shared cfDNA 5hmC axis 0.65 mean (= elastic-net 0.65; thyroid < chance); shared axis = hepatocyte genes; documented boundary (not counted) - exp200/158 |
 | DOC-2-055 | EXP-4 | 2026-09-24 11:52 | closed | injury barcode LOOO mean 0.82 vs Hallmark 0.79 (+0.03 < +0.05); external kidney 0.60; barcode = repair-phase proliferation+myeloid, blind to acute IR; documented boundary (not counted) - exp200/155 |
-| DOC-2-059 | EXP-4 | 2026-09-24 11:55 | claimed (gates locked) | diagnostic counterfactual falsified by infliximab pre/post (GSE16879) - exp200/159 |
+| DOC-2-059 | EXP-4 | 2026-09-24 11:56 | closed | counterfactual of L1 UC model vs infliximab pre/post: responder precision 0.88 vs importance 0.82 (+0.06 < +0.10), shuffle p=0.26; sparse model -> CF collapses to 1-2 genes (SLC6A14); dx external 0.997; documented boundary (not counted) - exp200/159 |
 | DOC-2-061, 063, 064, 066, 067, 070, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 - Lane 3: DOC-2-001..DOC-2-050 (skipping touched DOC-2-009, 019, 032, 033, 037), folders exp200/1NN-<slug> where NN = DOC-2 number. Claimed 2026-09-23 21:55 IST.
 - Lane 4 folder numbering: exp200/1NN-<slug> for DOC-2-0NN (same as lane 3).
