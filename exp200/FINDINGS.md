@@ -157,3 +157,11 @@ Independent published AMP judges are composition-gullible (amPEPpy 0.825, AMPlif
 AMP+ on shuffled decoys); single-judge AMP+ rates do not evidence design success (014F).
 The judges' intersection (0.575 on the same shuffles) is the stricter and more honest
 design metric.
+
+## 16. Closed-loop guide overfitting fully diverges from judge and envelope success (014F)
+Score-guided refinement against one published AMP predictor actively degrades
+independent-judge AMP-likeness while satisfying the guide, the biophysical envelope, and
+novelty - guide, envelope, and judge success readings fully diverge in closed-loop design
+(014F). Guide +0.208 median (179/200 trajectories); judges 0.825->0.690 (amPEPpy),
+0.655->0.470 (AMPlify), both 0.575->0.450. Design guides must be the judge ensemble, or
+stopped by a held-out judge.
