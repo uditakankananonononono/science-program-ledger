@@ -1,0 +1,468 @@
+{
+ "model": "BIOMD0000000535 Dwivedi2014 IL-6",
+ "n_est": 33,
+ "estimated": [
+  "kRLOn",
+  "kRLOff",
+  "kgp130On",
+  "kgp130Off",
+  "kRAct",
+  "kRint",
+  "kRsynth",
+  "kRintBasal",
+  "ksynthIL6",
+  "kdegIL6",
+  "kdegCRP",
+  "KmSTATDephos",
+  "VmSTATDephos",
+  "VmRDephos",
+  "KmRDephos",
+  "kcatSTATPhos",
+  "KmSTATPhos",
+  "KmProtSynth",
+  "VmProtSynth",
+  "kCRPSecretion",
+  "ksynthCRP",
+  "ksynthsR",
+  "kdegsR",
+  "ksynthsgp130",
+  "kdegsgp130",
+  "ksynthIL6Gut",
+  "kdegIL6Gut",
+  "kdistTissueToSerum",
+  "kdistSerumToTissue",
+  "kRShedding",
+  "kintActiveR",
+  "kIL6AbBind",
+  "kIL6AbUnbind"
+ ],
+ "structural": {
+  "rank": 33,
+  "n": 33,
+  "singular_rel": [
+   1.0,
+   0.252757936029423,
+   0.18197056183477264,
+   0.1559858206267192,
+   0.03290440017859461,
+   0.023985726930790225,
+   0.012130377821043327,
+   0.011059259645433066,
+   0.007877810974098344,
+   0.005436480666912925,
+   0.0036751622638686336,
+   0.0030935348478735836,
+   0.0016940862499895824,
+   0.0013564064099989416,
+   0.0008059718952355598,
+   0.0007088233740143258,
+   0.0005401279042002195,
+   0.00039952289015359805,
+   0.00028204215907503145,
+   0.00022905623931283742,
+   0.00020263459151232373,
+   0.00018000638153278984,
+   0.00017359684145123623,
+   0.00016851675972621253,
+   0.00016124968851743623,
+   0.00014753873399764403,
+   0.00014292673530221618,
+   0.00013533176668341864,
+   0.00012791021160459137,
+   0.00012269261486557795,
+   0.00011591474430498187,
+   0.00011231918460189885,
+   0.00010298298651495543
+  ],
+  "non_identifiable": []
+ },
+ "practical": {
+  "criterion": "1.96*SE(log10 p)<=0.5",
+  "n_identifiable": 0,
+  "table": [
+   {
+    "param": "kRLOn",
+    "nominal": 0.384,
+    "se_log10": 80.0391214638924,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kRLOff",
+    "nominal": 1.92,
+    "se_log10": 378.56669125440567,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kgp130On",
+    "nominal": 20.52,
+    "se_log10": 105.47628643681435,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kgp130Off",
+    "nominal": 1.026,
+    "se_log10": 43.38637642607077,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kRAct",
+    "nominal": 155.0,
+    "se_log10": 305.84855548604065,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kRint",
+    "nominal": 1.96,
+    "se_log10": 121.50322911253488,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kRsynth",
+    "nominal": 0.0685,
+    "se_log10": 536.0370390472789,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kRintBasal",
+    "nominal": 0.1561,
+    "se_log10": 633.375566421001,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "ksynthIL6",
+    "nominal": 0.0063,
+    "se_log10": 44.77858826781901,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kdegIL6",
+    "nominal": 34.82,
+    "se_log10": 47.84637155674429,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kdegCRP",
+    "nominal": 0.36,
+    "se_log10": 39.1640491393088,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "KmSTATDephos",
+    "nominal": 5.34,
+    "se_log10": 114.03208715177041,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "VmSTATDephos",
+    "nominal": 0.62,
+    "se_log10": 106.91402827903224,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "VmRDephos",
+    "nominal": 0.525,
+    "se_log10": 352.18096767456217,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "KmRDephos",
+    "nominal": 155.3,
+    "se_log10": 148.50946236346,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kcatSTATPhos",
+    "nominal": 145.0,
+    "se_log10": 322.2265479087694,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "KmSTATPhos",
+    "nominal": 219.0,
+    "se_log10": 130.03702558865078,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "KmProtSynth",
+    "nominal": 10.0,
+    "se_log10": 41.46442894883643,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "VmProtSynth",
+    "nominal": 330.0,
+    "se_log10": 140.7940539275891,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kCRPSecretion",
+    "nominal": 0.5,
+    "se_log10": 126.73234474006938,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "ksynthCRP",
+    "nominal": 0.42,
+    "se_log10": 66.97242456011284,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "ksynthsR",
+    "nominal": 0.1,
+    "se_log10": 18.636379511229883,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kdegsR",
+    "nominal": 0.3,
+    "se_log10": 245.78709134035014,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "ksynthsgp130",
+    "nominal": 3.9,
+    "se_log10": 122.62664213616023,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kdegsgp130",
+    "nominal": 1.0,
+    "se_log10": 117.98140850728569,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "ksynthIL6Gut",
+    "nominal": 0.036,
+    "se_log10": 63.11743197321628,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kdegIL6Gut",
+    "nominal": 1.0,
+    "se_log10": 834.8842528190248,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kdistTissueToSerum",
+    "nominal": 0.8473,
+    "se_log10": 168.3525101327603,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kdistSerumToTissue",
+    "nominal": 1.2125,
+    "se_log10": 316.44965932913664,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kRShedding",
+    "nominal": 0.0054,
+    "se_log10": 24.95303663752583,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kintActiveR",
+    "nominal": 0.01,
+    "se_log10": 4.398586540298481,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kIL6AbBind",
+    "nominal": 1000.0,
+    "se_log10": 205.0415472434718,
+    "identifiable": false,
+    "structural_ok": true
+   },
+   {
+    "param": "kIL6AbUnbind",
+    "nominal": 2.5,
+    "se_log10": 143.53079845887046,
+    "identifiable": false,
+    "structural_ok": true
+   }
+  ]
+ },
+ "nominal_targets": [
+  {
+   "param": "kcatSTATPhos",
+   "pSTAT3_drop": 0.06475195231213893
+  },
+  {
+   "param": "ksynthIL6Gut",
+   "pSTAT3_drop": 0.0588189120671585
+  },
+  {
+   "param": "kRLOn",
+   "pSTAT3_drop": 0.029689259406288103
+  },
+  {
+   "param": "kRShedding",
+   "pSTAT3_drop": 0.026033937873568887
+  },
+  {
+   "param": "kCRPSecretion",
+   "pSTAT3_drop": 0.025774248665619177
+  },
+  {
+   "param": "VmProtSynth",
+   "pSTAT3_drop": 0.02577424866443883
+  },
+  {
+   "param": "kdistSerumToTissue",
+   "pSTAT3_drop": 0.022589369834201976
+  },
+  {
+   "param": "kRsynth",
+   "pSTAT3_drop": 0.016775625098335904
+  },
+  {
+   "param": "KmSTATDephos",
+   "pSTAT3_drop": 0.01453151862872452
+  },
+  {
+   "param": "kgp130On",
+   "pSTAT3_drop": 0.008619431158896384
+  }
+ ],
+ "ensemble_A6_independence": {
+  "accepted": 3,
+  "draws": 20000
+ },
+ "ensemble": {
+  "sampler": "A6b RW-Metropolis",
+  "members": 300,
+  "post_burn_accept": 0.20266666666666666,
+  "chi2_nominal": 26.525393004267766,
+  "threshold": 47.39988391908093,
+  "final_step": 0.18759878306932296,
+  "unique_members": 254,
+  "log10_sd_per_param": {
+   "kRLOn": 0.6195699173580145,
+   "kRLOff": 0.8138553607730259,
+   "kgp130On": 0.6453661850280364,
+   "kgp130Off": 0.7491026497708095,
+   "kRAct": 0.9957378843241623,
+   "kRint": 0.9368354308382799,
+   "kRsynth": 0.5240529095543516,
+   "kRintBasal": 0.5309592985870146,
+   "ksynthIL6": 0.329685747922239,
+   "kdegIL6": 0.3110098145797432,
+   "kdegCRP": 0.578409810715833,
+   "KmSTATDephos": 0.4214544509865493,
+   "VmSTATDephos": 0.7222280962603547,
+   "VmRDephos": 0.9589151192055332,
+   "KmRDephos": 0.7688988193902265,
+   "kcatSTATPhos": 0.9860165531918896,
+   "KmSTATPhos": 0.7730465016957655,
+   "KmProtSynth": 0.18132155438968225,
+   "VmProtSynth": 0.7160115858385872,
+   "kCRPSecretion": 0.5500324329908239,
+   "ksynthCRP": 0.6329281765451814,
+   "ksynthsR": 0.47618475280177663,
+   "kdegsR": 0.45803980131677785,
+   "ksynthsgp130": 0.8039815161681094,
+   "kdegsgp130": 0.8837626685609293,
+   "ksynthIL6Gut": 0.2108619538846808,
+   "kdegIL6Gut": 0.656405357163844,
+   "kdistTissueToSerum": 0.4319315708119256,
+   "kdistSerumToTissue": 0.4851800941072779,
+   "kRShedding": 0.46510067019200446,
+   "kintActiveR": 0.07772724527899924,
+   "kIL6AbBind": 0.6960795953975453,
+   "kIL6AbUnbind": 0.6572470568328836
+  },
+  "log10_sd_median": 0.6329281765451814,
+  "max_abs_log10_dev_median_over_members": 1.903668536230178,
+  "dropped_screen_failures": 0
+ },
+ "G2": {
+  "top5": [
+   "kcatSTATPhos",
+   "ksynthIL6Gut",
+   "kRLOn",
+   "kRShedding",
+   "kCRPSecretion"
+  ],
+  "frac_all_top5_in_top10": 0.9966666666666667,
+  "per_target_frac_in_top10": {
+   "kcatSTATPhos": 1.0,
+   "ksynthIL6Gut": 1.0,
+   "kRLOn": 0.9966666666666667,
+   "kRShedding": 1.0,
+   "kCRPSecretion": 1.0
+  },
+  "per_target_rank_median_IQR": {
+   "kcatSTATPhos": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "ksynthIL6Gut": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "kRLOn": [
+    3.0,
+    4.0,
+    5.0
+   ],
+   "kRShedding": [
+    4.0,
+    5.0,
+    5.0
+   ],
+   "kCRPSecretion": [
+    6.0,
+    6.0,
+    7.0
+   ]
+  },
+  "pass": true
+ },
+ "G3": {
+  "nRMSE_heldout": {
+   "serum_IL6": 0.027665387513276497,
+   "serum_CRP": 0.05084000164444726,
+   "tissue_pSTAT3": 0.017291305135861926
+  },
+  "pass": true
+ },
+ "G1": {
+  "structural_reported": 33,
+  "practical_reported": 33,
+  "pass": true,
+  "hypothesis_part1_fewer_than_half_identifiable": true
+ }
+}
