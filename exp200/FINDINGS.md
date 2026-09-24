@@ -30,6 +30,13 @@ invert. Six instances:
 Rule: out-of-domain, prefer the mechanistic baseline; treat dev-CV gains of learned models as
 evidence ABOUT the dev distribution only.
 
+- **033F cold-host-hybrid (boundary extension of the 033 instance)**: exact CRISPR-spacer
+  signals name hosts KNN-d2 cannot name BY CONSTRUCTION (cold 36.11% vs 0%, 63.4% precision
+  among covered), but universal override bleeds the warm regime (48.8% vs 67.0%) and the
+  cold regime is UNDETECTABLE from sequence (cold vs warm median maxsim 0.984 vs 0.997;
+  flat train-LOO tau curve). Regime-aware deployment requires a signal this feature space
+  does not contain.
+
 ## 2. Task-type map
 - **029 sc-multiomics-foundation**: foundation-model protocol strictly dominated at sub-atlas
   scale - ridge baseline 0.727/0.644 (dev/frozen) beats FM linear probe (0.670/0.587) and P1
