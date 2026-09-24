@@ -1,0 +1,37 @@
+{
+ "n_pcs": 50,
+ "pca_only": {
+  "mean": 0.3946,
+  "per_tissue": {
+   "Liver": {
+    "acc": 0.453125,
+    "n_test": 64
+   },
+   "Spleen": {
+    "acc": 0.7306520414381474,
+    "n_test": 1641
+   },
+   "Pancreas": {
+    "acc": 0.0,
+    "n_test": 94
+   }
+  }
+ },
+ "harmony": {
+  "mean": 0.3945923471460491,
+  "per_tissue": {
+   "Liver": {
+    "acc": 0.453125,
+    "n_test": 64
+   },
+   "Spleen": {
+    "acc": 0.7306520414381474,
+    "n_test": 1641
+   },
+   "Pancreas": {
+    "acc": 0.0,
+    "n_test": 94
+   }
+  }
+ }
+}

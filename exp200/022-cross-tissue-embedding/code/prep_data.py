@@ -1,7 +1,7 @@
 import pandas as pd, numpy as np, json
 from collections import Counter
 rng=np.random.default_rng(7)
-tissues=['Pancreas','Liver','Spleen','Lung']
+tissues=['Marrow','Lung','Heart','Spleen']
 ann=pd.read_csv('results/local/annotations_FACS.csv')
 ann=ann[ann['tissue'].isin(tissues)]
 ann=ann[ann['cell_ontology_class'].notna() & (ann['cell_ontology_class']!='')]
@@ -31,18 +31,22 @@ for t in tissues:
     df=df[~df.index.duplicated()].reindex(gc).fillna(0)
     X=df[cells].values.T.astype(np.float32)
     del chunks, df
-    out[t]=(X,labs,cells)
-    print(t,'->',X.shape, flush=True)
-np.savez('results/local/tabula_muris.npz', genes=np.array(gc),
-         **{f'{t}_X':out[t][0] for t in tissues}, **{f'{t}_y':out[t][1] for t in tissues},
-         **{f'{t}_cells':np.array(out[t][2]) for t in tissues})
+    np.save(f'results/local/{t}_X.npy', X)
+    np.save(f'results/local/{t}_y.npy', labs)
+    np.save(f'results/local/{t}_cells.npy', np.array(cells))
+    out[t]=(None,labs,cells)
+    del X
+    print(t,'-> saved', flush=True)
+np.save('results/local/genes.npy', np.array(gc))
+import os
+if os.path.exists('results/local/tabula_muris.npz'): os.remove('results/local/tabula_muris.npz')
 ok={}
 for t in tissues:
     for k,v in Counter(out[t][1]).items():
         if v>=30: ok.setdefault(k,[]).append(t)
 classes=sorted([k for k,v in ok.items() if len(v)>=2])
 json.dump(classes, open('results/class_list.json','w'), indent=1)
-json.dump({'dev':['Liver','Spleen','Pancreas'],'frozen':['Lung'],'seed':7,'cap':3000,
+json.dump({'dev':['Marrow','Lung','Heart'],'frozen':['Spleen'],'seed':7,'cap':3000,
            'n_shared_genes':len(gc)}, open('results/split.json','w'), indent=1)
 print('classes',len(classes),classes, flush=True)
 for t in tissues:

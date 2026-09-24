@@ -17,3 +17,9 @@
   (B cell, T cell, endothelial cell, leukocyte, natural killer cell), frozen pre-scoring in
   results/class_list.json. Caveat: Tabula Muris labels are hierarchical (leukocyte is a parent of B/T/NK);
   carried into G4 interpretation.
+
+## Addendum A cohort (2026-09-24 07:37)
+- Additional members: Marrow-counts.csv 257MB sha256_16 3d3c2f4dff0e9f53, Heart-counts.csv 334MB
+  sha256_16 48c93e812bfef252 (same FACS.zip). Pancreas/Liver CSVs discarded.
+- New split (results/split.json): dev Marrow/Lung/Heart, frozen Spleen. Marrow capped at 3000 (seed 7);
+  counts per class per tissue in results/local/prep3.log. Class list: 6 classes.
