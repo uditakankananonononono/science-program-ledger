@@ -45,5 +45,5 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 51 | bbbp-fingerprint-ecfp | RES-1 | done - G1+G3 PASS (M1 0.906 vs B1 0.844, 1-NN 0.779); G2 FAIL (3-desc 0.826); G4 FAIL mis-specified ceiling, documented | 2026-09-24T01:59Z |
 | 53 | bace-scaffold-transfer | RES-1 | done - G1+G2+G4 PASS (BACE substructure-dominated, contrast to BBBP); G3+P1 FAIL (cross-task transfer anti-predictive 0.368/0.378) | 2026-09-24T02:07Z |
 | 55 | molnet-task-pattern | RES-1 | claimed - protocol in prep | 2026-09-24T02:16Z |
-| 38 | multitest-bh-vs-bonferroni | RES-3 | claimed - protocol in prep | 2026-09-24T08:05Z |
+| 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | claimed - protocol in prep | 2026-09-24T08:05Z |
