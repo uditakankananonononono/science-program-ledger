@@ -67,3 +67,15 @@ targeted knockout/complementation assays.
 ## User pivot rule
 If a component gives no useful result, steer in a new direction to find a useful result:
 failed direction documented, new gates locked before new results.
+
+## Addendum A (locked 2026-09-24 11:11 IST, before ARM B scoring; ARM A recomputed under it)
+
+**Label definition.** Some COGs carry a dual functional code in cog-20.def.tab /
+cognames2003-2014.tab (e.g. "CE"), which produced 153 composite label values in the first
+ARM A pass. The locked task is prediction of THE COG functional-category letter. Resolution:
+the label is the PRIMARY (first) letter of the COG functional code; dual-code COGs collapse
+to their primary letter (26-class task). Applied identically to 2014 and 2020 labels, to
+neighbor-vote targets and to all arms. ARM A dev and G1 are recomputed under this definition
+before ARM B runs; all gates, thresholds, and bands unchanged (they are defined on accuracy
+margins vs ARM A and popularity, both recomputed consistently). This is a data-processing
+definition, not a threshold change; no outcome under the composite-label pass is used anywhere.
