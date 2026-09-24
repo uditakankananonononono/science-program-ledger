@@ -12,6 +12,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 12 | cpg-hmm-vs-rule | RES-2 | done - G1+G3+G4 FAIL (margin miss, LLR ties rule, over-segments), G2 PASS; pivot P1-P3 PASS | 2026-09-24T07:50Z |
 | 14 | shine-dalgarno-scanner | RES-2 | done - G1+G2+G4 PASS (ecoli AUROC 0.79, bsub 0.92, mtb 0.66 boundary), G3 FAIL (position ratio 1.37<1.5) | 2026-09-24T07:52Z |
 | 16 | kmer-spectrum-genomesize | RES-2 | done - G1+G4 FAIL (naive area estimator -13%/-30%), G2+G3 PASS; pivot P1+P3 PASS (Poisson fit fixes 30x), P2 FAIL (5x unrecoverable) | 2026-09-24T07:53Z |
+| 18 | pileup-variant-calling | RES-2 | claimed - protocol in prep | 2026-09-24T07:56Z |
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
