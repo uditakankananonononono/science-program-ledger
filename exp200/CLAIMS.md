@@ -46,7 +46,8 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 | DOC-2-065 | EXP-4 | 2026-09-24 01:22 | closed | Vina docking of imatinib/erlotinib into 60 PDB kinases vs Davis Kd: AUROC 0.66/0.53 (gate 0.70) - documented boundary (not counted); receptor bias; MASC pivot proposed - exp200/165 |
 | DOC-2-072 | EXP-4 | 2026-09-24 09:16 | closed | ESM-2 fold recognition across superfamilies: 0.14 vs Smith-Waterman 0.03 (p=1e-7) but < 0.40 gate; documented boundary (not counted) - exp200/172 |
 | DOC-2-051 | EXP-4 | 2026-09-24 10:20 | closed | cfDNA 5hmC classifiers: train CV 0.76-0.79 but frozen cross-lab external 0.61 (modules) / 0.73 (1 gene) / 0.64 (elastic-net); documented boundary (not counted) - exp200/151 |
-| DOC-2-052, 053, 055, 057..059, 061, 063, 064, 066, 067, 070, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
+| DOC-2-057 | EXP-4 | 2026-09-24 10:50 | claimed | broken gene-coupling (negative space) UC classifier vs k-TSP (Tan 2005)/L1/1-gene; frozen external GSE38713/GSE9452 non-inflamed - exp200/157 |
+| DOC-2-052, 053, 055, 058, 059, 061, 063, 064, 066, 067, 070, 081..088, 091..095, 097, 100 | EXP-4 | 2026-09-23 16:25 | queued | - |
 - Lane 3: DOC-2-001..DOC-2-050 (skipping touched DOC-2-009, 019, 032, 033, 037), folders exp200/1NN-<slug> where NN = DOC-2 number. Claimed 2026-09-23 21:55 IST.
 - Lane 4 folder numbering: exp200/1NN-<slug> for DOC-2-0NN (same as lane 3).
 ## User steering 2026-09-23 ~22:10 IST (all lanes, from main)
