@@ -22,3 +22,12 @@ PASS if G1+G3; G2/G4 boundary.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot scoring)
+G3 failed: the "double until two successive results agree" stopping rule produced 1 silent wrong answer in 60 random pairs (both widths truncated identically).
+Pivot P: BAND-P terminates when k >= d_k (the returned distance). Justification: an optimal path of cost d satisfies |i-j| <= d, so any band k >= d contains it; since banded results are overestimates (d_k >= d_true), k >= d_k implies exactness. 
+- P1: BAND-P matches FULL on 100% of all pairs (mutated + random), zero silent wrong answers.
+- P2: BAND-P median final band k <= 2x the true distance + 16 (efficiency sanity: band does not blow up to full width).
+PASS if P1.
