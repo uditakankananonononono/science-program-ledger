@@ -1,0 +1,29 @@
+{
+ "recovered": 4,
+ "total": 5,
+ "wrong": 1,
+ "detail": {
+  "Radial Glia-like->Astrocytes": {
+   "net": 0.017578,
+   "recovered": true
+  },
+  "Radial Glia-like->nIPC": {
+   "net": 0.000829,
+   "recovered": true
+  },
+  "nIPC->Neuroblast": {
+   "net": 0.063914,
+   "recovered": true
+  },
+  "Neuroblast->Granule immature": {
+   "net": 0.003977,
+   "recovered": true
+  },
+  "Granule immature->Granule mature": {
+   "net": -0.012057,
+   "recovered": false
+  }
+ },
+ "sha256_16": "6fbf1ec64e0fba6d",
+ "file": "results/local/data/DentateGyrus/10X43_1.h5ad"
+}

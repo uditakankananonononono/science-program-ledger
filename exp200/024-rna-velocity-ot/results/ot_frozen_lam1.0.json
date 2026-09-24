@@ -1,0 +1,29 @@
+{
+ "recovered": 4,
+ "total": 5,
+ "wrong": 1,
+ "detail": {
+  "Radial Glia-like->Astrocytes": {
+   "net": 0.001452,
+   "recovered": true
+  },
+  "Radial Glia-like->nIPC": {
+   "net": 0.0,
+   "recovered": false
+  },
+  "nIPC->Neuroblast": {
+   "net": 0.001236,
+   "recovered": true
+  },
+  "Neuroblast->Granule immature": {
+   "net": 0.000589,
+   "recovered": true
+  },
+  "Granule immature->Granule mature": {
+   "net": 0.000338,
+   "recovered": true
+  }
+ },
+ "spurious_fraction": 0.6192924571996479,
+ "lambda": 1.0
+}

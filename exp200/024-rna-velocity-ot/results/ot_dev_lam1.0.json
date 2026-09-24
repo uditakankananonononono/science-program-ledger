@@ -1,0 +1,37 @@
+{
+ "recovered": 6,
+ "total": 7,
+ "wrong": 1,
+ "detail": {
+  "Ductal->Ngn3 low EP": {
+   "net": -0.000112,
+   "recovered": false
+  },
+  "Ngn3 low EP->Ngn3 high EP": {
+   "net": 9.9e-05,
+   "recovered": true
+  },
+  "Ngn3 high EP->Pre-endocrine": {
+   "net": 0.000129,
+   "recovered": true
+  },
+  "Pre-endocrine->Alpha": {
+   "net": 0.000111,
+   "recovered": true
+  },
+  "Pre-endocrine->Beta": {
+   "net": 0.000132,
+   "recovered": true
+  },
+  "Pre-endocrine->Delta": {
+   "net": 7e-05,
+   "recovered": true
+  },
+  "Pre-endocrine->Epsilon": {
+   "net": 2.2e-05,
+   "recovered": true
+  }
+ },
+ "spurious_fraction": 0.3666546826920605,
+ "lambda": 1.0
+}
