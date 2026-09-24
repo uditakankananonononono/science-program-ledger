@@ -128,3 +128,11 @@ networks predict per-target DE profiles at median r 0.317 vs 0.621 for the mean-
 perturbations baseline. The shared essential-response program dominates; control-space
 covariance adds nothing above it. Network-from-controls only has room to matter where the
 shared program is weak (nominated: non-essential perturbation contexts).
+
+## 12. Monomer contact-graph geometry is orthogonal to small PLMs (015F)
+4 hand-built intra-chain geometry numbers (10A contact degree/2-hop/packing/exposure) beat the
+classical PSSM baseline on both frozen PPI-interface sets (0.602/0.669 vs 0.585) and nearly
+match the 340-dim multimodal stack on Dset_164 (0.669 vs 0.623). Unlike evolutionary
+covariation (PSSM added +0.002 over ESM-only in 015), geometry is NOT already internalized
+by the small PLM - the first orthogonal feature block in this task. (Locked +0.03-both bar
+still missed on Dset_72 by 0.0032: boundary stands.)
