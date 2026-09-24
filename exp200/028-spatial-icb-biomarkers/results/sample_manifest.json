@@ -1,0 +1,38 @@
+{
+ "manifest_hashes": {
+  "m09.npz": "2d2ba38322ab2cab",
+  "m10.npz": "e7f27fd71a73612a",
+  "m11.npz": "f9697f6d7f34d6bb",
+  "m12.npz": "3900f4a13959a4d9",
+  "m13.npz": "4b47c5734092ef4f",
+  "m14.npz": "cbc43d8a1f1de19a",
+  "m15s1.npz": "0c3dca9b13ecca8c",
+  "m15s2.npz": "616d8e7d2f833024",
+  "m16s1.npz": "c49e5333681a421c",
+  "m16s2.npz": "ac9850d0c8fac876",
+  "m16s3.npz": "1cb0e6f1460bd78d"
+ },
+ "n_sections": 11,
+ "cohort": {
+  "NR": [
+   "m09",
+   "m10",
+   "m11",
+   "m12",
+   "m13",
+   "m14"
+  ],
+  "R": {
+   "m15": [
+    "m15s1",
+    "m15s2"
+   ],
+   "m16": [
+    "m16s1",
+    "m16s2",
+    "m16s3"
+   ]
+  }
+ },
+ "note": "all section artifacts hashed and committed BEFORE any feature computation"
+}
