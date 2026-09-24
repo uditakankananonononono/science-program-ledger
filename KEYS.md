@@ -84,3 +84,14 @@ Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, kil
 | 2026-09-24 16:00 IST | ADD | sugarcode-ai | audit4-sugarcode-read | SHA256:5YuixF9xTDacRUrgCowgdVUE8CU3/Mt/K3494ddLzos | READ-only audit key; relayed via Main | Read-only verified on-page |
 | 2026-09-24 16:00 IST | ADD | sugarcode-ai | audit6-sugarcode-read | SHA256:5A2JbqQYQTsLyA2auu9u7Ea7ut8Ar+1AcSEX5eoXA7E | READ-only audit key; relayed via Main | Read-only verified on-page |
 | 2026-09-24 16:00 IST | REVOKE | sugarcode-ai | audit4/5/6-sugarcode-read (all 3) | fingerprints as above | audit distribution moved to source snapshot; keys unused; revoke directed by Main 16:00 | verified all gone on-page |
+
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | doc230-laneA-ledger | SHA256:f7uVotxLxkZiGPzdSt+VvG7OH3Ba/R4PPjDk5Byp3gE | lane A deleted (agent-slot cleanup), private half orphaned; revoke directed by Main 16:01; fresh keygen on resume | verified gone on-page |
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | instinct-doc230-laneB | SHA256:9UwbJ0no5z8GKe5F3Fvs1N45k8hqTcQf8acC106cHpA | lane B deleted; same direction | verified gone on-page |
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | doc230-laneC-v2-ledger | SHA256:TjYmityEE0+1iVeRqifHO/Uoosf+h7MGLiZn8ey3ZHw | lane C deleted; same direction | verified gone on-page |
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | doc230-laneD-ledger | SHA256:wzKLGJ1VPY7FGPUJUX0kuCoXt09U13XzeLq27jAAiP0 | lane D deleted; same direction | verified gone on-page |
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | EXP-1 exp1-deploy-20260924 | SHA256:iu5uHNs2+FK/JAFuUZ6ouZK+/0NdCaCpfjAw+LXqdv0 | EXP-1 deleted; same direction | verified gone on-page |
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | sp-ledger-lane4-v2 | SHA256:P2XYviFAXPkQGU/hcJkCxJedPfsRVRj9G0uY26Vc8yY | EXP-4 deleted; same direction | verified gone on-page |
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | instinct-res2 | SHA256:rkWSFsR3BlgW73L++OP/EC43XhAEX+j/g0NEgvpo6L0 | RES-2 deleted; same direction | verified gone on-page |
+| 2026-09-24 16:02 IST | REVOKE | science-program-ledger | instinct-res3 | SHA256:EqrnVXIhJMpr5g89GiP/qTwJc1esAM537t5uuFSD04U | RES-3 deleted; same direction | verified gone on-page |
+
+Note 2026-09-24 16:02 IST: ledger also carries "RES-2 v3 algo50 even" (SHA256:vAQ6rIzEdj3mSggONoHJBZYyBm+1JBH8eGjfDHuaZnM, never used, no KEYS.md add-row) - title suggests RES-2 but unconfirmed; HELD pending Main confirmation. Doc230 lane "work keys" (doc230-laneB-main, doc230-laneD-science) are NOT deployed on the ledger; if they exist on other repos they remain live.
