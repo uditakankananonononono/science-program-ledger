@@ -47,7 +47,8 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 49 | ecg-heartbeat-interpatient | RES-1 | done - G3 PASS (V sens 0.95/0.92); G1,G2,G4,P1,P2 FAIL (documented negative: S unlearnable, morphology hurts linear cross-patient) | 2026-09-24T01:48Z |
 | 51 | bbbp-fingerprint-ecfp | RES-1 | done - G1+G3 PASS (M1 0.906 vs B1 0.844, 1-NN 0.779); G2 FAIL (3-desc 0.826); G4 FAIL mis-specified ceiling, documented | 2026-09-24T01:59Z |
 | 53 | bace-scaffold-transfer | RES-1 | done - G1+G2+G4 PASS (BACE substructure-dominated, contrast to BBBP); G3+P1 FAIL (cross-task transfer anti-predictive 0.368/0.378) | 2026-09-24T02:07Z |
-| 55 | molnet-task-pattern | RES-1 | claimed - protocol in prep | 2026-09-24T02:16Z |
+| 55 | molnet-task-pattern | RES-1 | done - G1-G4 ALL PASS (ClinTox gap +0.032, HIV +0.069; 4/4 sign-consistent with 51/53: bulk=descriptor, pocket=substructure) | 2026-09-24T02:16Z |
+| 57 | bioplex-ppi-validation | RES-1 | claimed - user-directed BioPlex follow-up to 31 | 2026-09-24T08:12Z |
 | 38 | multitest-bh-vs-bonferroni | RES-3 | done - G1-G4 all PASS (BH power 0.612 vs Bonferroni 0.182, FDR 0.043; rho=0.5 FDR 0.039; reproduction) | 2026-09-24T08:05Z |
 | 40 | km-vs-naive-censoring | RES-3 | done - G1-G4 all PASS (KM bias +0.00002 at 32% cens, +0.008 at 63%; drop-censored -34%, as-death -27%; reproduction) | 2026-09-24T08:05Z |
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |
