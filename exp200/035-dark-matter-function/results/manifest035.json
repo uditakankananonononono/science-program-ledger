@@ -1,0 +1,1382 @@
+{
+ "locked_panel_rule": "COG-2014 \u2229 COG-2020 \u2229 STRING v12, >=1500 COG-2020 proteins, seed-42 phylum-stratified sample of 150",
+ "genomes_locked": 150,
+ "genomes_dropped": [
+  {
+   "taxid": 1110502,
+   "acc": "GCF_000264455.2",
+   "cog20_cov_pct": 52.2,
+   "reason": "below locked 60% COG-2020->STRING mapping rate"
+  }
+ ],
+ "genomes_final": 149,
+ "join_stats": [
+  {
+   "taxid": 471855,
+   "acc": "GCF_000023885.1",
+   "string_proteins": 2765,
+   "cog20_proteins": 2000,
+   "cog20_cov_pct": 83.3,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 349521,
+   "acc": "GCF_000012985.1",
+   "string_proteins": 6778,
+   "cog20_proteins": 4245,
+   "cog20_cov_pct": 90.4,
+   "newly_lit": 29
+  },
+  {
+   "taxid": 856793,
+   "acc": "GCF_000226315.1",
+   "string_proteins": 2432,
+   "cog20_proteins": 1564,
+   "cog20_cov_pct": 90.3,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 760192,
+   "acc": "GCF_000212735.1",
+   "string_proteins": 6451,
+   "cog20_proteins": 4068,
+   "cog20_cov_pct": 88.2,
+   "newly_lit": 22
+  },
+  {
+   "taxid": 645991,
+   "acc": "GCF_000190635.1",
+   "string_proteins": 3251,
+   "cog20_proteins": 2407,
+   "cog20_cov_pct": 89.9,
+   "newly_lit": 42
+  },
+  {
+   "taxid": 1033806,
+   "acc": "GCF_000470655.1",
+   "string_proteins": 2743,
+   "cog20_proteins": 1972,
+   "cog20_cov_pct": 76.0,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 1005048,
+   "acc": "GCF_000221045.1",
+   "string_proteins": 4432,
+   "cog20_proteins": 3659,
+   "cog20_cov_pct": 71.4,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 99598,
+   "acc": "GCF_000316575.1",
+   "string_proteins": 5950,
+   "cog20_proteins": 3843,
+   "cog20_cov_pct": 91.4,
+   "newly_lit": 162
+  },
+  {
+   "taxid": 502025,
+   "acc": "GCF_000024805.1",
+   "string_proteins": 6719,
+   "cog20_proteins": 4104,
+   "cog20_cov_pct": 78.3,
+   "newly_lit": 12
+  },
+  {
+   "taxid": 1048834,
+   "acc": "GCF_000219875.1",
+   "string_proteins": 3208,
+   "cog20_proteins": 2209,
+   "cog20_cov_pct": 66.8,
+   "newly_lit": 54
+  },
+  {
+   "taxid": 1048260,
+   "acc": "GCF_000299235.1",
+   "string_proteins": 2471,
+   "cog20_proteins": 1598,
+   "cog20_cov_pct": 84.1,
+   "newly_lit": 6
+  },
+  {
+   "taxid": 273121,
+   "acc": "GCF_000196135.1",
+   "string_proteins": 2044,
+   "cog20_proteins": 1676,
+   "cog20_cov_pct": 85.0,
+   "newly_lit": 16
+  },
+  {
+   "taxid": 309801,
+   "acc": "GCF_000021685.1",
+   "string_proteins": 1922,
+   "cog20_proteins": 2041,
+   "cog20_cov_pct": 60.7,
+   "newly_lit": 4
+  },
+  {
+   "taxid": 443254,
+   "acc": "GCF_000255135.1",
+   "string_proteins": 2033,
+   "cog20_proteins": 1584,
+   "cog20_cov_pct": 90.7,
+   "newly_lit": 5
+  },
+  {
+   "taxid": 273057,
+   "acc": "GCF_000007005.1",
+   "string_proteins": 2994,
+   "cog20_proteins": 1956,
+   "cog20_cov_pct": 81.1,
+   "newly_lit": 49
+  },
+  {
+   "taxid": 530564,
+   "acc": "GCF_000025185.1",
+   "string_proteins": 4717,
+   "cog20_proteins": 2829,
+   "cog20_cov_pct": 80.0,
+   "newly_lit": 12
+  },
+  {
+   "taxid": 204669,
+   "acc": "GCF_000014005.1",
+   "string_proteins": 4777,
+   "cog20_proteins": 3280,
+   "cog20_cov_pct": 87.8,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 649638,
+   "acc": "GCF_000092425.1",
+   "string_proteins": 2945,
+   "cog20_proteins": 2284,
+   "cog20_cov_pct": 86.1,
+   "newly_lit": 8
+  },
+  {
+   "taxid": 290512,
+   "acc": "GCF_000020625.1",
+   "string_proteins": 2263,
+   "cog20_proteins": 1763,
+   "cog20_cov_pct": 93.7,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 639282,
+   "acc": "GCF_000010985.1",
+   "string_proteins": 2117,
+   "cog20_proteins": 1859,
+   "cog20_cov_pct": 90.2,
+   "newly_lit": 8
+  },
+  {
+   "taxid": 526218,
+   "acc": "GCF_000024405.1",
+   "string_proteins": 4083,
+   "cog20_proteins": 2667,
+   "cog20_cov_pct": 93.6,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 580340,
+   "acc": "GCF_000233775.1",
+   "string_proteins": 1849,
+   "cog20_proteins": 1608,
+   "cog20_cov_pct": 87.7,
+   "newly_lit": 5
+  },
+  {
+   "taxid": 583355,
+   "acc": "GCF_000025905.1",
+   "string_proteins": 3120,
+   "cog20_proteins": 2092,
+   "cog20_cov_pct": 90.6,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 264462,
+   "acc": "GCF_000196175.1",
+   "string_proteins": 3583,
+   "cog20_proteins": 2215,
+   "cog20_cov_pct": 87.4,
+   "newly_lit": 15
+  },
+  {
+   "taxid": 573413,
+   "acc": "GCF_000143985.1",
+   "string_proteins": 4219,
+   "cog20_proteins": 3378,
+   "cog20_cov_pct": 93.2,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 123214,
+   "acc": "GCF_000021565.1",
+   "string_proteins": 1981,
+   "cog20_proteins": 1551,
+   "cog20_cov_pct": 92.1,
+   "newly_lit": 16
+  },
+  {
+   "taxid": 1064535,
+   "acc": "GCF_003010495.1",
+   "string_proteins": 2220,
+   "cog20_proteins": 1751,
+   "cog20_cov_pct": 89.4,
+   "newly_lit": 6
+  },
+  {
+   "taxid": 1237085,
+   "acc": "GCA_000303155.1",
+   "string_proteins": 3565,
+   "cog20_proteins": 1676,
+   "cog20_cov_pct": 99.8,
+   "newly_lit": 16
+  },
+  {
+   "taxid": 765952,
+   "acc": "GCF_000253035.1",
+   "string_proteins": 2788,
+   "cog20_proteins": 1520,
+   "cog20_cov_pct": 93.3,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 525919,
+   "acc": "GCF_000024105.1",
+   "string_proteins": 1702,
+   "cog20_proteins": 1424,
+   "cog20_cov_pct": 94.0,
+   "newly_lit": 4
+  },
+  {
+   "taxid": 479433,
+   "acc": "GCF_000024025.1",
+   "string_proteins": 8914,
+   "cog20_proteins": 5874,
+   "cog20_cov_pct": 86.5,
+   "newly_lit": 36
+  },
+  {
+   "taxid": 765912,
+   "acc": "GCF_000327045.1",
+   "string_proteins": 3480,
+   "cog20_proteins": 2653,
+   "cog20_cov_pct": 88.6,
+   "newly_lit": 23
+  },
+  {
+   "taxid": 190650,
+   "acc": "GCF_000006905.1",
+   "string_proteins": 3737,
+   "cog20_proteins": 2941,
+   "cog20_cov_pct": 99.0,
+   "newly_lit": 27
+  },
+  {
+   "taxid": 746697,
+   "acc": "GCF_000265385.1",
+   "string_proteins": 3140,
+   "cog20_proteins": 2045,
+   "cog20_cov_pct": 94.1,
+   "newly_lit": 16
+  },
+  {
+   "taxid": 1209989,
+   "acc": "GCF_000213235.1",
+   "string_proteins": 2524,
+   "cog20_proteins": 2048,
+   "cog20_cov_pct": 93.7,
+   "newly_lit": 182
+  },
+  {
+   "taxid": 272569,
+   "acc": "GCF_000011085.1",
+   "string_proteins": 3412,
+   "cog20_proteins": 2659,
+   "cog20_cov_pct": 67.3,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 762376,
+   "acc": "GCF_000165835.1",
+   "string_proteins": 6459,
+   "cog20_proteins": 5590,
+   "cog20_cov_pct": 88.1,
+   "newly_lit": 17
+  },
+  {
+   "taxid": 1148,
+   "acc": "GCF_000009725.1",
+   "string_proteins": 3167,
+   "cog20_proteins": 2570,
+   "cog20_cov_pct": 85.8,
+   "newly_lit": 123
+  },
+  {
+   "taxid": 56780,
+   "acc": "GCF_000013405.1",
+   "string_proteins": 3168,
+   "cog20_proteins": 2191,
+   "cog20_cov_pct": 79.6,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 698758,
+   "acc": "GCF_000307165.1",
+   "string_proteins": 2411,
+   "cog20_proteins": 1870,
+   "cog20_cov_pct": 93.5,
+   "newly_lit": 67
+  },
+  {
+   "taxid": 667014,
+   "acc": "GCF_000217795.1",
+   "string_proteins": 2195,
+   "cog20_proteins": 1749,
+   "cog20_cov_pct": 92.6,
+   "newly_lit": 4
+  },
+  {
+   "taxid": 709032,
+   "acc": "GCF_000183725.1",
+   "string_proteins": 2538,
+   "cog20_proteins": 2060,
+   "cog20_cov_pct": 86.0,
+   "newly_lit": 17
+  },
+  {
+   "taxid": 357808,
+   "acc": "GCF_000016665.1",
+   "string_proteins": 4517,
+   "cog20_proteins": 3315,
+   "cog20_cov_pct": 93.5,
+   "newly_lit": 22
+  },
+  {
+   "taxid": 484019,
+   "acc": "GCF_000021285.1",
+   "string_proteins": 1956,
+   "cog20_proteins": 1513,
+   "cog20_cov_pct": 92.9,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 399549,
+   "acc": "GCF_000016605.1",
+   "string_proteins": 2256,
+   "cog20_proteins": 1630,
+   "cog20_cov_pct": 89.7,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 243090,
+   "acc": "GCF_000196115.1",
+   "string_proteins": 7325,
+   "cog20_proteins": 3242,
+   "cog20_cov_pct": 98.7,
+   "newly_lit": 26
+  },
+  {
+   "taxid": 1198114,
+   "acc": "GCF_000178975.2",
+   "string_proteins": 3698,
+   "cog20_proteins": 3038,
+   "cog20_cov_pct": 77.2,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 243230,
+   "acc": "GCF_000008565.1",
+   "string_proteins": 2936,
+   "cog20_proteins": 2298,
+   "cog20_cov_pct": 91.7,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 324925,
+   "acc": "GCF_000020645.1",
+   "string_proteins": 2707,
+   "cog20_proteins": 1946,
+   "cog20_cov_pct": 92.7,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 717231,
+   "acc": "GCF_000218625.1",
+   "string_proteins": 2261,
+   "cog20_proteins": 1817,
+   "cog20_cov_pct": 91.7,
+   "newly_lit": 2
+  },
+  {
+   "taxid": 523794,
+   "acc": "GCF_000023905.1",
+   "string_proteins": 2220,
+   "cog20_proteins": 1542,
+   "cog20_cov_pct": 94.0,
+   "newly_lit": 6
+  },
+  {
+   "taxid": 525903,
+   "acc": "GCF_000024905.1",
+   "string_proteins": 1738,
+   "cog20_proteins": 1490,
+   "cog20_cov_pct": 99.9,
+   "newly_lit": 5
+  },
+  {
+   "taxid": 481448,
+   "acc": "GCF_000019665.1",
+   "string_proteins": 2472,
+   "cog20_proteins": 1488,
+   "cog20_cov_pct": 83.6,
+   "newly_lit": 4
+  },
+  {
+   "taxid": 243159,
+   "acc": "GCF_000021485.1",
+   "string_proteins": 3147,
+   "cog20_proteins": 2097,
+   "cog20_cov_pct": 85.4,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 869212,
+   "acc": "GCF_000266885.1",
+   "string_proteins": 4110,
+   "cog20_proteins": 2530,
+   "cog20_cov_pct": 86.3,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 608538,
+   "acc": "GCF_000164905.1",
+   "string_proteins": 1894,
+   "cog20_proteins": 1473,
+   "cog20_cov_pct": 96.4,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 568816,
+   "acc": "GCF_000230275.1",
+   "string_proteins": 2404,
+   "cog20_proteins": 1738,
+   "cog20_cov_pct": 75.4,
+   "newly_lit": 2
+  },
+  {
+   "taxid": 1171373,
+   "acc": "GCF_000310065.1",
+   "string_proteins": 3336,
+   "cog20_proteins": 2387,
+   "cog20_cov_pct": 80.2,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 214092,
+   "acc": "GCF_000009065.1",
+   "string_proteins": 3883,
+   "cog20_proteins": 3312,
+   "cog20_cov_pct": 89.8,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 573065,
+   "acc": "GCF_000175215.2",
+   "string_proteins": 3451,
+   "cog20_proteins": 2864,
+   "cog20_cov_pct": 85.4,
+   "newly_lit": 15
+  },
+  {
+   "taxid": 411154,
+   "acc": "GCF_000060345.1",
+   "string_proteins": 3584,
+   "cog20_proteins": 2277,
+   "cog20_cov_pct": 94.6,
+   "newly_lit": 23
+  },
+  {
+   "taxid": 767817,
+   "acc": "GCF_000233715.2",
+   "string_proteins": 4352,
+   "cog20_proteins": 3148,
+   "cog20_cov_pct": 87.2,
+   "newly_lit": 73
+  },
+  {
+   "taxid": 543526,
+   "acc": "GCF_000025325.1",
+   "string_proteins": 3739,
+   "cog20_proteins": 3258,
+   "cog20_cov_pct": 70.4,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 338969,
+   "acc": "GCF_000013605.1",
+   "string_proteins": 4170,
+   "cog20_proteins": 3558,
+   "cog20_cov_pct": 87.9,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 373994,
+   "acc": "GCF_000316665.1",
+   "string_proteins": 6609,
+   "cog20_proteins": 4326,
+   "cog20_cov_pct": 92.4,
+   "newly_lit": 145
+  },
+  {
+   "taxid": 335543,
+   "acc": "GCF_000014965.1",
+   "string_proteins": 4064,
+   "cog20_proteins": 2964,
+   "cog20_cov_pct": 83.1,
+   "newly_lit": 12
+  },
+  {
+   "taxid": 1234679,
+   "acc": "GCF_000317975.2",
+   "string_proteins": 3581,
+   "cog20_proteins": 2390,
+   "cog20_cov_pct": 94.3,
+   "newly_lit": 12
+  },
+  {
+   "taxid": 945713,
+   "acc": "GCF_000258405.1",
+   "string_proteins": 3195,
+   "cog20_proteins": 2193,
+   "cog20_cov_pct": 92.4,
+   "newly_lit": 5
+  },
+  {
+   "taxid": 387093,
+   "acc": "GCF_000010345.1",
+   "string_proteins": 2438,
+   "cog20_proteins": 1795,
+   "cog20_cov_pct": 93.0,
+   "newly_lit": 16
+  },
+  {
+   "taxid": 479434,
+   "acc": "GCF_000024985.1",
+   "string_proteins": 3485,
+   "cog20_proteins": 2661,
+   "cog20_cov_pct": 87.5,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 403833,
+   "acc": "GCF_000018605.1",
+   "string_proteins": 1898,
+   "cog20_proteins": 1596,
+   "cog20_cov_pct": 87.5,
+   "newly_lit": 5
+  },
+  {
+   "taxid": 178306,
+   "acc": "GCF_000007225.1",
+   "string_proteins": 2605,
+   "cog20_proteins": 1483,
+   "cog20_cov_pct": 88.4,
+   "newly_lit": 12
+  },
+  {
+   "taxid": 886293,
+   "acc": "GCF_000242455.2",
+   "string_proteins": 7136,
+   "cog20_proteins": 4333,
+   "cog20_cov_pct": 90.7,
+   "newly_lit": 31
+  },
+  {
+   "taxid": 981222,
+   "acc": "GCF_000226295.1",
+   "string_proteins": 3054,
+   "cog20_proteins": 2243,
+   "cog20_cov_pct": 77.6,
+   "newly_lit": 24
+  },
+  {
+   "taxid": 526227,
+   "acc": "GCF_000092125.1",
+   "string_proteins": 3072,
+   "cog20_proteins": 2553,
+   "cog20_cov_pct": 79.5,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 517418,
+   "acc": "GCF_000020525.1",
+   "string_proteins": 2710,
+   "cog20_proteins": 2032,
+   "cog20_cov_pct": 93.3,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 522772,
+   "acc": "GCF_000025725.1",
+   "string_proteins": 2964,
+   "cog20_proteins": 2281,
+   "cog20_cov_pct": 92.2,
+   "newly_lit": 18
+  },
+  {
+   "taxid": 572544,
+   "acc": "GCF_000165505.1",
+   "string_proteins": 1889,
+   "cog20_proteins": 2283,
+   "cog20_cov_pct": 61.6,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 891968,
+   "acc": "GCF_000266925.1",
+   "string_proteins": 2017,
+   "cog20_proteins": 1730,
+   "cog20_cov_pct": 92.7,
+   "newly_lit": 3
+  },
+  {
+   "taxid": 452637,
+   "acc": "GCF_000019965.1",
+   "string_proteins": 4612,
+   "cog20_proteins": 3180,
+   "cog20_cov_pct": 88.1,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 862908,
+   "acc": "GCF_000210915.2",
+   "string_proteins": 3230,
+   "cog20_proteins": 2054,
+   "cog20_cov_pct": 82.8,
+   "newly_lit": 15
+  },
+  {
+   "taxid": 158190,
+   "acc": "GCF_000236685.1",
+   "string_proteins": 3159,
+   "cog20_proteins": 2553,
+   "cog20_cov_pct": 92.4,
+   "newly_lit": 8
+  },
+  {
+   "taxid": 83332,
+   "acc": "GCF_000195955.2",
+   "string_proteins": 4026,
+   "cog20_proteins": 2790,
+   "cog20_cov_pct": 99.5,
+   "newly_lit": 43
+  },
+  {
+   "taxid": 1129794,
+   "acc": "GCF_000347635.1",
+   "string_proteins": 5618,
+   "cog20_proteins": 3147,
+   "cog20_cov_pct": 92.2,
+   "newly_lit": 20
+  },
+  {
+   "taxid": 394221,
+   "acc": "GCF_000014745.1",
+   "string_proteins": 3063,
+   "cog20_proteins": 2364,
+   "cog20_cov_pct": 88.8,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 929556,
+   "acc": "GCF_000242635.2",
+   "string_proteins": 4310,
+   "cog20_proteins": 2815,
+   "cog20_cov_pct": 94.2,
+   "newly_lit": 21
+  },
+  {
+   "taxid": 335541,
+   "acc": "GCF_000014725.1",
+   "string_proteins": 2504,
+   "cog20_proteins": 1972,
+   "cog20_cov_pct": 84.8,
+   "newly_lit": 48
+  },
+  {
+   "taxid": 69014,
+   "acc": "GCF_000009965.1",
+   "string_proteins": 2306,
+   "cog20_proteins": 1573,
+   "cog20_cov_pct": 93.9,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 323848,
+   "acc": "GCF_000196355.1",
+   "string_proteins": 2757,
+   "cog20_proteins": 2054,
+   "cog20_cov_pct": 89.6,
+   "newly_lit": 16
+  },
+  {
+   "taxid": 65093,
+   "acc": "GCF_000317635.1",
+   "string_proteins": 3708,
+   "cog20_proteins": 2708,
+   "cog20_cov_pct": 93.6,
+   "newly_lit": 129
+  },
+  {
+   "taxid": 882,
+   "acc": "GCF_000195755.1",
+   "string_proteins": 3379,
+   "cog20_proteins": 2419,
+   "cog20_cov_pct": 92.8,
+   "newly_lit": 8
+  },
+  {
+   "taxid": 866775,
+   "acc": "GCF_000193205.1",
+   "string_proteins": 1726,
+   "cog20_proteins": 1482,
+   "cog20_cov_pct": 83.9,
+   "newly_lit": 2
+  },
+  {
+   "taxid": 525904,
+   "acc": "GCF_000025005.1",
+   "string_proteins": 2832,
+   "cog20_proteins": 2255,
+   "cog20_cov_pct": 85.1,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 387092,
+   "acc": "GCF_000010325.1",
+   "string_proteins": 1843,
+   "cog20_proteins": 1504,
+   "cog20_cov_pct": 91.6,
+   "newly_lit": 6
+  },
+  {
+   "taxid": 326427,
+   "acc": "GCF_000021945.1",
+   "string_proteins": 3730,
+   "cog20_proteins": 2779,
+   "cog20_cov_pct": 92.2,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 771875,
+   "acc": "GCF_000235405.2",
+   "string_proteins": 1947,
+   "cog20_proteins": 1552,
+   "cog20_cov_pct": 90.0,
+   "newly_lit": 4
+  },
+  {
+   "taxid": 330779,
+   "acc": "GCF_000012285.1",
+   "string_proteins": 2223,
+   "cog20_proteins": 1592,
+   "cog20_cov_pct": 86.0,
+   "newly_lit": 12
+  },
+  {
+   "taxid": 756272,
+   "acc": "GCF_000165715.2",
+   "string_proteins": 4750,
+   "cog20_proteins": 2932,
+   "cog20_cov_pct": 88.5,
+   "newly_lit": 25
+  },
+  {
+   "taxid": 234267,
+   "acc": "GCF_000014905.1",
+   "string_proteins": 7826,
+   "cog20_proteins": 5124,
+   "cog20_cov_pct": 85.5,
+   "newly_lit": 32
+  },
+  {
+   "taxid": 670487,
+   "acc": "GCF_000183745.1",
+   "string_proteins": 2229,
+   "cog20_proteins": 1794,
+   "cog20_cov_pct": 87.5,
+   "newly_lit": 5
+  },
+  {
+   "taxid": 194439,
+   "acc": "GCF_000006985.1",
+   "string_proteins": 2255,
+   "cog20_proteins": 1541,
+   "cog20_cov_pct": 98.4,
+   "newly_lit": 12
+  },
+  {
+   "taxid": 768670,
+   "acc": "GCF_000183405.1",
+   "string_proteins": 2045,
+   "cog20_proteins": 1745,
+   "cog20_cov_pct": 92.5,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 190304,
+   "acc": "GCF_000007325.1",
+   "string_proteins": 2067,
+   "cog20_proteins": 1546,
+   "cog20_cov_pct": 98.1,
+   "newly_lit": 8
+  },
+  {
+   "taxid": 572547,
+   "acc": "GCF_000025885.1",
+   "string_proteins": 1876,
+   "cog20_proteins": 1599,
+   "cog20_cov_pct": 88.9,
+   "newly_lit": 6
+  },
+  {
+   "taxid": 349741,
+   "acc": "GCF_000020225.1",
+   "string_proteins": 2138,
+   "cog20_proteins": 1514,
+   "cog20_cov_pct": 83.2,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 452863,
+   "acc": "GCF_000022025.1",
+   "string_proteins": 3885,
+   "cog20_proteins": 3150,
+   "cog20_cov_pct": 85.7,
+   "newly_lit": 15
+  },
+  {
+   "taxid": 198628,
+   "acc": "GCF_000147055.1",
+   "string_proteins": 4549,
+   "cog20_proteins": 3544,
+   "cog20_cov_pct": 82.2,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 317655,
+   "acc": "GCF_000013985.1",
+   "string_proteins": 3165,
+   "cog20_proteins": 2502,
+   "cog20_cov_pct": 85.0,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 688270,
+   "acc": "GCF_000186265.1",
+   "string_proteins": 4163,
+   "cog20_proteins": 2573,
+   "cog20_cov_pct": 94.6,
+   "newly_lit": 15
+  },
+  {
+   "taxid": 273068,
+   "acc": "GCF_000007085.1",
+   "string_proteins": 2588,
+   "cog20_proteins": 1996,
+   "cog20_cov_pct": 83.9,
+   "newly_lit": 49
+  },
+  {
+   "taxid": 679926,
+   "acc": "GCF_000147875.1",
+   "string_proteins": 2785,
+   "cog20_proteins": 1964,
+   "cog20_cov_pct": 95.2,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 266265,
+   "acc": "GCF_000013645.1",
+   "string_proteins": 8702,
+   "cog20_proteins": 6593,
+   "cog20_cov_pct": 88.4,
+   "newly_lit": 28
+  },
+  {
+   "taxid": 63737,
+   "acc": "GCF_000020025.1",
+   "string_proteins": 6087,
+   "cog20_proteins": 4353,
+   "cog20_cov_pct": 85.0,
+   "newly_lit": 148
+  },
+  {
+   "taxid": 96561,
+   "acc": "GCF_000018405.1",
+   "string_proteins": 3265,
+   "cog20_proteins": 2455,
+   "cog20_cov_pct": 89.0,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 945021,
+   "acc": "GCF_000283615.1",
+   "string_proteins": 2555,
+   "cog20_proteins": 1897,
+   "cog20_cov_pct": 92.4,
+   "newly_lit": 3
+  },
+  {
+   "taxid": 289376,
+   "acc": "GCF_000020985.1",
+   "string_proteins": 2033,
+   "cog20_proteins": 1684,
+   "cog20_cov_pct": 96.7,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 749222,
+   "acc": "GCF_000186245.1",
+   "string_proteins": 2088,
+   "cog20_proteins": 1536,
+   "cog20_cov_pct": 92.9,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 926569,
+   "acc": "GCF_000199675.1",
+   "string_proteins": 3167,
+   "cog20_proteins": 2334,
+   "cog20_cov_pct": 87.4,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 660470,
+   "acc": "GCF_000147715.2",
+   "string_proteins": 2572,
+   "cog20_proteins": 1956,
+   "cog20_cov_pct": 92.7,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 933801,
+   "acc": "GCF_000213215.1",
+   "string_proteins": 2329,
+   "cog20_proteins": 1511,
+   "cog20_cov_pct": 83.3,
+   "newly_lit": 15
+  },
+  {
+   "taxid": 575540,
+   "acc": "GCF_000186345.1",
+   "string_proteins": 3690,
+   "cog20_proteins": 2438,
+   "cog20_cov_pct": 81.9,
+   "newly_lit": 13
+  },
+  {
+   "taxid": 926566,
+   "acc": "GCF_000265425.1",
+   "string_proteins": 4245,
+   "cog20_proteins": 2717,
+   "cog20_cov_pct": 91.9,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 869210,
+   "acc": "GCF_000195335.1",
+   "string_proteins": 2205,
+   "cog20_proteins": 1788,
+   "cog20_cov_pct": 89.4,
+   "newly_lit": 4
+  },
+  {
+   "taxid": 443218,
+   "acc": "GCF_000214175.1",
+   "string_proteins": 4557,
+   "cog20_proteins": 3295,
+   "cog20_cov_pct": 77.4,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 767434,
+   "acc": "GCF_000242255.2",
+   "string_proteins": 3101,
+   "cog20_proteins": 2509,
+   "cog20_cov_pct": 87.6,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 1110502,
+   "acc": "GCF_000264455.2",
+   "string_proteins": 3564,
+   "cog20_proteins": 4695,
+   "cog20_cov_pct": 52.2,
+   "newly_lit": 5
+  },
+  {
+   "taxid": 518766,
+   "acc": "GCF_000024845.1",
+   "string_proteins": 2766,
+   "cog20_proteins": 2167,
+   "cog20_cov_pct": 91.6,
+   "newly_lit": 8
+  },
+  {
+   "taxid": 457570,
+   "acc": "GCF_000020005.1",
+   "string_proteins": 2882,
+   "cog20_proteins": 2222,
+   "cog20_cov_pct": 85.3,
+   "newly_lit": 36
+  },
+  {
+   "taxid": 547558,
+   "acc": "GCF_000025865.1",
+   "string_proteins": 1987,
+   "cog20_proteins": 1597,
+   "cog20_cov_pct": 92.0,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 375286,
+   "acc": "GCF_000013625.1",
+   "string_proteins": 3697,
+   "cog20_proteins": 3004,
+   "cog20_cov_pct": 90.0,
+   "newly_lit": 9
+  },
+  {
+   "taxid": 118163,
+   "acc": "GCF_000317025.1",
+   "string_proteins": 4268,
+   "cog20_proteins": 3069,
+   "cog20_cov_pct": 90.5,
+   "newly_lit": 140
+  },
+  {
+   "taxid": 525897,
+   "acc": "GCF_000023225.1",
+   "string_proteins": 3436,
+   "cog20_proteins": 2731,
+   "cog20_cov_pct": 89.4,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 866895,
+   "acc": "GCF_000284515.1",
+   "string_proteins": 4104,
+   "cog20_proteins": 2987,
+   "cog20_cov_pct": 92.5,
+   "newly_lit": 98
+  },
+  {
+   "taxid": 59374,
+   "acc": "GCF_000024665.1",
+   "string_proteins": 2871,
+   "cog20_proteins": 1884,
+   "cog20_cov_pct": 78.4,
+   "newly_lit": 71
+  },
+  {
+   "taxid": 572480,
+   "acc": "GCF_000092245.1",
+   "string_proteins": 3126,
+   "cog20_proteins": 2418,
+   "cog20_cov_pct": 95.3,
+   "newly_lit": 23
+  },
+  {
+   "taxid": 316274,
+   "acc": "GCA_000018565.1",
+   "string_proteins": 4976,
+   "cog20_proteins": 3573,
+   "cog20_cov_pct": 96.4,
+   "newly_lit": 24
+  },
+  {
+   "taxid": 521045,
+   "acc": "GCF_000023325.1",
+   "string_proteins": 2118,
+   "cog20_proteins": 1679,
+   "cog20_cov_pct": 86.1,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 572478,
+   "acc": "GCF_000148385.1",
+   "string_proteins": 2493,
+   "cog20_proteins": 1580,
+   "cog20_cov_pct": 90.1,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 1142394,
+   "acc": "GCF_000284115.1",
+   "string_proteins": 3203,
+   "cog20_proteins": 2038,
+   "cog20_cov_pct": 76.3,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 644283,
+   "acc": "GCF_000145235.1",
+   "string_proteins": 6222,
+   "cog20_proteins": 4151,
+   "cog20_cov_pct": 94.1,
+   "newly_lit": 27
+  },
+  {
+   "taxid": 550540,
+   "acc": "GCF_000148645.1",
+   "string_proteins": 3782,
+   "cog20_proteins": 2958,
+   "cog20_cov_pct": 92.5,
+   "newly_lit": 7
+  },
+  {
+   "taxid": 402881,
+   "acc": "GCF_000017565.1",
+   "string_proteins": 3636,
+   "cog20_proteins": 2933,
+   "cog20_cov_pct": 87.4,
+   "newly_lit": 14
+  },
+  {
+   "taxid": 866536,
+   "acc": "GCF_000265405.1",
+   "string_proteins": 3680,
+   "cog20_proteins": 2336,
+   "cog20_cov_pct": 93.8,
+   "newly_lit": 11
+  },
+  {
+   "taxid": 264732,
+   "acc": "GCF_000013105.1",
+   "string_proteins": 2463,
+   "cog20_proteins": 2054,
+   "cog20_cov_pct": 99.6,
+   "newly_lit": 56
+  },
+  {
+   "taxid": 188937,
+   "acc": "GCA_000007345.1",
+   "string_proteins": 4540,
+   "cog20_proteins": 3157,
+   "cog20_cov_pct": 98.3,
+   "newly_lit": 42
+  },
+  {
+   "taxid": 365046,
+   "acc": "GCF_000215705.1",
+   "string_proteins": 3881,
+   "cog20_proteins": 3131,
+   "cog20_cov_pct": 80.4,
+   "newly_lit": 10
+  },
+  {
+   "taxid": 1173022,
+   "acc": "GCF_000317495.1",
+   "string_proteins": 4474,
+   "cog20_proteins": 3061,
+   "cog20_cov_pct": 88.7,
+   "newly_lit": 118
+  },
+  {
+   "taxid": 706587,
+   "acc": "GCF_000266945.1",
+   "string_proteins": 5469,
+   "cog20_proteins": 3754,
+   "cog20_cov_pct": 85.6,
+   "newly_lit": 16
+  },
+  {
+   "taxid": 562970,
+   "acc": "GCF_000092905.1",
+   "string_proteins": 3150,
+   "cog20_proteins": 2535,
+   "cog20_cov_pct": 69.2,
+   "newly_lit": 50
+  },
+  {
+   "taxid": 330214,
+   "acc": "GCF_000196815.1",
+   "string_proteins": 4268,
+   "cog20_proteins": 2672,
+   "cog20_cov_pct": 82.9,
+   "newly_lit": 16
+  }
+ ],
+ "cohorts": {
+  "long_lit": 324998,
+  "newly_lit_frozen": 3502,
+  "dark_prospective": 186586
+ },
+ "cog2020_letter_counts": {
+  "J": 26526,
+  "R": 23402,
+  "C": 22279,
+  "E": 22194,
+  "M": 21013,
+  "G": 19446,
+  "T": 17014,
+  "K": 16800,
+  "H": 16492,
+  "P": 15673,
+  "O": 15256,
+  "I": 14304,
+  "L": 13189,
+  "S": 12386,
+  "V": 10323,
+  "F": 8603,
+  "Q": 4461,
+  "X": 4220,
+  "U": 4005,
+  "TK": 3557,
+  "D": 3495,
+  "N": 2966,
+  "HR": 2449,
+  "EP": 1354,
+  "EH": 1208,
+  "NUW": 1084,
+  "KT": 1014,
+  "NW": 836,
+  "UW": 795,
+  "ER": 710,
+  "MV": 709,
+  "GER": 648,
+  "MO": 603,
+  "MR": 599,
+  "JO": 584,
+  "FR": 580,
+  "PT": 511,
+  "EG": 510,
+  "NU": 510,
+  "ET": 503,
+  "CO": 481,
+  "CP": 464,
+  "EF": 438,
+  "DN": 414,
+  "PR": 399,
+  "GM": 390,
+  "DH": 388,
+  "CR": 382,
+  "HC": 361,
+  "FV": 352,
+  "GK": 345,
+  "IR": 335,
+  "DM": 320,
+  "CE": 307,
+  "FT": 306,
+  "DZ": 303,
+  "OE": 297,
+  "KL": 296,
+  "IQ": 284,
+  "HP": 269,
+  "DI": 267,
+  "EM": 265,
+  "GT": 257,
+  "TE": 248,
+  "PH": 234,
+  "EQ": 234,
+  "KE": 231,
+  "QV": 224,
+  "JM": 206,
+  "HI": 197,
+  "MN": 196,
+  "MDT": 194,
+  "EHJQ": 192,
+  "KG": 178,
+  "QR": 172,
+  "CHR": 169,
+  "PQ": 167,
+  "MU": 160,
+  "OK": 158,
+  "JHO": 156,
+  "HT": 156,
+  "JR": 141,
+  "KJ": 139,
+  "GEPR": 134,
+  "QC": 133,
+  "DL": 132,
+  "FH": 131,
+  "KV": 121,
+  "LK": 120,
+  "JLK": 119,
+  "DPM": 119,
+  "DP": 118,
+  "CIR": 113,
+  "W": 113,
+  "DR": 112,
+  "TG": 110,
+  "HO": 107,
+  "PV": 107,
+  "GH": 104,
+  "LX": 100,
+  "JE": 99,
+  "HV": 96,
+  "Z": 89,
+  "DE": 84,
+  "VI": 81,
+  "TR": 80,
+  "KX": 77,
+  "OT": 77,
+  "DK": 70,
+  "HE": 63,
+  "QT": 62,
+  "JV": 61,
+  "FM": 60,
+  "DT": 60,
+  "MI": 59,
+  "VT": 59,
+  "OJ": 51,
+  "A": 50,
+  "CT": 48,
+  "UXR": 47,
+  "MT": 46,
+  "HJ": 43,
+  "HQ": 42,
+  "OU": 38,
+  "OM": 37,
+  "FP": 31,
+  "JT": 30,
+  "PO": 29,
+  "KN": 28,
+  "GI": 24,
+  "NT": 23,
+  "OC": 21,
+  "KH": 21,
+  "TU": 20,
+  "DO": 19,
+  "OP": 18,
+  "GP": 18,
+  "B": 18,
+  "CPO": 17,
+  "FJ": 16,
+  "GHR": 14,
+  "CJ": 14,
+  "MX": 13,
+  "LV": 12,
+  "MG": 11,
+  "KTN": 10,
+  "DKO": 9,
+  "FL": 9,
+  "XT": 7,
+  "KR": 5,
+  "OI": 3,
+  "CI": 3,
+  "PU": 2
+ },
+ "bridge": "exact-sequence md5 join: STRING v12.0 per-species sequences <-> cog-20.fa.gz / prot2003-2014.fa.gz",
+ "hashes": {
+  "cog-20.cog.csv": "9fbb20ee8fec2c74",
+  "cog2003-2014.csv": "937ff2746098ec51",
+  "joined035.tsv": "a65bb9151b6162e8",
+  "panel035.json": "266e5522ec93e424"
+ }
+}
