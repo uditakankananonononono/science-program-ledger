@@ -13,6 +13,7 @@ orchestration/topic-ledger.csv): 13 unique topics. All 200 topics get performed;
 |---|---|---|---|---|
 | DOC-1-001 | EXP-1 | 2026-09-23 16:20 | done | USEFUL: G1 PASS 21.1% median RMSE reduction, 30/30 perm-sig; G2 neg; pivot P1/P2 PASS |
 | DOC-1-002 | EXP-1 | 2026-09-23 17:10 | done | DOCUMENTED BOUNDARY (not counted): 3 datasets, 5 gate versions, 0 targets pass size-matched QC; flagged for Replogle-scale retry |
+| DOC-1-002F | EXP-1 | 2026-09-24 12:28 | complete - G1/G2 PASS (falsifiability repaired), G3 FAIL: 002 question answered negatively at adequate power; counting pending adjudication |
 | DOC-1-003 | EXP-1 | 2026-09-23 17:36 | done | USEFUL (counted, main adjudication 23:19): technical floor of Visium spatial structure, held-out r=0.716 + audit CLI; G2+v2 LR boundary, not counted |
 | DOC-1-004 | EXP-1 | 2026-09-23 17:48 | done - COUNTED (main adjudication 2026-09-23 23:34) | G1 genus 7.5% vs 10% gate FAIL but 20/30 perm-sig (urobilin R2 0.57); v2 species WORSE (-6.5%) - COUNTED (main adjudication 23:34): predictability ceiling map + aggregation-beats-resolution rule + twin CLI |
 | DOC-1-005 | EXP-1 | 2026-09-23 18:03 | DONE - COUNTED (main adjudication 00:09): trained MLP fate forecaster 86.4% top-1 held-out (7.9x climatology); Markov wins NLL head-to-head; CLI + artifacts | - |
