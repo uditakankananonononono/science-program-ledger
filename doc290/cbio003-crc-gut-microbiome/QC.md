@@ -18,3 +18,12 @@ Live checks: curatedMetagenomicData Bioconductor page 200; SRA runinfo API for P
 | P01-08 | OK | iHMP-IBD live; CRC repeat-sampling "where available" is optional. |
 | P01-09 | FIX | Wastyk verified; "Mediterranean-diet Prevotella studies" and FMT cohorts are unnamed - name BioProjects or cut to Wastyk + one named FMT cohort. |
 | P01-10 | FIX | Paired FIT + metagenome is thin publicly (Zeller 2014 has FOBT). Lock the exact cohort(s) with FIT/FOBT columns before build; else it is a pure simulation and must say so. |
+
+## Data-integrity rules (project-level, inherited by all P01 builds and future specs)
+- 2026-09-24: curatedMetagenomicData ThomasAM_2019_c (Japan, 80 samples) duplicates YachidaS_2019
+  (every profile has a Yachida match at cosine >= 0.9995). Never combine the two in one analysis;
+  use YachidaS_2019. Found in P01-06 (see p01-06-early-onset-crc/REPORT.md).
+- 2026-09-24: DE-Wirbel (Wirbel 2019 CCMD / cMD WirbelJ_2018) is confounded by sequencing instrument
+  (54/54 HiSeq 2000 = CRC; 60/66 HiSeq 4000 = control). Do not use it for marker discovery or
+  within-cohort accuracy claims. Found in P01-02.
+- 2026-09-24: in P01-01/P01-04 data, labels "AT-Wirbel" = FR-Zeller and "CN-Feng" = AT-Feng (erratum 535ff418).
