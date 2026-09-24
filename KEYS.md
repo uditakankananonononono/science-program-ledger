@@ -71,3 +71,8 @@ Note 2026-09-24: builder sandboxes are resetting ~every 40 min this session, kil
 | 2026-09-24 15:39 IST | ADD | shared-models | atlas-shared-models-builder-2 | SHA256:kHfbsf9GFc4Gv5lrdvXugc1/YjC4E5Ovgz7eLPeAI/g | write deploy key, replacement; relayed via Main | Read/write verified on-page |
 | 2026-09-24 15:39 IST | REVOKE | atlas-ai | instinct-atlas-builder-2026-09-24-b | SHA256:ggnUZybh... | private half dead (same reset); relayed via Main 15:38 | verified gone on-page |
 | 2026-09-24 15:39 IST | ADD | atlas-ai | instinct-atlas-builder-2026-09-24-c | SHA256:T0XCTFxMVTDz2+GzpdXKQ5SjNcL24mR0Vhghzr2hBVQ | write deploy key, replacement; relayed via Main | Read/write verified on-page |
+
+| 2026-09-24 15:41 IST | REVOKE | sugarcode-ai | sugarcode-builder-2026-09-24-b | SHA256:vxFGxI/n... | private half dead (sugarcode lead sandbox reset, relayed via Main 15:41) | verified gone on-page |
+| 2026-09-24 15:41 IST | ADD | sugarcode-ai | sugarcode-builder-2026-09-24-c | SHA256:q3KokKBBxictu5Q56cStT4CjPukaKu3LZTK8RNN8okc | write deploy key, replacement; relayed via Main | Read/write verified on-page |
+| 2026-09-24 15:42 IST | REVOKE | shared-models | sugarcode-shared-models-builder | SHA256:IxTG8Bk0uJlSGnFz1IJPtdyKHcPzTzYkjsR2wv6O99A | private half dead (same reset) | verified gone on-page |
+| 2026-09-24 15:42 IST | ADD | shared-models | sugarcode-shared-models-builder-b | SHA256:1ExIU+uy58i5TufHomz/dXwtmBluVixN1kQOKLYZim0 | write deploy key, replacement; relayed via Main | Read/write verified on-page |
