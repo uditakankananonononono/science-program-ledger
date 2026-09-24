@@ -1,0 +1,25 @@
+{
+ "hashes": {
+  "ampep_train_AMP": {
+   "file": "/tmp/M_model_train_AMP_sequence.fasta",
+   "sha256": "4ea306a654433e4b"
+  },
+  "ampep_train_nonAMP": {
+   "file": "/tmp/M_model_train_nonAMP_sequence.fasta",
+   "sha256": "00f6dffd1ccd9fee"
+  },
+  "iamp2l_suppS2_test": {
+   "file": "/tmp/AMP.test.faa.gz",
+   "sha256": "5ef4d00a679274e2"
+  },
+  "iamp2l_suppS1_bench": {
+   "file": "/tmp/AMP.train_bench.faa.gz",
+   "sha256": "7564c699a3af6f22"
+  },
+  "dramp3_natural_amps": {
+   "file": "/tmp/dramp_natural.txt",
+   "sha256": "fbaebb527695785e"
+  }
+ },
+ "note": "all dataset files hashed BEFORE any training (pre-training manifest)"
+}
