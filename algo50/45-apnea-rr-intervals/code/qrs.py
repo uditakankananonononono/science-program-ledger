@@ -1,10 +1,12 @@
-"""From-scratch Pan-Tompkins QRS detector (integer filters via lfilter)."""
+"""From-scratch QRS detector: Pan-Tompkins integer-filter front end plus
+segment-adaptive thresholding (robust to the clipped / high-artifact records
+in Apnea-ECG)."""
 import numpy as np
 from scipy.signal import lfilter
 
 def detect_qrs(ecg, fs=100):
     ecg = np.asarray(ecg, dtype=np.float64)
-    ecg = ecg - np.mean(ecg)
+    ecg = ecg - np.median(ecg)
     # Pan-Tompkins low-pass: y[n]=2y[n-1]-y[n-2]+x[n]-2x[n-6]+x[n-12]
     b_lp = np.zeros(13); b_lp[0] = 1; b_lp[6] = -2; b_lp[12] = 1
     lp = lfilter(b_lp, [1, -2, 1], ecg)
@@ -16,21 +18,36 @@ def detect_qrs(ecg, fs=100):
     w = max(1, int(0.150 * fs))
     mwi = np.convolve(sq, np.ones(w) / w, mode='same')
     refr = int(0.250 * fs)
-    thresh = float(np.mean(mwi) * 0.35)
-    sig_lev, noise_lev = 2 * thresh, thresh / 2
     peaks = []
-    i = w
-    n = len(mwi) - w
-    while i < n:
-        if mwi[i] > thresh:
-            j = i + int(np.argmax(mwi[i:i+w]))
-            if not peaks or j - peaks[-1] > refr:
-                peaks.append(j)
-                sig_lev = 0.125 * mwi[j] + 0.875 * sig_lev
+    seg = 10 * fs
+    for s0 in range(0, len(mwi), seg):
+        s = mwi[s0:s0 + seg]
+        if len(s) < w:
+            continue
+        med = np.median(s)
+        hi = np.percentile(s, 97)
+        if hi <= med:
+            continue
+        thr = med + 0.35 * (hi - med)
+        i = 0
+        while i < len(s):
+            if s[i] > thr:
+                j = i + int(np.argmax(s[i:i + w]))
+                g = s0 + j
+                if not peaks or g - peaks[-1] > refr:
+                    peaks.append(g)
                 i = j + refr
-                thresh = noise_lev + 0.25 * (sig_lev - noise_lev)
-                continue
-        noise_lev = 0.1 * mwi[i] + 0.9 * noise_lev
-        thresh = noise_lev + 0.25 * (sig_lev - noise_lev)
-        i += 1
-    return np.array(peaks, dtype=np.int64)
+            else:
+                i += 1
+    peaks = np.array(peaks, dtype=np.int64)
+    # dedup: merge peaks closer than 350 ms, keeping the stronger MWI peak
+    if len(peaks) > 1:
+        keep = [peaks[0]]
+        for p in peaks[1:]:
+            if p - keep[-1] < int(0.350 * fs):
+                if mwi[p] > mwi[keep[-1]]:
+                    keep[-1] = p
+            else:
+                keep.append(p)
+        peaks = np.array(keep, dtype=np.int64)
+    return peaks
