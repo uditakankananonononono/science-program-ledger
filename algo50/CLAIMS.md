@@ -51,4 +51,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 42 | bootstrap-ci-coverage-skewed | RES-3 | done - NEGATIVE: G1+G4 PASS, G2+G3 FAIL (percentile bootstrap 0.810 cov vs t 0.831 at n=15; not a fix) | 2026-09-24T08:07Z |
 | 44 | mr-ivw-vs-egger-pleiotropy | RES-3 | done - G1-G4 all PASS (pleiotropy biases IVW +0.141; Egger -0.010 but 2.9x SD; reproduction) | 2026-09-24T08:07Z |
 | 46 | wilcoxon-vs-t-heavy-tails | RES-3 | done - G1-G4 all PASS (t3 tails: Wilcoxon power 0.500 vs Welch 0.387; normal cost 0.026; reproduction) | 2026-09-24T08:08Z |
-| 48 | ic50-4pl-vs-interpolation | RES-3 | claimed - protocol in prep | 2026-09-24T08:08Z |
+| 48 | ic50-4pl-vs-interpolation | RES-3 | done - NEGATIVE: G1+G3 FAIL (interp beats free 4PL at Hill 1), G2+G4 PASS; amendment A off-grid P1 FAIL, P2+P3 PASS | 2026-09-24T08:08Z |
