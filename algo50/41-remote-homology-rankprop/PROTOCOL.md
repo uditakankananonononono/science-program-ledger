@@ -17,3 +17,6 @@ Gates:
 - G3: RankProp AUROC >= B1 on >= 60% of queries.
 If G1 fails: one post-hoc pivot, locked and pushed before scoring.
 Caveats declared: RankProp's original used PSI-BLAST E-values on a larger database; this uses plain SW on a 4,000-domain sample; transductive: the query ranking uses the unlabeled database graph (as in the paper), labels never used.
+
+## Amendment 1 (engineering, before any score)
+evaluate.py: the RankProp iteration is run for all queries at once as a matrix product (identical math, same 20 iterations) instead of one query at a time, for runtime.

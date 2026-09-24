@@ -15,13 +15,16 @@ def roc50(s,y):
             fp+=1; a+=tp
             if fp==50: break
     return a/(50*p)
+Q=[q for q in range(n) if (((sf==sf[q])&(fa!=fa[q])).sum()-0)>=2]
+Y0=np.exp(-E[:,Q]/100.0); Y0[Q,np.arange(len(Q))]=0; V=Y0.copy()
+for _ in range(20): V=Y0+0.95*(Kn@V)
+Vcol={q:V[:,k] for k,q in enumerate(Q)}
 rows=[]
-for q in range(n):
+for q in Q:
     pos=(sf==sf[q])&(fa!=fa[q]); pos[q]=False
     if pos.sum()<2: continue
     neg=fo!=fo[q]; keep=pos|neg; y=pos[keep]
-    y0=np.exp(-E[q]/100.0); y0[q]=0; v=y0.copy()
-    for _ in range(20): v=y0+0.95*(Kn@v)
+    v=Vcol[q]
     sc={'RAW':M[q],'EVAL':-E[q],'RP':v}
     rows.append([auc(sc[k][keep],y) for k in ('RAW','EVAL','RP')]+[roc50(sc[k][keep],y) for k in ('RAW','EVAL','RP')])
 A=np.array(rows); np.savetxt('../results/per_query.tsv',A,delimiter='\t',header='auc_raw\tauc_eval\tauc_rp\troc50_raw\troc50_eval\troc50_rp',comments='')
