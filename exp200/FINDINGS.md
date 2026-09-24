@@ -18,6 +18,13 @@ invert. Six instances:
 - **032 microbiome-metabolite**: dev ARM B ridge 85.0% / MCC 0.454 collapses to 30.0% on the
   frozen 388-sample HMP2 cohort, below the mechanistic ARM A protocol (45.0% / 0.289).
   Harness validated by reproducing the published ENVIM 37% cross-cohort rate EXACTLY (37.1%).
+- **032F producer-constraint (boundary refinement of the 032 instance)**: restricting each
+  metabolite's features to AGORA2/DEMETER-annotated producer species picks the biologically
+  CORRECT drivers (Roseburia for butyrate, Megamonas for propionate; dev mean rho 0.42) but
+  does NOT repair cross-cohort transfer (frozen well-predicted 2/10 vs ARM A 3/10 and ARM B
+  5/10 on the same compounds; propionate -0.142). 032's collapse is a signal-strength
+  problem, not a feature-selection problem: organism abundance is a weaker transported
+  signal than gene-family dosage.
 - **033 phage-host-gnn**: dev graph gains (20.95%, +7.3pp over no-graph, all 10 folds) collapse
   frozen to 12.20% vs ARM A KNN-d2 59.35%; CRISPR-spacer rescue real but neutral (+0.00pp).
 - **035 dark-matter-function**: dev ARM B 3-channel model 32.22% vs ARM A Huynen-vote 27.76%
