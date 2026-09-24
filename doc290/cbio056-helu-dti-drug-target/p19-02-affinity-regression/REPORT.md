@@ -1,5 +1,10 @@
 # P19-02 Build Report: Affinity, Not Yes/No (HeLU-style affinity regression on DAVIS)
 
+> **ERRATUM PENDING (2026-09-24): do not cite the numbers below yet.** `tool/affinity.py` hashes protein
+> 3-mers with Python's built-in `hash()`, which is salted per process (PYTHONHASHSEED). Protein features
+> and kinase families can therefore change between runs, and the reported numbers are one unreproducible
+> realisation. A re-run with a deterministic crc32 hash (as in P19-03) and an erratum will follow.
+
 **Parent:** CBIO056 HeLU-DTI | **Spec:** doc290/cbio056-helu-dti-drug-target/02-affinity-regression.md
 **Built:** 2026-09-24 | **Status:** BOUNDARY RESULT (G1 failed - documented, not re-fished; G2/G4 pass; G3 effect smaller than hypothesized)
 
