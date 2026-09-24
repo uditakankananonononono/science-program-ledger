@@ -1,0 +1,34 @@
+{
+ "n_reads": 600,
+ "n_pairs": 179700,
+ "n_true": 457,
+ "ek_set_median": 7236.0,
+ "mn_set_median": 1313.5,
+ "t_ek": 8.770512342453003,
+ "t_mn": 3.6681604385375977,
+ "EK": {
+  "auroc": 0.9997452756914684,
+  "auprc": 0.8930399072557518,
+  "recall_at_2pct": 1.0,
+  "hi_recall_at_2pct": 1.0,
+  "hi_pairs": 19900
+ },
+ "MIN": {
+  "auroc": 0.9996717840264059,
+  "auprc": 0.8789674387658319,
+  "recall_at_2pct": 0.9978118161925602,
+  "hi_recall_at_2pct": 1.0,
+  "hi_pairs": 19900
+ },
+ "timing_reps": {
+  "ratios": [
+   0.5580230584836744,
+   0.387525941979025,
+   0.5831490579648534,
+   0.4284933408839197,
+   0.4615821179365099
+  ],
+  "median": 0.4615821179365099
+ },
+ "G3_note": "single-run ratio from this scoring pass; 5 clean reps median 0.462 (0.388-0.583)"
+}
