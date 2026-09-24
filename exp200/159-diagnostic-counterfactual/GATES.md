@@ -28,3 +28,5 @@ Idea: a diagnostic model should say which measurements would have to change to f
 - G4 (tool + nomination): a CLI that returns, for a sample, the diagnosis plus its "falsification test" (the genes whose change would flip it), plus one prospective nomination (the non-responder patient whose CF genes moved least, flagged as a predicted persistent-active case; or the gene most often in the CF sets but lacking UC literature).
 - Also reported (not gated): the non-responder CF precision, expected lower than R.
 - PASS = G1-G4. Otherwise a documented boundary. No retuning of C, K or the contrasts after results.
+
+Clarification, committed before running: GSE38713 active = "active disease (involved mucosa)" (15); negatives = controls (13) + remission (8); non-involved mucosa from active patients (7) excluded as ambiguous. GSE16879 pairs are matched by sample-title prefix (e.g. UCR1_beforeT/afterT); colon only.
