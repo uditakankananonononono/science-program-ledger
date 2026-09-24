@@ -18,6 +18,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 24 | pwm-vs-consensus-scan | RES-2 | done - G1+G4 PASS (PWM +0.053 AUROC), G2+G3 FAIL; pivot P1+P2 FAIL (PWM edge real but small, ~+0.02) | 2026-09-24T08:05Z |
 | 26 | orf-length-gc | RES-2 | done - G1 FAIL (mtb 1.27>1.25), G2 PASS, G3 void-by-construction FAIL; pivot P1+P2 PASS (dinuc correction), P3 FAIL (shadows 2.3-4.5x random) | 2026-09-24T08:06Z |
 | 28 | palindrome-depletion | RES-2 | claimed - protocol in prep | 2026-09-24T08:07Z |
+| 30 | banded-edit-distance | RES-2 | claimed - protocol in prep | 2026-09-24T08:10Z |
 | 01 | spaced-seed-minhash | RES-1 | done - original gates FAIL, pivot 2 PASS | 2026-09-23T16:18Z |
 | 03 | signal-peptide-scoring | RES-1 | done - G1+G2 PASS, transfer G3 + pivot FAIL | 2026-09-23T16:27Z |
 | 05 | codon-adaptation-expression | RES-1 | done - G1+G2 PASS, G3 FAIL, pivot PASS | 2026-09-23T17:33Z |
