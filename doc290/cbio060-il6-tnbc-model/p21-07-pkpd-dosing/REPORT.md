@@ -59,8 +59,8 @@ static screens give the right drug ranking. PK changes how much suppression you 
 - **Solver plumbing:** in gated run 1, a CVODE failure left the solver instance failing for every later member
   (34/100 "fail"; G3 0.61 as executed; kept as `results/results_run1_sticky_solver.json`). The fix creates a fresh
   solver and retries a failed member once. Nothing about the method changed. In the rerun one member needed the
-  retry and there were 0 failures. The G3 verdict above comes from the fixed run. The parent may prefer to
-  record run 1.
+  retry and there were 0 failures. Parent adjudication (2026-09-24): the fresh-solver rerun (0.95) is the official G3; run 1 is
+  kept only as a record of a solver-state bug, not a method result. A5b handling also confirmed.
 - The regenerated ensemble matches the P21-01 sampler (300 members) but is not bit-identical: nominal chi2 is
   26.527 vs 26.525 (solver-state rounding). Members saved in `results/results_ensemble.npy`.
 - Siltuximab potency is the host model's own anti-IL-6 affinity, not a verified siltuximab Kd.
