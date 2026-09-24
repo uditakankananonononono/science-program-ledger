@@ -1,0 +1,196 @@
+{
+ "counts": {
+  "FengQ_2015": {
+   "eo_crc": 4,
+   "young_ctrl": 3,
+   "lo_crc": 42,
+   "old_ctrl": 58,
+   "se_auc0.70": 0.2098264743097662
+  },
+  "GuptaA_2019": {
+   "eo_crc": 4,
+   "young_ctrl": 15,
+   "lo_crc": 26,
+   "old_ctrl": 15,
+   "se_auc0.70": 0.16155354379063377
+  },
+  "HanniganGD_2017": {
+   "eo_crc": 6,
+   "young_ctrl": 6,
+   "lo_crc": 21,
+   "old_ctrl": 22,
+   "se_auc0.70": 0.15676066625806104
+  },
+  "ThomasAM_2018a": {
+   "eo_crc": 0,
+   "young_ctrl": 0,
+   "lo_crc": 29,
+   "old_ctrl": 24,
+   "se_auc0.70": null
+  },
+  "ThomasAM_2018b": {
+   "eo_crc": 4,
+   "young_ctrl": 4,
+   "lo_crc": 28,
+   "old_ctrl": 23,
+   "se_auc0.70": 0.19602238075193382
+  },
+  "VogtmannE_2016": {
+   "eo_crc": 8,
+   "young_ctrl": 11,
+   "lo_crc": 44,
+   "old_ctrl": 41,
+   "se_auc0.70": 0.1267574926772177
+  },
+  "WirbelJ_2018": {
+   "eo_crc": 7,
+   "young_ctrl": 17,
+   "lo_crc": 53,
+   "old_ctrl": 48,
+   "se_auc0.70": 0.12583498072568997
+  },
+  "YachidaS_2019": {
+   "eo_crc": 32,
+   "young_ctrl": 52,
+   "lo_crc": 226,
+   "old_ctrl": 199,
+   "se_auc0.70": 0.06065699835718995
+  },
+  "YuJ_2015": {
+   "eo_crc": 4,
+   "young_ctrl": 0,
+   "lo_crc": 70,
+   "old_ctrl": 54,
+   "se_auc0.70": null
+  },
+  "ZellerG_2014": {
+   "eo_crc": 3,
+   "young_ctrl": 8,
+   "lo_crc": 50,
+   "old_ctrl": 53,
+   "se_auc0.70": 0.19495909769424885
+  }
+ },
+ "G1": {
+  "qualifying_cohort_auc": {
+   "YachidaS_2019": 0.5525841346153846
+  },
+  "n_qualifying": 1
+ },
+ "G2": {
+  "eligible_cohorts": [
+   "FengQ_2015",
+   "GuptaA_2019",
+   "HanniganGD_2017",
+   "ThomasAM_2018b",
+   "VogtmannE_2016",
+   "WirbelJ_2018",
+   "YachidaS_2019",
+   "ZellerG_2014"
+  ],
+  "per_cohort": {
+   "FengQ_2015": {
+    "n_eo_crc": 4,
+    "n_young_ctrl": 3,
+    "auc_eo": 1.0,
+    "auc_lo_matched": 0.9166666666666667,
+    "auc_lo_full": 0.9166666666666667
+   },
+   "GuptaA_2019": {
+    "n_eo_crc": 4,
+    "n_young_ctrl": 15,
+    "auc_eo": 0.6666666666666666,
+    "auc_lo_matched": 0.7916666666666667,
+    "auc_lo_full": 0.9166666666666667
+   },
+   "HanniganGD_2017": {
+    "n_eo_crc": 6,
+    "n_young_ctrl": 6,
+    "auc_eo": 0.41666666666666663,
+    "auc_lo_matched": 0.4444444444444444,
+    "auc_lo_full": 0.4444444444444444
+   },
+   "ThomasAM_2018b": {
+    "n_eo_crc": 4,
+    "n_young_ctrl": 4,
+    "auc_eo": 0.875,
+    "auc_lo_matched": 0.9375,
+    "auc_lo_full": 0.9375
+   },
+   "VogtmannE_2016": {
+    "n_eo_crc": 8,
+    "n_young_ctrl": 11,
+    "auc_eo": 0.9886363636363636,
+    "auc_lo_matched": 0.9431818181818181,
+    "auc_lo_full": 0.9772727272727273
+   },
+   "WirbelJ_2018": {
+    "n_eo_crc": 7,
+    "n_young_ctrl": 17,
+    "auc_eo": 0.7941176470588236,
+    "auc_lo_matched": 0.7815126050420168,
+    "auc_lo_full": 0.8487394957983192
+   },
+   "YachidaS_2019": {
+    "n_eo_crc": 32,
+    "n_young_ctrl": 52,
+    "auc_eo": 0.6084735576923077,
+    "auc_lo_matched": 0.6066706730769231,
+    "auc_lo_full": 0.6685697115384616
+   },
+   "ZellerG_2014": {
+    "n_eo_crc": 3,
+    "n_young_ctrl": 8,
+    "auc_eo": 0.4583333333333333,
+    "auc_lo_matched": 0.75,
+    "auc_lo_full": 0.7083333333333333
+   }
+  },
+  "pooled_auc": {
+   "eo": 0.6946627789046652,
+   "lo_matched": 0.6895917849898581,
+   "lo_full": 0.738970588235294
+  },
+  "diff_eo_minus_lo_matched": 0.0050709939148071426,
+  "boot95": [
+   -0.06595144523326597,
+   0.07422984279918857
+  ],
+  "n_eo_crc_test": 68,
+  "n_young_ctrl_test": 116
+ },
+ "G3": {
+  "loco_auc_age_residualized": {
+   "FengQ_2015": 0.835174625801853,
+   "GuptaA_2019": 0.9416666666666667,
+   "HanniganGD_2017": 0.6203703703703703,
+   "ThomasAM_2018a": 0.7112068965517241,
+   "ThomasAM_2018b": 0.8871527777777777,
+   "VogtmannE_2016": 0.7485207100591716,
+   "WirbelJ_2018": 0.8744871794871795,
+   "YachidaS_2019": 0.6478813428456714,
+   "YuJ_2015": 0.8768768768768768,
+   "ZellerG_2014": 0.8128673059078256
+  },
+  "mean_adj": 0.7956204752345117,
+  "loco_auc_unadjusted": {
+   "FengQ_2015": 0.81895937277263,
+   "GuptaA_2019": 0.8783333333333334,
+   "HanniganGD_2017": 0.5026455026455027,
+   "ThomasAM_2018a": 0.7629310344827587,
+   "ThomasAM_2018b": 0.8559027777777778,
+   "VogtmannE_2016": 0.7740384615384615,
+   "WirbelJ_2018": 0.8987179487179489,
+   "YachidaS_2019": 0.6992263504123043,
+   "YuJ_2015": 0.8822572572572572,
+   "ZellerG_2014": 0.8082276523352923
+  },
+  "mean_raw": 0.7881239691273266,
+  "age_from_microbiome_r2_controls": 0.18703375614102702
+ },
+ "gates": {
+  "G1_pass": false,
+  "G2_distinct_signal": false,
+  "G3_age_confounding_primary": false
+ }
+}

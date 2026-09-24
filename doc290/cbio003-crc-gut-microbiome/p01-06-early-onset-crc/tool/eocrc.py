@@ -24,7 +24,7 @@ G3: LOCO over all 11 cohorts, all ages, CRC vs control; features OLS-residualize
 Amendments vs spec: entropy balancing replaced by age-stratum restriction of controls (BMI is
   missing for most samples); TCGA tissue layer not used; 'shifted' classifier (stratum thresholds)
   not separately scored because AUC is threshold-free.
-Usage: python3 eocrc.py <data_dir> <results_dir>
+Usage: python3 eocrc.py <data_dir> <results_dir> [comma-separated studies to exclude]
 """
 import sys, os, json
 import numpy as np, pandas as pd
@@ -34,6 +34,8 @@ from sklearn.metrics import roc_auc_score, r2_score
 SEED=7
 data,out=sys.argv[1],sys.argv[2]; os.makedirs(out,exist_ok=True)
 M=pd.read_csv(os.path.join(data,'samples.csv'),index_col=0)
+EXCL=sys.argv[3].split(',') if len(sys.argv)>3 else []  # data-integrity exclusion (see REPORT), gates unchanged
+M=M[~M.study_name.isin(EXCL)]
 A=pd.read_csv(os.path.join(data,'species_relab.csv.gz'),index_col=0).loc[M.index]
 A=A.loc[:,(A.values>0).mean(0)>=0.01]; X=np.log10(A.values/100+1e-5)
 y=(M.study_condition=='CRC').astype(int).values; coh=M.study_name.values; age=M.age.values.astype(float)
