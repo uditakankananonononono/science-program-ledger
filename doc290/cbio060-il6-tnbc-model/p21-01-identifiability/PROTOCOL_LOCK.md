@@ -36,3 +36,13 @@ amendments below are locked now, before any identifiability, ensemble, or fit re
   that observable's observed values); G3 passes only if all three observables are <= 0.2.
 - Failure rule (spec): if G2 fails, run a greedy D-optimal-style search over candidate added measurements
   (extra time points / extra observables) for the one that most reduces top-5 rank uncertainty.
+
+## Amendment A6b - locked 2026-09-24 ~11:30 IST, BEFORE any G2/G3 evaluation
+Observed while building the ensemble (no gate quantity computed yet): the A6 independence sampler accepted
+3 of 20,000 draws. The Gaussian (FIM+prior)^-1 proposal is far too wide along sloppy directions; the
+linear FIM picture breaks down there (itself recorded as a finding). Replacement sampler, same target set:
+random-walk Metropolis on log10 p with target density = prior N(nominal, 1 decade) restricted to
+chi2(theta)-chi2(nominal) <= 47.40; proposal N(0, (2.38^2/33) * 0.05 * (FIM+prior)^-1), step scale adapted
+during a 1,000-step burn-in only (target acceptance 0.2-0.4), then 3,000 steps thinned every 10 -> 300
+members. Solver failures count as rejections; members whose target screen fails to integrate are dropped
+and counted. Seed 2101. Everything else (A7 score, G2/G3 criteria) unchanged.
