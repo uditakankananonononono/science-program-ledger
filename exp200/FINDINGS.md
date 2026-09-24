@@ -136,3 +136,11 @@ match the 340-dim multimodal stack on Dset_164 (0.669 vs 0.623). Unlike evolutio
 covariation (PSSM added +0.002 over ESM-only in 015), geometry is NOT already internalized
 by the small PLM - the first orthogonal feature block in this task. (Locked +0.03-both bar
 still missed on Dset_72 by 0.0032: boundary stands.)
+
+## 13. Outcome complexity is a cell-type/assay-regime property (020F)
+On clean data, sequence-determined outcome complexity is a cell-type/assay-regime property,
+not a library-design property - inDelphi-scale predictability (0.783 mESC) collapses in
+primary T cells (0.196) and Bae-MH mechanism dominance does not transfer (020F). The frozen
+K562 transport number (0.337) sits between 020's U2OS transport (0.657) and its T3
+cross-library fail (0.279); the weak T-cell signal is not a depth artifact
+(complexity-depth rho 0.387 post-floor).
