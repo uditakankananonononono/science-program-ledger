@@ -55,3 +55,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 48 | ic50-4pl-vs-interpolation | RES-3 | done - NEGATIVE: G1+G3 FAIL (interp beats free 4PL at Hill 1), G2+G4 PASS; amendment A off-grid P1 FAIL, P2+P3 PASS | 2026-09-24T08:08Z |
 | 50 | trial-peeking-pocock | RES-3 | done - G1-G3 PASS (peeking type-I 0.195 -> Pocock 0.050), G4 FAIL narrow (power 0.743 vs 0.750 floor) | 2026-09-24T08:09Z |
 | 52 | missing-mar-cc-vs-imputation | RES-3 | done - G1-G4 all PASS (CC bias -0.35; reg-imp +0.002; IPW -0.001; mean-imp SD 0.70; reproduction) | 2026-09-24T08:09Z |
+| 54 | epi-growth-rate-poisson-vs-loglinear | RES-3 | claimed - protocol in prep | 2026-09-24T08:10Z |
