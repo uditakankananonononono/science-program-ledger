@@ -23,3 +23,14 @@ PASS if G2+G3+G4.
 
 ## Failure policy
 Negatives preserved; pivots via locked amendments.
+
+---
+
+# AMENDMENT 1 (locked before pivot run on FRESH seed 67)
+Original design degenerate: 40% per-position resampling leaves ~0.6^25 ~ 3e-6 chance any 25-mer survives between family members, so every target had unique baits and cover ~= 200 (greedy/LB = 1.0 trivially, G3 uninformative). Biology has ~95-98% identical family members; 15-25-mer sharing requires that.
+Pivot P (fresh seed 67): bait length 15; within-family per-position identity 0.95 (=> ~46% of 15-mers shared pairwise); 60% family-consensus positions also resampled BETWEEN families to keep cross-family sharing low.
+- P1: greedy covers all 200 targets.
+- P2: greedy size <= 0.6x random median (greedy earns it).
+- P3: greedy/LB <= 2.0 (near-optimal on shaped instance).
+- P4: family structure exploited: average targets covered per chosen bait >= 3 (vs 1.0 in the degenerate original).
+PASS if all.
