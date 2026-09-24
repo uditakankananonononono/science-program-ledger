@@ -1,0 +1,252 @@
+{
+ "n_genes": 11755,
+ "n_stable": 264527,
+ "ktsp_k": 9,
+ "train_flip": 1.0,
+ "ext": {
+  "GSE38713": {
+   "n1": 15,
+   "n0": 13,
+   "flip": 0.741025641025641,
+   "ktsp": 0.6717948717948719
+  },
+  "GSE9452": {
+   "n1": 13,
+   "n0": 5,
+   "flip": 0.7076923076923076,
+   "ktsp": 0.7692307692307693
+  },
+  "GSE59071": {
+   "n1": 23,
+   "n0": 11,
+   "flip": 0.907114624505929,
+   "ktsp": 0.8537549407114624
+  },
+  "GSE16879": {
+   "n1": 8,
+   "n0": 6,
+   "flip": 0.8749999999999999,
+   "ktsp": 0.8541666666666667
+  }
+ },
+ "mean_flip": 0.7852775244079592,
+ "mean_ktsp": 0.7649268605790346,
+ "G1": false,
+ "G2": true,
+ "enrichment": {
+  "HALLMARK_FATTY_ACID_METABOLISM": {
+   "k": 2,
+   "genes": [
+    "ACSL4",
+    "VNN1"
+   ],
+   "p": 0.6367731414017322
+  },
+  "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+   "k": 0,
+   "genes": [],
+   "p": 1.0
+  },
+  "HALLMARK_INFLAMMATORY_RESPONSE": {
+   "k": 9,
+   "genes": [
+    "APLNR",
+    "CHST2",
+    "CXCL11",
+    "CXCL8",
+    "FPR1",
+    "ICAM1",
+    "ITGA5",
+    "PDPN",
+    "PTAFR"
+   ],
+   "p": 0.17695789912080614
+  }
+ },
+ "G3": false,
+ "pair_genes": [
+  "ABAT",
+  "ACSF2",
+  "ACSL4",
+  "ADGRA3",
+  "ADGRG6",
+  "AMPD1",
+  "APLNR",
+  "APOBEC3B",
+  "APOL1",
+  "APOL3",
+  "BAIAP2L2",
+  "BICC1",
+  "C2",
+  "C4BPB",
+  "CCL4",
+  "CD38",
+  "CDH11",
+  "CDH3",
+  "CFB",
+  "CHST11",
+  "CHST2",
+  "CNGA1",
+  "CORO1A",
+  "CTSK",
+  "CWH43",
+  "CXCL11",
+  "CXCL3",
+  "CXCL8",
+  "CXCR2",
+  "CYP2B6",
+  "CYP2B7P",
+  "DDC",
+  "DEPTOR",
+  "DHRS11",
+  "DUOX2",
+  "DUSP4",
+  "ELK3",
+  "ETNK1",
+  "FAIM2",
+  "FAM189A1",
+  "FAP",
+  "FPR1",
+  "FRMD1",
+  "FUT8",
+  "GBA3",
+  "HOXB6",
+  "HS3ST3B1",
+  "HSD3B2",
+  "HSPB3",
+  "ICAM1",
+  "IL1RN",
+  "INPP5J",
+  "ITGA5",
+  "ITGB2",
+  "KCND3",
+  "KDELR3",
+  "LCP1",
+  "LEFTY1",
+  "LILRB3",
+  "LOXL2",
+  "LRRC19",
+  "MADCAM1",
+  "MMP3",
+  "MMP7",
+  "MMP9",
+  "MX2",
+  "NAALADL1",
+  "NAT1",
+  "NPY",
+  "P2RY1",
+  "PANK3",
+  "PAQR5",
+  "PARP8",
+  "PBLD",
+  "PCLO",
+  "PDE6A",
+  "PDPN",
+  "PIP5K1B",
+  "PLK2",
+  "PNLIPRP2",
+  "PRRX1",
+  "PTAFR",
+  "PTGES",
+  "RGCC",
+  "RPS6KA6",
+  "RUNDC3B",
+  "S100A12",
+  "S100A8",
+  "SASH3",
+  "SCUBE2",
+  "SEMA5A",
+  "SLC22A18AS",
+  "SLC3A1",
+  "SLC5A1",
+  "SLC6A14",
+  "SNX10",
+  "SPINK2",
+  "TAP2",
+  "TGFB3",
+  "TGM2",
+  "TNC",
+  "TNIP3",
+  "TRIM29",
+  "TSC22D3",
+  "TWIST1",
+  "UGT2A3",
+  "UGT8",
+  "VAV1",
+  "VAV3",
+  "VNN1"
+ ],
+ "top_pairs": [
+  [
+   "NPY",
+   "PRRX1"
+  ],
+  [
+   "DHRS11",
+   "IL1RN"
+  ],
+  [
+   "P2RY1",
+   "IL1RN"
+  ],
+  [
+   "CWH43",
+   "LEFTY1"
+  ],
+  [
+   "SEMA5A",
+   "IL1RN"
+  ],
+  [
+   "UGT8",
+   "IL1RN"
+  ],
+  [
+   "AMPD1",
+   "TGM2"
+  ],
+  [
+   "SCUBE2",
+   "CCL4"
+  ],
+  [
+   "DHRS11",
+   "SLC5A1"
+  ],
+  [
+   "LRRC19",
+   "IL1RN"
+  ],
+  [
+   "HSPB3",
+   "S100A12"
+  ],
+  [
+   "RUNDC3B",
+   "PRRX1"
+  ],
+  [
+   "TGFB3",
+   "PRRX1"
+  ],
+  [
+   "ACSF2",
+   "SASH3"
+  ],
+  [
+   "DDC",
+   "IL1RN"
+  ]
+ ],
+ "nominated_pair": [
+  "NPY",
+  "PRRX1"
+ ],
+ "nom_train_auc": 0.9942528735632183,
+ "nom_ext": {
+  "GSE38713": 0.5128205128205128,
+  "GSE9452": 0.5692307692307692,
+  "GSE59071": 0.7312252964426877,
+  "GSE16879": 0.37499999999999994
+ }
+}

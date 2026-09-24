@@ -105,6 +105,7 @@ tool, not a gate.
 - **Injury barcode = repair clock (155)**: leave-one-organ-out 25-gene barcode 0.82 vs Hallmark inflammatory 0.79 (+0.03, below locked +0.05); external kidney RNA-seq 0.60; genes are proliferation + myeloid + matrix (days-scale repair), blind to 0-120 min jejunal ischaemia-reperfusion.
 - **Sparse-model counterfactuals collapse to global importance (159)**: L1 UC model (external AUROC 0.997) flips after about 2 genes; per-patient CFs match infliximab-induced changes 0.88 but a pairing-shuffle null gives 0.85 (p=0.26). CFs read out healing (responders 0.88 vs non-responders 0.59), but carry no patient-specific signal.
 - **Unordered residue matching is worse than mean-pooling (172F)**: per-residue ESM-2 8M max-match fold search 0.10/0.12 vs mean-pool 0.14/0.18 on two splits (p=0.036/0.009); residue detail only helps with an order-preserving alignment.
+- **Order flips fix negative-space transport (157F)**: stably ordered pairs that flip in UC score 0.71-0.91 across 3 externals (157 residual couplings 0.46-0.84); only +0.02 over k-TSP; flipped pairs are stromal/inflammatory, not epithelial-metabolic.
 
 ## 9. Mechanism-targeted repairs act only on residual homologs (031F)
 Both canonical fixes for the 031 AMP boundary (explicit Cys/cationic motif features; per-family
