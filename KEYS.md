@@ -280,3 +280,6 @@ All pubkeys ssh-keygen -lf validated pre-add; each install verified on-page (tit
 - ADD mega27-13b-deep-rl-4-5: `revival-mega27-13b-deep-rl-4-5-20260926` SHA256:4DkAH/9YalzaFt6noaHqZvFHb06bRJS3CI2F0rpSAzA R/W.
 - ADD mega27-07-pancreatic-ai-and-codon-optimizer: `revival-mega27-07-pancreatic-ai-and-codon-optimizer-20260926` SHA256:gA5CxwuiTz/qASSWwQQ1X9hbcnPA5TMwrVod2tTT21k R/W.
 - ADD sugarcode-ai: `instinct-task-mega27-01-readonly-sugarcode-ai` SHA256:acpnbB/Wn5sQkbuJ2W2ZeVR5cN5u188bhN7OH2KNkF8 READ-ONLY (write checkbox deliberately unchecked; validation builder clones/executes only, feeds reports to product lane).
+
+## 2026-09-26 16:20 IST — superseded family key revoked on mega27-09a
+- REVOKE: deploy key `instinct-mega27-peptide-protein-revival` (SHA256:88InLQq+t+h7JaPlQ45qF2a++QKlV0DlYPA1CaJfRwY) removed from mega27-09a-amp-design-discovery (Main's explicit relay 16:20:27 naming the key; superseded by per-repo `instinct-revival-mega27-09a`). Verified on-page: "successfully deleted", repo now holds exactly 1 deploy key (the per-repo replacement, R/W).
