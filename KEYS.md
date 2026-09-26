@@ -233,3 +233,8 @@ Account-level mega27 builder keys added 2026-09-24 20:54-20:57 IST after GitHub 
 
 ## 2026-09-26 15:47 IST — mega27-19-xenobot-causal-networks builder key
 - ADD: deploy key `mega27-19-xenobot-causal-networks-20260926` on mega27-19-xenobot-causal-networks - ssh-ed25519 SHA256:A3wBce7wdZiOgbTF8nzMZ6SntsrTg/az+qCMXvKpmfk, Read/write, added Sep 26, 2026 (standing "You add" builder-key grant; ssh-keygen -lf validated pre-add, fingerprint matched Main's relay exactly). Verified on-page: keys list shows the key Read/write with Delete control; repo has exactly 1 deploy key.
+
+## 2026-09-26 15:51 IST — mega27-26a-xenobot-evolution DELETED (user order "delete previosu xenobot project" 15:43:58; pick "first one delete" 15:48:27, Main-confirmed mapping 15:49:33)
+- DELETE: uditakankananonononono/mega27-26a-xenobot-evolution ~15:51 (SSH ls-remote "Repository not found" + repo-list absence verified). Inventory: 63 commits, sole branch main @ b64f56ad030e6576f5fa6e2a4477b86d49649dab, 2.01MiB pack. Project: xenobot evolution in a 2-D contact-clearing simulator (weird-science item 26a).
+- BACKUP (byte-exact verified): backup-20260926-26a.bundle = 2,097,303 bytes, single file in Drive folder 1D-yJqoTmmIb9EvrTHN0LiVYfZIajKGeP (file id 1pEGpprPhlT0t46ua8CvB9xTjM7Gdzo4j); re-download sha256 7e8d79c595eead4f7cb581d9314a7f113ce4026264b5789fdabbd61a443197c8 = original; git bundle verify "records a complete history" (main b64f56a + HEAD).
+- NOT deleted (second candidate, kept): mega27-19-medical-microbots-xenobots - she asked for its results instead.
