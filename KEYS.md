@@ -429,3 +429,7 @@ mega27-25-postpartum-depression-biomarkers: dafbe79e8407 -> e67c3de7a80d7e31493c
 
 ## 2026-09-27 01:10 IST — chagas standalone builder key added
 ADDED R/W on mega27-25-chagas-biomarkers (relayed by Main 01:09:46): `builder-25-chagas-standalone` SHA256:EbB4NNjrVcuRZUpj6Xus/YtkrYeR7TA0Bz4qhs+MmdE. On-page fingerprint matches ssh-keygen -lf of the relayed pubkey exactly. Existing mega27-25-chagas-builder-20260927 (SHA256:TU4fu4...) left intact.
+
+## 2026-09-27 01:51 IST — chestnut + PPD update bundles pushed (bundle-relay route)
+- mega27-24-blight-resistant-chestnut: 3dda31a9e45a -> c55ca71b3e525d3db8ea60cc31c1b9b1c8be3c73 "Audit independent chestnut cohort metadata and accession mismatch" (bundle verified complete history; FF vs live remote 3dda31a; 1 commit; metadata-only 2009-cohort accession/species mismatch screen, lane reports 4 tests pass). Also readback for Main: lane C's earlier pushes DID land despite 'Repository not found' errors - 7dea7d3 -> 88db27b -> 3dda31a all on main; 88db27b was created after a failed audit test per lane C and is flagged as not-valid content (still in history, FF-only).
+- mega27-25-postpartum-depression-biomarkers: e67c3de7a80d -> 68a688483260e51e648620fc3621d50c1534ff2a "Measure source-control definition sensitivity in exposed PPD cohort" (bundle verified; FF vs live remote; 1 commit; label-sensitivity run: 16v27 strict contrast, 601/9,744 effects reverse sign mostly near-zero, no gene passes BH-FDR in either contrast, min q 0.368 broad / 0.708 strict).
