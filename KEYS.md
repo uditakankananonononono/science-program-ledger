@@ -332,3 +332,6 @@ Trigger (Main relay 20:17 + 20:31 URGENT): revival B sandbox rebuilt ~19:55-20:1
 - mega27-09d-oncovax-pep: REVOKED `instinct-revival-mega27-09d` (SHA256:OxxCVT+OaOQjWF24xz73TH6yIK8H8Vw4qGnwWar1DxU); ADDED `mega27-09d-deploy-20260926` SHA256:ixE0cHzgxPTRdxLTuqepB0xsOzUp+4+NP88/wr0XaqE R/W.
 - mega27-09e-resistpep: REVOKED `instinct-revival-mega27-09e` (SHA256:QqbJqYYpVb/a68TIfX11j9bYvGJulD7xEK3GI3FmLq4); ADDED `mega27-09e-deploy-20260926` SHA256:MXJ2ViTw8sCOkuj6S5P1LmHImIQn2QH/NSFEnpB6kAs R/W.
 Note: public halves of the two older-generation 11a/11b keys are not held locally (predate today's wave); restoration, if ever needed, requires a fresh pubkey relay.
+
+## 2026-09-26 21:33 IST — mega27-27 rotation PENDING (browser budget)
+Main relay 21:33:14 (item-27 sandbox-wipe pattern): fresh pubkey validated (ssh-keygen -lf SHA256:QVbFQ6KjY6nWAMfHmGjES3gvbKP6vgiu4AXzgRongwk, title item27-rebuild-20260926). Install R/W on mega27-27-isef-bioinf-derived-tools + revoke dead previous builder key (`mega27-27-builder`, Main's explicit removal instruction) is PENDING: browser daily budget exhausted until local midnight. One-shot wake set 2026-09-27 00:05 IST. Lane's local HEAD 4a9866d590750db6a115714ab3e1d27a32247753 (2 ahead of published b79f514) - interim restore path via Drive bundle + orchestrator push (proven on mega27-13 at 20:46).
