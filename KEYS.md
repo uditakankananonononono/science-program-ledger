@@ -342,3 +342,8 @@ Main relay 21:33:14 (item-27 sandbox-wipe pattern): fresh pubkey validated (ssh-
 
 ## 2026-09-26 21:42 IST — 4 OpenClaw+Hermes keys PENDING (same 00:05 wake)
 Main relay 21:42: ADD-ONLY R/W deploy keys from OpenClaw+Hermes integration agent (distinct from Jev set - keep both): shared-models SHA256:1VPeEnB60T3thBr4OnBEhZU6eJywT8yAbBERO6Tn9us, atlas-ai SHA256:bUnEG1q7tKWR/8QqAL3vdoBXBy+o+E89zEmf+yf7IBA, meemee SHA256:ZR8jxs1N9woWT5PpS4ycZlww4IVY95YwLkJDgrdBWeU, sugarcode-ai SHA256:F0Tmqo0/n4NZvOHC05Q5by5ndhKYIJsJ0RdSrmOf9rc. All ssh-keygen -lf validated. 00:05 rotation now 9 adds + 1 revoke (mega27-27-builder).
+
+## 2026-09-26 21:49 IST — item-27 restore #3 + biomarkers-25 false alarm + flakiness rule
+- RESTORE: mega27-27-isef-bioinf-derived-tools main 6fa666a7 -> 7ef135bcd70f8ecfb7d2e1a9e29c307fd1985e81 (bundle item27-rebuild-20260926-2149.bundle, sha256 1f7807df...bef79e5 matched Main's stated hash; ancestry-verified fast-forward, no force). 1 commit: 7ef135b "Log published PB-PSB1 DGR genome and authentic baseline runtime block".
+- FALSE ALARM: biomarkers-25 lane reported 2x "Repository not found" on mega27-25-biomarkers-underserved-diseases at 21:48; orchestrator check 21:49 found the repo fully intact (HEAD 9c5293ab82529d477cec9badd109af106bed25b6, all builder-25-* branches present, no unauthorized change); lane's third ls-remote succeeded - transient GitHub flakiness, NOT a wipe or key removal. No restore, no key change.
+- RULE (Main 21:49): GitHub read flakiness is recurring (slug typos earlier, transient 404s now) - always TRIPLE-CHECK ls-remote before declaring a wipe/access-loss.
