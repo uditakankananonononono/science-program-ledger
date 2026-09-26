@@ -399,3 +399,8 @@ ADDED R/W on mega27-25-biomarkers-underserved-diseases: `builder-25-chagas-reviv
   - weird-09-radiation-toolkit: `lane29-paper-09` SHA256:t9r2pVMGMNe5cDtYSLTMgXHQy4U1SKMeiY7LzdIavLI
   - weird-11-ai-evolved-biofactories: `lane29-paper-11` SHA256:nLIfuLq4AKpvba081xYctXdhmRqWHabGu+tU7F0Sb1s
 - IC readback resolved (Main 00:43:04): mega27-25-interstitial-cystitis-biomarkers remote is EMPTY - ls-remote 0 refs (exit 0) + fresh clone warns empty. No e9a5ba5, no ae0635f on the remote; the lane's pushes have not landed. (Note: my 00:36 report said empty x3; no e9a5ba5 was ever read by me.)
+
+## 2026-09-27 00:51 IST — IC repo recreated + fresh builder key (Main 00:48:43 / 00:50:56 / 00:51:19)
+- mega27-25-interstitial-cystitis-biomarkers: repo 404'd persistently for the lane despite valid auth (empty repo, 0 refs verified x3 + clone). DELETED (verified empty first - nothing lost) and RE-CREATED private/empty under the same name; ls-remote reachable (exit 0, 0 refs).
+- Original key body re-add failed "Key is already in use" (deleted repo's key record lingering GitHub-side); lane generated a FRESH keypair per Main 00:51:19. ADDED R/W: `mega27-25-interstitial-cystitis-builder-20260927b` SHA256:fn2A0E1orcLYOajrmjBGGoFFaeohwWYmYbc+9SAHagc (ssh-keygen-validated vs Main's stated fingerprint, piped from file, verified on-page: exactly 1 deploy key, Never used, Read/write). Lane pushes ae0635f next.
+- Tonight's truth rule (Main 00:50:56): never trust a push error or a single ls-remote; only key-ops readbacks or triple ls-remote over minutes count. Lane-29's "failed" pushes (W02 1a001e3, W09 e20f718, W11 4ab1470) actually landed.
