@@ -418,3 +418,8 @@ PUSHED this batch (each: git bundle verify OK, head matched Main's stated prefix
 - mega27-25-me-cfs-biomarkers: a03275bf700627a0f2e7a75ecd44cb031871b713 (first content)
 - mega27-25-fibromyalgia-biomarkers: a611a1f413aa6d3c0b7f3cea026799db25c4884b (first content)
 Skipped per Main: chagas bundle (shared-main snapshot only), PPD bundle (dafbe79 already remote-confirmed). All 10 disease repos now have content. NOTE: `orchestrator-ic-transport-test` deploy key (SHA256:QkadDYAEucPXsp5VGEAVvyK9oHEN2rKliv4jwYiCHHs) remains on the IC repo from the transport test - removal pending Main's explicit instruction.
+
+## 2026-09-27 00:58 IST — transport-test key removed + chagas migration closed
+- REVOKED on mega27-25-interstitial-cystitis-biomarkers (Main's explicit 00:57:47 instruction): `orchestrator-ic-transport-test` SHA256:QkadDYAEucPXsp5VGEAVvyK9oHEN2rKliv4jwYiCHHs. Verified absent on-page; lane's 20260927b key intact. Local keypair deleted from orchestrator sandbox.
+- CHAGAS: standalone repo was empty; lane bundle was only a shared-main snapshot. Fetched builder-25-chagas branch from the shared repo and pushed to mega27-25-chagas-biomarkers main: 536a904664f68965352f45401204b335d89d982f "Services 38-40: NCBI Datasets v2 host-gene reports, IntAct second-source interactions, WikiData entity resolution - DISTINCT gate 40/40 MET" (newer than the e4644eb Main cited). ls-remote verified. ALL 10 disease repos now genuinely migrated.
+- Bundle relay is the standing route for the biomarkers lane until its transport recovers (Main 00:57:47).
