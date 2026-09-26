@@ -454,3 +454,6 @@ Item-27 found a metric flaw in its shared helper average_precision: ties are cre
 
 ## 2026-09-27 04:47 IST — rice harmonization bundle pushed
 mega27-24-rice-oral-vaccine: 72ae19deb578 -> d68383c3a1350f8e515e718da2c7cb0a0e808484 "Fix metabolite dedupe protocol; cross-study pooling ruled not defensible" (bundle verified complete history; FF vs live remote; 1 commit; dedupe/normalization protocol in code, MTBLS437 212->104 analytes, 288 31->31, 801 split 205->62/splitless 706->199; verdict: cross-study quantitative pooling not defensible, allowed use = analyte-presence overlap + within-study contrasts; lane reports 8 tests pass). ls-remote verified.
+
+## 2026-09-27 04:51 IST — PPD update 5 bundle pushed
+mega27-25-postpartum-depression-biomarkers: 6368d9b18efe -> b72a6776d11eb7cf5453a51bb4930506fe3fa2e3 "Document public-access and assay hold on 2026 PPD PBMC cohort" (bundle verified complete history; FF vs live remote; 1 commit; public-data hold: Sept 16 PBMC RNA-seq paper claims PRJNA1456230 but NCBI/ENA return zero records; reviewer-token link deliberately unused; assay/task mismatch documented; prior art not validation). ls-remote verified.
