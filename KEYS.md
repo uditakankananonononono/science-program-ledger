@@ -378,3 +378,6 @@ Separate-repo gate of the re-bound master spec. All 10 repos PRIVATE + empty und
 - mega27-25-interstitial-cystitis-biomarkers: mega27-25-interstitial-cystitis-builder-20260927 SHA256:Xbv/gDdlLnJ7t3HU87T7LU07d9N0vYT+U36PHWRHFFQ
 - mega27-25-chagas-biomarkers: mega27-25-chagas-builder-20260927 SHA256:TU4fu4MRucqUPm3sdEOjlLYdDqx1632rLJNw0DD4zCE
 Shared repo mega27-25-biomarkers-underserved-diseases INTACT (main 343705c888cf at 00:21, key mega27-25-deploy-20260925 SHA256:S/DjPBrS+KBQtqVLvSYebdnSbRi8iciPgkwZGOBORqA present); nothing deleted, no force-pushes. Lane's 00:20-00:21 SSH failures = recurring transient flakiness (4th instance tonight) - its own pushes kept landing throughout. Lane owns content/manifests; builder-only branches integrate via the lane.
+
+## 2026-09-27 00:33 IST — builder-25-chagas-revival key on shared biomarkers repo (Main relay 00:33:20)
+ADDED R/W on mega27-25-biomarkers-underserved-diseases: `builder-25-chagas-revival` SHA256:DntjGQEbdbxnqL8eJUCdrFq9A68awQa5gfx+ZmHVmJ4. ssh-keygen-validated pre-install, piped from file, fingerprint-verified on-page (Never used, Read/write). Standing builder-key grant, re-affirmed tonight.
