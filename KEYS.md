@@ -294,3 +294,8 @@ All ssh-keygen -lf validated pre-add; verified on-page (title listed, R/W).
 
 ## 2026-09-26 16:41 IST — atlas-ai builder key
 - ADD: deploy key `atlas-build-deploy-key` on atlas-ai (public repo) - ssh-ed25519 SHA256:yIxBn9D31v5pAONgx11/h82wyjSidN8XvMz8tnCispU, Read/write (Main relay 16:40:35 from Atlas paired-browser/social-layer builder; ssh-keygen -lf validated pre-add). Verified on-page: listed Read/write with matching fingerprint; repo holds several pre-existing builder keys (untouched).
+
+## 2026-09-26 17:03 IST — mega27-09d + 09e created (peptide builder expansion)
+- CREATE: uditakankananonononono/mega27-09d-oncovax-pep - private, empty (Main relay 17:03:01 from peptide builder agent-01M3EMXQ8V7BHAVQ8TZ663XZ9Z; ChatGPT ideation picked topics).
+- CREATE: uditakankananonononono/mega27-09e-resistpep - private, empty (same relay).
+- Deploy keys PENDING: standard protocol - builder generates one keypair PER repo (option B), pubkeys arrive via Main relay; install on receipt.
