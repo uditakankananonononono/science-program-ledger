@@ -448,3 +448,6 @@ mega27-24-aquadvantage-salmon: a4168d676f62 -> 28aff13ef6185212d7bb40aa07b026899
 
 ## 2026-09-27 03:51 IST — PPD update 4 bundle pushed
 mega27-25-postpartum-depression-biomarkers: baa92b3fc3e6 -> 6368d9b18efe101b49e61d73d644d155caafa439 "Qualify PPD sign flips and distinguish published prediction task" (bundle verified complete history; FF vs live remote; 1 commit; sensitivity correction: of 601 nominal sign reversals only 2 have |Hedges g|>=0.1 in both control scopes, 0 at >=0.2 - 6.17% headline is mostly near-zero crossing; new code/tests 12 pass; prior-art note Mehta 2014's 88% is a different predictive task, not same-task benchmark). ls-remote verified.
+
+## 2026-09-27 04:09 IST — ADVISORY: average_precision tie-handling flaw (item-27)
+Item-27 found a metric flaw in its shared helper average_precision: ties are credited at within-tie position instead of threshold-grouped. On a tied fixture sklearn gives 0.8333 vs the helper's 0.5. Item-27 is fixing its own copy and rerunning pinned evals. ADVISORY to all lanes: any lane with a custom AP implementation must check tie-handling before trusting exact APs; validate against sklearn.metrics.average_precision_score on a tied fixture before reporting AP numbers.
