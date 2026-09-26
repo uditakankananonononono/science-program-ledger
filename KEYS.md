@@ -439,3 +439,6 @@ mega27-24-blight-resistant-chestnut: c55ca71b3e52 -> ef58a9869b6c27d0bd17264be11
 
 ## 2026-09-27 02:32 IST — rice seed-bank replay bundle pushed
 mega27-24-rice-oral-vaccine: ae913d90d84c -> 72ae19deb578b691cdd00372ad1eafdb0f686586 "Replay 477 shared seed-bank proteomics counts from original supplement" (bundle verified complete history; FF vs live remote - lane had pushed ae913d90 itself past scaffold 7b9bc1c; 1 commit; MucoRice 51A Additional file 3 replay, 477 rows, raw PSM R2 0.9815 vs authors' 0.982, log1p R2 0.852 scale sensitivity, lane reports 7 tests pass). ls-remote verified.
+
+## 2026-09-27 02:51 IST — PPD bundle #3 pushed
+mega27-25-postpartum-depression-biomarkers: 68a688483260 -> baa92b3fc3e6e06567ebfae38abde368424393c3 "Rebuild PPD exposed matrix exactly from hashed GEO raw sources" (bundle verified complete history; FF vs live remote; 1 commit; reproducibility rebuild: GSE45603 series matrix + GPL10558 annotation re-fetched hash-pinned, rebuild_gse45603.py reconstructs 9,744-gene matrix exactly, lane reports 12 tests pass. Documented caveat: historical probe selection uses all 210 samples before column selection, not fold-isolated for a future classifier). ls-remote verified.
