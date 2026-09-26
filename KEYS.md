@@ -189,3 +189,8 @@ Account-level mega27 builder keys added 2026-09-24 20:54-20:57 IST after GitHub 
 - NOTE: Main's first relay of this key was mistyped by the builder (body ending ...MGrZ9Nd0gdkaDoTdnb8jIwRZuKMDePA6Tc88ZhaOyGx, fp SHA256:ePvK7myCPzpYKVBPDcrhgNQiVQEO9P/fn0Mq5hPEEvs). It was validated locally only and NEVER added anywhere. Only the corrected key (read from the builder's .pub file) was added.
 - Discovery: the repo had ZERO deploy keys before this add — the lane had been pushing via the account-level laneD key. Post-state: exactly one builder key on the repo (write).
 - Repo state: main afe42ac ("commit final paper PDF and regenerated bundle").
+
+## 2026-09-26 14:02 IST — item-22 project replacement (user order 13:58 "DELETE THE OLD PROJECT" via Main)
+- DELETE: repo uditakankananonononono/mega27-22-dreams-computational (old DREAMING project - DreamBank dream-content analysis - superseded by her new sleep-EEG neurodegeneration direction). Pre-delete verification: single branch main @ 27dd590, no other refs/tags, nothing unmerged; sealed head B22@5c09719 not an object in this repo (no seal anchor destroyed); full history preserved in Drive (backup-20260925d-22.bundle list-heads = exact HEAD 27dd590; paper MEGA27-22-50p.pdf/docx also in Drive). Deletion verified live: API 404.
+- CREATE: uditakankananonononono/mega27-22-sleep-eeg-neurodegeneration - private, empty (no README/gitignore/license; builder scaffold staged per Main).
+- ADD: deploy key `dreaming22-builder-20260926` on uditakankananonononono/mega27-22-sleep-eeg-neurodegeneration - ssh-ed25519 SHA256:vkVW7jUGTA/drbMmSQAYR3rdLBiSfwCruVt+iR2oUvM, Read/write, added Sep 26, 2026 (standing builder-key grant; ssh-keygen -lf validated pre-add). Verified on-page: SSH, Read/write, Delete button present.
