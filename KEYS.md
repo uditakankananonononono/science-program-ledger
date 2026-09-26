@@ -291,3 +291,6 @@ All ssh-keygen -lf validated pre-add; verified on-page (title listed, R/W).
 - ADD mega27-18-mirna-research: `revival-18-mirna-research-20260926` SHA256:udXLPJk9hCpzwwJWPv8wYQ36Hj6cenQRolAyi9F/05Q R/W.
 - ADD mega27-17-drug-synergy-biclonal-cart: `revival-drug-synergy-20260926` SHA256:cnzn5NlN5gS6UdpyS3kRWiNxlIqOJRlyuP/4A+obfZo R/W.
 - ADD mega27-17s-spatial-morphoscan: `revival-spatial-morphoscan-20260926` SHA256:4PnT1beiO4VRktF76rA5ocyuk+Xj6/b1S9F1IzAkQCY R/W.
+
+## 2026-09-26 16:41 IST — atlas-ai builder key
+- ADD: deploy key `atlas-build-deploy-key` on atlas-ai (public repo) - ssh-ed25519 SHA256:yIxBn9D31v5pAONgx11/h82wyjSidN8XvMz8tnCispU, Read/write (Main relay 16:40:35 from Atlas paired-browser/social-layer builder; ssh-keygen -lf validated pre-add). Verified on-page: listed Read/write with matching fingerprint; repo holds several pre-existing builder keys (untouched).
