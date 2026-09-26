@@ -426,3 +426,6 @@ Skipped per Main: chagas bundle (shared-main snapshot only), PPD bundle (dafbe79
 
 ## 2026-09-27 00:58 IST — PPD update bundle pushed (bundle-relay route)
 mega27-25-postpartum-depression-biomarkers: dafbe79e8407 -> e67c3de7a80d7e31493c767d91a96879d143782e "Preserve broad versus explicit euthymic source labels in PPD audit" (bundle verified complete history; FF vs live remote dafbe79; 1 commit; label-integrity correction per lane: GSE45603's 32 controls = 27 explicitly euthymic + 5 only 'condition: control'; no expression results altered). ls-remote verified.
+
+## 2026-09-27 01:10 IST — chagas standalone builder key added
+ADDED R/W on mega27-25-chagas-biomarkers (relayed by Main 01:09:46): `builder-25-chagas-standalone` SHA256:EbB4NNjrVcuRZUpj6Xus/YtkrYeR7TA0Bz4qhs+MmdE. On-page fingerprint matches ssh-keygen -lf of the relayed pubkey exactly. Existing mega27-25-chagas-builder-20260927 (SHA256:TU4fu4...) left intact.
