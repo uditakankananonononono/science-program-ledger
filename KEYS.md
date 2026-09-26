@@ -299,3 +299,10 @@ All ssh-keygen -lf validated pre-add; verified on-page (title listed, R/W).
 - CREATE: uditakankananonononono/mega27-09d-oncovax-pep - private, empty (Main relay 17:03:01 from peptide builder agent-01M3EMXQ8V7BHAVQ8TZ663XZ9Z; ChatGPT ideation picked topics).
 - CREATE: uditakankananonononono/mega27-09e-resistpep - private, empty (same relay).
 - Deploy keys PENDING: standard protocol - builder generates one keypair PER repo (option B), pubkeys arrive via Main relay; install on receipt.
+
+## 2026-09-26 17:04 IST — mega27-09d + 09e builder keys
+- ADD: deploy key `instinct-revival-mega27-09d` on mega27-09d-oncovax-pep - ssh-ed25519 SHA256:OxxCVT+OaOQjWF24xz73TH6yIK8H8Vw4qGnwWar1DxU, Read/write (Main relay 17:04:27 from peptide builder agent-01M3EMXQ8V7BHAVQ8TZ663XZ9Z; ssh-keygen -lf validated pre-add). Verified on-page.
+- ADD: deploy key `instinct-revival-mega27-09e` on mega27-09e-resistpep - ssh-ed25519 SHA256:QqbJqYYpVb/a68TIfX11j9bYvGJulD7xEK3GI3FmLq4, Read/write (same relay). Verified on-page.
+
+## 2026-09-26 17:04 IST — standing rule: iterative final audit (~10 passes)
+- RULE (user email 17:04 in "Bound - every line" thread, gmail auth checks passed, consistent with her authenticated 17:00 WhatsApp spec; via Main): before ANY candy/completion line, every line of her bound project commands is checked against actual implementation about TEN times - repeated line-by-line verification passes against live evidence, not a single audit. No completion claim goes out without that evidence trail. Filed with the 16:41 verification rules + 17:00 ChatGPT-judge novelty rule.
