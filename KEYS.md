@@ -283,3 +283,11 @@ All pubkeys ssh-keygen -lf validated pre-add; each install verified on-page (tit
 
 ## 2026-09-26 16:20 IST — superseded family key revoked on mega27-09a
 - REVOKE: deploy key `instinct-mega27-peptide-protein-revival` (SHA256:88InLQq+t+h7JaPlQ45qF2a++QKlV0DlYPA1CaJfRwY) removed from mega27-09a-amp-design-discovery (Main's explicit relay 16:20:27 naming the key; superseded by per-repo `instinct-revival-mega27-09a`). Verified on-page: "successfully deleted", repo now holds exactly 1 deploy key (the per-repo replacement, R/W).
+
+## 2026-09-26 16:25 IST — revival wave continued: 5 more per-repo deploy keys
+All ssh-keygen -lf validated pre-add; verified on-page (title listed, R/W).
+- ADD mega27-12-3d-drug-discovery: `revival-12-3d-drug-discovery-20260926` SHA256:n2lVdJm4RqHEdG1bZTZbFaxLFwNlrpf6uW1mqjOzEzg R/W.
+- ADD mega27-21-cancer-recurrence: `revival-21-cancer-recurrence-20260926` SHA256:ulp4Mc8zy2729Kn7zSigaztHxuHDjebiwswgTwYlxVY R/W.
+- ADD mega27-18-mirna-research: `revival-18-mirna-research-20260926` SHA256:udXLPJk9hCpzwwJWPv8wYQ36Hj6cenQRolAyi9F/05Q R/W.
+- ADD mega27-17-drug-synergy-biclonal-cart: `revival-drug-synergy-20260926` SHA256:cnzn5NlN5gS6UdpyS3kRWiNxlIqOJRlyuP/4A+obfZo R/W.
+- ADD mega27-17s-spatial-morphoscan: `revival-spatial-morphoscan-20260926` SHA256:4PnT1beiO4VRktF76rA5ocyuk+Xj6/b1S9F1IzAkQCY R/W.
