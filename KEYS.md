@@ -404,3 +404,17 @@ ADDED R/W on mega27-25-biomarkers-underserved-diseases: `builder-25-chagas-reviv
 - mega27-25-interstitial-cystitis-biomarkers: repo 404'd persistently for the lane despite valid auth (empty repo, 0 refs verified x3 + clone). DELETED (verified empty first - nothing lost) and RE-CREATED private/empty under the same name; ls-remote reachable (exit 0, 0 refs).
 - Original key body re-add failed "Key is already in use" (deleted repo's key record lingering GitHub-side); lane generated a FRESH keypair per Main 00:51:19. ADDED R/W: `mega27-25-interstitial-cystitis-builder-20260927b` SHA256:fn2A0E1orcLYOajrmjBGGoFFaeohwWYmYbc+9SAHagc (ssh-keygen-validated vs Main's stated fingerprint, piped from file, verified on-page: exactly 1 deploy key, Never used, Read/write). Lane pushes ae0635f next.
 - Tonight's truth rule (Main 00:50:56): never trust a push error or a single ls-remote; only key-ops readbacks or triple ls-remote over minutes count. Lane-29's "failed" pushes (W02 1a001e3, W09 e20f718, W11 4ab1470) actually landed.
+
+## 2026-09-27 00:56 IST — biomarkers push duty migrated to orchestrator (Main 00:55:08 decision)
+CAUSE: lane's git-transport 404s persisted on fresh repo + fresh key with correct auth (key last-used flipped). Transport test: fresh deploy key from MY sandbox read IC fine (exit 0) -> lane-side IP/transport is the broken leg; my account-key transport provably works. Lane now hands bundles via Main; I push.
+PUSHED this batch (each: git bundle verify OK, head matched Main's stated prefix, live-remote-empty check, fetch-then-push, ls-remote readback exact match; no force anywhere):
+- mega27-25-biomarkers-underserved-diseases (shared): 343705c888cf -> 2960853b02f9c405d952063ff8a1612d6f9921d1 (FF; 2 commits: d228455 "Pin committed disease-specific paths and hashes for repo split", 2960853 "Anchor migration hashes to committed tree, not dirty worktree")
+- mega27-25-interstitial-cystitis-biomarkers: ae0635f8c7d819de3582c6c91f787527607e0045 (first content)
+- mega27-25-endometriosis-biomarkers: 09aa7acfa6e7c0bbbbce58c6bd52f1eb49579d78 (first content)
+- mega27-25-pcos-biomarkers: 54ae18ab15d973442f8d591456f240d9961560ee (first content)
+- mega27-25-leishmaniasis-biomarkers: 4235a6d6cf58f9485f66e120f53a79da726a1264 (first content)
+- mega27-25-preeclampsia-biomarkers: ba47690cb59cc1b4e04d9dedfe0c94560f762754 (first content)
+- mega27-25-long-covid-biomarkers: ddfce77acb38a7691db655cb7a3ad4b8fecc788e (first content)
+- mega27-25-me-cfs-biomarkers: a03275bf700627a0f2e7a75ecd44cb031871b713 (first content)
+- mega27-25-fibromyalgia-biomarkers: a611a1f413aa6d3c0b7f3cea026799db25c4884b (first content)
+Skipped per Main: chagas bundle (shared-main snapshot only), PPD bundle (dafbe79 already remote-confirmed). All 10 disease repos now have content. NOTE: `orchestrator-ic-transport-test` deploy key (SHA256:QkadDYAEucPXsp5VGEAVvyK9oHEN2rKliv4jwYiCHHs) remains on the IC repo from the transport test - removal pending Main's explicit instruction.
