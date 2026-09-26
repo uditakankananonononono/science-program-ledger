@@ -436,3 +436,6 @@ ADDED R/W on mega27-25-chagas-biomarkers (relayed by Main 01:09:46): `builder-25
 
 ## 2026-09-27 01:51 IST — chestnut follow-up bundle pushed
 mega27-24-blight-resistant-chestnut: c55ca71b3e52 -> ef58a9869b6c27d0bd17264be11a6caec012f6e4 "Cross-check 2009 canker discrepancy against deposited experiment titles" (bundle verified complete history, contains c55ca71; FF vs live remote; 1 commit; firmer source check: ENA experiment titles call SRX001804 C. mollissima and SRX001799 C. dentata, reversing the paper's literal paragraph order). ls-remote verified.
+
+## 2026-09-27 02:32 IST — rice seed-bank replay bundle pushed
+mega27-24-rice-oral-vaccine: ae913d90d84c -> 72ae19deb578b691cdd00372ad1eafdb0f686586 "Replay 477 shared seed-bank proteomics counts from original supplement" (bundle verified complete history; FF vs live remote - lane had pushed ae913d90 itself past scaffold 7b9bc1c; 1 commit; MucoRice 51A Additional file 3 replay, 477 rows, raw PSM R2 0.9815 vs authors' 0.982, log1p R2 0.852 scale sensitivity, lane reports 7 tests pass). ls-remote verified.
