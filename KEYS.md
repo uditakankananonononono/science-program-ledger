@@ -260,3 +260,23 @@ All 8: bundles re-downloaded byte-exact (sha256 match) + git bundle verify "comp
 
 ## 2026-09-26 16:16 IST — mega27-25-biomarkers key: ALREADY LIVE (no-op)
 - Relayed install request (Main 16:15:53, builder agent-01M39X0ERCTCN72VNWC4J7G7MQ) for deploy key `mega27-25-deploy-20260925` SHA256:S/DjPBrS+KBQtqVLvSYebdnSbRi8iciPgkwZGOBORqA. ssh-keygen -lf matched the relayed fingerprint exactly. On-page verification: the key is ALREADY a Read/write deploy key on mega27-25-biomarkers-underserved-diseases (original-build key; repo also holds builder-25-ic, builder-25-ppd, builder-25-chagas). Re-add attempt returned GitHub "Key is already in use" = no-op. Builder is unblocked; nothing to change.
+
+## 2026-09-26 16:19 IST — revival wave: 17 per-repo deploy keys installed (option B: per-repo keypairs, Main decision 16:16:56)
+All pubkeys ssh-keygen -lf validated pre-add; each install verified on-page (title listed, correct access level). GitHub enforces deploy-key body uniqueness account-wide (proven: "Key is already in use" on duplicate body) - the earlier family/combined keys are superseded by per-repo keys per Main 16:17:18.
+- ADD mega27-03-virtual-organoid: `mega27-revival-03-builder` SHA256:XbxhK5UDQ0pOfAxUOugqazobOJUn6H7bJz1U6ceOoEU R/W (builder agent-01M3EMX3R6TXGXQKE4Q7XB1YEV; its 02 sibling key already on mega27-02).
+- ADD mega27-09a-amp-design-discovery: `instinct-revival-mega27-09a` SHA256:mnELXsVegQqCir6rk21fmKQGvC3tpnZsTstdOnaUNVc R/W. NOTE: superseded family key `instinct-mega27-peptide-protein-revival` (SHA256:88InLQq+t+h7JaPlQ45qF2a++QKlV0DlYPA1CaJfRwY) also on this repo - revoke candidate, awaiting Main's explicit instruction.
+- ADD mega27-09b-peptide-hla-cpp: `instinct-revival-mega27-09b` SHA256:OVDZQNd9NvF+n0JY7EV/blkkLz2IDdRl+vMiGSBESlQ R/W.
+- ADD mega27-09c-peptide-solubility-anticancer: `instinct-revival-mega27-09c` SHA256:1zjuzG3xICcBaeREjrbV5vQ4Jpl5f/lCFkuJdqJgtbA R/W.
+- ADD mega27-11a-protein-redesign-1-3: `instinct-revival-mega27-11a` SHA256:V+d44QbeU8XbOklZrBoclx+jDk9luXZnGGcFkEkTboA R/W.
+- ADD mega27-11b-protein-redesign-4-5: `instinct-revival-mega27-11b` SHA256:DOYEWkJ3uKjmuehOKpCRHt3eX/KLRK7YwDMl0mwt/pg R/W.
+- ADD mega27-10-dl-diagnosis-suite: `revival-mega27-10-20260926` SHA256:XlRXouKEy4DhMAvk+ylE4VOGWMvw5yB+chLsXaMMMSI R/W (family diag key never installed; superseded pre-use).
+- ADD mega27-10b-dl-diagnosis-4-5: `revival-mega27-10b-20260926` SHA256:SgmYx7VyS3VTw5ls60ajsAexKjzkMVbyjpVcH9i40J4 R/W (repo was 0-commit placeholder; builder filling diagnoses 4-5).
+- ADD mega27-16-biodataset-ml-treatment: `revival-mega27-16-20260926` SHA256:UL+YPBAOvLutQQb76Nm7bE+tqvBO8StuXkW1mYxgAA4 R/W.
+- ADD mega27-20-drug-target-prediction: `revival-mega27-20-20260926` SHA256:SZbLF2i5h9YT5jGkT263JS92C2QNV4ogoPCBjTY+1pA R/W.
+- ADD weird-11-ai-evolved-biofactories: `weird-lane-w11-20260926` SHA256:J6/bPsL414TktujMabIcgwr1umO0aM0tLszc7Ygol6E R/W (lane-29 builder; resolves weird-11 key wait).
+- ADD mega27-01-sugarcode-realdata-validation: `instinct-task-mega27-01-validation` SHA256:8iFtPX5yf+iNRJlzTQRdayAmGs5w7AO7nnBa4gBD5Ms R/W (sugarcode validation builder; commits only to mega27-01).
+- ADD mega27-14-digital-embryo: `revival-mega27-14-digital-embryo-20260926` SHA256:USs1fBKW6VuZ3GI0AfnEcS8I4Gqzkcl18uAgOmNnAbg R/W (RESOLVES the item-14 builder key pending since 2026-09-25 21:23).
+- ADD mega27-23b-dna-encoder-cyborg-cell: `revival-mega27-23b-dna-encoder-cyborg-cell-20260926` SHA256:AzKeHP82l9D8/EE6iiEzo50W5mwFZnp4GLuz+YK6KDo R/W.
+- ADD mega27-13b-deep-rl-4-5: `revival-mega27-13b-deep-rl-4-5-20260926` SHA256:4DkAH/9YalzaFt6noaHqZvFHb06bRJS3CI2F0rpSAzA R/W.
+- ADD mega27-07-pancreatic-ai-and-codon-optimizer: `revival-mega27-07-pancreatic-ai-and-codon-optimizer-20260926` SHA256:gA5CxwuiTz/qASSWwQQ1X9hbcnPA5TMwrVod2tTT21k R/W.
+- ADD sugarcode-ai: `instinct-task-mega27-01-readonly-sugarcode-ai` SHA256:acpnbB/Wn5sQkbuJ2W2ZeVR5cN5u188bhN7OH2KNkF8 READ-ONLY (write checkbox deliberately unchecked; validation builder clones/executes only, feeds reports to product lane).
