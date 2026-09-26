@@ -451,3 +451,6 @@ mega27-25-postpartum-depression-biomarkers: baa92b3fc3e6 -> 6368d9b18efe101b49e6
 
 ## 2026-09-27 04:09 IST — ADVISORY: average_precision tie-handling flaw (item-27)
 Item-27 found a metric flaw in its shared helper average_precision: ties are credited at within-tie position instead of threshold-grouped. On a tied fixture sklearn gives 0.8333 vs the helper's 0.5. Item-27 is fixing its own copy and rerunning pinned evals. ADVISORY to all lanes: any lane with a custom AP implementation must check tie-handling before trusting exact APs; validate against sklearn.metrics.average_precision_score on a tied fixture before reporting AP numbers.
+
+## 2026-09-27 04:47 IST — rice harmonization bundle pushed
+mega27-24-rice-oral-vaccine: 72ae19deb578 -> d68383c3a1350f8e515e718da2c7cb0a0e808484 "Fix metabolite dedupe protocol; cross-study pooling ruled not defensible" (bundle verified complete history; FF vs live remote; 1 commit; dedupe/normalization protocol in code, MTBLS437 212->104 analytes, 288 31->31, 801 split 205->62/splitless 706->199; verdict: cross-study quantitative pooling not defensible, allowed use = analyte-presence overlap + within-study contrasts; lane reports 8 tests pass). ls-remote verified.
