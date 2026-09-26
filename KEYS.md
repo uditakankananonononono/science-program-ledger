@@ -309,3 +309,6 @@ All ssh-keygen -lf validated pre-add; verified on-page (title listed, R/W).
 
 ## 2026-09-26 17:05 IST — final-audit rule AUTHENTICATED + external cross-check element
 - Her 17:05:14 WhatsApp reply (wamid.HBgMOTE4MTM0MDk4NTcxFQIAEhggQUMzN0FGRTQzN0VBRkNDMEIwNDkzNzIyNUE0NDVCMjYA, replying to her own 17:00 spec) authenticates the 17:04 email rule as a user mandate: ~10 word-for-word verification passes per bound command line vs actual implementation before any candy line. ADDS: "check it externally with other ai tools" - implementation claims get cross-verified with external AI tools, run through HER OWN accounts where sign-in is needed (same pattern as the ChatGPT judge loop); private project material never goes to arbitrary third-party services. Final audit protocol = ~10 passes + external cross-verification before any completion line.
+
+## 2026-09-26 17:49 IST — standing quality bar: repeated improvement, depth + breadth
+- RULE (user email 17:49 in "Confirmed - bound" thread, gmail auth checks pass, in-thread with her authenticated WhatsApp confirmations; via Main): keep improving repeatedly and push greater depth and breadth on each task. Lanes iterate on each task rather than declaring done early. Standing alongside the 17:00 novelty rule and 16:41 verification rules.
