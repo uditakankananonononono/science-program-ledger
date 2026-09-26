@@ -230,3 +230,6 @@ Account-level mega27 builder keys added 2026-09-24 20:54-20:57 IST after GitHub 
 
 ## 2026-09-26 15:44 IST — mega27-19-xenobot-causal-networks created (new item-19 lane)
 - CREATE: uditakankananonononono/mega27-19-xenobot-causal-networks - private, empty (xenobot emergent-intelligence project; builder agent-01M3EKA1R836GV9BHDY6QE2Y0M per Main 15:43:56). Deploy key pending builder relay.
+
+## 2026-09-26 15:47 IST — mega27-19-xenobot-causal-networks builder key
+- ADD: deploy key `mega27-19-xenobot-causal-networks-20260926` on mega27-19-xenobot-causal-networks - ssh-ed25519 SHA256:A3wBce7wdZiOgbTF8nzMZ6SntsrTg/az+qCMXvKpmfk, Read/write, added Sep 26, 2026 (standing "You add" builder-key grant; ssh-keygen -lf validated pre-add, fingerprint matched Main's relay exactly). Verified on-page: keys list shows the key Read/write with Delete control; repo has exactly 1 deploy key.
