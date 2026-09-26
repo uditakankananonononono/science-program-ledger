@@ -211,3 +211,8 @@ Account-level mega27 builder keys added 2026-09-24 20:54-20:57 IST after GitHub 
 - DELETE: mega27-27-isef-bioinf-derived-tools deleted ~15:13, API 404 verified.
 - CREATE: uditakankananonononono/mega27-27-isef-bioinf-derived-tools - private, empty (fresh start for the 5-tool rebuild, same name per Main).
 - ADD: deploy key `mega27-27-builder` on the fresh repo - ssh-ed25519 SHA256:ESpiDxPKv/OKoPPb8AYGwOC/dgg446OWaEBbaKDaJos, Read/write, added Sep 26, 2026 (standing builder-key grant; ssh-keygen -lf validated pre-add). Verified on-page.
+
+## 2026-09-26 15:22 IST — mega27-13-synthetic-lethal-rl created + builder key (corrected relay)
+- CREATE: uditakankananonononono/mega27-13-synthetic-lethal-rl - private, empty (new item-13 direction).
+- ADD: deploy key `synthetic-lethal-rl-builder-20260926` on mega27-13-synthetic-lethal-rl - ssh-ed25519 SHA256:xpTmjsbRGHbrxSudhTLcejPwlK5qrDLwG4ky3kVJE5s, Read/write, added Sep 26, 2026 (standing builder-key grant; ssh-keygen -lf validated pre-add). Verified on-page.
+- NOTE: Main's first relay of this key (15:22:06) was mistyped by the builder (fp SHA256:E7RN9FfoqC9I76T1iXSp6TKA04ergws8h4TGJ1PcVJo); it was NEVER added anywhere. Only the corrected key (Main 15:22:08, verbatim from the builder's key file) was installed. One key total on the repo.
