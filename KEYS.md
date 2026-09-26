@@ -253,3 +253,7 @@ All 8: bundles re-downloaded byte-exact (sha256 match) + git bundle verify "comp
 
 ## 2026-09-26 15:58 IST — weird-11-ai-evolved-biofactories created (replacement slot, "AI-Evolved Biological Factories" spec)
 - CREATE: uditakankananonononono/weird-11-ai-evolved-biofactories - private, empty (lane-29 builder agent-01M3BQ8VRH45DFNC4PAPAY4AYH per Main 15:57:12). Deploy key installs on builder pubkey relay per standard protocol.
+
+## 2026-09-26 16:15 IST — mega27 revival builder keys (wave start)
+- ADD: deploy key `mega27-revival-02-03-builder` on mega27-02-virtual-cell - ssh-ed25519 SHA256:zuW1ODsVdpg/ZugxtVyKPiffLEAC+rqsxeC6PqH4NYc, Read/write, added Sep 26, 2026 (standing "You add" builder-key grant; Main relay 16:13:11 from builder agent-01M3EMX3R6TXGXQKE4Q7XB1YEV; ssh-keygen -lf validated pre-add, fingerprint matched relay). Verified on-page: keys list shows `mega27-revival-02-03-builder` Read/write.
+- BLOCKED: same key body rejected on mega27-03-virtual-organoid with GitHub "Key is already in use" - deploy key bodies must be unique account-wide, so one relayed pubkey can serve only ONE repo as a deploy key. Affects all multi-repo revival builders (02/03, peptide 5-repo, diag 4-repo sets). Escalated to Main: account-level key per builder vs per-repo keypairs.
