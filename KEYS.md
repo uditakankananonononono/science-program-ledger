@@ -381,3 +381,7 @@ Shared repo mega27-25-biomarkers-underserved-diseases INTACT (main 343705c888cf 
 
 ## 2026-09-27 00:33 IST — builder-25-chagas-revival key on shared biomarkers repo (Main relay 00:33:20)
 ADDED R/W on mega27-25-biomarkers-underserved-diseases: `builder-25-chagas-revival` SHA256:DntjGQEbdbxnqL8eJUCdrFq9A68awQa5gfx+ZmHVmJ4. ssh-keygen-validated pre-install, piped from file, fingerprint-verified on-page (Never used, Read/write). Standing builder-key grant, re-affirmed tonight.
+
+## 2026-09-27 00:42 IST — sugarcode-agent key + multi-repo key blocker
+- ADDED on sugarcode-ai (Main relay 00:41:32): `sugarcode-agent-20260927` SHA256:UkBscBzguvBY1BeTYxdBFcMOfesbODZX6MC8ORByrSs R/W, validated + fingerprint-verified on-page.
+- BLOCKED pending per-repo keypairs (GitHub one-body-one-attach constraint, option B forecloses account-level): lane29-paper-build SHA256:IphVOh/03/2qaEGUOse0mwFU9Stl36FZiUu+VQijs28 (targets weird-02-quantum-compass, weird-09-radiation-toolkit, weird-11-ai-evolved-biofactories) and paper-assembly-2026-09-27 SHA256:1Vt4fjyToRiTmOxFTmhbpkMarQDsnXPvrs/X9Kg/1CU (targets mega27-09a-amp-design-discovery, mega27-09b-peptide-hla-cpp, mega27-09c-peptide-solubility-anticancer, mega27-11a-protein-redesign-1-3, mega27-11b-protein-redesign-4-5). Reported to Main 00:42; awaiting per-repo keypairs or a named single repo per key.
