@@ -364,3 +364,17 @@ Ran at 00:07 on Main's 00:07:10 instruction (lanes blocked; ahead of the 00:05 w
 
 ## 2026-09-27 00:16 IST — master program spec RE-BOUND (user verbatim 00:16:38, wamid.HBgMOTE4MTM0MDk4NTcxFQIAEhggQUNFMkRBMDJGNDJEQUU1NUZDRjQ4MkQ4NENFNUU5MUIA, via Main)
 User re-issued the master spec verbatim and ordered it BOUND; binds the finish line, not a reset. Operative rules in todo-01M39WKDAKZWWFVPQE1NDCN8JB. Re-affirmed for every lane: (1) every project passes through ChatGPT as judge and improves novelty until it passes (DeepSeek/Gemini added surfaces); ChatGPT for redirection on failure/low novelty. (2) Non-negotiable per-project gates: 120+ datasets, 40+ external tools, 10+ numbered formulas, 50+ page Times-New-Roman paper (body text only per prior amendment), separate repo, real data, real discovery + working tool beating the best world benchmark in its field. (3) Full AUDIT ROUND before any candy line: every requirement verified exactly as asked except her explicit deletions/redirections. (4) Later corrections override older lines: Atlas/sugarcode = self-audit; NO ISEF competition framing; doc200/230/portfolio dropped.
+
+## 2026-09-27 00:24 IST — item-25 migration: 10 repos created + 10 builder keys installed (Main GO 00:19:40, lane pubkeys relay 00:20:18)
+Separate-repo gate of the re-bound master spec. All 10 repos PRIVATE + empty under uditakankananonononono, existence verified by ls-remote (empty). One R/W deploy key per repo, lane-generated (private halves stay in the lane's sandbox), each ssh-keygen-validated then piped from file and fingerprint-verified on-page:
+- mega27-25-preeclampsia-biomarkers: mega27-25-preeclampsia-builder-20260927 SHA256:BBLvGfF6LNLuGYQRg6Z01qzo3h5eLYHrMz2rKbsJsn4
+- mega27-25-leishmaniasis-biomarkers: mega27-25-leishmaniasis-builder-20260927 SHA256:FYm8TkcONhFMxOyPZKxi7B+51dfbY3aFSJ5nI1QtMe8
+- mega27-25-postpartum-depression-biomarkers: mega27-25-postpartum-depression-builder-20260927 SHA256:JTHTEaxo5iwV8RtMrJxPqQe19/zbiASy+KpRiCi/Sso
+- mega27-25-long-covid-biomarkers: mega27-25-long-covid-builder-20260927 SHA256:m1Qh4PRGW9Ey8xVzemLWtlTm6iUisEXj85kL+f3mxSw
+- mega27-25-me-cfs-biomarkers: mega27-25-me-cfs-builder-20260927 SHA256:R+G3ESHV87NVihGfm4aCSmAB6F3NDS33frSjFH/AoE0
+- mega27-25-pcos-biomarkers: mega27-25-pcos-builder-20260927 SHA256:pnGTSfGRPtP8pnpqt+czjSfPFaawxsJo+U8stqbQH0w
+- mega27-25-endometriosis-biomarkers: mega27-25-endometriosis-builder-20260927 SHA256:tDC8iRS5pTt7lL/yO5FFT1JyngR1uBzAPcEW3gIkJCQ
+- mega27-25-fibromyalgia-biomarkers: mega27-25-fibromyalgia-builder-20260927 SHA256:GGIPIafIuLJMUOUcO/en5fxbQnwzyZwsdBMwRv/c84M
+- mega27-25-interstitial-cystitis-biomarkers: mega27-25-interstitial-cystitis-builder-20260927 SHA256:Xbv/gDdlLnJ7t3HU87T7LU07d9N0vYT+U36PHWRHFFQ
+- mega27-25-chagas-biomarkers: mega27-25-chagas-builder-20260927 SHA256:TU4fu4MRucqUPm3sdEOjlLYdDqx1632rLJNw0DD4zCE
+Shared repo mega27-25-biomarkers-underserved-diseases INTACT (main 343705c888cf at 00:21, key mega27-25-deploy-20260925 SHA256:S/DjPBrS+KBQtqVLvSYebdnSbRi8iciPgkwZGOBORqA present); nothing deleted, no force-pushes. Lane's 00:20-00:21 SSH failures = recurring transient flakiness (4th instance tonight) - its own pushes kept landing throughout. Lane owns content/manifests; builder-only branches integrate via the lane.
