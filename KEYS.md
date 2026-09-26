@@ -238,3 +238,18 @@ Account-level mega27 builder keys added 2026-09-24 20:54-20:57 IST after GitHub 
 - DELETE: uditakankananonononono/mega27-26a-xenobot-evolution ~15:51 (SSH ls-remote "Repository not found" + repo-list absence verified). Inventory: 63 commits, sole branch main @ b64f56ad030e6576f5fa6e2a4477b86d49649dab, 2.01MiB pack. Project: xenobot evolution in a 2-D contact-clearing simulator (weird-science item 26a).
 - BACKUP (byte-exact verified): backup-20260926-26a.bundle = 2,097,303 bytes, single file in Drive folder 1D-yJqoTmmIb9EvrTHN0LiVYfZIajKGeP (file id 1pEGpprPhlT0t46ua8CvB9xTjM7Gdzo4j); re-download sha256 7e8d79c595eead4f7cb581d9314a7f113ce4026264b5789fdabbd61a443197c8 = original; git bundle verify "records a complete history" (main b64f56a + HEAD).
 - NOT deleted (second candidate, kept): mega27-19-medical-microbots-xenobots - she asked for its results instead.
+
+## 2026-09-26 15:56 IST — lane-29 prune: 8 weird-* repos DELETED (user WhatsApp orders 15:50:52 + 15:51:03; keep W02 + W09; replacements to follow)
+Lane mapping (obvious one-repo-per-project, verified before deleting): W01=weird-01-paleoscentome, W02=weird-02-quantum-compass, W03=weird-03-zombie-effectors, W04=weird-04-transmissible-cancer, W05=weird-05-longevity-convergence, W06=weird-06-mirror-life-audit, W07=weird-07-good-prions, W08=weird-08-bioelectric-sim, W09=weird-09-radiation-toolkit, W10=weird-10-permafrost-enzymes.
+- DELETE weird-01-paleoscentome (42 commits, main 9055aaa) — backup-20260926-weird-01-paleoscentome.bundle.part-00 (25,122,736B, Drive id 15GR4EQSSI82HGHk9jMIGnscDU1HrQSUc) sha256 608b0a1d11eab5ccd670f403483c9b10a877d537145e04249333a8e6f120ab23
+- DELETE weird-03-zombie-effectors (28 commits, main cda3cd3) — bundle 183,633,361B in 8 parts (Drive ids on file w/ orchestrator, part-00 18uTqhP8DIbADKJbU1VIXK4EZuri5Amz1) sha256 3824c30fb5296d20e6a32d9c49d1d43ecd4ea7c564ada659609c244eabffa58e
+- DELETE weird-04-transmissible-cancer (14 commits, main 6fdbc06) — bundle 87,875,848B in 4 parts (part-00 18q0tZinU87iYFavEuYMO4F8Aqt2t6XNC) sha256 368a6624dc386689dfbf2826d1fd831de4c6e446a0a77dabd576ac72f6d216c6
+- DELETE weird-05-longevity-convergence (6 commits, main b8cd2c0) — bundle 9,448B (1XfVLQ0xGGttSnRR2l6gRG0mRqG5OztnY) sha256 8127bb0d6610f820f7e05a3f30e12c69bc5a814c7c63da960e365fbf5c10ba16
+- DELETE weird-06-mirror-life-audit (6 commits, main 4b30bf1) — bundle 9,528B (18LWWeb4wEva06DUiJfxlVZSRI00gBkLX) sha256 48094c86f3f07fc3a5096611d8ae4ab7181c4a22a265ca6fe5efd716c0a29846
+- DELETE weird-07-good-prions (6 commits, main e7b6140) — bundle 9,653B (16_C4w4pFW2T6B0Bmos1rQpKoosVsLo6R) sha256 b586261e5ea47b28627d6aedaf3dcd2c8ff0c4a14d7017c48a1472bc497cd573
+- DELETE weird-08-bioelectric-sim (6 commits, main b4b082b) — bundle 9,576B (16QWJYwrshtFwbgHBRJ2JBUI_O0chaoO7) sha256 f9d1dce32154750455c62fcbe04998502f7b6216dd0b2145b285ae1587c2afa0
+- DELETE weird-10-permafrost-enzymes (6 commits, main 54a7f79) — bundle 9,650B (1pF4MwnTpQfyobE9qo3XDAsiXFC5WMmcD) sha256 cfaf490c271f39f55b8d1bb8103af7a1d6cd953dd236ff1c5b7c0036b340ab46
+All 8: bundles re-downloaded byte-exact (sha256 match) + git bundle verify "complete history" BEFORE deletion; all 8 SSH 404-confirmed after. Keepers verified alive: weird-02-quantum-compass b852b29f, weird-09-radiation-toolkit f7d7eefd. Any deploy keys on the deleted repos died with them (repo-scoped).
+
+## 2026-09-26 15:58 IST — weird-11-ai-evolved-biofactories created (replacement slot, "AI-Evolved Biological Factories" spec)
+- CREATE: uditakankananonononono/weird-11-ai-evolved-biofactories - private, empty (lane-29 builder agent-01M3BQ8VRH45DFNC4PAPAY4AYH per Main 15:57:12). Deploy key installs on builder pubkey relay per standard protocol.
