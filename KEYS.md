@@ -385,3 +385,17 @@ ADDED R/W on mega27-25-biomarkers-underserved-diseases: `builder-25-chagas-reviv
 ## 2026-09-27 00:42 IST — sugarcode-agent key + multi-repo key blocker
 - ADDED on sugarcode-ai (Main relay 00:41:32): `sugarcode-agent-20260927` SHA256:UkBscBzguvBY1BeTYxdBFcMOfesbODZX6MC8ORByrSs R/W, validated + fingerprint-verified on-page.
 - BLOCKED pending per-repo keypairs (GitHub one-body-one-attach constraint, option B forecloses account-level): lane29-paper-build SHA256:IphVOh/03/2qaEGUOse0mwFU9Stl36FZiUu+VQijs28 (targets weird-02-quantum-compass, weird-09-radiation-toolkit, weird-11-ai-evolved-biofactories) and paper-assembly-2026-09-27 SHA256:1Vt4fjyToRiTmOxFTmhbpkMarQDsnXPvrs/X9Kg/1CU (targets mega27-09a-amp-design-discovery, mega27-09b-peptide-hla-cpp, mega27-09c-peptide-solubility-anticancer, mega27-11a-protein-redesign-1-3, mega27-11b-protein-redesign-4-5). Reported to Main 00:42; awaiting per-repo keypairs or a named single repo per key.
+
+## 2026-09-27 00:44 IST — sugarcode-agent revoked + 8 per-repo paper-builder keys
+- REVOKED on sugarcode-ai (Main's explicit 00:42:31 instruction; agent retired after its patch landed as 1ac902e51d35d106e666850bc4e379c5181063db): `sugarcode-agent-20260927` SHA256:UkBscBzguvBY1BeTYxdBFcMOfesbODZX6MC8ORByrSs. Verified absent on-page.
+- OBSOLETE without install (lanes discarded): shared bodies lane29-paper-build SHA256:IphVOh/03/2qaEGUOse0mwFU9Stl36FZiUu+VQijs28 and paper-assembly-2026-09-27 SHA256:1Vt4fjyToRiTmOxFTmhbpkMarQDsnXPvrs/X9Kg/1CU - never installed anywhere.
+- ADDED R/W, per-repo (Main relays 00:42:35/00:42:40), each ssh-keygen-validated, piped from file, fingerprint-verified on-page:
+  - mega27-09a-amp-design-discovery: `paper-build-mega27-09a-amp-design-discovery` SHA256:NPwptItH2q52f1nQpOkhdYLNwVVdTEoDQjkLaR3YmOk
+  - mega27-09b-peptide-hla-cpp: `paper-build-mega27-09b-peptide-hla-cpp` SHA256:k4DFAOZX2aF9/YCsqpxEee0lc4GHcfoY5ct2tM1w4jE
+  - mega27-09c-peptide-solubility-anticancer: `paper-build-mega27-09c-peptide-solubility-anticancer` SHA256:JgE+1qzw/luk/Vuh4UJv0tzlOY6noZ1h8Cg/kB1C9fo
+  - mega27-11a-protein-redesign-1-3: `paper-build-mega27-11a-protein-redesign-1-3` SHA256:y6cSFZVPULv8UecOFoBaDZCWKljWoabzDEy+96INTMY
+  - mega27-11b-protein-redesign-4-5: `paper-build-mega27-11b-protein-redesign-4-5` SHA256:y0mOOdzFGmepFpFLEDyINmocB1YpbOuu8bSZL58SSqE
+  - weird-02-quantum-compass: `lane29-paper-02` SHA256:f8kGJL2KfogLADSdtQOSHbRTMUY1IuJ0+oJTe2d+qRU
+  - weird-09-radiation-toolkit: `lane29-paper-09` SHA256:t9r2pVMGMNe5cDtYSLTMgXHQy4U1SKMeiY7LzdIavLI
+  - weird-11-ai-evolved-biofactories: `lane29-paper-11` SHA256:nLIfuLq4AKpvba081xYctXdhmRqWHabGu+tU7F0Sb1s
+- IC readback resolved (Main 00:43:04): mega27-25-interstitial-cystitis-biomarkers remote is EMPTY - ls-remote 0 refs (exit 0) + fresh clone warns empty. No e9a5ba5, no ae0635f on the remote; the lane's pushes have not landed. (Note: my 00:36 report said empty x3; no e9a5ba5 was ever read by me.)
