@@ -610,3 +610,60 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - Authorized by: Main relay 15:30 IST under her standing 2026-09-24 "You add" ruling (fresh builder public keys, write, one per repo)
 - For: revived yeast lane B agent (agent-01M3H4TTZDBY5V2CF685SSQJHB)
 - Verified on-page: entry present with Read/write + Delete button; pre-existing key "instinct-mega27-05-redirect" (SHA256:NcO6pBFwVarlhrOj5hn0QqP1a3xPociQWqxXBB9njYY) untouched.
+
+## 2026-09-27 15:43-15:57 IST - WIPE-WAVE KEY ROTATION (44 deploy-key adds, 1 removal)
+Sandbox wipe wave ~15:41-15:43 IST destroyed builder keys across lanes (23a, lane-29, VC2/VO3, biomarkers-25, microbiome, xenobot, peptides, revival-C, lane C, item-27) and the orchestrator's own account-level key v7b (private half lost; orphan still on account - revoke pending HER decision, do NOT touch, same posture as v5).
+All adds authorized under her standing 2026-09-24 "You add" ruling (fresh builder public keys, write, one keypair per repo, rotated on sandbox reset), relayed by Main 15:43-15:53. Every add verified on the repo's settings/keys page (entry + fingerprint + Read/write + Delete control). Local ssh-keygen -lf fingerprints match on-page values.
+
+### Lane keys (read-write deploy keys, one per repo)
+- mega27-23a-drosophila-connectome-ann: mega27-23a-deploy-rebuild-20260927 SHA256:FWbRjdUjxUvXmeMpf2H1IjaQOJWa1AAlcPx8r0jSRmM
+- mega27-19-xenobot-causal-networks: instinct-builder-xenobot-lane-20260927 SHA256:LShM7b591QOawKQvkbYxj09fEdXDTzwFM8PnMPmj3+0
+- mega27-04-microbiome-twin: mega27-04-microbiome-twin SHA256:AI5NAzWwhwsYZfE+hKsQDNmYWRp13dAGdptZRGfDYaU
+- weird-09-radiation-toolkit: deploy-weird-09-radiation-toolkit-20260927 SHA256:euyjhS979tk6fRmpT7V7nCiWSAU49Ya9VYbOQ1XGJdA (REPLACED shared key weird10-builder-20260927 SHA256:pMaMkSQsozgKxJExRj3a7Uno/mMk78eav9DYDtSLqMg, removed per Main - GitHub one-key-one-repo rule)
+- weird-11-ai-evolved-biofactories: deploy-weird-11-ai-evolved-biofactories-20260927 SHA256:N2mDG/MDK90y6YGmks+qvt1p5nEwIdTf+3idDX6CKWM
+- weird-02-quantum-compass (private): deploy-weird-02-quantum-compass-20260927 SHA256:iinze7OuuThqtCuILNnZtqQzim9vyjXK9FGN/3Bcul4
+- mega27-25-chagas-biomarkers: chagas-builder-25-20260927 SHA256:81lXWs3yFcrhuD14PTjoKXCPO6LZihw4aIcmlSFzpGo
+- mega27-09a-amp-design-discovery: mega27-09a-rebuild-20260927 SHA256:ky3Xb6zVXaofd9KT31UrNlbtWQpm/7uYCYek3/kx7og
+- mega27-09b-peptide-hla-cpp: mega27-09b-rebuild-20260927 SHA256:e/y36mszi84zb5qqKWr4nVMsZn+F7+EXpvxJsF/9ZSU
+- mega27-09c-peptide-solubility-anticancer: mega27-09c-rebuild-20260927 SHA256:v8n42QugrfvbdicEASCtrfcLcCgGUwmaF1BFTIS6p3U
+- mega27-09d-oncovax-pep: mega27-09d-rebuild-20260927 SHA256:mvhnskId7xXhnH2aeEpsn1sp5FAtooXjQodIZCTDaIs
+- mega27-09e-resistpep: mega27-09e-rebuild-20260927 SHA256:LwRzAH1VcyNxk0dRhPPZqiZSzit7CmPu5GUO+jamv64
+- mega27-11a-protein-redesign-1-3: mega27-11a-rebuild-20260927 SHA256:qJfo180WUzlx9gmRMsZhZP7gGd9K4xyIak0oHbtYGZo
+- mega27-11b-protein-redesign-4-5: mega27-11b-rebuild-20260927 SHA256:FijuOUUSZBHZuHlpVqf0FvPHShAsE0Hjc8NG+huLDBM
+- mega27-12-3d-drug-discovery: mega27-12-recovery-20260927 SHA256:l6WuXd7i4bMNOPD0vn5XsZ/iuwsINhgKgso90ScioEM (CORRECTED key per Main; mistyped original never installed)
+- mega27-18-mirna-research (private): mega27-18-recovery-20260927 SHA256:FOM6Vnl8Bqnyi1yU54+9T9AQUMnJ/A3OwRWw0CqJW4k (CORRECTED per Main)
+- mega27-21-cancer-recurrence: mega27-21-recovery-20260927 SHA256:X8y5KSL+dCA7Iqjum8fVDnv0LK2sMRWLAq8WrWrTVg8 (CORRECTED per Main)
+- mega27-24-rice-oral-vaccine: mega27-24-rice-rebuild-20260927 SHA256:jQ1ZoqHNuDgQ84gWYhagcJUlXB2sSlXsa/MM9UVNhrM
+- mega27-24-aquadvantage-salmon: mega27-24-salmon-rebuild-20260927 SHA256:gs6JF4D0Shc0TppmIFTikHcVzPEh2yT2Rv1dgeHPBA8
+- mega27-24-blight-resistant-chestnut: mega27-24-chestnut-rebuild-20260927 SHA256:gP7Cr5OWgZliCoJj5FARRx/Gz/EvKTpOsHta0wIZ56U
+- mega27-24-banana-vaccine-enviropig: mega27-24-banana-rebuild-20260927 SHA256:j3A/yYd0e9xA5nj75Ul5paxGu/dm4RsA4mWbxxbUbwY
+- mega27-02-virtual-cell: vc2-recovery-20260927 SHA256:MdQHLKQQoQ1DfOp2tsPwu7fhydqgLYIpB3MbCAY6JLc
+- mega27-03-virtual-organoid: vo3-recovery-20260927 SHA256:jcRs+yvGcAz60wo8ggmN700AEsvdTDypl+ebWrZlxMw
+- mega27-27-isef-bioinf-derived-tools (private; = item-27 repo): item27-recovery-20260927 SHA256:rIEvHEmeqqJj1qo2PVeskCUUSdRVp+SouKIn+ZcxMiY
+
+### biomarkers-25 keys (read-write, one per repo, titles <repo>@task)
+- mega27-25-biomarkers-underserved-diseases: SHA256:rooMvTeuQjJlBJv7yPJ9iiAD65dU0iKfUOpmepB1gt0
+- mega27-25-postpartum-depression-biomarkers: SHA256:NEIO8FYKTSU7dp+RDWDPiCjVehH8freVMw4B50inOvA
+- mega27-25-interstitial-cystitis-biomarkers: SHA256:xba78w7Jr+7cpaeY6U+91fAFb3kUQyAmOLgL9xrZSDc
+- mega27-25-endometriosis-biomarkers: SHA256:7jS7jBuo/laTs6xfVJYcjs5qurb0mfylXIehyl/gHEk
+- mega27-25-pcos-biomarkers: SHA256:ajzyMcs5j3WzAceCFhRGvD9DnI5gMOhVp6VL5lz0Nzg
+- mega27-25-leishmaniasis-biomarkers: SHA256:/8KViyk/bhz96VTUWodgxIBRh6dk/l/OfL+tZxW4Qeo
+- mega27-25-preeclampsia-biomarkers: SHA256:TwaZMaNoaSkrJdfs3LV6g9opsLZ27RIj94mf5qChy8E
+- mega27-25-long-covid-biomarkers: SHA256:5v4e6MgPkrAsBnvbCXWHDo0opZN8gliyyFGIOBisGGU
+- mega27-25-me-cfs-biomarkers: SHA256:BkTzrEqyUowMKtmIijDI9PwOJWjWStpTnRFw8/uqnYk
+- mega27-25-fibromyalgia-biomarkers: SHA256:ua9HWB5MP2rcoeSDFKU2fggO4x3SW2zBZLqiWLpUS0k
+
+### Orchestrator recovery keys (Main 15:43 route: per-repo deploy keys on push targets + read on item-27, after v7b loss)
+- science-program-ledger: orchestrator-ledger-20260927 SHA256:xCcCyl5/AscTK6B1TYThIF9JH/Hboh7XcZjOWD/y0MA (write)
+- atlas-ai: orchestrator-atlas-20260927 SHA256:ynIvcRKCMu/3wcZ2Rgnfi46tqwvVKQerwhLp+W3mNfs (write)
+- sugarcode-ai: orchestrator-sugarcode-20260927 SHA256:XG7DcZhw9Vtm3RRkGj71vYF5+1M2Fv/BS0rfAOXpdpk (write)
+- shared-models: orchestrator-shared-models-20260927 SHA256:HbDGTqrapXsQEBzv9qbPAQXnt2JEbeuX+FVdyJ+cUTE (write)
+- mega27-24-rice-oral-vaccine: orchestrator-rice-20260927 SHA256:kSjk/BV5pdS6QJ4NnYQ+ZtgwOmzpbmvmELGkL1Zmo9Y (write)
+- mega27-24-blight-resistant-chestnut: orchestrator-chestnut-20260927 SHA256:8Yi0H+ewUrxMUUF/uxTMDnZpnuTpUm+f1ht0bq5LxUU (write)
+- mega27-24-banana-vaccine-enviropig: orchestrator-banana-20260927 SHA256:+lMAsgTbKxVKyGoMU1Th5cb7vIcxOSD3vYSxkhBs28E (write)
+- mega27-09c-peptide-solubility-anticancer: orchestrator-09c-20260927 SHA256:fGr2zGcUa6plzHhFZPgYxmQe8u2lUreRl0lfYW4nLYU (write)
+- mega27-25-interstitial-cystitis-biomarkers: orchestrator-ic-20260927 SHA256:ky75+fGyTgGTFGFeAy4q1ofgZmOOIPGxB67/BO1ZONM (write)
+- mega27-27-isef-bioinf-derived-tools: orchestrator-item27-read-20260927 SHA256:eSOyLxvm5gFOPvQjRyOYtzCm71t5aiP4IUG2i2KGFhY (READ-ONLY per Main "read item-27")
+
+### Removal
+- weird-09-radiation-toolkit: REMOVED weird10-builder-20260927 SHA256:pMaMkSQsozgKxJExRj3a7Uno/mMk78eav9DYDtSLqMg (Main 15:45 "disregard the earlier single weird10-builder key - remove if installed"; replaced by per-repo deploy-weird-09 key). No other removals. v5 and orphaned v7b account keys untouched pending HER decision.
