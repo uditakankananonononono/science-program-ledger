@@ -683,3 +683,9 @@ Same grant grounding (her 2026-09-24 "You add" ruling via Main 15:59). Repo name
 
 ## 2026-09-27 16:09 IST - wipe-rotation key: yeast lane B (second wipe)
 - mega27-05-yeast-metabolic-twin: mega27-05-redirect-laneB-revival-2 SHA256:g0WQW4yYbeegCt+xd7v+riYXLP9GUcEk6Hunl+YJJNo (write). Same grant grounding (her 2026-09-24 "You add" via Main 16:09). Verified on-page. First revival key (mega27-05-redirect-laneB-revival SHA256:xV1jNAxsxnezETvpOZTqXLybIuyLKRLW1NrOQ+KUkgY) remains attached - its private half died in the lane sandbox; revoke only on Main's explicit instruction.
+
+## 2026-09-27 16:15 IST - wipe-rotation keys: lane-29 SECOND wipe, replacements (old keys left attached pending her revocation sweep)
+- weird-09-radiation-toolkit: lane29-weird-09-20260927-2 SHA256:Mxuh7gqH2gfZlz5LJQAHSa1dVE8tVyIsJtDuE6ApNc0 (write)
+- weird-11-ai-evolved-biofactories: lane29-weird-11-20260927-2 SHA256:mrlqV+teg+0scXH1PTbSWEIdMsfbDCP5eoUBCv3C5wA (write)
+- weird-02-quantum-compass (private): lane29-weird-02-20260927-2 SHA256:aaT/iMJBSTGcrATQcGXPKxiNcEuNgdM72fWoxq/I0bU (write)
+Main 16:15: install as new, leave first-round keys (deploy-weird-09/11/02-...-20260927) attached - one revocation sweep later with her approval. Same grant grounding. All verified on-page.
