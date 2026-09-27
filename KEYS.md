@@ -539,3 +539,11 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - Push: 2960853..ac81407 main (1 commit)
 - ls-remote readback: ac814070233a680fec668c38adb0f9025080bccc refs/heads/main
 - Commit: "Remove program byline and author metadata from working papers"
+
+## Bundle relay - shared audit51 (Sep 27, 2026, ~11:30 IST)
+- Repo: mega27-25-biomarkers-underserved-diseases
+- Bundle: shared-audit51-22c217eb.bundle (ref HEAD; requires prerequisite ac814070233a680fec668c38adb0f9025080bccc = live main; FF confirmed)
+- Push: ac81407..92e76a8 main (1 commit)
+- ls-remote readback: 92e76a8d5ab324a5b4705c2b6e9794a5acfb9ef2 refs/heads/main
+- Commit: "Extend shared biomarker working paper with PPD source audit and sole Udita byline"
+- paper/manuscript.pdf at 92e76a8 = 51 pages (blob 8bbf1d53560b251c3a29af80762d2a697c257e8d). manuscript-times.pdf remains the older 49pp snapshot - not for distribution.
