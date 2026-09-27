@@ -460,3 +460,6 @@ mega27-25-postpartum-depression-biomarkers: 6368d9b18efe -> b72a6776d11eb7cf5453
 
 ## 2026-09-27 05:33 IST — rice stability bundle pushed
 mega27-24-rice-oral-vaccine: d68383c3a135 -> 2f5666f73e7a4903b7adcc243a2fcb76932d0172 "Audit identifier-deduped seed metabolome stability against label controls" (bundle ref HEAD, complete history verified; FF vs live remote; 1 commit; MTBLS437 post-outcome stability replay after fixed dedupe: 95/104 analytes retain direction through all nine leave-one-out deletions; rotated-label controls include one exceeding observed so NO signature claim; lane reports 9/9 tests pass). ls-remote verified.
+
+## 2026-09-27 05:52 IST — PPD update 6 bundle pushed
+mega27-25-postpartum-depression-biomarkers: b72a6776d11e -> bb0f4873537d07a5ffa38fd1894f3e1e2d120303 "Screen published PPD comparators without conflating tasks or access" (bundle verified complete history; FF vs live remote; 1 commit; six comparator papers classified by task/assay alignment; no verified public independent same-task holdout found - absence not proved; standing warning: never cite Mehta 2014's 88% as a same-task comparator). ls-remote verified.
