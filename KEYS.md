@@ -676,3 +676,7 @@ Same grant grounding (her 2026-09-24 "You add" ruling via Main 15:59). Repo name
 
 ## 2026-09-27 16:03 IST - wipe-rotation key: jellyfish 26b continuation agent
 - mega27-26b-immortal-jellyfish-genomics: jellyfish26b-20260927 SHA256:uYqLdl3YDxmgN/k3cT/MVwtcGS9yM5cMLab0bJ49kOE (write). Agent has material local result dab2c7a awaiting push. Same grant grounding (her 2026-09-24 "You add" via Main 16:03). Verified on-page.
+
+## 2026-09-27 16:07 IST - orchestrator key + bundle relay: mega27-24-aquadvantage-salmon
+- Deploy key added: orchestrator-salmon-20260927 SHA256:PuZAZDAZHwSRtvDvrLrD5sVPYN6fVK4o8l27OByqW80 (write) - needed for this bundle relay (no prior orchestrator key on salmon).
+- Bundle push (lane C, salmon-independent-heat-screen-552ada2f.bundle): remote main 1f2300477bfd9e36447b8aee0d661d5ee55e9f5b -> 0bf3a3988867f80405b473013fe53f1ecbbed119. Bundle verified OK (complete history), FF-OK over live remote (re-checked immediately before push). Commit message verbatim: "Screen independent salmon heat cohort as unmatched validation source". Readback confirmed 0bf3a398.
