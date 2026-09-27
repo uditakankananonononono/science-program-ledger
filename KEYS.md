@@ -598,3 +598,4 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - mega27-27-isef-bioinf-derived-tools: 3912f4c8..1de89b7b (full engineering test suite result from item-27 agent). Readback 1de89b7ba93a1c55270ac3db5c41f2fb8f8424d5. Repo stays PRIVATE.
 - mega27-24-blight-resistant-chestnut: 24a90b1e..69d15589 ("Replay 15-library chestnut infection quality table and mapping gap", lane C verified-complete bundle). FF-verified vs lane's own 24a90b1e. Readback 69d155891ced89416bbb97ac6155b419b45fff1f.
 - mega27-25-biomarkers-underserved-diseases: 5b481a10..3046b32e (source-audit CLI tool). Readback 3046b32edb5cafd43f3e1d0c1b86590566bf91d3.
+- mega27-27-isef-bioinf-derived-tools: 1de89b7b..88819551 (pre-2PM truth-status doc). Readback 88819551d3e0e27a705cb89d29a973acefb5640f. Repo stays PRIVATE.
