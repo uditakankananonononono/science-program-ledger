@@ -680,3 +680,6 @@ Same grant grounding (her 2026-09-24 "You add" ruling via Main 15:59). Repo name
 ## 2026-09-27 16:07 IST - orchestrator key + bundle relay: mega27-24-aquadvantage-salmon
 - Deploy key added: orchestrator-salmon-20260927 SHA256:PuZAZDAZHwSRtvDvrLrD5sVPYN6fVK4o8l27OByqW80 (write) - needed for this bundle relay (no prior orchestrator key on salmon).
 - Bundle push (lane C, salmon-independent-heat-screen-552ada2f.bundle): remote main 1f2300477bfd9e36447b8aee0d661d5ee55e9f5b -> 0bf3a3988867f80405b473013fe53f1ecbbed119. Bundle verified OK (complete history), FF-OK over live remote (re-checked immediately before push). Commit message verbatim: "Screen independent salmon heat cohort as unmatched validation source". Readback confirmed 0bf3a398.
+
+## 2026-09-27 16:09 IST - wipe-rotation key: yeast lane B (second wipe)
+- mega27-05-yeast-metabolic-twin: mega27-05-redirect-laneB-revival-2 SHA256:g0WQW4yYbeegCt+xd7v+riYXLP9GUcEk6Hunl+YJJNo (write). Same grant grounding (her 2026-09-24 "You add" via Main 16:09). Verified on-page. First revival key (mega27-05-redirect-laneB-revival SHA256:xV1jNAxsxnezETvpOZTqXLybIuyLKRLW1NrOQ+KUkgY) remains attached - its private half died in the lane sandbox; revoke only on Main's explicit instruction.
