@@ -585,3 +585,4 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - atlas-ai: 5957c755..313309be ("Review stored social signals without external effects" - tenant-scoped read-only review cards, no external effects, bundle sha256 29b8c65522beb37f3e1970c778d482603c6aeb6e6157bfdd0392829d2654c6bf verified). Readback 313309be2a960a84b909d1834c3046f884e21a7e.
 - FLIP: enzyme-mining-pollution -> PUBLIC 12:44 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in FASTA/.faa sequence lines (FP; MGnify is public EBI data).
 - FLIP: weird-09-radiation-toolkit -> PUBLIC 12:46 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in public proteome .faa files (FP).
+- FLIP: mega27-08-phage-design -> PUBLIC 12:51 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in phage GenBank translations + a DrugBank xref inside a public UniProtKB entry JSON (FP).
