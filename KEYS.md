@@ -490,3 +490,6 @@ All bundles verified complete history, FF vs live remotes, ls-remote readbacks e
 - mega27-25-long-covid-biomarkers: 112488703f3c -> 806b4669a621ee552732f80df64df379a29fc6cb "Restore committed result and source dependencies omitted at split" (3 scripts, 8 named results, 1 Excel input)
 - mega27-25-me-cfs-biomarkers: a6dde4b6f805 -> 38148094157183be4b041b2fa82a2a4ae8e9d85e "Restore disease-scoped result dependencies and manifest" (4 scripts, 18 results, disease manifest)
 - mega27-25-fibromyalgia-biomarkers: batch-5 bundle was byte-identical to batch 2's (same head 392a516c271b6962a64fe6466e24ec0546f58b11 already live) - REDUNDANT, no push, no change.
+
+## 2026-09-27 07:03 IST — chestnut run-route bundle pushed
+mega27-24-blight-resistant-chestnut: ef58a9869b6c -> 8c984dd270c08a2151099f5ddd5ce96e982c7f24 "Map chestnut infection experiments to indexed run-file route" (bundle verified complete history; FF vs live remote; 1 commit; CRA006690 run route: 15 CRX mapped one-to-one to CRR464767-781 via SeqOut index, 74.6GB advertised; first CNCB file HEAD-verified 200; retrieval lead only, no payloads fetched; lane reports 5/5 tests). ls-remote verified.
