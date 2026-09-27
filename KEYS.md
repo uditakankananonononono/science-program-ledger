@@ -555,3 +555,17 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - ls-remote readback: be7eacd080f1f75efbef4f604883df8eaedaa50b refs/heads/main
 - Commit: "Lead shared biomarker paper with audited evidence and bounded sign transport"
 - paper/manuscript.pdf at be7eacd = 51 pages (blob 369ed6e740aa6981d79efaeb52c158e5aa4b24ed). Title/abstract reframe per her 10:35 positive-spine rule (relayed via Main).
+
+## Bundle relay batch (Sep 27, 2026, ~12:16-12:17 IST) - 8 bundles, all FF-verified, exact readbacks
+- mega27-27-isef-bioinf-derived-tools: 4d037188..ae9f35ba (4 bundles in chain: 9d270d85 verdict-lock, e5b6a3fc DGR v2 protocol freeze, e11c57e7 DGR cohort leads, ae9f35ba comparator-leakage preempt). Readback ae9f35ba91baaf89d5966d00bfb0952f5ab846a4. Repo stays PRIVATE (HMDD license blocker).
+- atlas-ai: ea2755cd..3a410986 (4 commits, Claire owner-interview module). Readback 3a410986784fecb1f14fd11c49d2664ba747cba2. Bundle sha256 verified e11e1cd0.
+- sugarcode-ai: 1ac902e5..1ecddeb7 (1 commit, zero-stub gate strict). Readback 1ecddeb71e741f3ab6bea08bb04c881cae7dc56f. Bundle sha256 verified 070b0fd3.
+- mega27-24-rice-oral-vaccine: 97cdfbcb..24b8031b (three-lot expression audit). Readback 24b8031b79ea0181d244c7243020639cdc0ae5d0.
+- mega27-25-postpartum-depression-biomarkers: 4420183d..702db060 (GSE45603 comparator screen). Readback 702db060abf4427d3907841081ee132b83167af3.
+- mega27-25-biomarkers-underserved-diseases: be7eacd0..09a48709 (2 bundles: 6e3604d8 owner-verdict archive, 09a48709 manifest-units reconcile). Readback 09a48709a6a715e65d7ee204d02a25f090d4b498.
+
+## Visibility flips to PUBLIC (Sep 27, 2026, 11:36-12:12 IST) - user WhatsApp directive 11:34 "MAKE ALL THESE REPOS PUBLIC" + Main expanded scope 11:38
+- 77 repos flipped + verified via anonymous-200 checks (list in orchestrator state /tmp/done.txt). GitHub sudo email-code re-auth completed 11:36.
+- SKIPPED/HELD: mega27-27-isef-bioinf-derived-tools (HMDD academic-use-only rows - license blocker, stays PRIVATE per Main 11:38:40), mega27-18-mirna-research (miRTarBase fetch script + OmniPath mirnatarget dump - held for her license call).
+- EXCLUDED: atlas-ai/sugarcode-ai/meemee (product, already public), fairycore-portfolio (non-science), mega27-01-sugarcode-realdata-validation (sugarcode-branded).
+- Secret scans (HEAD + recent history, ghp_/gho_/github_pat_/sk-/AKIA/PRIVATE KEY/password=/token=): zero real hits; FPs were peptide/UniProt sequence substrings, python token= vars, DRAMP rows. License scans: FPs were NCBI DBHMDD* accessions, DrugBank citations, public GEO/her2st/MyChem data.
