@@ -67,3 +67,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~38s confirmed 240ad8f7b0cf stable.
 - Substance: source-prose audit of the 2022 AquAdvantage RNA-seq article - fillets were collected from the SAME fish as the liver transcript samples; Figure 8 correlations/PCA use that within-cohort multivariate dataset. Cross-tissue association is a within-cohort observation, NOT an independent fillet-cohort held-out test of a new predictor. No figure digitization, no individual fish records, no biological finding; zero gate credit.
 - Diff-check vs lane claims: 7/7 MATCH. Test suite run at landed head = 16 passed.
+
+## 2026-09-28 04:14 IST - lane C chestnut VCF header-union relay (cycle 9)
+
+- Repo: uditakankananonononono/mega27-24-blight-resistant-chestnut
+- Base (live head): 03dc8df13dad11ad12e020e9c533c1881125c9d2
+- Landed head: 3861662441304de87e2bd13881b9f878ad352116
+- Commit (verbatim): "Reconcile Figshare VCF header label union to 330"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~37s confirmed 386166244130 stable.
+- Substance: archived exact first 65,536 bytes (partial BGZF prefixes) of the two Figshare aggregate VCFs (file IDs 49310671, 49310698; ranges bytes 0-65535/107745150 and /1479393912). #CHROM headers yield 173 (GBS173) and 61 (RS60) distinct sample-column labels; union with 97 distinct per-label VCF filename labels minus shared SZ_15 = 173 + 61 + 97 - 1 = exactly 330 distinct Figshare VCF manifest labels. This reconciles a manifest label inventory only - NOT a validated 330-specimen ledger; does NOT map the ENA 737 accessions, fetch full VCFs, analyze variants, or satisfy any gate. Zero gate credit.
+- Diff-check vs lane claims: 6/6 MATCH. Independently verified: decompressed the archived partial streams and counted 173 and 61 distinct header labels directly; test suite run at landed head = 18 passed.
