@@ -77,3 +77,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~37s confirmed 386166244130 stable.
 - Substance: archived exact first 65,536 bytes (partial BGZF prefixes) of the two Figshare aggregate VCFs (file IDs 49310671, 49310698; ranges bytes 0-65535/107745150 and /1479393912). #CHROM headers yield 173 (GBS173) and 61 (RS60) distinct sample-column labels; union with 97 distinct per-label VCF filename labels minus shared SZ_15 = 173 + 61 + 97 - 1 = exactly 330 distinct Figshare VCF manifest labels. This reconciles a manifest label inventory only - NOT a validated 330-specimen ledger; does NOT map the ENA 737 accessions, fetch full VCFs, analyze variants, or satisfy any gate. Zero gate credit.
 - Diff-check vs lane claims: 6/6 MATCH. Independently verified: decompressed the archived partial streams and counted 173 and 61 distinct header labels directly; test suite run at landed head = 18 passed.
+
+## 2026-09-28 04:56 IST - lane C rice US-trial external-context relay (cycle 10)
+
+- Repo: uditakankananonononono/mega27-24-rice-oral-vaccine
+- Base (live head): f35eaa58e4a10ea40f5d5ed7d9c463be7efcfaf7
+- Landed head: 91e92ff7cb9e2e2ba4b85cd7fdc49925615462d5
+- Commit (verbatim): "Scope independent US MucoRice trial abstract without pooling endpoints"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~37s confirmed 91e92ff7cb9e stable.
+- Substance: archived PubMed Medline abstract of the SEPARATE US phase I trial (PMID 35484039, Vaccine 2022) + replayable script/JSON/test + scope note vs the archived Japanese full text. US abstract: 6-g MucoRice-CTB dose in healthy men and women, salivary CTB-specific IgA response in 2 of 9 treated, GM1-binding inhibition in 3 of 5 responders. External within-topic clinical context ONLY - the 2/9 salivary measure is NOT equated with the Japanese faecal IgA endpoint; no participant-level data, pooled effect, comparator win or discovery; zero gate credit.
+- Diff-check vs lane claims: 5/5 MATCH. Independently verified: 2/9 and 3/5 verbatim in the archived Medline text ("two of the nine treated subjects", "three of the five responders"); test suite run at landed head = 24 passed.
