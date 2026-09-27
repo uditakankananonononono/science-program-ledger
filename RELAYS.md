@@ -47,3 +47,23 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~37s confirmed f35eaa58e4a1 stable.
 - Correction substance: archived Lancet Microbe full text (data/sources/mucorice_phase1_lancet_fulltext.md, 625 lines) prints intended CTB mass per administration in its procedures: 1 g rice product containing 3 mg CTB, 3 g containing 6 mg, 6 g containing 18 mg (implied 3, 2, 3 mg/g). This supersedes the earlier abstract-only boundary: the ABSTRACT omits contents; the FULL TEXT does not. Prior dose-basis doc revised accordingly. Per-gram discrepancy cause unresolved and not labeled an error; no lot/participant-level measured exposure inferred; seed-bank mean multiplication still prohibited. Source-integrity observation, zero gate credit.
 - Diff-check vs lane claims: 8/8 MATCH. Independently verified: pairings verbatim in archived fulltext (line 533); test suite run at landed head = 23 passed.
+
+## 2026-09-28 04:13 IST - lane C chestnut ENA run-to-sample CORRECTIVE relay
+
+- Repo: uditakankananonononono/mega27-24-blight-resistant-chestnut
+- Base (live head): 53c159cadc8546bcaf9b672236868c1017870885
+- Landed head: 03dc8df13dad11ad12e020e9c533c1881125c9d2
+- Commit (verbatim): "Resolve linked ENA run-to-sample cardinality without curated-set inflation"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~38s confirmed 03dc8df13dad stable.
+- Correction substance: richer live ENA report for PRJNA540917 (run_accession, sample_accession, sample_title, library_strategy) archived - 737 rows, 737 distinct sample accession labels. Supersedes the earlier run-only audit note ("no sample_accession column"). Strategy mix: 522 WGA, 214 WGS, 1 Hi-C. Still does NOT identify which records form the article's curated 330 resequencing samples; 737 > 330 is NOT a paper error; no read payloads fetched; zero gate credit.
+- Diff-check vs lane claims: 7/7 MATCH. Independently verified from the archived TSV: 737 rows, 737 distinct sample_accession values, strategy counts 522/214/1; test suite run at landed head = 17 passed.
+
+## 2026-09-28 04:13 IST - lane C salmon same-fish boundary relay (cycle 9)
+
+- Repo: uditakankananonononono/mega27-24-aquadvantage-salmon
+- Base (live head): bed36aef72e8a103ee9883312872ecaea7e5e33f
+- Landed head: 240ad8f7b0cfffbdaaf65cf38916c5c091375275
+- Commit (verbatim): "Clarify same-fish liver and fillet validation boundary"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~38s confirmed 240ad8f7b0cf stable.
+- Substance: source-prose audit of the 2022 AquAdvantage RNA-seq article - fillets were collected from the SAME fish as the liver transcript samples; Figure 8 correlations/PCA use that within-cohort multivariate dataset. Cross-tissue association is a within-cohort observation, NOT an independent fillet-cohort held-out test of a new predictor. No figure digitization, no individual fish records, no biological finding; zero gate credit.
+- Diff-check vs lane claims: 7/7 MATCH. Test suite run at landed head = 16 passed.
