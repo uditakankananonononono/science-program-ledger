@@ -37,3 +37,13 @@
 - Content: 9 historically used GSE47360 GSMs (GSM1148101-109) individually source-fetched with sha256 hashes in projects/endometriosis/sources/GSE47360_used_sample_crosswalk.csv; gzip copies under sources/GSE47360/; matched to old 3-control/6-case label file. Manifest now 120 record units (14 GSE, 105 nested GSM, 1 ontology) - literal record-unit floor only, not 120 independent studies/donors.
 - TISSUE CAVEAT (preserve): source case arm splits 3 eutopic endometrial stromal (endometriosis donors) + 3 ectopic ovarian chocolate-cyst stromal; controls are 3 eutopic stromal from non-endometriosis donors. The old pooled 6-vs-3 effect confounds disease with anatomical site - NOT a clean lesion-origin or same-tissue contrast. Old effects retained as historical mixed contrasts; NO favorable rerun claimed.
 - Diff-check vs lane claims: 5/5 MATCH (9 GSMs hash-preserved; 3+3 case tissue split vs 3 eutopic controls; confound caveat stated; old effects kept with no rerun; 120 = record-unit floor wording present). Verified independently: dataset_manifest.csv = 14 GSE + 105 GSM rows.
+
+## 2026-09-28 04:12 IST - lane C rice phase-1 full-text CORRECTIVE relay
+
+- Repo: uditakankananonononono/mega27-24-rice-oral-vaccine
+- Base (live head): ce9866af416542f776cbb18c2b57906b0691448a
+- Landed head: f35eaa58e4a10ea40f5d5ed7d9c463be7efcfaf7
+- Commit (verbatim): "Correct phase 1 rice content scope against full trial text"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~37s confirmed f35eaa58e4a1 stable.
+- Correction substance: archived Lancet Microbe full text (data/sources/mucorice_phase1_lancet_fulltext.md, 625 lines) prints intended CTB mass per administration in its procedures: 1 g rice product containing 3 mg CTB, 3 g containing 6 mg, 6 g containing 18 mg (implied 3, 2, 3 mg/g). This supersedes the earlier abstract-only boundary: the ABSTRACT omits contents; the FULL TEXT does not. Prior dose-basis doc revised accordingly. Per-gram discrepancy cause unresolved and not labeled an error; no lot/participant-level measured exposure inferred; seed-bank mean multiplication still prohibited. Source-integrity observation, zero gate credit.
+- Diff-check vs lane claims: 8/8 MATCH. Independently verified: pairings verbatim in archived fulltext (line 533); test suite run at landed head = 23 passed.
