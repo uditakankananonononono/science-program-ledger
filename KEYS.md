@@ -470,3 +470,13 @@ mega27-24-aquadvantage-salmon: 28aff13ef618 -> 55d6dae25fd3fc469726577f6ac2b433a
 ## 2026-09-27 06:51 IST — IC script-restore bundle pushed + migration omission register
 mega27-25-interstitial-cystitis-biomarkers: ae0635f8c7d8 -> 8a18630f53c9da2215837df3f13092a0536b2446 "Restore six IC analysis scripts omitted in migration" (bundle verified complete history; FF vs live remote; 1 commit; six ic_* analysis scripts the split heuristic missed, copied byte-for-byte from shared source 2960853; lane reports 19 common tests pass; end-to-end rerun NOT claimed). ls-remote verified.
 MIGRATION OMISSION REGISTER (same split-heuristic gap, restore bundles to follow from the lane): preeclampsia 17 scripts, leishmaniasis 4, long-covid 3, ME/CFS 4, endometriosis 3, fibromyalgia 1.
+
+## 2026-09-27 06:52 IST — script-restore batches 2+3 pushed (6 repos)
+All bundles verified complete history, FF vs live remotes, ls-remote readbacks exact; scripts copied byte-for-byte from shared source 2960853; lane reports 19 common tests pass each; end-to-end reruns NOT claimed; builder branches untouched.
+- mega27-25-preeclampsia-biomarkers: ba47690cb59c -> e836e892710d8765b4cd5787638e8ec67fef8dd6 "Restore preeclampsia analysis scripts omitted in migration" (17 pe_ scripts)
+- mega27-25-leishmaniasis-biomarkers: 4235a6d6cf58 -> 5edbf841d8fbdb7cccc3b8f2b038a04ae73e431e "Restore leishmaniasis analysis scripts omitted in migration" (4 leish_ scripts)
+- mega27-25-long-covid-biomarkers: ddfce77acb38 -> 112488703f3c74a3da72e5d5f8d0e84a15d8d93d "Restore long-covid analysis scripts omitted in migration" (3 longcovid_ scripts)
+- mega27-25-me-cfs-biomarkers: a03275bf7006 -> a6dde4b6f805edb0f44d0882dd668e6af739f0ab "Restore me-cfs analysis scripts omitted in migration" (4 mecfs_ scripts)
+- mega27-25-endometriosis-biomarkers: 09aa7acfa6e7 -> b180992830880c7e7a9e498023d3ca95acdfc5ad "Restore endometriosis analysis scripts omitted in migration" (3 endo_ scripts)
+- mega27-25-fibromyalgia-biomarkers: a611a1f413aa -> 392a516c271b6962a64fe6466e24ec0546f58b11 "Restore fibromyalgia analysis scripts omitted in migration" (fibro_p43_neutrophils.py)
+Omission register from 06:51 entry now fully closed: IC (06:51) + these 6 = all 7 affected repos restored.
