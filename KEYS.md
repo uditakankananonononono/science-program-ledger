@@ -596,3 +596,4 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - DECISION (hers, relayed by Main 13:12 IST): mega27-18-mirna-research stays PRIVATE, keep building. License-hold resolved - NO flip. (mega27-27-isef stays PRIVATE per HMDD block; mega27-01-sugarcode-realdata-validation exclusion kept as-is per Main.)
 - mega27-27-isef-bioinf-derived-tools: d0cd94f4..3912f4c8 (two draft-PDF precision corrections from item-27 agent). Readback 3912f4c80fb0f7d9b86868e951720ecf224a3ff5. Repo stays PRIVATE.
 - mega27-27-isef-bioinf-derived-tools: 3912f4c8..1de89b7b (full engineering test suite result from item-27 agent). Readback 1de89b7ba93a1c55270ac3db5c41f2fb8f8424d5. Repo stays PRIVATE.
+- mega27-24-blight-resistant-chestnut: 24a90b1e..69d15589 ("Replay 15-library chestnut infection quality table and mapping gap", lane C verified-complete bundle). FF-verified vs lane's own 24a90b1e. Readback 69d155891ced89416bbb97ac6155b419b45fff1f.
