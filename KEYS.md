@@ -523,3 +523,11 @@ All bundles verified complete history, FF vs live remotes, ls-remote readbacks e
 - mega27-24-blight-resistant-chestnut: 8c984dd270c0 -> 24a90b1e10c235afb2a814719908124fc9f2459b "Set user-provided judge review floor to one round"
 - mega27-24-banana-vaccine-enviropig: 3f2948bc090c -> 5641a45c404d70d1bf7a245866d8614692ab6026 "Set user-provided judge review floor to one round"
 INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command interrupted); the 5 newest bundle attachments were lost with the sandbox write, older files intact. Main re-attached all 5; processed immediately on recovery. An interim status message sent during the outage did not reach Main.
+
+## Bundle relay - salmon three-temperature (Sep 27, 2026, ~10:49 IST)
+- Repo: mega27-24-aquadvantage-salmon
+- Bundle: salmon-three-temperature-35f25d06.bundle (verified: complete history, head 1f2300477bfd9e36447b8aee0d661d5ee55e9f5b)
+- Pre-push live remote: 8247f0ac80ec58d124ad784d139b5f6d1e71129d (ancestry FF confirmed)
+- Push: 8247f0a..1f23004 main
+- ls-remote readback: 1f2300477bfd9e36447b8aee0d661d5ee55e9f5b refs/heads/main
+- Commit: "Check three-temperature transcript summary overlap and source arithmetic"
