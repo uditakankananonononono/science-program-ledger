@@ -107,3 +107,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~38s confirmed 9d253d9de778 stable.
 - Substance: archived PubMed Medline abstracts PMID 24145116 (2013 juvenile triploid GH-transgenic family/growth, 32K cDNA microarray + selected qPCR - not the target temperature/RNA-seq task) and PMID 31891812 (2019 AquAdvantage antiviral; same 10.5/13.5/16.5 C treatments but the target paper identifies its fish as a subset from the same overarching experiment; challenged head-kidney qPCR, not basal liver RNA-seq). Biological context only, NOT independent same-task validation; zero gate credit.
 - Diff-check vs lane claims: 6/6 MATCH. JSON quotes the target paper's own same-experiment passage; gate_credit all zeros; test suite run at landed head = 17 passed.
+
+## 2026-09-28 04:59 IST - lane C banana nonvaccine-proxy relay (cycle 10)
+
+- Repo: uditakankananonononono/mega27-24-banana-vaccine-enviropig
+- Base (live head): 0e6bc43ad81c953f753b7e6f9d52ae3dcebd01e8
+- Landed head: d71d8b95a8b2accce72d884387782117c75650bc
+- Commit (verbatim): "Screen banana field trait variability as nonvaccine proxy only"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed d71d8b95a8b2 stable.
+- Substance: archived two Europe PMC full-text XMLs (PMC5362681 2017 field study, PMC13110172 later three-generation study) + replay script/JSON/test + boundary note. Banana field data measure fruit pro-vitamin A CAROTENOIDS, not oral vaccine antigen; wild-type fruit means span 1.0-8.1 ug/g dry weight beta-carotene equivalents across trials/harvest months - an 8.1-fold ratio of two context-specific extrema, NOT an individual-fruit CV or vaccine dose. Later work assesses selected lines over three successive vegetative generations; not an independent vaccine validation cohort. Explicit nonvaccine-proxy boundary; zero gate credit.
+- Diff-check vs lane claims: 8/8 MATCH. Independently verified: 1.0-8.1 ug/g dw span verbatim in archived PMC5362681 XML ("from a low of 1.0 ug/g dw beta-CE in March-harvested fruit... to 8.1"); three-generation design verbatim in PMC13110172; test suite run at landed head = 12 passed.
