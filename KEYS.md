@@ -547,3 +547,11 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - ls-remote readback: 92e76a8d5ab324a5b4705c2b6e9794a5acfb9ef2 refs/heads/main
 - Commit: "Extend shared biomarker working paper with PPD source audit and sole Udita byline"
 - paper/manuscript.pdf at 92e76a8 = 51 pages (blob 8bbf1d53560b251c3a29af80762d2a697c257e8d). manuscript-times.pdf remains the older 49pp snapshot - not for distribution.
+
+## Bundle relay - shared reframe (Sep 27, 2026, ~11:30 IST)
+- Repo: mega27-25-biomarkers-underserved-diseases
+- Bundle: shared-reframe-8920a433.bundle (ref HEAD; requires 92e76a8d5ab324a5b4705c2b6e9794a5acfb9ef2 = live main; FF confirmed)
+- Push: 92e76a8..be7eacd main (1 commit)
+- ls-remote readback: be7eacd080f1f75efbef4f604883df8eaedaa50b refs/heads/main
+- Commit: "Lead shared biomarker paper with audited evidence and bounded sign transport"
+- paper/manuscript.pdf at be7eacd = 51 pages (blob 369ed6e740aa6981d79efaeb52c158e5aa4b24ed). Title/abstract reframe per her 10:35 positive-spine rule (relayed via Main).
