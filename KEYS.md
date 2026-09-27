@@ -514,3 +514,12 @@ mega27-24-banana-vaccine-enviropig: 2e6885a52860 -> 3f2948bc090c3eddf93d1e4e8209
 
 ## 2026-09-27 09:52 IST — PPD update 7 bundle pushed
 mega27-25-postpartum-depression-biomarkers: bb0f4873537d -> 6c98d3f7b7cb67dec6f494412ca3c31a539527ed "Check GSE290313 published supplement without inventing donor keys" (bundle verified complete history; FF vs live remote; 1 commit; GSE290313 donor-map screen: publisher supplement has aggregate Table S3 (188 postpartum-sampled women) but no GSM-to-person key; GEO/BioSample spot-check shows no common donor ID; conclusion: 119 selected libraries are specimen records, not 119 proven people; GSE290313 CANNOT be promoted to patient-independent transfer validation; audit tests 9 passed; no new biomarker/benchmark/judge credit). ls-remote verified.
+
+## 2026-09-27 10:37 IST — judge-floor bundles pushed (5 repos, after workspace outage + re-attach)
+All bundles verified complete history, FF vs live remotes, ls-remote readbacks exact. Content: judge-ledger updates to one owner-provided round per her 10:00:07 rule change (relayed by Main); earlier agent-initiated consults preserved, not auto-counted.
+- mega27-25-postpartum-depression-biomarkers: 6c98d3f7b7cb -> 4420183da901c852b6160bbee14d3b0ec1a723c7 "Update PPD judge gate to one owner-provided round pending evidence"
+- mega27-24-rice-oral-vaccine: d87c5a81975c -> 97cdfbcbbc404b22351af0aa365c6a48bc9ed7f3 "Set user-provided judge review floor to one round"
+- mega27-24-aquadvantage-salmon: 55d6dae25fd3 -> 8247f0ac80ec58d124ad784d139b5f6d1e71129d "Set user-provided judge review floor to one round"
+- mega27-24-blight-resistant-chestnut: 8c984dd270c0 -> 24a90b1e10c235afb2a814719908124fc9f2459b "Set user-provided judge review floor to one round"
+- mega27-24-banana-vaccine-enviropig: 3f2948bc090c -> 5641a45c404d70d1bf7a245866d8614692ab6026 "Set user-provided judge review floor to one round"
+INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command interrupted); the 5 newest bundle attachments were lost with the sandbox write, older files intact. Main re-attached all 5; processed immediately on recovery. An interim status message sent during the outage did not reach Main.
