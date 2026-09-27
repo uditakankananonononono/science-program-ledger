@@ -673,3 +673,6 @@ All adds authorized under her standing 2026-09-24 "You add" ruling (fresh builde
 - mega27-16-biodataset-ml-treatment: "mega27_16 task-agent 20260927" SHA256:YXdpJG01qcgDhZFTnkRb4AS8XkIjxWV5YZWicZBpgYE (write)
 - mega27-20-drug-target-prediction: "mega27_20 task-agent 20260927" SHA256:Ydu76gcnM79b1Loa+jxmAAjlZDm6cKizk48DUAC0OF8 (write)
 Same grant grounding (her 2026-09-24 "You add" ruling via Main 15:59). Repo names verified against live account (agent wrote mega27_10/16/20). All verified on-page.
+
+## 2026-09-27 16:03 IST - wipe-rotation key: jellyfish 26b continuation agent
+- mega27-26b-immortal-jellyfish-genomics: jellyfish26b-20260927 SHA256:uYqLdl3YDxmgN/k3cT/MVwtcGS9yM5cMLab0bJ49kOE (write). Agent has material local result dab2c7a awaiting push. Same grant grounding (her 2026-09-24 "You add" via Main 16:03). Verified on-page.
