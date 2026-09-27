@@ -463,3 +463,6 @@ mega27-24-rice-oral-vaccine: d68383c3a135 -> 2f5666f73e7a4903b7adcc243a2fcb76932
 
 ## 2026-09-27 05:52 IST — PPD update 6 bundle pushed
 mega27-25-postpartum-depression-biomarkers: b72a6776d11e -> bb0f4873537d07a5ffa38fd1894f3e1e2d120303 "Screen published PPD comparators without conflating tasks or access" (bundle verified complete history; FF vs live remote; 1 commit; six comparator papers classified by task/assay alignment; no verified public independent same-task holdout found - absence not proved; standing warning: never cite Mehta 2014's 88% as a same-task comparator). ls-remote verified.
+
+## 2026-09-27 06:17 IST — salmon read-inventory bundle pushed
+mega27-24-aquadvantage-salmon: 28aff13ef618 -> 55d6dae25fd3fc469726577f6ac2b433a0962897 "Reconcile paired-end read units and size the salmon RNA-seq payload" (bundle ref HEAD, complete history verified; FF vs live remote; 1 commit; ENA/Table-1 unit discrepancy closed: article counts mates, ENA counts paired fragments, exact 2x over 18/18 runs; totals pinned; metadata result, not biological). ls-remote verified.
