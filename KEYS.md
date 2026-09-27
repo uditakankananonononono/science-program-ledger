@@ -695,3 +695,6 @@ Main 16:15: install as new, leave first-round keys (deploy-weird-09/11/02-...-20
 
 ## 2026-09-27 17:38 IST - bundle relay: mega27-24-banana-vaccine-enviropig
 - Bundle push (lane C, banana-spirulina-near-miss-c6ac1d27.bundle): remote main 020383a3789574186f21577a4f5e73f836e53c46 -> 589b944b2b111bfb8d6889cc6c99c20edb25b38c. Bundle verified OK (complete history), FF-OK over live remote (re-checked immediately before push, still 020383a37). Commit message verbatim: "Reconcile banana screen count and flag spirulina antibody near-miss". Triple ls-remote readback confirmed 589b944b. Orchestrator key orchestrator-banana-20260927 (pre-existing) used; no key ops this relay.
+
+## 2026-09-27 18:24 IST - bundle relay: mega27-24-rice-oral-vaccine
+- Bundle push (lane C, rice-19a-wgs-accession-scope-4e8c40db.bundle): remote main 669b3aae322c86fb4ba0c8d3b59365975bb5ee45 -> 9590ec415456ae4c1f29af811aa4762439348f31. Bundle verified OK (complete history), FF-OK over live remote (re-checked immediately before push, still 669b3aae). 2 commits, messages verbatim: "Resolve MucoRice 19A accession as one genomic run, not dose data" (c1e8453, 18:22) and "Make MetaboLights replay independent of filesystem glob order" (9590ec4, 18:23). Triple ls-remote readback confirmed 9590ec41. Orchestrator key orchestrator-rice-20260927 (pre-existing) used; no key ops this relay.
