@@ -480,3 +480,13 @@ All bundles verified complete history, FF vs live remotes, ls-remote readbacks e
 - mega27-25-endometriosis-biomarkers: 09aa7acfa6e7 -> b180992830880c7e7a9e498023d3ca95acdfc5ad "Restore endometriosis analysis scripts omitted in migration" (3 endo_ scripts)
 - mega27-25-fibromyalgia-biomarkers: a611a1f413aa -> 392a516c271b6962a64fe6466e24ec0546f58b11 "Restore fibromyalgia analysis scripts omitted in migration" (fibro_p43_neutrophils.py)
 Omission register from 06:51 entry now fully closed: IC (06:51) + these 6 = all 7 affected repos restored.
+
+## 2026-09-27 06:53 IST — dependency-repair batches 4+5 pushed (6 pushes + 1 redundant)
+All bundles verified complete history, FF vs live remotes, ls-remote readbacks exact. Content: disease-named committed result files used by the restored scripts + disease-filtered accession manifests. Caveats carried: restores committed results, not all raw data; end-to-end replay NOT established; named-file presence is not rerun validation.
+- mega27-25-interstitial-cystitis-biomarkers: 8a18630f53c9 -> 9cb1b97859650c23a6ac10051fbbc5292a4f6059 "Restore disease-scoped result dependencies and manifest"
+- mega27-25-endometriosis-biomarkers: b18099283088 -> 56c81c8b509513b05cb8674296415eebdaea3da5 "Restore disease-scoped result dependencies and manifest"
+- mega27-25-leishmaniasis-biomarkers: 5edbf841d8fb -> 29f71974ea101873aaf24ca792f548c5a895482f "Restore disease-scoped result dependencies and manifest"
+- mega27-25-preeclampsia-biomarkers: e836e892710d -> f938f61fde6aa70ca8e160718444b67314d07122 "Restore disease-scoped result dependencies and manifest"
+- mega27-25-long-covid-biomarkers: 112488703f3c -> 806b4669a621ee552732f80df64df379a29fc6cb "Restore committed result and source dependencies omitted at split" (3 scripts, 8 named results, 1 Excel input)
+- mega27-25-me-cfs-biomarkers: a6dde4b6f805 -> 38148094157183be4b041b2fa82a2a4ae8e9d85e "Restore disease-scoped result dependencies and manifest" (4 scripts, 18 results, disease manifest)
+- mega27-25-fibromyalgia-biomarkers: batch-5 bundle was byte-identical to batch 2's (same head 392a516c271b6962a64fe6466e24ec0546f58b11 already live) - REDUNDANT, no push, no change.
