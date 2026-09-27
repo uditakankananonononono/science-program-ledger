@@ -689,3 +689,6 @@ Same grant grounding (her 2026-09-24 "You add" ruling via Main 15:59). Repo name
 - weird-11-ai-evolved-biofactories: lane29-weird-11-20260927-2 SHA256:mrlqV+teg+0scXH1PTbSWEIdMsfbDCP5eoUBCv3C5wA (write)
 - weird-02-quantum-compass (private): lane29-weird-02-20260927-2 SHA256:aaT/iMJBSTGcrATQcGXPKxiNcEuNgdM72fWoxq/I0bU (write)
 Main 16:15: install as new, leave first-round keys (deploy-weird-09/11/02-...-20260927) attached - one revocation sweep later with her approval. Same grant grounding. All verified on-page.
+
+## 2026-09-27 16:51 IST - bundle relay: mega27-24-blight-resistant-chestnut
+- Bundle push (lane C, chestnut-mapping-gc-qc-f65dbcc1.bundle): remote main 69d155891ced89416bbb97ac6155b419b45fff1f -> 88e5ebd28843a1c7e10839dcfecbe100cbb18095. Bundle verified OK (complete history), FF-OK over live remote (re-checked immediately before push, still 69d155891). Commit message verbatim: "Audit chestnut 9h mapping gap against GC and Q30 table metrics". Triple ls-remote readback confirmed 88e5ebd2. Orchestrator key orchestrator-chestnut-20260927 (pre-existing) used; no key ops this relay.
