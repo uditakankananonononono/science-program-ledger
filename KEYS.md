@@ -586,3 +586,5 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - FLIP: enzyme-mining-pollution -> PUBLIC 12:44 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in FASTA/.faa sequence lines (FP; MGnify is public EBI data).
 - FLIP: weird-09-radiation-toolkit -> PUBLIC 12:46 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in public proteome .faa files (FP).
 - FLIP: mega27-08-phage-design -> PUBLIC 12:51 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in phage GenBank translations + a DrugBank xref inside a public UniProtKB entry JSON (FP).
+- mega27-25-interstitial-cystitis-biomarkers: f9519903..8c883aa3 ("Adjudicate IC paired lesion source against original 25-person paper" - GSE238208 2023 iScience 25-paired-patient cohort, not GSE28242; cohort-level only; P25 still fails 31/46, emp p=0.0679). Readback 8c883aa39907de13c7e52b2a80086ad657b8551a.
+- mega27-25-biomarkers-underserved-diseases: 09a48709..5b481a10 ("Correct IC clinical-adjudication target in shared audit"). Readback 5b481a10e41d2f927801a9ec4c4a843810f4fcd5.
