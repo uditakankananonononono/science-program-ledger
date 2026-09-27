@@ -87,3 +87,23 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~37s confirmed 91e92ff7cb9e stable.
 - Substance: archived PubMed Medline abstract of the SEPARATE US phase I trial (PMID 35484039, Vaccine 2022) + replayable script/JSON/test + scope note vs the archived Japanese full text. US abstract: 6-g MucoRice-CTB dose in healthy men and women, salivary CTB-specific IgA response in 2 of 9 treated, GM1-binding inhibition in 3 of 5 responders. External within-topic clinical context ONLY - the 2/9 salivary measure is NOT equated with the Japanese faecal IgA endpoint; no participant-level data, pooled effect, comparator win or discovery; zero gate credit.
 - Diff-check vs lane claims: 5/5 MATCH. Independently verified: 2/9 and 3/5 verbatim in the archived Medline text ("two of the nine treated subjects", "three of the five responders"); test suite run at landed head = 24 passed.
+
+## 2026-09-28 04:58 IST - biomarkers-25 endometriosis GSE47360 tissue-sensitivity relay
+
+- Repo: uditakankananononono/mega27-25-endometriosis-biomarkers
+- Base (live head): 9070c218d327d9080910e889732d221ffb06b346
+- Landed head: b386a837c73e2bd91ec731e50172953c8162649f
+- Commit (verbatim): "Audit GSE47360 eutopic restriction without claiming biomarker"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~38s confirmed b386a837c73e stable.
+- Substance: reproducible source-record sensitivity - SHA-256 checks all 9 GSE47360 GSM records against the crosswalk, computes Hedges g on the historical 6-vs-3 split and an exploratory 3 eutopic-case vs 3 eutopic-control split over 33,297 shared probes. Of 33,292 probes finite in both comparisons, 6,838 reverse sign (1,965 with |g| >= 0.2 on both sides). Shows the old pooled effect is sensitive to ectopic-cell inclusion. Post-exposure and underpowered (3v3): NOT proof tissue alone caused flips, NOT a new biomarker, NO benchmark win. Old gene effects/meta and panel UNCHANGED; no new gate.
+- Diff-check vs lane claims: 6/6 MATCH. Independently verified: JSON numbers match claims exactly (finite_both 33292, sign_flips 6838, |g|>=0.2 1965); diff touches only projects/endometriosis/sensitivity/ + README, old results untouched; sensitivity tests run at landed head = 2 passed.
+
+## 2026-09-28 04:58 IST - lane C salmon related-cohorts relay (cycle 10)
+
+- Repo: uditakankananononono/mega27-24-aquadvantage-salmon
+- Base (live head): 240ad8f7b0cfffbdaaf65cf38916c5c091375275
+- Landed head: 9d253d9de778e59552bc2f69d030424dd2adeee9
+- Commit (verbatim): "Screen salmon family and antiviral studies for cohort independence"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~38s confirmed 9d253d9de778 stable.
+- Substance: archived PubMed Medline abstracts PMID 24145116 (2013 juvenile triploid GH-transgenic family/growth, 32K cDNA microarray + selected qPCR - not the target temperature/RNA-seq task) and PMID 31891812 (2019 AquAdvantage antiviral; same 10.5/13.5/16.5 C treatments but the target paper identifies its fish as a subset from the same overarching experiment; challenged head-kidney qPCR, not basal liver RNA-seq). Biological context only, NOT independent same-task validation; zero gate credit.
+- Diff-check vs lane claims: 6/6 MATCH. JSON quotes the target paper's own same-experiment passage; gate_credit all zeros; test suite run at landed head = 17 passed.
