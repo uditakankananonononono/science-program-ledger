@@ -26,3 +26,14 @@
 2026-09-28 03:28 IST | relay | mega27-24-aquadvantage-salmon | 0bdd481ca929 -> bed36aef72e8 | FF verified; diff-checked vs lane claims (4 files; S1-S3 rows 4678/1010/538, blanks 1116/236/108, 3436 unique labels, 614 multi-TCONS max 12, version suffixes distinct, dedupe per label; no RefSeq fetched; zero gate credit) | commit by Instinct Agent "Audit selected salmon RefSeq label cardinality" | triple ls-remote confirmed | orch_salmon
 2026-09-28 03:29 IST | relay | mega27-24-blight-resistant-chestnut | 924d5e897aff -> 53c159cadc85 | FF verified; diff-checked vs lane claims (4 files; 330 printed vs ena_run_count 737 vs 98/97 VCF labels; ENA report sha256 pinned, no sample_accession; neither resolves or disproves 330; zero gate credit) | commit by Instinct Agent "Separate chestnut resequencing sample run and VCF denominators" | triple ls-remote confirmed | orch_chestnut
 2026-09-28 03:30 IST | relay | mega27-24-banana-vaccine-enviropig | 4fda8d8edef0 -> 0e6bc43ad81c | FF verified; diff-checked vs lane claims (4 files; administered_line 4, 50 g fresh leaf, author-stated 12.9 ug, 257.6 ng/g x 50 g = 12.88; five-line range/CV NOT randomized doses or digestion variability; zero gate credit) | commit by Instinct Agent "Distinguish administered banana leaf line from five-line display" | triple ls-remote confirmed | orch_banana
+
+## 2026-09-28 03:57 IST - biomarkers-25 endometriosis GSE47360 audit relay
+
+- Repo: uditakankananonononono/mega27-25-endometriosis-biomarkers
+- Base (live head): b0a0e6f66ff2b92f6d21ae3bc2960bf26b89ad76
+- Landed head: 9070c218d327d9080910e889732d221ffb06b346
+- Commit (verbatim): "Audit mixed GSE47360 tissue labels and reconcile nine used records"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~37s confirmed 9070c218d327 stable.
+- Content: 9 historically used GSE47360 GSMs (GSM1148101-109) individually source-fetched with sha256 hashes in projects/endometriosis/sources/GSE47360_used_sample_crosswalk.csv; gzip copies under sources/GSE47360/; matched to old 3-control/6-case label file. Manifest now 120 record units (14 GSE, 105 nested GSM, 1 ontology) - literal record-unit floor only, not 120 independent studies/donors.
+- TISSUE CAVEAT (preserve): source case arm splits 3 eutopic endometrial stromal (endometriosis donors) + 3 ectopic ovarian chocolate-cyst stromal; controls are 3 eutopic stromal from non-endometriosis donors. The old pooled 6-vs-3 effect confounds disease with anatomical site - NOT a clean lesion-origin or same-tissue contrast. Old effects retained as historical mixed contrasts; NO favorable rerun claimed.
+- Diff-check vs lane claims: 5/5 MATCH (9 GSMs hash-preserved; 3+3 case tissue split vs 3 eutopic controls; confound caveat stated; old effects kept with no rerun; 120 = record-unit floor wording present). Verified independently: dataset_manifest.csv = 14 GSE + 105 GSM rows.
