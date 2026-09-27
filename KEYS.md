@@ -584,3 +584,4 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - atlas-ai: 03135800..5957c755 ("Verify Claire workbench in mocked Chromium flow", bundle sha256 38a48c0359db939b7252e4dfe83195aaf31f7e25c81db4af00a9a7ad27fdf226 verified). Readback 5957c755cea3c382b285ada30d314f4f1839b6c3.
 - atlas-ai: 5957c755..313309be ("Review stored social signals without external effects" - tenant-scoped read-only review cards, no external effects, bundle sha256 29b8c65522beb37f3e1970c778d482603c6aeb6e6157bfdd0392829d2654c6bf verified). Readback 313309be2a960a84b909d1834c3046f884e21a7e.
 - FLIP: enzyme-mining-pollution -> PUBLIC 12:44 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in FASTA/.faa sequence lines (FP; MGnify is public EBI data).
+- FLIP: weird-09-radiation-toolkit -> PUBLIC 12:46 IST, anon-200 verified. Secret scan CLEAN; license hits were HMDD-as-peptide-substring in public proteome .faa files (FP).
