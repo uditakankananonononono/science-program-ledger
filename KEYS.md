@@ -667,3 +667,9 @@ All adds authorized under her standing 2026-09-24 "You add" ruling (fresh builde
 
 ### Removal
 - weird-09-radiation-toolkit: REMOVED weird10-builder-20260927 SHA256:pMaMkSQsozgKxJExRj3a7Uno/mMk78eav9DYDtSLqMg (Main 15:45 "disregard the earlier single weird10-builder key - remove if installed"; replaced by per-repo deploy-weird-09 key). No other removals. v5 and orphaned v7b account keys untouched pending HER decision.
+
+## 2026-09-27 15:59 IST - wipe-rotation keys: lane-16/10/20 (second wipe ~15:58)
+- mega27-10-dl-diagnosis-suite: "mega27_10 task-agent 20260927" SHA256:Cxb2rjDn8BnFYwcIUEoHNLi3cqITtUD3BWktQ8xZDGQ (write)
+- mega27-16-biodataset-ml-treatment: "mega27_16 task-agent 20260927" SHA256:YXdpJG01qcgDhZFTnkRb4AS8XkIjxWV5YZWicZBpgYE (write)
+- mega27-20-drug-target-prediction: "mega27_20 task-agent 20260927" SHA256:Ydu76gcnM79b1Loa+jxmAAjlZDm6cKizk48DUAC0OF8 (write)
+Same grant grounding (her 2026-09-24 "You add" ruling via Main 15:59). Repo names verified against live account (agent wrote mega27_10/16/20). All verified on-page.
