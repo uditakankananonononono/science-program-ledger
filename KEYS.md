@@ -499,3 +499,9 @@ mega27-25-interstitial-cystitis-biomarkers: 9cb1b9785965 -> 9b582fb4a76a8317cbf9
 
 ## 2026-09-27 08:33 IST — rice label-sensitivity bundle pushed
 mega27-24-rice-oral-vaccine: 2f5666f73e7a -> d87c5a81975c55614cd99414bba37423a99e0de7 "Enumerate rice metabolome label sensitivity without inferential claims" (bundle verified complete history; FF vs live remote; 1 commit; MTBLS437 9-sample stability control expanded to all 126 group assignments: observed 95/104, max 97, median 55; descriptive post-outcome sensitivity, NO permutation claim). ls-remote verified.
+
+## 2026-09-27 08:44 IST — banana scope ruling executed (user-confirmed)
+User confirmed via Main (WhatsApp 08:43, verbatim "Ok do it the two things required from me"): archive the out-of-scope design line and make the published-design variability line main on mega27-24-banana-vaccine-enviropig.
+- ARCHIVE: refs/heads/archive/out-of-scope-designs = a3ef09549b89dcb365d25431712b41d13d508eb9 (prior main, epitope-conservation discovery line, preserved in full).
+- MAIN: moved to 2e6885a528608a7b722f8fc9a65d75d76ff8d363 "Screen published oral-vaccine observations against registered numeric endpoint" as a deliberate NON-fast-forward replacement (histories unrelated by root; NOT a merge - no out-of-scope material folded in). Bundle verified complete history.
+- ls-remote readback: main = 2e6885a528..., archive/out-of-scope-designs = a3ef09549b..., HEAD -> main.
