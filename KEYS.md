@@ -466,3 +466,7 @@ mega27-25-postpartum-depression-biomarkers: b72a6776d11e -> bb0f4873537d07a5ffa3
 
 ## 2026-09-27 06:17 IST — salmon read-inventory bundle pushed
 mega27-24-aquadvantage-salmon: 28aff13ef618 -> 55d6dae25fd3fc469726577f6ac2b433a0962897 "Reconcile paired-end read units and size the salmon RNA-seq payload" (bundle ref HEAD, complete history verified; FF vs live remote; 1 commit; ENA/Table-1 unit discrepancy closed: article counts mates, ENA counts paired fragments, exact 2x over 18/18 runs; totals pinned; metadata result, not biological). ls-remote verified.
+
+## 2026-09-27 06:51 IST — IC script-restore bundle pushed + migration omission register
+mega27-25-interstitial-cystitis-biomarkers: ae0635f8c7d8 -> 8a18630f53c9da2215837df3f13092a0536b2446 "Restore six IC analysis scripts omitted in migration" (bundle verified complete history; FF vs live remote; 1 commit; six ic_* analysis scripts the split heuristic missed, copied byte-for-byte from shared source 2960853; lane reports 19 common tests pass; end-to-end rerun NOT claimed). ls-remote verified.
+MIGRATION OMISSION REGISTER (same split-heuristic gap, restore bundles to follow from the lane): preeclampsia 17 scripts, leishmaniasis 4, long-covid 3, ME/CFS 4, endometriosis 3, fibromyalgia 1.
