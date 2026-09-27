@@ -692,3 +692,6 @@ Main 16:15: install as new, leave first-round keys (deploy-weird-09/11/02-...-20
 
 ## 2026-09-27 16:51 IST - bundle relay: mega27-24-blight-resistant-chestnut
 - Bundle push (lane C, chestnut-mapping-gc-qc-f65dbcc1.bundle): remote main 69d155891ced89416bbb97ac6155b419b45fff1f -> 88e5ebd28843a1c7e10839dcfecbe100cbb18095. Bundle verified OK (complete history), FF-OK over live remote (re-checked immediately before push, still 69d155891). Commit message verbatim: "Audit chestnut 9h mapping gap against GC and Q30 table metrics". Triple ls-remote readback confirmed 88e5ebd2. Orchestrator key orchestrator-chestnut-20260927 (pre-existing) used; no key ops this relay.
+
+## 2026-09-27 17:38 IST - bundle relay: mega27-24-banana-vaccine-enviropig
+- Bundle push (lane C, banana-spirulina-near-miss-c6ac1d27.bundle): remote main 020383a3789574186f21577a4f5e73f836e53c46 -> 589b944b2b111bfb8d6889cc6c99c20edb25b38c. Bundle verified OK (complete history), FF-OK over live remote (re-checked immediately before push, still 020383a37). Commit message verbatim: "Reconcile banana screen count and flag spirulina antibody near-miss". Triple ls-remote readback confirmed 589b944b. Orchestrator key orchestrator-banana-20260927 (pre-existing) used; no key ops this relay.
