@@ -457,3 +457,6 @@ mega27-24-rice-oral-vaccine: 72ae19deb578 -> d68383c3a1350f8e515e718da2c7cb0a0e8
 
 ## 2026-09-27 04:51 IST — PPD update 5 bundle pushed
 mega27-25-postpartum-depression-biomarkers: 6368d9b18efe -> b72a6776d11eb7cf5453a51bb4930506fe3fa2e3 "Document public-access and assay hold on 2026 PPD PBMC cohort" (bundle verified complete history; FF vs live remote; 1 commit; public-data hold: Sept 16 PBMC RNA-seq paper claims PRJNA1456230 but NCBI/ENA return zero records; reviewer-token link deliberately unused; assay/task mismatch documented; prior art not validation). ls-remote verified.
+
+## 2026-09-27 05:33 IST — rice stability bundle pushed
+mega27-24-rice-oral-vaccine: d68383c3a135 -> 2f5666f73e7a4903b7adcc243a2fcb76932d0172 "Audit identifier-deduped seed metabolome stability against label controls" (bundle ref HEAD, complete history verified; FF vs live remote; 1 commit; MTBLS437 post-outcome stability replay after fixed dedupe: 95/104 analytes retain direction through all nine leave-one-out deletions; rotated-label controls include one exceeding observed so NO signature claim; lane reports 9/9 tests pass). ls-remote verified.
