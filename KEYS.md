@@ -578,3 +578,5 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - atlas-ai: ce9ba56e..6317d485 ("Connect Claire to read-only source-backed opportunity triage", bundle sha256 114e4c23df4b52d5e814529d4c294ceab099000589b5548bcb37b9f4747dc8cd verified). Readback 6317d485d872335d3ed94cea6f8f427226f909b4.
 - atlas-ai: 6317d485..6437de54 ("Expose Claire interview and opportunity review in workbench", bundle sha256 289aab845b99cc1ff673cb92f8441ffc54b5b61b58957fd43d70dd2aa12ea445 verified). Readback 6437de54178eb9771aa4d1da36a67b0d7af1dcfc.
 - FLIP: mega27-10-dl-diagnosis-suite -> PUBLIC 12:35 IST, anon-200 verified. Secret scan CLEAN; license hit was base64-embedded PNG noise in properties_profile.html (FP).
+- FLIP: mega27-02-virtual-cell -> PUBLIC 12:39 IST, anon-200 verified. Secret scan CLEAN; license hits were peptide-sequence substrings in E. coli GenBank data, base64 PNG in notebook, PDF binary noise (all FP).
+- FLIP: mega27-05-yeast-metabolic-twin -> PUBLIC 12:39 IST, anon-200 verified. Secret scan CLEAN; license hit was HMDD-as-peptide-substring in swissprot.tsv sequences (FP; UniProt is CC BY 4.0).
