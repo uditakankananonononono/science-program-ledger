@@ -493,3 +493,6 @@ All bundles verified complete history, FF vs live remotes, ls-remote readbacks e
 
 ## 2026-09-27 07:03 IST — chestnut run-route bundle pushed
 mega27-24-blight-resistant-chestnut: ef58a9869b6c -> 8c984dd270c08a2151099f5ddd5ce96e982c7f24 "Map chestnut infection experiments to indexed run-file route" (bundle verified complete history; FF vs live remote; 1 commit; CRA006690 run route: 15 CRX mapped one-to-one to CRR464767-781 via SeqOut index, 74.6GB advertised; first CNCB file HEAD-verified 200; retrieval lead only, no payloads fetched; lane reports 5/5 tests). ls-remote verified.
+
+## 2026-09-27 07:52 IST — IC reproduction upgrade bundle pushed
+mega27-25-interstitial-cystitis-biomarkers: 9cb1b9785965 -> 9b582fb4a76a8317cbf9f198110d649ce4b56cd9 "Replay IC historical sensitivities with pinned GEO source matrices" (bundle verified complete history; FF vs live remote; 1 commit; historical GSE621/GSE11783 processed matrices + GEO raw series files added, fresh GETs matched both raw SHA-256; three sensitivity scripts now REPLAY prior numerical results from the standalone repo: 683/3,556 sign changes, donor |g| shift 0.056158 no sign change, 43/50 GSE57560 signs p=0.0469 FAILS the 0.025 threshold - all honest). ls-remote verified.
