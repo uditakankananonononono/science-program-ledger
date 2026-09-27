@@ -602,3 +602,11 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - mega27-24-banana-vaccine-enviropig: 5641a45c..020383a3 ("Screen lettuce CTB-ESAT6 capsule paper as endpoint near-miss", lane C verified bundle, lettuce CTB-ESAT6 endpoint screen fifth study honest 0/5). FF-verified vs lane's 5641a45c. restored-main branch created at a3ef095 (= archive/out-of-scope-designs). Readback main 020383a3789574186f21577a4f5e73f836e53c46.
 - mega27-25-biomarkers-underserved-diseases: 3046b32e..a5ea2bf7 ("Register held-out PCOS cumulus sign test before expression read"), then a5ea2bf7..b9722da6 (P46 PCOS registered test result, negative p=0.108). Readback b9722da6c53b8b891d9e99f6269070fe2c510577.
 - mega27-24-rice-oral-vaccine: 24b8031b..669b3aae ("Reconcile published rice CTB summaries across distinct estimands", lane C verified bundle, 12/12 tests). FF-verified. Readback 669b3aae322c86fb4ba0c8d3b59365975bb5ee45.
+
+## 2026-09-27 15:32 IST - deploy key ADDED: mega27-05-yeast-metabolic-twin
+- Title: mega27-05-redirect-laneB-revival
+- Key type: ssh-ed25519, write access, one-per-repo (fresh keypair for this repo only)
+- Fingerprint (verified on-page vs local ssh-keygen -lf): SHA256:xV1jNAxsxnezETvpOZTqXLybIuyLKRLW1NrOQ+KUkgY
+- Authorized by: Main relay 15:30 IST under her standing 2026-09-24 "You add" ruling (fresh builder public keys, write, one per repo)
+- For: revived yeast lane B agent (agent-01M3H4TTZDBY5V2CF685SSQJHB)
+- Verified on-page: entry present with Read/write + Delete button; pre-existing key "instinct-mega27-05-redirect" (SHA256:NcO6pBFwVarlhrOj5hn0QqP1a3xPociQWqxXBB9njYY) untouched.
