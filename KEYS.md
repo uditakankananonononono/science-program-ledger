@@ -580,3 +580,5 @@ INCIDENT NOTE: orchestrator workspace shell errored 10:01-10:35 (every command i
 - FLIP: mega27-10-dl-diagnosis-suite -> PUBLIC 12:35 IST, anon-200 verified. Secret scan CLEAN; license hit was base64-embedded PNG noise in properties_profile.html (FP).
 - FLIP: mega27-02-virtual-cell -> PUBLIC 12:39 IST, anon-200 verified. Secret scan CLEAN; license hits were peptide-sequence substrings in E. coli GenBank data, base64 PNG in notebook, PDF binary noise (all FP).
 - FLIP: mega27-05-yeast-metabolic-twin -> PUBLIC 12:39 IST, anon-200 verified. Secret scan CLEAN; license hit was HMDD-as-peptide-substring in swissprot.tsv sequences (FP; UniProt is CC BY 4.0).
+- mega27-27-isef-bioinf-derived-tools: 7e611be9..bfffd649 ("Freeze four review-responsive lane protocol drafts and stop rules" - LoopShift/miR-Time/CellPerturb/PocketShift plans, not measurements). Readback bfffd6496eb23771e3079bb232bcf493e8c84f83. Repo stays PRIVATE.
+- atlas-ai: 03135800..5957c755 ("Verify Claire workbench in mocked Chromium flow", bundle sha256 38a48c0359db939b7252e4dfe83195aaf31f7e25c81db4af00a9a7ad27fdf226 verified). Readback 5957c755cea3c382b285ada30d314f4f1839b6c3.
