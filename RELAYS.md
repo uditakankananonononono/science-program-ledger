@@ -280,3 +280,14 @@
 - Substance: full SOFT series records for GSE43264 and GSE43266 fetched; both carry "SubSeries of: GSE43322". Their sample-ID sets (15 and 16 GSMs) have zero overlap and their union is exactly the 31 previously audited GSMs (recomputed against the landed crosswalk). Manifest 119 -> 121 literal record units (20 GSE including the two nested SubSeries, 100 GSM, 1 ontology); README and manifest roles explicitly disclose nesting - "not a distinct cohort or extra patient". Crosses only the literal 120 source-record-unit floor with nesting disclosed; clinical-independent sample, 40-service, paper, new-marker and fair-benchmark gates remain unmet per README.
 - Diff-check vs lane claims: 6/6 MATCH (both SOFT records present w/ SubSeries-of relation; 15/16 IDs partition exactly the 31 crosswalk GSMs, recomputed; nested-not-independent disclosure verbatim; 121 = 20/100/1 recomputed; floor language matches; gates-still-open language matches).
 - Tests: projects/pcos/sources/gse43322 = 2 passed (run at landed head).
+
+## 2026-09-28 10:13 IST - lane C chestnut expression species-label audit relay
+
+- Repo: uditakankananonononono/mega27-24-blight-resistant-chestnut
+- Base (live head): 73bf7b4add0c47938330bf953b54be2015bea693
+- Landed head: 40b85cf709058b1f44143cd266b5d989d1699004
+- Commit (verbatim): "Audit species labels in chestnut expression archive"
+- Fast-forward push of 1 commit (4 files, +164); complete-history bundle verified; triple ls-remote readback over ~32s confirmed 40b85cf7 stable.
+- Substance: the 2025 multi-Castanea resource (PMC12103606) distributes 213 run-labeled expression matrix columns; replay against archived SRA runinfo gives 209 labeled C. mollissima + 4 labeled C. sativa (SRR8305472-5475, all PRJNA509688, 4 distinct BioSamples SAMN10586969/67/65/63). Article Suppl. Table 1 annotates all four as bud, full budburst, two Madonna + two Bouche de Betizac. Mixed-species warning for any C. mollissima-only cohort use; explicitly not an article error (resource spans eight Castanea species); SRA taxonomy is an archive label, not ancestry assay; no independence/phenotype claims. No read payloads, no biological result, no comparator; gate_credit all zeros.
+- Diff-check vs lane claims: 6/6 MATCH (209+4=213 recomputed; run IDs/bioproject/distinct-BioSample count verified in landed JSON; cultivar split 2+2 and full-budburst bud annotation verified; warning-vs-not-error framing verbatim; zero gate credit; no-FASTQ limit verbatim).
+- Tests: full suite at landed head = 23 passed.
