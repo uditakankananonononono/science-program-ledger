@@ -157,3 +157,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~40s confirmed acdc124d5278 stable.
 - Substance: nine GSE57560 biopsies previously omitted from the 4-low-capacity vs 3-healthy-control holdout are source-labeled normal-capacity IC (GSM fields: "phenotype: normal capactiy" [source spelling], "disease state: Interstitial cystitis") - NOT healthy controls. All nine full GSMs fetched and SHA-256 checked; all 62,976 probe values per record match the pinned series matrix (SHA-256 bdd66a6e...). New exploratory capacity-within-IC contrast (4 low-capacity vs 9 normal-capacity, healthy controls excluded): 12/62,976 probes exploratory Welch/BH q<0.05 - post-exposure, no prespecified endpoint, no batch adjustment, no independent sample/panel/marker/benchmark win. Historical 4v3 holdout unchanged. IC manifest 106 -> 115 identifiers (5 GSE, 109 GSM, 1 other), five short of the literal 120-record floor. No gate passed.
 - Diff-check vs lane claims: 7/7 MATCH. Independently verified: crosswalk carries per-GSM source/matrix sha256 + 62,976 probes matched; manifest recounted at landed head = 5 GSE + 109 GSM + 1 other = 115; the one source/method test run at landed head = 1 passed.
+
+## 2026-09-28 07:12 IST - lane C rice UMIN registry-identity relay
+
+- Repo: uditakankananonononono/mega27-24-rice-oral-vaccine
+- Base (live head): 91e92ff7cb9e2e2ba4b85cd7fdc49925615462d5
+- Landed head: 32a8e36a4203212c84af3c81cf6686374a79dc8e
+- Commit (verbatim): "Disambiguate published rice phase I registry from earlier trial"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed 32a8e36a4203 stable.
+- Substance: archived two actual UMIN registry HTML records + replay script/JSON/test + disambiguation note. The published Lancet 60-person 1/3/6-g phase I cites UMIN000018001 (receipt R000020832). The similarly titled older UMIN000009688 (receipt R000011211) targets only 20 participants at 750 mg rice / 1 mg CTB and CANNOT fill the published trial's dose/data gaps. Both pages' "Unpublished" results field is stale for the published trial (the Lancet article exists and cites UMIN000018001). Source-identity QC only; zero gate credit.
+- Diff-check vs lane claims: 6/6 MATCH. Independently verified in archived HTML: UMIN000018001 + R000020832 (2x), UMIN000009688 + R000011211 (2x), 750mg (2x); test suite run at landed head = 25 passed.
