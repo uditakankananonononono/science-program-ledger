@@ -334,3 +334,15 @@
 - Substance: preregistered within-BioProject/layout log1p-count Pearson correlation audit over the checksum-verified Figshare ZIP (zip sha256 recorded). 33,991 gene rows x 213 run columns (PE 156 + SE 51 + SS 6, recomputed). PRJNA883560: 30 same-BioSample pairs median 0.98662 vs 405 different 0.94031 (gap +0.04631). PRJNA562370 reverses slightly (0.92854 vs 0.93236) - no universal same-sample advantage claimed. PRJNA573571: both same-BioSample pairs have correlation 1.0 with EXACTLY equal processed count vectors across all 33,991 rows (distinct run labels; reason unknown; explicitly not a raw-read duplicate inference). ORCHESTRATOR-INDEPENDENT RECOMPUTE from the landed PE matrix: exactly 2 identical column pairs exist (SRR10350465/SRR10479848, SRR10350466/SRR10479849). No p-value (dependent pairs); no FASTQ payloads; no phenotype result; gate_credit all zeros.
 - Diff-check vs lane claims: 6/6 MATCH (883560 medians/counts exact; 562370 reversal exact; 573571 exact-equality independently recomputed from raw matrix; 33,991 x 213 recomputed; checksum-verified ZIP + prereg ordering; zero gate credit verbatim).
 - Tests: full suite at landed head = 24 passed.
+
+## 2026-09-28 11:13 IST - lane C rice dose-provenance guard prototype relay
+
+- Repo: uditakankananonononono/mega27-24-rice-oral-vaccine
+- Base (live head): 0aa46686007f6f8bceca20b04785c92d18a9a30f
+- Landed head: 0273717ddb903c46e32b859bdd3f00186266f9ad
+- Commit (verbatim): "Prototype source-scoped rice CTB dose provenance guard"
+- Fast-forward push of 1 commit (6 files, +156); complete-history bundle verified; triple ls-remote readback over ~30s confirmed 0273717d stable. (Relay's "crispr-phage-mosquito" was lane display-name shorthand; Main confirmed target = this repo 11:13.)
+- Substance: preregistered (2026-09-28-dose-provenance-tool.md) typed source-scoped calculator prototype separating printed nominal antigen dose from inferred bulk-lot concentration, individual measured exposure and post-digestion survival. Six openly predeclared regression cases in data/dose_reference_cases.json: one permitted within-source 2007 calculation (50 mg x 1.5 ug/mg = 75 ug), three blocked cross-study/line/material transfers, one blocked unlinked 2024 lot-mean-to-mouse transfer, one human 3 g/6 mg source-printed content retained without exposure claim. Naive multiply-anything baseline emits five numbers incl. four unsupportable.
+- Honesty class (per Main): invention prototype - tested, constructed regression cases only, no gate credit, no novelty claim. Note itself discloses: "not an untouched held-out comparator win, a biological discovery, or proof of algorithmic novelty... prior-art audit and prospective external tests are needed... All project gate credit remains zero."
+- Diff-check: 6/6 files as described (dated prereg question, six reference cases, source-scoped guard script, results JSON, test, note); case set verified present with expected verdicts; prereg precedes evaluation claims.
+- Test: tests/test_dose_provenance.py = 1 passed (run at landed head).
