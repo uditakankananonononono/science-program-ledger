@@ -237,3 +237,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed 867e1ae89c6e stable.
 - Substance: 19A (PMC10978600) source-unit audit with verbatim archived quotes. Methods print 150 mg powder containing 740 ug CTB = 4.933 ug/mg, within rounding of the reported three-lot SDS-PAGE mean 4.94 ug/mg (diff -0.0067). BOUNDED DISCREPANCY: methods say four oral administrations at 2-week intervals, Figure 6 caption says five - the source does not settle which; lane explicitly refuses to silently pick one. Arithmetic consistency + discrepancy documentation only; no exposure measurement, no mouse-to-human transfer, no discovery/comparator/gate credit.
 - Diff-check vs lane claims: 4/4 MATCH. Independently verified: 740/150 = 4.9333 arithmetic, both verbatim quotes present (methods "four times at 2-week intervals"; Figure 6 caption "immunized 5 times at 2-week intervals"); test suite run at landed head = 26 passed.
+
+## 2026-09-28 08:45 IST - lane C rice 2007 PNAS protection-comparator audit relay
+
+- Repo: uditakankananonononono/mega27-24-rice-oral-vaccine
+- Base (live head): 867e1ae89c6e4b3953d81a3745787fe4d5bd3f4c
+- Landed head: 0aa46686007f6f8bceca20b04785c92d18a9a30f
+- Commit (verbatim): "Archive and scope 2007 published rice CTB protection comparators"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed 0aa46686007f stable.
+- Substance: audit of the 2007 PNAS paper (PMC1904174, full HTML archived). PUBLISHED comparator evidence: oral 50 mg rice powder with nominal 75 ug CTB elicited mouse fecal IgA vs no/very low response from equal nominal purified rCTB; Fig 2 (verbatim caption archived): ~75% rice-expressed CTB intact after specified in-vitro pepsin (0.5 mg/ml, pH 1.7, 1h 37C) vs no intact purified rCTB; Fig 4 (verbatim): content unchanged after 1.5 years at 25C (29 +/- 4 ug/seed) with comparable mouse fecal IgA. Both 2007 powder ratios = 1.5 ug/mg. Explicitly published evidence, NOT our comparator win or discovery; ~75% is not a raw-replicate estimate; 2007 line is not identified as 19A/51A and its 1.5 ug/mg must NOT be pooled with the 19A 4.94 ug/mg lot mean. Zero gate credit.
+- Diff-check vs lane claims: 7/7 MATCH. Independently verified: arithmetic (75/50 = 15/10 = 1.5), both figure captions verbatim in archived JSON; test suite run at landed head = 27 passed.
