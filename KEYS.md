@@ -767,3 +767,8 @@ All bundles verified OK (complete history), tips matched Main's stated heads, FF
 - Repo: uditakankananonononono/selective-transfer-certificate
 - Key: orch-selective-transfer-certificate — SHA256:QOWf+Z1Nwog4xKBssQ8GQiya6MgvLPt0kvZwYzeiLYQ (ed25519, write deploy key, verified on-page Read/write 2026-09-28 21:35 IST)
 - For: agent-01M3K8F6AMJKPPCQW1RE682ERG (invention/builder agent), pubkey relayed by Main 2026-09-28 21:34 IST under the Sep-24 "You add" grant; ssh-keygen -lf matched Main's expected fingerprint before adding
+
+## 2026-09-29 — orch-phage-capsule-rbp-kpneumoniae-20260929 (ADD, write)
+- Repo: uditakankananonononono/phage-capsule-rbp-kpneumoniae (new, PRIVATE; created per Main relay 2026-09-29 00:19 IST, user-ordered lane)
+- Key: orch-phage-capsule-rbp-kpneumoniae-20260929 — SHA256:uhLj6s72sJ18cVHVdVri2sHUzG7NqyCXrIZ6hPNaLbA (ed25519, write deploy key, verified on-page Read/write 2026-09-29 00:20 IST)
+- Purpose: orchestrator seeding/ops key for this repo. Lane builder key to follow via Main relay.

@@ -493,3 +493,7 @@
 - CREATED private repo uditakankananonononono/selective-transfer-certificate (browser, her session, sudo email verification completed).
 - SEEDED main fd8b9ef0693483925b5c4e7607ad5a5f3c6effe9 with PREREG_2026-09-28_SELECTIVE_TRANSFER_v1.0_FROZEN.md unchanged (file SHA-256 b0fc9904c668bbbc9ddfaff73e3ce5978560bab5bb7b81813b9b52751a82f399, matches Main's stated hash). Triple ls-remote readback fd8b9ef06934 x3.
 - PUSHED objective-fragility-method main a2f73b5d190d -> b778c08ca5a836629a0da233765a110a0db360fa: docs/FAMILY_SEARCH_DEADEND_2026-09-28.md + .sha256 sidecar (file SHA-256 8349406edbd9e5e1db4b236b18e7ef9162a81790bbf5e3aadefce41eca9c107f, matches Main's stated hash; invention-agent local commit 676229b could not push, content relayed verbatim). Triple ls-remote readback b778c08ca5a8 x3. Note: live head had advanced to a2f73b5 (2 commits past last-known f1af1c1) before the push.
+
+## 2026-09-29 00:22 IST — phage-capsule-rbp-kpneumoniae repo created + seeded
+- CREATED private repo uditakankananonononono/phage-capsule-rbp-kpneumoniae (browser, her session, sudo email verification completed).
+- SEEDED main 15aec18cbce287eac4deaac63a263b0379520247 with PREREG.md + source-manifest.tsv verbatim per Main 00:21 relay (post-commit SHA-256 verified: PREREG.md c024715ad7330f6d26418262c2534b8c3aba13c8fd978124d5abe1a2da277b7f, source-manifest.tsv 71d6e8d2daa7ebefaf2b19095ea5acd5a6675e946959cca6719a896e1a09a24e, both match Main's stated hashes). Supersedes placeholder-README seed cf69c130a18e (Fast-forward, no force). Triple ls-remote readback 15aec18cbce2 x3.
