@@ -227,3 +227,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~41s confirmed 73bf7b4add0c stable.
 - Substance: preregistered frozen audit (prereg/2026-09-28) of all 213 Figshare expression run columns against NCBI SRA runinfo (11 archived CSV responses, all 213 exact SRR prefixes resolved). Result: 180 distinct BioSample accession labels - 163x1 run, 4x2, 12x3, 1x6. By layout: PE 156 cols/128 BioSamples, SE 51/51, SS 6/1 (single accession SAMN32254054); no cross-layout shared accession. Z90 triple-run case is one of the 12 triples. LEAKAGE WARNING: run count is not independent biological samples; conversely the article's 213 is valid as a distributed column/run count - audit does not call the article erroneous. Metadata only, no FASTQ, no resistance discovery, zero gate credit.
 - Diff-check vs lane claims: 5/5 MATCH. Independently verified arithmetic from JSON: 163+8+36+6 = 213 columns, 163+4+12+1 = 180 accessions; layout splits match claims. Test suite run at landed head = 22 passed.
+
+## 2026-09-28 08:03 IST - lane C rice 19A mouse-dose source-unit audit relay
+
+- Repo: uditakankananonononono/mega27-24-rice-oral-vaccine
+- Base (live head): 9666f7a3af6edfe26fda9de21e5912f265503b99
+- Landed head: 867e1ae89c6e4b3953d81a3745787fe4d5bd3f4c
+- Commit (verbatim): "Audit 19A mouse dose arithmetic and administration-count wording"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed 867e1ae89c6e stable.
+- Substance: 19A (PMC10978600) source-unit audit with verbatim archived quotes. Methods print 150 mg powder containing 740 ug CTB = 4.933 ug/mg, within rounding of the reported three-lot SDS-PAGE mean 4.94 ug/mg (diff -0.0067). BOUNDED DISCREPANCY: methods say four oral administrations at 2-week intervals, Figure 6 caption says five - the source does not settle which; lane explicitly refuses to silently pick one. Arithmetic consistency + discrepancy documentation only; no exposure measurement, no mouse-to-human transfer, no discovery/comparator/gate credit.
+- Diff-check vs lane claims: 4/4 MATCH. Independently verified: 740/150 = 4.9333 arithmetic, both verbatim quotes present (methods "four times at 2-week intervals"; Figure 6 caption "immunized 5 times at 2-week intervals"); test suite run at landed head = 26 passed.
