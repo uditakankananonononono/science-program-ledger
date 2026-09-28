@@ -772,3 +772,8 @@ All bundles verified OK (complete history), tips matched Main's stated heads, FF
 - Repo: uditakankananonononono/phage-capsule-rbp-kpneumoniae (new, PRIVATE; created per Main relay 2026-09-29 00:19 IST, user-ordered lane)
 - Key: orch-phage-capsule-rbp-kpneumoniae-20260929 — SHA256:uhLj6s72sJ18cVHVdVri2sHUzG7NqyCXrIZ6hPNaLbA (ed25519, write deploy key, verified on-page Read/write 2026-09-29 00:20 IST)
 - Purpose: orchestrator seeding/ops key for this repo. Lane builder key to follow via Main relay.
+
+## 2026-09-29 — phage-capsule-rbp-kpneumoniae-builder (ADD, write)
+- Repo: uditakankananonononono/phage-capsule-rbp-kpneumoniae
+- Key: phage-capsule-rbp-kpneumoniae-builder — SHA256:ABz40gQ1f182xzIvRrEbxSXK/d1rnpBtvU/yGUECkCs (ed25519, write deploy key, verified on-page Read/write 2026-09-29 00:24 IST)
+- For: lane agent-01M3MNEJHBME8Y4RZYJ9RNTQKF, pubkey relayed by Main 2026-09-29 00:23 IST under the Sep-24 "You add" grant; ssh-keygen -lf matched Main's expected fingerprint before adding

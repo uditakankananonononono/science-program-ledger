@@ -497,3 +497,7 @@
 ## 2026-09-29 00:22 IST — phage-capsule-rbp-kpneumoniae repo created + seeded
 - CREATED private repo uditakankananonononono/phage-capsule-rbp-kpneumoniae (browser, her session, sudo email verification completed).
 - SEEDED main 15aec18cbce287eac4deaac63a263b0379520247 with PREREG.md + source-manifest.tsv verbatim per Main 00:21 relay (post-commit SHA-256 verified: PREREG.md c024715ad7330f6d26418262c2534b8c3aba13c8fd978124d5abe1a2da277b7f, source-manifest.tsv 71d6e8d2daa7ebefaf2b19095ea5acd5a6675e946959cca6719a896e1a09a24e, both match Main's stated hashes). Supersedes placeholder-README seed cf69c130a18e (Fast-forward, no force). Triple ls-remote readback 15aec18cbce2 x3.
+
+## 2026-09-29 00:24 IST — phage-capsule-rbp-kpneumoniae PREREG v0.1.1 + builder key
+- PUSHED main 15aec18cbce2 -> 64d42fd53060a09708e6684214becc4d8429c7e1: PREREG-v0.1.1.md (post-commit SHA-256 04252711486228b1e151040591e254016625703a6aed1d36418bf704ddefd806, matches Main's stated hash) + CHANGELOG.md noting v0.1.1 corrects approval-implying phrasing; PREREG.md v0.1 untouched (c024715a...). Triple ls-remote readback 64d42fd53060 x3.
+- ADDED write deploy key phage-capsule-rbp-kpneumoniae-builder (SHA256:ABz40gQ1f182xzIvRrEbxSXK/d1rnpBtvU/yGUECkCs), on-page verified.
