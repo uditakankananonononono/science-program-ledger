@@ -459,3 +459,21 @@
 ## 2026-09-28 13:24 IST - item-27 lane self-push ledgered (not an orchestrator relay; live head verified)
 
 - mega27-27-isef-bioinf-derived-tools (PRIVATE) -> e9a4996e9bbcbfad03ea7b79dc62f79bec04033c (live ls-remote verified). Per Main: public-data discovery screen doc - OSD-940/GLDS-768/GSE271642 CRC organoid simulated-microgravity study screened (4 patient-derived lines, 1 RNA-seq rep per condition per line, CC0); published growth/drug observations not new, not a CellPerturb/PocketShift assay as-is; donor-aware transcript-to-drug-response method would need harmonization + untouched cohorts. Honesty class: "source-and-question screen - no analysis, no finding, gates 0/5".
+
+## 2026-09-28 13:29 IST - banana accession-hygiene relay (bundle from lane C via Main, source agent-01M39WS26FVG955MVJ49TP1G3Z)
+
+- mega27-24-banana-vaccine-enviropig -> 4249c21a6b97097bda9bb9c99ead15f31582435a "Screen oral cholera metagenome accessions and exclude bytecode caches" (bundle verify OK; requires-base f13e6b3408b6 = live head at import and again immediately pre-push; FF; pushed refs/heads/relay3:refs/heads/main; triple ls-remote readback over ~40s all 4249c21a6b97).
+- Diff-check vs lane claims: docs/source-ledger.md accession findings - OCV Chac et al. s41467-025-67388-y real, PRJNA782606 with 89 SRA experiments; MucoRice 20 baseline metagenomes confirmed but no accessible human-stool accession established, direction 1 remains GATED; endpoint shift OSP-memory-B-cell vs CTB-antibody needs frozen mapping - ALL MATCH the committed text. 2 tracked .pyc removed + gitignore hygiene (**/__pycache__/, *.pyc) - MATCH. No prereg, no AUROC claim, no compute - consistent.
+- External verification: NCBI eutils esearch db=sra term=PRJNA782606 returns count=89 experiments MATCH; PubMed esearch for DOI 10.1038/s41467-025-67388-y returns 1 hit (PMID 41388019) MATCH (article exists).
+
+## 2026-09-28 13:29 IST - 13a lane authorship audit COMPLETE (status, no remote move)
+
+- mega27-13-synthetic-lethal-rl at df687fbaccf1b6791e01d044cbf6b6c04c2404c8 (head independently read by orchestrator via her GitHub session 13:21): lane reports authorship/attribution audit COMPLETE + VERIFIED CLEAN - all 108 tracked files, zero bylines/acknowledgments/assistant/Instinct attributions, zero PDF/DOCX/TEX/RTF; only ordinary scientific mentions of "author"/"credit". Honesty class: "verified clean audit - no mutation needed". Lane-reported; orchestrator confirmed the file list (108 files, no document formats) via full tree crawl at the same head.
+
+## 2026-09-28 13:29 IST - 13a lane self-push ledgered (not an orchestrator relay; live head verified via her GitHub session)
+
+- mega27-13-synthetic-lethal-rl -> 3b12bd54e6e94ace5f0decdc5814058faafdcc23 (repo-page refInfo.currentOid verified via her session 13:29; orchestrator keys cannot read this repo, SSH verification N/A). Per Main: locked PREREGISTRATION.md restored byte-for-byte (sha256 check OK vs original 334f967d hash - lane initially edited it in ab5b6f0 then correctly reverted); >=50-page substantive-text-body rule placed in separate docs/PAPER-DELIVERABLE-AMENDMENT-2026-09-28.md (delivery-format amendment, not analysis-gate change). Honesty class: "amendment doc - locked prereg preserved, no gate changes, no paper exists".
+
+## 2026-09-28 13:29 IST - VC2/VO3 lane self-pushes ledgered (not orchestrator relays; live heads verified)
+
+- mega27-02-virtual-cell (VC2) -> a39dfdfc189e5ef21fbdb852fca7650987d6a3aa (live ls-remote verified). mega27-03-virtual-organoid (VO3) -> 25b5cee70e196e7b50e9558e38faf13a2c26dccd (live ls-remote verified). Per Main: ChatGPT consult archives (chat link 6aba1cc0; first prompt truncated/drifted, archived with warning; GSE263022 published study ALREADY tested high/low FIS molecular distinction and found no separating gene = weak candidate, not promising; GSE164638 mouse stretch-state is published prior art). Honesty class: "steering consult archive + candidate rejection - no new arm, no outcomes".
