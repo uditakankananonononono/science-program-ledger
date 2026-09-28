@@ -431,3 +431,7 @@
 ## 2026-09-28 12:55 IST - item-27 lane self-push ledgered (not an orchestrator relay; live head verified)
 
 - mega27-27-isef-bioinf-derived-tools (PRIVATE) -> 375da00992ad8bdf3042a3bfd4f906006e8a7524 (live ls-remote verified). Per Main: DGR source eligibility tightening - Hankyphage jmh42/jmh51 RTs exactly identical to original p00 (434 aa); jmh47 PV107406 has only a 1,304-nt RT-like misc_feature, no translated RT CDS, naive first-frame translation has internal stops, indels present. Conclusion: the 3 assayed strains CANNOT be counted as multiple independent RT lineages; jmh47 not a new functional lineage by naive translation. Signal stands as one candidate phage family only. Honesty class: "source eligibility correction - corroborated single candidate family, gates 0/5".
+
+## 2026-09-28 13:10 IST - item-27 lane self-push ledgered (not an orchestrator relay; live head verified)
+
+- mega27-27-isef-bioinf-derived-tools (PRIVATE) -> 7f56268f996c8bfe4cf0a6df2af4a66855da5207 (live ls-remote verified). Per Main: DGR threshold methodology caution - exploratory 5-protein alignments: Bov/Bfi same-source 65.5% identity; Hanky p00 vs Bov/Bfi 29.1%/27.5%; two independent group-II intron RTs match each other only 34.8%, while Hanky vs intron RTs 26-27%. Conclusion: a convenient 30% cutoff from candidate labels would be an unsound retrospective family/mechanism rule. Honesty class: "methodology warning - no clustering claim, no classifier, gates 0/5".
