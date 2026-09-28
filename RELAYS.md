@@ -413,3 +413,7 @@
 
 - mega27-26b-immortal-jellyfish-genomics -> de74bf0725dfbdc524846ff7e5b75a374cd2d7f9 is now AUTHORITATIVE (triple ls-remote over ~40s stable), superseding 6e85d53d6331. Per Main: lane found the lay summary + conclusion overstated missing annotations and copy-number certainty after upload; corrected and added OrthoFinder/CAFE 3 prior-art comparisons; no GFAR novelty claim.
 - Authoritative private Drive links (supersede both Sep 27 and the 6e85d53d set): PDF file id 109OFb7u-azn6slmj8WiCf_yxn65becAu, DOCX id 11fg2Mcv5ijm9PDTpsuaytGqPWhQOowVI. 70 body-only pages (74 total), 54 tests (lane-reported), pages 1-2 + 64-65 inspected (lane-reported). A-D gates remain unpassed.
+
+## 2026-09-28 12:46 IST - jellyfish 26b status downgrade: de74bf07 AUTHORITATIVE -> INTERIM
+
+- Per Main: lane found MORE stale cross-chapter wording (background/desert + GFAR sections still imply no deposited T. dohrnii annotation) and is correcting now. de74bf0725dfbdc524846ff7e5b75a374cd2d7f9 is downgraded from AUTHORITATIVE to INTERIM; its content claims remain directionally right (no novelty claim, A-D gates unpassed) but final wording is being fixed. A new canonical commit + Drive links are coming and will be relayed when the lane reports. The 109OFb7u/11fg2Mcv Drive links from the previous entry are likewise INTERIM.
