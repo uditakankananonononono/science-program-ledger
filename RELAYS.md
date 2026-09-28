@@ -388,3 +388,7 @@
 
 - mega27-02-virtual-cell (VC2) -> d3f1b20b5023a4ff901d7e6ec1b200047398ec83 (live ls-remote verified). Per Main: Lao/Ying author correction + input-lineage prose distinguishing OD600 acquisition vs Price2018 vs viable library; 27/27 tests (lane-reported); PDF 85 physical pages, 50+ gate unmet; G2 FAIL stands.
 - mega27-03-virtual-organoid (VO3) -> 9a7b34ded1dbe21754ce53e15922a831ac20c321 (live ls-remote verified). Per Main: OrgLine v4 not acquisition-disjoint from OrgaSegment; OrgaExtractor evaluation-pair independence unverified; 70/70 tests (lane-reported); PDF 92 physical pages, 50+ not certified; all FAILs/withdrawals stand. Honesty class for both: "source screening + corrections, no outcomes scored, no gate changes".
+
+## 2026-09-28 12:26 IST - item-27 lane self-push ledgered (not an orchestrator relay; live head verified)
+
+- mega27-27-isef-bioinf-derived-tools (PRIVATE) -> 061521dc6bb95ca67a706d05c760e980c672df47 (live ls-remote verified). Per Main: Hankyphage provenance correction - PRJEB85302 ENA runs don't map to jmh42/jmh47/jmh51; E-MTAB-14724 maps those to Nanopore assembly reads, not demonstrated to be the Illumina diversity reads. Conclusion: Fig 1B data + assembled loci corroborated, NOT independently re-called from exact FASTQs. Honesty class: "provenance correction - corroborated-not-independent; unsealed, gates 0/5".
