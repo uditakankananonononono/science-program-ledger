@@ -127,3 +127,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed e04307dffebe stable.
 - Substance: archived original Supplementary Table 1 XLSX (Europe PMC supplementaryFiles for PMC12103606, sha256 recorded) + replay script/JSON/test + note. Crosswalk: 212 distinct supplement SRR rows vs 213 Figshare expression-matrix sample columns. SRR8383229 appears in the matrix with suffix _SHW_Gall_A2; one matrix-only run SRR21681158 has no S1 row. After the unambiguous SRR-prefix mapping all 212 table IDs are covered. Paper's 213 agrees with the distributed matrix, but the printed annotation table does not fully annotate it. Metadata crosswalk only - no read payloads, no biological claim, no gate credit.
 - Diff-check vs lane claims: 5/5 MATCH. Independently verified: JSON counts (212 distinct table IDs, 213 matrix columns, suffix correspondence, matrix-only SRR21681158) match the note and claims; test suite run at landed head = 19 passed.
+
+## 2026-09-28 05:57 IST - biomarkers-25 endometriosis same-series prior-art relay
+
+- Repo: uditakankananononono/mega27-25-endometriosis-biomarkers
+- Base (live head): b386a837c73e2bd91ec731e50172953c8162649f
+- Landed head: 28cc0cd504b62c9868fa2267263d515c031af003
+- Commit (verbatim): "Record same-series prior art and euESC letter-label conflict"
+- Fast-forward push of 1 commit (docs only, 2 markdown files); bundle verified against live main; triple ls-remote readback over ~39s confirmed 28cc0cd504b6 stable.
+- Substance: GSE47360's primary publication (Yamagata et al. 2014, PLOS One, 10.1371/journal.pone.0083612) is prior analysis of the SAME cohort - not an external benchmark or independent replication. Paper reports 2 up / 8 down (same-tissue eutopic comparison) vs 498 up / 329 down (ectopic-cyst vs eutopic) under its own thresholds, plus RT-PCR follow-up of NR5A1, STAR, STRA6, HSD17B2 - published prior art, not new markers. CONFLICT PRESERVED: abstract's euESCa/euESCb disease definitions conflict with the nine GEO records' titles/characteristics (GEO: euESCa1-3 = non-endometriosis controls, euESCb1-3 = eutopic cases), so no letter-based GSM binding; no donor-pairing inference; counts not mapped to our Hedges-g probe-sign contrast. No new gate.
+- Diff-check vs lane claims: 5/5 MATCH (docs-only commit; no test claim made by lane).
