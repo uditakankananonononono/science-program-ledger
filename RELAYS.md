@@ -359,3 +359,7 @@
 ## 2026-09-28 11:27 IST - microbiome lane self-push ledgered (not an orchestrator relay; live head verified)
 
 - mega27-04-microbiome-twin -> 33d6e6cddfb7fb97ba275c703668c839a0b5c7ab (live ls-remote verified). Per Main: ambiguity certificate generalization - arbitrary submitted finite sets of 3-species gLV candidates, consistency/stability rejection, inspectable opposite-sign pair. Preregistered 40-pair constructed stress panel: 20/20 opposing detected, 20/20 one-sided abstained, 3/3 invalid rejected; trivial flag fired on all 40 (disclosed). 295 tests pass (lane-reported, not orchestrator-run). Prior-art boundary disclosed: gLV perturbation ensembles (s12898-019-0272-6) + structural identifiability (PMC10135947). Honesty class: "operational finite-model witness prototype - constructed panel only, no published-method benchmark, no real-world accuracy estimate".
+
+## 2026-09-28 11:37 IST - item-27 lane self-push ledgered (not an orchestrator relay; live head verified)
+
+- mega27-27-isef-bioinf-derived-tools (PRIVATE) -> 561d54e8889896b899947c16e7bf6582a4d53e0c (live ls-remote verified). Per Main: synthetic DGR competing-assignment mechanics stub - per-edge DGR-vs-intron evidence, exact global one-credit assignment, tie/margin abstention, fail-closed budget; 55 tests executed OK (lane-reported, not orchestrator-run). Honesty class: "falsifiable scaffold - synthetic supplied inputs only, no RT nomination, no calibration, no novelty claim, gates 0/5".
