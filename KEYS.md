@@ -757,3 +757,8 @@ All bundles verified OK (complete history), tips matched Main's stated heads, FF
 ## 2026-09-28 13:28 IST - key add: 13a lane builder key
 
 - ADD: deploy (write) key `synthetic-lethal-rl-builder-20260928` on mega27-13-synthetic-lethal-rl ONLY - ssh-ed25519 SHA256:cIkvjfup5Xd8oPK2KKxNkfhCvwZ+rDs9n0nJ/UOdOX0, relayed by Main 13:25 (13a lane's own new keypair for its authorship audit of all 108 files at df687fb; private half stays in lane workspace). ssh-keygen -lf validated pre-add, fingerprint matched Main's relay exactly. Key body pasted verbatim from archived pubkey file (/tmp/pubkeys/13a-builder-20260928.pub). Verified on-page: 2 deploy keys listed, new key shows Read/write with Delete control, fingerprint exact. Note: first two form POSTs were consumed by GitHub sudo email gate (no error surfaced); completed sudo via email code, GitHub replayed the POST. Same grant grounding: her 2026-09-24 11:03 "You add" via Main.
+
+## 2026-09-28 — orch-selective-transfer-certificate-20260928 (ADD, write)
+- Repo: uditakankananonononono/selective-transfer-certificate (new, PRIVATE; created per Main relay 2026-09-28 ~21:12 IST, user-delegated)
+- Key: orch-selective-transfer-certificate-20260928 — SHA256:xtx9le6kz4kVKcPTZOGc1LdevSbJs4gwplD/svtQ2bQ (ed25519, write deploy key, verified on-page Read/write 2026-09-28 21:24 IST)
+- Purpose: orchestrator seeding/ops key for this repo
