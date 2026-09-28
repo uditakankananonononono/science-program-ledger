@@ -291,3 +291,14 @@
 - Substance: the 2025 multi-Castanea resource (PMC12103606) distributes 213 run-labeled expression matrix columns; replay against archived SRA runinfo gives 209 labeled C. mollissima + 4 labeled C. sativa (SRR8305472-5475, all PRJNA509688, 4 distinct BioSamples SAMN10586969/67/65/63). Article Suppl. Table 1 annotates all four as bud, full budburst, two Madonna + two Bouche de Betizac. Mixed-species warning for any C. mollissima-only cohort use; explicitly not an article error (resource spans eight Castanea species); SRA taxonomy is an archive label, not ancestry assay; no independence/phenotype claims. No read payloads, no biological result, no comparator; gate_credit all zeros.
 - Diff-check vs lane claims: 6/6 MATCH (209+4=213 recomputed; run IDs/bioproject/distinct-BioSample count verified in landed JSON; cultivar split 2+2 and full-budburst bud annotation verified; warning-vs-not-error framing verbatim; zero gate credit; no-FASTQ limit verbatim).
 - Tests: full suite at landed head = 23 passed.
+
+## 2026-09-28 10:40 IST - lane C banana lettuce-VLP processing-variation audit relay
+
+- Repo: uditakankananonononono/mega27-24-banana-vaccine-enviropig
+- Base (live head): ef5ef9dcd6581ec8136840caf9f1a4e226e156c0
+- Landed head: 2defce5efa6517b99e71156055b624b54826b907
+- Commit (verbatim): "Audit published lettuce VLP processing batch variation"
+- Fast-forward push of 1 commit (5 files, +2715 incl archived PMC4209752 HTML); complete-history bundle verified; triple ls-remote readback over ~30s confirmed 2defce5e stable.
+- Substance: adjacent published processing-variability audit (lettuce S-HBsAg VLP freeze-drying, PMC4209752, full HTML archived with sha256). Verbatim archived quotes: 9 complete lyophilisation cycles, 17 nested batch/sample units (5 subsamples in each of two cycles); 13/17 near-complete VLP preservation; mean recovery 86% with three batches below 50% (incl. within-cycle 48% and 60%); total immunoreactive antigen increased up to 556% (batch V-2) while VLP preservation varied; mouse booster batch delivered 50 ng VLP in 1.72 mg powder = 29.07 ng/mg (arithmetic recomputed exact). Explicitly a positive PROCESSING-STAGE measurement analogue only: lettuce tissue, not banana fruit; no post-gastric intact-antigen endpoint; nested units not 17 independent cycles; no discovery, no comparator win; gate_credit all zeros.
+- Diff-check vs lane claims: 6/6 MATCH (cycles/units, 13/17, 86% mean + sub-50% cases, 556% total-antigen increase, 29.07 ng/mg recomputed, analogue-not-banana framing and zero gate credit verbatim).
+- Tests: full suite at landed head = 13 passed.
