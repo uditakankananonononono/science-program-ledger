@@ -363,3 +363,14 @@
 ## 2026-09-28 11:37 IST - item-27 lane self-push ledgered (not an orchestrator relay; live head verified)
 
 - mega27-27-isef-bioinf-derived-tools (PRIVATE) -> 561d54e8889896b899947c16e7bf6582a4d53e0c (live ls-remote verified). Per Main: synthetic DGR competing-assignment mechanics stub - per-edge DGR-vs-intron evidence, exact global one-credit assignment, tie/margin abstention, fail-closed budget; 55 tests executed OK (lane-reported, not orchestrator-run). Honesty class: "falsifiable scaffold - synthetic supplied inputs only, no RT nomination, no calibration, no novelty claim, gates 0/5".
+
+## 2026-09-28 11:43 IST - lane C salmon decision-certificate prototype relay
+
+- Repo: uditakankananonononono/mega27-24-aquadvantage-salmon
+- Base (live head): 6ce5aac237469b1194271f3836a74348b967eab2
+- Landed head: e6947845b77d8c9ea010512b63b29e0ace5f0c72
+- Commit (verbatim): "Prototype salmon endpoint-conflict decision certificate"
+- Fast-forward push of 1 commit (5 files, +136); complete-history bundle verified (history matches this repo: parent = prior head 6ce5aac2); triple ls-remote readback over ~30s confirmed e6947845 stable.
+- Substance: preregistered (2026-09-28-multiendpoint-decision-certificate.md) abstaining provenance-aware decision certificate over author-reported aggregate means (days to 1500 g 475/418/382; late FCR 0.86/0.87/1.01; late TGC 2.09/1.86/1.43 for 10.5/13.5/16.5 C). All three groups Pareto nondominated; 5,151-vector 0.01-increment weight grid winner counts 2,199/2,372/580 (orchestrator re-ran the landed script: identical counts; counts sum to 5,151). Counts explicitly not probabilities/confidence/policy; requires stated preference; reuses documented tank and size/time confounding - no causal optimal-temperature claim.
+- Honesty class (per Main): invention prototype - tested (19), Pareto/preference-sensitivity counts on aggregate means, no novel algorithm / causal effect / comparator win / gate credit. Note discloses Pareto/weighted-utility as established methods + aquaculture MCDM prior art.
+- Diff-check: 5/5 files as described (frozen question, tool, JSON, test, note); 19 tests passed (full suite run at landed head); headline counts independently reproduced.
