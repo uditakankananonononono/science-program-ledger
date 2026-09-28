@@ -177,3 +177,23 @@
 - Fast-forward push of 1 commit (3 files: judge note, exact prompt, full 295-line response); bundle verified against live main; triple ls-remote readback over ~39s confirmed 9666f7a3af6e stable.
 - Substance: literal agent-operated ChatGPT judge consultation archived (conversation https://chatgpt.com/c/6ab9c7fe-5718-83e8-b0de-685ea28f269b) with exact prompt and complete page-rendered reply. Verdicts: working reusable research tool = PASS narrowly (source-audit tool only); lab-testable measurement nomination = measured CTB content/retention across independent lots vs nominal printed dose; genuine new discovery FAIL, fair baseline win FAIL, untouched validation FAIL, mechanism UNEVALUABLE; no ISEF-ready discovery endorsement. Archived reply's final sentence ends mid-thought ("If reframed ... I would consider") - preserved verbatim, no text invented. External opinion on the evidence packet only; zero gate credit.
 - Diff-check vs lane claims: 5/5 MATCH. Independently verified: verdict table values, nomination text, truncated ending all present in the archived response; test suite run at landed head = 25 passed.
+
+## 2026-09-28 07:23 IST - lane C salmon in-house ChatGPT judge archive relay
+
+- Repo: uditakankananonononono/mega27-24-aquadvantage-salmon
+- Base (live head): 9d253d9de778e59552bc2f69d030424dd2adeee9
+- Landed head: 71a12311788214185e67422a28db9cd8ca9e62b2
+- Commit (verbatim): "Archive in-house ChatGPT judge response for salmon evidence packet"
+- Fast-forward push of 1 commit (note + exact prompt + full 72-line response); bundle verified against live main; triple ls-remote readback over ~39s confirmed 71a1231178821 stable.
+- Substance: literal agent-operated ChatGPT consultation archived (https://chatgpt.com/c/6ab9c850-4d7c-83e8-b37a-b794887cb971). Verdicts: narrow positive on source-unit/author-list provenance; lab-testable nomination PASS (independent fish-level paired growth/feed/FCR/liver-tissue/welfare measurement under prespecified temperatures); discovery FAIL, baseline win FAIL, frozen validation FAIL, mechanism UNEVALUABLE, tool utility UNEVALUABLE; NOT ISEF-ready as discovery/benchmark; pivot = prespecified independent temperature-growth replication with frozen endpoint and comparator. Reply ends mid-thought ("The proposed fish-level"), preserved verbatim. External opinion only; zero gate credit.
+- Diff-check vs lane claims: 4/4 MATCH (verdict values verbatim in archived response; truncation confirmed; opinion-only framing). Test suite run at landed head = 17 passed.
+
+## 2026-09-28 07:24 IST - lane C chestnut in-house ChatGPT judge archive relay (2 commits, URL-corrected)
+
+- Repo: uditakankananonononono/mega27-24-blight-resistant-chestnut
+- Base (live head): 64386d63ac0f5ba463cb5a869ddb0157a0f70c36
+- Landed head: dc61a5f8d996b3d6f21a4f535238678a59fb6695
+- Commits (verbatim): "Archive in-house ChatGPT judge response for chestnut evidence packet" (c5c4e6c0cf49) -> "Correct chestnut ChatGPT conversation URL to observed link" (dc61a5f8d996)
+- Fast-forward push of 2 commits; bundle verified against live main; triple ls-remote readback over ~41s confirmed dc61a5f8d996 stable.
+- Substance: literal consultation archived at CORRECTED URL https://chatgpt.com/c/6ab9c899-c55c-83e8-9a8d-37c4107045e4 (dc61a5f replaces a mis-typed URL 6ab9c8bd-cf38-... in the note - fix verified in the diff). Verdicts: narrow positives on the Table S1/matrix run-row gap and 330 VCF-label reconciliation as data-audit results, not resistance biology; discovery FAIL, phenotype baseline FAIL, frozen validation FAIL, mechanism UNEVALUABLE, tool UNEVALUABLE; lab-testable nomination PASS (blinded infection/severity on independent specimens paired with molecular readouts); pivot requires predefined phenotype-linked task with correctly resolved biological-sample units. Reply ends before final sentence closes; no text invented. External opinion only; zero gate credit.
+- Diff-check vs lane claims: 4/4 MATCH (verdict values verbatim; URL correction verified; truncation confirmed). Test suite run at landed head = 21 passed.
