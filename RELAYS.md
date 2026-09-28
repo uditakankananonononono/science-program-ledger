@@ -207,3 +207,23 @@
 - Fast-forward push of 1 commit (note + exact prompt + full 199-line response); bundle verified against live main; triple ls-remote readback over ~42s confirmed ef5ef9dcd658 stable.
 - Substance: literal agent-operated consultation archived (https://chatgpt.com/c/6ab9c8e4-d8ec-83ee-a781-f4bbb4ad0cea). Narrow positives: locked endpoint hierarchy, publication-level holdout, difficult simple comparator design, real banana-leaf between-line expression range as bounded signal. Gate table: discovery FAIL, baseline FAIL, validation FAIL, mechanism UNEVALUABLE, tool UNEVALUABLE; nomination PASS = paired starting antigen content + post-digestion intact fraction across independent fruit/plant replicates, blinded, with propagated uncertainty. Pivot: preserve locked primary endpoint; only if no qualifying paired data, prespecify a SEPARATE replicated published plant-antigen variability question - carotenoids, potato immunogenicity and spirulina VHH never become banana oral-vaccine labels. Reply ends mid-word ("not yet a de"), preserved verbatim. External opinion only; zero gate credit.
 - Diff-check vs lane claims: 6/6 MATCH (verdict values, nomination text, substitution bar, truncation all verified in archived files). Test suite run at landed head = 12 passed.
+
+## 2026-09-28 07:59 IST - biomarkers-25 IC GSE621 APF-treatment relay (2 commits)
+
+- Repo: uditakankananonononono/mega27-25-interstitial-cystitis-biomarkers
+- Base (live head): acdc124d5278f6bda45b6391b574e3e797a0bfc1
+- Landed head: 54697488b2162488ec30ac1a300896dc46170de0
+- Commits (verbatim): "Use source-verified GSE621 APF assays as nested nonclinical records" (7c3544a206d5) -> "Make exploratory IC probe outputs byte-reproducible" (54697488b216)
+- Fast-forward push of 2 commits; bundle verified against live main; triple ls-remote readback over ~39s confirmed 54697488b216 stable.
+- Substance: 8 GSE621 GSMs (APF/mock-treated normal bladder epithelial cell lines, 4 APF + 4 mock across two lines - explicitly NONCLINICAL, "not eight independent donors") fetched, hash-checked, matched across 4,132 probes to the pinned series matrix (sha256 ff6dd2c9...). Post-exposure APF-minus-mock sensitivity: 2,354/4,132 matching effect directions; no disease comparison, biomarker or benchmark win. Manifest now 123 distinct accession records (5 GSE, 117 nested GSM, 1 other) - crosses ONLY the literal 120 record-unit floor; README states eight GSMs are mechanistic normal-cell treatment assays, not clinical IC specimens, and record units are not independent datasets/patients. Discovery/benchmark/services/paper gates all open. Byte-reproducibility via gzip mtime=0 pinning.
+- Diff-check vs lane claims: 5/5 MATCH. Independently verified: JSON numbers (8/2/4+4, 4132, 2354), crosswalk APF/mock descriptions per line, manifest recount = 5 GSE + 117 GSM + 1 other = 123 data rows; both source/method tests run at landed head = 2 passed.
+
+## 2026-09-28 08:00 IST - lane C chestnut 213-vs-180 BioSample unit relay
+
+- Repo: uditakankananonononono/mega27-24-blight-resistant-chestnut
+- Base (live head): dc61a5f8d996b3d6f21a4f535238678a59fb6695
+- Landed head: 73bf7b4add0c47938330bf953b54be2015bea693
+- Commit (verbatim): "Resolve all chestnut expression run columns to BioSample units"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~41s confirmed 73bf7b4add0c stable.
+- Substance: preregistered frozen audit (prereg/2026-09-28) of all 213 Figshare expression run columns against NCBI SRA runinfo (11 archived CSV responses, all 213 exact SRR prefixes resolved). Result: 180 distinct BioSample accession labels - 163x1 run, 4x2, 12x3, 1x6. By layout: PE 156 cols/128 BioSamples, SE 51/51, SS 6/1 (single accession SAMN32254054); no cross-layout shared accession. Z90 triple-run case is one of the 12 triples. LEAKAGE WARNING: run count is not independent biological samples; conversely the article's 213 is valid as a distributed column/run count - audit does not call the article erroneous. Metadata only, no FASTQ, no resistance discovery, zero gate credit.
+- Diff-check vs lane claims: 5/5 MATCH. Independently verified arithmetic from JSON: 163+8+36+6 = 213 columns, 163+4+12+1 = 180 accessions; layout splits match claims. Test suite run at landed head = 22 passed.
