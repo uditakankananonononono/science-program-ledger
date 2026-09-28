@@ -117,3 +117,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed d71d8b95a8b2 stable.
 - Substance: archived two Europe PMC full-text XMLs (PMC5362681 2017 field study, PMC13110172 later three-generation study) + replay script/JSON/test + boundary note. Banana field data measure fruit pro-vitamin A CAROTENOIDS, not oral vaccine antigen; wild-type fruit means span 1.0-8.1 ug/g dry weight beta-carotene equivalents across trials/harvest months - an 8.1-fold ratio of two context-specific extrema, NOT an individual-fruit CV or vaccine dose. Later work assesses selected lines over three successive vegetative generations; not an independent vaccine validation cohort. Explicit nonvaccine-proxy boundary; zero gate credit.
 - Diff-check vs lane claims: 8/8 MATCH. Independently verified: 1.0-8.1 ug/g dw span verbatim in archived PMC5362681 XML ("from a low of 1.0 ug/g dw beta-CE in March-harvested fruit... to 8.1"); three-generation design verbatim in PMC13110172; test suite run at landed head = 12 passed.
+
+## 2026-09-28 05:43 IST - lane C chestnut supplement-expression crosswalk relay
+
+- Repo: uditakankananonononono/mega27-24-blight-resistant-chestnut
+- Base (live head): 3861662441304de87e2bd13881b9f878ad352116
+- Landed head: e04307dffebe4fc81b64380df1bf294bc2cd4b90
+- Commit (verbatim): "Crosswalk chestnut RNA-seq supplement against 213 matrix labels"
+- Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed e04307dffebe stable.
+- Substance: archived original Supplementary Table 1 XLSX (Europe PMC supplementaryFiles for PMC12103606, sha256 recorded) + replay script/JSON/test + note. Crosswalk: 212 distinct supplement SRR rows vs 213 Figshare expression-matrix sample columns. SRR8383229 appears in the matrix with suffix _SHW_Gall_A2; one matrix-only run SRR21681158 has no S1 row. After the unambiguous SRR-prefix mapping all 212 table IDs are covered. Paper's 213 agrees with the distributed matrix, but the printed annotation table does not fully annotate it. Metadata crosswalk only - no read payloads, no biological claim, no gate credit.
+- Diff-check vs lane claims: 5/5 MATCH. Independently verified: JSON counts (212 distinct table IDs, 213 matrix columns, suffix correspondence, matrix-only SRR21681158) match the note and claims; test suite run at landed head = 19 passed.
