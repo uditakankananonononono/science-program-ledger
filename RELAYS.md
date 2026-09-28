@@ -269,3 +269,14 @@
 - Substance: source-unit audit of the 2022 article (PMC9168996). Archived verbatim rearing/selection quotes: 3 tanks per temperature (10.5/13.5/16.5 C, "in triplicate"), 21 initial liver samples per condition, 2 selected fish per tank = 6 per condition = 18 RNA libraries (selection fraction 6/21 = 0.2857 recomputed exact); 800 g size-matched sampling at ~10/11/12 months in the 16.5/13.5/10.5 C treatments respectively. Finding: the 18 distinct Table 1 SRR run labels are fish libraries nested in nine treatment tanks, not 18 independent temperature assignments; temperature, age and time-to-size are bundled; Table 1 prints no SRR-to-tank mapping. Limits naive fish-independent/pure-temperature causal reads; explicitly not a refutation of the published DET observations. Zero gate credit (gate_credit block all zeros); no FASTQ fetch, no model, no discovery, no comparator.
 - Diff-check vs lane claims: 8/8 MATCH (tank counts, 21 samples, 2/tank & 6/group & 18 libraries, 18 distinct accessions, month/temperature mapping from verbatim quote, nesting finding, no-mapping limit, zero gate credit). Selection fraction 6/21 recomputed.
 - Tests: full suite at landed head = 18 passed (lane's claim; the new test file itself is 1 test).
+
+## 2026-09-28 09:58 IST - lane 25 PCOS nested SubSeries provenance relay
+
+- Repo: uditakankananonononono/mega27-25-pcos-biomarkers
+- Base (live head): ce3a707b8a5dabf9396692da308162f00224943f
+- Landed head: e94e6d244c6c0812c7442ab354eb588d4ff54cbf
+- Commit (verbatim): "Account for source-used PCOS SubSeries as nested records"
+- Fast-forward push of 1 commit (5 files, +100/-3); bundle verified against live main; triple ls-remote readback over ~32s confirmed e94e6d24 stable.
+- Substance: full SOFT series records for GSE43264 and GSE43266 fetched; both carry "SubSeries of: GSE43322". Their sample-ID sets (15 and 16 GSMs) have zero overlap and their union is exactly the 31 previously audited GSMs (recomputed against the landed crosswalk). Manifest 119 -> 121 literal record units (20 GSE including the two nested SubSeries, 100 GSM, 1 ontology); README and manifest roles explicitly disclose nesting - "not a distinct cohort or extra patient". Crosses only the literal 120 source-record-unit floor with nesting disclosed; clinical-independent sample, 40-service, paper, new-marker and fair-benchmark gates remain unmet per README.
+- Diff-check vs lane claims: 6/6 MATCH (both SOFT records present w/ SubSeries-of relation; 15/16 IDs partition exactly the 31 crosswalk GSMs, recomputed; nested-not-independent disclosure verbatim; 121 = 20/100/1 recomputed; floor language matches; gates-still-open language matches).
+- Tests: projects/pcos/sources/gse43322 = 2 passed (run at landed head).
