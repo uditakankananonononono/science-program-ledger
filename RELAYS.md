@@ -408,3 +408,8 @@
 
 - mega27-26b-immortal-jellyfish-genomics -> 6e85d53d63313731336d9e1750a4a7f7c07a3fa4 (triple ls-remote over ~40s stable, immediately after the prior fa7f2b65 entry).
 - Content per Main: A-D status + manuscript post-verdict section - GFAR framed as method candidate (not proven algorithm/biology), A null, B structurally unresolved after full PacBio replay, C nine titles with unverified biological-sample independence + no inferential DE, D raw-source smoke. 70 body-only pages (73 total), 54 tests (lane-reported), pages 63-64 visually inspected (lane-reported). New private Drive links superseding Sep 27 for final-arm status (NOT all-issues PASS): PDF file id 1yRoeYROpoYT7n8GvxWpFc2m9F4bIcyPr, DOCX id 1ljywgFvcVmbiydoTis7-3lfl5RmG-YMP. Honesty class: "status reconciliation - unresolved negative, gates unmet".
+
+## 2026-09-28 12:45 IST - jellyfish 26b CORRECTION (supersedes the 6e85d53d entry above; live head verified)
+
+- mega27-26b-immortal-jellyfish-genomics -> de74bf0725dfbdc524846ff7e5b75a374cd2d7f9 is now AUTHORITATIVE (triple ls-remote over ~40s stable), superseding 6e85d53d6331. Per Main: lane found the lay summary + conclusion overstated missing annotations and copy-number certainty after upload; corrected and added OrthoFinder/CAFE 3 prior-art comparisons; no GFAR novelty claim.
+- Authoritative private Drive links (supersede both Sep 27 and the 6e85d53d set): PDF file id 109OFb7u-azn6slmj8WiCf_yxn65becAu, DOCX id 11fg2Mcv5ijm9PDTpsuaytGqPWhQOowVI. 70 body-only pages (74 total), 54 tests (lane-reported), pages 1-2 + 64-65 inspected (lane-reported). A-D gates remain unpassed.
