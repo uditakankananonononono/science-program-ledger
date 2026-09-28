@@ -501,3 +501,8 @@
 ## 2026-09-29 00:24 IST — phage-capsule-rbp-kpneumoniae PREREG v0.1.1 + builder key
 - PUSHED main 15aec18cbce2 -> 64d42fd53060a09708e6684214becc4d8429c7e1: PREREG-v0.1.1.md (post-commit SHA-256 04252711486228b1e151040591e254016625703a6aed1d36418bf704ddefd806, matches Main's stated hash) + CHANGELOG.md noting v0.1.1 corrects approval-implying phrasing; PREREG.md v0.1 untouched (c024715a...). Triple ls-remote readback 64d42fd53060 x3.
 - ADDED write deploy key phage-capsule-rbp-kpneumoniae-builder (SHA256:ABz40gQ1f182xzIvRrEbxSXK/d1rnpBtvU/yGUECkCs), on-page verified.
+
+## 2026-09-29 00:40 IST — agent-cognition-memos repo created + memo seeded; phage file export for analyst
+- CREATED private repo uditakankananonononono/agent-cognition-memos (browser, her session).
+- SEEDED main 97cd8e3f08fef2d3d8b1e122be046ab500849682 with memos/2026-09-29-memory-can-hurt.md (SHA-256 b81947fa6834d8f28b22b24e4f7746634d0db80e436f102825125c5435fce007, verbatim from Main's attached report.md, renamed per instruction). Triple ls-remote readback 97cd8e3f08fe x3.
+- EXPORTED phage-capsule-rbp-kpneumoniae @ 25cbb42afb2b: PREREG-v0.1.2.md + docs/AUDIT-NOTES-2026-09-29.md + CHANGELOG.md, sent to Main for forwarding to analyst agent-01M3MPQPKXFX92P3KA4PEFA9M4 (direct agent_message rejected: parent-only). Phage main advanced 64d42fd -> 25cbb42 (lane self-pushes).
