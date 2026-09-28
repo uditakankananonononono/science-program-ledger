@@ -167,3 +167,13 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed 32a8e36a4203 stable.
 - Substance: archived two actual UMIN registry HTML records + replay script/JSON/test + disambiguation note. The published Lancet 60-person 1/3/6-g phase I cites UMIN000018001 (receipt R000020832). The similarly titled older UMIN000009688 (receipt R000011211) targets only 20 participants at 750 mg rice / 1 mg CTB and CANNOT fill the published trial's dose/data gaps. Both pages' "Unpublished" results field is stale for the published trial (the Lancet article exists and cites UMIN000018001). Source-identity QC only; zero gate credit.
 - Diff-check vs lane claims: 6/6 MATCH. Independently verified in archived HTML: UMIN000018001 + R000020832 (2x), UMIN000009688 + R000011211 (2x), 750mg (2x); test suite run at landed head = 25 passed.
+
+## 2026-09-28 07:22 IST - lane C rice in-house ChatGPT judge archive relay
+
+- Repo: uditakankananonononono/mega27-24-rice-oral-vaccine
+- Base (live head): 32a8e36a4203212c84af3c81cf6686374a79dc8e
+- Landed head: 9666f7a3af6edfe26fda9de21e5912f265503b99
+- Commit (verbatim): "Archive in-house ChatGPT judge response for rice evidence packet"
+- Fast-forward push of 1 commit (3 files: judge note, exact prompt, full 295-line response); bundle verified against live main; triple ls-remote readback over ~39s confirmed 9666f7a3af6e stable.
+- Substance: literal agent-operated ChatGPT judge consultation archived (conversation https://chatgpt.com/c/6ab9c7fe-5718-83e8-b0de-685ea28f269b) with exact prompt and complete page-rendered reply. Verdicts: working reusable research tool = PASS narrowly (source-audit tool only); lab-testable measurement nomination = measured CTB content/retention across independent lots vs nominal printed dose; genuine new discovery FAIL, fair baseline win FAIL, untouched validation FAIL, mechanism UNEVALUABLE; no ISEF-ready discovery endorsement. Archived reply's final sentence ends mid-thought ("If reframed ... I would consider") - preserved verbatim, no text invented. External opinion on the evidence packet only; zero gate credit.
+- Diff-check vs lane claims: 5/5 MATCH. Independently verified: verdict table values, nomination text, truncated ending all present in the archived response; test suite run at landed head = 25 passed.
