@@ -355,3 +355,7 @@
 ## 2026-09-28 11:18 IST - invention-track self-push ledgered (not an orchestrator relay; live head verified)
 
 - objective-fragility-method (PRIVATE) -> f1af1c10ea7ae6bb2f53538a5150e0ba97398aa0 (live ls-remote verified via builder deploy key). Per Main: frozen prereg (SHA-256 56aad45180bca23a2e1bd3ff0e1d2efafbeec2071aded9e3fd91f4527187db87) + synthetic-oracle prototype; 7 tests pass (agent-reported, not orchestrator-run). Honesty class: "prereg + prototype only - no model outcomes scored, no novelty/benchmark claim".
+
+## 2026-09-28 11:27 IST - microbiome lane self-push ledgered (not an orchestrator relay; live head verified)
+
+- mega27-04-microbiome-twin -> 33d6e6cddfb7fb97ba275c703668c839a0b5c7ab (live ls-remote verified). Per Main: ambiguity certificate generalization - arbitrary submitted finite sets of 3-species gLV candidates, consistency/stability rejection, inspectable opposite-sign pair. Preregistered 40-pair constructed stress panel: 20/20 opposing detected, 20/20 one-sided abstained, 3/3 invalid rejected; trivial flag fired on all 40 (disclosed). 295 tests pass (lane-reported, not orchestrator-run). Prior-art boundary disclosed: gLV perturbation ensembles (s12898-019-0272-6) + structural identifiability (PMC10135947). Honesty class: "operational finite-model witness prototype - constructed panel only, no published-method benchmark, no real-world accuracy estimate".
