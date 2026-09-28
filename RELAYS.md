@@ -417,3 +417,8 @@
 ## 2026-09-28 12:46 IST - jellyfish 26b status downgrade: de74bf07 AUTHORITATIVE -> INTERIM
 
 - Per Main: lane found MORE stale cross-chapter wording (background/desert + GFAR sections still imply no deposited T. dohrnii annotation) and is correcting now. de74bf0725dfbdc524846ff7e5b75a374cd2d7f9 is downgraded from AUTHORITATIVE to INTERIM; its content claims remain directionally right (no novelty claim, A-D gates unpassed) but final wording is being fixed. A new canonical commit + Drive links are coming and will be relayed when the lane reports. The 109OFb7u/11fg2Mcv Drive links from the previous entry are likewise INTERIM.
+
+## 2026-09-28 12:47 IST - VC2/VO3 lane self-pushes ledgered (not orchestrator relays; live heads verified)
+
+- mega27-02-virtual-cell (VC2) -> 44d170fbbde9eaae571171eca6b143c174bb206a (live ls-remote verified). Per Main: Lao/Ying 2026 full methods documented - M63 composition not a unique flux cap, stock-plate well-position retention across 3 assay plates, 46 regrown strains flagged in metadata requiring frozen exclude/stratify/retain treatment before any outcome, OD600 morphology/scattering limits; no outcomes opened; 27/27 tests (lane-reported); PDF 85pp, 50+ NOT MET; G2 FAIL stands.
+- mega27-03-virtual-organoid (VO3) -> 9184be51ad72c431fcde34d0433561045083ff0b (live ls-remote verified). Per Main: two more source exclusions - iPSC gut-organoid filovirus deposit not CFTR/GT; OrganoidTracker demo single 50-frame movie not multi-donor FIS/GT; no effects/masks scored; 70/70 tests (lane-reported); PDF 92pp refs p63, 50+ not certified; failures/withdrawals stand. Honesty class for both: "source methods documentation + exclusions, no outcomes, no gate changes".
