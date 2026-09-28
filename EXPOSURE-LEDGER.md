@@ -16,3 +16,6 @@ Program-wide record of every dataset/source any agent has opened VALUES from, so
 | GSE7846 (endometriosis) | biomarkers program history | values analyzed previously | pre-2026-09-29 | values-exposed |
 | GSE47360 (endometriosis) | biomarkers program history | values analyzed previously | pre-2026-09-29 | values-exposed |
 | GSE67311 (fibromyalgia) | biomarkers program history | values analyzed previously | pre-2026-09-29 | values-exposed |
+| preeclampsia datasets (exact accessions TBD by lane from metadata, no value viewing) | biomarkers program history | prior completed outcomes exist in shared-core results dir (pe_p21/p24/p42/p44) + NOVELTY_PLAN files with past failed tests and exposed leads | pre-2026-09-29 | values-exposed |
+| long-COVID datasets (exact accessions TBD by lane from metadata, no value viewing) | biomarkers program history | prior completed outcomes exist in shared-core results dir (longcovid_p36/p37/p38) + NOVELTY_PLAN files with past failed tests and exposed leads | pre-2026-09-29 | values-exposed |
+| ME/CFS datasets (exact accessions TBD by lane from metadata, no value viewing) | biomarkers program history | prior completed outcomes exist in shared-core results dir (mecfs_p29/p32/p41 + p33_test_predictions.csv) + NOVELTY_PLAN files with past failed tests and exposed leads | pre-2026-09-29 | values-exposed |
