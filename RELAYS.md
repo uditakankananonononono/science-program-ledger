@@ -247,3 +247,14 @@
 - Fast-forward push of 1 commit; bundle verified against live main; triple ls-remote readback over ~39s confirmed 0aa46686007f stable.
 - Substance: audit of the 2007 PNAS paper (PMC1904174, full HTML archived). PUBLISHED comparator evidence: oral 50 mg rice powder with nominal 75 ug CTB elicited mouse fecal IgA vs no/very low response from equal nominal purified rCTB; Fig 2 (verbatim caption archived): ~75% rice-expressed CTB intact after specified in-vitro pepsin (0.5 mg/ml, pH 1.7, 1h 37C) vs no intact purified rCTB; Fig 4 (verbatim): content unchanged after 1.5 years at 25C (29 +/- 4 ug/seed) with comparable mouse fecal IgA. Both 2007 powder ratios = 1.5 ug/mg. Explicitly published evidence, NOT our comparator win or discovery; ~75% is not a raw-replicate estimate; 2007 line is not identified as 19A/51A and its 1.5 ug/mg must NOT be pooled with the 19A 4.94 ug/mg lot mean. Zero gate credit.
 - Diff-check vs lane claims: 7/7 MATCH. Independently verified: arithmetic (75/50 = 15/10 = 1.5), both figure captions verbatim in archived JSON; test suite run at landed head = 27 passed.
+
+## 2026-09-28 09:01 IST - lane 25 PCOS GSE43322 treatment-mixture audit relay
+
+- Repo: uditakankananonononono/mega27-25-pcos-biomarkers
+- Base (live head): cb7f3a23f61c8e8b09e77233b632250a0775661f
+- Landed head: ce3a707b8a5dabf9396692da308162f00224943f
+- Commit (verbatim): "Audit PCOS SuperSeries treatment mixture and baseline-only effects"
+- Fast-forward push of 1 commit (40 files, +17352/-1); bundle verified against live main; triple ls-remote readback over ~36s confirmed ce3a707b stable.
+- Substance: all 31 historically analyzed GSMs individually fetched from GEO and sha256-recorded in GSE43322_used_sample_crosswalk.csv against the 17,126-probe GPL15362 series matrix (probe count independently recomputed). Composition: 8 baseline PCOS + 7 healthy controls (GSE43264), 8 placebo + 8 LC n-3 PUFA PCOS crossover biopsies (GSE43266). Old pooled 24-case/7-control effect replays within max |g| delta 5.13e-05 but mixes treatment/clinical state. Source-strict sensitivity (8 baseline cases vs 7 controls) flips 2,956/16,910 gene signs vs pooled (recomputed from landed CSV); 849 of the flipped genes have |g| >= 0.2 on both sides. Explicitly NOT an untouched validation, new marker, or comparator win; donor linkage across subseries unresolved. Accession inventory 88 -> 119 (18 GSE, 100 GSM, 1 ontology) - one short of the literal 120 floor. Service/paper/discovery/comparator gates remain open.
+- Diff-check vs lane claims: 7/7 MATCH (counts, composition, replay delta, flips, 849-of-flipped, inventory transition, caveat language all independently recomputed or read verbatim from landed files). Lane's "0.000052" bound holds (actual 5.13e-05). Note: the 849 figure is within the 2,956 sign-flipped subset.
+- Test: projects/pcos/sources/gse43322/test_audit.py = 1 passed (run at landed head).
