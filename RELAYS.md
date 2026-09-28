@@ -197,3 +197,13 @@
 - Fast-forward push of 2 commits; bundle verified against live main; triple ls-remote readback over ~41s confirmed dc61a5f8d996 stable.
 - Substance: literal consultation archived at CORRECTED URL https://chatgpt.com/c/6ab9c899-c55c-83e8-9a8d-37c4107045e4 (dc61a5f replaces a mis-typed URL 6ab9c8bd-cf38-... in the note - fix verified in the diff). Verdicts: narrow positives on the Table S1/matrix run-row gap and 330 VCF-label reconciliation as data-audit results, not resistance biology; discovery FAIL, phenotype baseline FAIL, frozen validation FAIL, mechanism UNEVALUABLE, tool UNEVALUABLE; lab-testable nomination PASS (blinded infection/severity on independent specimens paired with molecular readouts); pivot requires predefined phenotype-linked task with correctly resolved biological-sample units. Reply ends before final sentence closes; no text invented. External opinion only; zero gate credit.
 - Diff-check vs lane claims: 4/4 MATCH (verdict values verbatim; URL correction verified; truncation confirmed). Test suite run at landed head = 21 passed.
+
+## 2026-09-28 07:26 IST - lane C banana in-house ChatGPT judge archive relay
+
+- Repo: uditakankananonononono/mega27-24-banana-vaccine-enviropig
+- Base (live head): d71d8b95a8b2accce72d884387782117c75650bc
+- Landed head: ef5ef9dcd6581ec8136840caf9f1a4e226e156c0
+- Commit (verbatim): "Archive in-house ChatGPT judge response for banana evidence packet"
+- Fast-forward push of 1 commit (note + exact prompt + full 199-line response); bundle verified against live main; triple ls-remote readback over ~42s confirmed ef5ef9dcd658 stable.
+- Substance: literal agent-operated consultation archived (https://chatgpt.com/c/6ab9c8e4-d8ec-83ee-a781-f4bbb4ad0cea). Narrow positives: locked endpoint hierarchy, publication-level holdout, difficult simple comparator design, real banana-leaf between-line expression range as bounded signal. Gate table: discovery FAIL, baseline FAIL, validation FAIL, mechanism UNEVALUABLE, tool UNEVALUABLE; nomination PASS = paired starting antigen content + post-digestion intact fraction across independent fruit/plant replicates, blinded, with propagated uncertainty. Pivot: preserve locked primary endpoint; only if no qualifying paired data, prespecify a SEPARATE replicated published plant-antigen variability question - carotenoids, potato immunogenicity and spirulina VHH never become banana oral-vaccine labels. Reply ends mid-word ("not yet a de"), preserved verbatim. External opinion only; zero gate credit.
+- Diff-check vs lane claims: 6/6 MATCH (verdict values, nomination text, substitution bar, truncation all verified in archived files). Test suite run at landed head = 12 passed.
