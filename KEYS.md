@@ -822,3 +822,8 @@ Per builder-key pattern (one per repo, write, her 2026-09-24 grant; patches rela
 - builder-mega27-02-deploy on mega27-02-virtual-cell, SHA256:3IFLxuNrP3mzd44uOhBrpnXfnH2nJ8qr7zYg4LdVPf8, read/write, on-page verified. Private half: orchestrator ~/.ssh/builder_m02.
 - builder-mega27-09a-deploy on mega27-09a-amp-design-discovery, SHA256:E5nG8aJEUjDs+8BKmvpAfik3eRPKNVRgTOYaKIUsJEM, read/write, on-page verified. Private half: orchestrator ~/.ssh/builder_m09a.
 Sudo gate passed via her Gmail code flow during first add; window reused for the other two.
+
+## 2026-09-29 17:26 IST - lane deploy key mega27-09d-oncovax-pep (1)
+
+Per builder-key pattern (one per repo, write, her 2026-09-24 grant; key body + lane fingerprint relayed via Main 17:25):
+- "mega27-09d-oncovax-pep deploy 2026-09-29" on mega27-09d-oncovax-pep, SHA256:Wt3nGOnEt6q4Y9ERFrv6YQJRZEund4QZseobvS+tuuE, read/write, on-page verified (Delete button present, fingerprint matches lane-relayed value; ssh-keygen -lf matched before add). Private half: 09d lane. Lane holds commit 635707f waiting to push.
