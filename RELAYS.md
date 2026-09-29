@@ -537,3 +537,10 @@
 
 1. rice-provenance-migration-23f1007a.bundle -> mega27-24-rice-oral-vaccine. 47d692c08eac -> 553a6c8d2c9b87da6b2063bad954cb5094a1700d. Migrates rice ChatGPT steering archive + accession/overlap source screen mistakenly committed to banana repo; labeled migrated/pre-analysis/no count credit. Verify OK, base == live head, claim MATCH (4 files +521). Triple ls-remote readback stable.
 2. banana-repo-boundary-cleanup-c696fe72.bundle -> mega27-24-banana-vaccine-enviropig. f228616df0f4 -> 5418ea81e1a6265d50691cf6ce0bdb0dce55fbba. Removes duplicate rice-only archive + rice ledger sections from banana, keeps .pyc gitignore hygiene, adds boundary/provenance note. Verify OK, base == live head, claim MATCH (4 files, +2/-516). Triple ls-remote readback stable.
+
+## 2026-09-29 15:38 IST - PPD protein/peptide feasibility map publication (dual target, Main-approved (c))
+
+Bundle ppd-protein-map-4ddc854-cb9d3161.bundle from biomarkers lane. Head 4ddc85483ab56982d020a5f54faafe2316d26080 descends from standalone PPD main 94d1f22 (one file +17: projects/postpartum_depression/sources/PPD_PROTEIN_PEPTIDE_FEASIBILITY_2026-09-29.md, claim MATCH); NO common ancestor with underserved main - FF there impossible, not attempted.
+(a) FF-push mega27-25-postpartum-depression-biomarkers: 94d1f22d1fc9 -> 4ddc85483ab5 (exact SHA).
+(b) Content-identical file as new commit on mega27-25-biomarkers-underserved-diseases: 018988f27d46 -> 44ad276c7e5eddf1c6d098d5b61502c713ee28ea (file sha256 088ccd229d17d3f15f8adc76cad94058dee63052e45da56fc8c1c9d4b38a249a verified identical to bundle version pre-push).
+Triple ls-remote readbacks stable on both.
