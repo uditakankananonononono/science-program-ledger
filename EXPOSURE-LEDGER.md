@@ -24,3 +24,10 @@ Program-wide record of every dataset/source any agent has opened VALUES from, so
 | BA000039.2 (decoy source) | item-27 lane (self-report) | source features opened | 2026-09-29 | exploratory/source-curation-exposed - NEVER usable as untouched locked-test data |
 | CP008934.1 (decoy source) | item-27 lane (self-report) | source features opened | 2026-09-29 | exploratory/source-curation-exposed - NEVER usable as untouched locked-test data |
 | MN270259.1 (decoy source) | item-27 lane (self-report) | source features opened | 2026-09-29 | exploratory/source-curation-exposed - NEVER usable as untouched locked-test data |
+
+## 2026-09-29 16:07 IST - item-27 / CZI genome-scale T-cell Perturb-seq (CD4 cohort) - EXPOSED (self-correction)
+
+Source: item-27 lane self-correction via Main; grounding docs in mega27-27-isef-bioinf-derived-tools: docs/CELLPERTURB-CD4-COHORT-LEAD.md, docs/CELLPERTURB-CD4-ELIGIBILITY-AUDIT.md.
+- EXPOSED (exploratory only, NEVER to be called untouched): CD4 author DE-summary CSV (outcome-derived values) + guide library/QC flag values; prior inspection documented of author guide library, DE-summary CSV, and the 24-target CD8/CD4 crosswalk with QC flags.
+- NOT downloaded but SHARE SOURCE/STUDY with exposed summaries, therefore NOT pristine test material: the 16.79GB gene-wise DE matrix (.h5ad) and 44.57GB pseudobulk.
+Earlier same-day check (16:05): GSE314342 absent program-wide; CZI cohort references then found were the lead/manifest metadata - superseded by this self-correction.
