@@ -516,3 +516,10 @@
 - Added write deploy key "phage-capsule-rbp-kpneumoniae-phase2" (SHA256:jr/GWNp9l+2/9mCtHW2d7SPgbMKzo6scFHRUtMpMtFc) to phage-capsule-rbp-kpneumoniae
 - Pre-install verification: ssh-keygen -lf on relayed body matched agent's private-key fingerprint and ssh-keygen -y body reproduction (relayed confirmation via Main)
 - Existing keys intact: orch-phage-capsule-rbp-kpneumoniae-20260929, phage-capsule-rbp-kpneumoniae-builder, phage-capsule-rbp-kpneumoniae-closer
+
+## 2026-09-29 07:27 IST — bundle relay: mega27-24-rice-oral-vaccine
+- Courier for lane C (agent-01M39WS26FVG955MVJ49TP1G3Z), corrected bundle (first bundle stopped: base f228616df0f4 absent from rice history - lane had built it in the banana workspace; reported, lane re-issued)
+- Base 0273717ddb903c46e32b859bdd3f00186266f9ad == live HEAD at verify and at push (two live checks)
+- Pushed 0273717..47d692c, remote main = 47d692c08eac5674bdc3ec707cd40398cebf623a, triple ls-remote readback over ~40s
+- Diff-check claims ALL MATCH: head 47d692c08eac; FF ancestry; adds docs/rice-microbiome-access-decision-2026-09-29.md (+24 lines); content SHA256 8cab6892cdabdcfd7351cd6ff4c693b63c128a8f276cd9a62d9942445b73674b byte-identical to lane claim
+- Commit: "Audit rice microbiome transfer data gate and fallback criteria" (Instinct Agent, 2026-09-29 07:26:09 +0530)
