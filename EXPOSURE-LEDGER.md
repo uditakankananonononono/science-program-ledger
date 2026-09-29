@@ -31,3 +31,8 @@ Source: item-27 lane self-correction via Main; grounding docs in mega27-27-isef-
 - EXPOSED (exploratory only, NEVER to be called untouched): CD4 author DE-summary CSV (outcome-derived values) + guide library/QC flag values; prior inspection documented of author guide library, DE-summary CSV, and the 24-target CD8/CD4 crosswalk with QC flags.
 - NOT downloaded but SHARE SOURCE/STUDY with exposed summaries, therefore NOT pristine test material: the 16.79GB gene-wise DE matrix (.h5ad) and 44.57GB pseudobulk.
 Earlier same-day check (16:05): GSE314342 absent program-wide; CZI cohort references then found were the lead/manifest metadata - superseded by this self-correction.
+
+## 2026-09-29 16:08 IST - item-27 / CZI CD4 GWCD4i.DE_stats.h5ad - METADATA-PROBE exposure (development-only)
+
+Approved development-only probe (item-27 lane via Main): S3 object GWCD4i.DE_stats.h5ad, ETag c9ff52fcc6d6ce8a387a76dc757a5b97-2002, version IJHj.CZ2Hhw9sa41IuovIGpBZimEZo7I. 21,498,456 bytes read via 86 HTTP 206 range requests; HDF5 metadata/layout only (six DE layers, 33,983 x 10,282). NO numerical DE cell values read.
+Lane finding noted: this matrix is pooled target/condition DE, NOT donor-specific labels; donor-heldout prediction would require the separate donor-pair .h5mu (not probed, not downloaded).
