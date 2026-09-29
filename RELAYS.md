@@ -506,3 +506,8 @@
 - CREATED private repo uditakankananonononono/agent-cognition-memos (browser, her session).
 - SEEDED main 97cd8e3f08fef2d3d8b1e122be046ab500849682 with memos/2026-09-29-memory-can-hurt.md (SHA-256 b81947fa6834d8f28b22b24e4f7746634d0db80e436f102825125c5435fce007, verbatim from Main's attached report.md, renamed per instruction). Triple ls-remote readback 97cd8e3f08fe x3.
 - EXPORTED phage-capsule-rbp-kpneumoniae @ 25cbb42afb2b: PREREG-v0.1.2.md + docs/AUDIT-NOTES-2026-09-29.md + CHANGELOG.md, sent to Main for forwarding to analyst agent-01M3MPQPKXFX92P3KA4PEFA9M4 (direct agent_message rejected: parent-only). Phage main advanced 64d42fd -> 25cbb42 (lane self-pushes).
+
+## 2026-09-29 07:06 IST — deploy key install: phage closer
+- Added write deploy key "phage-capsule-rbp-kpneumoniae-closer" (SHA256:GLE8EiOYXXNAharFhe3x8K3G/5+ai7Fqb6WvfHsgSDQ) to phage-capsule-rbp-kpneumoniae
+- Pre-install verification: ssh-keygen -lf on relayed body matched closer's private-key fingerprint (relayed confirmation via Main)
+- Existing keys intact: orch-phage-capsule-rbp-kpneumoniae-20260929, phage-capsule-rbp-kpneumoniae-builder
