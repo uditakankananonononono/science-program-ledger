@@ -814,3 +814,11 @@ All bundles verified OK (complete history), tips matched Main's stated heads, FF
 - Relay: pubkey via Main 2026-09-29 07:55 IST; agent fingerprint match (incl. ssh-keygen -y body reproduction) confirmed by Main 07:57 before install
 - Sudo: prior window active, no re-prompt; keys list re-verified (3 deploy keys: orch, builder, phase3)
 | 2026-09-29 | orch_mega27-20 | mega27-20-drug-target-prediction | write | ADDED | SHA256:zStOZHBrWHUzc2soxYf2/n892jPV2rdcu6Iz7BOchcU | Orchestrator builder deploy key; added under standing builder-key grant with Main 1:34:05 approval; used to push tag r3-ckpt-c23-b7168 for checkpoint release |
+
+## 2026-09-29 15:52 IST - builder deploy keys for formatting-patch courier work (3)
+
+Per builder-key pattern (one per repo, write, her 2026-09-24 grant; patches relayed via Main):
+- builder-mega27-19-deploy on mega27-19-medical-microbots-xenobots, SHA256:5Six0gffHmiLshtGHdklPPRoysv6FxlDgiqB2VoQhMs, read/write, on-page verified (Delete button present). Private half: orchestrator ~/.ssh/builder_m19.
+- builder-mega27-02-deploy on mega27-02-virtual-cell, SHA256:3IFLxuNrP3mzd44uOhBrpnXfnH2nJ8qr7zYg4LdVPf8, read/write, on-page verified. Private half: orchestrator ~/.ssh/builder_m02.
+- builder-mega27-09a-deploy on mega27-09a-amp-design-discovery, SHA256:E5nG8aJEUjDs+8BKmvpAfik3eRPKNVRgTOYaKIUsJEM, read/write, on-page verified. Private half: orchestrator ~/.ssh/builder_m09a.
+Sudo gate passed via her Gmail code flow during first add; window reused for the other two.
