@@ -511,3 +511,8 @@
 - Added write deploy key "phage-capsule-rbp-kpneumoniae-closer" (SHA256:GLE8EiOYXXNAharFhe3x8K3G/5+ai7Fqb6WvfHsgSDQ) to phage-capsule-rbp-kpneumoniae
 - Pre-install verification: ssh-keygen -lf on relayed body matched closer's private-key fingerprint (relayed confirmation via Main)
 - Existing keys intact: orch-phage-capsule-rbp-kpneumoniae-20260929, phage-capsule-rbp-kpneumoniae-builder
+
+## 2026-09-29 07:24 IST — deploy key install: phage phase-2
+- Added write deploy key "phage-capsule-rbp-kpneumoniae-phase2" (SHA256:jr/GWNp9l+2/9mCtHW2d7SPgbMKzo6scFHRUtMpMtFc) to phage-capsule-rbp-kpneumoniae
+- Pre-install verification: ssh-keygen -lf on relayed body matched agent's private-key fingerprint and ssh-keygen -y body reproduction (relayed confirmation via Main)
+- Existing keys intact: orch-phage-capsule-rbp-kpneumoniae-20260929, phage-capsule-rbp-kpneumoniae-builder, phage-capsule-rbp-kpneumoniae-closer
