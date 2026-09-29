@@ -799,3 +799,9 @@ All bundles verified OK (complete history), tips matched Main's stated heads, FF
 - Relay: pubkey via Main 2026-09-29 07:23 IST; agent fingerprint match (incl. ssh-keygen -y body reproduction) confirmed by Main 07:24 before install
 - Sudo: prior window active, no re-prompt; keys list re-verified (4 deploy keys)
 - Lifecycle: closer key (SHA256:GLE8EiOY...) remains until phase-2 first push verifies, then removed as dead per Main instruction
+
+## phage key removals — 2026-09-29 07:55 IST
+- REMOVED phage-capsule-rbp-kpneumoniae-phase2 (SHA256:jr/GWNp9l+2/9mCtHW2d7SPgbMKzo6scFHRUtMpMtFc): agent retiring; its first real push verified (remote HEAD b45a985fbccfbfc4ea8ad7cdf4cc6462a4489687 confirmed pre-removal). Removal per Main's explicit relayed instruction naming the key.
+- REMOVED phage-capsule-rbp-kpneumoniae-closer (SHA256:GLE8EiOYXXNAharFhe3x8K3G/5+ai7Fqb6WvfHsgSDQ): dead since closer agent retired. Removal per Main's explicit relayed instruction naming the key.
+- On-page verified after removals: 2 deploy keys remain (orch-phage-capsule-rbp-kpneumoniae-20260929, phage-capsule-rbp-kpneumoniae-builder).
+- Phase-3 continuation lane (agent-01M3NFNN01S7MGEBJHSCEA8KVD) minting its own key per one-key-per-agent rule.

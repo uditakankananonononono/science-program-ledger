@@ -523,3 +523,7 @@
 - Pushed 0273717..47d692c, remote main = 47d692c08eac5674bdc3ec707cd40398cebf623a, triple ls-remote readback over ~40s
 - Diff-check claims ALL MATCH: head 47d692c08eac; FF ancestry; adds docs/rice-microbiome-access-decision-2026-09-29.md (+24 lines); content SHA256 8cab6892cdabdcfd7351cd6ff4c693b63c128a8f276cd9a62d9942445b73674b byte-identical to lane claim
 - Commit: "Audit rice microbiome transfer data gate and fallback criteria" (Instinct Agent, 2026-09-29 07:26:09 +0530)
+
+## 2026-09-29 07:55 IST — deploy key removals: phage
+- Precondition verified: remote HEAD b45a985fbccfbfc4ea8ad7cdf4cc6462a4489687 (phase-2 final ablation push) via ls-remote
+- Removed phase2 (jr/GWNp9l...) and closer (GLE8EiOY...) write deploy keys via GitHub settings UI; confirmation dialogs accepted; keys list re-verified (2 remain)
