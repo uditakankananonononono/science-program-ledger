@@ -527,3 +527,8 @@
 ## 2026-09-29 07:55 IST — deploy key removals: phage
 - Precondition verified: remote HEAD b45a985fbccfbfc4ea8ad7cdf4cc6462a4489687 (phase-2 final ablation push) via ls-remote
 - Removed phase2 (jr/GWNp9l...) and closer (GLE8EiOY...) write deploy keys via GitHub settings UI; confirmation dialogs accepted; keys list re-verified (2 remain)
+
+## 2026-09-29 07:57 IST — deploy key install: phage phase-3
+- Added write deploy key "phage-capsule-rbp-kpneumoniae-phase3" (SHA256:Gg5bBvy/5d6jPjjS3lnKXqf36QCDV3CaZUyCIi+kKRk) to phage-capsule-rbp-kpneumoniae
+- Pre-install verification: ssh-keygen -lf on relayed body matched agent's private-key fingerprint and ssh-keygen -y body reproduction (relayed confirmation via Main)
+- Continuation lane per lifecycle after phase-2 + closer removals
