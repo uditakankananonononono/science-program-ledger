@@ -532,3 +532,8 @@
 - Added write deploy key "phage-capsule-rbp-kpneumoniae-phase3" (SHA256:Gg5bBvy/5d6jPjjS3lnKXqf36QCDV3CaZUyCIi+kKRk) to phage-capsule-rbp-kpneumoniae
 - Pre-install verification: ssh-keygen -lf on relayed body matched agent's private-key fingerprint and ssh-keygen -y body reproduction (relayed confirmation via Main)
 - Continuation lane per lifecycle after phase-2 + closer removals
+
+## 2026-09-29 14:39 IST - lane C provenance-repair bundles (2)
+
+1. rice-provenance-migration-23f1007a.bundle -> mega27-24-rice-oral-vaccine. 47d692c08eac -> 553a6c8d2c9b87da6b2063bad954cb5094a1700d. Migrates rice ChatGPT steering archive + accession/overlap source screen mistakenly committed to banana repo; labeled migrated/pre-analysis/no count credit. Verify OK, base == live head, claim MATCH (4 files +521). Triple ls-remote readback stable.
+2. banana-repo-boundary-cleanup-c696fe72.bundle -> mega27-24-banana-vaccine-enviropig. f228616df0f4 -> 5418ea81e1a6265d50691cf6ce0bdb0dce55fbba. Removes duplicate rice-only archive + rice ledger sections from banana, keeps .pyc gitignore hygiene, adds boundary/provenance note. Verify OK, base == live head, claim MATCH (4 files, +2/-516). Triple ls-remote readback stable.
