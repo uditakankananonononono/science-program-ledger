@@ -928,3 +928,8 @@ Per Main 09:46 (protein-cluster specificity audit patch):
 
 Per Main 09:48 (async absorption audit patch):
 - "orch-m14-builder3-20260930" on mega27-14-digital-embryo, SHA256:HwElr2at1wI8oSW7abenvzf4QLhyibtI2vT+puDuY0k, read/write. Used once to push 9ecfc54157ab56e600258b1b02f88f5426eb623f (async-absorption patch onto 74076abe via git am, authorship preserved). REMOVED 09:49 IST (verified gone; lane key mega27-m14-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 09:55 IST - one-shot orchestrator builder key mega27-13b #3 (added, used, removed)
+
+Per Main 09:54 (native duty-cycle/envelope audit patch):
+- "orch-m13b-builder3-20260930" on mega27-13b-deep-rl-4-5, SHA256:3xLzXJK23vaww21C5QYuJ9Srplr9fka5XsCnvDr+Gqs, read/write. Used once to push c9a468ad5ca1c2431c6ebb80f8237a30028e01a6 (native-duty-envelope patch onto 8538eedd via git am, authorship preserved). REMOVED 09:55 IST (first delete click expanded the disclosure only; second pass clicked confirm, verified gone on-page; lane key mega27-m13b-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
