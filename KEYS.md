@@ -827,3 +827,14 @@ Sudo gate passed via her Gmail code flow during first add; window reused for the
 
 Per builder-key pattern (one per repo, write, her 2026-09-24 grant; key body + lane fingerprint relayed via Main 17:25):
 - "mega27-09d-oncovax-pep deploy 2026-09-29" on mega27-09d-oncovax-pep, SHA256:Wt3nGOnEt6q4Y9ERFrv6YQJRZEund4QZseobvS+tuuE, read/write, on-page verified (Delete button present, fingerprint matches lane-relayed value; ssh-keygen -lf matched before add). Private half: 09d lane. Lane holds commit 635707f waiting to push.
+
+## 2026-09-30 08:29 IST - embryo-lane recovery: lane-generated deploy keys (4 added, 2 orchestrator keys added then discarded)
+
+Context: lane agent-01M3EMY005T2GTKTF0D2N7VQ38 sandbox wiped (repos+keys lost). Flow per Main 08:26: lane generates its own keypairs; only public keys travel (relayed via Main 08:27); orchestrator adds under her standing 2026-09-24 "You add" grant (one write deploy key per repo). All four added via browser (sudo email-code window) and verified on-page (Delete <title> button present; page fingerprint == ssh-keygen -lf of relayed pubkey; Read/write):
+- "mega27-m14-builder-20260930" on mega27-14-digital-embryo, SHA256:Jr6RCOorvzfo9x46XStxUS5q5TvZaHRE7UwaG7oj4U4, read/write.
+- "mega27-m07-builder-20260930" on mega27-07-pancreatic-ai-and-codon-optimizer, SHA256:2ldqn2kTaevH3bY021id2EZuC1FFxFXkZt9Dh/ubAzI, read/write.
+- "mega27-m13b-builder-20260930" on mega27-13b-deep-rl-4-5, SHA256:ktYeD6ZIRbyX2xrYe9N5803mpjvf5cuCBimSscIngD4, read/write.
+- "mega27-m23b-builder-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:8M/kG8jGoXMeVYT91WofvrO4SmqjpR6u91IoFG20tP8, read/write.
+Private halves: lane's own sandbox only. Orchestrator holds no private key material for this lane.
+
+Discarded first attempt (Main 08:26 flow change, security improvement): orchestrator had generated 4 local keypairs and added two ("mega27-14-digital-embryo builder 2026-09-30" SHA256:R6tbW3oLAd44kQot1cOIXMX/V/2RhOM5gIXJ+F6i388 on mega27-14; "mega27-07-pancreatic builder 2026-09-30" SHA256:G2hMgq7/Ws909b/wKDIK71mE0r++FnLHEGLQpdTAXoU on mega27-07). Both REMOVED from the repos 08:29 IST (on-page verified gone, lane keys intact) and all four local private+public halves shredded. No live remnant.
