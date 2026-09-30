@@ -891,3 +891,10 @@ Per Main 09:04-09:06 builder tasks:
 - "orch-m13b-builder2-20260930" on mega27-13b-deep-rl-4-5, SHA256:ONBjo2vD+au7GvOsEuZcLSHrVq2YAagDXg2ZcEJK8/w, read/write. Pushed 8538eedd9ad34dd26ae362f9b7a2d2288687f11b (seed-correction patch onto 76b384e8 via git am). REMOVED 09:06 IST, verified gone; lane key intact.
 - "orch-m23b-builder2-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:PvPpWaanQJHt161CBAJWddHcsRY+MAZt1dSsy9461Do, read/write. Pushed ed7dbbbb246cd72fce9c73685757f7ce853a39e0 (paper-corrections patch onto 26da13f1 via git am). REMOVED 09:07 IST, verified gone; lane key intact.
 All local key material shredded; clones deleted. No live remnants.
+
+## 2026-09-30 09:12-09:14 IST - one-shot orchestrator builder keys mega27-23b #3 and #4 (added, used, removed)
+
+Per Main 09:11 and 09:12 sequential builder tasks:
+- "orch-m23b-builder3-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:N29xQiY1N7nCxIUuDOUDoRdCFIur4ZbGAHb2732uxTc, read/write. Used once to push 96b9dad1a144d9a96cb7a3465a384fa6a3058eeb (channel-correction patch onto ed7dbbbb via git am, authorship preserved). REMOVED 09:13 IST (verified gone; lane key mega27-m23b-builder-20260930 intact). Key material shredded; clone deleted.
+- "orch-m23b-builder4-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:SdgTCv426T+Z98ZQteRC5Fvn5t2PaDSXx0rtFRLGTUU, read/write. Used once to push 87ca49becc0bf6d6f2063bedb8d1917a6bd4e346 (soft-erasure-fix patch onto 96b9dad1 via git am, authorship preserved). REMOVED 09:14 IST (verified gone; lane key intact). Key material shredded; clone deleted.
+No live remnants.
