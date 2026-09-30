@@ -938,3 +938,8 @@ Per Main 09:54 (native duty-cycle/envelope audit patch):
 
 Per Main 09:56 (async recovery-time audit patch):
 - "orch-m14-builder4-20260930" on mega27-14-digital-embryo, SHA256:yv9H5kUf8/gMRaeHbTzbYez9GpbhHobAcw5MHPUNk8c, read/write. Used once to push f9e2a17308b5b6dd795f734c26f2a625fc1dacf5 (async-recovery-time patch onto 9ecfc541 via git am, authorship preserved). REMOVED 09:57 IST (verified gone; lane key mega27-m14-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 09:59 IST - one-shot orchestrator builder key mega27-14 #5 (added, used, removed)
+
+Per Main 09:58 (topology-scope correction patch):
+- "orch-m14-builder5-20260930" on mega27-14-digital-embryo, SHA256:XWbSXhff0u7chqgWH9EvQjfCUzWiFwD3kI8V+CJUSEU, read/write. Used once to push b1354e0ea426b6ff29d758fe054a02e3f62fa503 (topology-scope-correction patch onto f9e2a173 via git am, authorship preserved). REMOVED 09:59 IST (verified gone; lane key mega27-m14-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
