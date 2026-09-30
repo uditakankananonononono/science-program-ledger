@@ -838,3 +838,8 @@ Context: lane agent-01M3EMY005T2GTKTF0D2N7VQ38 sandbox wiped (repos+keys lost). 
 Private halves: lane's own sandbox only. Orchestrator holds no private key material for this lane.
 
 Discarded first attempt (Main 08:26 flow change, security improvement): orchestrator had generated 4 local keypairs and added two ("mega27-14-digital-embryo builder 2026-09-30" SHA256:R6tbW3oLAd44kQot1cOIXMX/V/2RhOM5gIXJ+F6i388 on mega27-14; "mega27-07-pancreatic builder 2026-09-30" SHA256:G2hMgq7/Ws909b/wKDIK71mE0r++FnLHEGLQpdTAXoU on mega27-07). Both REMOVED from the repos 08:29 IST (on-page verified gone, lane keys intact) and all four local private+public halves shredded. No live remnant.
+
+## 2026-09-30 08:34 IST - dreaming lane deploy key mega27-22 (1)
+
+Same pattern (lane-generated, pubkey + fingerprint relayed via Main 08:34; her standing 2026-09-24 "You add" grant):
+- "dreaming22-builder-20260930" on mega27-22-sleep-eeg-neurodegeneration, SHA256:baol3eGYPSIpsk0GV58w/JYYwugJYebMOnNkjH2Va+I, read/write, on-page verified (Delete button present; page fingerprint matches relayed value; ssh-keygen -lf matched before add). Private half: dreaming lane locally.
