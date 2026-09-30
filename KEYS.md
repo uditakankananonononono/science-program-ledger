@@ -963,3 +963,8 @@ Per Main 10:09 (full-Fletcher detector pilot patch):
 
 Per Main 10:14 (distance-five GF81 detector patch):
 - "orch-m23b-builder11-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:aOiYuu3GWqzSy/6QJWW3QjUEpFpZEbna30X3DnckfKw, read/write. Used once to push 1316e46bf21c2e7c379027710c95e4648184f4c2 (distance-five-detector patch onto 4d53eac3 via git am, authorship preserved verbatim - this patch's author is "Science lane <science-lane@local.invalid>", different from prior lane patches). REMOVED 10:15 IST (verified gone; lane key mega27-m23b-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 10:19 IST - one-shot orchestrator builder key mega27-23b #12 (added, used, removed)
+
+Per Main 10:18 (joint whole-file recovery audit patch):
+- "orch-m23b-builder12-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:gYPXjy20F7hQ7L0OiGNL+DKihM2Z8S1/5O3EAYrlHR0, read/write. Used once to push 43ea2c35e43df55fa89ce8f7ce35b56eba0a94f1 (joint-file-recovery patch onto 1316e46b via git am, authorship preserved - author back to her usual noreply identity). REMOVED 10:19 IST (verified gone; lane key mega27-m23b-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
