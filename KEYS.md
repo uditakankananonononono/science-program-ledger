@@ -968,3 +968,8 @@ Per Main 10:14 (distance-five GF81 detector patch):
 
 Per Main 10:18 (joint whole-file recovery audit patch):
 - "orch-m23b-builder12-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:gYPXjy20F7hQ7L0OiGNL+DKihM2Z8S1/5O3EAYrlHR0, read/write. Used once to push 43ea2c35e43df55fa89ce8f7ce35b56eba0a94f1 (joint-file-recovery patch onto 1316e46b via git am, authorship preserved - author back to her usual noreply identity). REMOVED 10:19 IST (verified gone; lane key mega27-m23b-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 10:22 IST - one-shot orchestrator builder key mega27-23b #13 (added, used, removed)
+
+Per Main 10:21 (residual-intro corrections patch):
+- "orch-m23b-builder13-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:ihYhdEYxTMnOnws8OM+Lp2okS/2y5XFZi/O/uYClAMw, read/write. Used once to push ed78b7684008490465b07614209a41966eb9ca8b (residual-intro-corrections patch onto 43ea2c35 via git am, authorship preserved). REMOVED 10:22 IST (verified gone; lane key mega27-m23b-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
