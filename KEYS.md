@@ -858,3 +858,10 @@ Per Main 08:43 (builder task 2, DREAMING follow-up patch d2fe439c):
 
 Per Main 08:45 (builder task 3, DREAMING documentation-correction patch):
 - "orch-dreaming22-builder3-20260930" on mega27-22-sleep-eeg-neurodegeneration, SHA256:pG1zuX9VRs0/vDfe4KKwp7drCMhRm0IGkwNyGidIRs0, read/write. Used once to push commit 6195c9032955d6eff647c87b309651d51da9a987 (applied cleanly onto e32aeae, authorship preserved). REMOVED 08:46 IST (on-page verified gone; lane key intact). Local key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 08:47 IST - one-shot orchestrator builder keys for embryo-lane patches (2 added, used, removed)
+
+Per Main 08:45 (two builder tasks, embryo lane patches relayed as attachments):
+- "orch-m07-builder-20260930" on mega27-07-pancreatic-ai-and-codon-optimizer, SHA256:6UzS6w1zQFuacXKo917sKvprFHybeJq3wMpzrO1oYGE, read/write. Used once to push d8df974ba1d604e4c025ed5778005358b7cee81c (pathway patch applied cleanly onto a983bf55 via git am, authorship/date/message preserved). REMOVED 08:47 IST (verified gone; lane key mega27-m07-builder-20260930 intact).
+- "orch-m23b-builder-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:9q6Yy9YL5V0jgQQMI4FtBKF/y2T4BKTBv+fHHYfQ65I, read/write. Used once to push 26da13f1da44c41794bdf9c67ca06e9a07afd409 (constraint patch applied cleanly onto a82be019 via git am, authorship/date/message preserved). REMOVED 08:48 IST (verified gone; lane key mega27-m23b-builder-20260930 intact).
+Local key material for both shredded; clones deleted. No live remnants.
