@@ -870,3 +870,8 @@ Local key material for both shredded; clones deleted. No live remnants.
 
 Per Main 08:59 (CPTAC+yeast patch):
 - "orch-m07-builder2-20260930" on mega27-07-pancreatic-ai-and-codon-optimizer, SHA256:+Xi05YAnrjc3nBnoY0FnOq89ycBAPA6E3ALNJVYXu5s, read/write. Used once to push c0ff61b03f400cca0a8417f800dd22e69e7a88a9 (applied cleanly onto d8df974 via git am, authorship preserved). REMOVED 09:00 IST (verified gone; lane key intact). Key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 09:01 IST - one-shot orchestrator builder key mega27-13b (added, used, removed)
+
+Per Main 09:00 (multiseed patch):
+- "orch-m13b-builder-20260930" on mega27-13b-deep-rl-4-5, SHA256:t6OBHibUT/U9IXdyHUghKXcIM5IWGHrlGMWKg3d10tE, read/write. Used once to push 76b384e88b9073909cfcbf00a2ffe02464654050 (applied cleanly onto 750a38f3 via git am, authorship preserved). REMOVED 09:01 IST (verified gone; lane key intact). Key material shredded; clone deleted. No live remnant.
