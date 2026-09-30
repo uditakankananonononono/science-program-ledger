@@ -843,3 +843,8 @@ Discarded first attempt (Main 08:26 flow change, security improvement): orchestr
 
 Same pattern (lane-generated, pubkey + fingerprint relayed via Main 08:34; her standing 2026-09-24 "You add" grant):
 - "dreaming22-builder-20260930" on mega27-22-sleep-eeg-neurodegeneration, SHA256:baol3eGYPSIpsk0GV58w/JYYwugJYebMOnNkjH2Va+I, read/write, on-page verified (Delete button present; page fingerprint matches relayed value; ssh-keygen -lf matched before add). Private half: dreaming lane locally.
+
+## 2026-09-30 08:37 IST - one-shot orchestrator builder key mega27-22 (added, used, removed)
+
+Per Main 08:36 (authorized builder for DREAMING lane patch push; lane's SSH route blocked):
+- "orch-dreaming22-builder-20260930" on mega27-22-sleep-eeg-neurodegeneration, SHA256:1Rwt9z4iuwtIU8rGkUgIK9ZsroT7W0si7DmS7ozzouQ, read/write. Used once to push commit 65bd0c793d8072688a786a505eb92a9ad7d88777 (lane's 896de5e checkpoint patch, authorship preserved as-is). REMOVED 08:37 IST (on-page verified gone; lane's own dreaming22-builder-20260930 key intact). Local private+public halves shredded; clone deleted. No live remnant.
