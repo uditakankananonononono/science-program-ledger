@@ -908,3 +908,8 @@ Per Main 09:14 (flower-radius patch resend; first 09:08 send never arrived):
 
 Per Main 09:19 (external-Fountain geometry audit patch):
 - "orch-m23b-builder5-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:7y4RG+rr7EtEYcin/+NBrHij1ogMpJJz+2Cb+Co45PE, read/write. Used once to push 75a61363575b3828c5e34c5a59b49f76792eb6dd (external-fountain-geometry patch onto 87ca49be via git am, authorship preserved). REMOVED 09:20 IST (verified gone; lane key mega27-m23b-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 09:33 IST - one-shot orchestrator builder key mega27-23b #6 (added, used, removed)
+
+Per Main 09:32 (clean-graph threshold audit patch):
+- "orch-m23b-builder6-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:qcwU7o7fJBXT4OwPe8I6AxPL9zPEZHBBshDihVwU9cI, read/write. Used once to push f9a3ac5bee80ebd9ad71be2cdadbb3fc3d408a7e (clean-graph-threshold patch onto 75a6136 via git am, authorship preserved). REMOVED 09:33 IST (verified gone; lane key mega27-m23b-builder-20260930 intact). Key material shredded; clone deleted. No live remnant.
