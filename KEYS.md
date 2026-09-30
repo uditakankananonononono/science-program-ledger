@@ -853,3 +853,8 @@ Per Main 08:36 (authorized builder for DREAMING lane patch push; lane's SSH rout
 
 Per Main 08:43 (builder task 2, DREAMING follow-up patch d2fe439c):
 - "orch-dreaming22-builder2-20260930" on mega27-22-sleep-eeg-neurodegeneration, SHA256:h4ga0xoqgVMWUHP2g1/WpeDAVJyFydrSkCQKhAouGFk, read/write. Used once to push commit e32aeaef8ade5c067fa11568a3da7416800257d0 (patch applied cleanly onto 65bd0c7, authorship preserved). REMOVED 08:44 IST (on-page verified gone; lane's dreaming22-builder-20260930 intact). Local key material shredded; clone deleted. No live remnant.
+
+## 2026-09-30 08:46 IST - one-shot orchestrator builder key mega27-22 #3 (added, used, removed)
+
+Per Main 08:45 (builder task 3, DREAMING documentation-correction patch):
+- "orch-dreaming22-builder3-20260930" on mega27-22-sleep-eeg-neurodegeneration, SHA256:pG1zuX9VRs0/vDfe4KKwp7drCMhRm0IGkwNyGidIRs0, read/write. Used once to push commit 6195c9032955d6eff647c87b309651d51da9a987 (applied cleanly onto e32aeae, authorship preserved). REMOVED 08:46 IST (on-page verified gone; lane key intact). Local key material shredded; clone deleted. No live remnant.
