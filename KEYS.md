@@ -865,3 +865,8 @@ Per Main 08:45 (two builder tasks, embryo lane patches relayed as attachments):
 - "orch-m07-builder-20260930" on mega27-07-pancreatic-ai-and-codon-optimizer, SHA256:6UzS6w1zQFuacXKo917sKvprFHybeJq3wMpzrO1oYGE, read/write. Used once to push d8df974ba1d604e4c025ed5778005358b7cee81c (pathway patch applied cleanly onto a983bf55 via git am, authorship/date/message preserved). REMOVED 08:47 IST (verified gone; lane key mega27-m07-builder-20260930 intact).
 - "orch-m23b-builder-20260930" on mega27-23b-dna-encoder-cyborg-cell, SHA256:9q6Yy9YL5V0jgQQMI4FtBKF/y2T4BKTBv+fHHYfQ65I, read/write. Used once to push 26da13f1da44c41794bdf9c67ca06e9a07afd409 (constraint patch applied cleanly onto a82be019 via git am, authorship/date/message preserved). REMOVED 08:48 IST (verified gone; lane key mega27-m23b-builder-20260930 intact).
 Local key material for both shredded; clones deleted. No live remnants.
+
+## 2026-09-30 09:00 IST - one-shot orchestrator builder key mega27-07 #2 (added, used, removed)
+
+Per Main 08:59 (CPTAC+yeast patch):
+- "orch-m07-builder2-20260930" on mega27-07-pancreatic-ai-and-codon-optimizer, SHA256:+Xi05YAnrjc3nBnoY0FnOq89ycBAPA6E3ALNJVYXu5s, read/write. Used once to push c0ff61b03f400cca0a8417f800dd22e69e7a88a9 (applied cleanly onto d8df974 via git am, authorship preserved). REMOVED 09:00 IST (verified gone; lane key intact). Key material shredded; clone deleted. No live remnant.
