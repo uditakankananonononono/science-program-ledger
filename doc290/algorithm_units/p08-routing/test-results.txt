@@ -1,3 +1,8 @@
+test_decimal_boundary_is_binary_float (test_hardening.HardenedTests) ... ok
+test_invalid_all_units (test_hardening.HardenedTests) ... ok
+test_malformed_edges_and_nodes (test_hardening.HardenedTests) ... ok
+test_overflow_rejected (test_hardening.HardenedTests) ... ok
+test_parallel_edge_witness (test_hardening.HardenedTests) ... ok
 test_budget_tradeoff (test_routing.Tests) ... ok
 test_correlated_scenarios_not_edgewise_worst (test_routing.Tests) ... ok
 test_identity_and_disconnected (test_routing.Tests) ... ok
@@ -6,6 +11,6 @@ test_random_exhaustive_oracle (test_routing.Tests) ... ok
 test_zero_cycles (test_routing.Tests) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.017s
+Ran 11 tests in 0.025s
 
 OK

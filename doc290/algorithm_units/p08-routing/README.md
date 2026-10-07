@@ -49,3 +49,19 @@ and a frozen comparison with published algorithms remain unbuilt. The parent
 spec's G1-G4 gates are not passed by these unit tests. Before presenting any
 algorithm variant as an invention, perform and record a prior-art review and
 freeze the exact baseline and evaluation protocol.
+
+## V3 correctness hardening
+
+11 test methods pass, retaining the 450 small-graph oracle comparisons.
+Returned routes now include source vertex and adjacency-list edge index for each
+step, so parallel edges can be distinguished and cost totals independently
+recomputed. Vertex IDs must be strings; edges must be Edge objects with tuple
+scenario costs. Accumulated floating-point overflow raises OverflowError rather
+than silently returning infinite costs. This is fail-fast behavior: even an
+irrelevant overflowing explored branch can abort the search.
+
+Numerics are explicit binary-float semantics, not exact decimal arithmetic:
+0.1 + 0.2 exceeds a budget of 0.3. No tolerance is silently applied. The decimal
+boundary fixture tests and documents this limitation. For exact budgets, use
+integer-scaled costs. Empty graphs with no scenario-bearing edges remain rejected
+by scenario solvers, including identity queries, because scenario count is absent.
