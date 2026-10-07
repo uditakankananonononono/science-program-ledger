@@ -97,3 +97,6 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 105 | go-bias-adjusted-enrichment | BUILD-A | done - NEGATIVE (recall drop 0.063 > 0.05; FP 95->1.7) | 2026-10-07T20:00Z |
 | 106 | clinvar-substitution-triage | BUILD-A | done - NULL (AUROC +0.056, CI spans 0) | 2026-10-07T20:00Z |
 | 107 | go-function-prediction-intact-diffusion | BUILD-A | done - WIN (small: macro-AUROC +0.025; grid edges) | 2026-10-07T20:30Z |
+| 108 | concrete-monotone-additive | BUILD-A | done - NULL (RMSE 7.31 vs 6.76) | 2026-10-07T20:40Z |
+| 109 | skab-reference-whitened-changepoint | BUILD-A | done - NEGATIVE (F1 0.411 vs 0.511) | 2026-10-07T20:40Z |
+| 111 | freesolv-physchem-fg-featurization | BUILD-A | done - WIN (RMSE 1.555 vs 2.627; scaffold shift) | 2026-10-07T20:40Z |
