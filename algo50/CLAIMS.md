@@ -113,3 +113,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 119 | geo-uc-cohort-pair-replication | BUILD-A | DROPPED before prereg (license gate: GEO public download not license-clean; no dataset-specific open license) | 2026-10-07T21:55Z |
 | 122 | mimic-eicu-demo-calibration | BUILD-A | DROPPED before prereg (MIMIC-IV-demo and eICU-demo are ODbL, not CC) | 2026-10-07T21:55Z |
 | 123 | pdb-small-secondary-structure | BUILD-A | DROPPED before prereg (unpowered: 7 chains, ~1,020 residues; no DSSP binary in-box; scout package CC0 verified, not scored) | 2026-10-07T22:00Z |
+| 124 | diabetes130-readmission-monotone-gbm-isotonic | BUILD-A | done - NEGATIVE (AUROC 0.623 vs B2 0.628, diff -0.005, CI [-0.009,-0.001]; Brier better 0.0615 vs 0.0625 via calibration; temporal-proxy split) | 2026-10-07T22:10Z |
