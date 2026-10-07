@@ -1,7 +1,7 @@
 # P08-01 routing implementation units
 
-Status: two executable local algorithm units, not an invention or a validated
-medical navigation system. Both implement standard Pareto-label search. Neither
+Status: three executable local algorithm units, not an invention or a validated
+medical navigation system. All implement standard Pareto-label search. Neither
 claims to improve a published baseline.
 
 ## Units added
@@ -12,9 +12,15 @@ claims to improve a published baseline.
    time across supplied scenarios, preserving scenario correlation across edges.
    This differs from summing each edge's individual worst case.
 
-Both return a concrete route and cost totals, return None for infeasible routing,
+All three return a concrete route and cost totals, return None for infeasible routing,
 and reject malformed, negative or nonfinite edge costs. Zero-cost cycles do not
 create unlimited duplicate labels. Pareto frontiers can grow exponentially.
+
+3. Budgeted scenario routing: minimum worst-scenario total time subject to a
+   deterministic cumulative exposure budget. This joint unit is also standard
+   Pareto labeling, not a new algorithm.
+
+See PRIOR_ART.md for the fetched literature screen.
 
 ## Reproduce
 
@@ -25,7 +31,7 @@ No third-party dependencies, downloads, credentials or GPU are needed.
 
 Six test methods passed. The randomized oracle test checks each algorithm against
 independent exhaustive simple-path enumeration on 150 six-vertex directed graphs
-with a fixed seed, including cyclic graphs: 300 objective comparisons. Additional
+with a fixed seed, including cyclic graphs: 450 objective comparisons. Additional
 fixtures cover budget tradeoffs, correlated scenarios, zero-cost cycles,
 unreachable vertices, identical source/destination, and invalid inputs.
 

@@ -1,6 +1,6 @@
 import random
 import unittest
-from routing import Edge, exposure_budget_route, scenario_robust_route
+from routing import Edge, exposure_budget_route, scenario_robust_route, budgeted_scenario_route
 
 
 def enumerate_paths(g, node, goal, visited=(), edges=()):
@@ -60,6 +60,9 @@ class Tests(unittest.TestCase):
             feasible=[sum(e.time for e in p) for p in paths if sum(e.exposure for e in p)<=budget]
             got=exposure_budget_route(g,'0','5',budget)
             self.assertEqual(None if got is None else got['time'], min(feasible) if feasible else None,case)
+            joint=[max(sum(e.scenario_times[s] for e in p) for s in range(3)) for p in paths if sum(e.exposure for e in p)<=budget]
+            got_joint=budgeted_scenario_route(g,'0','5',budget)
+            self.assertEqual(None if got_joint is None else got_joint['worst_time'],min(joint) if joint else None,case)
             vals=[max(sum(e.scenario_times[s] for e in p) for s in range(3)) for p in paths]
             got=scenario_robust_route(g,'0','5')
             self.assertEqual(None if got is None else got['worst_time'],min(vals) if vals else None,case)

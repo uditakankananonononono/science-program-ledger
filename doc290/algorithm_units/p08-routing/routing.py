@@ -86,3 +86,39 @@ def scenario_robust_route(graph, start, goal):
             labels[e.target].append(new)
             heapq.heappush(queue, (max(new), new, path + (e.target,)))
     return None
+
+
+def budgeted_scenario_route(graph, start, goal, budget):
+    """Joint deterministic exposure budget and common-scenario minimax time.
+    Standard multidimensional Pareto labeling; not a new algorithm.
+    """
+    validate(graph, start, goal)
+    if isinstance(budget, bool) or not isinstance(budget, (int, float)) or not math.isfinite(budget) or budget < 0:
+        raise ValueError('budget must be finite and nonnegative')
+    lengths = {len(e.scenario_times) for edges in graph.values() for e in edges}
+    if len(lengths) != 1 or not lengths or next(iter(lengths)) == 0:
+        raise ValueError('all edges require the same positive scenario count')
+    n = next(iter(lengths))
+    zero = (0,) * n
+    labels = {v: [] for v in graph}
+    labels[start].append((0, *zero))
+    queue = [(0, 0, zero, (start,))]
+    while queue:
+        worst, exposure, totals, path = heapq.heappop(queue)
+        node = path[-1]
+        if (exposure, *totals) not in labels[node]:
+            continue
+        if node == goal:
+            return dict(path=list(path), exposure=exposure, scenario_totals=list(totals), worst_time=worst)
+        for e in graph[node]:
+            risk = exposure + e.exposure
+            if risk > budget:
+                continue
+            new = tuple(a + b for a, b in zip(totals, e.scenario_times))
+            vector = (risk, *new)
+            if any(all(a <= b for a, b in zip(old, vector)) for old in labels[e.target]):
+                continue
+            labels[e.target] = [old for old in labels[e.target] if not all(a <= b for a, b in zip(vector, old))]
+            labels[e.target].append(vector)
+            heapq.heappush(queue, (max(new), risk, new, path + (e.target,)))
+    return None
