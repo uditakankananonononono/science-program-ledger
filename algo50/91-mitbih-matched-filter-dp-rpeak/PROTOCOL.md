@@ -1,0 +1,11 @@
+# P5 preregistration (locked before any test-record evaluation)
+Data: MIT-BIH Arrhythmia DB 1.0.0 (PhysioNet, ODC-BY 1.0), all 48 records, files verified against official SHA256SUMS.txt. Signal channel 0 only, 360 Hz.
+Split (frozen by rule): RECORDS file order; index 0,2,4,... = DEV (tuning only), index 1,3,5,... = TEST (24 records, touched once, after the dev choices are written to dev_choice.json).
+Truth: annotation beat symbols in {N,L,R,B,A,a,J,S,V,r,F,e,j,n,E,/,f,Q}. First 5 s of each record excluded. Match tolerance +-150 ms, one-to-one greedy by time. Se=TP/(TP+FN), PPV=TP/(TP+FP), F1.
+Baseline B: neurokit2 0.2.13 nk.ecg_peaks(sig,sampling_rate=360,method='pantompkins1985') applied to the raw channel, no tuning.
+New method MFDP: (1) bandpass 5-15 Hz (Butterworth order 2, zero-phase); (2) candidate peaks = local maxima of |filtered| with min separation 200 ms; (3) self-learned matched filter: template = median 160 ms window of the top-20% candidates by amplitude; per-candidate score = normalised cross-correlation of raw-filtered window with the template; (4) dynamic-programming selection over candidates maximising sum(score_i) - lam*sum(|log(RR_i/RR_{i-1})|) with RR in [200 ms, 2000 ms], each candidate gains (score_i - thr), so a candidate only pays for itself when its match exceeds thr. lam in {0,0.25,0.5,1}, thr in {0.2,0.35,0.5,0.65} chosen on DEV by max micro F1 (ties -> smaller lam, then smaller thr).
+Primary: TEST micro F1 difference MFDP-B; paired bootstrap over the 24 TEST records (10000, seed 7) of micro F1 difference. 
+WIN: diff >= +0.01 and 95% CI lower > 0. NEGATIVE: CI upper < 0. Else NULL. Per-record Se/PPV tables saved; paced records (102,104,107,217) kept in; no re-banding.
+Equivalence check: baseline is run through the same matcher on DEV; matcher must give TP=all for the truth annotations fed in as detections (assert).
+
+Pre-lock note: a smoke test on DEV record 100 only (no TEST record touched) showed the first objective (sum of positive scores) over-selects (4537 FP); objective changed to subtract thr per beat before locking. Data: all 144 dat/hea/atr files verified against official SHA256SUMS.txt (sha256 b61158a96d5f2ca80edfb354a9a66a6324836c390a84e1966dcee2b907d6be43).

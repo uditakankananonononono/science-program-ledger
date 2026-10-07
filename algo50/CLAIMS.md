@@ -76,3 +76,8 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 52 | missing-mar-cc-vs-imputation | RES-3 | done - G1-G4 all PASS (CC bias -0.35; reg-imp +0.002; IPW -0.001; mean-imp SD 0.70; reproduction) | 2026-09-24T08:09Z |
 | 54 | epi-growth-rate-poisson-vs-loglinear | RES-3 | done - G1 FAIL narrow (log-linear bias -0.008 < 0.01 gate), G2-G4 PASS (Poisson GLM bias +0.0003, RMSE 0.67x) | 2026-09-24T08:10Z |
 | 86 | em-transcript-quantification | RES-2 | DONE - all gates PASS; error saturates at 50k reads (isoform sharing is irreducible) | 2026-09-24T09:00Z |
+| 87 | wdbc-selective-asymmetric-band | BUILD-A | done - NEGATIVE (v1 degenerate NULL; v2 RCAB -0.0071 coverage vs Chow) | 2026-10-07T15:50Z |
+| 88 | druglib-aspect-sparse-stack | BUILD-A | done - WIN agent-run (RMSE 2.0685 vs 2.2386) | 2026-10-07T15:50Z |
+| 89 | minimizer-echo-lowcomplexity-order | BUILD-A | done - NEGATIVE 3/3 genomes (density +4.9%) | 2026-10-07T15:50Z |
+| 90 | pbmc3k-dropout-aware-edge-reweight | BUILD-A | done - NEGATIVE at res 0.8 (ARI -0.052) | 2026-10-07T15:50Z |
+| 91 | mitbih-matched-filter-dp-rpeak | BUILD-A | done - NEGATIVE (F1 0.868 vs 0.990) | 2026-10-07T15:50Z |
