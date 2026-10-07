@@ -103,3 +103,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 112 | ghcnd-tmax-gap-anomaly-bridge | BUILD-A | done - WIN (RMSE 2.866 vs 3.207 TREG, -10.6%, CI [0.128,0.611]; one station, simulated gaps) | 2026-10-07T20:40Z |
 | 110 | 20ng-length-aware-temperature-calibration | BUILD-A | done - NULL (NLL 0.9231 vs TS 0.9231, CI [-0.0003,0.0002]; b~0, text, no bio data) | 2026-10-07T21:15Z |
 | 113 | gwosc-injection-chirp-track-vs-matched-filter | BUILD-A | done - NULL (recovery-under-injection; eff diff +0.031, CI [-0.009,0.075]; synthetic, no real-event claim) | 2026-10-07T21:20Z |
+| 114 | bidmc-rr-product-of-experts-fusion | BUILD-A | done - NULL (RR MAE 5.56 vs 7.05 b2, -21% but CI [-0.008,2.94]; lam at grid edge; monitor RR reference) | 2026-10-07T21:25Z |
