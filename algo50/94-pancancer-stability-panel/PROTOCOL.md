@@ -1,0 +1,10 @@
+# P8 preregistration (locked before any test-split evaluation)
+Data: UCI Gene expression cancer RNA-Seq (ID 401, TCGA PANCAN HiSeq, CC BY 4.0), zip sha256 06bbb28393ed85b4365f461f20ad75996f2579af4a047945c038ec27386e3bfb; 801 samples x 20,531 genes, 5 classes (BRCA 300, COAD 78, KIRC 146, LUAD 141, PRAD 136). Features log2(x+1)-transformed (data are already RSEM-normalised counts) then used as is.
+Question: with a hard 10-GENE panel budget, which selection rule gives the best classifier? All arms use the SAME final classifier on the 10 selected genes (StandardScaler + multinomial logistic regression C=1), so only selection differs.
+Splits: 20 frozen stratified 70/30 splits, seeds 1..20 (StratifiedShuffleSplit random_state=seed, n_splits=1). Test is touched once per split. Disclosure: the 20 splits overlap in samples, so they are not independent replications; there is no external site.
+Selection prefilter (all arms): ANOVA F top-500 genes on the training part only.
+B1 (L1 path): L1 OvR logistic regression (liblinear), C from geometric grid 1e-3..1 (30 values, edges declared); smallest C whose union of non-zero genes >= 10; panel = 10 genes with largest max-over-class |coef|.
+B2 (ANOVA top-10): the 10 genes with the highest F.
+New SSP (stability-selected prototype panel): 50 stratified 50% subsamples of the training part; in each, ANOVA top-500 then L1 OvR LR at C=0.05 (fixed); selection frequency per gene; panel = top-10 by frequency (ties by higher full-training F).
+Metric (primary): test accuracy per split; mean over 20 splits; paired differences SSP-B1 and SSP-B2; 95% bootstrap CI over splits (10000, seed 7). WIN requires BOTH diffs >= +0.01 and BOTH CI lower > 0. NEGATIVE if either CI upper < 0 against the stronger baseline... precisely: NEGATIVE if the CI upper < 0 for at least one baseline; else NULL. Secondary: macro-F1, per-split table. No re-banding.
+Equivalence check: with SSP's subsample count set to 1, subsample = full training part, C chosen as B1's, the panel must match B1's top set up to rank (asserted on split 1 on the SET of selected genes when the same C is used).

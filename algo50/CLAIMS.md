@@ -81,3 +81,8 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 89 | minimizer-echo-lowcomplexity-order | BUILD-A | done - NEGATIVE 3/3 genomes (density +4.9%) | 2026-10-07T15:50Z |
 | 90 | pbmc3k-dropout-aware-edge-reweight | BUILD-A | done - NEGATIVE at res 0.8 (ARI -0.052) | 2026-10-07T15:50Z |
 | 91 | mitbih-matched-filter-dp-rpeak | BUILD-A | done - NEGATIVE (F1 0.868 vs 0.990) | 2026-10-07T15:50Z |
+| 92 | mitbih-prototype-balanced-beat-classifier | BUILD-A | done - NEGATIVE (F1 0.146 vs kNN 0.223; weak pipeline) | 2026-10-07T16:40Z |
+| 93 | heart-reduced-feature-bank | BUILD-A | done - NULL (AUROC +0.0194, below +0.02 band) | 2026-10-07T16:40Z |
+| 94 | pancancer-stability-panel | BUILD-A | done - NULL (ties L1-path, beats ANOVA) | 2026-10-07T16:40Z |
+| 95 | ctg-ordinal-cost-cascade | BUILD-A | done - NULL (OCC cost +0.057, CI spans 0) | 2026-10-07T16:40Z |
+| 96 | phage-containment-corrected-distance | BUILD-A | done - NEGATIVE (acc 0.6725 vs Mash 0.7775) | 2026-10-07T16:40Z |

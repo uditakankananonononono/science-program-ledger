@@ -1,0 +1,5 @@
+equivalence spearman 0.5837232359106417 1378
+Traceback (most recent call last):
+  File "/home/sandbox/algo50/p10/run.py", line 66, in <module>
+    eq=spearmanr(Dp[iu][m],Db[iu][m])[0]; print('equivalence spearman',eq,m.sum(),flush=True); assert eq>=0.95
+AssertionError
