@@ -1,0 +1,6 @@
+# P5 v2 preregistration (steered by the v1 NEGATIVE; locked before any v2 compute)
+v1 result: test micro F1 MFDP 0.8680 vs Pan-Tompkins 0.9898 (diff -0.1218), commit f3d84b6. The v1 dev optimum sat on the grid edge (lam=1, thr=0.65), and record 232 collapsed (684 FP / 461 FN), consistent with a single-template matched filter failing on atypical morphology.
+v2 change: (a) multi-template: k-means (k=3, random_state 0, n_init 10) on the unit-normalised windows of the top-20% candidates, score = max normalised correlation over the 3 centroid templates (sign-flipped windows as in v1); (b) wider grid declared in advance: lam in {1,2,4}, thr in {0.65,0.75,0.85} (the v1 edge cell (1,0.65) is included as a bracketing cell, grid edge now extends past it on both axes); all other parts as v1 (bandpass, candidates, DP, matcher, tolerance, split by record index).
+Tuning on DEV only (24 records) by max micro F1; ties to smaller lam then smaller thr. TEST (24 records) was ALREADY EVALUATED for v1, so v2's TEST result is a SECOND LOOK, not a clean holdout; this is disclosed everywhere v2 is cited. No fresh MIT-BIH-independent data was available in time.
+WIN/NEGATIVE/NULL rules as v1 (diff >= +0.01 with CI lower > 0; CI upper < 0 = NEGATIVE) applied verbatim; additional report: per-record F1 for records where v1 collapsed (232 and others with F1 < 0.8).
+Files: run2.py.

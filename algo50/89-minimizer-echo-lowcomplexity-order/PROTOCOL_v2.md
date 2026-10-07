@@ -1,0 +1,7 @@
+# P3 v2 preregistration (new, steered by the v1 NEGATIVE; locked before any v2 compute)
+v1 (commit 4d8c185 results): ECHO (homopolymer>=5 or <=4 distinct 2-mers gate) NEGATIVE: density +4.9% on E. coli. Hypothesis: the gate was too aggressive (it flags a large share of k-mers, which shrinks the effective candidate pool). v2 tunes the gate strictness on DEV genomes only.
+Fresh holdout: B. subtilis 168 NC_000964.3 (sha256 a334e891ffc0e307f23f48842775d3383177a9d9cb5d5075b552a2cccddfe139), never used before. DEV genomes: phiX174 NC_001422.1 and lambda NC_001416.1. E. coli NC_000913.3 was seen in v1, so it is reported as SECOND-LOOK only (not holdout).
+Grid (declared; v1's setting h=5,d=4 is the grid's aggressive corner): homopolymer threshold h in {6,8,10,99(off)}, distinct-2mer threshold d in {0(off),2,3,4}. 16 cells; the (99,0) cell equals random and is the baseline.
+Selection on DEV: objective J = mean over DEV genomes of [(cons-consB1)/consB1 - (dens-densB1)/densB1], maximised; ties go to the less aggressive gate. k=15,w=10, 10 mutation seeds, 5% substitutions, all else as in v1.
+Holdout test on B. subtilis with the v1 WIN/NEGATIVE/NULL rules: WIN = (density <= B1*0.97 OR conservation >= B1+0.01) AND NOT (density > B1*1.03 OR conservation < B1-0.01). If the selected cell is the off cell, the verdict is NULL by construction (reported verbatim). No re-banding.
+Implementation file: run2.py (hash below). Homopolymer threshold h means a run of >= h identical bases within the k-mer; h=99 or d=0 disables that part.
