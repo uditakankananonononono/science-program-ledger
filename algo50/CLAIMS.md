@@ -96,3 +96,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 103 | bidmc-ppg-harmonic-tracker | BUILD-A | done - WIN (HR MAE 1.685 vs 2.622; caveat baseline choice) | 2026-10-07T20:00Z |
 | 105 | go-bias-adjusted-enrichment | BUILD-A | done - NEGATIVE (recall drop 0.063 > 0.05; FP 95->1.7) | 2026-10-07T20:00Z |
 | 106 | clinvar-substitution-triage | BUILD-A | done - NULL (AUROC +0.056, CI spans 0) | 2026-10-07T20:00Z |
+| 107 | go-function-prediction-intact-diffusion | BUILD-A | done - WIN (small: macro-AUROC +0.025; grid edges) | 2026-10-07T20:30Z |

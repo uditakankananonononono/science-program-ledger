@@ -1,0 +1,8 @@
+prots 14198 edges 116230 terms 1948
+DEV base {'B1': np.float64(0.6117346397948288), 'B2': np.float64(0.664407718144213)}
+/home/sandbox/algo50/p107/run.py:49: RuntimeWarning: divide by zero encountered in power
+  k=np.asarray(A.sum(1)).ravel(); d=np.where(k>0,k**-a,0).astype(np.float32); An=(sp.diags(d)@A@sp.diags(d)).tocsr()
+/home/sandbox/algo50/p107/run.py:49: RuntimeWarning: divide by zero encountered in reciprocal
+  k=np.asarray(A.sum(1)).ravel(); d=np.where(k>0,k**-a,0).astype(np.float32); An=(sp.diags(d)@A@sp.diags(d)).tocsr()
+DEV best (np.float64(0.6900048527465388), 0.5, 1, 0)
+{"n_prots": 14198, "n_edges": 116230, "n_terms": 1948, "n_test_terms": 974, "dev_baselines": {"B1": 0.6117346397948288, "B2": 0.664407718144213}, "head": "B2", "dev_best": {"auc": 0.6900048527465388, "a": 0.5, "w2": 1, "b": 0}, "edge": true, "test_macro_base": 0.6609993161393459, "test_macro_dcd": 0.6859757778887683, "diff": 0.024976461749422387, "ci": [0.021763303498682853, 0.02816951927812189], "frac_dcd_better": 0.6735112936344969, "median_pos": 11.0, "verdict": "WIN"}
