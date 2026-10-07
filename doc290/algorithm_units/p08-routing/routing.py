@@ -140,3 +140,51 @@ def budgeted_scenario_route(graph, start, goal, budget):
             labels[e.target].append(vector)
             heapq.heappush(queue, (max(new), risk, new, path + (e.target,), indices + (index,)))
     return None
+
+
+def turn_constrained_route(graph, start, goal, forbidden=(), penalties=None):
+    """Minimum travel time with incoming-edge-specific turn rules.
+
+    Edge IDs are (source_vertex, adjacency_index). Transition keys are
+    (incoming_edge_id, outgoing_edge_id). Forbidden rules and penalties are
+    caller-supplied, not derived from geometry. Standard expanded-state Dijkstra.
+    Repeated vertices may be necessary; repeated states are never required.
+    """
+    validate(graph, start, goal)
+    penalties = {} if penalties is None else dict(penalties)
+    forbidden = set(forbidden)
+    edge_ids = {(v, i): e for v, edges in graph.items() for i, e in enumerate(edges)}
+    for key in forbidden | set(penalties):
+        if not isinstance(key, tuple) or len(key) != 2:
+            raise ValueError('transition must contain two edge IDs')
+        incoming, outgoing = key
+        if incoming not in edge_ids or outgoing not in edge_ids or edge_ids[incoming].target != outgoing[0]:
+            raise ValueError('transition must reference consecutive existing edges')
+    for value in penalties.values():
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 0:
+            raise ValueError('turn penalties must be finite and nonnegative')
+    # Serial breaks heap ties without comparing None against edge tuples.
+    queue = [(0, 0, start, None, (start,), (), 0)]
+    distances = {(start, None): 0}
+    serial = 0
+    while queue:
+        total, _, node, incoming, path, indices, turn_cost = heapq.heappop(queue)
+        if total != distances[(node, incoming)]:
+            continue
+        if node == goal:
+            return dict(path=list(path), edges=witness(graph, path, indices), time=total, turn_penalty=turn_cost)
+        for index, e in enumerate(graph[node]):
+            outgoing = (node, index)
+            key = (incoming, outgoing)
+            if incoming is not None and key in forbidden:
+                continue
+            penalty = penalties.get(key, 0) if incoming is not None else 0
+            candidate = total + e.time + penalty
+            finite_totals(candidate, turn_cost + penalty)
+            state = (e.target, outgoing)
+            if candidate >= distances.get(state, math.inf):
+                continue
+            distances[state] = candidate
+            serial += 1
+            heapq.heappush(queue, (candidate, serial, e.target, outgoing, path + (e.target,), indices + (index,), turn_cost + penalty))
+    return None

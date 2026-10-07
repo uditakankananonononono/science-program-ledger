@@ -65,3 +65,18 @@ Numerics are explicit binary-float semantics, not exact decimal arithmetic:
 boundary fixture tests and documents this limitation. For exact budgets, use
 integer-scaled costs. Empty graphs with no scenario-bearing edges remain rejected
 by scenario solvers, including identity queries, because scenario count is absent.
+
+## V4 turn-constrained routing
+
+Fourth unit: standard incoming-edge state expansion with Dijkstra search.
+Explicit forbidden turns and nonnegative transition penalties are keyed by
+(source vertex, adjacency index) edge identities. Parallel edges remain distinct.
+A vertex may need to be revisited with a different incoming edge; this is covered
+by a regression fixture. No anatomical turn rules are guessed.
+
+16 test methods pass. The new unit matches independent exhaustive expanded-state
+path enumeration on 100 fixed-seed four-vertex directed graphs, with returned edge
+and turn costs also recomputed. Combined with the existing three-unit oracle,
+there are 550 objective comparisons. This is correctness testing, not external
+validation. No performance, invention or clinical claim is made. This unit does
+not yet combine turn constraints with the other units' budget/scenario objectives.
