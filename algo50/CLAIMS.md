@@ -130,3 +130,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 7-TOX21 | tox21-assays | BUILD-A | DROPPED before prereg (dataset-specific reusable license not established; challenge page licenses code only) | 2026-10-08T04:05Z |
 | 7-CLINVAR | clinvar-timeforward-missense | BUILD-A | DROPPED before prereg (NCBI policy gives no allowlist license; LastEvaluated is latest evaluation date so the split is not time-forward) | 2026-10-08T04:08Z |
 | 8-NHANES-MORT | nhanes-linked-mortality | BUILD-A | DROPPED before routing (CDC linked mortality file carries statutory use restrictions, not an allowlist license; synthetic follow-up values) | 2026-10-08T04:36Z |
+| 8-WESAD | wesad-stress | BUILD-A | DROPPED before prereg (publisher licence is non-commercial scientific use only; UCI redirects, no CC BY) | 2026-10-08T04:37Z |
