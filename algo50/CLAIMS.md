@@ -109,3 +109,6 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 121 | intact-direct-vs-association-node-propensity | BUILD-A | done - WIN (FINAL AUROC 0.788 vs 0.544 ECC, CI [0.138,0.311]; likely study-design propensity, not biology; DEV was ~0.53) | 2026-10-07T21:40Z |
 | 117 | cinc2017-af-fwave-morphology-features | BUILD-A | done - NULL (challenge F1 0.747 vs 0.734, +0.013, CI [-0.008,0.034]; record-level split, ODC-By) | 2026-10-07T21:45Z |
 | 120 | ube2i-dms-neighbour-position-tolerance | BUILD-A | done - NULL (Spearman 0.369 vs 0.393 B2, CI [-0.062,0.012]; one assay, CC0) | 2026-10-07T21:50Z |
+| 118 | cross-database-ecg-qrs-edb | BUILD-A | DROPPED before prereg (surface exhausted: P33 and P91 on MIT-BIH, Pan-Tompkins F1 0.99+ unbeaten; EDB 10-record subset ODC-By verified by scout, not scored) | 2026-10-07T21:55Z |
+| 119 | geo-uc-cohort-pair-replication | BUILD-A | DROPPED before prereg (license gate: GEO public download not license-clean; no dataset-specific open license) | 2026-10-07T21:55Z |
+| 122 | mimic-eicu-demo-calibration | BUILD-A | DROPPED before prereg (MIMIC-IV-demo and eICU-demo are ODbL, not CC) | 2026-10-07T21:55Z |
