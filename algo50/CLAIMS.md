@@ -117,3 +117,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 125 | parkinsons-voice-subject-baseline-centring | BUILD-A | done - NULL (RMSE 12.04 vs 10.85 ridge, -10.9% worse, CI [-3.68,0.93]; no model beats sd(y)=10.69; 42 subjects) | 2026-10-07T22:15Z |
 | 126 | tcga-rnaseq-label-efficiency | BUILD-A | DROPPED before prereg (ceiling: DEV-pool baseline macro-F1 0.991 at 2/class, 1.000 at 10-20/class; WIN rule unreachable; TEST untouched) | 2026-10-07T22:25Z |
 | 136 | chembl-lipophilicity-scaffold-featurisation | BUILD-A | DROPPED before routing (CC BY-SA share-alike not accepted without explicit user yes) | 2026-10-07T22:30Z |
+| 130 | disprot-residue-disorder-baseline-beat | BUILD-A | DROPPED before prereg (positive/unknown labels only, no verified ordered negatives; starter n=50; no defensible AUROC definition without an ordered-negative source) | 2026-10-07T22:35Z |
