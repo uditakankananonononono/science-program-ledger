@@ -100,3 +100,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 108 | concrete-monotone-additive | BUILD-A | done - NULL (RMSE 7.31 vs 6.76) | 2026-10-07T20:40Z |
 | 109 | skab-reference-whitened-changepoint | BUILD-A | done - NEGATIVE (F1 0.411 vs 0.511) | 2026-10-07T20:40Z |
 | 111 | freesolv-physchem-fg-featurization | BUILD-A | done - WIN (RMSE 1.555 vs 2.627; scaffold shift) | 2026-10-07T20:40Z |
+| 112 | ghcnd-tmax-gap-anomaly-bridge | BUILD-A | done - WIN (RMSE 2.866 vs 3.207 TREG, -10.6%, CI [0.128,0.611]; one station, simulated gaps) | 2026-10-07T20:40Z |
