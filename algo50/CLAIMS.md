@@ -106,3 +106,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 114 | bidmc-rr-product-of-experts-fusion | BUILD-A | done - NULL (RR MAE 5.56 vs 7.05 b2, -21% but CI [-0.008,2.94]; lam at grid edge; monitor RR reference) | 2026-10-07T21:25Z |
 | 116 | mice-proteomics-mouse-mean-shrinkage-lda | BUILD-A | done - NULL (mouse acc 0.625 vs B3 0.681, CI [-0.153,0.042]; 72 mice, CV) | 2026-10-07T21:30Z |
 | 115 | ptbxl-subset-median-beat-pca | BUILD-A | done - NULL (AUROC 0.597 vs HC 0.629, CI [-0.172,0.122]; 100 records, 23 positives, CV) | 2026-10-07T21:35Z |
+| 121 | intact-direct-vs-association-node-propensity | BUILD-A | done - WIN (FINAL AUROC 0.788 vs 0.544 ECC, CI [0.138,0.311]; likely study-design propensity, not biology; DEV was ~0.53) | 2026-10-07T21:40Z |
