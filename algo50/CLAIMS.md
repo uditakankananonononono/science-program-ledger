@@ -112,3 +112,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 118 | cross-database-ecg-qrs-edb | BUILD-A | DROPPED before prereg (surface exhausted: P33 and P91 on MIT-BIH, Pan-Tompkins F1 0.99+ unbeaten; EDB 10-record subset ODC-By verified by scout, not scored) | 2026-10-07T21:55Z |
 | 119 | geo-uc-cohort-pair-replication | BUILD-A | DROPPED before prereg (license gate: GEO public download not license-clean; no dataset-specific open license) | 2026-10-07T21:55Z |
 | 122 | mimic-eicu-demo-calibration | BUILD-A | DROPPED before prereg (MIMIC-IV-demo and eICU-demo are ODbL, not CC) | 2026-10-07T21:55Z |
+| 123 | pdb-small-secondary-structure | BUILD-A | DROPPED before prereg (unpowered: 7 chains, ~1,020 residues; no DSSP binary in-box; scout package CC0 verified, not scored) | 2026-10-07T22:00Z |
