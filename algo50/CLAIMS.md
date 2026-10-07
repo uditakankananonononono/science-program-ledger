@@ -107,3 +107,5 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 116 | mice-proteomics-mouse-mean-shrinkage-lda | BUILD-A | done - NULL (mouse acc 0.625 vs B3 0.681, CI [-0.153,0.042]; 72 mice, CV) | 2026-10-07T21:30Z |
 | 115 | ptbxl-subset-median-beat-pca | BUILD-A | done - NULL (AUROC 0.597 vs HC 0.629, CI [-0.172,0.122]; 100 records, 23 positives, CV) | 2026-10-07T21:35Z |
 | 121 | intact-direct-vs-association-node-propensity | BUILD-A | done - WIN (FINAL AUROC 0.788 vs 0.544 ECC, CI [0.138,0.311]; likely study-design propensity, not biology; DEV was ~0.53) | 2026-10-07T21:40Z |
+| 117 | cinc2017-af-fwave-morphology-features | BUILD-A | done - NULL (challenge F1 0.747 vs 0.734, +0.013, CI [-0.008,0.034]; record-level split, ODC-By) | 2026-10-07T21:45Z |
+| 120 | ube2i-dms-neighbour-position-tolerance | BUILD-A | done - NULL (Spearman 0.369 vs 0.393 B2, CI [-0.062,0.012]; one assay, CC0) | 2026-10-07T21:50Z |
