@@ -122,3 +122,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 133 | card-amr-family-prediction | BUILD-A | DROPPED before routing (CARD gene/reference sequences academic/non-commercial only; only ontology CC BY 4.0) | 2026-10-08T03:35Z |
 | 128 | cinc2019-sepsis | BUILD-A | DROPPED before prereg (page says CC BY 4.0 but root LICENSE.txt bytes are ODbL v1.0 share-alike; bytes govern) | 2026-10-08T03:36Z |
 | 132 | openfda-adr-reference-labels | BUILD-A | DROPPED before prereg (no license-clean reference-label set under CC0/CC BY/ODC-By allowlist) | 2026-10-08T03:37Z |
+| 129 | signal-peptide cleavage-site: feature ranker vs von Heijne PWM | WIN (small): TEST top-1 0.748 vs 0.717, gain +0.0315 (threshold 0.03), cluster CI [0.0077, 0.0546]; C at grid edge (flat DEV 0.741-0.744); MMseqs2 heuristic clustering, 420 TEST clusters, no second look run; pre-lock amendment: PWM weight grid after false PERM WIN | commit 0a4edd3 |
