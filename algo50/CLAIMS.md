@@ -90,3 +90,8 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 99 | ilinet-analog-regime-forecast | BUILD-A | done - NULL (analog worse, CI spans 0) | 2026-10-07T18:30Z |
 | 100 | survival-cindex | BUILD-A | done - NEGATIVE/null (C-index -0.0014) | 2026-10-07T18:30Z |
 | 104 | spaced-seed-sensitivity | BUILD-A | done - WIN sens +0.028 (specificity caveat) | 2026-10-07T18:30Z |
+| 97 | intact-ppi-degree-corrected-diffusion | BUILD-A | done - NULL (AUROC +0.017 < 0.02 bar; AP worse) | 2026-10-07T20:00Z |
+| 101 | ntt-bionj-gamma-vs-nj | BUILD-A | done - NULL (rel 4.2% < 5% bar) | 2026-10-07T20:00Z |
+| 102 | pubchem-qhts-robust-4pl | BUILD-A | done - NULL (underpowered, 22 test compounds) | 2026-10-07T20:00Z |
+| 103 | bidmc-ppg-harmonic-tracker | BUILD-A | done - WIN (HR MAE 1.685 vs 2.622; caveat baseline choice) | 2026-10-07T20:00Z |
+| 105 | go-bias-adjusted-enrichment | BUILD-A | done - NEGATIVE (recall drop 0.063 > 0.05; FP 95->1.7) | 2026-10-07T20:00Z |
