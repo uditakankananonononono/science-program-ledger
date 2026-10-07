@@ -86,3 +86,7 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 94 | pancancer-stability-panel | BUILD-A | done - NULL (ties L1-path, beats ANOVA) | 2026-10-07T16:40Z |
 | 95 | ctg-ordinal-cost-cascade | BUILD-A | done - NULL (OCC cost +0.057, CI spans 0) | 2026-10-07T16:40Z |
 | 96 | phage-containment-corrected-distance | BUILD-A | done - NEGATIVE (acc 0.6725 vs Mash 0.7775) | 2026-10-07T16:40Z |
+| 98 | bbbc005-cell-count-adaptive-seg | BUILD-A | done - NEGATIVE (MAE 7.25 vs 2.48) | 2026-10-07T18:30Z |
+| 99 | ilinet-analog-regime-forecast | BUILD-A | done - NULL (analog worse, CI spans 0) | 2026-10-07T18:30Z |
+| 100 | survival-cindex | BUILD-A | done - NEGATIVE/null (C-index -0.0014) | 2026-10-07T18:30Z |
+| 104 | spaced-seed-sensitivity | BUILD-A | done - WIN sens +0.028 (specificity caveat) | 2026-10-07T18:30Z |
