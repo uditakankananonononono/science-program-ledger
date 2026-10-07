@@ -119,3 +119,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 136 | chembl-lipophilicity-scaffold-featurisation | BUILD-A | DROPPED before routing (CC BY-SA share-alike not accepted without explicit user yes) | 2026-10-07T22:30Z |
 | 130 | disprot-residue-disorder-baseline-beat | BUILD-A | DROPPED before prereg (positive/unknown labels only, no verified ordered negatives; starter n=50; no defensible AUROC definition without an ordered-negative source) | 2026-10-07T22:35Z |
 | 131 | MaveDB 5-assay leave-one-assay-out, pair-specific substitution matrix vs best of ridge baselines | NULL: mean gain +0.0246 (CALM1 +0.017, BRCA1 +0.047, E4B +0.010), CI [-0.004, 0.052] below WIN (CI lower > 0); PSM tuned at grid edge (disclosed); 3 TEST assays only | commit 06a1dd0 |
+| 133 | card-amr-family-prediction | BUILD-A | DROPPED before routing (CARD gene/reference sequences academic/non-commercial only; only ontology CC BY 4.0) | 2026-10-08T03:35Z |
