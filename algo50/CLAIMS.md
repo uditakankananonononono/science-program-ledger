@@ -128,3 +128,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 127 | CinC 2012 ICU mortality: stratum-normalised ensemble vs HGB/LR | NULL: TEST AUROC 0.8674 vs 0.8634 baseline, gain +0.0040 (threshold 0.010), CI [-0.0031, 0.0108]; SAPS-I 0.660; stay IDs not certified patients | commit 0221b8a |
 | 137 | cinc2017-af-batch7 | BUILD-A | DROPPED before prereg (duplicate of closed P117: same dataset, same training set, TEST already used; no fresh holdout) | 2026-10-08T03:57Z |
 | 7-TOX21 | tox21-assays | BUILD-A | DROPPED before prereg (dataset-specific reusable license not established; challenge page licenses code only) | 2026-10-08T04:05Z |
+| 7-CLINVAR | clinvar-timeforward-missense | BUILD-A | DROPPED before prereg (NCBI policy gives no allowlist license; LastEvaluated is latest evaluation date so the split is not time-forward) | 2026-10-08T04:08Z |
