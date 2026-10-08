@@ -1,0 +1,24 @@
+# K1 tracking numerical audit freeze candidate
+
+Prereg6f07a973f6adeabcf2ffea919deecc9d54e24e92,parent356726d4b42d09b81338b69602fc9b1c57723d57.
+CandidateOID/tree inreviewbundle. Pinnedunchangedkalman.py andtrackinghelpers,
+F3JSONidentity/grammarhelper reused. Exactly15constructedcalls NOTexecuted.
+Freshfilterpercase, warningsaroundconstructor+step, actualexceptionsretained;
+constructorstagealwaysMISMATCH/noatomicproof. ExpectedREFUSE requiresstepEXCEPTION
+AND genuine beforeafterownedarraybyte/shape/dtype/strideequality; anyreturnMISMATCH,
+nonfinitefieldsinclNISflaggedbeforetaggedserialization. Validcasesalllockedanalytic
+fieldsfiniteandatol1e-12/rtol0. Norescoring/repair/reclassification.
+
+SnapshotsusegenuineCcopybytes, retainoriginalstrides/dtype/shape. Callerarrayvalues
+before/afterseparatelysnapshotted; notassumedfromownedstate. Solvemonkeypatchcontext
+restoredoneveryexit. Warningsallcategory/message. Sevenseparatedevelopmenttests
+toypredict/failure/mutatingfailure/constructorfailure, finiteunexpectedMISMATCH,
+nonfinite-tagging/snapshotcopy/restore/threadrefusal. Nofull15batterybeforeapproval.
+
+Source/runtime/version/threadgatesbeforecaseconstruction/monkeypatch. LoadedNumPy
+native/module/executablepins notcompleteOS/sharedlibrary/loaderclosure. Capsnot
+hardtimeout/peakmemory/adversarialsandbox. Fixed4x4/2x2smallaudit, nospeedclaim.
+Afterreview/publication: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python3 audit.py results/report.json.
+All15rows/warnings/bytes/returns/exceptionsretained,resultreviewbeforepublication.
+Pure numericalsoftwareaudit, nophysicalnoise/calibration/invention/scienceclaim.
