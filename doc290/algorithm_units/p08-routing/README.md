@@ -192,3 +192,19 @@ checks timeout record fields and that probing continues to the next size, with
 the configured timeout passed to both launches. It does not induce a real OS
 worker timeout, establish process-kill behavior, or measure resource ceilings.
 All production files and recorded resource observations are unchanged from v9.
+
+## Batch checkpoint provenance hardening
+
+51 test methods pass here. New batch records bind to whole-archive SHA256 and
+extractor/graph/kernel source hashes plus numpy/scipy/scikit-image/Pillow versions.
+Resume rejects duplicated/unknown records, changed archive or pipeline fingerprints,
+and legacy records lacking fingerprints, before appending. Four optional-imaging
+tests cover real pass/failure resume, archive mutation, duplicate/legacy/pipeline
+mismatch and a zero-time window. Original frozen 975-mask ledger remains legacy
+and unchanged; do not retrofit its records or claim it used this new checkpoint
+format. A new QC run would need a new output path.
+
+This is input/pipeline provenance checking, not tamper-proof result authentication,
+concurrent-write safety or a timeout/memory guarantee. Current hashing time is
+outside the per-batch time window. Partial trailing lines raise a decoding error;
+no automatic repair or silent record dropping. No original masks reprocessed here.

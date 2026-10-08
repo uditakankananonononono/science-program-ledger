@@ -1,3 +1,7 @@
+test_duplicate_legacy_and_pipeline_rejected (test_batch_qc.BatchTests) ... ok
+test_input_mutation_rejected_before_append (test_batch_qc.BatchTests) ... ok
+test_real_resume_and_retained_failure (test_batch_qc.BatchTests) ... ok
+test_zero_window_and_duplicate_sources (test_batch_qc.BatchTests) ... ok
 test_directory_path (test_file_io.FileInputTests) ... ok
 test_invalid_utf8 (test_file_io.FileInputTests) ... ok
 test_missing_path (test_file_io.FileInputTests) ... ok
@@ -47,6 +51,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 47 tests in 1.048s
+Ran 51 tests in 0.985s
 
 OK
