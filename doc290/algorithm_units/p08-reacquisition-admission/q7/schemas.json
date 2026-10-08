@@ -1,0 +1,475 @@
+{
+  "doc290/algorithm_units/p08-reacquisition-admission/q6/results/literal-summary.json": {
+    "items": [
+      {
+        "fields": {
+          "NA_literal_cells": {
+            "kind": "int"
+          },
+          "empty_cells": {
+            "kind": "int"
+          },
+          "field_literal_counts": {
+            "fields": {
+              "E/H": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  },
+                  "literal_string_counts": {
+                    "fields": {
+                      "H": {
+                        "kind": "int"
+                      }
+                    },
+                    "kind": "dict"
+                  }
+                },
+                "kind": "dict"
+              },
+              "PID": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              },
+              "Sticking": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  },
+                  "literal_string_counts": {
+                    "fields": {
+                      "M": {
+                        "kind": "int"
+                      },
+                      "NM": {
+                        "kind": "int"
+                      },
+                      "S": {
+                        "kind": "int"
+                      }
+                    },
+                    "kind": "dict"
+                  }
+                },
+                "kind": "dict"
+              },
+              "Subpopulation": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  },
+                  "literal_string_counts": {
+                    "fields": {
+                      "H": {
+                        "kind": "int"
+                      },
+                      "M": {
+                        "kind": "int"
+                      },
+                      "W": {
+                        "kind": "int"
+                      }
+                    },
+                    "kind": "dict"
+                  }
+                },
+                "kind": "dict"
+              },
+              "TID": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              },
+              "t [sec]": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  },
+                  "literal_string_counts": {
+                    "fields": {
+                      "0": {
+                        "kind": "int"
+                      }
+                    },
+                    "kind": "dict"
+                  }
+                },
+                "kind": "dict"
+              }
+            },
+            "kind": "dict"
+          },
+          "literal_data_records": {
+            "kind": "int"
+          },
+          "meaning": {
+            "kind": "str"
+          }
+        },
+        "kind": "dict"
+      },
+      {
+        "fields": {
+          "NA_literal_cells": {
+            "kind": "int"
+          },
+          "empty_cells": {
+            "kind": "int"
+          },
+          "field_literal_counts": {
+            "fields": {
+              "E/H": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  },
+                  "literal_string_counts": {
+                    "fields": {
+                      "H": {
+                        "kind": "int"
+                      }
+                    },
+                    "kind": "dict"
+                  }
+                },
+                "kind": "dict"
+              },
+              "PID": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              },
+              "TID": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              },
+              "t [sec]": {
+                "fields": {
+                  "distinct_literal_strings": {
+                    "kind": "int"
+                  },
+                  "literal_string_counts": {
+                    "fields": {
+                      "0": {
+                        "kind": "int"
+                      }
+                    },
+                    "kind": "dict"
+                  }
+                },
+                "kind": "dict"
+              }
+            },
+            "kind": "dict"
+          },
+          "literal_data_records": {
+            "kind": "int"
+          },
+          "meaning": {
+            "kind": "str"
+          }
+        },
+        "kind": "dict"
+      }
+    ],
+    "kind": "list"
+  },
+  "doc290/algorithm_units/p08-reacquisition-admission/q6/results/manifest.json": {
+    "fields": {
+      "endpoint_classification": {
+        "kind": "bool"
+      },
+      "files": {
+        "items": [
+          {
+            "fields": {
+              "bom": {
+                "kind": "bool"
+              },
+              "cr_only": {
+                "kind": "int"
+              },
+              "crlf": {
+                "kind": "int"
+              },
+              "final_newline": {
+                "kind": "bool"
+              },
+              "first_logical_record_strings": {
+                "items": [
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  }
+                ],
+                "kind": "list"
+              },
+              "lf_only": {
+                "kind": "int"
+              },
+              "literal_lines": {
+                "kind": "int"
+              },
+              "logical_records": {
+                "kind": "int"
+              },
+              "name": {
+                "kind": "str"
+              },
+              "width_counts": {
+                "fields": {
+                  "18": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              }
+            },
+            "kind": "dict"
+          },
+          {
+            "fields": {
+              "bom": {
+                "kind": "bool"
+              },
+              "cr_only": {
+                "kind": "int"
+              },
+              "crlf": {
+                "kind": "int"
+              },
+              "final_newline": {
+                "kind": "bool"
+              },
+              "first_logical_record_strings": {
+                "items": [
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  },
+                  {
+                    "kind": "str"
+                  }
+                ],
+                "kind": "list"
+              },
+              "lf_only": {
+                "kind": "int"
+              },
+              "literal_lines": {
+                "kind": "int"
+              },
+              "logical_records": {
+                "kind": "int"
+              },
+              "name": {
+                "kind": "str"
+              },
+              "width_counts": {
+                "fields": {
+                  "15": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              }
+            },
+            "kind": "dict"
+          }
+        ],
+        "kind": "list"
+      },
+      "inputs": {
+        "items": [
+          {
+            "fields": {
+              "bytes": {
+                "kind": "int"
+              },
+              "crc": {
+                "kind": "int"
+              },
+              "local": {
+                "fields": {
+                  "descriptor_bytes": {
+                    "kind": "int"
+                  },
+                  "end": {
+                    "kind": "int"
+                  },
+                  "local_extra_bytes": {
+                    "kind": "int"
+                  },
+                  "start": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              },
+              "name": {
+                "kind": "str"
+              },
+              "ordinal": {
+                "kind": "int"
+              },
+              "sha256": {
+                "kind": "str"
+              }
+            },
+            "kind": "dict"
+          },
+          {
+            "fields": {
+              "bytes": {
+                "kind": "int"
+              },
+              "crc": {
+                "kind": "int"
+              },
+              "local": {
+                "fields": {
+                  "descriptor_bytes": {
+                    "kind": "int"
+                  },
+                  "end": {
+                    "kind": "int"
+                  },
+                  "local_extra_bytes": {
+                    "kind": "int"
+                  },
+                  "start": {
+                    "kind": "int"
+                  }
+                },
+                "kind": "dict"
+              },
+              "name": {
+                "kind": "str"
+              },
+              "ordinal": {
+                "kind": "int"
+              },
+              "sha256": {
+                "kind": "str"
+              }
+            },
+            "kind": "dict"
+          }
+        ],
+        "kind": "list"
+      },
+      "numeric_conversion": {
+        "kind": "bool"
+      },
+      "source_sha256": {
+        "kind": "str"
+      },
+      "status": {
+        "kind": "str"
+      }
+    },
+    "kind": "dict"
+  }
+}
