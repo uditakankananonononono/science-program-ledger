@@ -51,13 +51,18 @@ class Tests(unittest.TestCase):
         root=Path(admit.__file__).parent;actual=admit.strict_json((root/'selection.json').read_bytes());payload=b'x'
         files=[{'path':f'f{i}.txt','url':f'https://fixed.test/{i}','metadata_size':1,'git_blob_sha1':admit.blobsha(payload)} for i in range(62)];fake={**actual,'files':files};envelopes=[json.dumps({'url':s['url'],'size':1,'sha':s['git_blob_sha1'],'encoding':'base64','content':'eA=='}).encode() for s in files]
         original=Path.read_bytes
+        original_text=Path.read_text
+        def read_text(p,*a,**kw):
+            if p==root/'freeze-hashes.sha256':
+                return ''.join((admit.sha(json.dumps(fake).encode()) if n=='selection.json' else h)+'  '+n+'\n' for h,n in [line.split('  ',1) for line in original_text(p).splitlines()])
+            return original_text(p,*a,**kw)
         def read(p):
             if p==root/'selection.json':return json.dumps(fake).encode()
             return original(p)
         for i in range(62):
             with self.subTest(position=i),tempfile.TemporaryDirectory() as t:
                 objects=envelopes.copy();objects[i]=b'{}'
-                with patch.object(Path,'read_bytes',read),patch.object(admit,'binding'),patch.object(admit,'download',side_effect=objects),patch.object(admit,'parse') as parser:
+                with patch.object(Path,'read_text',read_text),patch.object(Path,'read_bytes',read),patch.object(admit,'binding'),patch.object(admit,'download',side_effect=objects),patch.object(admit,'parse') as parser:
                     admit.run(Path(t)/'out');parser.assert_not_called()
                 self.assertFalse(json.loads((Path(t)/'out/inventory.json').read_text())['analysis_performed'])
 if __name__=='__main__':unittest.main()
