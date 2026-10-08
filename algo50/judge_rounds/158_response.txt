@@ -1,0 +1,10 @@
+1) Drop justification and disclosure:
+Yes. The DROPPED-at-DEV-power-gate disposition is justified if the preregistered criterion was 80% power and the calculation was fixed before seeing TEST outcomes. The reported power (~0.55 at the observed +0.07 gain) does not meet the criterion, and importantly the criterion was not relaxed. Calling this no TEST outcome / no lock is correct. The TEST-structure disclosure is unusually important: inspecting all-user timestamps and reporting one TEST window count is a form of TEST exposure, but the closure explicitly states that no TEST labels, scores, or permutation outcomes were used. That distinction should be preserved.
+
+2) Biggest methodological weakness:
+The weak point is power logic built on a noisy, DEV-only paired SE estimated from only 30 users. The per-user gain SD is 0.196, versus a mean gain around +0.021, while the model-level CV gains are much larger (+0.069–0.077). That mismatch makes the assumed sampling distribution and resulting 55% power calculation fragile. The power conclusion is therefore appropriately conservative, but it should not be interpreted as strong evidence that B3 cannot win; it establishes that this DEV design cannot reliably demonstrate the prespecified gain.
+
+The larger scientific limitation is confounding: cognitive versus physical fatigue remains inseparable from task, posture, movement, and cumulative fatigue. The strong rest-vs-other performance is explicitly contaminated by ordering and should not support the target claim.
+
+3) Stronger design:
+Use a within-user randomized/counterbalanced crossover in which cognitive and physical fatigue tasks are interleaved or randomized, with matched duration and posture, and predefine user-level paired evaluation. Reserve an untouched TEST cohort from the outset. Power the study from the user-level paired difference distribution, using a prespecified clinically/scientifically meaningful AUROC gain and uncertainty estimated independently of the final TEST set.

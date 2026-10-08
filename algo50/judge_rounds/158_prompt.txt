@@ -1,0 +1,19 @@
+You are a skeptical methods reviewer judging a closure of a computational study (all numbers produced by an automated agent; treat nothing as vetted). NOTE: perm=false means the real unpermuted run; this unit has no TEST run. This unit was DROPPED at the DEV power gate with no lock and no TEST outcome. Reply in under 300 words: (1) is the drop justified and the disclosures adequate, (2) the single biggest methodological weakness (power logic, DEV-only paired SE estimated from 30 users, confounds, exposure of TEST structure), (3) one concrete stronger design. No flattery.
+
+CLOSURE:
+Question: can 1 Hz Polar RR/HR separate induced cognitive-fatigue from physical-fatigue windows across users, and does label-free per-user normalisation (B3) beat raw features (B2)? Conditions are experimental states, not diagnoses.
+
+Data: full zip 252,669,304 B re-downloaded, MD5 8265abfbcc3ea565cd559f1f68de8fad (publisher) matches, zip CRC clean. 60 users x 4 conditions of ECG (1 Hz derived RR/HR, not raw ECG); EDA/EMG users 0-29, eye-blink users 0-18. Split fixed before any model: numeric sort user0..59, DEV even (30), TEST odd (30).
+
+Confound audit (timestamps, all 60 users): rest first 60/60, combo last 59/60, cognitive vs physical order near-balanced (30 cog-first, 29 phys-first, 1 combo before physical; DEV 14/30 cog-first). Recording length differs by condition (median rest 182 s, cog 395, combo 323, phys 485), so length and window index cannot be features. No assignment table; ordering not shown randomised. Cog-vs-phys is the only order-balanced contrast; task (seated screen vs dumbbell holds), posture, motion artefact and cumulative fatigue remain confounded.
+
+DEV feasibility (30 users, 5-fold user-grouped CV, 3 seeds): cog vs phys AUROC raw LR 0.624, B3 0.682-0.686 (HGB 0.626 / 0.662-0.669); 30-user bootstrap CI for B3 [0.589, 0.796]. 3-class macro-F1 0.36-0.42. Rest vs others 0.85-0.95 (order-confounded). Phys vs combo at chance 0.45-0.49. Rest-referenced features did not help (0.640 vs 0.686; -0.003 when added). DEV PERM (5 runs): 0.41-0.66, noisy. Headroom exists (about 0.31) but ceiling is not the problem.
+
+Power (DEV only): paired B3-minus-B2 gain +0.069 to +0.077, paired bootstrap SD 0.024-0.036 (0.032 at C=0.1). Per-user gain mean +0.021, SD 0.196, 63% positive. WIN rule (gain >= 0.03 and CI lower > 0) needs gain about 0.063 at SE 0.032; power at true gain 0.07 is about 0.55, 0.06 is 0.46, 0.03 is 0.15. 80% power needs gain about 0.09, above anything DEV shows. Criterion 80%; not met. Dropped; criterion not lowered.
+
+Disclosures (verbatim): structure/timestamps/pooled descriptive inspection across all 60 users (including TEST users) before the prereg, plus one printed TEST window count (cog+phys 839); no model was fitted on or scored on TEST users; no TEST label-based outcome computed; no TEST label-permutation run. No matched headroom to any published benchmark claimed or measured. No win claim. No push.
+
+Registry reconciliation: CLAIMS through batch 10 plus main's confirmation for batch 11 (159 TPEHG, 160 CEBS, 161 SWIFTIES, all disjoint): no overlap with MePhy; nearest closed units 149, 148, 144, 151; WESAD dropped for license. CLAIMS had no rows for 152, 154, 156, 157 at reconciliation time.
+
+Advisory judge round: NOT run by this agent (no ChatGPT access in this surface). Pending main.
+Contents: PREREG_DRAFT_unit158_MePhy.md (record only), ecg_audit.csv, feat.py, load.py, audit.py, dev1-4.py, registry_note.txt, LEDGER_PATCH.md.

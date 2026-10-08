@@ -1,0 +1,10 @@
+1. BUILD-A/DROP justification and disclosure:
+Yes, the disposition is methodologically defensible if BUILD-A means the normalization arm is abandoned before lock, rather than claiming normalization is ineffective generally. The reported 7/7 direction, negative AP/AUROC gains, and CIs support dropping this DEV candidate under a prespecified comparative screen. The disclosure is mostly adequate: it clearly states DEV-only status, no lock/TEST, exploratory four-channel scope, small n, exclusions, and that the result is not a NEGATIVE/NULL finding. The publisher-hash verification is useful provenance evidence, but does not validate the automated measurements.
+
+2. Biggest methodological weakness:
+The central weakness is extreme inferential fragility from only 7 DEV patients. A 7/7 unfavorable direction sounds decisive, but these are seven patient clusters from one dataset, not independent evidence of general normalization failure. The reported CIs also do not solve the small-sample/generalizability problem. The four-channel screen further makes the finding highly representation-dependent: normalization could perform differently with other channels, montages, or patient populations. Most importantly, “worse than raw” is only established for this particular exploratory comparison—not as a general property of normalization.
+
+The PN00-3 exclusion is appropriately disclosed, but it also means the analyzed cohort is not simply the nominal dataset and should remain explicitly described as such.
+
+3. Stronger design:
+Use a patient-level nested evaluation with a prespecified channel set and locked preprocessing, with substantially more independent patients spanning the available heterogeneity. Compare raw vs normalization using paired patient-level metrics, with the decision rule fixed before DEV analysis; reserve a genuinely untouched TEST cohort for the final comparison. That would distinguish a robust preprocessing effect from a seven-patient, four-channel dataset-specific result.
