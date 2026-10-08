@@ -1,0 +1,7 @@
+LOCK OK 8842fd0c01dc 923885f4b15b
+TEST macro within-device AUC (all models): {'GBP_C0.01': 0.705, 'GBP_C0.1': 0.741, 'GBP_C1.0': 0.771, 'GBPSP_C0.01': 0.689, 'GBPSP_C0.1': 0.741, 'GBPSP_C1.0': 0.768, 'B1_agesex': 0.63, 'B2_bandmean': 0.643, 'B3_RF': 0.714}
+selected GBP_C1.0 0.771 CI [0.655,0.884]; baseline B3_RF 0.714 CI [0.601,0.829]
+diff 0.056 CI [-0.061,0.180] (ID-cluster bootstrap, stratified device x label, 2000 reps)
+VERDICT: NULL (WIN: diff>=0.03 and CI lower>0; NEGATIVE: CI upper<0; else NULL; no re-banding)
+per-device TEST AUC selected device 0: 0.615; baseline: 0.563
+per-device TEST AUC selected device 1: 0.926; baseline: 0.865

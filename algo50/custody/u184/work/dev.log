@@ -1,0 +1,84 @@
+LOCK OK 8842fd0c01dc 923885f4b15b
+PERM gate ( 60 label permutations within device, DEV only, every grid member + baselines); pass iff |mean-0.5|<=0.03
+  GBP_C0.01      mean 0.4881 sd 0.1029 min 0.183 max 0.698 PASS
+  GBP_C0.1       mean 0.4832 sd 0.0952 min 0.180 max 0.730 PASS
+  GBP_C1.0       mean 0.4822 sd 0.0917 min 0.257 max 0.693 PASS
+  GBPSP_C0.01    mean 0.4893 sd 0.0989 min 0.223 max 0.669 PASS
+  GBPSP_C0.1     mean 0.4894 sd 0.0992 min 0.257 max 0.700 PASS
+  GBPSP_C1.0     mean 0.4910 sd 0.0903 min 0.315 max 0.693 PASS
+  B1_agesex      mean 0.5088 sd 0.0923 min 0.275 max 0.689 PASS
+  B2_bandmean    mean 0.4864 sd 0.1051 min 0.227 max 0.710 PASS
+  B3_RF          mean 0.4861 sd 0.0889 min 0.287 max 0.711 PASS
+PERM GATE PASS
+TEST-side PERM smoke (both splits shuffled within device, 60 perms); pass iff |mean-0.5|<=0.04
+  GBP_C0.01      mean 0.4881 sd 0.0646 PASS
+  GBP_C0.1       mean 0.4899 sd 0.0667 PASS
+  GBP_C1.0       mean 0.4944 sd 0.0639 PASS
+  GBPSP_C0.01    mean 0.4907 sd 0.0656 PASS
+  GBPSP_C0.1     mean 0.4953 sd 0.0712 PASS
+  GBPSP_C1.0     mean 0.4955 sd 0.0657 PASS
+  B1_agesex      mean 0.5058 sd 0.0754 PASS
+  B2_bandmean    mean 0.4911 sd 0.0777 PASS
+  B3_RF          mean 0.4941 sd 0.0721 PASS
+PERM GATE (DEV+TEST smoke) PASS
+DEV GBP_C0.01      macro within-device AUC per rep [0.758 0.722 0.752] mean 0.7439
+DEV GBP_C0.1       macro within-device AUC per rep [0.802 0.808 0.782] mean 0.7972
+DEV GBP_C1.0       macro within-device AUC per rep [0.857 0.855 0.755] mean 0.8222
+DEV GBPSP_C0.01    macro within-device AUC per rep [0.762 0.714 0.747] mean 0.7408
+DEV GBPSP_C0.1     macro within-device AUC per rep [0.828 0.78  0.752] mean 0.7867
+DEV GBPSP_C1.0     macro within-device AUC per rep [0.795 0.82  0.687] mean 0.7672
+DEV B1_agesex      macro within-device AUC per rep [0.625 0.595 0.62 ] mean 0.6133
+DEV B2_bandmean    macro within-device AUC per rep [0.737 0.714 0.764] mean 0.7383
+DEV B3_RF          macro within-device AUC per rep [0.798 0.792 0.815] mean 0.8017
+per-fold checkpoints (rep 0): fold, n_test, AUC contek, AUC discovery, macro
+  GBP_C0.01      fold0 n=16 [0.583 1.   ] macro 0.792
+  GBP_C0.01      fold1 n=16 [0.667 1.   ] macro 0.833
+  GBP_C0.01      fold2 n=15 [0.533 0.9  ] macro 0.717
+  GBP_C0.01      fold3 n=15 [0.8   0.833] macro 0.817
+  GBP_C0.01      fold4 n=15 [0.4   0.867] macro 0.633
+  GBP_C0.1       fold0 n=16 [0.5 1. ] macro 0.750
+  GBP_C0.1       fold1 n=16 [0.417 1.   ] macro 0.708
+  GBP_C0.1       fold2 n=15 [0.8 1. ] macro 0.900
+  GBP_C0.1       fold3 n=15 [0.8   0.833] macro 0.817
+  GBP_C0.1       fold4 n=15 [0.8   0.867] macro 0.833
+  GBP_C1.0       fold0 n=16 [0.667 1.   ] macro 0.833
+  GBP_C1.0       fold1 n=16 [0.667 1.   ] macro 0.833
+  GBP_C1.0       fold2 n=15 [0.867 1.   ] macro 0.933
+  GBP_C1.0       fold3 n=15 [0.8   0.833] macro 0.817
+  GBP_C1.0       fold4 n=15 [0.8   0.933] macro 0.867
+  GBPSP_C0.01    fold0 n=16 [0.667 1.   ] macro 0.833
+  GBPSP_C0.01    fold1 n=16 [0.5 1. ] macro 0.750
+  GBPSP_C0.01    fold2 n=15 [0.533 1.   ] macro 0.767
+  GBPSP_C0.01    fold3 n=15 [0.8  0.75] macro 0.775
+  GBPSP_C0.01    fold4 n=15 [0.5   0.867] macro 0.683
+  GBPSP_C0.1     fold0 n=16 [0.667 1.   ] macro 0.833
+  GBPSP_C0.1     fold1 n=16 [0.75 1.  ] macro 0.875
+  GBPSP_C0.1     fold2 n=15 [0.733 1.   ] macro 0.867
+  GBPSP_C0.1     fold3 n=15 [0.7   0.833] macro 0.767
+  GBPSP_C0.1     fold4 n=15 [0.8 0.8] macro 0.800
+  GBPSP_C1.0     fold0 n=16 [0.583 1.   ] macro 0.792
+  GBPSP_C1.0     fold1 n=16 [0.667 0.8  ] macro 0.733
+  GBPSP_C1.0     fold2 n=15 [0.6 1. ] macro 0.800
+  GBPSP_C1.0     fold3 n=15 [0.7   0.833] macro 0.767
+  GBPSP_C1.0     fold4 n=15 [0.9   0.867] macro 0.883
+  B1_agesex      fold0 n=16 [0.333 0.467] macro 0.400
+  B1_agesex      fold1 n=16 [0.583 0.867] macro 0.725
+  B1_agesex      fold2 n=15 [0.6 0.9] macro 0.750
+  B1_agesex      fold3 n=15 [0.6 0.5] macro 0.550
+  B1_agesex      fold4 n=15 [0.8 0.6] macro 0.700
+  B2_bandmean    fold0 n=16 [0.667 1.   ] macro 0.833
+  B2_bandmean    fold1 n=16 [0.5 1. ] macro 0.750
+  B2_bandmean    fold2 n=15 [0.6 0.8] macro 0.700
+  B2_bandmean    fold3 n=15 [0.9   0.833] macro 0.867
+  B2_bandmean    fold4 n=15 [0.2   0.867] macro 0.533
+  B3_RF          fold0 n=16 [0.583 1.   ] macro 0.792
+  B3_RF          fold1 n=16 [0.833 1.   ] macro 0.917
+  B3_RF          fold2 n=15 [0.667 0.9  ] macro 0.783
+  B3_RF          fold3 n=15 [0.9   0.833] macro 0.867
+  B3_RF          fold4 n=15 [0.4   0.867] macro 0.633
+SELECTED GBP_C1.0 0.8222222222222223 STRONGEST BASELINE B3_RF 0.8016666666666667
+HEADROOM GATE PASS (baseline 0.8017; need 0.55<=b<0.94)
+pooled (device-confounded) OOF AUC selected 0.752 | device-only score AUC (device 0 -> patient) 0.6889
+S1 device transfer train device 0 -> test device 1: AUC 0.772 (n_te 39)
+S1 device transfer train device 1 -> test device 0: AUC 0.764 (n_te 38)
+TEST OPEN ALLOWED: True

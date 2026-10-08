@@ -1,0 +1,9 @@
+NULL is honest, but only narrowly. The TEST estimate is too imprecise to establish a superiority claim: the gain CI crosses zero and the stated detectable-gain threshold is large. “Not decidable at this size” is defensible. But NULL must not be read as evidence of no effect; the point estimate favors the model.
+
+The device-confound reading is justified as a serious alternative, but “device-only explains it” would overreach. Device, protocol, and subset are perfectly collinear, so the design cannot disentangle them. The device-only AUC (~.69) demonstrates substantial acquisition-associated separability, not that the classifier's .77/.82 signal is caused by device artifacts. Cross-device transfer weakens a pure device-label shortcut explanation, but explicitly does not eliminate device-specific physiological/artifactual differences.
+
+Biggest weakness: the confounding is structurally unidentifiable. There is no independent device/protocol variation within diagnosis, so neither the neural interpretation nor the device-artifact interpretation can be causally separated. The relatively small TEST sample then compounds this with a wide gain CI. The pre-lock DEV-log exposure is secondary but should remain disclosed because it involved seeing primary DEV results before relocking.
+
+Row wording I would use:
+
+NULL — TEST signal not decisively separable from acquisition confounding. The selected model exceeds the strongest baseline point estimate (+0.056 AUC), but the ID-cluster bootstrap CI includes zero and the study is underpowered for the prespecified gain threshold. Device, protocol, and subset are perfectly collinear, while a device-only classifier achieves AUC ~0.69; therefore acquisition-associated structure is a credible alternative explanation for part of the signal. Cross-device DEV transfer argues against a trivial pooled device-label shortcut but does not identify the signal as neural. No diagnostic or neural-mechanism claim is supported.

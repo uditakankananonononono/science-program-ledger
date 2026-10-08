@@ -1,0 +1,22 @@
+PERM gate ( 60 label permutations within device, DEV only, every grid member + baselines); pass iff |mean-0.5|<=0.03
+  GBP_C0.01      mean 0.4881 sd 0.1029 min 0.183 max 0.698 PASS
+  GBP_C0.1       mean 0.4832 sd 0.0952 min 0.180 max 0.730 PASS
+  GBP_C1.0       mean 0.4822 sd 0.0917 min 0.257 max 0.693 PASS
+  GBPSP_C0.01    mean 0.4893 sd 0.0989 min 0.223 max 0.669 PASS
+  GBPSP_C0.1     mean 0.4894 sd 0.0992 min 0.257 max 0.700 PASS
+  GBPSP_C1.0     mean 0.4910 sd 0.0903 min 0.315 max 0.693 PASS
+  B1_agesex      mean 0.5088 sd 0.0923 min 0.275 max 0.689 PASS
+  B2_bandmean    mean 0.4864 sd 0.1051 min 0.227 max 0.710 PASS
+  B3_RF          mean 0.4861 sd 0.0889 min 0.287 max 0.711 PASS
+PERM GATE PASS
+TEST-side PERM smoke (both splits shuffled within device, 60 perms); pass iff |mean-0.5|<=0.04
+  GBP_C0.01      mean 0.4881 sd 0.0646 PASS
+  GBP_C0.1       mean 0.4899 sd 0.0667 PASS
+  GBP_C1.0       mean 0.4944 sd 0.0639 PASS
+  GBPSP_C0.01    mean 0.4907 sd 0.0656 PASS
+  GBPSP_C0.1     mean 0.4953 sd 0.0712 PASS
+  GBPSP_C1.0     mean 0.4955 sd 0.0657 PASS
+  B1_agesex      mean 0.5058 sd 0.0754 PASS
+  B2_bandmean    mean 0.4911 sd 0.0777 PASS
+  B3_RF          mean 0.4941 sd 0.0721 PASS
+PERM GATE (DEV+TEST smoke) PASS
