@@ -18,3 +18,20 @@ frozen outcome evaluation and novel contribution. No P08-03 scientific gate is
 passed. Near-zero negative covariance tolerance is 1e-12, not an inferred repair;
 noise matrices with values below that numerical tolerance need careful review.
 No downstream navigation success or benchmark win claimed.
+
+## Offline RTS smoother baseline
+
+Nine tracking test methods pass locally. smoother.smooth takes supplied filtered
+and predicted Gaussian records plus transitions and runs established offline RTS
+backward smoothing. It uses future data and is NOT a real-time control estimator.
+A two-time direct joint-Gaussian conditional fixture independently supplies the
+expected mean/covariance, plus terminal identity, single-record copy, prediction-
+only identity and malformed/singular/inconsistent-record rejection checks.
+
+Prediction covariances must be positive definite; singular predictions rejected.
+Externally supplied records are not certified consistent; negative output covariance
+is rejected rather than repaired. An initial negative-covariance test fixture was
+incorrect (it produced positive covariance); corrected fixture uses a filtered
+covariance of 5I against prediction 2I and terminal I, giving negative output.
+No production formula was changed to force a test pass. No real-data/calibration,
+causal benefit, discovery or benchmark win. Independent review pending.

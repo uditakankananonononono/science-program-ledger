@@ -3,8 +3,12 @@ test_prediction_closed_form (test_kalman.KalmanTests) ... ok
 test_process_partition_identity (test_kalman.KalmanTests) ... ok
 test_update_scalar_fixture (test_kalman.KalmanTests) ... ok
 test_variable_dt_dropout_psd (test_kalman.KalmanTests) ... ok
+test_joint_gaussian_two_time_fixture (test_smoother.SmootherTests) ... ok
+test_prediction_only_identity (test_smoother.SmootherTests) ... ok
+test_rejections_leave_inputs_unchanged (test_smoother.SmootherTests) ... ok
+test_single_record_copy (test_smoother.SmootherTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.093s
+Ran 9 tests in 0.052s
 
 OK
