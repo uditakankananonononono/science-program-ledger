@@ -1,0 +1,614 @@
+[
+  {
+    "case": 1,
+    "single_range": [
+      "2/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "1/2",
+        "3/4"
+      ],
+      [
+        "1/2",
+        "3/4"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "2/5",
+        "nominal": "3/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "1/2",
+        "nominal": "55/64"
+      }
+    ],
+    "robust_choice": "split",
+    "nominal_choice": "split",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 2,
+    "single_range": [
+      "2/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "1/2",
+        "3/4"
+      ],
+      [
+        "1/2",
+        "3/4"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "2/5",
+        "nominal": "3/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "0",
+        "nominal": "25/64"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 3,
+    "single_range": [
+      "2/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "3/5",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "4/5"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "2/5",
+        "nominal": "3/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "3/5",
+        "nominal": "22/25"
+      }
+    ],
+    "robust_choice": "split",
+    "nominal_choice": "split",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 4,
+    "single_range": [
+      "2/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "3/5",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "4/5"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "2/5",
+        "nominal": "3/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "0",
+        "nominal": "21/50"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 5,
+    "single_range": [
+      "2/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "7/10",
+        "9/10"
+      ],
+      [
+        "7/10",
+        "9/10"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "2/5",
+        "nominal": "3/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "7/10",
+        "nominal": "24/25"
+      }
+    ],
+    "robust_choice": "split",
+    "nominal_choice": "split",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 6,
+    "single_range": [
+      "2/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "7/10",
+        "9/10"
+      ],
+      [
+        "7/10",
+        "9/10"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "2/5",
+        "nominal": "3/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "2/5",
+        "nominal": "16/25"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "split",
+    "guarantee_difference": "0",
+    "nominal_difference": "-1/25"
+  },
+  {
+    "case": 7,
+    "single_range": [
+      "3/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "1/2",
+        "3/4"
+      ],
+      [
+        "1/2",
+        "3/4"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "3/5",
+        "nominal": "7/10"
+      },
+      {
+        "name": "split",
+        "guarantee": "1/2",
+        "nominal": "55/64"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "split",
+    "guarantee_difference": "1/10",
+    "nominal_difference": "-51/320"
+  },
+  {
+    "case": 8,
+    "single_range": [
+      "3/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "1/2",
+        "3/4"
+      ],
+      [
+        "1/2",
+        "3/4"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "3/5",
+        "nominal": "7/10"
+      },
+      {
+        "name": "split",
+        "guarantee": "0",
+        "nominal": "25/64"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 9,
+    "single_range": [
+      "3/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "3/5",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "4/5"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "3/5",
+        "nominal": "7/10"
+      },
+      {
+        "name": "split",
+        "guarantee": "3/5",
+        "nominal": "22/25"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "split",
+    "guarantee_difference": "0",
+    "nominal_difference": "-9/50"
+  },
+  {
+    "case": 10,
+    "single_range": [
+      "3/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "3/5",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "4/5"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "3/5",
+        "nominal": "7/10"
+      },
+      {
+        "name": "split",
+        "guarantee": "0",
+        "nominal": "21/50"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 11,
+    "single_range": [
+      "3/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "7/10",
+        "9/10"
+      ],
+      [
+        "7/10",
+        "9/10"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "3/5",
+        "nominal": "7/10"
+      },
+      {
+        "name": "split",
+        "guarantee": "7/10",
+        "nominal": "24/25"
+      }
+    ],
+    "robust_choice": "split",
+    "nominal_choice": "split",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 12,
+    "single_range": [
+      "3/5",
+      "4/5"
+    ],
+    "split_ranges": [
+      [
+        "7/10",
+        "9/10"
+      ],
+      [
+        "7/10",
+        "9/10"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "3/5",
+        "nominal": "7/10"
+      },
+      {
+        "name": "split",
+        "guarantee": "2/5",
+        "nominal": "16/25"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 13,
+    "single_range": [
+      "7/10",
+      "9/10"
+    ],
+    "split_ranges": [
+      [
+        "1/2",
+        "3/4"
+      ],
+      [
+        "1/2",
+        "3/4"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "7/10",
+        "nominal": "4/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "1/2",
+        "nominal": "55/64"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "split",
+    "guarantee_difference": "1/5",
+    "nominal_difference": "-19/320"
+  },
+  {
+    "case": 14,
+    "single_range": [
+      "7/10",
+      "9/10"
+    ],
+    "split_ranges": [
+      [
+        "1/2",
+        "3/4"
+      ],
+      [
+        "1/2",
+        "3/4"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "7/10",
+        "nominal": "4/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "0",
+        "nominal": "25/64"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 15,
+    "single_range": [
+      "7/10",
+      "9/10"
+    ],
+    "split_ranges": [
+      [
+        "3/5",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "4/5"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "7/10",
+        "nominal": "4/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "3/5",
+        "nominal": "22/25"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "split",
+    "guarantee_difference": "1/10",
+    "nominal_difference": "-2/25"
+  },
+  {
+    "case": 16,
+    "single_range": [
+      "7/10",
+      "9/10"
+    ],
+    "split_ranges": [
+      [
+        "3/5",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "4/5"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "7/10",
+        "nominal": "4/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "0",
+        "nominal": "21/50"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  },
+  {
+    "case": 17,
+    "single_range": [
+      "7/10",
+      "9/10"
+    ],
+    "split_ranges": [
+      [
+        "7/10",
+        "9/10"
+      ],
+      [
+        "7/10",
+        "9/10"
+      ]
+    ],
+    "threshold": "1/2",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "7/10",
+        "nominal": "4/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "7/10",
+        "nominal": "24/25"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "split",
+    "guarantee_difference": "0",
+    "nominal_difference": "-4/25"
+  },
+  {
+    "case": 18,
+    "single_range": [
+      "7/10",
+      "9/10"
+    ],
+    "split_ranges": [
+      [
+        "7/10",
+        "9/10"
+      ],
+      [
+        "7/10",
+        "9/10"
+      ]
+    ],
+    "threshold": "1",
+    "choices": [
+      {
+        "name": "single",
+        "guarantee": "7/10",
+        "nominal": "4/5"
+      },
+      {
+        "name": "split",
+        "guarantee": "2/5",
+        "nominal": "16/25"
+      }
+    ],
+    "robust_choice": "single",
+    "nominal_choice": "single",
+    "guarantee_difference": "0",
+    "nominal_difference": "0"
+  }
+]
