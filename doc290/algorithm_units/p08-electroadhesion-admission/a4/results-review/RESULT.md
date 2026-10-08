@@ -1,0 +1,39 @@
+# A4-1 complete all-45 literal text inventory + manual ledger, no classification
+
+Publishedfreeze integration679bb50cea0362edcd2db911cf82caa4c8ef66cf, repairedamendment
+eb5da96,original52871c3literalfunctions/selectionunchanged. Initialfullruninterrupted
+~112safteracquisition,duringtext;28-filehiddenstagekeptas-isEXCLUDED,notrescued.
+HOLDpre-initunsignedraw-bindinggap1ab37e8real,correctedbeforeactualwrapperrun.
+
+Actualfreshstageinit/source:ALL45directselectedZipInfoEOFCRC/exactsize/SHA256from
+fullidentity-pinnedarchivecomparedtoallscratchrawBEFOREtext. Everycallrecomputed
+archivefullMD5/SHA256/size+central/ordinalset,allrawidentityandcaps. 15sourcecalls
+<=3members;then15textcalls<=3distinctmembers,each2canonicalfrozenliteralreplays,
+sealedlocalreceipts. Finalfreshraw/gzip/archive/codepins+all45coverage/aggregatecaps,
+completeoriginalsummary/manifestandONLYsuccess-dirrename. No failuresonactualrun.
+
+Complete45inventories:389460137rawB,8103065literalCRLFlines,174065680gzipB. Alllines
+comma2/semicolon0/tab0,zero blank/quote/literalNaNInftokens. ThisNOTnumericfinite/
+units/physicalcalibrationproof. Rawfirst/lastliteralstringsforeachmemberinledger;
+noheadersorunittextselected. Filename1.00Vclaimed0VAFTERdriveresidualbaseline,
+NOTphysical1V;0.00Vbeforebaseline. 2.00V/3.00VambiguouslabelsNOTdrive-voltagetruth.
+No pooling/conversion/phase/time/force/trialindependenceorP08-08closure. STOPbefore
+classification,separatereviewrequired. Observedupstreamoriginal:
+https://zenodo.org/api/records/6417174/files/Data.zip/content
+
+Reviewer limits verbatim:
+analysis_performed=false on late text failure means no complete admitted inventory,
+NOT zero parser work; do not claim the final scratch collection remains freshly
+verified at rename time - inventory is bound to measured input hashes under the
+stated protocol; caps not peak; output-dir rename not crash-durable fsync proof.
+HMAClocalkeyassumption,not hostilefilesystem/authorshipproof/atomicfreshness.
+Atime-onlyfullfstatconservativefalserejectionpossible,guardunchanged. No newmetric/
+physics/RL/sourceexecution. Chronologydocument-reported;two replaypasses/member
+byte/hashreproducibilitynotindependenthistoricalordering/scientifictruth.
+
+Reviewtransportoptionb:smallGitbundlecontainsoutputSHA256s/originalsummarymanifest/
+fullledger,NOT174MBgzipbodiesdelivered. Reviewerwithverifiedoriginal+exactpublished
+code independently regeneratesALL45literaloutputs,thenfulloutputhashcomparison.
+ONLYafterverdictpublishall45gzipfilesunchanged(each<100MB). Raw389MBretainedlocal,
+notGitdelivery;exactarchiveURL+selectedordinals/hashespublic. LocalprivateHMACkeyNOT
+published/disclosed. Githashbindsreviewdocintegrity,notcryptographicsignatureclaim.
