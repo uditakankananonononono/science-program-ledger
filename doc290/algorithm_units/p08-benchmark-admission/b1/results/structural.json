@@ -1,0 +1,3337 @@
+{
+  "outcome": "manual readiness inventory required; document reports are not authenticated external evidence",
+  "files": {
+    "doc290/algorithm_units/p08-routing/README.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# P08-01 routing implementation units"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Status: three executable local algorithm units, not an invention or a validated"
+        },
+        {
+          "line": 4,
+          "text": "medical navigation system. All implement standard Pareto-label search. Neither"
+        },
+        {
+          "line": 5,
+          "text": "claims to improve a published baseline."
+        },
+        {
+          "line": 6,
+          "text": ""
+        },
+        {
+          "line": 7,
+          "text": "## Units added"
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "1. Exposure-budget routing: minimum additive travel time on a directed graph,"
+        },
+        {
+          "line": 10,
+          "text": "   subject to a hard cumulative exposure budget."
+        },
+        {
+          "line": 11,
+          "text": "2. Common-scenario robust routing: minimize the maximum *whole-path* travel"
+        },
+        {
+          "line": 12,
+          "text": "   time across supplied scenarios, preserving scenario correlation across edges."
+        },
+        {
+          "line": 13,
+          "text": "   This differs from summing each edge's individual worst case."
+        },
+        {
+          "line": 14,
+          "text": ""
+        },
+        {
+          "line": 15,
+          "text": "All three return a concrete route and cost totals, return None for infeasible routing,"
+        },
+        {
+          "line": 16,
+          "text": "and reject malformed, negative or nonfinite edge costs. Zero-cost cycles do not"
+        },
+        {
+          "line": 17,
+          "text": "create unlimited duplicate labels. Pareto frontiers can grow exponentially."
+        },
+        {
+          "line": 18,
+          "text": ""
+        },
+        {
+          "line": 19,
+          "text": "3. Budgeted scenario routing: minimum worst-scenario total time subject to a"
+        },
+        {
+          "line": 20,
+          "text": "   deterministic cumulative exposure budget. This joint unit is also standard"
+        },
+        {
+          "line": 21,
+          "text": "   Pareto labeling, not a new algorithm."
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": "See PRIOR_ART.md for the fetched literature screen."
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "## Reproduce"
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "From this directory, run `python3 -m unittest -v`."
+        },
+        {
+          "line": 28,
+          "text": "No third-party dependencies, downloads, credentials or GPU are needed."
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "## Verified locally"
+        },
+        {
+          "line": 31,
+          "text": ""
+        },
+        {
+          "line": 32,
+          "text": "Six test methods passed. The randomized oracle test checks each algorithm against"
+        },
+        {
+          "line": 33,
+          "text": "independent exhaustive simple-path enumeration on 150 six-vertex directed graphs"
+        },
+        {
+          "line": 34,
+          "text": "with a fixed seed, including cyclic graphs: 450 objective comparisons. Additional"
+        },
+        {
+          "line": 35,
+          "text": "fixtures cover budget tradeoffs, correlated scenarios, zero-cost cycles,"
+        },
+        {
+          "line": 36,
+          "text": "unreachable vertices, identical source/destination, and invalid inputs."
+        },
+        {
+          "line": 37,
+          "text": ""
+        },
+        {
+          "line": 38,
+          "text": "These are synthetic SOFTWARE CORRECTNESS fixtures, not biological data or"
+        },
+        {
+          "line": 39,
+          "text": "external validation. Exact comparisons here use small integer costs. Floating"
+        },
+        {
+          "line": 40,
+          "text": "point tolerance, scalability and real anatomical segmentation ingestion are not"
+        },
+        {
+          "line": 41,
+          "text": "validated. Scenario values and exposure units must be supplied, never inferred"
+        },
+        {
+          "line": 42,
+          "text": "from the anatomy or treated as physiological evidence."
+        },
+        {
+          "line": 43,
+          "text": ""
+        },
+        {
+          "line": 44,
+          "text": "## Remaining work"
+        },
+        {
+          "line": 45,
+          "text": ""
+        },
+        {
+          "line": 46,
+          "text": "Real public vessel-segmentation ingestion and graph extraction, calibration of"
+        },
+        {
+          "line": 47,
+          "text": "edge attributes, held-out anatomy evaluation, runtime/frontier growth measurement,"
+        },
+        {
+          "line": 48,
+          "text": "and a frozen comparison with published algorithms remain unbuilt. The parent"
+        },
+        {
+          "line": 49,
+          "text": "spec's G1-G4 gates are not passed by these unit tests. Before presenting any"
+        },
+        {
+          "line": 50,
+          "text": "algorithm variant as an invention, perform and record a prior-art review and"
+        },
+        {
+          "line": 51,
+          "text": "freeze the exact baseline and evaluation protocol."
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": "## V3 correctness hardening"
+        },
+        {
+          "line": 54,
+          "text": ""
+        },
+        {
+          "line": 55,
+          "text": "11 test methods pass, retaining the 450 small-graph oracle comparisons."
+        },
+        {
+          "line": 56,
+          "text": "Returned routes now include source vertex and adjacency-list edge index for each"
+        },
+        {
+          "line": 57,
+          "text": "step, so parallel edges can be distinguished and cost totals independently"
+        },
+        {
+          "line": 58,
+          "text": "recomputed. Vertex IDs must be strings; edges must be Edge objects with tuple"
+        },
+        {
+          "line": 59,
+          "text": "scenario costs. Accumulated floating-point overflow raises OverflowError rather"
+        },
+        {
+          "line": 60,
+          "text": "than silently returning infinite costs. This is fail-fast behavior: even an"
+        },
+        {
+          "line": 61,
+          "text": "irrelevant overflowing explored branch can abort the search."
+        },
+        {
+          "line": 62,
+          "text": ""
+        },
+        {
+          "line": 63,
+          "text": "Numerics are explicit binary-float semantics, not exact decimal arithmetic:"
+        },
+        {
+          "line": 64,
+          "text": "0.1 + 0.2 exceeds a budget of 0.3. No tolerance is silently applied. The decimal"
+        },
+        {
+          "line": 65,
+          "text": "boundary fixture tests and documents this limitation. For exact budgets, use"
+        },
+        {
+          "line": 66,
+          "text": "integer-scaled costs. Empty graphs with no scenario-bearing edges remain rejected"
+        },
+        {
+          "line": 67,
+          "text": "by scenario solvers, including identity queries, because scenario count is absent."
+        },
+        {
+          "line": 68,
+          "text": ""
+        },
+        {
+          "line": 69,
+          "text": "## V4 turn-constrained routing"
+        },
+        {
+          "line": 70,
+          "text": ""
+        },
+        {
+          "line": 71,
+          "text": "Fourth unit: standard incoming-edge state expansion with Dijkstra search."
+        },
+        {
+          "line": 72,
+          "text": "Explicit forbidden turns and nonnegative transition penalties are keyed by"
+        },
+        {
+          "line": 73,
+          "text": "(source vertex, adjacency index) edge identities. Parallel edges remain distinct."
+        },
+        {
+          "line": 74,
+          "text": "A vertex may need to be revisited with a different incoming edge; this is covered"
+        },
+        {
+          "line": 75,
+          "text": "by a regression fixture. No anatomical turn rules are guessed."
+        },
+        {
+          "line": 76,
+          "text": ""
+        },
+        {
+          "line": 77,
+          "text": "16 test methods pass. The new unit matches independent exhaustive expanded-state"
+        },
+        {
+          "line": 78,
+          "text": "path enumeration on 100 fixed-seed four-vertex directed graphs, with returned edge"
+        },
+        {
+          "line": 79,
+          "text": "and turn costs also recomputed. Combined with the existing three-unit oracle,"
+        },
+        {
+          "line": 80,
+          "text": "there are 550 objective comparisons. This is correctness testing, not external"
+        },
+        {
+          "line": 81,
+          "text": "validation. No performance, invention or clinical claim is made. This unit does"
+        },
+        {
+          "line": 82,
+          "text": "not yet combine turn constraints with the other units' budget/scenario objectives."
+        },
+        {
+          "line": 83,
+          "text": ""
+        },
+        {
+          "line": 84,
+          "text": "## V5 integrated routing"
+        },
+        {
+          "line": 85,
+          "text": ""
+        },
+        {
+          "line": 86,
+          "text": "Fifth unit integrates exposure budgets, common-scenario minimax times and explicit"
+        },
+        {
+          "line": 87,
+          "text": "incoming-edge turn rules. Turn delays are caller-supplied scalars added equally"
+        },
+        {
+          "line": 88,
+          "text": "to every scenario. Exposure remains deterministic and edge-additive. State is"
+        },
+        {
+          "line": 89,
+          "text": "(vertex, incoming edge); Pareto labels retain exposure and all scenario totals."
+        },
+        {
+          "line": 90,
+          "text": "This composes standard methods, not a demonstrated algorithm invention."
+        },
+        {
+          "line": 91,
+          "text": ""
+        },
+        {
+          "line": 92,
+          "text": "19 test methods pass. Added 150 exact objective comparisons to an independent"
+        },
+        {
+          "line": 93,
+          "text": "expanded-state exhaustive oracle and 150 equivalence checks against the earlier"
+        },
+        {
+          "line": 94,
+          "text": "budgeted-scenario unit when turns are absent. Earlier oracle checks remain:"
+        },
+        {
+          "line": 95,
+          "text": "700 total independent-oracle objective comparisons plus 150 internal equivalence"
+        },
+        {
+          "line": 96,
+          "text": "checks. Returned edge, exposure, scenario and turn totals are recomputed in the"
+        },
+        {
+          "line": 97,
+          "text": "new randomized tests. A fixture requires revisiting a vertex and shows budget"
+        },
+        {
+          "line": 98,
+          "text": "infeasibility when that revisit cannot be afforded."
+        },
+        {
+          "line": 99,
+          "text": ""
+        },
+        {
+          "line": 100,
+          "text": "Scientific data ingestion, physiological calibration, performance evaluation and"
+        },
+        {
+          "line": 101,
+          "text": "prior-art investigation of any proposed invention remain outstanding. Synthetic"
+        },
+        {
+          "line": 102,
+          "text": "correctness checks are not scientific gate completion or medical validation."
+        },
+        {
+          "line": 103,
+          "text": ""
+        },
+        {
+          "line": 104,
+          "text": "## V6 strict JSON runner"
+        },
+        {
+          "line": 105,
+          "text": ""
+        },
+        {
+          "line": 106,
+          "text": "Run `python3 runner.py input.json` or pipe JSON to `python3 runner.py -`."
+        },
+        {
+          "line": 107,
+          "text": "Required fields: method, graph, start, goal. Graph maps vertex strings to lists of"
+        },
+        {
+          "line": 108,
+          "text": "edges with target, time, exposure, and optional scenario_times (number list)."
+        },
+        {
+          "line": 109,
+          "text": "Methods: budget, scenario, budget-scenario, turn, integrated. A budget is required"
+        },
+        {
+          "line": 110,
+          "text": "only for budget, budget-scenario and integrated. Turn rules are accepted only by"
+        },
+        {
+          "line": 111,
+          "text": "turn and integrated. All costs must be finite/nonnegative; no attributes inferred."
+        },
+        {
+          "line": 112,
+          "text": ""
+        },
+        {
+          "line": 113,
+          "text": "Optional forbidden rules: list of pairs of edge IDs. An edge ID is a JSON pair"
+        },
+        {
+          "line": 114,
+          "text": "[source_string, adjacency_index]. Optional penalties: list of objects containing"
+        },
+        {
+          "line": 115,
+          "text": "incoming edge ID, outgoing edge ID, and delay. Duplicate keys/rules, unknown fields,"
+        },
+        {
+          "line": 116,
+          "text": "unsupported parameters and non-standard NaN/Infinity JSON tokens are rejected."
+        },
+        {
+          "line": 117,
+          "text": ""
+        },
+        {
+          "line": 118,
+          "text": "Success or infeasible results are JSON on stdout with exit code 0. The tested"
+        },
+        {
+          "line": 119,
+          "text": "parse/validation/I/O failure classes, including decoder nesting RecursionError,"
+        },
+        {
+          "line": 120,
+          "text": "are JSON on stderr with exit code 2. This is not a guarantee for every possible"
+        },
+        {
+          "line": 121,
+          "text": "process failure. Infeasible is not a crash."
+        },
+        {
+          "line": 122,
+          "text": "26 test methods pass, including a 1500-level decoder nesting regression and subprocess parsing/output/error checks and all"
+        },
+        {
+          "line": 123,
+          "text": "prior oracle comparisons. Input is loaded into memory; no large-file, security,"
+        },
+        {
+          "line": 124,
+          "text": "physiology or performance validation is claimed. This runner adds usability,"
+        },
+        {
+          "line": 125,
+          "text": "not a sixth optimization algorithm or a scientific discovery."
+        },
+        {
+          "line": 126,
+          "text": ""
+        },
+        {
+          "line": 127,
+          "text": "## V6.2 file-input coverage"
+        },
+        {
+          "line": 128,
+          "text": ""
+        },
+        {
+          "line": 129,
+          "text": "30 test methods pass. The new subprocess checks cover a real JSON input file,"
+        },
+        {
+          "line": 130,
+          "text": "FileNotFoundError (missing path), IsADirectoryError (directory path), and invalid"
+        },
+        {
+          "line": 131,
+          "text": "UTF-8 text decoding. These checks exercise specific file/decoder failure classes;"
+        },
+        {
+          "line": 132,
+          "text": "permission failures and other OSError subclasses remain untested. No production"
+        },
+        {
+          "line": 133,
+          "text": "code or optimization-kernel changes in this update."
+        },
+        {
+          "line": 134,
+          "text": ""
+        },
+        {
+          "line": 135,
+          "text": "## V7 binary-mask adjacency ingestion"
+        },
+        {
+          "line": 136,
+          "text": ""
+        },
+        {
+          "line": 137,
+          "text": "mask_graph.mask_to_graph builds exact foreground-pixel adjacency for an explicitly"
+        },
+        {
+          "line": 138,
+          "text": "chosen 4- or 8-neighbor binary mask; graph_payload converts it into runner input."
+        },
+        {
+          "line": 139,
+          "text": "35 test methods pass, including 400 pairwise adjacency oracle checks (200 small"
+        },
+        {
+          "line": 140,
+          "text": "random masks at both connectivities), junction/diagonal cases, bad inputs and an"
+        },
+        {
+          "line": 141,
+          "text": "end-to-end integrated routing fixture on an extracted chain."
+        },
+        {
+          "line": 142,
+          "text": ""
+        },
+        {
+          "line": 143,
+          "text": "This is not skeletonization or a real vessel graph extraction pipeline. Inputs"
+        },
+        {
+          "line": 144,
+          "text": "must already be binary; callers supply all edge costs. Edges are bidirectional"
+        },
+        {
+          "line": 145,
+          "text": "and 8-neighbor diagonal edges use the same supplied cost as orthogonal edges."
+        },
+        {
+          "line": 146,
+          "text": "No flow, radius, physical spacing, anatomical turn rules or diagonal correction"
+        },
+        {
+          "line": 147,
+          "text": "is inferred. IDs are row,column strings. Foreground absence returns an empty"
+        },
+        {
+          "line": 148,
+          "text": "graph, which cannot satisfy a routing request. Real data ingestion/calibration"
+        },
+        {
+          "line": 149,
+          "text": "and P08 scientific gates remain unpassed. This is another input component,"
+        },
+        {
+          "line": 150,
+          "text": "not an additional optimization algorithm or invention."
+        },
+        {
+          "line": 151,
+          "text": ""
+        },
+        {
+          "line": 152,
+          "text": "## V8 separate mask-file CLI"
+        },
+        {
+          "line": 153,
+          "text": ""
+        },
+        {
+          "line": 154,
+          "text": "Run `python3 mask_runner.py input.json` or pipe JSON to `python3 mask_runner.py -`."
+        },
+        {
+          "line": 155,
+          "text": "Input fields are mask, connectivity, costs and query. Costs require time and"
+        },
+        {
+          "line": 156,
+          "text": "exposure, plus optional scenario_times list. Query uses the graph runner's method,"
+        },
+        {
+          "line": 157,
+          "text": "start, goal and method-specific budget/turn parameters; callers cannot supply a"
+        },
+        {
+          "line": 158,
+          "text": "graph field here. Pixel endpoint IDs are row,column strings chosen by the caller."
+        },
+        {
+          "line": 159,
+          "text": ""
+        },
+        {
+          "line": 160,
+          "text": "mask_to_graph remains a Python API that raises Python exceptions. The separate"
+        },
+        {
+          "line": 161,
+          "text": "mask_runner CLI converts tested parse/schema/extractor/kernel failures into JSON"
+        },
+        {
+          "line": 162,
+          "text": "stderr with exit 2; runner.py remains graph-only and byte-unchanged."
+        },
+        {
+          "line": 163,
+          "text": "40 test methods pass, including real mask-CLI subprocesses. Empty foreground is"
+        },
+        {
+          "line": 164,
+          "text": "accepted by extraction but missing endpoints fail routing with exit 2. All-isolated"
+        },
+        {
+          "line": 165,
+          "text": "masks retain vertices but scenario routing fails on absent scenario edge count;"
+        },
+        {
+          "line": 166,
+          "text": "scalar budget identity can succeed and disconnected scalar endpoints are infeasible."
+        },
+        {
+          "line": 167,
+          "text": "Diagonal edges retain caller costs with no correction. A failed initial fixture"
+        },
+        {
+          "line": 168,
+          "text": "incorrectly expected an all-isolated scenario graph to return infeasible; it was"
+        },
+        {
+          "line": 169,
+          "text": "fixed to assert the inherited documented error boundary, without changing kernels."
+        },
+        {
+          "line": 170,
+          "text": "No universal promise that extracted masks are immediately scenario-routable."
+        },
+        {
+          "line": 171,
+          "text": ""
+        },
+        {
+          "line": 172,
+          "text": "## V9 bounded resource characterization"
+        },
+        {
+          "line": 173,
+          "text": ""
+        },
+        {
+          "line": 174,
+          "text": "Run `python3 resource_probe.py`. Four fixed synthetic full grids (5,10,20,30 per"
+        },
+        {
+          "line": 175,
+          "text": "side) run in separate workers, each with a five-second wall timeout. Two scenarios"
+        },
+        {
+          "line": 176,
+          "text": "have uniform costs 1 and 2; a unit-cost Manhattan oracle checks objectives. This"
+        },
+        {
+          "line": 177,
+          "text": "is deliberately easy data, not an adversarial Pareto-frontier test or a benchmark"
+        },
+        {
+          "line": 178,
+          "text": "against published implementations. 42 test methods pass."
+        },
+        {
+          "line": 179,
+          "text": ""
+        },
+        {
+          "line": 180,
+          "text": "Recorded on this Linux run: 25-900 vertices, solve time 0.0011-0.0526 seconds,"
+        },
+        {
+          "line": 181,
+          "text": "whole-worker lifetime peak RSS 12,492-15,336 KiB. RSS includes Python/imports/build"
+        },
+        {
+          "line": 182,
+          "text": "and solver; it is not isolated solver allocation. Measurements are single runs,"
+        },
+        {
+          "line": 183,
+          "text": "not confidence intervals or performance promises. See resource-results.json."
+        },
+        {
+          "line": 184,
+          "text": "There is a timeout but no worker memory cap. Exponential frontier growth remains"
+        },
+        {
+          "line": 185,
+          "text": "possible on nonuniform correlated costs. No resource-limit or scientific gate"
+        },
+        {
+          "line": 186,
+          "text": "is passed by these observations. Existing routing and runner files are unchanged."
+        },
+        {
+          "line": 187,
+          "text": ""
+        },
+        {
+          "line": 188,
+          "text": "## V9.1 timeout control-flow coverage"
+        },
+        {
+          "line": 189,
+          "text": ""
+        },
+        {
+          "line": 190,
+          "text": "43 test methods pass. A deterministic mocked subprocess.TimeoutExpired test"
+        },
+        {
+          "line": 191,
+          "text": "checks timeout record fields and that probing continues to the next size, with"
+        },
+        {
+          "line": 192,
+          "text": "the configured timeout passed to both launches. It does not induce a real OS"
+        },
+        {
+          "line": 193,
+          "text": "worker timeout, establish process-kill behavior, or measure resource ceilings."
+        },
+        {
+          "line": 194,
+          "text": "All production files and recorded resource observations are unchanged from v9."
+        },
+        {
+          "line": 195,
+          "text": ""
+        },
+        {
+          "line": 196,
+          "text": "## Batch checkpoint provenance hardening"
+        },
+        {
+          "line": 197,
+          "text": ""
+        },
+        {
+          "line": 198,
+          "text": "51 test methods pass here. New batch records bind to whole-archive SHA256 and"
+        },
+        {
+          "line": 199,
+          "text": "extractor/graph/kernel source hashes plus numpy/scipy/scikit-image/Pillow versions."
+        },
+        {
+          "line": 200,
+          "text": "Resume rejects duplicated/unknown records, changed archive or pipeline fingerprints,"
+        },
+        {
+          "line": 201,
+          "text": "and legacy records lacking fingerprints, before appending. Four optional-imaging"
+        },
+        {
+          "line": 202,
+          "text": "tests cover real pass/failure resume, archive mutation, duplicate/legacy/pipeline"
+        },
+        {
+          "line": 203,
+          "text": "mismatch and a zero-time window. Original frozen 975-mask ledger remains legacy"
+        },
+        {
+          "line": 204,
+          "text": "and unchanged; do not retrofit its records or claim it used this new checkpoint"
+        },
+        {
+          "line": 205,
+          "text": "format. A new QC run would need a new output path."
+        },
+        {
+          "line": 206,
+          "text": ""
+        },
+        {
+          "line": 207,
+          "text": "This is input/pipeline provenance checking, not tamper-proof result authentication,"
+        },
+        {
+          "line": 208,
+          "text": "concurrent-write safety or a timeout/memory guarantee. Current hashing time is"
+        },
+        {
+          "line": 209,
+          "text": "outside the per-batch time window. Partial trailing lines raise a decoding error;"
+        },
+        {
+          "line": 210,
+          "text": "no automatic repair or silent record dropping. No original masks reprocessed here."
+        },
+        {
+          "line": 211,
+          "text": ""
+        },
+        {
+          "line": 212,
+          "text": "## Independent graph topology representation audit"
+        },
+        {
+          "line": 213,
+          "text": ""
+        },
+        {
+          "line": 214,
+          "text": "56 test methods pass. topology_audit audits undirected simple graphs for reciprocal"
+        },
+        {
+          "line": 215,
+          "text": "adjacency and reports component count, isolates, endpoints, branch vertices and"
+        },
+        {
+          "line": 216,
+          "text": "cycle rank E-V+C. Rejects self/parallel/asymmetric adjacency rather than pretending"
+        },
+        {
+          "line": 217,
+          "text": "it is a simple undirected skeleton graph. Tests cover known chain/loop/branch"
+        },
+        {
+          "line": 218,
+          "text": "fixtures and all 512 binary 3x3 masks at both connectivities, with a separate"
+        },
+        {
+          "line": 219,
+          "text": "pairwise edge-count oracle. It does not check cost reciprocity or anatomical"
+        },
+        {
+          "line": 220,
+          "text": "meaning. Eight-neighbor pixel triangles may create cycle rank despite no biological"
+        },
+        {
+          "line": 221,
+          "text": "loop; this statistic is representation-specific, not a vascular finding."
+        },
+        {
+          "line": 222,
+          "text": "Frozen 975-mask QC and separate reject-protocol outcomes are unchanged."
+        },
+        {
+          "line": 223,
+          "text": ""
+        },
+        {
+          "line": 224,
+          "text": "## Degree-two chain representation"
+        },
+        {
+          "line": 225,
+          "text": ""
+        },
+        {
+          "line": 226,
+          "text": "59 test methods pass locally with optional imaging dependencies installed."
+        },
+        {
+          "line": 227,
+          "text": "chain_compress retains vertices whose degree is not two, plus one deterministic"
+        },
+        {
+          "line": 228,
+          "text": "anchor per all-degree-two component, then records each full original pixel path"
+        },
+        {
+          "line": 229,
+          "text": "and its edge-step count. Pure cycles become explicit self-returning chains;"
+        },
+        {
+          "line": 230,
+          "text": "isolates remain anchors. Parallel compressed chains may exist and must not be"
+        },
+        {
+          "line": 231,
+          "text": "collapsed. Tests check original-edge coverage exactly once across all 512 3x3"
+        },
+        {
+          "line": 232,
+          "text": "masks at both connectivities plus chain/cycle/isolate fixtures. This representation"
+        },
+        {
+          "line": 233,
+          "text": "is separate from the simple-graph topology API and is not passed to the routing"
+        },
+        {
+          "line": 234,
+          "text": "kernels. No cost aggregation, physical length, physiology or novelty claim."
+        },
+        {
+          "line": 235,
+          "text": ""
+        },
+        {
+          "line": 236,
+          "text": "## Original chain edge-cost serialization"
+        },
+        {
+          "line": 237,
+          "text": ""
+        },
+        {
+          "line": 238,
+          "text": "62 test methods pass locally. chain_costs serializes each existing directed edge's"
+        },
+        {
+          "line": 239,
+          "text": "original time, exposure and scenario vector along both directions of every chain."
+        },
+        {
+          "line": 240,
+          "text": "No costs are inferred, averaged or aggregated. Asymmetric directed costs retained;"
+        },
+        {
+          "line": 241,
+          "text": "pure-cycle directions remain distinguishable by step sequence. All 1024 small"
+        },
+        {
+          "line": 242,
+          "text": "mask/connectivity cases check exact directed-edge/cost coverage, plus asymmetric"
+        },
+        {
+          "line": 243,
+          "text": "and cycle/isolate fixtures. Still not an aggregated routing input: interior query"
+        },
+        {
+          "line": 244,
+          "text": "endpoints and turn constraints are unresolved. Earlier chain-only representation"
+        },
+        {
+          "line": 245,
+          "text": "is topologically lossless only; this separate wrapper adds per-step costs."
+        },
+        {
+          "line": 246,
+          "text": ""
+        },
+        {
+          "line": 247,
+          "text": "## Experimental additive chain adapter"
+        },
+        {
+          "line": 248,
+          "text": ""
+        },
+        {
+          "line": 249,
+          "text": "65 tests pass locally. chain_aggregate sums existing directed per-step time,"
+        },
+        {
+          "line": 250,
+          "text": "exposure and homogeneous scenario vectors into separate chain directions, with"
+        },
+        {
+          "line": 251,
+          "text": "original pixel witnesses for route expansion. Rejects heterogeneous vector sizes"
+        },
+        {
+          "line": 252,
+          "text": "and accumulated overflow. Current route checks are small integer fixtures only."
+        },
+        {
+          "line": 253,
+          "text": ""
+        },
+        {
+          "line": 254,
+          "text": "NOT an independently verified general routing-equivalence claim. Queries must"
+        },
+        {
+          "line": 255,
+          "text": "be chain anchors and turn-free. No interior-endpoint or turn-rule equivalence."
+        },
+        {
+          "line": 256,
+          "text": "Floating-point regrouping can change totals/budget feasibility, so exact float"
+        },
+        {
+          "line": 257,
+          "text": "route equivalence is NOT claimed; use integer-scaled values for exact comparisons."
+        },
+        {
+          "line": 258,
+          "text": "Pure-cycle self edges and parallel chains are retained. No measured/physiological"
+        },
+        {
+          "line": 259,
+          "text": "costs or inference. Original cost-serialization unit remains independently reviewed:"
+        },
+        {
+          "line": 260,
+          "text": "'exact' covers validated int/float cost values and vectors, not arbitrary numeric"
+        },
+        {
+          "line": 261,
+          "text": "types beyond the kernel contract; retained originals, no aggregation/inference,"
+        },
+        {
+          "line": 262,
+          "text": "no routing input, no interior-endpoint or turn-rule equivalence, cycle directions"
+        },
+        {
+          "line": 263,
+          "text": "separate. Those notes apply to serialization, not this experimental new adapter."
+        },
+        {
+          "line": 264,
+          "text": ""
+        },
+        {
+          "line": 265,
+          "text": ""
+        },
+        {
+          "line": 266,
+          "text": "## Adapter review scope and mandatory interface clarification"
+        },
+        {
+          "line": 267,
+          "text": ""
+        },
+        {
+          "line": 268,
+          "text": "Independent review established integer-scope original/compressed feasibility,"
+        },
+        {
+          "line": 269,
+          "text": "cost and objective equivalence on 77,334 fixture comparisons across all 1024"
+        },
+        {
+          "line": 270,
+          "text": "small mask/connectivity cases plus theta graphs, including cycles/parallel chains."
+        },
+        {
+          "line": 271,
+          "text": "This is fixture evidence, not a proof for arbitrary inputs or floating arithmetic."
+        },
+        {
+          "line": 272,
+          "text": ""
+        },
+        {
+          "line": 273,
+          "text": "The aggregation adapter DOES produce Edge routing input, and its tests feed the"
+        },
+        {
+          "line": 274,
+          "text": "routing kernels. The earlier serialization-only unit does NOT produce routing"
+        },
+        {
+          "line": 275,
+          "text": "input; that statement must not be applied to the adapter. Anchor-only and turn-free"
+        },
+        {
+          "line": 276,
+          "text": "are caller PRECONDITIONS, not enforced by the interface for arbitrary expand_route"
+        },
+        {
+          "line": 277,
+          "text": "results. Witness expansion is a representation operation, not universal route"
+        },
+        {
+          "line": 278,
+          "text": "authority or validation. Integer-only comparisons do not validate exact floats;"
+        },
+        {
+          "line": 279,
+          "text": "regrouping can change float totals and budget feasibility. No physiological claim."
+        },
+        {
+          "line": 280,
+          "text": ""
+        },
+        {
+          "line": 281,
+          "text": "## Executable floating-point non-equivalence regression"
+        },
+        {
+          "line": 282,
+          "text": ""
+        },
+        {
+          "line": 283,
+          "text": "66 tests pass locally. A deliberately constructed anchor-junction graph has"
+        },
+        {
+          "line": 284,
+          "text": "exposure sequence 1e16,1,1. Original sequential float addition rounds to 1e16;"
+        },
+        {
+          "line": 285,
+          "text": "compression groups the latter two costs and yields 1.0000000000000002e16."
+        },
+        {
+          "line": 286,
+          "text": "At budget 1e16 original scalar/scenario-budget routes are feasible while compressed"
+        },
+        {
+          "line": 287,
+          "text": "routes are not. Regression preserves this counterexample as a documented limitation,"
+        },
+        {
+          "line": 288,
+          "text": "not an adapter correctness claim. Use integer-scaled costs for exact equivalence"
+        },
+        {
+          "line": 289,
+          "text": "comparisons; no float feasibility guarantee. No kernel arithmetic changed."
+        },
+        {
+          "line": 290,
+          "text": ""
+        },
+        {
+          "line": 291,
+          "text": "## Enforced integer anchor-query wrapper"
+        },
+        {
+          "line": 292,
+          "text": ""
+        },
+        {
+          "line": 293,
+          "text": "70 test methods pass locally. route_integer_anchors explicitly rejects floats,"
+        },
+        {
+          "line": 294,
+          "text": "booleans, non-anchor endpoints and unsupported objectives; only budget, scenario,"
+        },
+        {
+          "line": 295,
+          "text": "and budget-scenario dispatch, with integer nonnegative budgets where applicable."
+        },
+        {
+          "line": 296,
+          "text": "The wrapper returns both compressed result and expanded pixel path. It enforces"
+        },
+        {
+          "line": 297,
+          "text": "these input restrictions; the underlying general adapter still treats anchor-only/"
+        },
+        {
+          "line": 298,
+          "text": "turn-free as caller preconditions. Kernel boundaries (absent scenario count,"
+        },
+        {
+          "line": 299,
+          "text": "finite-total limits) remain inherited. Integer restrictions do not establish a"
+        },
+        {
+          "line": 300,
+          "text": "proof for arbitrary graphs or physiological validity; current evidence is fixtures."
+        },
+        {
+          "line": 301,
+          "text": ""
+        },
+        {
+          "line": 302,
+          "text": "## B1 performance evidence limits"
+        },
+        {
+          "line": 303,
+          "text": ""
+        },
+        {
+          "line": 304,
+          "text": "Recorded deltas are single-environment OBSERVATIONS, not reproducible magnitude,"
+        },
+        {
+          "line": 305,
+          "text": "and no statistical or stable superiority claim survives. Recorded FOVEA 10.417%"
+        },
+        {
+          "line": 306,
+          "text": "reduction contrasts with independent review's fresh-worker 1.103% reduction"
+        },
+        {
+          "line": 307,
+          "text": "(0.142817s baseline versus 0.141242s paired preprocessing+query). Performance delta"
+        },
+        {
+          "line": 308,
+          "text": "is NOT stable across environments; correctness remains verified. Protocol+record"
+        },
+        {
+          "line": 309,
+          "text": "is the artifact, not a validated win. Preprocessing pairing estimates amortization,"
+        },
+        {
+          "line": 310,
+          "text": "not measured end-to-end pipeline wall time."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-tracking/README.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# P08-03 variable-rate tracking baseline"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Established constant-velocity Kalman filtering baseline, not an algorithm invention"
+        },
+        {
+          "line": 4,
+          "text": "or a validated microrobot tracker. State is [x,y,vx,vy]. Caller supplies dt,"
+        },
+        {
+          "line": 5,
+          "text": "acceleration spectral density q, initial covariance and measurement covariance."
+        },
+        {
+          "line": 6,
+          "text": "No imaging noise or physiological calibration is inferred. Missing observations"
+        },
+        {
+          "line": 7,
+          "text": "perform prediction only. Position update uses solve and Joseph covariance form;"
+        },
+        {
+          "line": 8,
+          "text": "NIS is an innovation diagnostic, not a calibrated alarm or safety guarantee."
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "Requires numpy; run `python3 -m unittest -v` in this directory. Five tests pass:"
+        },
+        {
+          "line": 11,
+          "text": "closed-form prediction/update, process-covariance partition identity, 100 variable"
+        },
+        {
+          "line": 12,
+          "text": "interval/dropout symmetry/PSD checks, and invalid-input no-mutation checks."
+        },
+        {
+          "line": 13,
+          "text": "Synthetic software correctness only, not independent biological validation."
+        },
+        {
+          "line": 14,
+          "text": ""
+        },
+        {
+          "line": 15,
+          "text": "Remaining gaps: independent numerical review, exact overflow/error-contract"
+        },
+        {
+          "line": 16,
+          "text": "coverage, real trajectories, imaging/degradation calibration, published comparator,"
+        },
+        {
+          "line": 17,
+          "text": "frozen outcome evaluation and novel contribution. No P08-03 scientific gate is"
+        },
+        {
+          "line": 18,
+          "text": "passed. Near-zero negative covariance tolerance is 1e-12, not an inferred repair;"
+        },
+        {
+          "line": 19,
+          "text": "noise matrices with values below that numerical tolerance need careful review."
+        },
+        {
+          "line": 20,
+          "text": "No downstream navigation success or benchmark win claimed."
+        },
+        {
+          "line": 21,
+          "text": ""
+        },
+        {
+          "line": 22,
+          "text": "## Offline RTS smoother baseline"
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 24,
+          "text": "Nine tracking test methods pass locally. smoother.smooth takes supplied filtered"
+        },
+        {
+          "line": 25,
+          "text": "and predicted Gaussian records plus transitions and runs established offline RTS"
+        },
+        {
+          "line": 26,
+          "text": "backward smoothing. It uses future data and is NOT a real-time control estimator."
+        },
+        {
+          "line": 27,
+          "text": "A two-time direct joint-Gaussian conditional fixture independently supplies the"
+        },
+        {
+          "line": 28,
+          "text": "expected mean/covariance, plus terminal identity, single-record copy, prediction-"
+        },
+        {
+          "line": 29,
+          "text": "only identity and malformed/singular/inconsistent-record rejection checks."
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "Prediction covariances must be positive definite; singular predictions rejected."
+        },
+        {
+          "line": 32,
+          "text": "Externally supplied records are not certified consistent; negative output covariance"
+        },
+        {
+          "line": 33,
+          "text": "is rejected rather than repaired. An initial negative-covariance test fixture was"
+        },
+        {
+          "line": 34,
+          "text": "incorrect (it produced positive covariance); corrected fixture uses a filtered"
+        },
+        {
+          "line": 35,
+          "text": "covariance of 5I against prediction 2I and terminal I, giving negative output."
+        },
+        {
+          "line": 36,
+          "text": "No production formula was changed to force a test pass. No real-data/calibration,"
+        },
+        {
+          "line": 37,
+          "text": "causal benefit, discovery or benchmark win. Independent review pending."
+        },
+        {
+          "line": 38,
+          "text": ""
+        },
+        {
+          "line": 39,
+          "text": "## Error-metric unit"
+        },
+        {
+          "line": 40,
+          "text": ""
+        },
+        {
+          "line": 41,
+          "text": "14 tracking tests pass locally. metrics.evaluate reports position/velocity RMSE"
+        },
+        {
+          "line": 42,
+          "text": "and full-state NEES with explicit boolean truth availability. Missing truth is"
+        },
+        {
+          "line": 43,
+          "text": "excluded and counted, never zero-filled; all-missing yields None metrics, not a"
+        },
+        {
+          "line": 44,
+          "text": "perfect score. Estimate/covariance validation covers every row, including excluded"
+        },
+        {
+          "line": 45,
+          "text": "truth. Positive-definite evaluation covariance required; singular unsupported."
+        },
+        {
+          "line": 46,
+          "text": "Hand-calculated errors, missing-truth cases, invalid-input and NEES linear-coordinate"
+        },
+        {
+          "line": 47,
+          "text": "invariance fixtures pass. NEES numbers alone do not demonstrate calibration or"
+        },
+        {
+          "line": 48,
+          "text": "chi-square guarantees: model correctness and dependence assumptions remain open."
+        },
+        {
+          "line": 49,
+          "text": "No real trajectory comparison, noise calibration, invention or win."
+        },
+        {
+          "line": 50,
+          "text": ""
+        },
+        {
+          "line": 51,
+          "text": "## S1 pre-score synthetic comparison freeze candidate"
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": "comparison_protocol.json and compare.py lock 20 seeds across three declared regimes,"
+        },
+        {
+          "line": 54,
+          "text": "80 variable-dt times, paired realizations and all per-trajectory losses. Only seed"
+        },
+        {
+          "line": 55,
+          "text": "999 with six times was exercised in development, including no/all observations."
+        },
+        {
+          "line": 56,
+          "text": "Evaluation seeds have NOT been run. 16 test methods pass locally. Publication"
+        },
+        {
+          "line": 57,
+          "text": "confirmation required before scoring. Protocol and code hashes accompany results."
+        },
+        {
+          "line": 58,
+          "text": "The command's reference flag records provenance, not proof of publication."
+        },
+        {
+          "line": 59,
+          "text": ""
+        },
+        {
+          "line": 60,
+          "text": "This deliberately uses a matched linear Gaussian model and known q/R, which favors"
+        },
+        {
+          "line": 61,
+          "text": "Kalman/RTS. It is not an imaging calibration, innovation, or success on G1-G3."
+        },
+        {
+          "line": 62,
+          "text": "Last-observation hold lacks velocity estimates/covariance; only position compared."
+        },
+        {
+          "line": 63,
+          "text": "Offline RTS sees future data and is separate from causal Kalman/hold."
+        },
+        {
+          "line": 64,
+          "text": "Prediction generator matches implementation formula; that fixture is an integration"
+        },
+        {
+          "line": 65,
+          "text": "check, not an independent validation of the stochastic model. No inferential or"
+        },
+        {
+          "line": 66,
+          "text": "stable superiority claim is planned. Any scoring exception aborts, not drops a seed."
+        },
+        {
+          "line": 67,
+          "text": ""
+        },
+        {
+          "line": 68,
+          "text": "Retained independent review notes: prior 14 tests and separate dense conditional/"
+        },
+        {
+          "line": 69,
+          "text": "NEES fixtures passed as software/math baselines. dt=1e200 raises Python OverflowError"
+        },
+        {
+          "line": 70,
+          "text": "before numpy errstate, while leaving filter state/covariance unchanged. Error-type"
+        },
+        {
+          "line": 71,
+          "text": "coverage unfinished; ill-conditioning and near-zero PSD tolerances uncalibrated."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-field-planning/README.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# P08-04 abstract linear-actuator schedule feasibility"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Established LP baseline, not invention, magnetic calibration or anatomy validation."
+        },
+        {
+          "line": 4,
+          "text": "Discrete model: x[k+1] = x[k] + dt[k] B u[k], with constant linear B. Terminal"
+        },
+        {
+          "line": 5,
+          "text": "state equals target; each actuator has separate absolute bounds and separate slew"
+        },
+        {
+          "line": 6,
+          "text": "bounds |u[k]-u[k-1]| <= slew * dt[k], including supplied previous control at k=0."
+        },
+        {
+          "line": 7,
+          "text": "These are componentwise actuator bounds, NOT vector field magnitude constraints."
+        },
+        {
+          "line": 8,
+          "text": "No obstacles, vessel wall constraints, drag, magnetization, dynamics/nonlinear"
+        },
+        {
+          "line": 9,
+          "text": "coupling, field geometry or uncertainty. Five development test methods pass."
+        },
+        {
+          "line": 10,
+          "text": ""
+        },
+        {
+          "line": 11,
+          "text": "SciPy 1.15.3 locally uses linprog(method='highs') with zero objective as a feasibility"
+        },
+        {
+          "line": 12,
+          "text": "problem. Readback independently reconstructs trajectory from controls and checks"
+        },
+        {
+          "line": 13,
+          "text": "terminal/actuator/slew residuals against declared tolerance (default 1e-8). Primal"
+        },
+        {
+          "line": 14,
+          "text": "residual check is floating-point, not an exact rational feasibility certificate."
+        },
+        {
+          "line": 15,
+          "text": "Solver status 2 is recorded as solver_infeasible, explicitly without independently"
+        },
+        {
+          "line": 16,
+          "text": "verified dual certificate. No optimal-effort claim from zero objective; many"
+        },
+        {
+          "line": 17,
+          "text": "solutions may exist and their schedule is solver-dependent. Other solver failure"
+        },
+        {
+          "line": 18,
+          "text": "or primal-readback failure raises, never turns into a claimed infeasible instance."
+        },
+        {
+          "line": 19,
+          "text": ""
+        },
+        {
+          "line": 20,
+          "text": "Fixtures: analytically unique saturated scalar schedule, first-step slew-limited"
+        },
+        {
+          "line": 21,
+          "text": "reachable/unreachable target, rank-deficient unreachable target, dense actuator"
+        },
+        {
+          "line": 22,
+          "text": "terminal reconstruction, invalid-input caller-buffer preservation. These are"
+        },
+        {
+          "line": 23,
+          "text": "constructed software checks, not frozen benchmark instances/scientific gates."
+        },
+        {
+          "line": 24,
+          "text": "Extreme finite-input overflow and tolerance scaling remain unreviewed. Missing"
+        },
+        {
+          "line": 25,
+          "text": "hardware mapping remains an open grounding gap, not a blocker to abstract prep."
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "Official tool reference fetched:"
+        },
+        {
+          "line": 28,
+          "text": "https://docs.scipy.org/doc/scipy/reference/optimize.linprog-highs.html"
+        },
+        {
+          "line": 29,
+          "text": "Describes inequality/equality constraints, bounds, status and infeasibility return."
+        },
+        {
+          "line": 30,
+          "text": "Live documentation is newer than local SciPy; record local 1.15.3 for reproducibility."
+        },
+        {
+          "line": 31,
+          "text": ""
+        },
+        {
+          "line": 32,
+          "text": "Run tests here:"
+        },
+        {
+          "line": 33,
+          "text": ""
+        },
+        {
+          "line": 34,
+          "text": "    OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v"
+        },
+        {
+          "line": 35,
+          "text": ""
+        },
+        {
+          "line": 36,
+          "text": "S1/S2 tracking/reacquisition are unchanged. Independent review pending. No scored"
+        },
+        {
+          "line": 37,
+          "text": "comparison, hardware claim, real anatomy gate, scientific gate or novelty evidence."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-disturbance/SYNTHETIC-SURFACE-CLOSEOUT.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# P08-06 synthetic surface CLOSED, science gates OPEN"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Completed bounded dimensionless development surface: interface/source screen, D1"
+        },
+        {
+          "line": 4,
+          "text": "causal scalar stress harness, D2 hold-vs-nominal-prediction instrumentation, D3 fixed"
+        },
+        {
+          "line": 5,
+          "text": "observation x hidden-plant factorial. No further toy extensions planned. Calibration-"
+        },
+        {
+          "line": 6,
+          "text": "data admission parked until an admitted dataset exists. Not physiological atlas or"
+        },
+        {
+          "line": 7,
+          "text": "P08-06 science completion, novel algorithm or empirical robustness result."
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "## Frozen artifacts and exact findings"
+        },
+        {
+          "line": 10,
+          "text": ""
+        },
+        {
+          "line": 11,
+          "text": "| Unit | Published results commit | Retained scope/outcome |"
+        },
+        {
+          "line": 12,
+          "text": "| --- | --- | --- |"
+        },
+        {
+          "line": 13,
+          "text": "| D1 | f938957be88db7a2378c5cf55b8b6461c5d14cbd | 10 rows/200 transitions; proportional 4 misses including reference/1 success; sign 5 successes; no universal failure. |"
+        },
+        {
+          "line": 14,
+          "text": "| D2 | 4e622fb04294ba3c25dddaa86ec1623351e71e9b | 20 rows/400 transitions; improved dropout estimates but proportional loses hold's only terminal success; 8 dropout pairs with no values noncomparable, not ties. |"
+        },
+        {
+          "line": 15,
+          "text": "| D3 | 9e81567ca5ff147ead2b8597a06f348b1e2c6c5e | 32 rows/640 transitions; hold-P7miss/1success, predict-P8miss, both sign8success. Nominal prediction worsens estimates for both policies under hidden immobilization/dropout. |"
+        },
+        {
+          "line": 16,
+          "text": ""
+        },
+        {
+          "line": 17,
+          "text": "These counts describe three overlapping batteries, not 62 independent experimental"
+        },
+        {
+          "line": 18,
+          "text": "samples. Independent review replayed exact raw hashes/transitions/pairs. Freeze"
+        },
+        {
+          "line": 19,
+          "text": "publication before our sole full run per unit is supported by tool push/readback logs;"
+        },
+        {
+          "line": 20,
+          "text": "replay alone does not independently establish external chronology."
+        },
+        {
+          "line": 21,
+          "text": ""
+        },
+        {
+          "line": 22,
+          "text": "D3 prediction-minus-hold terminal errors:0 lower/13 ties/3 higher. Dropout MAE/MSE:"
+        },
+        {
+          "line": 23,
+          "text": "5 lower/1 tie/2 higher among8 comparable pairs;8 no-dropout pairs noncomparable."
+        },
+        {
+          "line": 24,
+          "text": "No discarded losses. Better estimates did not improve terminal success in these"
+        },
+        {
+          "line": 25,
+          "text": "fixed tests; nominal prediction under unmodeled immobilization can HURT estimation."
+        },
+        {
+          "line": 26,
+          "text": "Both are scoped toy observations, not general theorems ranking estimators/controllers."
+        },
+        {
+          "line": 27,
+          "text": "The fixed untuned proportional finite horizon misses even the nominal reference;"
+        },
+        {
+          "line": 28,
+          "text": "stale errors sustain extra actuation and can improve terminal outcome while degrading"
+        },
+        {
+          "line": 29,
+          "text": "estimation. Effort differs, so no equal-energy advantage claimed. No changes forced"
+        },
+        {
+          "line": 30,
+          "text": "failures, and no all-controller failure found. Lack of failure remains valid data."
+        },
+        {
+          "line": 31,
+          "text": ""
+        },
+        {
+          "line": 32,
+          "text": "## What is established"
+        },
+        {
+          "line": 33,
+          "text": ""
+        },
+        {
+          "line": 34,
+          "text": "Exact supplied-model implementation behavior, causal restricted call contract for"
+        },
+        {
+          "line": 35,
+          "text": "trusted baselines, literal diagnostic/count/None semantics, full loss/tie retention,"
+        },
+        {
+          "line": 36,
+          "text": "reproducible fixed deterministic sensitivity. Closed-loop pairing shares exogenous"
+        },
+        {
+          "line": 37,
+          "text": "sequences/observation availability, not identical observations or trajectories."
+        },
+        {
+          "line": 38,
+          "text": "Four variants are two action forms x two estimation conventions, not four genuine"
+        },
+        {
+          "line": 39,
+          "text": "physiologically anchored controller classes. Pins refuse trusted-local file/manifest"
+        },
+        {
+          "line": 40,
+          "text": "mismatches before runtime; not hostile-edit authenticity or concurrent-files defense."
+        },
+        {
+          "line": 41,
+          "text": "One-second parent poll kills direct child only; no independent recv/serialization/OS"
+        },
+        {
+          "line": 42,
+          "text": "wall bounds, hard deadline, process-group kill or hostile-code sandbox guarantee."
+        },
+        {
+          "line": 43,
+          "text": ""
+        },
+        {
+          "line": 44,
+          "text": "## What remains unestablished and deferred"
+        },
+        {
+          "line": 45,
+          "text": ""
+        },
+        {
+          "line": 46,
+          "text": "No calibrated microrobot plant/actuation, physiological disturbance law/magnitude,"
+        },
+        {
+          "line": 47,
+          "text": "measurement noise/dropout distribution, adhesion/crowding physics, wall safety or"
+        },
+        {
+          "line": 48,
+          "text": "real trajectories. Screened article parameters not imported; raw data/rights not"
+        },
+        {
+          "line": 49,
+          "text": "admitted. Existing checked tree has open-loop planners and estimators, not the four"
+        },
+        {
+          "line": 50,
+          "text": "PID/LQR/MPC/RL implementations required by the proposed physiological atlas. No"
+        },
+        {
+          "line": 51,
+          "text": "learned control/training, held-out validation, CIs, task-distribution generalization,"
+        },
+        {
+          "line": 52,
+          "text": "physical information/energy equality or novel scientific finding."
+        },
+        {
+          "line": 53,
+          "text": ""
+        },
+        {
+          "line": 54,
+          "text": "Original P08-06 G1-G4 OPEN/unmet: four physiological disturbance/four controller"
+        },
+        {
+          "line": 55,
+          "text": "classes with CIs; characterized failures by genuine controller class; universal"
+        },
+        {
+          "line": 56,
+          "text": "failure regime; standard physiological battery reproducing end-to-end. Toy reproducibility"
+        },
+        {
+          "line": 57,
+          "text": "alone does not satisfy scientific G4. G2/G3 are hypotheses, not failures to manufacture."
+        },
+        {
+          "line": 58,
+          "text": "Unanchored physiological classes excluded under the original source pivot. Deferred"
+        },
+        {
+          "line": 59,
+          "text": "work remains source/data rights admission, calibrated plant and observations, actual"
+        },
+        {
+          "line": 60,
+          "text": "causal controller adapters/implementations, locked physical failure criteria and a"
+        },
+        {
+          "line": 61,
+          "text": "fair independently frozen/scored atlas. No ongoing monitor or compute job remains."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-release/ADMISSION.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# P08-09 release-trigger admission: generic invention REJECTED"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "2026-10-08. Bounded prior-art/source screen, no implementation/training/scoring."
+        },
+        {
+          "line": 4,
+          "text": "Candidate: irreversible release based on ambiguous local signals and uncertain"
+        },
+        {
+          "line": 5,
+          "text": "sensing-to-release latency, with premature-release/target-delivery tradeoff. No"
+        },
+        {
+          "line": 6,
+          "text": "specific new algorithm/property survives the current proposal. Sequential testing,"
+        },
+        {
+          "line": 7,
+          "text": "robust stopping and delayed execution are established. This does NOT assert one"
+        },
+        {
+          "line": 8,
+          "text": "paper solves the exact combined physiological problem or exhaustive novelty clearance."
+        },
+        {
+          "line": 9,
+          "text": "No precise combined uncertainty/observation/latency model was supplied; absence of"
+        },
+        {
+          "line": 10,
+          "text": "such a model is an admission gap, not a novel constraint."
+        },
+        {
+          "line": 11,
+          "text": ""
+        },
+        {
+          "line": 12,
+          "text": "## Exact objective/observation/latency distinction needed"
+        },
+        {
+          "line": 13,
+          "text": ""
+        },
+        {
+          "line": 14,
+          "text": "Stop/command release at time tau; physical release occurs at tau+L, so relevant site"
+        },
+        {
+          "line": 15,
+          "text": "is at execution, not decision. Hidden target/feeder state can change along route;"
+        },
+        {
+          "line": 16,
+          "text": "observations are noisy local signals, not necessarily IID evidence for two fixed"
+        },
+        {
+          "line": 17,
+          "text": "hypotheses. Premature release event/cargo amount, missed target and delay cost must"
+        },
+        {
+          "line": 18,
+          "text": "be defined on physical release, with finite-horizon expiry and irreversibility. Need"
+        },
+        {
+          "line": 19,
+          "text": "specified joint transition/observation/latency model and uncertainty set. Robust"
+        },
+        {
+          "line": 20,
+          "text": "supremum over a distribution family is not just a nominal confidence threshold."
+        },
+        {
+          "line": 21,
+          "text": "Data/calibration, online observability of L and action/state dependence matter."
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": "These are formulation requirements, not new algorithm claims. Could be modeled as"
+        },
+        {
+          "line": 24,
+          "text": "belief-state constrained stopping/POMDP with delayed action/absorbing release state;"
+        },
+        {
+          "line": 25,
+          "text": "that is a standard modeling route, NOT an admitted invention or proven efficient"
+        },
+        {
+          "line": 26,
+          "text": "solution. No claim that combining all features is covered by a single verified theorem."
+        },
+        {
+          "line": 27,
+          "text": "No claim that standard e-process/threshold composition beats an optimal comparator."
+        },
+        {
+          "line": 28,
+          "text": "Need a precise property/bound/complexity or policy-class advantage under identical"
+        },
+        {
+          "line": 29,
+          "text": "uncertainty/objective before an invention experiment can be authorized."
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "## Prior-art screen (all fetched)"
+        },
+        {
+          "line": 32,
+          "text": ""
+        },
+        {
+          "line": 33,
+          "text": "S1 Sequential Hypothesis Testing under Stochastic Deadlines (2007), full paper:"
+        },
+        {
+          "line": 34,
+          "text": "https://proceedings.neurips.cc/paper_files/paper/2007/file/9c82c7143c102b71c593d98d96093fde-Paper.pdf"
+        },
+        {
+          "line": 35,
+          "text": "Stopping/decision policies with time cost and stochastic deadline. Deadline drawn"
+        },
+        {
+          "line": 36,
+          "text": "independent of observations; deadline is NOT sensing/release execution delay and"
+        },
+        {
+          "line": 37,
+          "text": "fixed latent hypotheses are not route-changing target state."
+        },
+        {
+          "line": 38,
+          "text": ""
+        },
+        {
+          "line": 39,
+          "text": "S2 Optimal Learning under Robustness and Time-Consistency (2019 manuscript), full:"
+        },
+        {
+          "line": 40,
+          "text": "https://people.bu.edu/lepstein/files-research/OptimalLearning-Mar3Posted--UpdatedJune-2019.pdf"
+        },
+        {
+          "line": 41,
+          "text": "Prior ambiguity, maxmin stopping/action under partial Brownian information and"
+        },
+        {
+          "line": 42,
+          "text": "per-unit observation cost; robust classical simple-hypothesis testing example."
+        },
+        {
+          "line": 43,
+          "text": "Not spatial release/uncertain actuator delay, not universal rectangular uncertainty."
+        },
+        {
+          "line": 44,
+          "text": ""
+        },
+        {
+          "line": 45,
+          "text": "S3 Optimal Stopping Rules for Sequential Hypothesis Testing (2017), publisher abstract:"
+        },
+        {
+          "line": 46,
+          "text": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2017.32"
+        },
+        {
+          "line": 47,
+          "text": "Established sequential stopping literature; abstract only, no unseen algorithm/bound"
+        },
+        {
+          "line": 48,
+          "text": "claimed as an exact comparator."
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": "S4 Bayesian Sequential Experimentation with Delayed Response (2017), full paper:"
+        },
+        {
+          "line": 51,
+          "text": "https://eprints.whiterose.ac.uk/id/eprint/110768/1/delaypaperDriver.pdf"
+        },
+        {
+          "line": 52,
+          "text": "Delayed observed endpoint and benefits-minus-sampling cost optimal boundaries."
+        },
+        {
+          "line": 53,
+          "text": "Delayed observations, not delayed execution, explicitly distinguished."
+        },
+        {
+          "line": 54,
+          "text": ""
+        },
+        {
+          "line": 55,
+          "text": "S5 Some results on optimal stopping under phase-type distributed implementation delay"
+        },
+        {
+          "line": 56,
+          "text": "(2020), publisher full HTML and institutional abstract:"
+        },
+        {
+          "line": 57,
+          "text": "https://link.springer.com/article/10.1007/s00186-019-00694-6"
+        },
+        {
+          "line": 58,
+          "text": "https://www.utupub.fi/items/cfc8f1a6-b630-4137-a79a-1f8d9f57b860"
+        },
+        {
+          "line": 59,
+          "text": "Strong Markov process stopping with payoff after independent phase-type random delay,"
+        },
+        {
+          "line": 60,
+          "text": "Coxian/diffusion cases. Directly blocks novelty from merely delaying stopping payoff."
+        },
+        {
+          "line": 61,
+          "text": "Full PDF fetch returned NO_CONTENT_RETURNED, not unavailable; HTML inspected instead."
+        },
+        {
+          "line": 62,
+          "text": "Not partial observation/unknown delay distribution guarantee for our application."
+        },
+        {
+          "line": 63,
+          "text": ""
+        },
+        {
+          "line": 64,
+          "text": "S6 Tree Search-Based Policy Optimization under Stochastic Execution Delay (ICLR2024),full:"
+        },
+        {
+          "line": 65,
+          "text": "https://proceedings.iclr.cc/paper_files/paper/2024/file/50e13537f46656a94a7acaf022921385-Paper-Conference.pdf"
+        },
+        {
+          "line": 66,
+          "text": "Stochastic delayed execution MDP and policy search; observed delay assumption matters."
+        },
+        {
+          "line": 67,
+          "text": "Not a robust partially observed irreversible release guarantee. No RL implementation"
+        },
+        {
+          "line": 68,
+          "text": "or training admitted; cited to avoid treating action queues/delay as new."
+        },
+        {
+          "line": 69,
+          "text": ""
+        },
+        {
+          "line": 70,
+          "text": "S7 On the Challenges of Using Reinforcement Learning in Precision Drug Dosing:"
+        },
+        {
+          "line": 71,
+          "text": "Delay and Prolongedness of Action Effects (AAAI2023), publisher abstract:"
+        },
+        {
+          "line": 72,
+          "text": "https://ojs.aaai.org/index.php/AAAI/article/view/26650"
+        },
+        {
+          "line": 73,
+          "text": "PAE-POMDP addresses prolonged action effects; not direct cargo-release timing dataset"
+        },
+        {
+          "line": 74,
+          "text": "or proof of a complete release solution. Physiological analogy does not equal data."
+        },
+        {
+          "line": 75,
+          "text": ""
+        },
+        {
+          "line": 76,
+          "text": "## Biological/source admission screen (no numerical data imported)"
+        },
+        {
+          "line": 77,
+          "text": ""
+        },
+        {
+          "line": 78,
+          "text": "S8 primary RSC nanomotor study (2020), full HTML, article CC BY3.0 stated:"
+        },
+        {
+          "line": 79,
+          "text": "https://pubs.rsc.org/en/content/articlehtml/2020/nr/d0nr04415f"
+        },
+        {
+          "line": 80,
+          "text": "Supramolecular nanomotors with pH taxis. Conditioned HeLa medium pH6.0, endosomal"
+        },
+        {
+          "line": 81,
+          "text": "uptake/release context; release assay pH7.0 vs4.6. Article mentions extracellular"
+        },
+        {
+          "line": 82,
+          "text": "TME6.5-6.8 versus endosomal4.5-5.5 via cited literature. These are compartment-specific"
+        },
+        {
+          "line": 83,
+          "text": "conditions, not observed target-vs-feeder signal/noise distributions. pH taxis/motion"
+        },
+        {
+          "line": 84,
+          "text": "and cargo-release chemistry not a programmable binary instantaneous classification."
+        },
+        {
+          "line": 85,
+          "text": "Article open license does not establish separately licensed raw sensor/latency data."
+        },
+        {
+          "line": 86,
+          "text": ""
+        },
+        {
+          "line": 87,
+          "text": "S9 primary nanofiber surgical buttress study, PMC full text:"
+        },
+        {
+          "line": 88,
+          "text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9930888/"
+        },
+        {
+          "line": 89,
+          "text": "Local scaffold, not navigating microrobot. Release sustained over days; cell-media"
+        },
+        {
+          "line": 90,
+          "text": "pH6.5 reported 70% doxorubicin released by day45, pH7.4 2% over same period. No"
+        },
+        {
+          "line": 91,
+          "text": "sensing-to-actuation latency law for a robot. Article figures/supplement are not an"
+        },
+        {
+          "line": 92,
+          "text": "admitted joint spatial sensor/release dataset. No extraction/fitting or reuse grant"
+        },
+        {
+          "line": 93,
+          "text": "inferred from readable article. Different drug/material/system, not conflicting"
+        },
+        {
+          "line": 94,
+          "text": "measurements to average into one delay."
+        },
+        {
+          "line": 95,
+          "text": ""
+        },
+        {
+          "line": 96,
+          "text": "S10 primary nanoparticles/microbubbles study (2016), full HTML, CC BY4.0 article:"
+        },
+        {
+          "line": 97,
+          "text": "https://preview-www.nature.com/articles/srep29321"
+        },
+        {
+          "line": 98,
+          "text": "pH-sensitive particles and focused-ultrasound microbubble delivery, in-vitro release"
+        },
+        {
+          "line": 99,
+          "text": "and in-vivo antitumor response. Passive/interstitial/endosomal and ultrasound effects"
+        },
+        {
+          "line": 100,
+          "text": "must not be converted to our arbitrary vascular trigger latency. Third-party material"
+        },
+        {
+          "line": 101,
+          "text": "license exceptions retained. No raw event/signal distribution admitted."
+        },
+        {
+          "line": 102,
+          "text": ""
+        },
+        {
+          "line": 103,
+          "text": "These readings support material-specific pH responsiveness and distinct compartments,"
+        },
+        {
+          "line": 104,
+          "text": "not the source-direction assertion that premature feeder-vessel release is the"
+        },
+        {
+          "line": 105,
+          "text": "DOMINANT failure. That premise remains UNVERIFIED in this bounded screen, not disproved."
+        },
+        {
+          "line": 106,
+          "text": "No calibrated oxygen/enzyme/shear class, sensor noise/latency distribution, joint"
+        },
+        {
+          "line": 107,
+          "text": "vascular target/feeder field or real release-event dataset admitted. Human Protein"
+        },
+        {
+          "line": 108,
+          "text": "Atlas expression alone would not establish local causal trigger release; not inspected"
+        },
+        {
+          "line": 109,
+          "text": "here, so no HPA availability/rights conclusion. No >=3-signal-class G1 or80% G2 claim."
+        },
+        {
+          "line": 110,
+          "text": ""
+        },
+        {
+          "line": 111,
+          "text": "## Decision and limits"
+        },
+        {
+          "line": 112,
+          "text": ""
+        },
+        {
+          "line": 113,
+          "text": "REJECT generic threshold/temporal filter/confidence-plus-latency composition as"
+        },
+        {
+          "line": 114,
+          "text": "invention. No exact uncovered claim identified; stop before code/synthetic scoring."
+        },
+        {
+          "line": 115,
+          "text": "A specific delayed belief-state robust stopping formulation could be studied as an"
+        },
+        {
+          "line": 116,
+          "text": "established baseline if separately wanted, but its mathematical tractability or new"
+        },
+        {
+          "line": 117,
+          "text": "bound requires a new admission memo. Not authorized here. Original P08-09 science"
+        },
+        {
+          "line": 118,
+          "text": "G1-G4 remain OPEN; synthetic-first pivot does not establish biology or novelty."
+        },
+        {
+          "line": 119,
+          "text": ""
+        },
+        {
+          "line": 120,
+          "text": "Ten research sources across primary publications, publisher abstracts/institutional"
+        },
+        {
+          "line": 121,
+          "text": "record; community commentary not needed for technical admission. Bounded search,"
+        },
+        {
+          "line": 122,
+          "text": "not exhaustive literature/patent clearance. Source distinctions block simplistic"
+        },
+        {
+          "line": 123,
+          "text": "novelty claims but do not prove no new algorithm is possible. No external data/code"
+        },
+        {
+          "line": 124,
+          "text": "imported, no training/GPU, no held-out/frozen comparison or communication with authors."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-routing/fovea-pair-admission/CLOSEOUT.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# FOVEA paired-query diagnostic surface CLOSED, no invention admitted"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Source/byte/pairing admission and reviewed frozen Q1 diagnostic completed. Results"
+        },
+        {
+          "line": 4,
+          "text": "c5c7036dd0c2e7036b6c3d783467e20461428122 independently rerun byte-identical and"
+        },
+        {
+          "line": 5,
+          "text": "all9600 classifications independently recomputed. Current mask ZIP CRC/SHA and all160"
+        },
+        {
+          "line": 6,
+          "text": "mask sizes/hashes/pairing independently rechecked. Original full3.1GB MD5 correspondence"
+        },
+        {
+          "line": 7,
+          "text": "remains prior transfer evidence, not newly recomputed. Published exact sources/design/"
+        },
+        {
+          "line": 8,
+          "text": "protocol/raw/env/hashes retained. No further endpoint tuning/measurement extension."
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "Honest mostly-negative diagnostic: query-specific disagreement in ONE preoperative"
+        },
+        {
+          "line": 11,
+          "text": "pair (FOVEA019_p,15/120 A2-only) under overlap-biased16-common-skeleton-endpoint workload."
+        },
+        {
+          "line": 12,
+          "text": "Other pre queries4756 both/29neither; intra4800both. Existing component disagreement"
+        },
+        {
+          "line": 13,
+          "text": "8pre/3intra image pairs does not automatically imply query disagreement. Low aggregate"
+        },
+        {
+          "line": 14,
+          "text": "shared-skeleton coverage and sparse endpoints sharply limit the result. No anatomical"
+        },
+        {
+          "line": 15,
+          "text": "agreement, absence of missing branches, robust-navigation guarantee, clinical insight,"
+        },
+        {
+          "line": 16,
+          "text": "novel algorithm or scientific superiority supported. No invention claimed or forced."
+        },
+        {
+          "line": 17,
+          "text": ""
+        },
+        {
+          "line": 18,
+          "text": "80phase pairs share40patients; queries dependent, phases unregistered, all development"
+        },
+        {
+          "line": 19,
+          "text": "masks previously exposed. Independent review validates this exact representation"
+        },
+        {
+          "line": 20,
+          "text": "measurement, not physiological truth/generalization or external chronology of freeze."
+        },
+        {
+          "line": 21,
+          "text": "Publish-before-run rests on push/readback logs. No calibrated independent edge"
+        },
+        {
+          "line": 22,
+          "text": "probabilities inferred from two annotators; consensus/union/intersection not truth."
+        },
+        {
+          "line": 23,
+          "text": "Generic world checking/certificates/graph repair already established and not admitted"
+        },
+        {
+          "line": 24,
+          "text": "as inventions. Dataset-specific gap in workload coverage is a limitation, not automatic"
+        },
+        {
+          "line": 25,
+          "text": "new algorithm opportunity. Original anatomy/flow/cost/calibration gates remain open."
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "No pending query run, monitor, compute job or implementation. Next direction should"
+        },
+        {
+          "line": 28,
+          "text": "start from a separately admitted gap, not make this mostly-negative surface positive"
+        },
+        {
+          "line": 29,
+          "text": "by changing endpoints or presenting sparse overlap queries as the entire vessel tree."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-anchor-admission/ADMISSION.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# P08-08 initial anchor-data admission"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "2026-10-08. Bounded six-lead screen plus primary paper/supplement. One measured"
+        },
+        {
+          "line": 4,
+          "text": "microchannel source-data subset qualified for tabular/figure reproduction review;"
+        },
+        {
+          "line": 5,
+          "text": "NO magnetic blood-physics class validated, simulator/ranking/algorithm implemented,"
+        },
+        {
+          "line": 6,
+          "text": "model/notebook executed or invention claim. Not a claim no better datasets exist."
+        },
+        {
+          "line": 7,
+          "text": ""
+        },
+        {
+          "line": 8,
+          "text": "## Source/data admission table"
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "| Lead and observed source | Rights/access/bytes | Quantitative fit and decision |"
+        },
+        {
+          "line": 11,
+          "text": "| --- | --- | --- |"
+        },
+        {
+          "line": 12,
+          "text": "| Electrotaxis experiment, https://zenodo.org/records/13220167 | Live CC-BY4.0, electrotaxis.zip147510108bytes MD5 exact5be76ae711f8550f6c70498b0a508eb6,CRC valid; SHA in manifest | Measured Fig1/Fig3 trajectories/PIV plus separately labeled Fig4 numerical data. QUALIFIED limited measured source-table/figure reproduction candidate, not magnetic/physiological/time-domain fit. |"
+        },
+        {
+          "line": 13,
+          "text": "| Magnetic RL archive, https://zenodo.org/records/10200117 and https://github.com/sarmadnabbasi/Autonomous-3D-positional-control-of-a-magnetic-microrobot-using-reinforcement-learning | Live record CC-BY4.0;35529208byte ZIP MD5 exact9f0b8215806bd05fc068f4276d9e98b8,CRC valid; inspected inventory, no code run | README physical reproduction requires camera/actuation hardware; inspected archive lacks identifiable measured trajectory table. Simulation/runtime assets not experimental anchor. NOT ADMITTED as quantitative physical anchor. Bounded inventory not global absence. |"
+        },
+        {
+          "line": 14,
+          "text": "| USMicroMagSet, https://github.com/Kivo0/UsMicroMagSet and https://ieee-dataport.org/documents/usmicromagset | Repository states dataset GPLv3, commercial-license contact note. README/license pages inspected; no complete dataset downloaded/independently byte checked | Ultrasound frames/bounding boxes,8 robots,channel videos; timing/pixel-to-physical calibration/forcing trace not established. NOT ADMITTED as wall/rheology trajectory-calibration anchor. Could be future imaging lead, rights scope/bytes require separate qualification. |"
+        },
+        {
+          "line": 15,
+          "text": "| Magnetic soft-material data, https://zenodo.org/records/14827844 | Live CC-BY4.0 record, large archives not downloaded | Record explicitly simulation steady-state shapes from53 learning runs, not experimental microfluidic navigation. EXCLUDED from experimental anchor set. |"
+        },
+        {
+          "line": 16,
+          "text": "| RBC drag, https://www.nature.com/articles/s42005-024-01724-4 | Primary data/code availability reasonable request to corresponding authors; no email sent or downloadable artifact admitted | Measured/numerical study relevant to crowding but no rights-qualified quantitative bytes. Crowding class UNVALIDATED/excluded from ranking. |"
+        },
+        {
+          "line": 17,
+          "text": "| Caldag2017 processed-data page, https://microswimmer.sabanciuniv.edu/?page_id=33 | Scientific links describe MATLAB/data/video but no explicit data license qualified. Page appends unrelated administrator software-activation promotion, reported and ignored; integrity unverified | No downloads/execution from that domain. EXCLUDED pending rights AND source-integrity qualification. No person attributed to appended text. |"
+        },
+        {
+          "line": 18,
+          "text": ""
+        },
+        {
+          "line": 19,
+          "text": "Primary electrotaxis article/full supplement fetched:"
+        },
+        {
+          "line": 20,
+          "text": "https://ar5iv.labs.arxiv.org/html/2401.14376"
+        },
+        {
+          "line": 21,
+          "text": "Original arxiv HTML fetch returned no content; alternate primary mirror succeeded."
+        },
+        {
+          "line": 22,
+          "text": "Official Zenodo API observed download:"
+        },
+        {
+          "line": 23,
+          "text": "https://zenodo.org/api/records/13220167/files/electrotaxis.zip/content"
+        },
+        {
+          "line": 24,
+          "text": "Second observed archive download:"
+        },
+        {
+          "line": 25,
+          "text": "https://zenodo.org/api/records/10200117/files/sarmadnabbasi/Autonomous-3D-positional-control-of-a-magnetic-microrobot-using-reinforcement-learning-v1.0.zip/content"
+        },
+        {
+          "line": 26,
+          "text": "Primary publications + official data deposits + repository documentation used; community"
+        },
+        {
+          "line": 27,
+          "text": "commentary not needed for byte/protocol admission. Article/code license not silently"
+        },
+        {
+          "line": 28,
+          "text": "substituted for dataset rights. No author communication or commercial rail involved."
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "## Qualified limited electrotaxis subset and exact protocol"
+        },
+        {
+          "line": 31,
+          "text": ""
+        },
+        {
+          "line": 32,
+          "text": "Active CB15 oil droplets in7.5wt%TTAB solution, PDMS channels width100um,height52um,"
+        },
+        {
+          "line": 33,
+          "text": "electrode distance1.5\u00b10.1cm, electric not magnetic forcing. Article normalizations"
+        },
+        {
+          "line": 34,
+          "text": "radius~21um,quiescent speed~29.5um/s. Not RBC/blood/non-Newtonian/adhesion physiology."
+        },
+        {
+          "line": 35,
+          "text": "Fig3 README explicitly: columns x[um],y[um],speed[um/s],voltage[V]; separate zero-field"
+        },
+        {
+          "line": 36,
+          "text": "PIV y[um],u_x[um/s] at beginning of recording before voltage application. Flow forcing"
+        },
+        {
+          "line": 37,
+          "text": "not perfectly constant: experiments<240s, measured relative speed change~15%."
+        },
+        {
+          "line": 38,
+          "text": ""
+        },
+        {
+          "line": 39,
+          "text": "Subset manifest records exact bytes of README/figure READMEs,MSplots.ipynb and all11"
+        },
+        {
+          "line": 40,
+          "text": "non-checkpoint Fig3 tables plus S3 calibration table. Full archive CRC/checksum verified;"
+        },
+        {
+          "line": 41,
+          "text": "subset attachment exact bytes, no edits. Notebook inspected as text, NOT executed:"
+        },
+        {
+          "line": 42,
+          "text": "it contains figure-writing/image-overwrite functions. Fig4 README says numerical"
+        },
+        {
+          "line": 43,
+          "text": "integration with0.004s timestep,dimensionless units; those rows are NOT measured data"
+        },
+        {
+          "line": 44,
+          "text": "and no experimental timing inferred from them. hdf5 simulation data abridged/decimated"
+        },
+        {
+          "line": 45,
+          "text": "per root README; not full raw experiment archive (authors offer full data on request)."
+        },
+        {
+          "line": 46,
+          "text": ""
+        },
+        {
+          "line": 47,
+          "text": "Fig3 five constant-voltage trajectory tables:1847,1634,1543,1294,996rows respectively,"
+        },
+        {
+          "line": 48,
+          "text": "4columns,finite. Ramp trajectory5946rows,4columns,finite. Five flow profiles19,19,19,19,20rows;"
+        },
+        {
+          "line": 49,
+          "text": "1V/2V/3V profiles each contain one NaN,4V/5V zero. NaNs retained, no silent deletion/"
+        },
+        {
+          "line": 50,
+          "text": "interpolation. S3 calibration5x3 finite table has un-commented header; first generic"
+        },
+        {
+          "line": 51,
+          "text": "schema load failed, then source notebook's explicit skiprows=1 was inspected and"
+        },
+        {
+          "line": 52,
+          "text": "schema reread with that header rule. No data bytes/model/scoring changed."
+        },
+        {
+          "line": 53,
+          "text": ""
+        },
+        {
+          "line": 54,
+          "text": "Critical timing gap: trajectory tables have NO time/frame column. Supplement gives"
+        },
+        {
+          "line": 55,
+          "text": "25fps long-time tracking and100fps PIV, but file-specific sampling/drop-frame/decimation"
+        },
+        {
+          "line": 56,
+          "text": "correspondence remains unverified. Cannot compute experimental acceleration or fit a"
+        },
+        {
+          "line": 57,
+          "text": "time-domain dynamics model by silently setting dt=.04 or using Fig4's numerical dt."
+        },
+        {
+          "line": 58,
+          "text": "No covariance/error bars for trajectory positions or repeated-trial grouping admitted."
+        },
+        {
+          "line": 59,
+          "text": "S3 third header says voltage-error while notebook plots it as vertical speed error:"
+        },
+        {
+          "line": 60,
+          "text": "semantics unresolved, so no uncertainty-weighted calibration regression admitted."
+        },
+        {
+          "line": 61,
+          "text": ""
+        },
+        {
+          "line": 62,
+          "text": "## Reproduction target and bottleneck, not measured modeling residual"
+        },
+        {
+          "line": 63,
+          "text": ""
+        },
+        {
+          "line": 64,
+          "text": "Allowed next proposed target: reproduce Fig3 source trajectories/PIV overlays from"
+        },
+        {
+          "line": 65,
+          "text": "exact source tables and stated units/normalizations, retaining missing rows and all"
+        },
+        {
+          "line": 66,
+          "text": "five voltages, without fitting physics or modifying the author notebook. Requires"
+        },
+        {
+          "line": 67,
+          "text": "separately frozen plotting/schema code, visual inspection and independent review."
+        },
+        {
+          "line": 68,
+          "text": "Could check source-figure transforms (including plotted y sign reversal) before any"
+        },
+        {
+          "line": 69,
+          "text": "model claim. Source bytes exist, but NO numerical model residual computed in this"
+        },
+        {
+          "line": 70,
+          "text": "admission unit. A precise observed modeling bottleneck is missing time index and"
+        },
+        {
+          "line": 71,
+          "text": "unverified physical uncertainty/forcing variation; another is S3 error-column mismatch."
+        },
+        {
+          "line": 72,
+          "text": "A residual against a simulation requires a defined comparison/registration target,"
+        },
+        {
+          "line": 73,
+          "text": "parameter provenance and approved protocol. No simulated truth substituted."
+        },
+        {
+          "line": 74,
+          "text": ""
+        },
+        {
+          "line": 75,
+          "text": "Walls/confinement is only a SINGLE nonmagnetic experimental candidate, not two studies"
+        },
+        {
+          "line": 76,
+          "text": "per class or validated wall correction. Rheology,crowding,adhesion excluded from ranking"
+        },
+        {
+          "line": 77,
+          "text": "for lack of qualified anchor bytes in this screen. All P08-08 G1-G4 OPEN. Physical"
+        },
+        {
+          "line": 78,
+          "text": "magnetic trajectory/calibration data still unadmitted. Data rights access qualifies"
+        },
+        {
+          "line": 79,
+          "text": "inspection/reproduction preparation, not physiological transfer or algorithm novelty."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-us-integrity/u1/CLOSEOUT.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# U1 closeout"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "U1 CLOSED: descriptive bounded annotation-integrity finding only. 21/24 selected"
+        },
+        {
+          "line": 4,
+          "text": "pairs checked valid: 21 five-field YOLO rows, finite, nonnegative-integer class 0,"
+        },
+        {
+          "line": 5,
+          "text": "positive width/height, in-frame corners; zero geometric/structural invalid rows, zero"
+        },
+        {
+          "line": 6,
+          "text": "outside-nc classes. 3 sphere3 pairs unsupported at the frozen 2.4MP decode cap"
+        },
+        {
+          "line": 7,
+          "text": "(header 2,704,928 pixels); originals and labels retained, no replacement, no limit"
+        },
+        {
+          "line": 8,
+          "text": "increase, unscored and not counted clean. 7 numeric-token neighbor frame pairs cross"
+        },
+        {
+          "line": 9,
+          "text": "directory splits with source-prefix to original-video map UNRESOLVED: filename-token"
+        },
+        {
+          "line": 10,
+          "text": "adjacency only, not verified temporal/video adjacency, so directory splits cannot be"
+        },
+        {
+          "line": 11,
+          "text": "treated as independent video validation."
+        },
+        {
+          "line": 12,
+          "text": ""
+        },
+        {
+          "line": 13,
+          "text": "This closeout records NO detection or tracking performance claim, NO leakage-free"
+        },
+        {
+          "line": 14,
+          "text": "validation, NO dynamics inference, NO bottleneck finding and NO invention credit."
+        },
+        {
+          "line": 15,
+          "text": "Sampled checks are not whole-tree conclusions; the 23,668 image / 23,679 label-dir"
+        },
+        {
+          "line": 16,
+          "text": "counters and zero unpaired-image-stem result (11 apparent extras = labels.json"
+        },
+        {
+          "line": 17,
+          "text": "metadata, enumerated in integrity.json/paths.txt) describe the pinned GitHub path"
+        },
+        {
+          "line": 18,
+          "text": "inventory only. Publisher GPL assertion and commercial-contact note are retained as"
+        },
+        {
+          "line": 19,
+          "text": "source evidence, not legal clearance or permissive relicensing. The GitHub retrieval"
+        },
+        {
+          "line": 20,
+          "text": "route is not proven DataPort-identical. Tracking comma-delimited schema/alignment"
+        },
+        {
+          "line": 21,
+          "text": "unadmitted; no frame rate, dropout, physical-scale or dynamics claims."
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": "Reviewed chain eaeffadb->7402f989->b38503a8 (prereg, freeze, fix) published FF"
+        },
+        {
+          "line": 24,
+          "text": "earlier; results chain f87edf7->572376dd reviewed PASS-WITH-NOTES and published FF"
+        },
+        {
+          "line": 25,
+          "text": "with clean base/ancestry checks and HTTPS tip/tree readback (tip 572376dd). Final"
+        },
+        {
+          "line": 26,
+          "text": "reviewer independently replayed from retained bytes: integrity.json, inputs.json and"
+        },
+        {
+          "line": 27,
+          "text": "both overlay PNGs regenerated byte-identically; all 58 originals match declared"
+        },
+        {
+          "line": 28,
+          "text": "hashes AND original pinned Git blob OIDs; all 21 boxes validated by independent"
+        },
+        {
+          "line": 29,
+          "text": "Fraction controls; whole-tree counters verified. No required changes remain for the"
+        },
+        {
+          "line": 30,
+          "text": "scoped descriptive integrity finding. All source and scope limits in PREREG.md,"
+        },
+        {
+          "line": 31,
+          "text": "FREEZE.md and RESULTS.md remain. No follow-up process running; next work needs"
+        },
+        {
+          "line": 32,
+          "text": "separate admission."
+        },
+        {
+          "line": 33,
+          "text": ""
+        },
+        {
+          "line": 34,
+          "text": "USMicroMagSet dataset (original GitHub source route):"
+        },
+        {
+          "line": 35,
+          "text": "https://github.com/Kivo0/UsMicroMagSet"
+        },
+        {
+          "line": 36,
+          "text": "Pinned source commit: 1a0364c7509468dde0df86b4a82a8d8546b45818"
+        },
+        {
+          "line": 37,
+          "text": ""
+        },
+        {
+          "line": 38,
+          "text": "Review ledger (not the dataset source):"
+        },
+        {
+          "line": 39,
+          "text": "https://github.com/uditakankananonononono/science-program-ledger/tree/p08-s1-freeze"
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-us-tracking-admission/u2/RESULTS.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# U2 real-source admission result (review pending)"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Executed published freeze a772baaed107cecd65e21d24689b36af5e232973 exactly;"
+        },
+        {
+          "line": 4,
+          "text": "no code/selection/rule change. 23/23 fixed source files retrieved, all original"
+        },
+        {
+          "line": 5,
+          "text": "Git blob OIDs AND sizes verified before analysis; 1,430,238 received bytes."
+        },
+        {
+          "line": 6,
+          "text": "All16 selected images decode 1920x1080, single frame, within frozen limits."
+        },
+        {
+          "line": 7,
+          "text": "No access or decode loss. All7 static files decode strict UTF-8."
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "Groundtruth has 1,744 Python splitlines rows (blank-inclusive numbering); no VT/FF"
+        },
+        {
+          "line": 10,
+          "text": "in these static sources. First16 have zero blank/invalid numeric rows and all pass"
+        },
+        {
+          "line": 11,
+          "text": "conditional geometry under hypothetical pixel/top-left row-n/frame-n assumptions."
+        },
+        {
+          "line": 12,
+          "text": "These are NOT 16 admitted tracking annotations. Full_occlusion and out_of_view"
+        },
+        {
+          "line": 13,
+          "text": "are each ONE line containing 1,744 literal-zero comma tokens, not 1,744 lines."
+        },
+        {
+          "line": 14,
+          "text": "Meanings/polarities/frame binding remain unresolved. nlp L1 is source caption only."
+        },
+        {
+          "line": 15,
+          "text": ""
+        },
+        {
+          "line": 16,
+          "text": "Manual EVIDENCE_LEDGER.md inspects all7 static files and separates each required"
+        },
+        {
+          "line": 17,
+          "text": "row/frame and coordinate item with exact Python splitlines citations. No explicit"
+        },
+        {
+          "line": 18,
+          "text": "row1->frame1, ordering/start/drop behavior, original-frame provenance, cube-1 units,"
+        },
+        {
+          "line": 19,
+          "text": "x/y/top-left/center or origin binding was established. Image dimensions are observed"
+        },
+        {
+          "line": 20,
+          "text": "but not a coordinate calibration. Module generic drawing and ambiguous number+i"
+        },
+        {
+          "line": 21,
+          "text": "consumer do not bind cube-1. Counts/plausibility cannot replace source evidence."
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": "Final proposed classification: UNRESOLVED -> reject tracking/dynamics use, based"
+        },
+        {
+          "line": 24,
+          "text": "on manual evidence, not merely hardcoded machine output. No positive binding or"
+        },
+        {
+          "line": 25,
+          "text": "refreeze proposed. No tracker/identity/time/dynamics/performance/bottleneck/invention"
+        },
+        {
+          "line": 26,
+          "text": "or rights-clearance claim. GPL assertion/commercial note retained as evidence only;"
+        },
+        {
+          "line": 27,
+          "text": "GitHub route not proven DataPort-identical. No fixed-set expansion or source rescue."
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "Retained-source replay regenerated all7 top-level outputs byte-identically:"
+        },
+        {
+          "line": 30,
+          "text": "inputs/static_provenance/admission/manifest JSON and three fixed PNGs. Three actual"
+        },
+        {
+          "line": 31,
+          "text": "800x620 source/raw-candidate figures (IDs1/8/16) inspected: readable labels,"
+        },
+        {
+          "line": 32,
+          "text": "UNRESOLVED header, raw row separate, no box drawn. No figure picked after outcome."
+        },
+        {
+          "line": 33,
+          "text": "Pixels and retained bytes go to independent review before closeout/publication."
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": "Transport40s check is between reads with20s socket timeout, not hard mid-read bound."
+        },
+        {
+          "line": 36,
+          "text": "CPU/RAM bounds stated, not enforced quotas; no measured peak-memory claim. Missing"
+        },
+        {
+          "line": 37,
+          "text": "any23 identities would be valid early reject+manifest; none missing in this run."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    },
+    "doc290/algorithm_units/p08-minimal-policy/m1/RESULTS.md": {
+      "numbering": "Python str.splitlines 1-based, blank-inclusive; VT/FF boundaries",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# M1 bounded source admission result, review pending"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Published freeze cd4a930 executed unchanged after prereg1da85dd. All11 fixed sizes"
+        },
+        {
+          "line": 4,
+          "text": "and pinned Git blob OIDs verified before text/AST analysis;113,447bytes. No access/"
+        },
+        {
+          "line": 5,
+          "text": "identity/UTF8/AST loss. Four Python files statically parsed, no author code execution,"
+        },
+        {
+          "line": 6,
+          "text": "imports/literal_eval/dependency install/model creation/training/compile/hardware I/O."
+        },
+        {
+          "line": 7,
+          "text": "Retained replay inputs/structural/manifest byte-identical."
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "Manual EVIDENCE_LEDGER.md inspects all11 with exact raw splitlines citations,"
+        },
+        {
+          "line": 10,
+          "text": "observations/actions/preprocessing,host inference vs GPU learning vs coil firmware,"
+        },
+        {
+          "line": 11,
+          "text": "checkpoint local references and declared versus measured budgets distinguished."
+        },
+        {
+          "line": 12,
+          "text": "Endpoint: REJECT policy-compression/invention benchmark on this bounded surface."
+        },
+        {
+          "line": 13,
+          "text": "Trained immutable checkpoint,replay/equal-budget comparator and measured device"
+        },
+        {
+          "line": 14,
+          "text": "budget not recovered/admitted WITHIN FIXED UNIT, no absence claim elsewhere."
+        },
+        {
+          "line": 15,
+          "text": "Arduino apparatus is not established as an onboard swimmer processor. STEP_DURATION,"
+        },
+        {
+          "line": 16,
+          "text": "serial/debug sleeps and coil PWM values are not inference-latency/memory/power budgets."
+        },
+        {
+          "line": 17,
+          "text": ""
+        },
+        {
+          "line": 18,
+          "text": "Source eval comment says deterministic but policy calls model with training=True"
+        },
+        {
+          "line": 19,
+          "text": "and state actor has dropout; semantics not silently repaired or adopted, no observed"
+        },
+        {
+          "line": 20,
+          "text": "behavior claim. Generic architecture is not a recovered trained policy. No simulation,"
+        },
+        {
+          "line": 21,
+          "text": "quantization,distillation/proxy score,invention,physical/clinical benefit or deployment"
+        },
+        {
+          "line": 22,
+          "text": "claim. Root/component licenses are evidence,not import/data/hardware/patent clearance."
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 24,
+          "text": "All static sources zeroVT/FF; raw Python splitlines numbering used, AST parser lines"
+        },
+        {
+          "line": 25,
+          "text": "not silently substituted.40s between20s reads,not mid-read hard deadline;CPU/RAM"
+        },
+        {
+          "line": 26,
+          "text": "stated,not quotas or measured peak. Any failed partial stream would be error,not full"
+        },
+        {
+          "line": 27,
+          "text": "original; none here. No source-set expansion to rescue gate. Text-only output, no"
+        },
+        {
+          "line": 28,
+          "text": "visual/spatial result or closeout yet. Review before results publication."
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0
+    }
+  },
+  "scope": "fixed10 internal documents only; not proof of all code/data/protocols or published chronology",
+  "claims": "No benchmark or numerical validation; no clinical/external rights clearance; document-reported reproduction is not authenticated"
+}

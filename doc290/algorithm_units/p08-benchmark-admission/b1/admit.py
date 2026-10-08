@@ -69,7 +69,7 @@ def run(folder,retained=None):
     if sel['source_commit']!=PIN or len(sel['files'])!=10 or len({r['path'] for r in sel['files']})!=10:raise ValueError('selection pin/count')
     out=Path(folder);out.mkdir(exist_ok=False);sources=out/'sources';sources.mkdir()
     budget=[sel['max_total_source_bytes']];records=[];verified={}
-    # No AST, decode, text split or semantic analysis until all 11 verified.
+    # No AST, decode, text split or semantic analysis until all 10 verified.
     for spec in sel['files']:
         p=spec['path']
         if p.startswith('/') or '..' in PurePosixPath(p).parts:raise ValueError('unsafe path')
