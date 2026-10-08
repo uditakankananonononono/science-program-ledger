@@ -1,0 +1,43 @@
+# R2 amendment2: finite validated-address connection failover
+
+Amendment1ONEidentityfetch failedbeforeHTTPresponse:allDNSaddressespublic,first
+sortedIPv6destinationOSError101Networkisunreachable;validatedlistalsoincludedIPv4.
+Unavailableattemptidentity-stage-amend1/identity.jsonkeptunchanged,result563edbe.
+Nooriginalbytes/noidentity/parser/pixels. This motivates explicit finiteaddress
+failover,not data/endpoint/identity/parserrescue. Reviewbeforeimplementation/use.
+
+## Changes only connection attempt policy
+
+For EACHhop,resolveDNSonce,requireeveryaddressglobal,sortuniquevalidatedpubliclist.
+On CONNECTIONfailuretocurrentpinnedaddress,trynextfromTHATlistinsortedorder.
+Eachaddressonce,no repeats,no re-resolution/no newaddresses. Totalattemptcap equals
+validatedlistlength;listemptyoranynonglobaladdressrejectsbeforeanyrequest. Record
+address+exacterrorforeveryattemptinthehopchain;successfulattemptaddressalso recorded.
+AllattemptspinnedtonumericIP,originalhostSNI/defaultTLSCERT_REQUIRED+hostnamechecking
++Hostunchanged. Noauth/cookies,implicitredirects or automaticretryoutsidefinite list.
+
+Connectionfailover covers socketconnect/networktimeout/TLSconnectionfailure BEFORE
+HTTPrequestbytes sent. Any HTTPrequestwrite/read/status/identityerrorafterconnection
+is stop,not resend onanotheraddress. Certificatefailure may try another validatedIP
+onlywithsamefullTLSverification,neverbypasschecks. Max3redirects/fourthdestinationnot
+requested,loop/Location/URL/DNSguardandfinal200mandatory unchanged. Everynewhopown
+oncevalidatedaddresslist;connectionattemptsrecordedseparatelyfromredirecthops.
+
+## Unchanged
+
+SamefrozenndownloaderendpointTable6.xls5632bytes+MD55865634d32816186133e426c559bcd29,
+anyfailure/mismatchzeroParserPixels. Original302andamend1unavailablerecordsretained,
+newamend2runseparate,no overwrites. Existingfrozenadmit.py/parsermodules/selection,
+staticcachedcell/caps/visualmanualgates untouched. No newsource/LFS/article/alternate
+endpointrescue,formula/macro/linkexecution,kinetics-latencyorassay-anatomyconversion,
+physiology/invention/rightscredit. Conservativeunavailable remainsvalidifalladdresses
+fail. Metadata/originalchecksums unchanged. Nooriginalinterpretationbeforeidentity
+then frozenretainedparser/nativepixels/report/manualledger.
+
+## Executable controls before use
+
+Separatefetch_amend2.py/hashmanifest importsunchangedamend1URL/identityinfrastructure,
+implementsfinitevalidatedaddressconnectionloop. Synthetic:IPv6failsIPv4succeeds;
+allfailrecordall;changingDNSnotusedafterlist;privateaddressrejected;no repeats/newIPs;
+SNI/TLS/Hostunchanged;postconnectrequestfailuredoesNOTfailover;identitymismatchzero
+ParserPixels. Exactcode/testreview+publicationbeforeONEnewamendedidentityfetch.
