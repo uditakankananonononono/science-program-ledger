@@ -80,9 +80,10 @@ def parse(raw,path):
     out={'raw_numbering':'Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates',
         'raw_lines':[{'raw_splitlines_ordinal':i,'text':x} for i,x in enumerate(text.splitlines(),1)],
         'claims':'literal static source/format only; no measurement/model/rights admission'}
-    lines=text.splitlines()
-    if len(lines)==3 and lines[0]=='version https://git-lfs.github.com/spec/v1' and re.fullmatch(r'oid sha256:[0-9a-f]{64}',lines[1]) and re.fullmatch(r'size (0|[1-9][0-9]*)',lines[2]) and text.endswith('\n'):
-        out['format']='git_lfs_pointer_syntax';out['declared_payload_sha256']=lines[1][11:];out['declared_payload_size']=int(lines[2][5:]);out['payload_accessed']=False
+    # Pointer grammar is byte ASCII LF-only, NOT Unicode raw coordinates.
+    pointer=re.fullmatch(rb'version https://git-lfs.github.com/spec/v1\noid sha256:([0-9a-f]{64})\nsize (0|[1-9][0-9]*)\n',raw)
+    if pointer:
+        out['format']='git_lfs_pointer_syntax';out['declared_payload_sha256']=pointer.group(1).decode('ascii');out['declared_payload_size']=int(pointer.group(2));out['payload_accessed']=False
     elif text.startswith('version https://git-lfs.github.com/spec/'):
         out['format']='unresolved_pointer_like';out['payload_accessed']=False
     else:out['format']='utf8_text_unclassified'

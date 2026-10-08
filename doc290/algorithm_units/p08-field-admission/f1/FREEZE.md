@@ -31,3 +31,8 @@ Chronology document-reported;replay reproducibility not historical ordering.
 
 Run after review/publication: python3 admit.py NEW_OUTPUT_DIRECTORY
 Replay: python3 admit.py NEW_DIRECTORY RETAINED_OUTPUT_DIRECTORY
+
+Reviewer-requested classifier correction before source run: pointer recognition now
+uses explicit ASCII byte LF-only grammar. CRLF is deliberately noncanonical/unresolved,
+as are VT/FF/U+2028/NEL separators. Raw Unicode splitlines inventory unchanged and
+separate from pointer syntax. Declared fields emitted only for exact LF grammar.

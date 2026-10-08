@@ -29,6 +29,9 @@ class Tests(unittest.TestCase):
     def test_pointers(self):
         p='version https://git-lfs.github.com/spec/v1\noid sha256:'+'a'*64+'\nsize 999999999999\n'
         d=admit.parse(p.encode(),'x.pkl');self.assertEqual(d['declared_payload_size'],999999999999);self.assertFalse(d['payload_accessed'])
+        for separator in ['\v','\f','\u2028','\u0085','\r\n']:
+            bad=p.replace('\n',separator,2)
+            self.assertEqual(admit.parse(bad.encode(),'x.pkl')['format'],'unresolved_pointer_like')
         for bad in [p.replace('size 999999999999','size -1'),p.replace('size 999999999999','size 01'),p.replace('a'*64,'z'*64),p+'extra\n',p.rstrip('\n')]:
             self.assertEqual(admit.parse(bad.encode(),'x.pkl')['format'],'unresolved_pointer_like')
     def test_notebook(self):
