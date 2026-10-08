@@ -131,3 +131,20 @@ FileNotFoundError (missing path), IsADirectoryError (directory path), and invali
 UTF-8 text decoding. These checks exercise specific file/decoder failure classes;
 permission failures and other OSError subclasses remain untested. No production
 code or optimization-kernel changes in this update.
+
+## V7 binary-mask adjacency ingestion
+
+mask_graph.mask_to_graph builds exact foreground-pixel adjacency for an explicitly
+chosen 4- or 8-neighbor binary mask; graph_payload converts it into runner input.
+35 test methods pass, including 400 pairwise adjacency oracle checks (200 small
+random masks at both connectivities), junction/diagonal cases, bad inputs and an
+end-to-end integrated routing fixture on an extracted chain.
+
+This is not skeletonization or a real vessel graph extraction pipeline. Inputs
+must already be binary; callers supply all edge costs. Edges are bidirectional
+and 8-neighbor diagonal edges use the same supplied cost as orthogonal edges.
+No flow, radius, physical spacing, anatomical turn rules or diagonal correction
+is inferred. IDs are row,column strings. Foreground absence returns an empty
+graph, which cannot satisfy a routing request. Real data ingestion/calibration
+and P08 scientific gates remain unpassed. This is another input component,
+not an additional optimization algorithm or invention.

@@ -10,6 +10,11 @@ test_parallel_edge_witness (test_hardening.HardenedTests) ... ok
 test_bad_inputs (test_integrated.IntegratedTests) ... ok
 test_random_oracle_and_witness (test_integrated.IntegratedTests) ... ok
 test_required_revisit_and_budget (test_integrated.IntegratedTests) ... ok
+test_chain_runner (test_mask_graph.MaskGraphTests) ... ok
+test_diagonal_choice (test_mask_graph.MaskGraphTests) ... ok
+test_invalid (test_mask_graph.MaskGraphTests) ... ok
+test_junction_and_disconnected (test_mask_graph.MaskGraphTests) ... ok
+test_random_pairwise_adjacency_oracle (test_mask_graph.MaskGraphTests) ... ok
 test_budget_tradeoff (test_routing.Tests) ... ok
 test_correlated_scenarios_not_edgewise_worst (test_routing.Tests) ... ok
 test_identity_and_disconnected (test_routing.Tests) ... ok
@@ -30,6 +35,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 30 tests in 0.451s
+Ran 35 tests in 0.443s
 
 OK
