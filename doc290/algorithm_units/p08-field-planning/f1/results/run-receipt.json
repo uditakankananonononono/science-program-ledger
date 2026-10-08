@@ -1,0 +1,24 @@
+{
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.35",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "freeze_commit": "1346a8494e6ce3df046dffbead72eacc0ca85127",
+  "raw_sha256": "23ca39abc4df634662b222e9890136cd27a979c912c622285b574780225d8244",
+  "manifest_hashes": {
+    "f1/protocol.json": "bc2abdbb7852829e94786f8f9e688d6343212152dc3b2daf24776740a91929d6",
+    "f1/compare.py": "f2d85f5edae35da551ae9d4eabab29dcb14b32a2eb77bd0adf3960e25a933c32",
+    "feasibility.py": "f3feb6b5016c83a19d7964888dd49d060a7d10678f9a7ad63a4cd3c33cb96e91",
+    "reduced_terminal.py": "6e0e49df57d6f5c0e8a87c07d528a42455dbf457411acbd8df7be23d814e3ef5"
+  },
+  "wall_seconds": 3.7738496140009374,
+  "max_rss_kib_linux": 106768,
+  "raw_rows": 360,
+  "unique_instances": 120,
+  "post_freeze_behavioral_changes": false,
+  "execution": "Unchanged harness executed once via runpy; timing wrapper external, no code tuning."
+}
