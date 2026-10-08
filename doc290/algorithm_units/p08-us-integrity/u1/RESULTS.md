@@ -21,10 +21,10 @@ and commercial-contact note retained,not legal clearance/permissive relicensing.
 
 Whole pinned GitHub PATH listing83,867entries. Directory counters report23,668image
 paths and23,679label-directory paths. Eleven apparent unpaired 'labels' stems are
-labels.cache files,NOT11missing YOLO annotation files. Frozen inventory implementation
+labels.json metadata files,NOT11missing YOLO annotation files. Frozen inventory implementation
 counts any four-component label-directory entry; interpretation corrected here using
 retained exact paths without changing executable/output. All11are explicitly enumerated
-in integrity.json/paths.txt. After recognizing cache files,zero image stems without
+in integrity.json/paths.txt. After recognizing metadata files,zero image stems without
 matching .txt annotation in this path inventory. No content check of all23,668images
 or labels; counts not the entire40k/DataPort corpus.
 
@@ -68,3 +68,7 @@ Source https://github.com/Kivo0/UsMicroMagSet at pinned commit
 1a0364c7509468dde0df86b4a82a8d8546b45818;
 https://ieee-dataport.org/documents/usmicromagset . Per-file exact observed retrieval
 URLs in inputs.json. Raw sources retain publisher attribution/license text.
+
+Pre-publication self-correction: initial results prose incorrectly called11labels.json
+metadata entries cache files; exact pinned paths show JSON. This follow-up corrects
+only prose,no executable/output/source change or rerun.
