@@ -1,0 +1,140 @@
+[
+  {
+    "dataset": "HRF",
+    "skeleton_sha256": "28dcaa5f68fdf0956bd8922cb883ee7ceb87b376b828e809ebda5faf065060f2",
+    "start": "0,1306",
+    "goal": "1357,219",
+    "query_rule": "lexicographically first anchor; farthest reachable other anchor by independent BFS, lexicographic tie-break",
+    "bfs_steps": 4524,
+    "costs": {
+      "time": 1,
+      "exposure": 0,
+      "scenario_times": [
+        1,
+        2
+      ]
+    },
+    "results": {
+      "budget": {
+        "expanded_steps": 4524,
+        "compressed_edges": 98,
+        "time": 4524,
+        "scenario_totals": null,
+        "worst_time": null
+      },
+      "scenario": {
+        "expanded_steps": 4524,
+        "compressed_edges": 98,
+        "time": null,
+        "scenario_totals": [
+          4524,
+          9048
+        ],
+        "worst_time": 9048
+      },
+      "budget-scenario": {
+        "expanded_steps": 4524,
+        "compressed_edges": 98,
+        "time": null,
+        "scenario_totals": [
+          4524,
+          9048
+        ],
+        "worst_time": 9048
+      }
+    },
+    "scope": "one development anchor pair, artificial integer costs on real pixel topology, not physiology or benchmark win"
+  },
+  {
+    "dataset": "FIVES",
+    "skeleton_sha256": "4cee2e264754727f0b6e52957d6d5413572002d3b5458fd380cd1f3c63b79b04",
+    "start": "1008,1282",
+    "goal": "1048,174",
+    "query_rule": "lexicographically first anchor; farthest reachable other anchor by independent BFS, lexicographic tie-break",
+    "bfs_steps": 1824,
+    "costs": {
+      "time": 1,
+      "exposure": 0,
+      "scenario_times": [
+        1,
+        2
+      ]
+    },
+    "results": {
+      "budget": {
+        "expanded_steps": 1824,
+        "compressed_edges": 56,
+        "time": 1824,
+        "scenario_totals": null,
+        "worst_time": null
+      },
+      "scenario": {
+        "expanded_steps": 1824,
+        "compressed_edges": 56,
+        "time": null,
+        "scenario_totals": [
+          1824,
+          3648
+        ],
+        "worst_time": 3648
+      },
+      "budget-scenario": {
+        "expanded_steps": 1824,
+        "compressed_edges": 56,
+        "time": null,
+        "scenario_totals": [
+          1824,
+          3648
+        ],
+        "worst_time": 3648
+      }
+    },
+    "scope": "one development anchor pair, artificial integer costs on real pixel topology, not physiology or benchmark win"
+  },
+  {
+    "dataset": "FOVEA",
+    "skeleton_sha256": "cb680a9fae2299f320119ec1ac9fdfd3ebc5f4b48fb2984e4050c7fc2ab00920",
+    "start": "1010,1267",
+    "goal": "656,367",
+    "query_rule": "lexicographically first anchor; farthest reachable other anchor by independent BFS, lexicographic tie-break",
+    "bfs_steps": 1036,
+    "costs": {
+      "time": 1,
+      "exposure": 0,
+      "scenario_times": [
+        1,
+        2
+      ]
+    },
+    "results": {
+      "budget": {
+        "expanded_steps": 1036,
+        "compressed_edges": 34,
+        "time": 1036,
+        "scenario_totals": null,
+        "worst_time": null
+      },
+      "scenario": {
+        "expanded_steps": 1036,
+        "compressed_edges": 34,
+        "time": null,
+        "scenario_totals": [
+          1036,
+          2072
+        ],
+        "worst_time": 2072
+      },
+      "budget-scenario": {
+        "expanded_steps": 1036,
+        "compressed_edges": 34,
+        "time": null,
+        "scenario_totals": [
+          1036,
+          2072
+        ],
+        "worst_time": 2072
+      }
+    },
+    "scope": "one development anchor pair, artificial integer costs on real pixel topology, not physiology or benchmark win"
+  }
+]

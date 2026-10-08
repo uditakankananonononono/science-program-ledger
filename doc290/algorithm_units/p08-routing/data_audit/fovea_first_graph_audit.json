@@ -1,0 +1,31 @@
+{
+  "member": "downloads/FOVEA_masks/FOVEA001_i_ve_1.png",
+  "image_sha256": "ef8f20162d88850a62f02f1d22bcf9d8f888ab2d325639a889b3f3662b048398",
+  "shape": [
+    1080,
+    1920
+  ],
+  "original_shape": [
+    1080,
+    1920
+  ],
+  "foreground_pixels": 31399,
+  "skeleton_pixels": 10964,
+  "components_8_before": 1,
+  "components_8_after": 1,
+  "vertices": 10964,
+  "directed_edges": 22206,
+  "degree_histogram": {
+    "1": 40,
+    "2": 10686,
+    "3": 168,
+    "4": 61,
+    "5": 8,
+    "6": 1
+  },
+  "skeleton_sha256": "cb680a9fae2299f320119ec1ac9fdfd3ebc5f4b48fb2984e4050c7fc2ab00920",
+  "cost_scope": "unit pixel adjacency only; bidirectional, no diagonal correction or flow",
+  "dataset": "FOVEA",
+  "verified_transferred_mask_hashes": 160,
+  "scope": "first development mask only, not full-set QC"
+}
