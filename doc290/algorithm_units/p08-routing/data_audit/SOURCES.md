@@ -102,3 +102,19 @@ HRF, FIVES, FOVEA. It does not certify whole-dataset extraction, anatomical
 fidelity, calibrated flow, independent validation or P08 G2-G4. All inputs are
 exposed development; patient/annotator correlation must be preserved in splits.
 DRIVE/STARE/CHASE stay pending, not declared unavailable.
+
+## Full-set exact-contract QC, frozen result
+
+All 975 supplied masks were processed once by the unchanged extractor:
+HRF 12/15 passed, FIVES 790/800 passed, FOVEA 160/160 passed. Total 962 passed,
+13 rejected. Every rejection was nonbinary pixel values, not component-count
+change; rejected values and image SHA256s recorded separately. Full-set QC run
+is complete but not passed. No mask dropped or threshold relaxed. All accepted
+masks passed component-count equality, which remains limited QC only. The first
+interim incorrectly attributed HRF rejection to components; corrected promptly
+and per-file records preserve the actual reason.
+
+A future binarization rule would be a new development preprocessing protocol,
+not an invisible correction to this frozen result. It requires source-grounded
+meaning of intermediate pixel values and sensitivity analysis. Reprocessing must
+retain original rejection counts and keep new outcomes separately labeled.

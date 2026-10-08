@@ -1,0 +1,26 @@
+{
+  "expected": 975,
+  "processed": 975,
+  "passed": 962,
+  "failed": 13,
+  "full_qc_passed": false,
+  "failure_class": "nonbinary pixel values rejected by exact 0/255 contract",
+  "per_dataset": {
+    "HRF": {
+      "processed": 15,
+      "passed": 12,
+      "failed": 3
+    },
+    "FIVES": {
+      "processed": 800,
+      "passed": 790,
+      "failed": 10
+    },
+    "FOVEA": {
+      "processed": 160,
+      "passed": 160,
+      "failed": 0
+    }
+  },
+  "scope": "development extraction and 8-neighbor component count QC, not anatomical fidelity or scientific validation"
+}
