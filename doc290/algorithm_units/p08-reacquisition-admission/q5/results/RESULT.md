@@ -1,0 +1,21 @@
+# Q5 complete bounded central-directory metadata, member bodies unread
+
+Publishedprereg4f8315ee and repairedfreezeaf782082 precededboundpass1 scan; rejected
+6185f875 retainedanddocumented, neverusedonsource. Wholeidentitybefore/postPASS,
+all304records admittedcentral31772B withcompletefieldcorrespondence/conservative
+minlocaldeclaredspan checks. Inventory261358B SHA256001dc661c90101ef614928ab887fc6b62f9e6f244f16d9d761a51af189e7a932.
+
+Literalnames:300tifs(150with-label/150without-label),2CSVs,1AVI,1extensionlessTrack;
+allmethod0. Raw Data.csv135566B andRaw Data - Tracked.csv189457B candidateALL2CSV
+bodyselection separatelypreregisterable; schema/fields/time/GT/searchcost/trials
+UNREAD/notqualified. Namesnottrialcounts/sensortruth/schema/clock; no bodypeek.
+NoREADME metadataentryinthese304records, scopednotglobaldataabsence.
+
+STOPmetadataresultreviewbeforepublication; NEWfixedmembercontentprereg/freeze before
+ANYentryopen/localheader/CRC/extract/decompress/CSV/image/model/sourceexecution.
+NoRuleA/B/scoring/invention/physiology/rights/integrityauthorship/origincoherencecredit.
+Retainpass1privateintactforreviewerOWNboundedscan. Capsnotheapproof, actualheaders/
+descriptors/memberCRCunverified, centralextra/localextrafalse-rejection andmetadata
+promotionnotfsyncdurabilitycarry. Thisiscompleteboundedrepresentationmetadata only.
+Oneunchangedfrozenlocalreplayinventory+manifestbyte-identical; notindependentorigin/
+sciencevalidation. Reviewerownimplementationconfirmatoryscan remains separate.
