@@ -25,3 +25,5 @@ class ResourceProbeTests(unittest.TestCase):
         self.assertEqual(mocked.call_count,2)
         self.assertEqual(mocked.call_args_list[0].kwargs['timeout'],5)
         self.assertEqual(mocked.call_args_list[1].kwargs['timeout'],5)
+        self.assertEqual(mocked.call_args_list[0].args[0][-2:],['--worker','3'])
+        self.assertEqual(mocked.call_args_list[1].args[0][-2:],['--worker','4'])
