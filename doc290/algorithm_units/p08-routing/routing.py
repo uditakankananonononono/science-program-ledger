@@ -151,18 +151,7 @@ def turn_constrained_route(graph, start, goal, forbidden=(), penalties=None):
     Repeated vertices may be necessary; repeated states are never required.
     """
     validate(graph, start, goal)
-    penalties = {} if penalties is None else dict(penalties)
-    forbidden = set(forbidden)
-    edge_ids = {(v, i): e for v, edges in graph.items() for i, e in enumerate(edges)}
-    for key in forbidden | set(penalties):
-        if not isinstance(key, tuple) or len(key) != 2:
-            raise ValueError('transition must contain two edge IDs')
-        incoming, outgoing = key
-        if incoming not in edge_ids or outgoing not in edge_ids or edge_ids[incoming].target != outgoing[0]:
-            raise ValueError('transition must reference consecutive existing edges')
-    for value in penalties.values():
-        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 0:
-            raise ValueError('turn penalties must be finite and nonnegative')
+    forbidden, penalties = validate_turns(graph, forbidden, penalties)
     # Serial breaks heap ties without comparing None against edge tuples.
     queue = [(0, 0, start, None, (start,), (), 0)]
     distances = {(start, None): 0}
@@ -187,4 +176,68 @@ def turn_constrained_route(graph, start, goal, forbidden=(), penalties=None):
             distances[state] = candidate
             serial += 1
             heapq.heappush(queue, (candidate, serial, e.target, outgoing, path + (e.target,), indices + (index,), turn_cost + penalty))
+    return None
+
+
+def validate_turns(graph, forbidden, penalties):
+    penalties = {} if penalties is None else dict(penalties)
+    forbidden = set(forbidden)
+    edge_ids = {(v, i): e for v, edges in graph.items() for i, e in enumerate(edges)}
+    for key in forbidden | set(penalties):
+        if not isinstance(key, tuple) or len(key) != 2:
+            raise ValueError('transition must contain two edge IDs')
+        incoming, outgoing = key
+        if incoming not in edge_ids or outgoing not in edge_ids or edge_ids[incoming].target != outgoing[0]:
+            raise ValueError('transition must reference consecutive existing edges')
+    for value in penalties.values():
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 0:
+            raise ValueError('turn penalties must be finite and nonnegative')
+    return forbidden, penalties
+
+
+def integrated_route(graph, start, goal, budget, forbidden=(), penalties=None):
+    """Turn-aware minimax scenario time subject to deterministic exposure budget.
+
+    Scalar turn delay is added to every scenario. Exposure is edge-additive only.
+    Standard Pareto labels on incoming-edge states; no new algorithm claim.
+    """
+    validate(graph, start, goal)
+    if isinstance(budget, bool) or not isinstance(budget, (int,float)) or not math.isfinite(budget) or budget < 0:
+        raise ValueError('budget must be finite and nonnegative')
+    forbidden, penalties = validate_turns(graph, forbidden, penalties)
+    lengths = {len(e.scenario_times) for edges in graph.values() for e in edges}
+    if len(lengths) != 1 or not lengths or next(iter(lengths)) == 0:
+        raise ValueError('all edges require the same positive scenario count')
+    zero = (0,) * next(iter(lengths))
+    labels = {(start,None):[(0,*zero)]}
+    queue = [(0,0,0,zero,start,None,(start,),(),0)]
+    serial = 0
+    while queue:
+        worst, _, exposure, totals, node, incoming, path, indices, turn_cost = heapq.heappop(queue)
+        if (exposure,*totals) not in labels[(node,incoming)]:
+            continue
+        if node == goal:
+            return dict(path=list(path), edges=witness(graph,path,indices), exposure=exposure,
+                        scenario_totals=list(totals), worst_time=worst, turn_penalty=turn_cost)
+        for index,e in enumerate(graph[node]):
+            outgoing = (node,index)
+            key = (incoming,outgoing)
+            if incoming is not None and key in forbidden:
+                continue
+            penalty = penalties.get(key,0) if incoming is not None else 0
+            risk = exposure + e.exposure
+            finite_totals(risk)
+            if risk > budget:
+                continue
+            new = tuple(a+b+penalty for a,b in zip(totals,e.scenario_times))
+            finite_totals(*new,turn_cost+penalty)
+            vector = (risk,*new)
+            state = (e.target,outgoing)
+            old_labels = labels.setdefault(state,[])
+            if any(all(a<=b for a,b in zip(old,vector)) for old in old_labels):
+                continue
+            labels[state] = [old for old in old_labels if not all(a<=b for a,b in zip(vector,old))]
+            labels[state].append(vector)
+            serial += 1
+            heapq.heappush(queue,(max(new),serial,risk,new,e.target,outgoing,path+(e.target,),indices+(index,),turn_cost+penalty))
     return None

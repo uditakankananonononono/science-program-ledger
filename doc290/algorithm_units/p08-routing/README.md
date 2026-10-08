@@ -80,3 +80,23 @@ and turn costs also recomputed. Combined with the existing three-unit oracle,
 there are 550 objective comparisons. This is correctness testing, not external
 validation. No performance, invention or clinical claim is made. This unit does
 not yet combine turn constraints with the other units' budget/scenario objectives.
+
+## V5 integrated routing
+
+Fifth unit integrates exposure budgets, common-scenario minimax times and explicit
+incoming-edge turn rules. Turn delays are caller-supplied scalars added equally
+to every scenario. Exposure remains deterministic and edge-additive. State is
+(vertex, incoming edge); Pareto labels retain exposure and all scenario totals.
+This composes standard methods, not a demonstrated algorithm invention.
+
+19 test methods pass. Added 150 exact objective comparisons to an independent
+expanded-state exhaustive oracle and 150 equivalence checks against the earlier
+budgeted-scenario unit when turns are absent. Earlier oracle checks remain:
+700 total independent-oracle objective comparisons plus 150 internal equivalence
+checks. Returned edge, exposure, scenario and turn totals are recomputed in the
+new randomized tests. A fixture requires revisiting a vertex and shows budget
+infeasibility when that revisit cannot be afforded.
+
+Scientific data ingestion, physiological calibration, performance evaluation and
+prior-art investigation of any proposed invention remain outstanding. Synthetic
+correctness checks are not scientific gate completion or medical validation.
