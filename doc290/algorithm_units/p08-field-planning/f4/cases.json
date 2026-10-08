@@ -1,0 +1,1040 @@
+[
+  {
+    "expected": "REACHABLE",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "R1",
+    "witness": {
+      "integrals": [
+        "1/2",
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "R1:outbox",
+    "witness": {
+      "integrals": [
+        10,
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "R1:terminal",
+    "witness": {
+      "integrals": [
+        0,
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "R1:shape",
+    "witness": {
+      "integrals": [
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "R1:bool",
+    "witness": {
+      "integrals": [
+        true,
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "UNREACHABLE",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        -1
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R2",
+    "witness": {
+      "direction": [
+        1,
+        -1
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        -1
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R2:opposite",
+    "witness": {
+      "direction": [
+        -1,
+        1
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        -1
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R2:zero",
+    "witness": {
+      "direction": [
+        0,
+        0
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        -1
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R2:shape",
+    "witness": {
+      "direction": [
+        1
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        -1
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R2:float",
+    "witness": {
+      "direction": [
+        1.0,
+        -1
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "UNREACHABLE",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        0
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R3",
+    "witness": {
+      "direction": [
+        2,
+        -1
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        0
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R3:opposite",
+    "witness": {
+      "direction": [
+        -2,
+        1
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        0
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R3:zero",
+    "witness": {
+      "direction": [
+        0,
+        0
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        0
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R3:shape",
+    "witness": {
+      "direction": [
+        2
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "target": [
+        1,
+        0
+      ],
+      "x": [
+        0,
+        0
+      ]
+    },
+    "name": "R3:float",
+    "witness": {
+      "direction": [
+        1.0,
+        -1
+      ],
+      "kind": "separator"
+    }
+  },
+  {
+    "expected": "REACHABLE",
+    "model": {
+      "B": [
+        [
+          1,
+          2
+        ]
+      ],
+      "dt": [
+        "1/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "previous": [
+        "1/2",
+        0
+      ],
+      "slew": [
+        1,
+        1
+      ],
+      "target": [
+        "3/2"
+      ],
+      "x": [
+        1
+      ]
+    },
+    "name": "R4",
+    "witness": {
+      "integrals": [
+        "1/4",
+        "1/8"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          2
+        ]
+      ],
+      "dt": [
+        "1/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "previous": [
+        "1/2",
+        0
+      ],
+      "slew": [
+        1,
+        1
+      ],
+      "target": [
+        "3/2"
+      ],
+      "x": [
+        1
+      ]
+    },
+    "name": "R4:outbox",
+    "witness": {
+      "integrals": [
+        10,
+        "1/8"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          2
+        ]
+      ],
+      "dt": [
+        "1/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "previous": [
+        "1/2",
+        0
+      ],
+      "slew": [
+        1,
+        1
+      ],
+      "target": [
+        "3/2"
+      ],
+      "x": [
+        1
+      ]
+    },
+    "name": "R4:terminal",
+    "witness": {
+      "integrals": [
+        0,
+        "1/8"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          2
+        ]
+      ],
+      "dt": [
+        "1/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "previous": [
+        "1/2",
+        0
+      ],
+      "slew": [
+        1,
+        1
+      ],
+      "target": [
+        "3/2"
+      ],
+      "x": [
+        1
+      ]
+    },
+    "name": "R4:shape",
+    "witness": {
+      "integrals": [
+        "1/4"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          2
+        ]
+      ],
+      "dt": [
+        "1/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "previous": [
+        "1/2",
+        0
+      ],
+      "slew": [
+        1,
+        1
+      ],
+      "target": [
+        "3/2"
+      ],
+      "x": [
+        1
+      ]
+    },
+    "name": "R4:bool",
+    "witness": {
+      "integrals": [
+        true,
+        "1/8"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:missing",
+    "witness": null
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1.0
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:floatdt",
+    "witness": {
+      "integrals": [
+        "1/2",
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        -1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:negativetime",
+    "witness": {
+      "integrals": [
+        "1/2",
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:badB",
+    "witness": {
+      "integrals": [
+        "1/2",
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        1
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:signedzero",
+    "witness": {
+      "integrals": [
+        "-0/1",
+        "1/2"
+      ],
+      "kind": "feasible"
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "B": [
+        [
+          1,
+          1
+        ]
+      ],
+      "dt": [
+        1
+      ],
+      "limit": [
+        1,
+        1
+      ],
+      "previous": [
+        0,
+        0
+      ],
+      "slew": [
+        2,
+        2
+      ],
+      "target": [
+        2
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:boundary",
+    "witness": {
+      "direction": [
+        1
+      ],
+      "kind": "separator"
+    }
+  }
+]
