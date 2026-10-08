@@ -12,6 +12,7 @@ test_identity_and_disconnected (test_routing.Tests) ... ok
 test_invalid (test_routing.Tests) ... ok
 test_random_exhaustive_oracle (test_routing.Tests) ... ok
 test_zero_cycles (test_routing.Tests) ... ok
+test_deep_nesting_structured_error (test_runner.RunnerTests) ... ok
 test_duplicate_keys_and_constants (test_runner.RunnerTests) ... ok
 test_five_methods (test_runner.RunnerTests) ... ok
 test_no_silent_ignored_parameters (test_runner.RunnerTests) ... ok
@@ -25,6 +26,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 25 tests in 0.238s
+Ran 26 tests in 0.275s
 
 OK
