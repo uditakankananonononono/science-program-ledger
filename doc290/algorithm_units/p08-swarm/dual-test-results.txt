@@ -1,0 +1,29 @@
+test_candidate_violation_repaired_exactly (test_dual_bounds.DualTests) ... ok
+test_exact_frechet_full_payload_duals (test_dual_bounds.DualTests) ... ok
+test_float_candidates_and_dimension_refused (test_dual_bounds.DualTests) ... ok
+test_loose_candidates_do_not_claim_optimality (test_dual_bounds.DualTests) ... ok
+test_budget_abort_not_truncation (test_independent_delivery.IndependentDeliveryTests) ... ok
+test_budget_bool_and_invalid_probability_refused (test_independent_delivery.IndependentDeliveryTests) ... ok
+test_matches_explicit_joint_enumeration (test_independent_delivery.IndependentDeliveryTests) ... ok
+test_zero_branches_do_not_waste_budget (test_independent_delivery.IndependentDeliveryTests) ... ok
+test_cap_equality_allowed (test_joint_delivery.DeliveryTests) ... ok
+test_duplicate_and_zero_mass (test_joint_delivery.DeliveryTests) ... ok
+test_invalid_states_threshold_mass (test_joint_delivery.DeliveryTests) ... ok
+test_target_success_and_collateral_condition_differ (test_joint_delivery.DeliveryTests) ... ok
+test_bad_mass_and_boolean_outcome (test_joint_payload.JointTests) ... ok
+test_duplicate_outcomes_aggregate (test_joint_payload.JointTests) ... ok
+test_heterogeneous_weights (test_joint_payload.JointTests) ... ok
+test_same_marginals_different_full_payload_success (test_joint_payload.JointTests) ... ok
+test_any_target_threshold (test_marginal_bounds.MarginalTests) ... ok
+test_full_payload_frechet_two_agents (test_marginal_bounds.MarginalTests) ... ok
+test_single_agent_fixed (test_marginal_bounds.MarginalTests) ... ok
+test_size_guard_and_corrupted_mass (test_marginal_bounds.MarginalTests) ... ok
+test_equal_total_payload_success_is_not_any_arrival (test_payload.PayloadTests) ... ok
+test_half_payload_threshold (test_payload.PayloadTests) ... ok
+test_heterogeneous_probabilities_and_weights (test_payload.PayloadTests) ... ok
+test_invalid_refused (test_payload.PayloadTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.025s
+
+OK
