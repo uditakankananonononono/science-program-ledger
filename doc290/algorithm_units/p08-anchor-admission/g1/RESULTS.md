@@ -57,12 +57,12 @@ Explicit±50um plotting walls for ALL five,not individually measured wall estima
 No profile y translation/sign flip there; trajectory branch at cell9 line14 DOES
 flip its y,so do not transfer that transformation to the profiles.
 
-E4: arXiv PDF page8,Supplement 'Channel setup',pdftotext-layout lines474-477:
+E4: arXiv PDF page8,Supplement 'Channel setup',retained splitlines-index lines482-486:
 'quasi-two-dimensional PDMS structure containing12parallel channels of length9mm,
 width100um and height52um'. Fig1 caption says approximately100um width. This is
 nominal/general geometry,not measured wall/origin records for the five PIV tables.
 
-E5: arXiv PDF page9,Supplement 'Particle Image Velocimetry',text lines543-550:
+E5: arXiv PDF page9,Supplement 'Particle Image Velocimetry',retained splitlines-index lines550-558:
 'open-source MATLAB module PIVlab'; 'flow field grid spacing was5x5px2 at a
 magnification of40x (Interrogation area:Pass1:24,pass2:16and pass3:10),yielding
 a spatial resolution of approximately2.5x2.5um2. Wall slip below this length scale
@@ -99,3 +99,8 @@ nominal100um width or plausible5.42um grid steps are insufficient. No owner/cont
 action or raw-data request underway. No new residuals/refits/retuning/method comparison.
 P1 mismatch is measured-but-unattributed,not dismissed or promoted to missing physics,
 wall slip,invention,voltage-effect evidence or a completed P08 scientific gate.
+
+Citation correction after review: original report mixed UNIX newline numbering with
+Python splitlines numbering,which also treats PDF form feeds as line breaks. Retained
+excerpts now explicitly specify splitlines-index convention and include full PIVlab/
+grid statement. No source content or classification changed; no computation performed.
