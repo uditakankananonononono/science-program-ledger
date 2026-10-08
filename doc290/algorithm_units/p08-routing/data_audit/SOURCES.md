@@ -107,8 +107,8 @@ DRIVE/STARE/CHASE stay pending, not declared unavailable.
 
 All 975 supplied masks were processed once by the unchanged extractor:
 HRF 12/15 passed, FIVES 790/800 passed, FOVEA 160/160 passed. Total 962 passed,
-13 rejected. Every rejection was nonbinary pixel values, not component-count
-change; rejected values and image SHA256s recorded separately. Full-set QC run
+13 rejected. HRF rejections were nonbinary grayscale values; FIVES rejections were unsupported
+RGBA shape despite exact binary channel values. No component-count failures; rejected values and image SHA256s recorded separately. Full-set QC run
 is complete but not passed. No mask dropped or threshold relaxed. All accepted
 masks passed component-count equality, which remains limited QC only. The first
 interim incorrectly attributed HRF rejection to components; corrected promptly
