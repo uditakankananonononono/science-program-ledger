@@ -1,0 +1,60 @@
+plt.rcdefaults()
+plt.style.use(mplstyle)
+fig,ax = plt.subplots(1,1,figsize=(2.8,5))
+spac=6
+
+volt_props=dict(width=15/r0,head_length=25/r0,head_width=25/r0,lw=0, length_includes_head=False,color='#dd1133')
+poiss_props=dict(width=15/r0,head_length=25/r0,head_width=25/r0,lw=0, length_includes_head=False,color='#3311dd')
+
+axpoiss=ax.inset_axes([25.5,20-spac/2,spac,spac], transform=ax.transData)
+ticks,ticklabels=[],[]
+volts=[1,2,3,4,5]
+
+for V in range(len(volts)):
+    traj = np.loadtxt('Fig3/Poiseuille_E_traj_%dV.txt'%volts[V])*np.array([1/r0,-1/r0,1/v0,1])
+    prof = np.loadtxt('Fig3/Poiseuille_E0V_flowprofile_%dV.txt'%volts[V])*np.array([1/r0,1/v0])
+    axpoiss.plot(prof[:,1],prof[:,0], '.', c=voltmap(volts[V]/5.), markeredgewidth=0,ms=4)
+    sc=ax.scatter(traj[:,1],traj[:,0]+20-spac*V,c=traj[:,-1],s=1.5,cmap=voltmap,vmin=0,vmax=5,rasterized=True)
+    ticks+=[20-spac*V+2,20-spac*V,20-spac*V-2]
+    ticklabels+=['','0','']
+    ax.axhline(20-spac*V-spac/2, ls='-.', c='k', lw=.5)
+    ax.axhspan(50/r0+20-spac*V,20-spac*V+spac/2,color="#"+"d"*6,lw=0, hatch='/')
+    ax.axhspan(-50/r0+20-spac*V,20-spac*V-spac/2,color="#"+"d"*6,lw=0)
+
+axpoiss.set_ylim((-spac/2,spac/2))
+axpoiss.axhspan(50/r0,spac/2,color="#"+"b"*6)
+axpoiss.axhspan(-50/r0,-spac/2,color="#"+"b"*6)
+axpoiss.set_xlim((0,0.5))
+axpoiss.invert_xaxis()
+axpoiss.set_yticks((-2,0,2))
+axpoiss.set_yticks([])
+axpoiss.set_xticks((0,0.5))
+   
+ax.set_xlim((0,500/r0))
+ax.set_ylim((ticks[-2]-spac/2, ticks[1]+spac/2))
+ax.set_aspect(1)
+mid=int(len(ticks)/2)
+ticklabels[mid-1:mid+2]=['-2','0','2']
+ax.set_yticks(ticks,ticklabels)
+
+axcb=ax.inset_axes([1.4,0.9,.5,.04],transform=ax.transAxes)
+cb=fig.colorbar(sc, cax=axcb,label=r'$U$ (V)',orientation='horizontal')
+cb.set_ticks(np.linspace(.5,5.5,6)*5/6,labels='012345',fontsize='small')
+
+ax.text(16,np.max(ticks)-3.5,r'$\mathbf{E}$', verticalalignment='center',horizontalalignment='right',fontsize='large')
+ax.arrow(16.2,np.max(ticks)-3.5, 1,0, **volt_props)
+
+ax.text(21.2,np.max(ticks)-3.5,r'$\mathbf{u}_f$', verticalalignment='center',horizontalalignment='left',fontsize='large')
+ax.arrow(21,np.max(ticks)-3.5, -1,0, **poiss_props)
+
+axcb.yaxis.set_ticks_position('left')
+axcb.yaxis.set_label_position('left')
+axcb.set_facecolor('white')
+axcb.tick_params(axis="x", direction='out', length=2,pad=1)    
+axpoiss.set_xlabel(r'$\bar{u}_f$',labelpad=-11,fontsize='large')
+
+ax.set_ylabel(r'$\bar{y}$',fontsize='large')
+ax.set_xlabel(r'$\bar{x}$',fontsize='large')
+ax.text(-.14,0.96,r'\textbf{(a)}', transform=ax.transAxes)
+if savefigs: 
+    plt.savefig('figures/Fig3a.svg',dpi=200,transparent=False,bbox_inches='tight')    
