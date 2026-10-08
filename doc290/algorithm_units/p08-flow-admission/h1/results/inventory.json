@@ -1,0 +1,4523 @@
+{
+  "outcome": "manual waveform binding ledger required",
+  "files": {
+    "Volume passing.csv": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,VT/FF boundaries",
+      "csv_numbering": "reader.line_num physical CR/LF/CRLF lines,NOT raw_splitlines ordinals",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "\ufeffDwell time (sec),\u03bcL,\u03bcL,\u03bcL,\u03bcL,\u03bcL,\u03bcL,\u03bcL,\u03bcL,\u03bcL"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "60,31,33,30,41,30,30,39,40,42"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "120,49,56,57,50,40,42,45,51,47"
+        },
+        {
+          "raw_splitlines_ordinal": 4,
+          "text": "180,70,64,65,67,49,52,56,73,58"
+        },
+        {
+          "raw_splitlines_ordinal": 5,
+          "text": "240,85,72,76,76,67,60,72,80,75"
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0,
+      "rows": [
+        {
+          "csv_record_ordinal": 1,
+          "csv_physical_start_line": 1,
+          "csv_physical_end_line": 1,
+          "fields": [
+            "\ufeffDwell time (sec)",
+            "\u03bcL",
+            "\u03bcL",
+            "\u03bcL",
+            "\u03bcL",
+            "\u03bcL",
+            "\u03bcL",
+            "\u03bcL",
+            "\u03bcL",
+            "\u03bcL"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 2,
+          "csv_physical_start_line": 2,
+          "csv_physical_end_line": 2,
+          "fields": [
+            "60",
+            "31",
+            "33",
+            "30",
+            "41",
+            "30",
+            "30",
+            "39",
+            "40",
+            "42"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 3,
+          "csv_physical_start_line": 3,
+          "csv_physical_end_line": 3,
+          "fields": [
+            "120",
+            "49",
+            "56",
+            "57",
+            "50",
+            "40",
+            "42",
+            "45",
+            "51",
+            "47"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 4,
+          "csv_physical_start_line": 4,
+          "csv_physical_end_line": 4,
+          "fields": [
+            "180",
+            "70",
+            "64",
+            "65",
+            "67",
+            "49",
+            "52",
+            "56",
+            "73",
+            "58"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 5,
+          "csv_physical_start_line": 5,
+          "csv_physical_end_line": 5,
+          "fields": [
+            "240",
+            "85",
+            "72",
+            "76",
+            "76",
+            "67",
+            "60",
+            "72",
+            "80",
+            "75"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        }
+      ],
+      "syntax_status": "parsed",
+      "semantic_status": "UNRESOLVED; strict CSV syntax is not schema validation"
+    },
+    "WSS.csv": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,VT/FF boundaries",
+      "csv_numbering": "reader.line_num physical CR/LF/CRLF lines,NOT raw_splitlines ordinals",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "\ufeffChannel length,WSS (Pa)"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "0,0.040659"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "0.065344,0.067524"
+        },
+        {
+          "raw_splitlines_ordinal": 4,
+          "text": "0.093765,0.078508"
+        },
+        {
+          "raw_splitlines_ordinal": 5,
+          "text": "0.10569,0.086816"
+        },
+        {
+          "raw_splitlines_ordinal": 6,
+          "text": "0.19123,0.1454"
+        },
+        {
+          "raw_splitlines_ordinal": 7,
+          "text": "0.21306,0.16331"
+        },
+        {
+          "raw_splitlines_ordinal": 8,
+          "text": "0.28746,0.26083"
+        },
+        {
+          "raw_splitlines_ordinal": 9,
+          "text": "0.30478,0.28182"
+        },
+        {
+          "raw_splitlines_ordinal": 10,
+          "text": "0.37642,0.33397"
+        },
+        {
+          "raw_splitlines_ordinal": 11,
+          "text": "0.40592,0.35491"
+        },
+        {
+          "raw_splitlines_ordinal": 12,
+          "text": "0.41391,0.35517"
+        },
+        {
+          "raw_splitlines_ordinal": 13,
+          "text": "0.51559,0.35804"
+        },
+        {
+          "raw_splitlines_ordinal": 14,
+          "text": "0.52462,0.35772"
+        },
+        {
+          "raw_splitlines_ordinal": 15,
+          "text": "0.6113,0.34727"
+        },
+        {
+          "raw_splitlines_ordinal": 16,
+          "text": "0.6797,0.3457"
+        },
+        {
+          "raw_splitlines_ordinal": 17,
+          "text": "0.7469,0.34514"
+        },
+        {
+          "raw_splitlines_ordinal": 18,
+          "text": "0.83002,0.3459"
+        },
+        {
+          "raw_splitlines_ordinal": 19,
+          "text": "0.89427,0.3452"
+        },
+        {
+          "raw_splitlines_ordinal": 20,
+          "text": "0.97626,0.34352"
+        },
+        {
+          "raw_splitlines_ordinal": 21,
+          "text": "1.0477,0.34507"
+        },
+        {
+          "raw_splitlines_ordinal": 22,
+          "text": "1.1212,0.34487"
+        },
+        {
+          "raw_splitlines_ordinal": 23,
+          "text": "1.1971,0.34489"
+        },
+        {
+          "raw_splitlines_ordinal": 24,
+          "text": "1.2717,0.34355"
+        },
+        {
+          "raw_splitlines_ordinal": 25,
+          "text": "1.3501,0.3447"
+        },
+        {
+          "raw_splitlines_ordinal": 26,
+          "text": "1.4217,0.3439"
+        },
+        {
+          "raw_splitlines_ordinal": 27,
+          "text": "1.503,0.34408"
+        },
+        {
+          "raw_splitlines_ordinal": 28,
+          "text": "1.571,0.34415"
+        },
+        {
+          "raw_splitlines_ordinal": 29,
+          "text": "1.655,0.34418"
+        },
+        {
+          "raw_splitlines_ordinal": 30,
+          "text": "1.7261,0.34493"
+        },
+        {
+          "raw_splitlines_ordinal": 31,
+          "text": "1.81,0.34429"
+        },
+        {
+          "raw_splitlines_ordinal": 32,
+          "text": "1.8787,0.34473"
+        },
+        {
+          "raw_splitlines_ordinal": 33,
+          "text": "1.9627,0.34453"
+        },
+        {
+          "raw_splitlines_ordinal": 34,
+          "text": "2.0297,0.34402"
+        },
+        {
+          "raw_splitlines_ordinal": 35,
+          "text": "2.1137,0.34397"
+        },
+        {
+          "raw_splitlines_ordinal": 36,
+          "text": "2.1822,0.34411"
+        },
+        {
+          "raw_splitlines_ordinal": 37,
+          "text": "2.2663,0.3443"
+        },
+        {
+          "raw_splitlines_ordinal": 38,
+          "text": "2.3347,0.3448"
+        },
+        {
+          "raw_splitlines_ordinal": 39,
+          "text": "2.4218,0.34485"
+        },
+        {
+          "raw_splitlines_ordinal": 40,
+          "text": "2.4895,0.34398"
+        },
+        {
+          "raw_splitlines_ordinal": 41,
+          "text": "2.5746,0.34414"
+        },
+        {
+          "raw_splitlines_ordinal": 42,
+          "text": "2.6444,0.34573"
+        },
+        {
+          "raw_splitlines_ordinal": 43,
+          "text": "2.7276,0.34514"
+        },
+        {
+          "raw_splitlines_ordinal": 44,
+          "text": "2.7965,0.3442"
+        },
+        {
+          "raw_splitlines_ordinal": 45,
+          "text": "2.8812,0.34413"
+        },
+        {
+          "raw_splitlines_ordinal": 46,
+          "text": "2.9501,0.34364"
+        },
+        {
+          "raw_splitlines_ordinal": 47,
+          "text": "3.0374,0.34375"
+        },
+        {
+          "raw_splitlines_ordinal": 48,
+          "text": "3.101,0.34314"
+        },
+        {
+          "raw_splitlines_ordinal": 49,
+          "text": "3.1905,0.34431"
+        },
+        {
+          "raw_splitlines_ordinal": 50,
+          "text": "3.2534,0.34555"
+        },
+        {
+          "raw_splitlines_ordinal": 51,
+          "text": "3.3327,0.34673"
+        },
+        {
+          "raw_splitlines_ordinal": 52,
+          "text": "3.3935,0.35265"
+        },
+        {
+          "raw_splitlines_ordinal": 53,
+          "text": "3.4382,0.35831"
+        },
+        {
+          "raw_splitlines_ordinal": 54,
+          "text": "3.4949,0.36536"
+        },
+        {
+          "raw_splitlines_ordinal": 55,
+          "text": "3.5479,0.37148"
+        },
+        {
+          "raw_splitlines_ordinal": 56,
+          "text": "3.6594,0.41897"
+        },
+        {
+          "raw_splitlines_ordinal": 57,
+          "text": "3.6849,0.42572"
+        },
+        {
+          "raw_splitlines_ordinal": 58,
+          "text": "3.6998,0.4333"
+        },
+        {
+          "raw_splitlines_ordinal": 59,
+          "text": "3.8092,0.47841"
+        },
+        {
+          "raw_splitlines_ordinal": 60,
+          "text": "3.85,0.50596"
+        },
+        {
+          "raw_splitlines_ordinal": 61,
+          "text": "3.8927,0.52515"
+        },
+        {
+          "raw_splitlines_ordinal": 62,
+          "text": "3.9584,0.56662"
+        },
+        {
+          "raw_splitlines_ordinal": 63,
+          "text": "3.9813,0.57584"
+        },
+        {
+          "raw_splitlines_ordinal": 64,
+          "text": "4.058,0.57754"
+        },
+        {
+          "raw_splitlines_ordinal": 65,
+          "text": "4.1323,0.59616"
+        },
+        {
+          "raw_splitlines_ordinal": 66,
+          "text": "4.21,0.59739"
+        },
+        {
+          "raw_splitlines_ordinal": 67,
+          "text": "4.3006,0.59789"
+        },
+        {
+          "raw_splitlines_ordinal": 68,
+          "text": "4.3738,0.59972"
+        },
+        {
+          "raw_splitlines_ordinal": 69,
+          "text": "4.4546,0.59369"
+        },
+        {
+          "raw_splitlines_ordinal": 70,
+          "text": "4.5249,0.59628"
+        },
+        {
+          "raw_splitlines_ordinal": 71,
+          "text": "4.6015,0.59642"
+        },
+        {
+          "raw_splitlines_ordinal": 72,
+          "text": "4.673,0.59627"
+        },
+        {
+          "raw_splitlines_ordinal": 73,
+          "text": "4.7514,0.59615"
+        },
+        {
+          "raw_splitlines_ordinal": 74,
+          "text": "4.826,0.59642"
+        },
+        {
+          "raw_splitlines_ordinal": 75,
+          "text": "4.9023,0.59628"
+        },
+        {
+          "raw_splitlines_ordinal": 76,
+          "text": "4.9765,0.59645"
+        },
+        {
+          "raw_splitlines_ordinal": 77,
+          "text": "5.052,0.59653"
+        },
+        {
+          "raw_splitlines_ordinal": 78,
+          "text": "5.1262,0.59704"
+        },
+        {
+          "raw_splitlines_ordinal": 79,
+          "text": "5.2019,0.59714"
+        },
+        {
+          "raw_splitlines_ordinal": 80,
+          "text": "5.2761,0.59704"
+        },
+        {
+          "raw_splitlines_ordinal": 81,
+          "text": "5.3518,0.59687"
+        },
+        {
+          "raw_splitlines_ordinal": 82,
+          "text": "5.4261,0.59684"
+        },
+        {
+          "raw_splitlines_ordinal": 83,
+          "text": "5.5023,0.59658"
+        },
+        {
+          "raw_splitlines_ordinal": 84,
+          "text": "5.577,0.59649"
+        },
+        {
+          "raw_splitlines_ordinal": 85,
+          "text": "5.6512,0.59627"
+        },
+        {
+          "raw_splitlines_ordinal": 86,
+          "text": "5.726,0.59634"
+        },
+        {
+          "raw_splitlines_ordinal": 87,
+          "text": "5.8026,0.59708"
+        },
+        {
+          "raw_splitlines_ordinal": 88,
+          "text": "5.8766,0.59722"
+        },
+        {
+          "raw_splitlines_ordinal": 89,
+          "text": "5.9532,0.59824"
+        },
+        {
+          "raw_splitlines_ordinal": 90,
+          "text": "6.0261,0.59808"
+        },
+        {
+          "raw_splitlines_ordinal": 91,
+          "text": "6.103,0.59883"
+        },
+        {
+          "raw_splitlines_ordinal": 92,
+          "text": "6.1753,0.59822"
+        },
+        {
+          "raw_splitlines_ordinal": 93,
+          "text": "6.2532,0.59738"
+        },
+        {
+          "raw_splitlines_ordinal": 94,
+          "text": "6.3272,0.59774"
+        },
+        {
+          "raw_splitlines_ordinal": 95,
+          "text": "6.401,0.5994"
+        },
+        {
+          "raw_splitlines_ordinal": 96,
+          "text": "6.4751,0.60016"
+        },
+        {
+          "raw_splitlines_ordinal": 97,
+          "text": "6.5489,0.59735"
+        },
+        {
+          "raw_splitlines_ordinal": 98,
+          "text": "6.623,0.59534"
+        },
+        {
+          "raw_splitlines_ordinal": 99,
+          "text": "6.6966,0.59694"
+        },
+        {
+          "raw_splitlines_ordinal": 100,
+          "text": "6.7749,0.60316"
+        },
+        {
+          "raw_splitlines_ordinal": 101,
+          "text": "6.8445,0.60614"
+        },
+        {
+          "raw_splitlines_ordinal": 102,
+          "text": "6.9137,0.60466"
+        },
+        {
+          "raw_splitlines_ordinal": 103,
+          "text": "7.0003,0.6428"
+        },
+        {
+          "raw_splitlines_ordinal": 104,
+          "text": "7.0488,0.64019"
+        },
+        {
+          "raw_splitlines_ordinal": 105,
+          "text": "7.0959,0.69304"
+        },
+        {
+          "raw_splitlines_ordinal": 106,
+          "text": "7.1628,0.71548"
+        },
+        {
+          "raw_splitlines_ordinal": 107,
+          "text": "7.2757,0.94889"
+        },
+        {
+          "raw_splitlines_ordinal": 108,
+          "text": "7.285,0.95133"
+        },
+        {
+          "raw_splitlines_ordinal": 109,
+          "text": "7.2889,0.9526"
+        },
+        {
+          "raw_splitlines_ordinal": 110,
+          "text": "7.4391,1.1996"
+        },
+        {
+          "raw_splitlines_ordinal": 111,
+          "text": "7.4407,1.201"
+        },
+        {
+          "raw_splitlines_ordinal": 112,
+          "text": "7.5767,1.3688"
+        },
+        {
+          "raw_splitlines_ordinal": 113,
+          "text": "7.5768,1.3688"
+        },
+        {
+          "raw_splitlines_ordinal": 114,
+          "text": "7.7253,1.362"
+        },
+        {
+          "raw_splitlines_ordinal": 115,
+          "text": "7.7253,1.362"
+        },
+        {
+          "raw_splitlines_ordinal": 116,
+          "text": "7.875,1.3672"
+        },
+        {
+          "raw_splitlines_ordinal": 117,
+          "text": "7.8751,1.3672"
+        },
+        {
+          "raw_splitlines_ordinal": 118,
+          "text": "8.025,1.3628"
+        },
+        {
+          "raw_splitlines_ordinal": 119,
+          "text": "8.025,1.3628"
+        },
+        {
+          "raw_splitlines_ordinal": 120,
+          "text": "8.175,1.3633"
+        },
+        {
+          "raw_splitlines_ordinal": 121,
+          "text": "8.175,1.3633"
+        },
+        {
+          "raw_splitlines_ordinal": 122,
+          "text": "8.325,1.3621"
+        },
+        {
+          "raw_splitlines_ordinal": 123,
+          "text": "8.325,1.3621"
+        },
+        {
+          "raw_splitlines_ordinal": 124,
+          "text": "8.475,1.3627"
+        },
+        {
+          "raw_splitlines_ordinal": 125,
+          "text": "8.475,1.3627"
+        },
+        {
+          "raw_splitlines_ordinal": 126,
+          "text": "8.625,1.3617"
+        },
+        {
+          "raw_splitlines_ordinal": 127,
+          "text": "8.625,1.3617"
+        },
+        {
+          "raw_splitlines_ordinal": 128,
+          "text": "8.775,1.3626"
+        },
+        {
+          "raw_splitlines_ordinal": 129,
+          "text": "8.775,1.3626"
+        },
+        {
+          "raw_splitlines_ordinal": 130,
+          "text": "8.925,1.3622"
+        },
+        {
+          "raw_splitlines_ordinal": 131,
+          "text": "8.925,1.3622"
+        },
+        {
+          "raw_splitlines_ordinal": 132,
+          "text": "9.075,1.3624"
+        },
+        {
+          "raw_splitlines_ordinal": 133,
+          "text": "9.075,1.3624"
+        },
+        {
+          "raw_splitlines_ordinal": 134,
+          "text": "9.225,1.3621"
+        },
+        {
+          "raw_splitlines_ordinal": 135,
+          "text": "9.225,1.3621"
+        },
+        {
+          "raw_splitlines_ordinal": 136,
+          "text": "9.375,1.3626"
+        },
+        {
+          "raw_splitlines_ordinal": 137,
+          "text": "9.375,1.3626"
+        },
+        {
+          "raw_splitlines_ordinal": 138,
+          "text": "9.525,1.3618"
+        },
+        {
+          "raw_splitlines_ordinal": 139,
+          "text": "9.525,1.3618"
+        },
+        {
+          "raw_splitlines_ordinal": 140,
+          "text": "9.675,1.3628"
+        },
+        {
+          "raw_splitlines_ordinal": 141,
+          "text": "9.675,1.3628"
+        },
+        {
+          "raw_splitlines_ordinal": 142,
+          "text": "9.825,1.3619"
+        },
+        {
+          "raw_splitlines_ordinal": 143,
+          "text": "9.825,1.3619"
+        },
+        {
+          "raw_splitlines_ordinal": 144,
+          "text": "9.975,1.3633"
+        },
+        {
+          "raw_splitlines_ordinal": 145,
+          "text": "9.975,1.3633"
+        },
+        {
+          "raw_splitlines_ordinal": 146,
+          "text": "10.064,1.3623"
+        },
+        {
+          "raw_splitlines_ordinal": 147,
+          "text": "10.125,1.3616"
+        },
+        {
+          "raw_splitlines_ordinal": 148,
+          "text": "10.125,1.3616"
+        },
+        {
+          "raw_splitlines_ordinal": 149,
+          "text": "10.275,1.3572"
+        },
+        {
+          "raw_splitlines_ordinal": 150,
+          "text": "10.275,1.3572"
+        },
+        {
+          "raw_splitlines_ordinal": 151,
+          "text": "10.423,1.3719"
+        },
+        {
+          "raw_splitlines_ordinal": 152,
+          "text": "10.423,1.3719"
+        },
+        {
+          "raw_splitlines_ordinal": 153,
+          "text": "10.43,1.3635"
+        },
+        {
+          "raw_splitlines_ordinal": 154,
+          "text": "10.56,1.2047"
+        },
+        {
+          "raw_splitlines_ordinal": 155,
+          "text": "10.561,1.2036"
+        },
+        {
+          "raw_splitlines_ordinal": 156,
+          "text": "10.584,1.1707"
+        },
+        {
+          "raw_splitlines_ordinal": 157,
+          "text": "10.706,0.94334"
+        },
+        {
+          "raw_splitlines_ordinal": 158,
+          "text": "10.711,0.94098"
+        },
+        {
+          "raw_splitlines_ordinal": 159,
+          "text": "10.724,0.93527"
+        },
+        {
+          "raw_splitlines_ordinal": 160,
+          "text": "10.836,0.71437"
+        },
+        {
+          "raw_splitlines_ordinal": 161,
+          "text": "10.902,0.6883"
+        },
+        {
+          "raw_splitlines_ordinal": 162,
+          "text": "10.954,0.63269"
+        },
+        {
+          "raw_splitlines_ordinal": 163,
+          "text": "11.003,0.63489"
+        },
+        {
+          "raw_splitlines_ordinal": 164,
+          "text": "11.087,0.60131"
+        },
+        {
+          "raw_splitlines_ordinal": 165,
+          "text": "11.155,0.60681"
+        },
+        {
+          "raw_splitlines_ordinal": 166,
+          "text": "11.223,0.6056"
+        },
+        {
+          "raw_splitlines_ordinal": 167,
+          "text": "11.306,0.5977"
+        },
+        {
+          "raw_splitlines_ordinal": 168,
+          "text": "11.378,0.59635"
+        },
+        {
+          "raw_splitlines_ordinal": 169,
+          "text": "11.454,0.59525"
+        },
+        {
+          "raw_splitlines_ordinal": 170,
+          "text": "11.525,0.59483"
+        },
+        {
+          "raw_splitlines_ordinal": 171,
+          "text": "11.603,0.59443"
+        },
+        {
+          "raw_splitlines_ordinal": 172,
+          "text": "11.675,0.59709"
+        },
+        {
+          "raw_splitlines_ordinal": 173,
+          "text": "11.752,0.59643"
+        },
+        {
+          "raw_splitlines_ordinal": 174,
+          "text": "11.826,0.59681"
+        },
+        {
+          "raw_splitlines_ordinal": 175,
+          "text": "11.902,0.59631"
+        },
+        {
+          "raw_splitlines_ordinal": 176,
+          "text": "11.976,0.59644"
+        },
+        {
+          "raw_splitlines_ordinal": 177,
+          "text": "12.052,0.5968"
+        },
+        {
+          "raw_splitlines_ordinal": 178,
+          "text": "12.126,0.59778"
+        },
+        {
+          "raw_splitlines_ordinal": 179,
+          "text": "12.202,0.59838"
+        },
+        {
+          "raw_splitlines_ordinal": 180,
+          "text": "12.276,0.60049"
+        },
+        {
+          "raw_splitlines_ordinal": 181,
+          "text": "12.352,0.60015"
+        },
+        {
+          "raw_splitlines_ordinal": 182,
+          "text": "12.426,0.59766"
+        },
+        {
+          "raw_splitlines_ordinal": 183,
+          "text": "12.502,0.59896"
+        },
+        {
+          "raw_splitlines_ordinal": 184,
+          "text": "12.576,0.59921"
+        },
+        {
+          "raw_splitlines_ordinal": 185,
+          "text": "12.652,0.59803"
+        },
+        {
+          "raw_splitlines_ordinal": 186,
+          "text": "12.727,0.59789"
+        },
+        {
+          "raw_splitlines_ordinal": 187,
+          "text": "12.802,0.5985"
+        },
+        {
+          "raw_splitlines_ordinal": 188,
+          "text": "12.875,0.59811"
+        },
+        {
+          "raw_splitlines_ordinal": 189,
+          "text": "12.951,0.59739"
+        },
+        {
+          "raw_splitlines_ordinal": 190,
+          "text": "13.026,0.59803"
+        },
+        {
+          "raw_splitlines_ordinal": 191,
+          "text": "13.1,0.59804"
+        },
+        {
+          "raw_splitlines_ordinal": 192,
+          "text": "13.175,0.59758"
+        },
+        {
+          "raw_splitlines_ordinal": 193,
+          "text": "13.251,0.59812"
+        },
+        {
+          "raw_splitlines_ordinal": 194,
+          "text": "13.326,0.59795"
+        },
+        {
+          "raw_splitlines_ordinal": 195,
+          "text": "13.401,0.594"
+        },
+        {
+          "raw_splitlines_ordinal": 196,
+          "text": "13.476,0.5951"
+        },
+        {
+          "raw_splitlines_ordinal": 197,
+          "text": "13.549,0.59258"
+        },
+        {
+          "raw_splitlines_ordinal": 198,
+          "text": "13.625,0.59893"
+        },
+        {
+          "raw_splitlines_ordinal": 199,
+          "text": "13.7,0.59963"
+        },
+        {
+          "raw_splitlines_ordinal": 200,
+          "text": "13.783,0.59783"
+        },
+        {
+          "raw_splitlines_ordinal": 201,
+          "text": "13.866,0.60034"
+        },
+        {
+          "raw_splitlines_ordinal": 202,
+          "text": "13.941,0.58344"
+        },
+        {
+          "raw_splitlines_ordinal": 203,
+          "text": "14.033,0.57031"
+        },
+        {
+          "raw_splitlines_ordinal": 204,
+          "text": "14.044,0.56499"
+        },
+        {
+          "raw_splitlines_ordinal": 205,
+          "text": "14.125,0.51884"
+        },
+        {
+          "raw_splitlines_ordinal": 206,
+          "text": "14.152,0.50179"
+        },
+        {
+          "raw_splitlines_ordinal": 207,
+          "text": "14.154,0.50066"
+        },
+        {
+          "raw_splitlines_ordinal": 208,
+          "text": "14.305,0.42405"
+        },
+        {
+          "raw_splitlines_ordinal": 209,
+          "text": "14.307,0.42297"
+        },
+        {
+          "raw_splitlines_ordinal": 210,
+          "text": "14.311,0.42193"
+        },
+        {
+          "raw_splitlines_ordinal": 211,
+          "text": "14.446,0.37244"
+        },
+        {
+          "raw_splitlines_ordinal": 212,
+          "text": "14.557,0.36069"
+        },
+        {
+          "raw_splitlines_ordinal": 213,
+          "text": "14.563,0.35969"
+        },
+        {
+          "raw_splitlines_ordinal": 214,
+          "text": "14.569,0.35942"
+        },
+        {
+          "raw_splitlines_ordinal": 215,
+          "text": "14.683,0.34705"
+        },
+        {
+          "raw_splitlines_ordinal": 216,
+          "text": "14.744,0.34616"
+        },
+        {
+          "raw_splitlines_ordinal": 217,
+          "text": "14.813,0.34463"
+        },
+        {
+          "raw_splitlines_ordinal": 218,
+          "text": "14.897,0.34377"
+        },
+        {
+          "raw_splitlines_ordinal": 219,
+          "text": "14.963,0.34389"
+        },
+        {
+          "raw_splitlines_ordinal": 220,
+          "text": "15.047,0.34423"
+        },
+        {
+          "raw_splitlines_ordinal": 221,
+          "text": "15.116,0.34451"
+        },
+        {
+          "raw_splitlines_ordinal": 222,
+          "text": "15.199,0.344"
+        },
+        {
+          "raw_splitlines_ordinal": 223,
+          "text": "15.272,0.34408"
+        },
+        {
+          "raw_splitlines_ordinal": 224,
+          "text": "15.351,0.34436"
+        },
+        {
+          "raw_splitlines_ordinal": 225,
+          "text": "15.423,0.34564"
+        },
+        {
+          "raw_splitlines_ordinal": 226,
+          "text": "15.504,0.34611"
+        },
+        {
+          "raw_splitlines_ordinal": 227,
+          "text": "15.576,0.34643"
+        },
+        {
+          "raw_splitlines_ordinal": 228,
+          "text": "15.661,0.34593"
+        },
+        {
+          "raw_splitlines_ordinal": 229,
+          "text": "15.731,0.34581"
+        },
+        {
+          "raw_splitlines_ordinal": 230,
+          "text": "15.817,0.34533"
+        },
+        {
+          "raw_splitlines_ordinal": 231,
+          "text": "15.885,0.34542"
+        },
+        {
+          "raw_splitlines_ordinal": 232,
+          "text": "15.968,0.34554"
+        },
+        {
+          "raw_splitlines_ordinal": 233,
+          "text": "16.038,0.34736"
+        },
+        {
+          "raw_splitlines_ordinal": 234,
+          "text": "16.124,0.348"
+        },
+        {
+          "raw_splitlines_ordinal": 235,
+          "text": "16.192,0.34594"
+        },
+        {
+          "raw_splitlines_ordinal": 236,
+          "text": "16.276,0.34702"
+        },
+        {
+          "raw_splitlines_ordinal": 237,
+          "text": "16.344,0.34733"
+        },
+        {
+          "raw_splitlines_ordinal": 238,
+          "text": "16.427,0.34569"
+        },
+        {
+          "raw_splitlines_ordinal": 239,
+          "text": "16.497,0.34516"
+        },
+        {
+          "raw_splitlines_ordinal": 240,
+          "text": "16.578,0.34642"
+        },
+        {
+          "raw_splitlines_ordinal": 241,
+          "text": "16.651,0.34599"
+        },
+        {
+          "raw_splitlines_ordinal": 242,
+          "text": "16.731,0.34518"
+        },
+        {
+          "raw_splitlines_ordinal": 243,
+          "text": "16.806,0.34549"
+        },
+        {
+          "raw_splitlines_ordinal": 244,
+          "text": "16.882,0.34538"
+        },
+        {
+          "raw_splitlines_ordinal": 245,
+          "text": "16.958,0.3441"
+        },
+        {
+          "raw_splitlines_ordinal": 246,
+          "text": "17.046,0.34478"
+        },
+        {
+          "raw_splitlines_ordinal": 247,
+          "text": "17.105,0.34412"
+        },
+        {
+          "raw_splitlines_ordinal": 248,
+          "text": "17.182,0.34569"
+        },
+        {
+          "raw_splitlines_ordinal": 249,
+          "text": "17.247,0.34322"
+        },
+        {
+          "raw_splitlines_ordinal": 250,
+          "text": "17.299,0.34424"
+        },
+        {
+          "raw_splitlines_ordinal": 251,
+          "text": "17.387,0.34306"
+        },
+        {
+          "raw_splitlines_ordinal": 252,
+          "text": "17.476,0.36814"
+        },
+        {
+          "raw_splitlines_ordinal": 253,
+          "text": "17.482,0.36918"
+        },
+        {
+          "raw_splitlines_ordinal": 254,
+          "text": "17.587,0.37936"
+        },
+        {
+          "raw_splitlines_ordinal": 255,
+          "text": "17.594,0.37786"
+        },
+        {
+          "raw_splitlines_ordinal": 256,
+          "text": "17.622,0.34948"
+        },
+        {
+          "raw_splitlines_ordinal": 257,
+          "text": "17.695,0.27067"
+        },
+        {
+          "raw_splitlines_ordinal": 258,
+          "text": "17.713,0.24584"
+        },
+        {
+          "raw_splitlines_ordinal": 259,
+          "text": "17.782,0.15498"
+        },
+        {
+          "raw_splitlines_ordinal": 260,
+          "text": "17.796,0.1419"
+        },
+        {
+          "raw_splitlines_ordinal": 261,
+          "text": "17.879,0.081534"
+        },
+        {
+          "raw_splitlines_ordinal": 262,
+          "text": "17.888,0.076278"
+        },
+        {
+          "raw_splitlines_ordinal": 263,
+          "text": "17.899,0.071384"
+        },
+        {
+          "raw_splitlines_ordinal": 264,
+          "text": "17.957,0.046852"
+        },
+        {
+          "raw_splitlines_ordinal": 265,
+          "text": "18,0.036398"
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0,
+      "rows": [
+        {
+          "csv_record_ordinal": 1,
+          "csv_physical_start_line": 1,
+          "csv_physical_end_line": 1,
+          "fields": [
+            "\ufeffChannel length",
+            "WSS (Pa)"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 2,
+          "csv_physical_start_line": 2,
+          "csv_physical_end_line": 2,
+          "fields": [
+            "0",
+            "0.040659"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 3,
+          "csv_physical_start_line": 3,
+          "csv_physical_end_line": 3,
+          "fields": [
+            "0.065344",
+            "0.067524"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 4,
+          "csv_physical_start_line": 4,
+          "csv_physical_end_line": 4,
+          "fields": [
+            "0.093765",
+            "0.078508"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 5,
+          "csv_physical_start_line": 5,
+          "csv_physical_end_line": 5,
+          "fields": [
+            "0.10569",
+            "0.086816"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 6,
+          "csv_physical_start_line": 6,
+          "csv_physical_end_line": 6,
+          "fields": [
+            "0.19123",
+            "0.1454"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 7,
+          "csv_physical_start_line": 7,
+          "csv_physical_end_line": 7,
+          "fields": [
+            "0.21306",
+            "0.16331"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 8,
+          "csv_physical_start_line": 8,
+          "csv_physical_end_line": 8,
+          "fields": [
+            "0.28746",
+            "0.26083"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 9,
+          "csv_physical_start_line": 9,
+          "csv_physical_end_line": 9,
+          "fields": [
+            "0.30478",
+            "0.28182"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 10,
+          "csv_physical_start_line": 10,
+          "csv_physical_end_line": 10,
+          "fields": [
+            "0.37642",
+            "0.33397"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 11,
+          "csv_physical_start_line": 11,
+          "csv_physical_end_line": 11,
+          "fields": [
+            "0.40592",
+            "0.35491"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 12,
+          "csv_physical_start_line": 12,
+          "csv_physical_end_line": 12,
+          "fields": [
+            "0.41391",
+            "0.35517"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 13,
+          "csv_physical_start_line": 13,
+          "csv_physical_end_line": 13,
+          "fields": [
+            "0.51559",
+            "0.35804"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 14,
+          "csv_physical_start_line": 14,
+          "csv_physical_end_line": 14,
+          "fields": [
+            "0.52462",
+            "0.35772"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 15,
+          "csv_physical_start_line": 15,
+          "csv_physical_end_line": 15,
+          "fields": [
+            "0.6113",
+            "0.34727"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 16,
+          "csv_physical_start_line": 16,
+          "csv_physical_end_line": 16,
+          "fields": [
+            "0.6797",
+            "0.3457"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 17,
+          "csv_physical_start_line": 17,
+          "csv_physical_end_line": 17,
+          "fields": [
+            "0.7469",
+            "0.34514"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 18,
+          "csv_physical_start_line": 18,
+          "csv_physical_end_line": 18,
+          "fields": [
+            "0.83002",
+            "0.3459"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 19,
+          "csv_physical_start_line": 19,
+          "csv_physical_end_line": 19,
+          "fields": [
+            "0.89427",
+            "0.3452"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 20,
+          "csv_physical_start_line": 20,
+          "csv_physical_end_line": 20,
+          "fields": [
+            "0.97626",
+            "0.34352"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 21,
+          "csv_physical_start_line": 21,
+          "csv_physical_end_line": 21,
+          "fields": [
+            "1.0477",
+            "0.34507"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 22,
+          "csv_physical_start_line": 22,
+          "csv_physical_end_line": 22,
+          "fields": [
+            "1.1212",
+            "0.34487"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 23,
+          "csv_physical_start_line": 23,
+          "csv_physical_end_line": 23,
+          "fields": [
+            "1.1971",
+            "0.34489"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 24,
+          "csv_physical_start_line": 24,
+          "csv_physical_end_line": 24,
+          "fields": [
+            "1.2717",
+            "0.34355"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 25,
+          "csv_physical_start_line": 25,
+          "csv_physical_end_line": 25,
+          "fields": [
+            "1.3501",
+            "0.3447"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 26,
+          "csv_physical_start_line": 26,
+          "csv_physical_end_line": 26,
+          "fields": [
+            "1.4217",
+            "0.3439"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 27,
+          "csv_physical_start_line": 27,
+          "csv_physical_end_line": 27,
+          "fields": [
+            "1.503",
+            "0.34408"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 28,
+          "csv_physical_start_line": 28,
+          "csv_physical_end_line": 28,
+          "fields": [
+            "1.571",
+            "0.34415"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 29,
+          "csv_physical_start_line": 29,
+          "csv_physical_end_line": 29,
+          "fields": [
+            "1.655",
+            "0.34418"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 30,
+          "csv_physical_start_line": 30,
+          "csv_physical_end_line": 30,
+          "fields": [
+            "1.7261",
+            "0.34493"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 31,
+          "csv_physical_start_line": 31,
+          "csv_physical_end_line": 31,
+          "fields": [
+            "1.81",
+            "0.34429"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 32,
+          "csv_physical_start_line": 32,
+          "csv_physical_end_line": 32,
+          "fields": [
+            "1.8787",
+            "0.34473"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 33,
+          "csv_physical_start_line": 33,
+          "csv_physical_end_line": 33,
+          "fields": [
+            "1.9627",
+            "0.34453"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 34,
+          "csv_physical_start_line": 34,
+          "csv_physical_end_line": 34,
+          "fields": [
+            "2.0297",
+            "0.34402"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 35,
+          "csv_physical_start_line": 35,
+          "csv_physical_end_line": 35,
+          "fields": [
+            "2.1137",
+            "0.34397"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 36,
+          "csv_physical_start_line": 36,
+          "csv_physical_end_line": 36,
+          "fields": [
+            "2.1822",
+            "0.34411"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 37,
+          "csv_physical_start_line": 37,
+          "csv_physical_end_line": 37,
+          "fields": [
+            "2.2663",
+            "0.3443"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 38,
+          "csv_physical_start_line": 38,
+          "csv_physical_end_line": 38,
+          "fields": [
+            "2.3347",
+            "0.3448"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 39,
+          "csv_physical_start_line": 39,
+          "csv_physical_end_line": 39,
+          "fields": [
+            "2.4218",
+            "0.34485"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 40,
+          "csv_physical_start_line": 40,
+          "csv_physical_end_line": 40,
+          "fields": [
+            "2.4895",
+            "0.34398"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 41,
+          "csv_physical_start_line": 41,
+          "csv_physical_end_line": 41,
+          "fields": [
+            "2.5746",
+            "0.34414"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 42,
+          "csv_physical_start_line": 42,
+          "csv_physical_end_line": 42,
+          "fields": [
+            "2.6444",
+            "0.34573"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 43,
+          "csv_physical_start_line": 43,
+          "csv_physical_end_line": 43,
+          "fields": [
+            "2.7276",
+            "0.34514"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 44,
+          "csv_physical_start_line": 44,
+          "csv_physical_end_line": 44,
+          "fields": [
+            "2.7965",
+            "0.3442"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 45,
+          "csv_physical_start_line": 45,
+          "csv_physical_end_line": 45,
+          "fields": [
+            "2.8812",
+            "0.34413"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 46,
+          "csv_physical_start_line": 46,
+          "csv_physical_end_line": 46,
+          "fields": [
+            "2.9501",
+            "0.34364"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 47,
+          "csv_physical_start_line": 47,
+          "csv_physical_end_line": 47,
+          "fields": [
+            "3.0374",
+            "0.34375"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 48,
+          "csv_physical_start_line": 48,
+          "csv_physical_end_line": 48,
+          "fields": [
+            "3.101",
+            "0.34314"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 49,
+          "csv_physical_start_line": 49,
+          "csv_physical_end_line": 49,
+          "fields": [
+            "3.1905",
+            "0.34431"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 50,
+          "csv_physical_start_line": 50,
+          "csv_physical_end_line": 50,
+          "fields": [
+            "3.2534",
+            "0.34555"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 51,
+          "csv_physical_start_line": 51,
+          "csv_physical_end_line": 51,
+          "fields": [
+            "3.3327",
+            "0.34673"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 52,
+          "csv_physical_start_line": 52,
+          "csv_physical_end_line": 52,
+          "fields": [
+            "3.3935",
+            "0.35265"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 53,
+          "csv_physical_start_line": 53,
+          "csv_physical_end_line": 53,
+          "fields": [
+            "3.4382",
+            "0.35831"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 54,
+          "csv_physical_start_line": 54,
+          "csv_physical_end_line": 54,
+          "fields": [
+            "3.4949",
+            "0.36536"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 55,
+          "csv_physical_start_line": 55,
+          "csv_physical_end_line": 55,
+          "fields": [
+            "3.5479",
+            "0.37148"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 56,
+          "csv_physical_start_line": 56,
+          "csv_physical_end_line": 56,
+          "fields": [
+            "3.6594",
+            "0.41897"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 57,
+          "csv_physical_start_line": 57,
+          "csv_physical_end_line": 57,
+          "fields": [
+            "3.6849",
+            "0.42572"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 58,
+          "csv_physical_start_line": 58,
+          "csv_physical_end_line": 58,
+          "fields": [
+            "3.6998",
+            "0.4333"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 59,
+          "csv_physical_start_line": 59,
+          "csv_physical_end_line": 59,
+          "fields": [
+            "3.8092",
+            "0.47841"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 60,
+          "csv_physical_start_line": 60,
+          "csv_physical_end_line": 60,
+          "fields": [
+            "3.85",
+            "0.50596"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 61,
+          "csv_physical_start_line": 61,
+          "csv_physical_end_line": 61,
+          "fields": [
+            "3.8927",
+            "0.52515"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 62,
+          "csv_physical_start_line": 62,
+          "csv_physical_end_line": 62,
+          "fields": [
+            "3.9584",
+            "0.56662"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 63,
+          "csv_physical_start_line": 63,
+          "csv_physical_end_line": 63,
+          "fields": [
+            "3.9813",
+            "0.57584"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 64,
+          "csv_physical_start_line": 64,
+          "csv_physical_end_line": 64,
+          "fields": [
+            "4.058",
+            "0.57754"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 65,
+          "csv_physical_start_line": 65,
+          "csv_physical_end_line": 65,
+          "fields": [
+            "4.1323",
+            "0.59616"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 66,
+          "csv_physical_start_line": 66,
+          "csv_physical_end_line": 66,
+          "fields": [
+            "4.21",
+            "0.59739"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 67,
+          "csv_physical_start_line": 67,
+          "csv_physical_end_line": 67,
+          "fields": [
+            "4.3006",
+            "0.59789"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 68,
+          "csv_physical_start_line": 68,
+          "csv_physical_end_line": 68,
+          "fields": [
+            "4.3738",
+            "0.59972"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 69,
+          "csv_physical_start_line": 69,
+          "csv_physical_end_line": 69,
+          "fields": [
+            "4.4546",
+            "0.59369"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 70,
+          "csv_physical_start_line": 70,
+          "csv_physical_end_line": 70,
+          "fields": [
+            "4.5249",
+            "0.59628"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 71,
+          "csv_physical_start_line": 71,
+          "csv_physical_end_line": 71,
+          "fields": [
+            "4.6015",
+            "0.59642"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 72,
+          "csv_physical_start_line": 72,
+          "csv_physical_end_line": 72,
+          "fields": [
+            "4.673",
+            "0.59627"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 73,
+          "csv_physical_start_line": 73,
+          "csv_physical_end_line": 73,
+          "fields": [
+            "4.7514",
+            "0.59615"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 74,
+          "csv_physical_start_line": 74,
+          "csv_physical_end_line": 74,
+          "fields": [
+            "4.826",
+            "0.59642"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 75,
+          "csv_physical_start_line": 75,
+          "csv_physical_end_line": 75,
+          "fields": [
+            "4.9023",
+            "0.59628"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 76,
+          "csv_physical_start_line": 76,
+          "csv_physical_end_line": 76,
+          "fields": [
+            "4.9765",
+            "0.59645"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 77,
+          "csv_physical_start_line": 77,
+          "csv_physical_end_line": 77,
+          "fields": [
+            "5.052",
+            "0.59653"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 78,
+          "csv_physical_start_line": 78,
+          "csv_physical_end_line": 78,
+          "fields": [
+            "5.1262",
+            "0.59704"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 79,
+          "csv_physical_start_line": 79,
+          "csv_physical_end_line": 79,
+          "fields": [
+            "5.2019",
+            "0.59714"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 80,
+          "csv_physical_start_line": 80,
+          "csv_physical_end_line": 80,
+          "fields": [
+            "5.2761",
+            "0.59704"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 81,
+          "csv_physical_start_line": 81,
+          "csv_physical_end_line": 81,
+          "fields": [
+            "5.3518",
+            "0.59687"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 82,
+          "csv_physical_start_line": 82,
+          "csv_physical_end_line": 82,
+          "fields": [
+            "5.4261",
+            "0.59684"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 83,
+          "csv_physical_start_line": 83,
+          "csv_physical_end_line": 83,
+          "fields": [
+            "5.5023",
+            "0.59658"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 84,
+          "csv_physical_start_line": 84,
+          "csv_physical_end_line": 84,
+          "fields": [
+            "5.577",
+            "0.59649"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 85,
+          "csv_physical_start_line": 85,
+          "csv_physical_end_line": 85,
+          "fields": [
+            "5.6512",
+            "0.59627"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 86,
+          "csv_physical_start_line": 86,
+          "csv_physical_end_line": 86,
+          "fields": [
+            "5.726",
+            "0.59634"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 87,
+          "csv_physical_start_line": 87,
+          "csv_physical_end_line": 87,
+          "fields": [
+            "5.8026",
+            "0.59708"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 88,
+          "csv_physical_start_line": 88,
+          "csv_physical_end_line": 88,
+          "fields": [
+            "5.8766",
+            "0.59722"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 89,
+          "csv_physical_start_line": 89,
+          "csv_physical_end_line": 89,
+          "fields": [
+            "5.9532",
+            "0.59824"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 90,
+          "csv_physical_start_line": 90,
+          "csv_physical_end_line": 90,
+          "fields": [
+            "6.0261",
+            "0.59808"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 91,
+          "csv_physical_start_line": 91,
+          "csv_physical_end_line": 91,
+          "fields": [
+            "6.103",
+            "0.59883"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 92,
+          "csv_physical_start_line": 92,
+          "csv_physical_end_line": 92,
+          "fields": [
+            "6.1753",
+            "0.59822"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 93,
+          "csv_physical_start_line": 93,
+          "csv_physical_end_line": 93,
+          "fields": [
+            "6.2532",
+            "0.59738"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 94,
+          "csv_physical_start_line": 94,
+          "csv_physical_end_line": 94,
+          "fields": [
+            "6.3272",
+            "0.59774"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 95,
+          "csv_physical_start_line": 95,
+          "csv_physical_end_line": 95,
+          "fields": [
+            "6.401",
+            "0.5994"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 96,
+          "csv_physical_start_line": 96,
+          "csv_physical_end_line": 96,
+          "fields": [
+            "6.4751",
+            "0.60016"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 97,
+          "csv_physical_start_line": 97,
+          "csv_physical_end_line": 97,
+          "fields": [
+            "6.5489",
+            "0.59735"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 98,
+          "csv_physical_start_line": 98,
+          "csv_physical_end_line": 98,
+          "fields": [
+            "6.623",
+            "0.59534"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 99,
+          "csv_physical_start_line": 99,
+          "csv_physical_end_line": 99,
+          "fields": [
+            "6.6966",
+            "0.59694"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 100,
+          "csv_physical_start_line": 100,
+          "csv_physical_end_line": 100,
+          "fields": [
+            "6.7749",
+            "0.60316"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 101,
+          "csv_physical_start_line": 101,
+          "csv_physical_end_line": 101,
+          "fields": [
+            "6.8445",
+            "0.60614"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 102,
+          "csv_physical_start_line": 102,
+          "csv_physical_end_line": 102,
+          "fields": [
+            "6.9137",
+            "0.60466"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 103,
+          "csv_physical_start_line": 103,
+          "csv_physical_end_line": 103,
+          "fields": [
+            "7.0003",
+            "0.6428"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 104,
+          "csv_physical_start_line": 104,
+          "csv_physical_end_line": 104,
+          "fields": [
+            "7.0488",
+            "0.64019"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 105,
+          "csv_physical_start_line": 105,
+          "csv_physical_end_line": 105,
+          "fields": [
+            "7.0959",
+            "0.69304"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 106,
+          "csv_physical_start_line": 106,
+          "csv_physical_end_line": 106,
+          "fields": [
+            "7.1628",
+            "0.71548"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 107,
+          "csv_physical_start_line": 107,
+          "csv_physical_end_line": 107,
+          "fields": [
+            "7.2757",
+            "0.94889"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 108,
+          "csv_physical_start_line": 108,
+          "csv_physical_end_line": 108,
+          "fields": [
+            "7.285",
+            "0.95133"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 109,
+          "csv_physical_start_line": 109,
+          "csv_physical_end_line": 109,
+          "fields": [
+            "7.2889",
+            "0.9526"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 110,
+          "csv_physical_start_line": 110,
+          "csv_physical_end_line": 110,
+          "fields": [
+            "7.4391",
+            "1.1996"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 111,
+          "csv_physical_start_line": 111,
+          "csv_physical_end_line": 111,
+          "fields": [
+            "7.4407",
+            "1.201"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 112,
+          "csv_physical_start_line": 112,
+          "csv_physical_end_line": 112,
+          "fields": [
+            "7.5767",
+            "1.3688"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 113,
+          "csv_physical_start_line": 113,
+          "csv_physical_end_line": 113,
+          "fields": [
+            "7.5768",
+            "1.3688"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 114,
+          "csv_physical_start_line": 114,
+          "csv_physical_end_line": 114,
+          "fields": [
+            "7.7253",
+            "1.362"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 115,
+          "csv_physical_start_line": 115,
+          "csv_physical_end_line": 115,
+          "fields": [
+            "7.7253",
+            "1.362"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 116,
+          "csv_physical_start_line": 116,
+          "csv_physical_end_line": 116,
+          "fields": [
+            "7.875",
+            "1.3672"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 117,
+          "csv_physical_start_line": 117,
+          "csv_physical_end_line": 117,
+          "fields": [
+            "7.8751",
+            "1.3672"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 118,
+          "csv_physical_start_line": 118,
+          "csv_physical_end_line": 118,
+          "fields": [
+            "8.025",
+            "1.3628"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 119,
+          "csv_physical_start_line": 119,
+          "csv_physical_end_line": 119,
+          "fields": [
+            "8.025",
+            "1.3628"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 120,
+          "csv_physical_start_line": 120,
+          "csv_physical_end_line": 120,
+          "fields": [
+            "8.175",
+            "1.3633"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 121,
+          "csv_physical_start_line": 121,
+          "csv_physical_end_line": 121,
+          "fields": [
+            "8.175",
+            "1.3633"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 122,
+          "csv_physical_start_line": 122,
+          "csv_physical_end_line": 122,
+          "fields": [
+            "8.325",
+            "1.3621"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 123,
+          "csv_physical_start_line": 123,
+          "csv_physical_end_line": 123,
+          "fields": [
+            "8.325",
+            "1.3621"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 124,
+          "csv_physical_start_line": 124,
+          "csv_physical_end_line": 124,
+          "fields": [
+            "8.475",
+            "1.3627"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 125,
+          "csv_physical_start_line": 125,
+          "csv_physical_end_line": 125,
+          "fields": [
+            "8.475",
+            "1.3627"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 126,
+          "csv_physical_start_line": 126,
+          "csv_physical_end_line": 126,
+          "fields": [
+            "8.625",
+            "1.3617"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 127,
+          "csv_physical_start_line": 127,
+          "csv_physical_end_line": 127,
+          "fields": [
+            "8.625",
+            "1.3617"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 128,
+          "csv_physical_start_line": 128,
+          "csv_physical_end_line": 128,
+          "fields": [
+            "8.775",
+            "1.3626"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 129,
+          "csv_physical_start_line": 129,
+          "csv_physical_end_line": 129,
+          "fields": [
+            "8.775",
+            "1.3626"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 130,
+          "csv_physical_start_line": 130,
+          "csv_physical_end_line": 130,
+          "fields": [
+            "8.925",
+            "1.3622"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 131,
+          "csv_physical_start_line": 131,
+          "csv_physical_end_line": 131,
+          "fields": [
+            "8.925",
+            "1.3622"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 132,
+          "csv_physical_start_line": 132,
+          "csv_physical_end_line": 132,
+          "fields": [
+            "9.075",
+            "1.3624"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 133,
+          "csv_physical_start_line": 133,
+          "csv_physical_end_line": 133,
+          "fields": [
+            "9.075",
+            "1.3624"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 134,
+          "csv_physical_start_line": 134,
+          "csv_physical_end_line": 134,
+          "fields": [
+            "9.225",
+            "1.3621"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 135,
+          "csv_physical_start_line": 135,
+          "csv_physical_end_line": 135,
+          "fields": [
+            "9.225",
+            "1.3621"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 136,
+          "csv_physical_start_line": 136,
+          "csv_physical_end_line": 136,
+          "fields": [
+            "9.375",
+            "1.3626"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 137,
+          "csv_physical_start_line": 137,
+          "csv_physical_end_line": 137,
+          "fields": [
+            "9.375",
+            "1.3626"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 138,
+          "csv_physical_start_line": 138,
+          "csv_physical_end_line": 138,
+          "fields": [
+            "9.525",
+            "1.3618"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 139,
+          "csv_physical_start_line": 139,
+          "csv_physical_end_line": 139,
+          "fields": [
+            "9.525",
+            "1.3618"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 140,
+          "csv_physical_start_line": 140,
+          "csv_physical_end_line": 140,
+          "fields": [
+            "9.675",
+            "1.3628"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 141,
+          "csv_physical_start_line": 141,
+          "csv_physical_end_line": 141,
+          "fields": [
+            "9.675",
+            "1.3628"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 142,
+          "csv_physical_start_line": 142,
+          "csv_physical_end_line": 142,
+          "fields": [
+            "9.825",
+            "1.3619"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 143,
+          "csv_physical_start_line": 143,
+          "csv_physical_end_line": 143,
+          "fields": [
+            "9.825",
+            "1.3619"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 144,
+          "csv_physical_start_line": 144,
+          "csv_physical_end_line": 144,
+          "fields": [
+            "9.975",
+            "1.3633"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 145,
+          "csv_physical_start_line": 145,
+          "csv_physical_end_line": 145,
+          "fields": [
+            "9.975",
+            "1.3633"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 146,
+          "csv_physical_start_line": 146,
+          "csv_physical_end_line": 146,
+          "fields": [
+            "10.064",
+            "1.3623"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 147,
+          "csv_physical_start_line": 147,
+          "csv_physical_end_line": 147,
+          "fields": [
+            "10.125",
+            "1.3616"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 148,
+          "csv_physical_start_line": 148,
+          "csv_physical_end_line": 148,
+          "fields": [
+            "10.125",
+            "1.3616"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 149,
+          "csv_physical_start_line": 149,
+          "csv_physical_end_line": 149,
+          "fields": [
+            "10.275",
+            "1.3572"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 150,
+          "csv_physical_start_line": 150,
+          "csv_physical_end_line": 150,
+          "fields": [
+            "10.275",
+            "1.3572"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 151,
+          "csv_physical_start_line": 151,
+          "csv_physical_end_line": 151,
+          "fields": [
+            "10.423",
+            "1.3719"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 152,
+          "csv_physical_start_line": 152,
+          "csv_physical_end_line": 152,
+          "fields": [
+            "10.423",
+            "1.3719"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 153,
+          "csv_physical_start_line": 153,
+          "csv_physical_end_line": 153,
+          "fields": [
+            "10.43",
+            "1.3635"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 154,
+          "csv_physical_start_line": 154,
+          "csv_physical_end_line": 154,
+          "fields": [
+            "10.56",
+            "1.2047"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 155,
+          "csv_physical_start_line": 155,
+          "csv_physical_end_line": 155,
+          "fields": [
+            "10.561",
+            "1.2036"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 156,
+          "csv_physical_start_line": 156,
+          "csv_physical_end_line": 156,
+          "fields": [
+            "10.584",
+            "1.1707"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 157,
+          "csv_physical_start_line": 157,
+          "csv_physical_end_line": 157,
+          "fields": [
+            "10.706",
+            "0.94334"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 158,
+          "csv_physical_start_line": 158,
+          "csv_physical_end_line": 158,
+          "fields": [
+            "10.711",
+            "0.94098"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 159,
+          "csv_physical_start_line": 159,
+          "csv_physical_end_line": 159,
+          "fields": [
+            "10.724",
+            "0.93527"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 160,
+          "csv_physical_start_line": 160,
+          "csv_physical_end_line": 160,
+          "fields": [
+            "10.836",
+            "0.71437"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 161,
+          "csv_physical_start_line": 161,
+          "csv_physical_end_line": 161,
+          "fields": [
+            "10.902",
+            "0.6883"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 162,
+          "csv_physical_start_line": 162,
+          "csv_physical_end_line": 162,
+          "fields": [
+            "10.954",
+            "0.63269"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 163,
+          "csv_physical_start_line": 163,
+          "csv_physical_end_line": 163,
+          "fields": [
+            "11.003",
+            "0.63489"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 164,
+          "csv_physical_start_line": 164,
+          "csv_physical_end_line": 164,
+          "fields": [
+            "11.087",
+            "0.60131"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 165,
+          "csv_physical_start_line": 165,
+          "csv_physical_end_line": 165,
+          "fields": [
+            "11.155",
+            "0.60681"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 166,
+          "csv_physical_start_line": 166,
+          "csv_physical_end_line": 166,
+          "fields": [
+            "11.223",
+            "0.6056"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 167,
+          "csv_physical_start_line": 167,
+          "csv_physical_end_line": 167,
+          "fields": [
+            "11.306",
+            "0.5977"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 168,
+          "csv_physical_start_line": 168,
+          "csv_physical_end_line": 168,
+          "fields": [
+            "11.378",
+            "0.59635"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 169,
+          "csv_physical_start_line": 169,
+          "csv_physical_end_line": 169,
+          "fields": [
+            "11.454",
+            "0.59525"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 170,
+          "csv_physical_start_line": 170,
+          "csv_physical_end_line": 170,
+          "fields": [
+            "11.525",
+            "0.59483"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 171,
+          "csv_physical_start_line": 171,
+          "csv_physical_end_line": 171,
+          "fields": [
+            "11.603",
+            "0.59443"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 172,
+          "csv_physical_start_line": 172,
+          "csv_physical_end_line": 172,
+          "fields": [
+            "11.675",
+            "0.59709"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 173,
+          "csv_physical_start_line": 173,
+          "csv_physical_end_line": 173,
+          "fields": [
+            "11.752",
+            "0.59643"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 174,
+          "csv_physical_start_line": 174,
+          "csv_physical_end_line": 174,
+          "fields": [
+            "11.826",
+            "0.59681"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 175,
+          "csv_physical_start_line": 175,
+          "csv_physical_end_line": 175,
+          "fields": [
+            "11.902",
+            "0.59631"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 176,
+          "csv_physical_start_line": 176,
+          "csv_physical_end_line": 176,
+          "fields": [
+            "11.976",
+            "0.59644"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 177,
+          "csv_physical_start_line": 177,
+          "csv_physical_end_line": 177,
+          "fields": [
+            "12.052",
+            "0.5968"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 178,
+          "csv_physical_start_line": 178,
+          "csv_physical_end_line": 178,
+          "fields": [
+            "12.126",
+            "0.59778"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 179,
+          "csv_physical_start_line": 179,
+          "csv_physical_end_line": 179,
+          "fields": [
+            "12.202",
+            "0.59838"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 180,
+          "csv_physical_start_line": 180,
+          "csv_physical_end_line": 180,
+          "fields": [
+            "12.276",
+            "0.60049"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 181,
+          "csv_physical_start_line": 181,
+          "csv_physical_end_line": 181,
+          "fields": [
+            "12.352",
+            "0.60015"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 182,
+          "csv_physical_start_line": 182,
+          "csv_physical_end_line": 182,
+          "fields": [
+            "12.426",
+            "0.59766"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 183,
+          "csv_physical_start_line": 183,
+          "csv_physical_end_line": 183,
+          "fields": [
+            "12.502",
+            "0.59896"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 184,
+          "csv_physical_start_line": 184,
+          "csv_physical_end_line": 184,
+          "fields": [
+            "12.576",
+            "0.59921"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 185,
+          "csv_physical_start_line": 185,
+          "csv_physical_end_line": 185,
+          "fields": [
+            "12.652",
+            "0.59803"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 186,
+          "csv_physical_start_line": 186,
+          "csv_physical_end_line": 186,
+          "fields": [
+            "12.727",
+            "0.59789"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 187,
+          "csv_physical_start_line": 187,
+          "csv_physical_end_line": 187,
+          "fields": [
+            "12.802",
+            "0.5985"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 188,
+          "csv_physical_start_line": 188,
+          "csv_physical_end_line": 188,
+          "fields": [
+            "12.875",
+            "0.59811"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 189,
+          "csv_physical_start_line": 189,
+          "csv_physical_end_line": 189,
+          "fields": [
+            "12.951",
+            "0.59739"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 190,
+          "csv_physical_start_line": 190,
+          "csv_physical_end_line": 190,
+          "fields": [
+            "13.026",
+            "0.59803"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 191,
+          "csv_physical_start_line": 191,
+          "csv_physical_end_line": 191,
+          "fields": [
+            "13.1",
+            "0.59804"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 192,
+          "csv_physical_start_line": 192,
+          "csv_physical_end_line": 192,
+          "fields": [
+            "13.175",
+            "0.59758"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 193,
+          "csv_physical_start_line": 193,
+          "csv_physical_end_line": 193,
+          "fields": [
+            "13.251",
+            "0.59812"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 194,
+          "csv_physical_start_line": 194,
+          "csv_physical_end_line": 194,
+          "fields": [
+            "13.326",
+            "0.59795"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 195,
+          "csv_physical_start_line": 195,
+          "csv_physical_end_line": 195,
+          "fields": [
+            "13.401",
+            "0.594"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 196,
+          "csv_physical_start_line": 196,
+          "csv_physical_end_line": 196,
+          "fields": [
+            "13.476",
+            "0.5951"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 197,
+          "csv_physical_start_line": 197,
+          "csv_physical_end_line": 197,
+          "fields": [
+            "13.549",
+            "0.59258"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 198,
+          "csv_physical_start_line": 198,
+          "csv_physical_end_line": 198,
+          "fields": [
+            "13.625",
+            "0.59893"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 199,
+          "csv_physical_start_line": 199,
+          "csv_physical_end_line": 199,
+          "fields": [
+            "13.7",
+            "0.59963"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 200,
+          "csv_physical_start_line": 200,
+          "csv_physical_end_line": 200,
+          "fields": [
+            "13.783",
+            "0.59783"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 201,
+          "csv_physical_start_line": 201,
+          "csv_physical_end_line": 201,
+          "fields": [
+            "13.866",
+            "0.60034"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 202,
+          "csv_physical_start_line": 202,
+          "csv_physical_end_line": 202,
+          "fields": [
+            "13.941",
+            "0.58344"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 203,
+          "csv_physical_start_line": 203,
+          "csv_physical_end_line": 203,
+          "fields": [
+            "14.033",
+            "0.57031"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 204,
+          "csv_physical_start_line": 204,
+          "csv_physical_end_line": 204,
+          "fields": [
+            "14.044",
+            "0.56499"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 205,
+          "csv_physical_start_line": 205,
+          "csv_physical_end_line": 205,
+          "fields": [
+            "14.125",
+            "0.51884"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 206,
+          "csv_physical_start_line": 206,
+          "csv_physical_end_line": 206,
+          "fields": [
+            "14.152",
+            "0.50179"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 207,
+          "csv_physical_start_line": 207,
+          "csv_physical_end_line": 207,
+          "fields": [
+            "14.154",
+            "0.50066"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 208,
+          "csv_physical_start_line": 208,
+          "csv_physical_end_line": 208,
+          "fields": [
+            "14.305",
+            "0.42405"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 209,
+          "csv_physical_start_line": 209,
+          "csv_physical_end_line": 209,
+          "fields": [
+            "14.307",
+            "0.42297"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 210,
+          "csv_physical_start_line": 210,
+          "csv_physical_end_line": 210,
+          "fields": [
+            "14.311",
+            "0.42193"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 211,
+          "csv_physical_start_line": 211,
+          "csv_physical_end_line": 211,
+          "fields": [
+            "14.446",
+            "0.37244"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 212,
+          "csv_physical_start_line": 212,
+          "csv_physical_end_line": 212,
+          "fields": [
+            "14.557",
+            "0.36069"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 213,
+          "csv_physical_start_line": 213,
+          "csv_physical_end_line": 213,
+          "fields": [
+            "14.563",
+            "0.35969"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 214,
+          "csv_physical_start_line": 214,
+          "csv_physical_end_line": 214,
+          "fields": [
+            "14.569",
+            "0.35942"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 215,
+          "csv_physical_start_line": 215,
+          "csv_physical_end_line": 215,
+          "fields": [
+            "14.683",
+            "0.34705"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 216,
+          "csv_physical_start_line": 216,
+          "csv_physical_end_line": 216,
+          "fields": [
+            "14.744",
+            "0.34616"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 217,
+          "csv_physical_start_line": 217,
+          "csv_physical_end_line": 217,
+          "fields": [
+            "14.813",
+            "0.34463"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 218,
+          "csv_physical_start_line": 218,
+          "csv_physical_end_line": 218,
+          "fields": [
+            "14.897",
+            "0.34377"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 219,
+          "csv_physical_start_line": 219,
+          "csv_physical_end_line": 219,
+          "fields": [
+            "14.963",
+            "0.34389"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 220,
+          "csv_physical_start_line": 220,
+          "csv_physical_end_line": 220,
+          "fields": [
+            "15.047",
+            "0.34423"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 221,
+          "csv_physical_start_line": 221,
+          "csv_physical_end_line": 221,
+          "fields": [
+            "15.116",
+            "0.34451"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 222,
+          "csv_physical_start_line": 222,
+          "csv_physical_end_line": 222,
+          "fields": [
+            "15.199",
+            "0.344"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 223,
+          "csv_physical_start_line": 223,
+          "csv_physical_end_line": 223,
+          "fields": [
+            "15.272",
+            "0.34408"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 224,
+          "csv_physical_start_line": 224,
+          "csv_physical_end_line": 224,
+          "fields": [
+            "15.351",
+            "0.34436"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 225,
+          "csv_physical_start_line": 225,
+          "csv_physical_end_line": 225,
+          "fields": [
+            "15.423",
+            "0.34564"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 226,
+          "csv_physical_start_line": 226,
+          "csv_physical_end_line": 226,
+          "fields": [
+            "15.504",
+            "0.34611"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 227,
+          "csv_physical_start_line": 227,
+          "csv_physical_end_line": 227,
+          "fields": [
+            "15.576",
+            "0.34643"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 228,
+          "csv_physical_start_line": 228,
+          "csv_physical_end_line": 228,
+          "fields": [
+            "15.661",
+            "0.34593"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 229,
+          "csv_physical_start_line": 229,
+          "csv_physical_end_line": 229,
+          "fields": [
+            "15.731",
+            "0.34581"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 230,
+          "csv_physical_start_line": 230,
+          "csv_physical_end_line": 230,
+          "fields": [
+            "15.817",
+            "0.34533"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 231,
+          "csv_physical_start_line": 231,
+          "csv_physical_end_line": 231,
+          "fields": [
+            "15.885",
+            "0.34542"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 232,
+          "csv_physical_start_line": 232,
+          "csv_physical_end_line": 232,
+          "fields": [
+            "15.968",
+            "0.34554"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 233,
+          "csv_physical_start_line": 233,
+          "csv_physical_end_line": 233,
+          "fields": [
+            "16.038",
+            "0.34736"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 234,
+          "csv_physical_start_line": 234,
+          "csv_physical_end_line": 234,
+          "fields": [
+            "16.124",
+            "0.348"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 235,
+          "csv_physical_start_line": 235,
+          "csv_physical_end_line": 235,
+          "fields": [
+            "16.192",
+            "0.34594"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 236,
+          "csv_physical_start_line": 236,
+          "csv_physical_end_line": 236,
+          "fields": [
+            "16.276",
+            "0.34702"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 237,
+          "csv_physical_start_line": 237,
+          "csv_physical_end_line": 237,
+          "fields": [
+            "16.344",
+            "0.34733"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 238,
+          "csv_physical_start_line": 238,
+          "csv_physical_end_line": 238,
+          "fields": [
+            "16.427",
+            "0.34569"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 239,
+          "csv_physical_start_line": 239,
+          "csv_physical_end_line": 239,
+          "fields": [
+            "16.497",
+            "0.34516"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 240,
+          "csv_physical_start_line": 240,
+          "csv_physical_end_line": 240,
+          "fields": [
+            "16.578",
+            "0.34642"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 241,
+          "csv_physical_start_line": 241,
+          "csv_physical_end_line": 241,
+          "fields": [
+            "16.651",
+            "0.34599"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 242,
+          "csv_physical_start_line": 242,
+          "csv_physical_end_line": 242,
+          "fields": [
+            "16.731",
+            "0.34518"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 243,
+          "csv_physical_start_line": 243,
+          "csv_physical_end_line": 243,
+          "fields": [
+            "16.806",
+            "0.34549"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 244,
+          "csv_physical_start_line": 244,
+          "csv_physical_end_line": 244,
+          "fields": [
+            "16.882",
+            "0.34538"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 245,
+          "csv_physical_start_line": 245,
+          "csv_physical_end_line": 245,
+          "fields": [
+            "16.958",
+            "0.3441"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 246,
+          "csv_physical_start_line": 246,
+          "csv_physical_end_line": 246,
+          "fields": [
+            "17.046",
+            "0.34478"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 247,
+          "csv_physical_start_line": 247,
+          "csv_physical_end_line": 247,
+          "fields": [
+            "17.105",
+            "0.34412"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 248,
+          "csv_physical_start_line": 248,
+          "csv_physical_end_line": 248,
+          "fields": [
+            "17.182",
+            "0.34569"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 249,
+          "csv_physical_start_line": 249,
+          "csv_physical_end_line": 249,
+          "fields": [
+            "17.247",
+            "0.34322"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 250,
+          "csv_physical_start_line": 250,
+          "csv_physical_end_line": 250,
+          "fields": [
+            "17.299",
+            "0.34424"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 251,
+          "csv_physical_start_line": 251,
+          "csv_physical_end_line": 251,
+          "fields": [
+            "17.387",
+            "0.34306"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 252,
+          "csv_physical_start_line": 252,
+          "csv_physical_end_line": 252,
+          "fields": [
+            "17.476",
+            "0.36814"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 253,
+          "csv_physical_start_line": 253,
+          "csv_physical_end_line": 253,
+          "fields": [
+            "17.482",
+            "0.36918"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 254,
+          "csv_physical_start_line": 254,
+          "csv_physical_end_line": 254,
+          "fields": [
+            "17.587",
+            "0.37936"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 255,
+          "csv_physical_start_line": 255,
+          "csv_physical_end_line": 255,
+          "fields": [
+            "17.594",
+            "0.37786"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 256,
+          "csv_physical_start_line": 256,
+          "csv_physical_end_line": 256,
+          "fields": [
+            "17.622",
+            "0.34948"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 257,
+          "csv_physical_start_line": 257,
+          "csv_physical_end_line": 257,
+          "fields": [
+            "17.695",
+            "0.27067"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 258,
+          "csv_physical_start_line": 258,
+          "csv_physical_end_line": 258,
+          "fields": [
+            "17.713",
+            "0.24584"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 259,
+          "csv_physical_start_line": 259,
+          "csv_physical_end_line": 259,
+          "fields": [
+            "17.782",
+            "0.15498"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 260,
+          "csv_physical_start_line": 260,
+          "csv_physical_end_line": 260,
+          "fields": [
+            "17.796",
+            "0.1419"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 261,
+          "csv_physical_start_line": 261,
+          "csv_physical_end_line": 261,
+          "fields": [
+            "17.879",
+            "0.081534"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 262,
+          "csv_physical_start_line": 262,
+          "csv_physical_end_line": 262,
+          "fields": [
+            "17.888",
+            "0.076278"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 263,
+          "csv_physical_start_line": 263,
+          "csv_physical_end_line": 263,
+          "fields": [
+            "17.899",
+            "0.071384"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 264,
+          "csv_physical_start_line": 264,
+          "csv_physical_end_line": 264,
+          "fields": [
+            "17.957",
+            "0.046852"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 265,
+          "csv_physical_start_line": 265,
+          "csv_physical_end_line": 265,
+          "fields": [
+            "18",
+            "0.036398"
+          ],
+          "field_count": 2,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        }
+      ],
+      "syntax_status": "parsed",
+      "semantic_status": "UNRESOLVED; strict CSV syntax is not schema validation"
+    },
+    "Flow rate_update_07122024.csv": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,VT/FF boundaries",
+      "csv_numbering": "reader.line_num physical CR/LF/CRLF lines,NOT raw_splitlines ordinals",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "\ufeffTime (min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min),Flow rate (\u03bcL/min)"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "60,31,33,30,41,30,30,39,40,42"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "120,18,23,27,9,10,12,6,11,5"
+        },
+        {
+          "raw_splitlines_ordinal": 4,
+          "text": "180,21,8,8,17,9,10,11,22,11"
+        },
+        {
+          "raw_splitlines_ordinal": 5,
+          "text": "240,15,8,11,9,18,8,16,7,17"
+        }
+      ],
+      "VT_count": 0,
+      "FF_count": 0,
+      "rows": [
+        {
+          "csv_record_ordinal": 1,
+          "csv_physical_start_line": 1,
+          "csv_physical_end_line": 1,
+          "fields": [
+            "\ufeffTime (min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)",
+            "Flow rate (\u03bcL/min)"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 2,
+          "csv_physical_start_line": 2,
+          "csv_physical_end_line": 2,
+          "fields": [
+            "60",
+            "31",
+            "33",
+            "30",
+            "41",
+            "30",
+            "30",
+            "39",
+            "40",
+            "42"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 3,
+          "csv_physical_start_line": 3,
+          "csv_physical_end_line": 3,
+          "fields": [
+            "120",
+            "18",
+            "23",
+            "27",
+            "9",
+            "10",
+            "12",
+            "6",
+            "11",
+            "5"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 4,
+          "csv_physical_start_line": 4,
+          "csv_physical_end_line": 4,
+          "fields": [
+            "180",
+            "21",
+            "8",
+            "8",
+            "17",
+            "9",
+            "10",
+            "11",
+            "22",
+            "11"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        },
+        {
+          "csv_record_ordinal": 5,
+          "csv_physical_start_line": 5,
+          "csv_physical_end_line": 5,
+          "fields": [
+            "240",
+            "15",
+            "8",
+            "11",
+            "9",
+            "18",
+            "8",
+            "16",
+            "7",
+            "17"
+          ],
+          "field_count": 10,
+          "blank_record": false,
+          "values_status": "raw strings retained; no inferred header/units/semantics"
+        }
+      ],
+      "syntax_status": "parsed",
+      "semantic_status": "UNRESOLVED; strict CSV syntax is not schema validation"
+    }
+  },
+  "metadata_description": "ABSENT in pinned API snapshot",
+  "claims": "No waveform/schema/physical/controller/rights admission from syntax alone"
+}
