@@ -1,0 +1,99 @@
+{
+  "endpoint_classification": false,
+  "files": [
+    {
+      "bom": false,
+      "cr_only": 0,
+      "crlf": 2101,
+      "final_newline": true,
+      "first_logical_record_strings": [
+        "Nr",
+        "TID",
+        "PID",
+        "x [pixel]",
+        "y [pixel]",
+        "t [sec]",
+        "I [val]",
+        "Len [pixel]",
+        "D2S [pixel]",
+        "D2R [pixel]",
+        "D2P [pixel]",
+        "v [pixel/sec]",
+        "? [deg]",
+        "?? [deg]",
+        "E/H",
+        "DEL_Diff",
+        "Sticking",
+        "Subpopulation"
+      ],
+      "lf_only": 0,
+      "literal_lines": 2102,
+      "logical_records": 2101,
+      "name": "Control_4/Raw Data - Tracked.csv",
+      "width_counts": {
+        "18": 2101
+      }
+    },
+    {
+      "bom": false,
+      "cr_only": 0,
+      "crlf": 2101,
+      "final_newline": true,
+      "first_logical_record_strings": [
+        "Nr",
+        "TID",
+        "PID",
+        "x [pixel]",
+        "y [pixel]",
+        "t [sec]",
+        "I [val]",
+        "Len [pixel]",
+        "D2S [pixel]",
+        "D2R [pixel]",
+        "D2P [pixel]",
+        "v [pixel/sec]",
+        "? [deg]",
+        "?? [deg]",
+        "E/H"
+      ],
+      "lf_only": 0,
+      "literal_lines": 2102,
+      "logical_records": 2101,
+      "name": "Control_4/Raw Data.csv",
+      "width_counts": {
+        "15": 2101
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 189457,
+      "crc": 2140289220,
+      "local": {
+        "descriptor_bytes": 16,
+        "end": 659860138,
+        "local_extra_bytes": 0,
+        "start": 659670681
+      },
+      "name": "Control_4/Raw Data - Tracked.csv",
+      "ordinal": 302,
+      "sha256": "18aabb4867689605e77f34e54398352b5fa97a2995458935817242da445f9666"
+    },
+    {
+      "bytes": 135566,
+      "crc": 1399166204,
+      "local": {
+        "descriptor_bytes": 16,
+        "end": 659995772,
+        "local_extra_bytes": 0,
+        "start": 659860206
+      },
+      "name": "Control_4/Raw Data.csv",
+      "ordinal": 303,
+      "sha256": "811fafd84eba1c5b2df04da17f303ac1e86b7e663ecc03134ceed5709fb8b0cb"
+    }
+  ],
+  "numeric_conversion": false,
+  "source_sha256": "e46ecc23a7e2e1631e43a3328a127a3cf6eaa07b4797c3266f676c40d3eb9052",
+  "status": "COMPLETE_ALL2_LITERAL_SCHEMA_PENDING_MANUAL_LEDGER"
+}
