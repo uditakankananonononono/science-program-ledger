@@ -1,0 +1,35 @@
+# A2 streamed original identity and bounded central-directory freeze
+
+Prereg8b7d436published/readback,noZIPsourcebytes/directory/membercontentfetched.
+ActualPythonexecutable+zipfilemodulebytehashes,notalltransitiveenvironmentproof.
+Onefile640MiBcap;mandatoryexactdeclaredContentLength,stream64KiB/actualEOFsize/
+MD5/SHA256BEFOREdirectorycalls. Fileheldopen,fullidentity+fstatrecheckedAFTERparse
+beforeinventoryexposure. Notatomicfilesystemhostileproof,nonewfileidentityinferred.
+Diskerrors/outofspace->scopedunavailable,no deletion/cleanupoforiginals.
+
+EOCDtail<=65557bytes,end/commentalignment/conflictingcandidatesreject;ZIP64
+locator/sentinels/extrafield1/multipartdisk/countmismatchreject. CentralrangeEND
+exactEOCD,noSFXoffsetrepair. Centralbytes<=16MiB,entrycount<=100000;manualcomplete
+centralrecordbounds/signatures/count/extra/name/offsetscannerBEFOREZipFileallocation.
+Parserentrycount/start/fieldsagreewithscannerbeforeALLmetadataexposure. Symlink,
+NUL,absolute/drive/traversal,duplicate,encryption->unresolvedno partialinventory.
+Originalnamebyteshex+literaldecodednames/reprkeptONSUCCESS,notextractionpaths.
+Unresolvedfailuredoesnotexposepartialunsafeentrynames,rawarchiveheldforscopedreview.
+
+No memberopen/read/extract/testzip/decompression/CRCcontentchecks. Directorymetadata
+notmemberdata/localsizes/CRCvalidated;nozipbombextractionbecauseNOextraction. Caps
+boundscannerinput/declaredentryallocationnotpeakRAM;noobserved2GBresourceclaim.
+20ssocket/1200sbetweenreadtimechecks,nothardwallquota. Directoryfailurepreserves
+originalidentitypositivewithoutschemaendpointcredit. Nodata/code execution,training,
+forcearrays/timing/calibration/physiology/rights/inventionorendpointclassification.
+DirectorysuccessallowsONLYseparatememberselectionprereg,no favorablebodypeeks.
+
+Eightfixturegroups:all5memberroutestrapped,identityparse-spy,unsafename/symlink/
+encryptioncontrols,EOCDcount/range/tail/ZIP64,malformedcentral/caps,duplicate,
+mutated-file no partialinventory,requiredlength/EOF/cap/redirecttransport. Initial
+fixtureconstructioninsideopen-trapfailed,testmovedfixturecreationBEFOREtraps;
+all8nowpass. No source run/changes/failureshidden. Fixturesnotrawsourcevalidation.
+Runafterapproval:python3 admit.py NEW_DIRECTORY
+Replay:python3 admit.py NEW_DIRECTORY RETAINED_ORIGINAL_ARCHIVE_PATH
+DoNOTcommit627MBarchiveintoGit;retainlocaloriginal/hashandverifiedupstreamURL,
+manifestidentityrecord. No promiseddownloadedarchivefiledeliveryfromprivatepath.
