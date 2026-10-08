@@ -84,7 +84,7 @@ def main():
         output=solve(payload)
         print(json.dumps(output,allow_nan=False,sort_keys=True))
         return 0
-    except (ValueError,TypeError,OverflowError,OSError) as exc:
+    except (ValueError,TypeError,OverflowError,OSError,RecursionError) as exc:
         print(json.dumps({'status':'error','error':str(exc)},allow_nan=False),file=sys.stderr)
         return 2
 

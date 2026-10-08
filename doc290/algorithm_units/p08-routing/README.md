@@ -115,9 +115,11 @@ Optional forbidden rules: list of pairs of edge IDs. An edge ID is a JSON pair
 incoming edge ID, outgoing edge ID, and delay. Duplicate keys/rules, unknown fields,
 unsupported parameters and non-standard NaN/Infinity JSON tokens are rejected.
 
-Success or infeasible results are JSON on stdout with exit code 0; parse/validation/
-I/O failures are JSON on stderr with exit code 2. Infeasible is not a crash.
-25 test methods pass, including subprocess parsing/output/error checks and all
+Success or infeasible results are JSON on stdout with exit code 0. The tested
+parse/validation/I/O failure classes, including decoder nesting RecursionError,
+are JSON on stderr with exit code 2. This is not a guarantee for every possible
+process failure. Infeasible is not a crash.
+26 test methods pass, including a 1500-level decoder nesting regression and subprocess parsing/output/error checks and all
 prior oracle comparisons. Input is loaded into memory; no large-file, security,
 physiology or performance validation is claimed. This runner adds usability,
 not a sixth optimization algorithm or a scientific discovery.

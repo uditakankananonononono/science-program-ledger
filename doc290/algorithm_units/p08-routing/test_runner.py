@@ -41,3 +41,10 @@ class RunnerTests(unittest.TestCase):
         with self.assertRaises(ValueError):solve(p)
         p.pop('budget');p['forbidden']=[]
         with self.assertRaises(ValueError):solve(p)
+
+    def test_deep_nesting_structured_error(self):
+        got=self.invoke('['*1500+'0'+']'*1500)
+        self.assertEqual(got.returncode,2)
+        self.assertEqual(got.stdout,'')
+        self.assertEqual(json.loads(got.stderr)['status'],'error')
+        self.assertNotIn('Traceback',got.stderr)
