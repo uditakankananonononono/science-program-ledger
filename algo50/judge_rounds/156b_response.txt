@@ -1,0 +1,9 @@
+Yes. The exhaustive join directly answers the earlier objection. It covers every record in both 306-folder directories and finds the complete set of exact cross-folder waveform collisions, rather than searching only metadata-matched pairs. The “only user172↔user290” result is therefore much stronger evidence of an isolated exact duplication.
+
+DROPPING the dataset for an independent-person screening claim is justified. The 160 exact cross-folder matches are sufficient to establish a serious independence failure between those folders, even without proving they are the same human. However, “exclude the affected folder pair and proceed” is defensible only as a separate, explicitly restricted analysis: remove both user172 and user290 entirely from any person-independent train/test evaluation, rerun the exhaustive join after exclusion, and state that remaining folders have only passed an exact-match screen, not an identity audit. You should not simply delete the 160 records and retain the two folders.
+
+Unproven: user172 and user290 are actually the same person; non-exact duplicates/re-windowing/resampling; same-person recordings hidden under other folder labels; and whether any biological/person-level independence remains compromised beyond exact waveform identity. The missing global subject identifier is the central unresolved issue.
+
+Registry wording:
+
+DROP — independent-person screening failed. Exhaustive content-level joining identified 160 exact cross-folder raw-waveform matches, all and only between training user172 and testing user290. Therefore the dataset is not admitted for an analysis requiring independently identified persons. The affected folder pair may be excluded entirely for a restricted follow-up analysis only after rerunning the exhaustive exact-match screen on the retained folders. This screen does not establish subject identity or exclude non-exact or same-person cross-folder duplication.
