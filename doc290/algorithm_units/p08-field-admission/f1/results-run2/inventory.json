@@ -1,0 +1,3033 @@
+{
+  "outcome": "mandatory manual format/provenance ledger required",
+  "files": {
+    "README.md": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "# Structured Learning for Electromagnetic Field Modeling and Real-Time Inversion"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "<figure>"
+        },
+        {
+          "raw_splitlines_ordinal": 4,
+          "text": "  <img src=\"figures/datasets.png\" width=\"1000\" alt=\"Datasets overview\">"
+        },
+        {
+          "raw_splitlines_ordinal": 5,
+          "text": "  <figcaption><em>Overview of the OctoMag and Navion datasets.</em></figcaption>"
+        },
+        {
+          "raw_splitlines_ordinal": 6,
+          "text": "</figure>"
+        },
+        {
+          "raw_splitlines_ordinal": 7,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 8,
+          "text": "---"
+        },
+        {
+          "raw_splitlines_ordinal": 9,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 10,
+          "text": "This repository contains the code accompanying the paper **\u201cStructured Learning for Electromagnetic Field Modeling and Real-Time Inversion\u201d**. In this repo you will find:"
+        },
+        {
+          "raw_splitlines_ordinal": 11,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 12,
+          "text": "- The collected datasets for the OctoMag and Navion Electromagnetic Navigation Systems (eMNS),"
+        },
+        {
+          "raw_splitlines_ordinal": 13,
+          "text": "- Implementations of the proposed structured learning-based models as well as the benchmark black-box models,"
+        },
+        {
+          "raw_splitlines_ordinal": 14,
+          "text": "- Trained parameters for all models considered in the paper,"
+        },
+        {
+          "raw_splitlines_ordinal": 15,
+          "text": "- Notebooks for data processing as well as model training and evaluation."
+        },
+        {
+          "raw_splitlines_ordinal": 16,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 17,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 18,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 19,
+          "text": "## Citation"
+        },
+        {
+          "raw_splitlines_ordinal": 20,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 21,
+          "text": "If you use this repository in your research, please cite the accompanying paper:"
+        },
+        {
+          "raw_splitlines_ordinal": 22,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 23,
+          "text": "```bibtex"
+        },
+        {
+          "raw_splitlines_ordinal": 24,
+          "text": "@article{Bernardes2026StructuredLearning,"
+        },
+        {
+          "raw_splitlines_ordinal": 25,
+          "text": "  author  = {Bernardes, Antonio and Zughaibi, Jasan and Muehlebach, Michael and Nelson, Bradley J.},"
+        },
+        {
+          "raw_splitlines_ordinal": 26,
+          "text": "  title   = {Structured Learning for Electromagnetic Field Modeling and Real-Time Inversion},"
+        },
+        {
+          "raw_splitlines_ordinal": 27,
+          "text": "  journal = {Robotics: Science and Systems},"
+        },
+        {
+          "raw_splitlines_ordinal": 28,
+          "text": "  year    = {2026},"
+        },
+        {
+          "raw_splitlines_ordinal": 29,
+          "text": "  url     = {https://www.roboticsproceedings.org/rss22/p165.pdf}"
+        },
+        {
+          "raw_splitlines_ordinal": 30,
+          "text": "}"
+        },
+        {
+          "raw_splitlines_ordinal": 31,
+          "text": "```"
+        },
+        {
+          "raw_splitlines_ordinal": 32,
+          "text": "Link to arxiv: https://arxiv.org/pdf/2602.06618"
+        },
+        {
+          "raw_splitlines_ordinal": 33,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 34,
+          "text": "## Installation"
+        },
+        {
+          "raw_splitlines_ordinal": 35,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 36,
+          "text": "### Requirements"
+        },
+        {
+          "raw_splitlines_ordinal": 37,
+          "text": "- **Python 3.8.x** (this codebase is tested/supported on Python 3.8)"
+        },
+        {
+          "raw_splitlines_ordinal": 38,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 39,
+          "text": "Create and activate a Python 3.8 virtual environment, then install dependencies. On a Linux machine:"
+        },
+        {
+          "raw_splitlines_ordinal": 40,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 41,
+          "text": "```bash"
+        },
+        {
+          "raw_splitlines_ordinal": 42,
+          "text": "python3.8 --version  # should print 3.8.x"
+        },
+        {
+          "raw_splitlines_ordinal": 43,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 44,
+          "text": "python3.8 -m venv magcalibration"
+        },
+        {
+          "raw_splitlines_ordinal": 45,
+          "text": "source magcalibration/bin/activate"
+        },
+        {
+          "raw_splitlines_ordinal": 46,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 47,
+          "text": "pip install -r requirements.txt"
+        },
+        {
+          "raw_splitlines_ordinal": 48,
+          "text": "```"
+        },
+        {
+          "raw_splitlines_ordinal": 49,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 50,
+          "text": "## Datasets"
+        },
+        {
+          "raw_splitlines_ordinal": 51,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 52,
+          "text": "The datasets are included in this repository under `data/`:"
+        },
+        {
+          "raw_splitlines_ordinal": 53,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 54,
+          "text": "```text"
+        },
+        {
+          "raw_splitlines_ordinal": 55,
+          "text": "data/"
+        },
+        {
+          "raw_splitlines_ordinal": 56,
+          "text": "\u2514\u2500\u2500 octomag_data/"
+        },
+        {
+          "raw_splitlines_ordinal": 57,
+          "text": "    \u2514\u2500\u2500 data/              # OctoMag dataset"
+        },
+        {
+          "raw_splitlines_ordinal": 58,
+          "text": "\u2514\u2500\u2500 navion_data/"
+        },
+        {
+          "raw_splitlines_ordinal": 59,
+          "text": "    \u2514\u2500\u2500 data/              # Navion dataset"
+        },
+        {
+          "raw_splitlines_ordinal": 60,
+          "text": "```"
+        },
+        {
+          "raw_splitlines_ordinal": 61,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 62,
+          "text": "You can visualize the datasets using:"
+        },
+        {
+          "raw_splitlines_ordinal": 63,
+          "text": "```text"
+        },
+        {
+          "raw_splitlines_ordinal": 64,
+          "text": "notebooks/"
+        },
+        {
+          "raw_splitlines_ordinal": 65,
+          "text": "\u251c\u2500\u2500 visualize_octomag.ipynb                 # OctoMag dataset"
+        },
+        {
+          "raw_splitlines_ordinal": 66,
+          "text": "\u2514\u2500\u2500 visualize_navion.ipynb                  # Navion dataset"
+        },
+        {
+          "raw_splitlines_ordinal": 67,
+          "text": "```"
+        },
+        {
+          "raw_splitlines_ordinal": 68,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 69,
+          "text": "## Models"
+        },
+        {
+          "raw_splitlines_ordinal": 70,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 71,
+          "text": "This repository contains implementations and trained parameters for the learning-based models and an interface for the MPEM baseline."
+        },
+        {
+          "raw_splitlines_ordinal": 72,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 73,
+          "text": "### Model interface"
+        },
+        {
+          "raw_splitlines_ordinal": 74,
+          "text": "In `notebooks/usage_example.ipynb` you will find a quick demonstration of how to use the considered models through an unified interface."
+        },
+        {
+          "raw_splitlines_ordinal": 75,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 76,
+          "text": "### Learning-based models"
+        },
+        {
+          "raw_splitlines_ordinal": 77,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 78,
+          "text": "All learning-based model code lives in:"
+        },
+        {
+          "raw_splitlines_ordinal": 79,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 80,
+          "text": "- **Implementation:** `src/calibration/`"
+        },
+        {
+          "raw_splitlines_ordinal": 81,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 82,
+          "text": "Trained parameters for learning-based models:"
+        },
+        {
+          "raw_splitlines_ordinal": 83,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 84,
+          "text": "- **Neural models:** `notebooks/training/octomag_params/` or `notebooks/training/navion_params/`"
+        },
+        {
+          "raw_splitlines_ordinal": 85,
+          "text": "- **Gradient-boosted linear tree regressor:** `notebooks/training/octomag_trees/` or `notebooks/training/navion_trees/`"
+        },
+        {
+          "raw_splitlines_ordinal": 86,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 87,
+          "text": "### MPEM baseline"
+        },
+        {
+          "raw_splitlines_ordinal": 88,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 89,
+          "text": "For the MPEM (Multipole Expansion Model), the open source implementation is found in:"
+        },
+        {
+          "raw_splitlines_ordinal": 90,
+          "text": "```text"
+        },
+        {
+          "raw_splitlines_ordinal": 91,
+          "text": "https://github.com/ethz-msrl/Tesla_core/tree/master/mag_control/mpem"
+        },
+        {
+          "raw_splitlines_ordinal": 92,
+          "text": "```"
+        },
+        {
+          "raw_splitlines_ordinal": 93,
+          "text": "And as a Python package (available only for x86 architecture):"
+        },
+        {
+          "raw_splitlines_ordinal": 94,
+          "text": "```text"
+        },
+        {
+          "raw_splitlines_ordinal": 95,
+          "text": "https://pypi.org/project/mag-manip/"
+        },
+        {
+          "raw_splitlines_ordinal": 96,
+          "text": "```"
+        },
+        {
+          "raw_splitlines_ordinal": 97,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 98,
+          "text": "The optimized parameters are found in `mpem/`."
+        },
+        {
+          "raw_splitlines_ordinal": 99,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 100,
+          "text": "## Workflow"
+        },
+        {
+          "raw_splitlines_ordinal": 101,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 102,
+          "text": "### 1. Data processing"
+        },
+        {
+          "raw_splitlines_ordinal": 103,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 104,
+          "text": "The notebooks in `notebooks/processing/` cover the full preprocessing pipeline:"
+        },
+        {
+          "raw_splitlines_ordinal": 105,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 106,
+          "text": "1. `outliers_in_currents.ipynb`  "
+        },
+        {
+          "raw_splitlines_ordinal": 107,
+          "text": "   Applies **RANSAC-based** outlier removal."
+        },
+        {
+          "raw_splitlines_ordinal": 108,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 109,
+          "text": "2. `split_dataset.ipynb`  "
+        },
+        {
+          "raw_splitlines_ordinal": 110,
+          "text": "   Splits the **cleaned** dataset into train/validation/test sets."
+        },
+        {
+          "raw_splitlines_ordinal": 111,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 112,
+          "text": "3. `downsample.ipynb`  "
+        },
+        {
+          "raw_splitlines_ordinal": 113,
+          "text": "   Downsamples the train and validation sets for the data-resolution ablation experiments. In the paper, this is performed only for the OctoMag dataset, with reductions to 50%, 20%, 5%, and 1%."
+        },
+        {
+          "raw_splitlines_ordinal": 114,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 115,
+          "text": "The notebooks should be run in the order defined in the list above."
+        },
+        {
+          "raw_splitlines_ordinal": 116,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 117,
+          "text": "### 2. Model training"
+        },
+        {
+          "raw_splitlines_ordinal": 118,
+          "text": "Each model type has a dedicated training notebook:"
+        },
+        {
+          "raw_splitlines_ordinal": 119,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 120,
+          "text": "1. `train_nn.ipynb`"
+        },
+        {
+          "raw_splitlines_ordinal": 121,
+          "text": "   For training neural models."
+        },
+        {
+          "raw_splitlines_ordinal": 122,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 123,
+          "text": "2. `train_gbt.ipynb`"
+        },
+        {
+          "raw_splitlines_ordinal": 124,
+          "text": "   For training gradient-boosted linear-tree regressors."
+        },
+        {
+          "raw_splitlines_ordinal": 125,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 126,
+          "text": "3. `train_mpem.ipynb`"
+        },
+        {
+          "raw_splitlines_ordinal": 127,
+          "text": "   For training MPEM models. Note that this requires a ROS installation and the framework in:"
+        },
+        {
+          "raw_splitlines_ordinal": 128,
+          "text": "```text"
+        },
+        {
+          "raw_splitlines_ordinal": 129,
+          "text": "https://github.com/ethz-msrl/Tesla_core/tree/master/mag_control/mpem"
+        },
+        {
+          "raw_splitlines_ordinal": 130,
+          "text": "```"
+        },
+        {
+          "raw_splitlines_ordinal": 131,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 132,
+          "text": "#### Training with your own dataset"
+        },
+        {
+          "raw_splitlines_ordinal": 133,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 134,
+          "text": "The training (and evaluation) pipelines expect a **pickled** [`pandas.DataFrame`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) with the following columns:"
+        },
+        {
+          "raw_splitlines_ordinal": 135,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 136,
+          "text": "- **Position:** `x`, `y`, `z`  "
+        },
+        {
+          "raw_splitlines_ordinal": 137,
+          "text": "  Cartesian coordinates where the magnetic field was measured."
+        },
+        {
+          "raw_splitlines_ordinal": 138,
+          "text": "- **Magnetic field:** `Bx`, `By`, `Bz`  "
+        },
+        {
+          "raw_splitlines_ordinal": 139,
+          "text": "  Measured field vector components at that position."
+        },
+        {
+          "raw_splitlines_ordinal": 140,
+          "text": "- **Coil currents:** `em_*`  "
+        },
+        {
+          "raw_splitlines_ordinal": 141,
+          "text": "  One column per coil. For example, `em_1`, `em_2`, `em_3`, in a 3-coil system."
+        },
+        {
+          "raw_splitlines_ordinal": 142,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 143,
+          "text": "#### Training with the provided datasets"
+        },
+        {
+          "raw_splitlines_ordinal": 144,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 145,
+          "text": "After running steps `1.` and `2.` of the data-processing pipeline above, the directory `data/octomag_data/split_dataset/` or `data/navion_data/split_dataset/` will contain **pickled** train/validation/test splits of the cleaned dataset of the corresponding eMNS, ready to be used by the training notebooks."
+        },
+        {
+          "raw_splitlines_ordinal": 146,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 147,
+          "text": "### 3. Model evaluation"
+        },
+        {
+          "raw_splitlines_ordinal": 148,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 149,
+          "text": "To avoid recomputing each model\u2019s magnetic field and gradient predictions for each test/plot, we use the `EvaluationPackage` class (defined in `src/evaluate/`) which stores predictions for a chosen set of models and provides utilities for downstream evaluation."
+        },
+        {
+          "raw_splitlines_ordinal": 150,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 151,
+          "text": "**Step 1 \u2014 Assemble/cached predictions**  "
+        },
+        {
+          "raw_splitlines_ordinal": 152,
+          "text": "Run `notebooks/testing/assemble_data.ipynb` to build an `EvaluationPackage`.  "
+        },
+        {
+          "raw_splitlines_ordinal": 153,
+          "text": "This notebook is already configured with the set of models evaluated in the paper."
+        },
+        {
+          "raw_splitlines_ordinal": 154,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 155,
+          "text": "**NOTE**: This notebook assumes the required downsampled training and validation sets already exist. Therefore, before running it, complete Step 3. (downsample.ipynb) in the data-processing pipeline above for the 50%, 20%, 5%, and 1% reduction settings."
+        },
+        {
+          "raw_splitlines_ordinal": 156,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 157,
+          "text": "**Step 2 \u2014 Use the cached package**  "
+        },
+        {
+          "raw_splitlines_ordinal": 158,
+          "text": "Once assembled, the `EvaluationPackage` can be loaded by the notebooks in:"
+        },
+        {
+          "raw_splitlines_ordinal": 159,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 160,
+          "text": "- `notebooks/testing/` for quick checks and comparisons"
+        },
+        {
+          "raw_splitlines_ordinal": 161,
+          "text": "- `notebooks/paper_plots/` to reproduce the figures reported in the paper"
+        },
+        {
+          "raw_splitlines_ordinal": 162,
+          "text": ""
+        },
+        {
+          "raw_splitlines_ordinal": 163,
+          "text": "### 4. MPEM workspace analysis *(Navion)*"
+        },
+        {
+          "raw_splitlines_ordinal": 164,
+          "text": "The workspace conditioning analysis was conducted using the notebooks in `notebooks/workspace_analysis/`:"
+        },
+        {
+          "raw_splitlines_ordinal": 165,
+          "text": "1. `divide_workspace.ipynb` Divides data into cylindrical (or rectangular) segments."
+        },
+        {
+          "raw_splitlines_ordinal": 166,
+          "text": "2. `workspace_analysis.ipynb` Runs the workspace analysis required for the plotting in `notebooks/paper_plots/workspace.ipynb`"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "utf8_text_unclassified"
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-18-55-40_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:0af07f17463f5a61cbc4fdabaa640d1a70ad5c7eb142862f6c985e903733d0ba"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "0af07f17463f5a61cbc4fdabaa640d1a70ad5c7eb142862f6c985e903733d0ba",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-18-59-25_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:f9a10b6caf6a3341921b03f8b652ca6194667bf0df57c2e69b0494293643ffec"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "f9a10b6caf6a3341921b03f8b652ca6194667bf0df57c2e69b0494293643ffec",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-05-35_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:b276f1a88a3be276af26dbd1129b01c229f83f896d789a3e51d1c6910339bc5d"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "b276f1a88a3be276af26dbd1129b01c229f83f896d789a3e51d1c6910339bc5d",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-11-46_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:4c8fe987d2a8e55549ab83238b7c77a5372ab1872f774b6f1f53a9482f6f567d"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "4c8fe987d2a8e55549ab83238b7c77a5372ab1872f774b6f1f53a9482f6f567d",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-15-27_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:6eeb3fe9d9e4771c870dc43b8a2076d583d0df5b75d7a93f5dda7bfd7077c60b"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "6eeb3fe9d9e4771c870dc43b8a2076d583d0df5b75d7a93f5dda7bfd7077c60b",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-20-18_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:671fc0218c0fdddb797c18296bca8b77adcd2c48d450e78e5f290b0bfb58bf6a"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "671fc0218c0fdddb797c18296bca8b77adcd2c48d450e78e5f290b0bfb58bf6a",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-24-21_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:7843a5bb3d954ee1817ed5b62a6e87c30656f655f56af49679bdf270d24586b1"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "7843a5bb3d954ee1817ed5b62a6e87c30656f655f56af49679bdf270d24586b1",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-29-13_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:bb3f16c45399e9715cbfcc76fb1fd95f384378b1423ba98b430804e370967acb"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "bb3f16c45399e9715cbfcc76fb1fd95f384378b1423ba98b430804e370967acb",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-42-01_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:52a8442edbb817bccbc8b6ae1062baebaff817d02bb5fa3058be2d25ef9184f4"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "52a8442edbb817bccbc8b6ae1062baebaff817d02bb5fa3058be2d25ef9184f4",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-45-55_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c46d5e361a4128b8d00e7d01025428589d77f33686aba73403fd3a106d3d425e"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c46d5e361a4128b8d00e7d01025428589d77f33686aba73403fd3a106d3d425e",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-49-32_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:6ebeae1d44e15d6ba6b617c10266cdc16b169d23d7c1d071cff67c8e4aa495f4"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "6ebeae1d44e15d6ba6b617c10266cdc16b169d23d7c1d071cff67c8e4aa495f4",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-53-13_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:5053ec6c110b794ff63e68a08699f34364a672274d108a9af8c5d5e4835d7cae"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "5053ec6c110b794ff63e68a08699f34364a672274d108a9af8c5d5e4835d7cae",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-19-57-06_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:2c607b716416d75e894fe2e0a58b304dc50049a5a90f90a8f74eb0af16ece8a1"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "2c607b716416d75e894fe2e0a58b304dc50049a5a90f90a8f74eb0af16ece8a1",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-09-24_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:ef6aeb5b475f336a05d7e6cfd0730680af012c1f2ec68db08c62f723d2ce1678"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "ef6aeb5b475f336a05d7e6cfd0730680af012c1f2ec68db08c62f723d2ce1678",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-16-03_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c7b15c8cbad4deefcb33df7bf807b232aadfaee8c7f3ac9c65b5bd60e4666ce7"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c7b15c8cbad4deefcb33df7bf807b232aadfaee8c7f3ac9c65b5bd60e4666ce7",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-19-37_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c92bb498c200f044c9e633a504264f1c21029eef042231d8943ec2342166ba55"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c92bb498c200f044c9e633a504264f1c21029eef042231d8943ec2342166ba55",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-23-27_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:0bff3dd60bf3e69e78ca02a537a3a97ac16f683526fe6de09408e824a1da0302"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "0bff3dd60bf3e69e78ca02a537a3a97ac16f683526fe6de09408e824a1da0302",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-31-43_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:ed516d93ea07b8cf62d6cbe116017f0e5af5d8147d37cb80f3b3556d627533b5"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "ed516d93ea07b8cf62d6cbe116017f0e5af5d8147d37cb80f3b3556d627533b5",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-35-21_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:f779db5f6a3e7dd546aaa1a96c894c352061b15cfed7f25041b74bcdd653c99a"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "f779db5f6a3e7dd546aaa1a96c894c352061b15cfed7f25041b74bcdd653c99a",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-39-11_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:9af57480afa4b84a97ef7733406427eec0dc2aeb962b7f3558494efb757141a8"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "9af57480afa4b84a97ef7733406427eec0dc2aeb962b7f3558494efb757141a8",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-42-41_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:edd8eeab105b6c48c891c889f85f41313e2e72ef3bf731abc72b4c8aceb481ab"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "edd8eeab105b6c48c891c889f85f41313e2e72ef3bf731abc72b4c8aceb481ab",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-46-20_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:9b571582aea04d2e513f4f3958882837565e0ad3d375066081ecd311c2a630ff"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "9b571582aea04d2e513f4f3958882837565e0ad3d375066081ecd311c2a630ff",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-49-50_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:bf6c6839e0aec4918f85456127e5b96e54ed6e949542fd4bc8c4b7a575376006"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "bf6c6839e0aec4918f85456127e5b96e54ed6e949542fd4bc8c4b7a575376006",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-53-28_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:18c09eb138d8083daafeec3a359f46cfc775f8adf3860c60f19a5266c220f997"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "18c09eb138d8083daafeec3a359f46cfc775f8adf3860c60f19a5266c220f997",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-20-56-59_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:3947d30aa3a306cfaf3922d553cdb0f5b0d4582c01e81658a2e64da3edeeb2fb"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "3947d30aa3a306cfaf3922d553cdb0f5b0d4582c01e81658a2e64da3edeeb2fb",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-00-27_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:722556e893fdd8632d2135c5b7e90f6b44587d7f6ff5a4e3c6f87393ba7d9d58"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "722556e893fdd8632d2135c5b7e90f6b44587d7f6ff5a4e3c6f87393ba7d9d58",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-04-00_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:fd008610d4f7ac5d5001169e35f86c4c5a3485f3915a1ad5c89423670be60384"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "fd008610d4f7ac5d5001169e35f86c4c5a3485f3915a1ad5c89423670be60384",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-07-52_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:51f1bed7d41b06349d209729aaa22484c3ff55fbd55ae3e843b5f8d2c76de825"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "51f1bed7d41b06349d209729aaa22484c3ff55fbd55ae3e843b5f8d2c76de825",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-12-05_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:aa31f5986fc74baa6ed677b338471030fd5d8844b95db2473f030b090db594ed"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "aa31f5986fc74baa6ed677b338471030fd5d8844b95db2473f030b090db594ed",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-15-35_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:e0eba49baa508c031f74a1750c9c9490e50daba63d91e5d1c63a88dc22923adc"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "e0eba49baa508c031f74a1750c9c9490e50daba63d91e5d1c63a88dc22923adc",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-19-03_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:24d49016e287dbda85d7f1f011c2790346bce50e0d231abd18a0c39e7bdcecc2"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "24d49016e287dbda85d7f1f011c2790346bce50e0d231abd18a0c39e7bdcecc2",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-23-00_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:4b8437b7674d4c8a3a857c95759cfeb73a272708562332d2d4fabcdd3edd4b35"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "4b8437b7674d4c8a3a857c95759cfeb73a272708562332d2d4fabcdd3edd4b35",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-26-37_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:5d9c7d5d0f47530c8b9e42678626d2106e97cd50c30847121e184c9caacc1157"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "5d9c7d5d0f47530c8b9e42678626d2106e97cd50c30847121e184c9caacc1157",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-30-29_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:3cb41e387650f9b26cb2fdc2ccb95185a62d6b8d262434314b4cc1633425ec3c"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "3cb41e387650f9b26cb2fdc2ccb95185a62d6b8d262434314b4cc1633425ec3c",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-34-37_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:872eeb2d7ddcde5368f4c80592161edb13c036445dc57ed91b66f23323f59b22"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "872eeb2d7ddcde5368f4c80592161edb13c036445dc57ed91b66f23323f59b22",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-38-11_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:ba8560c519117681ac49c0fbe979c615dcab876192de8df8971622fe7bc04759"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "ba8560c519117681ac49c0fbe979c615dcab876192de8df8971622fe7bc04759",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-41-44_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:77114f49541c836a199206fdc9bfeb1e25d236b8ff4469a26ae153ae5fa3b798"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "77114f49541c836a199206fdc9bfeb1e25d236b8ff4469a26ae153ae5fa3b798",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-45-31_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:14c52dc6b62db12a119bb58571e69e233b86b8cb96a9ef20de37f3f1f9479531"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "14c52dc6b62db12a119bb58571e69e233b86b8cb96a9ef20de37f3f1f9479531",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-50-19_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:0646433441af3bb2b84fe42aad408830369ea1814e3e05228faafa6c7db545ea"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "0646433441af3bb2b84fe42aad408830369ea1814e3e05228faafa6c7db545ea",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-54-45_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:d7ec6e7d35e462309eadc8bbe3c83990794fe4f0bf394484ddf7fe23d0ffffbd"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "d7ec6e7d35e462309eadc8bbe3c83990794fe4f0bf394484ddf7fe23d0ffffbd",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-21-59-35_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:b2160ed0791088ee2d481c7b9f750cda21fcb645dc1bc038c30e6caf54c87392"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "b2160ed0791088ee2d481c7b9f750cda21fcb645dc1bc038c30e6caf54c87392",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-03-15_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:fc1c65c230d3b6c928a02febbfc9b7fdf34e799a88cb8b67f8b63a919ae92a5c"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "fc1c65c230d3b6c928a02febbfc9b7fdf34e799a88cb8b67f8b63a919ae92a5c",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-06-45_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c05ca9c3751670e4dab494a65edce6d1016fa02573769f8324d6438a75c1cd90"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c05ca9c3751670e4dab494a65edce6d1016fa02573769f8324d6438a75c1cd90",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-10-15_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c2d194fe2d0912a0d7a8e896fb15a9436b49939012cce59cf204e8fad7d11539"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c2d194fe2d0912a0d7a8e896fb15a9436b49939012cce59cf204e8fad7d11539",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-14-32_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c694975c7c5366916ec83e377c4c22a59f25a5b14f809749879b9156b7590e27"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c694975c7c5366916ec83e377c4c22a59f25a5b14f809749879b9156b7590e27",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-18-12_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:43028bb195c7854ddc1f61a2dff20f8d28f1d930421b55ac226fdcfd240afb76"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "43028bb195c7854ddc1f61a2dff20f8d28f1d930421b55ac226fdcfd240afb76",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-22-05_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:630141475bb13dab8b23da51673ab7fb03376e442f10e5ece8c8847f6009b034"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "630141475bb13dab8b23da51673ab7fb03376e442f10e5ece8c8847f6009b034",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-25-38_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:a34a401091f68b236c2cea7c2720b0165cfedc26d1e04088ae9edccb3213939d"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "a34a401091f68b236c2cea7c2720b0165cfedc26d1e04088ae9edccb3213939d",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-29-09_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c104cae8b7f0cdff895c785e9362a5ae7fdbea39030d153e7fab2931b1344f49"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c104cae8b7f0cdff895c785e9362a5ae7fdbea39030d153e7fab2931b1344f49",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-32-41_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:30fe01d765a2f70a081348a7b534c512b06fde0f7e6cadfd7d3f18e659e89485"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "30fe01d765a2f70a081348a7b534c512b06fde0f7e6cadfd7d3f18e659e89485",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-36-16_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:5aa8d15527fc22847323c591f17fc5645d33ff1929b9de0faeff5d0a6cca5d14"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "5aa8d15527fc22847323c591f17fc5645d33ff1929b9de0faeff5d0a6cca5d14",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-39-56_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:eca748af67597a23defc1a10ccc483da0e9335ed1b7822906a80001fe29eb3da"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "eca748af67597a23defc1a10ccc483da0e9335ed1b7822906a80001fe29eb3da",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-43-31_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:2e285ade6e16cfc2f564690ecd53dec630d432c5c150fb4863aaeac0a887a46a"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "2e285ade6e16cfc2f564690ecd53dec630d432c5c150fb4863aaeac0a887a46a",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-47-56_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:b2b39bbdf08e7b02197f8440bf5ac5e52e8c84a05c1e608466a60bc768a29636"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "b2b39bbdf08e7b02197f8440bf5ac5e52e8c84a05c1e608466a60bc768a29636",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-51-56_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:5bc01c084f3904fe207513b0cd57d53d1340e0dd4379c3ca20f6f7127533f5e3"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "5bc01c084f3904fe207513b0cd57d53d1340e0dd4379c3ca20f6f7127533f5e3",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-56-05_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:3bc890902838fe9d7e0d442c40bd952bbbac4386b2ae7e50d373d24785f5f37e"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "3bc890902838fe9d7e0d442c40bd952bbbac4386b2ae7e50d373d24785f5f37e",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-22-59-32_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:afdeaacf6ea977d306045e432443488da893369ca9da66f1adcf5c0cb4dc2dce"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "afdeaacf6ea977d306045e432443488da893369ca9da66f1adcf5c0cb4dc2dce",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-23-03-23_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:b76d2ea3f1c7a6c2a806c8525240775fd395a24f94981b7135d10c25f2231162"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "b76d2ea3f1c7a6c2a806c8525240775fd395a24f94981b7135d10c25f2231162",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-23-08-09_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:c0d6dca417ac5d7820e1f898f68500f808b8d203a46bf257ea5449debcc33bab"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "c0d6dca417ac5d7820e1f898f68500f808b8d203a46bf257ea5449debcc33bab",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "data/navion_data/data/calibration_ramp_limited__2025-12-20-23-11-55_processed.pkl": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "version https://git-lfs.github.com/spec/v1"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": "oid sha256:348811c680137c100a36ecc64044ed96bdbce4940957655c8974333a33de7fdb"
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "size 323882"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "git_lfs_pointer_syntax",
+      "declared_payload_sha256": "348811c680137c100a36ecc64044ed96bdbce4940957655c8974333a33de7fdb",
+      "declared_payload_size": 323882,
+      "payload_accessed": false
+    },
+    "notebooks/processing/split_dataset.ipynb": {
+      "raw_numbering": "Python splitlines 1-based,blank-inclusive,Unicode separators;NOT Unix/CSV/frame coordinates",
+      "raw_lines": [
+        {
+          "raw_splitlines_ordinal": 1,
+          "text": "{"
+        },
+        {
+          "raw_splitlines_ordinal": 2,
+          "text": " \"cells\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 3,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 4,
+          "text": "   \"cell_type\": \"markdown\","
+        },
+        {
+          "raw_splitlines_ordinal": 5,
+          "text": "   \"id\": \"50a4f3ca\","
+        },
+        {
+          "raw_splitlines_ordinal": 6,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 7,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 8,
+          "text": "    \"# Just a simple notebook to split dataset\""
+        },
+        {
+          "raw_splitlines_ordinal": 9,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 10,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 11,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 12,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 13,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 14,
+          "text": "   \"id\": \"75d9d06e\","
+        },
+        {
+          "raw_splitlines_ordinal": 15,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 16,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 17,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 18,
+          "text": "    \"import numpy as np\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 19,
+          "text": "    \"import matplotlib.pyplot as plt\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 20,
+          "text": "    \"import pandas as pd\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 21,
+          "text": "    \"import os\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 22,
+          "text": "    \"import sys\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 23,
+          "text": "    \"import gc\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 24,
+          "text": "    \"import shutil\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 25,
+          "text": "    \"from tqdm.auto import tqdm\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 26,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 27,
+          "text": "    \"cwd = os.getcwd()\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 28,
+          "text": "    \"parent_dir = os.path.dirname(cwd)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 29,
+          "text": "    \"base_dir = os.path.dirname(parent_dir)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 30,
+          "text": "    \"src_dir = base_dir + \\\"/src\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 31,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 32,
+          "text": "    \"sys.path.insert(0, src_dir)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 33,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 34,
+          "text": "    \"from data_analysis import data_processing, plot_positions, config\""
+        },
+        {
+          "raw_splitlines_ordinal": 35,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 36,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 37,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 38,
+          "text": "   \"cell_type\": \"markdown\","
+        },
+        {
+          "raw_splitlines_ordinal": 39,
+          "text": "   \"id\": \"9db0a674\","
+        },
+        {
+          "raw_splitlines_ordinal": 40,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 41,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 42,
+          "text": "    \"## Select which eMNS dataset to use\""
+        },
+        {
+          "raw_splitlines_ordinal": 43,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 44,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 45,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 46,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 47,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 48,
+          "text": "   \"id\": \"82966642\","
+        },
+        {
+          "raw_splitlines_ordinal": 49,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 50,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 51,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 52,
+          "text": "    \"####################################\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 53,
+          "text": "    \"########### Which eMNS? ############\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 54,
+          "text": "    \"####################################\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 55,
+          "text": "    \"emns = \\\"octomag\\\" # \\\"octomag\\\" or \\\"navion\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 56,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 57,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 58,
+          "text": "    \"# Setup paths according to eMNS\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 59,
+          "text": "    \"if emns.lower() == \\\"octomag\\\":\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 60,
+          "text": "    \"    data_dir = base_dir + \\\"/data/octomag_data\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 61,
+          "text": "    \"    data_path = data_dir + \\\"/clean_data/clean_data.pkl\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 62,
+          "text": "    \"    split_data_dir = data_dir + \\\"/split_dataset\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 63,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 64,
+          "text": "    \"elif emns.lower() == \\\"navion\\\":\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 65,
+          "text": "    \"    data_dir = base_dir + \\\"/data/navion_data/clean_data\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 66,
+          "text": "    \"    data_path = data_dir + \\\"/clean_data.pkl\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 67,
+          "text": "    \"    split_data_dir = data_dir + \\\"/../split_dataset\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 68,
+          "text": "    \"else:\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 69,
+          "text": "    \"    raise ValueError(\\\"emns must be either 'octomag' or 'navion'\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 70,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 71,
+          "text": "    \"training_data_file = split_data_dir + \\\"/training_data.pkl\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 72,
+          "text": "    \"test_data_file = split_data_dir + \\\"/test_data.pkl\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 73,
+          "text": "    \"validation_data_file = split_data_dir + \\\"/validation_data.pkl\\\"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 74,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 75,
+          "text": "    \"# Print paths for verification\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 76,
+          "text": "    \"print(f\\\"Data path: {data_path}\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 77,
+          "text": "    \"print(f\\\"Split data directory: {split_data_dir}\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 78,
+          "text": "    \"print(f\\\"Training data file: {training_data_file}\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 79,
+          "text": "    \"print(f\\\"Test data file: {test_data_file}\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 80,
+          "text": "    \"print(f\\\"Validation data file: {validation_data_file}\\\")\""
+        },
+        {
+          "raw_splitlines_ordinal": 81,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 82,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 83,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 84,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 85,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 86,
+          "text": "   \"id\": \"76455fc3\","
+        },
+        {
+          "raw_splitlines_ordinal": 87,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 88,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 89,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 90,
+          "text": "    \"# Define split ratios\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 91,
+          "text": "    \"train_ratio = 0.7\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 92,
+          "text": "    \"val_ratio = 0.15\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 93,
+          "text": "    \"test_ratio = 0.15\""
+        },
+        {
+          "raw_splitlines_ordinal": 94,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 95,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 96,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 97,
+          "text": "   \"cell_type\": \"markdown\","
+        },
+        {
+          "raw_splitlines_ordinal": 98,
+          "text": "   \"id\": \"da9015dc\","
+        },
+        {
+          "raw_splitlines_ordinal": 99,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 100,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 101,
+          "text": "    \"## Load data\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 102,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 103,
+          "text": "    \"Use the compacted data which already ignores malformed files. Still need to correct dc offset.\""
+        },
+        {
+          "raw_splitlines_ordinal": 104,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 105,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 106,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 107,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 108,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 109,
+          "text": "   \"id\": \"caa1405c\","
+        },
+        {
+          "raw_splitlines_ordinal": 110,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 111,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 112,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 113,
+          "text": "    \"data = pd.read_pickle(data_path)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 114,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 115,
+          "text": "    \"plot_positions(data, title=\\\"All Data Positions\\\")\""
+        },
+        {
+          "raw_splitlines_ordinal": 116,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 117,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 118,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 119,
+          "text": "   \"cell_type\": \"markdown\","
+        },
+        {
+          "raw_splitlines_ordinal": 120,
+          "text": "   \"id\": \"b1d88b68\","
+        },
+        {
+          "raw_splitlines_ordinal": 121,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 122,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 123,
+          "text": "    \"## Split and store\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 124,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 125,
+          "text": "    \"Splitting is done based solely on the position features.\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 126,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 127,
+          "text": "    \"We shuffle the data with a fixed seed for reproducibility.\""
+        },
+        {
+          "raw_splitlines_ordinal": 128,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 129,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 130,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 131,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 132,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 133,
+          "text": "   \"id\": \"3f024b90\","
+        },
+        {
+          "raw_splitlines_ordinal": 134,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 135,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 136,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 137,
+          "text": "    \"train, val, test = data_processing.split_dataset_positional(data, train_ratio, val_ratio, test_ratio, shuffle=True, random_state=config.SPLIT_SEED)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 138,
+          "text": "    \"\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 139,
+          "text": "    \"print(f\\\"Full dataset size: {len(data)}\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 140,
+          "text": "    \"print(f\\\"Training set size: {len(train)}\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 141,
+          "text": "    \"print(f\\\"Validation set size: {len(val)}\\\")\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 142,
+          "text": "    \"print(f\\\"Test set size: {len(test)}\\\")\""
+        },
+        {
+          "raw_splitlines_ordinal": 143,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 144,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 145,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 146,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 147,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 148,
+          "text": "   \"id\": \"02775388\","
+        },
+        {
+          "raw_splitlines_ordinal": 149,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 150,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 151,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 152,
+          "text": "    \"# Plot training set positions\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 153,
+          "text": "    \"plot_positions(train, title=\\\"Training Set Positions\\\")\""
+        },
+        {
+          "raw_splitlines_ordinal": 154,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 155,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 156,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 157,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 158,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 159,
+          "text": "   \"id\": \"2922e7f3\","
+        },
+        {
+          "raw_splitlines_ordinal": 160,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 161,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 162,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 163,
+          "text": "    \"# Plot validation set positions\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 164,
+          "text": "    \"plot_positions(val, title=\\\"Validation Set Positions\\\")\""
+        },
+        {
+          "raw_splitlines_ordinal": 165,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 166,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 167,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 168,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 169,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 170,
+          "text": "   \"id\": \"63fa5612\","
+        },
+        {
+          "raw_splitlines_ordinal": 171,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 172,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 173,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 174,
+          "text": "    \"# Plot test set positions\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 175,
+          "text": "    \"plot_positions(test, title=\\\"Test Set Positions\\\")\""
+        },
+        {
+          "raw_splitlines_ordinal": 176,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 177,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 178,
+          "text": "  {"
+        },
+        {
+          "raw_splitlines_ordinal": 179,
+          "text": "   \"cell_type\": \"code\","
+        },
+        {
+          "raw_splitlines_ordinal": 180,
+          "text": "   \"execution_count\": null,"
+        },
+        {
+          "raw_splitlines_ordinal": 181,
+          "text": "   \"id\": \"a902e59b\","
+        },
+        {
+          "raw_splitlines_ordinal": 182,
+          "text": "   \"metadata\": {},"
+        },
+        {
+          "raw_splitlines_ordinal": 183,
+          "text": "   \"outputs\": [],"
+        },
+        {
+          "raw_splitlines_ordinal": 184,
+          "text": "   \"source\": ["
+        },
+        {
+          "raw_splitlines_ordinal": 185,
+          "text": "    \"# Store split datasets\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 186,
+          "text": "    \"os.makedirs(split_data_dir, exist_ok=True)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 187,
+          "text": "    \"train.to_pickle(training_data_file)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 188,
+          "text": "    \"val.to_pickle(validation_data_file)\\n\","
+        },
+        {
+          "raw_splitlines_ordinal": 189,
+          "text": "    \"test.to_pickle(test_data_file)\""
+        },
+        {
+          "raw_splitlines_ordinal": 190,
+          "text": "   ]"
+        },
+        {
+          "raw_splitlines_ordinal": 191,
+          "text": "  }"
+        },
+        {
+          "raw_splitlines_ordinal": 192,
+          "text": " ],"
+        },
+        {
+          "raw_splitlines_ordinal": 193,
+          "text": " \"metadata\": {"
+        },
+        {
+          "raw_splitlines_ordinal": 194,
+          "text": "  \"kernelspec\": {"
+        },
+        {
+          "raw_splitlines_ordinal": 195,
+          "text": "   \"display_name\": \"calibration\","
+        },
+        {
+          "raw_splitlines_ordinal": 196,
+          "text": "   \"language\": \"python\","
+        },
+        {
+          "raw_splitlines_ordinal": 197,
+          "text": "   \"name\": \"python3\""
+        },
+        {
+          "raw_splitlines_ordinal": 198,
+          "text": "  },"
+        },
+        {
+          "raw_splitlines_ordinal": 199,
+          "text": "  \"language_info\": {"
+        },
+        {
+          "raw_splitlines_ordinal": 200,
+          "text": "   \"codemirror_mode\": {"
+        },
+        {
+          "raw_splitlines_ordinal": 201,
+          "text": "    \"name\": \"ipython\","
+        },
+        {
+          "raw_splitlines_ordinal": 202,
+          "text": "    \"version\": 3"
+        },
+        {
+          "raw_splitlines_ordinal": 203,
+          "text": "   },"
+        },
+        {
+          "raw_splitlines_ordinal": 204,
+          "text": "   \"file_extension\": \".py\","
+        },
+        {
+          "raw_splitlines_ordinal": 205,
+          "text": "   \"mimetype\": \"text/x-python\","
+        },
+        {
+          "raw_splitlines_ordinal": 206,
+          "text": "   \"name\": \"python\","
+        },
+        {
+          "raw_splitlines_ordinal": 207,
+          "text": "   \"nbconvert_exporter\": \"python\","
+        },
+        {
+          "raw_splitlines_ordinal": 208,
+          "text": "   \"pygments_lexer\": \"ipython3\","
+        },
+        {
+          "raw_splitlines_ordinal": 209,
+          "text": "   \"version\": \"3.8.20\""
+        },
+        {
+          "raw_splitlines_ordinal": 210,
+          "text": "  }"
+        },
+        {
+          "raw_splitlines_ordinal": 211,
+          "text": " },"
+        },
+        {
+          "raw_splitlines_ordinal": 212,
+          "text": " \"nbformat\": 4,"
+        },
+        {
+          "raw_splitlines_ordinal": 213,
+          "text": " \"nbformat_minor\": 5"
+        },
+        {
+          "raw_splitlines_ordinal": 214,
+          "text": "}"
+        }
+      ],
+      "claims": "literal static source/format only; no measurement/model/rights admission",
+      "format": "notebook_static_source",
+      "static_cells": [
+        {
+          "cell_ordinal": 1,
+          "cell_type": "markdown",
+          "source": [
+            "# Just a simple notebook to split dataset"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 2,
+          "cell_type": "code",
+          "source": [
+            "import numpy as np\n",
+            "import matplotlib.pyplot as plt\n",
+            "import pandas as pd\n",
+            "import os\n",
+            "import sys\n",
+            "import gc\n",
+            "import shutil\n",
+            "from tqdm.auto import tqdm\n",
+            "\n",
+            "cwd = os.getcwd()\n",
+            "parent_dir = os.path.dirname(cwd)\n",
+            "base_dir = os.path.dirname(parent_dir)\n",
+            "src_dir = base_dir + \"/src\"\n",
+            "\n",
+            "sys.path.insert(0, src_dir)\n",
+            "\n",
+            "from data_analysis import data_processing, plot_positions, config"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 3,
+          "cell_type": "markdown",
+          "source": [
+            "## Select which eMNS dataset to use"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 4,
+          "cell_type": "code",
+          "source": [
+            "####################################\n",
+            "########### Which eMNS? ############\n",
+            "####################################\n",
+            "emns = \"octomag\" # \"octomag\" or \"navion\"\n",
+            "\n",
+            "\n",
+            "# Setup paths according to eMNS\n",
+            "if emns.lower() == \"octomag\":\n",
+            "    data_dir = base_dir + \"/data/octomag_data\"\n",
+            "    data_path = data_dir + \"/clean_data/clean_data.pkl\"\n",
+            "    split_data_dir = data_dir + \"/split_dataset\"\n",
+            "\n",
+            "elif emns.lower() == \"navion\":\n",
+            "    data_dir = base_dir + \"/data/navion_data/clean_data\"\n",
+            "    data_path = data_dir + \"/clean_data.pkl\"\n",
+            "    split_data_dir = data_dir + \"/../split_dataset\"\n",
+            "else:\n",
+            "    raise ValueError(\"emns must be either 'octomag' or 'navion'\")\n",
+            "\n",
+            "training_data_file = split_data_dir + \"/training_data.pkl\"\n",
+            "test_data_file = split_data_dir + \"/test_data.pkl\"\n",
+            "validation_data_file = split_data_dir + \"/validation_data.pkl\"\n",
+            "\n",
+            "# Print paths for verification\n",
+            "print(f\"Data path: {data_path}\")\n",
+            "print(f\"Split data directory: {split_data_dir}\")\n",
+            "print(f\"Training data file: {training_data_file}\")\n",
+            "print(f\"Test data file: {test_data_file}\")\n",
+            "print(f\"Validation data file: {validation_data_file}\")"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 5,
+          "cell_type": "code",
+          "source": [
+            "# Define split ratios\n",
+            "train_ratio = 0.7\n",
+            "val_ratio = 0.15\n",
+            "test_ratio = 0.15"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 6,
+          "cell_type": "markdown",
+          "source": [
+            "## Load data\n",
+            "\n",
+            "Use the compacted data which already ignores malformed files. Still need to correct dc offset."
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 7,
+          "cell_type": "code",
+          "source": [
+            "data = pd.read_pickle(data_path)\n",
+            "\n",
+            "plot_positions(data, title=\"All Data Positions\")"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 8,
+          "cell_type": "markdown",
+          "source": [
+            "## Split and store\n",
+            "\n",
+            "Splitting is done based solely on the position features.\n",
+            "\n",
+            "We shuffle the data with a fixed seed for reproducibility."
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 9,
+          "cell_type": "code",
+          "source": [
+            "train, val, test = data_processing.split_dataset_positional(data, train_ratio, val_ratio, test_ratio, shuffle=True, random_state=config.SPLIT_SEED)\n",
+            "\n",
+            "print(f\"Full dataset size: {len(data)}\")\n",
+            "print(f\"Training set size: {len(train)}\")\n",
+            "print(f\"Validation set size: {len(val)}\")\n",
+            "print(f\"Test set size: {len(test)}\")"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 10,
+          "cell_type": "code",
+          "source": [
+            "# Plot training set positions\n",
+            "plot_positions(train, title=\"Training Set Positions\")"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 11,
+          "cell_type": "code",
+          "source": [
+            "# Plot validation set positions\n",
+            "plot_positions(val, title=\"Validation Set Positions\")"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 12,
+          "cell_type": "code",
+          "source": [
+            "# Plot test set positions\n",
+            "plot_positions(test, title=\"Test Set Positions\")"
+          ],
+          "executed": false
+        },
+        {
+          "cell_ordinal": 13,
+          "cell_type": "code",
+          "source": [
+            "# Store split datasets\n",
+            "os.makedirs(split_data_dir, exist_ok=True)\n",
+            "train.to_pickle(training_data_file)\n",
+            "val.to_pickle(validation_data_file)\n",
+            "test.to_pickle(test_data_file)"
+          ],
+          "executed": false
+        }
+      ],
+      "outputs_used_as_evidence": false
+    }
+  }
+}
