@@ -1,0 +1,4 @@
+ONEamend2identityrun:size5632+MD5verified,one302tofinal200,validatedpublicaddress
+failures/successesrecorded. Originalbytesretained,not executed. Frozenretainedparser
+results-amend2success10x5Table6,noendpointinterpretation. NativeXLSviewerunsupported,
+safeOfficeBIFFno-recalculationguarantee unresolved;no sourceOfficeopen/render.
