@@ -1,0 +1,13 @@
+Verdict: ACCEPT with a major wording revision, not as a scientific result.
+
+(a) P11-01: The INFEASIBLE disposition is justified if the locked eligibility rule genuinely requires ≥3 independent eligible cohorts. The Patnaik label-map conflict is a substantive provenance failure: 33/12 cannot simply be reconciled to the published 22/23 without documentation. Discarding the earlier DEV pass is correct because its class definition was invalid. Not opening held-out cohorts is appropriate if eligibility itself failed. However, the pre-prereg metadata script is a disclosure/provenance weakness: “parsed all rows” with labels pre-prereg means the analysis environment was exposed to outcome metadata, even if no model was run. The retained script/log should establish exactly what was parsed, whether any decisions were influenced, and what was or was not retained. Do not call this leakage unless the evidence establishes that labels influenced analysis.
+
+(b) P11-02/03/04/05/08/09/10: “SUPERSEDED by prior art” is potentially too broad. Prior publications can establish that a proposed question is already substantially addressed, but they do not automatically supersede every possible computational implementation, cohort, endpoint, or validation design. The closure should state the specific novelty/utility component each cited paper eliminates.
+
+P11-06: DROPPED is defensible only if the license could not be verified under a predetermined reuse rule. “Prior art” should be a separate rationale, not mixed with licensing.
+
+P11-07: DEPENDENT is appropriate if target enrichment is analytically downstream of another unit and has no independent estimand or validation unit.
+
+Biggest weakness: the packet mixes infeasibility, invalidated analysis, licensing, dependency, and prior-art redundancy as though they were equivalent closure reasons.
+
+Change: assign each direction one primary disposition category, preserve the exact evidence supporting it, and distinguish cannot validly execute from not novel enough to justify execution.
