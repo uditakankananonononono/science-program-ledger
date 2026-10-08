@@ -118,3 +118,14 @@ A future binarization rule would be a new development preprocessing protocol,
 not an invisible correction to this frozen result. It requires source-grounded
 meaning of intermediate pixel values and sensitivity analysis. Reprocessing must
 retain original rejection counts and keep new outcomes separately labeled.
+
+## Separate reject-protocol outcomes
+
+Protocols frozen before application in REJECT_PROTOCOLS.md; per-mask effects are
+in reject_protocol_effects.json. HRF threshold >=128 changed diagnostic >0 component
+counts 24->13, 50->17, 24->11, so all three stay rejected. FIVES opaque RGBA conversion
+changed zero foreground/RGB pixels, preserved component counts and passed the
+unchanged skeleton check in all ten derived masks. Original ledger remains
+962 accepted / 13 rejected. Separate channel-normalized development QC permits
+ten FIVES derived masks; it is not a claim that the original contract passed.
+No anatomy/flow validation. No threshold rule promoted into the production extractor.
