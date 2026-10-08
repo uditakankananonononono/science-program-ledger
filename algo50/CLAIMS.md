@@ -146,3 +146,14 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | 150 | Gaitndd four-class subject-heldout: serial rhythm/asymmetry RF vs summary RF | NULL: TEST BA .5235 vs .5902, gain -.06667, subject CI [-.2551,.1137]; 31 TEST subjects; threshold .17 raised pre-lock; DEV PERM at chance; underpowered, demographic-only .5149, ALS GROUP conflict and hunt20 split preserved; no novelty/causal claim | local closure 1979c82 |
 | 151 | UCD sleep apnea PSG ECG: temporal minute stacking vs DEV-selected GBM | NULL: TEST AUROC .697265 vs .681618, gain +.015647, 12-subject bootstrap CI [-.019800,.046649], PERM at chance; offline, no matched benchmark | local final lock 47829cf |
 | (BUTQDB) | BUT QDB ECG quality (batch-9 #3) | DROPPED at power gate, no compute: 15 subject groups (7-8 TEST clusters, CI too wide for any WIN threshold), annotation only on select segments (NaN/unannotated are not negatives) with ragged per-annotator arrays, ~174 MB ECG per record, no verified DEV headroom | scout evidence p9scout |
+
+| P09-01 | split-artifact phantom simulation (SIMULATION ONLY): voxel-split vs subject-split gap | NULL: TEST gap +0.0111 (voxel 0.896 vs subject 0.885), subject-bootstrap CI [0.003, 0.019], below WIN threshold 0.03; 12 TEST subjects; LOSO ARI 0.92; PERM at chance; phantom untuned; says nothing about real MRE | prereg lock sha256 PREREG 1181d893..., run.py a40e6631... |
+| P09-02 | public brain MRE census v0.1 | DELIVERED (partial): 8 entries; glioma MRE (Zenodo 4926005) restricted, no license; healthy sets N=1 or unlicensed; OpenNeuro coverage incomplete; G2 recall check against a systematic sweep NOT done; harmonization: incompatible | census json |
+| P09-03 | MRE-to-MRI transport | DROPPED for data: no paired licensed MRE+MRI glioma set (see P09-02) | no compute |
+| P09-04 | Laplacian/curvature ablation | DROPPED for data: no licensed glioma MRE; (a phantom ablation would only restate the simulation design) | no compute |
+| P09-05 | cluster-to-histology | DROPPED for data: no public MRE with histology labels | no compute |
+| P09-06 | cross-site MRE transport | DROPPED for data: no multi-site glioma MRE, healthy sets differ in protocol and are unlicensed or N=1 | no compute |
+| P09-07 | longitudinal recurrence | DROPPED for data: no longitudinal glioma MRE or recurrence labels | no compute |
+| P09-08 | minimal MRE protocol | DROPPED for data: no licensed multifrequency glioma MRE | no compute |
+| P09-09 | cluster uncertainty | DROPPED for data: no licensed glioma MRE | no compute |
+| P09-10 | open MRE benchmark with locked splits | DROPPED for data: nothing licensed to lock; census is the prerequisite output | no compute |
