@@ -1,3 +1,7 @@
+test_directory_path (test_file_io.FileInputTests) ... ok
+test_invalid_utf8 (test_file_io.FileInputTests) ... ok
+test_missing_path (test_file_io.FileInputTests) ... ok
+test_regular_file (test_file_io.FileInputTests) ... ok
 test_decimal_boundary_is_binary_float (test_hardening.HardenedTests) ... ok
 test_invalid_all_units (test_hardening.HardenedTests) ... ok
 test_malformed_edges_and_nodes (test_hardening.HardenedTests) ... ok
@@ -26,6 +30,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 26 tests in 0.275s
+Ran 30 tests in 0.451s
 
 OK

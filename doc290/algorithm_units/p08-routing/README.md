@@ -123,3 +123,11 @@ process failure. Infeasible is not a crash.
 prior oracle comparisons. Input is loaded into memory; no large-file, security,
 physiology or performance validation is claimed. This runner adds usability,
 not a sixth optimization algorithm or a scientific discovery.
+
+## V6.2 file-input coverage
+
+30 test methods pass. The new subprocess checks cover a real JSON input file,
+FileNotFoundError (missing path), IsADirectoryError (directory path), and invalid
+UTF-8 text decoding. These checks exercise specific file/decoder failure classes;
+permission failures and other OSError subclasses remain untested. No production
+code or optimization-kernel changes in this update.
