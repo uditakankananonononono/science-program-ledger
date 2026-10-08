@@ -1,0 +1,15 @@
+{
+ "id":"P08-04-F2","status":"pre-score freeze candidate",
+ "scope":"Numerical boundary diagnostic against supplied rational model, not physical truth or benchmark superiority",
+ "evaluation_scales":["1/1000000","1","1000000"],
+ "evaluation_relative_offsets":["-1/1000000","-1/10000000000","0","1/10000000000","1/1000000"],
+ "horizon":2,"dt":["1","1"],"limit":["2"],"slew":["1/2"],"previous":["0"],"initial":["0"],
+ "construction":"Scalar B=scale; max integral=3/2; target=scale*(3/2+offset). Both floating solvers default absolute tolerance 1e-8; exact rational solver classifies declared target. Conversion error recorded exactly as Fraction.from_float of B/target. No random seeds or timing objective.",
+ "development":"Separate B=3, target=3 with exact integral 1, tests generation and exception capture; evaluation scale/offset grid never exercised before publication",
+ "methods":["full terminal LP","reduced integral-box LP","exact rational square-map terminal oracle"],
+ "primary":"All 15 grid rows: exact declared-model status versus float solver status. Distinguish rational mathematical membership from tolerance-accepted floating primal_checked. Do not call all disagreements implementation defects.",
+ "secondary":"Floating returned terminal and actuator/slew residuals; reconstructed controls exact binary-float rational replay against declared rational data; solver exceptions retained; B/target float conversion deltas retained",
+ "failure_rule":"Catch/report floating solver exceptions without dropping rows; exact oracle exception aborts. No retries/tolerance tuning/post-freeze changes without new version disclosure.",
+ "limitations":"1D square model only, fixed prescribed cases, no author-blind holdout, no hardware precision or physiological calibration, rational exactness does not validate source measurement",
+ "resources":"One BLAS/OMP thread externally set, CPU scipy/numpy, no training/download/GPU; budget documented not enforced"
+}
