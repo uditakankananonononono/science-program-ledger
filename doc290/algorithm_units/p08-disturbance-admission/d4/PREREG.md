@@ -1,0 +1,64 @@
+# D4 P08-06 bounded RBC measurement serialization/provenance admission
+
+Unworkedcandidate,not recoveredrank. DistinctfromclosedsyntheticD1-D3andpriorarticle
+magnitude screen. Question:doesmeasurementDict.pkl ofZenodo1306230+metadataestablish
+safe nonexecuting measurement-format/provenance suitabletoadmit temporal disturbance
+calibration? Aggregatein-vivomedianvelocity maybeusefulwithouttemporalnoise/dropout
+or microrobotplanttransfer. No syntheticdisturbance/parameters/proxy/inventioncredit.
+
+## Fixedsource and prior exposure
+
+https://zenodo.org/records/1306230
+APIhttps://zenodo.org/api/records/1306230 inspectedmetadataonly. Descriptionexplicitly
+says4time-averaged simulationarchives and1medianin-vivoRBCvelocitymeasurementfile,
+mousecorticalbifurcations. measurementDict.pkl describedlist-of-lists,fourkeys
+divergent_d1/divergent_d2/convergent_m1/convergent_m2,matchingbifurcationorderforpaired
+vessels. Nocontentspeeked/downloaded;metadataalreadyexposed,notblindoutcome.
+CCBY4metadataassertion,not clinical/device/patent/rightsclearance. Fourcompressed
+simulationarchivesDELIBERATELYexcluded,not unavailableeverywhere.
+
+ExactlymeasurementDict.pkl4574bytesMD5f37b957ea2ac625c78b2cdc4629b75fd;
+observedendpointhttps://zenodo.org/api/records/1306230/files/measurementDict.pkl/content.
+selection/metadatasnapshotpinned. No linkedpaper/archive/newversion/codemodelrescue.
+AdjacentRBCdatasetrepository/articletriagewasread,GitHubAPI403ratelimitblockedtree
+metadata;notchosen/nodataimported/nobindingsinherited:
+https://github.com/icimrak/RBCdataset
+https://www.mdpi.com/2306-5729/8/6/106
+
+## Safe static executable plan
+
+Review/publishfreezeBEFOREsourcecontents. Originalsize+MD5verifiedBEFOREANYpickle
+syntaxanalysis;SHA256additionalidentity,not hostileauthenticity. Frozenno-redirect
+exactURL/identityencoding/lengthEOF/truncation128KiBcap;20ssocket/40sbetween-read
+checks,nothardwall. Failedidentity/transport->scopedunavailablezeroanalysis,noroute
+rescue. Stated2cores/2GB,noquota/measuredpeak/outputbound.
+
+NEVERpickle.load/loads/pandas.read_pickle,importsfrompayload,REDUCE/BUILD/NEWOBJ/
+GLOBALexecution. Standardpickletools.genopsSTATICdisassemblyonly,pinnedPythonmodule
+bytes,not deserialization or objectreconstruction. Preserveopcodeordinal/byteoffset/
+opcodename/reprargument,includingunrecognized/trailing/errorbytes. Strings/numeric
+opcodeargumentsare literalserializationtokens,not reconstructedmeasurementarrays.
+Noexecution/memoobjectinterpretation/numpy/pandasconversion. Disassemblysyntaxdoes
+NOTprovenosideeffectsifdeserializednor validateobjectschema/trialsemantics. Unsafe
+opcodessafelyrecorded,neverexecuted. Capopcodecount10000/representationargumentlength
+4096;caperrorunresolved,nopartialanalyzedinventory. Originalbytesretained. Fixtures
+malformedpickle/missingSTOP/trailingbytes,GLOBAL/REDUCEstaticnoexecution,offset/Unicode/
+nonfiniteargumentstrings,caps,identitygatezeroanalysis. Noimage/plot/spatialclaim.
+
+## Mandatory manual serialization/provenance ledger
+
+Citeexactmetadata/opcodeoffsets forformat/keys only. Separatesafestaticsyntaxfrom
+actualobjectstructure,numericarrays/units/trials/time/index/velocity/calibration,
+medianaggregationandindependentobservations,imagingdropout/noise/flowcrowding/adhesion
+andmicrorobotphysics. Metadata'sin-vivomedian/pairedbifurcationdescriptionnottemporal
+waveform,samplingcadenceorindependentnoise. Noassumedvelocityunitfromsimulation
+flowunit elsewhereinmetadata. Noaveragetoadditiveperturbation/Bernoullidropout.
+
+A:unambiguoussafe measurement/time/domain/units/trialbindings ->proposeseparate
+frozen non-neuraldisturbancevalidation;noautomaticmodel/physiology/inventionadmission.
+B:missing/conflicting/executable-only/unavailable ->rejecttemporal-disturbance
+calibration onthisONEpickle+metadatafixedsurface,preservesafestaticformat/literal
+metadata positives. Neverclassifyentireliterature/archivesabsent or sourceinvalid.
+Ifonlystaticserializationtokensareavailable,actualdataadmissionUNRESOLVED,noinvented
+arrays. NoP08-06closure,rightsorcontrollercredit. Manualledgerbeforeclassification,
+chronologydocument-reported,replaynotordering. Resultexactreviewbeforepublication.
