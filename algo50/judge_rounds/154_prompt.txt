@@ -1,0 +1,51 @@
+You are a skeptical methods reviewer judging a pre-registered computational study closure (all numbers were produced by an automated agent; treat nothing as vetted). NOTE: perm=false means the real unpermuted run. This unit CLOSED AS BLOCKED, with no TEST verdict. Reply in under 300 words: (1) is the BLOCKED disposition and the DEV-GO disclosure handled honestly and correctly given the protocol, (2) the single biggest methodological weakness or disclosure gap (leakage via the failed TEST pass, intake-predicate design, baseline fairness, supersession chain of 7 runner versions, power), (3) one concrete stronger design for a future unit. No flattery. Do not recommend reopening this TEST set.
+
+PROTOCOL (truncated):
+# Preregistered protocol: algo50/154 BUT PPG v2.0.0
+
+Protocol frozen 2026-10-08, Asia/Kolkata, before analysis of the valid extension subset's label counts or PPG features. Prereg SHA256 must be transmitted to Main alongside the locked runner hash before any DEV outcomes are computed. No TEST feature extraction, labels, model fitting, or metric computation until Main receives both hashes and confirms the lock.
+
+## Question and claim boundary
+On the integrity-valid extension cohort only, can a fixed, subject-independent logistic model using a small set of signal-quality features improve ranking of expert-consensus poor-quality smartphone PPG recordings over a single spectral-concentration baseline, under held-out subjects? This is a benchmark of the public signal-quality labels, not clinical diagnosis, BP/glucose prediction, or evidence of clinical device performance. Given existing related work and small cohort size, any positive is a replication/benchmark result unless later independent evidence supports novelty.
+
+## Data, provenance, and frozen eligibility
+Source is BUT PPG v2.0.0, PhysioNet, CC BY 4.0 (license bytes re-verified live). Official `RECORDS.txt`, `quality-hr-ann.csv`, `subject-info.csv`, headers, and signal bytes are retrieved only from `https://physionet-open.s3.amazonaws.com/butppg/2.0.0/` (official PhysioNet mirror). The source page defines the first three digits of record IDs as unique subject IDs.
+
+Only official registry IDs ending `_PPG` are candidates. A record is eligible iff its header parses and declares exactly 3 channels, 30 Hz, 300 samples; has exactly three signal lines for the corresponding `.dat`, each with 16-bit format; and the `.dat` file is exactly 1,800 bytes and not all zero. This objective byte/header integrity rule is applied to each PPG record before reading metadata or label rows, before extracting any features, and without using quality labels or performance. IDs whose paired PPG file fails are excluded; ECG and ACC are not inputs.
+
+### Malformed original-release block (verbatim disclosure)
+The first-release block, IDs 100001 through 111004 (48 PPG recordings, 12 unique first-three-digit subject prefixes), has headers declaring 300 channels at 30 Hz and 1 sample, with 300 signal lines, while each corresponding PPG binary is only 600 bytes and consists of 300 zero-valued int16 samples. That conflicts with the source's 10-second, 30-Hz description. These records are excluded by the locked objective integrity rule. They are not transposed, reshaped, or reconstructed into presumed waveforms. No label or waveform feature is used to exclude them.
+
+### Exposure deviation (verbatim disclosure)
+Before the integrity rule was frozen, the builder saw the aggregate label counts (3058/830) and verified the full ID joins. No subset outcomes or waveform features were touched. The frozen rule, gates, and method selection do not use the seen counts. The aggregate counts are not the analysis-cohort counts and will not be quoted as describing the valid subset. The valid-subset counts will be reported descriptively after eligibility is frozen; they will not alter the preregistered method or gates.
+
+The eligible extension subset is expected to comprise 3,840 records and 38 subjects from IDs 112001 onward; actual counts will be recalculated from live registry, headers, and bytes under the fixed rule. No assertion that the full 3,888/50 population is the analysis set is allowed.
+
+## Split and leakage control
+Sort eligi
+CLOSURE SUMMARY:
+# algo50/154 BUT PPG v2.0.0 - closure
+
+## Disposition
+
+**BLOCKED - preregistered record-integrity failure at final stage.** The DEV headroom gate passed under the final exact-prereg feature/model implementation, but the final-stage run stopped at TEST record 129098 because its PPG_R channel is constant zero. This makes the preregistered `amplitude_cv` denominator zero and yields a non-finite feature. The intake header/byte predicate had admitted it. The preregistered failure policy does not authorize removing a TEST record after first TEST access; no patch, rerun, amended feature, subset, or alternate result was produced.
+
+Verbatim failure statement: **TEST record 129098 is degenerate (zero mean absolute first difference; amplitude_cv denominator zero); intake had passed it under the byte/header rule; final.json was never written; no AUC/bootstrap/permutation/verdict computed; DEV GO stands as reported but the unit has no TEST verdict.**
+
+Some earlier records in the sorted TEST set were passed through locked feature extraction before record 129098 raised the integrity exception. The run did not fit a model, compute a metric, bootstrap, or permutation result. The final attempt parsed TEST labels as part of the authorized final-stage call, but did not write `final.json`. No TEST result is reported.
+
+## Prereg and intake
+
+## DEV result (valid, final exact implementation)
+
+- DEV: 1,878 records / 19 subjects; poor 1,525 / good 353.
+- B1 (`peak_power_fraction`) AUC: 0.6612325268193006.
+- M1 (all eight frozen features) AUC: 0.6847071936098083.
+- Gate B1 AUC < 0.94: pass. M1 AUC > 0.50: pass. Both labels present; zero feature failures.
+- DEV decision: **GO**, under runner SHA256 `1197d209bef9efc2843ce19d35f532325cf43f4a3597cb1e8a428234b53e552a` and prereg SHA above.
+- `results/dev.json` SHA256 `43541346e03b41e39142bf95ecbb93b344c1a3776e6160f72f3b5680e850eb68`.
+
+## Implementation supersession chain
+2. `c58fab1200bc460de83af6995139f7b4f00fbae268a4377447d5b67dd594400e` - locked, but per-record HTTP requests exceeded the 120-second call limit; no DEV result file was written.
+3. `ab8a8d3e8c22d7bbcf264393693658ecf1cfd64da01bcf44b4f11233d10bafdd` - I/O-only publisher-manifest-verified cache route. Subsequent audit found custom Newton logistic did not match the preregistered sklearn estimator; its DEV result was superseded and is not evidence for the final GO.
+Supersession chain: 7 runner hashes, 6 superseded before first TEST access (feature-formula mismatches and estimator mismatch found by audit, fixed on DEV only); final runner locked before TEST; run stopped at TEST record 129098 (all-zero PPG_R, amplitude_cv denominator zero); earlier sorted TEST records passed through feature extraction only, no model or metric.
