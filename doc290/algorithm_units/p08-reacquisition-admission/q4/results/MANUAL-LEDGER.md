@@ -1,0 +1,25 @@
+# Q4 opaque metadata-only full two-pass ledger
+
+Publishedprereg3d909f5a/freezefcc7dec0 beforeallarchiveGETs, documentedchronology
+notindependenthistorical/scientificattestation. ExactfrozenformURL/UUIDthroughout,
+no expiry/headerfailure/redirect/refresh/rescue observed by frozen executable.
+Each logicalpass158freshorderedrangedGETs206 exacttotal660154652/singletonspan/length/
+MIMEgates; 316ranges total. Perpass157ranges4194304B + final1648924B, no gaps/filter.
+checkpointreceiptsall316 pass/index/start/end/actualfrozenbytes/SHA256 paths literal.
+Everyresume verifiedallcompletechunkhashes/frozenlength/fileset, no crosspasscache.
+106boundedbatchinvocations(source316ranges,max3/invocation);107thfinalizationonly.
+Bothopaque reconstructedarchives660154652B exactlivefilemetadata crosscheck.
+Fullstreamcompare PASS, discoveredSHA256e46ecc23a7e2e1631e43a3328a127a3cf6eaa07b4797c3266f676c40d3eb9052
+bothpasses; finalchunks/archive rehashPASSbeforeCOMPLETEcheckpoint. Globalcount
+2640695681B beforefinalmanifest/COMPLETEcheckpoint rewrites, under3GiB. Thisreported
+countis frozenmeasurementpoint, NOTempiricalpeakdisk/RAMproof. Finalmetadataonlysmall
+bounded additions. RootnoTERMINALfailure; rawchunks/archives private/quarantinedfrom
+contentadmission untilseparateprereg.
+
+SameURLrangedpassesWITHOUTstrongvalidatorcouldbothbemosaicsfromchangingorigin,
+evenbyteagreement NOTcoherentversion/immutability/authorship/independentservers.
+Point-in-timeform route/mutablefileID, UUIDexpiry/unscannedwarning/rightslimitations
+preserved. Chunks/checkpoint hashconsistencynottrustedtamperprooflocalpermission.
+NoZIPdirectory/member/format/text/model/code/unpickle/bodyparse in acquisition.
+NO suppliedlost/reappearance times/GT/searchcost/benchmark/clinicalrightsqualification
+or inventioncredit fromthisnewdiscoveredbinding. Scientificendpointstillopen.
