@@ -1,5 +1,10 @@
 """Frozen symbolic-verdict comparison and separate descriptive floating baseline."""
 import hashlib,json,os,sys
+import re, fractions, _hashlib, _json, _sre
+import numpy,scipy
+import numpy.core._multiarray_umath
+import scipy.optimize._linprog
+import scipy.optimize._highs._highs_wrapper
 from pathlib import Path
 from fractions import Fraction as F
 from verify import load_bytes,verify,Invalid
@@ -14,6 +19,14 @@ def run(output):
         if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:raise Invalid('identity mismatch '+name)
     env=json.loads((ROOT/'environment.json').read_text())
     if sys.version!=env['python'] or any(os.environ.get(k)!='1' for k in env['thread_keys']):raise Invalid('environment mismatch')
+    for name,identity in env['runtime_sources'].items():
+        path=Path(identity['path'])
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=identity['sha256']:raise Invalid('runtime source mismatch '+name)
+    for name in env['module_names']:
+        module=sys.modules.get(name)
+        if module is None or str(Path(module.__file__).resolve())!=env['runtime_sources'][name]['path']:raise Invalid('loaded module path mismatch '+name)
+    if str(Path(sys.executable).resolve())!=env['runtime_sources']['python_executable']['path']:raise Invalid('executable path mismatch')
+    if scipy.__version__!=env['scipy'] or numpy.__version__!=env['numpy']:raise Invalid('baseline version mismatch')
     cases=load_bytes((ROOT/'cases.json').read_bytes())
     rows=[]
     for case in cases:
@@ -21,8 +34,6 @@ def run(output):
         rows.append({'name':case['name'],'expected':case['expected'],'result':result,'agreement':agreed(case['expected'],result),'input_sha256':hashlib.sha256(json.dumps(case,sort_keys=True,separators=(',',':')).encode()).hexdigest()})
     # Floating baseline is never imported by the exact verifier or used for its verdict.
     sys.path.insert(0,str(ROOT.parent))
-    import numpy,scipy
-    if scipy.__version__!=env['scipy'] or numpy.__version__!=env['numpy']:raise Invalid('baseline version mismatch')
     from minimax import minimax_terminal
     baseline=[]
     for case in cases:

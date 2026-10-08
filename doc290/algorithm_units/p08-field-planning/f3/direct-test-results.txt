@@ -1,13 +1,13 @@
-test_disagreement (test_verify.ComparatorControl) ... ERROR
-test_grammar (test_verify.Development) ... ok
-test_invalid_dimensions (test_verify.Development) ... ok
-test_json (test_verify.Development) ... ok
-test_missing (test_verify.Development) ... ok
-test_multidimensional_assembly (test_verify.Development) ... ok
-test_slew_tight_certificate (test_verify.Development) ... ok
+test_disagreement (__main__.ComparatorControl) ... ERROR
+test_grammar (__main__.Development) ... ok
+test_invalid_dimensions (__main__.Development) ... ok
+test_json (__main__.Development) ... ok
+test_missing (__main__.Development) ... ok
+test_multidimensional_assembly (__main__.Development) ... ok
+test_slew_tight_certificate (__main__.Development) ... ok
 
 ======================================================================
-ERROR: test_disagreement (test_verify.ComparatorControl)
+ERROR: test_disagreement (__main__.ComparatorControl)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/tmp/doc230/build_units/doc290/algorithm_units/p08-field-planning/f3/test_verify.py", line 40, in test_disagreement
@@ -17,6 +17,6 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'scipy.optimize._highs'
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.310s
+Ran 7 tests in 0.295s
 
 FAILED (errors=1)

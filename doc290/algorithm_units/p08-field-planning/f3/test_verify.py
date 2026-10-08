@@ -34,10 +34,11 @@ class Development(unittest.TestCase):
     def test_missing(self):
         m={'x':[0],'dt':[1],'maps':[[[1]]],'targets':[[0]],'limit':[1],'slew':[0],'previous':[0]}
         self.assertEqual(verify(m,None)['status'],'UNAVAILABLE')
-if __name__=='__main__':unittest.main()
 
 class ComparatorControl(unittest.TestCase):
     def test_disagreement(self):
         from compare import agreed
         self.assertFalse(agreed('VERIFIED',{'status':'INVALID'}))
         self.assertTrue(agreed('UNAVAILABLE',{'status':'UNAVAILABLE'}))
+
+if __name__=='__main__':unittest.main()

@@ -32,3 +32,19 @@ Identity/version/thread failure aborts without report. Result publication requir
 separate exact review. A text freeze-reference is not mechanical authority; actual
 publication precedes permitted execution. Validator is exact supplied-model witness
 checking, not witness generation/infeasibility claim/physical truth/invention.
+
+## Replacement after environment-grounding review HOLD
+
+Rejected candidate0c7a8d359859e8c50d11eb9d9989cf32ea50d878 retained in history,
+never published/scored. Reviewer cleared math but requested executable/module
+identity grounding and direct/discovery test parity. Replacement pins resolved
+Python executable bytes plus loaded Fraction/json/re/hashlib and compiled hashing/
+JSON/regex cores, NumPy/SciPy entry points, optimize.linprog and HiGHS compiled
+wrapper, and all currently loaded NumPy/SciPy/json/re/importlib/collections source
+paths/hashes. Verify all before case comparison or baseline call. Environment
+uses local absolute paths; changed environment aborts instead of silently rebinding.
+This is a pinned loaded-source set, not full dynamic-loader/shared-library closure,
+OS provenance, or adversarial replacement sandbox. NumPy/SciPy imports occur for
+identity verification; no baseline LP runs before admission. No scores obtained.
+Both direct test script and discovery now run seven development tests. No math,
+fixture, baseline or 30-row scope changes. Witness validator still solver-free.
