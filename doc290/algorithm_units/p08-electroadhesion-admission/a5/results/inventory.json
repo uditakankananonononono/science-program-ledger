@@ -1,0 +1,4654 @@
+{
+  "status": "all5_identity_literal_inventory",
+  "files": {
+    "doc290/algorithm_units/p08-electroadhesion-admission/a3/results/README.raw": [
+      {
+        "line_ordinal_1based": 1,
+        "byte_offset_0based": 0,
+        "text": "Pre and post contact characterization of electro-adhesive pressure with submillimeter interdigitated electrodes.",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 2,
+        "byte_offset_0based": 114,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 3,
+        "byte_offset_0based": 116,
+        "text": "Authors: Sylvain Schaller and Prof. Herbert Shea",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 4,
+        "byte_offset_0based": 166,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 5,
+        "byte_offset_0based": 168,
+        "text": "This README presents the structure of the data acquired for this paper and an explanation of the namings of the different files.",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 6,
+        "byte_offset_0based": 298,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 7,
+        "byte_offset_0based": 300,
+        "text": "Structure:",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 8,
+        "byte_offset_0based": 312,
+        "text": "A) ElectroAdhesion force measurements",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 9,
+        "byte_offset_0based": 351,
+        "text": "\tI) Conductive object",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 10,
+        "byte_offset_0based": 374,
+        "text": "\t\tcsv files of measurements",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 11,
+        "byte_offset_0based": 403,
+        "text": "\tII) Dielectric object",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 12,
+        "byte_offset_0based": 427,
+        "text": "\t\tcsv files of measurements",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 13,
+        "byte_offset_0based": 456,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 14,
+        "byte_offset_0based": 458,
+        "text": "B) ACDC Adhesion, releasing, residual pressure results",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 15,
+        "byte_offset_0based": 514,
+        "text": "csv files of measurements",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 16,
+        "byte_offset_0based": 541,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 17,
+        "byte_offset_0based": 543,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 18,
+        "byte_offset_0based": 545,
+        "text": "the format for csv files measurements is the following:",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 19,
+        "byte_offset_0based": 602,
+        "text": "Ex: 1_A1_20um_20um_6um_0.00V_cond_AC_sym_5.00Hz_0sdelay",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 20,
+        "byte_offset_0based": 659,
+        "text": "\"1\": index of the patch on the wafer",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 21,
+        "byte_offset_0based": 697,
+        "text": "\"A1\": id of wafer based on designed A",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 22,
+        "byte_offset_0based": 736,
+        "text": "\"20um\": width of interdigitated electrodes on the patch",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 23,
+        "byte_offset_0based": 793,
+        "text": "\"20um\": gap between interdigitated electrodes on the patch",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 24,
+        "byte_offset_0based": 853,
+        "text": "\"6um\": thickness of the insulating material (P(VDF-TrFE-CTFE))",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 25,
+        "byte_offset_0based": 917,
+        "text": "\"0.00V\": Voltage",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 26,
+        "byte_offset_0based": 935,
+        "text": "\"cond\": measure on conductive object",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 27,
+        "byte_offset_0based": 973,
+        "text": "\"AC\": AC signal supplied",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 28,
+        "byte_offset_0based": 999,
+        "text": "\"sym\": the signal was symetric",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 29,
+        "byte_offset_0based": 1031,
+        "text": "\"5.00Hz\": frequency",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 30,
+        "byte_offset_0based": 1052,
+        "text": "\"0sdelay\": the delay once the contact is made between the patch and the object is 0 second",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 31,
+        "byte_offset_0based": 1144,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 32,
+        "byte_offset_0based": 1146,
+        "text": "On each csv file, we recorded 3 informations corresponding respectively to the 3 columns in the file:",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 33,
+        "byte_offset_0based": 1249,
+        "text": "- The relative time value. On the graphs we rescaled every time period to start at 0 by subtracting the first time value on every lines.",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 34,
+        "byte_offset_0based": 1387,
+        "text": "- The relative position of the sensor (object). Again we rescaled it to 0 for the position.",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 35,
+        "byte_offset_0based": 1480,
+        "text": "- The force value where positive value correspond to tension stress (EA force) of the sensor and negative value to compression stress (when the sensor is pushing on the patch).",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 36,
+        "byte_offset_0based": 1658,
+        "text": "  We computed and used the pressure value by dividing the value by 25 corresponding to the surface of the object (25 mm2)",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 37,
+        "byte_offset_0based": 1781,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 38,
+        "byte_offset_0based": 1783,
+        "text": "The data labeled at 0.00 V correspond to the measurement at 0V done BEFORE the voltage measurement in order to ensure that no residual pressure would influence the measurement.",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 39,
+        "byte_offset_0based": 1961,
+        "text": "The one labeled at 1.00 V correspond to the measurement at 0V done AFTER the voltage measurement in order to record residual pressure.",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 40,
+        "byte_offset_0based": 2097,
+        "text": "",
+        "terminator": "CRLF"
+      },
+      {
+        "line_ordinal_1based": 41,
+        "byte_offset_0based": 2099,
+        "text": "",
+        "terminator": "CRLF"
+      }
+    ],
+    "doc290/algorithm_units/p08-electroadhesion-admission/a3/results/MANUAL-LEDGER.md": [
+      {
+        "line_ordinal_1based": 1,
+        "byte_offset_0based": 0,
+        "text": "# A3 literal README claim ledger, before classification",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 2,
+        "byte_offset_0based": 56,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 3,
+        "byte_offset_0based": 57,
+        "text": "SolememberData/README.txt2101bytes,CRCcompleteEOF,fulloriginalidentitybeforeandafter",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 4,
+        "byte_offset_0based": 142,
+        "text": "heldfileread,fstatstable. NewlydiscoveredREADME SHA256",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 5,
+        "byte_offset_0based": 197,
+        "text": "bd671c4ccd557793b1b0d7fb3ee6eeaf71b3013f38e258f0ed1113d3725e0f63,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 6,
+        "byte_offset_0based": 263,
+        "text": "NOTpre-pinnedorindependentauthorshipverification.41CRLFlinesincludingblank41,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 7,
+        "byte_offset_0based": 341,
+        "text": "finalCRLF,nofictitiousextraemptyline. CSVbodiesALLunread.",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 8,
+        "byte_offset_0based": 399,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 9,
+        "byte_offset_0based": 400,
+        "text": "| Binding | ExactREADMEline(s) | Conservative interpretation |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 10,
+        "byte_offset_0based": 463,
+        "text": "|---|---|---|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 11,
+        "byte_offset_0based": 477,
+        "text": "| Domain/source | L1 pre/postcontactelectro-adhesivepressurewithsubmillimeterinterdigitatedelectrodes;L3 authornames;L5 dataacquiredforpaper | Source'sclaims,notverifiedauthoridentity/trialorphysiology |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 12,
+        "byte_offset_0based": 681,
+        "text": "| File groups | L8-15 Aforce/cond/die andBACDCadhesion/releasing/residualpressureresults | DirectoryAusespressurewordvsREADMEforce;labelsdifferpreserved,nosemanticrepair |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 13,
+        "byte_offset_0based": 853,
+        "text": "| Filename tokens | L19 exampleends0sdelay;L20patchindex,L21waferid,L22width,L23gap,L24insulator thickness,L25Voltage,L26cond,L27AC,L28sym,L29frequency,L30contactdelay | Directoryactualnamesuse0secnot0sdelay;preservetokenformconflict,noimplicitparserrewriteorconditionscalibration |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 14,
+        "byte_offset_0based": 1136,
+        "text": "| Column claims | L32 3columnsinorder;L33relativetime,L34relativeposition,L35force | CSVrows/headers/counts/finitevaluesNOTread. Exacttime/position/forceunitsnotgivenintheselines;noassigns/m/mm/N/gfromarticle/title |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 15,
+        "byte_offset_0based": 1353,
+        "text": "| Graph transforms | L33 subtractionfirsttime,L34rescaledposition0 | DescribedplotnormalizationnotrawCSVtransformationperformedhere,nocorrections |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 16,
+        "byte_offset_0based": 1501,
+        "text": "| Force sign | L35 positive tension EAforce,negativecompressionsensorpushing | Signclaimnotcalibratedforceunit/phase boundaryvalidated;no physicalendpoint |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 17,
+        "byte_offset_0based": 1658,
+        "text": "| Area/pressure | L36 value/25correspondingobjectsurface25mm2 | Explicitareaclaim,notforceunit/pressureunit/calibrationcheck. NoarithmeticconversiontoPa/KPa/NwithoutCSVunitbinding |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 18,
+        "byte_offset_0based": 1840,
+        "text": "| Baseline labels | L38 0.00Vlabeled0VBEFOREdrive;L39 1.00Vlabeled0VAFTERdrivetorecordresidualpressure | CRITICAL:literal1.00Vtokenisclaimed0Vpostdrivebaseline,NOT1Vphysicalcondition. Nousefilenamevoltageasactualvoltageorpoolbefore/after. Correspondenceclaimsnotactualtrialpairing |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 19,
+        "byte_offset_0based": 2123,
+        "text": "| Timing/sensor/drive | L30delaydescription,L33relativetime,L34sensorposition,L27-29signal/frequencylabels | No samplingrate/timestampunit/sensorcalibration/actualwaveformorcompletephaseindexclaims inREADME |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 20,
+        "byte_offset_0based": 2332,
+        "text": "| Trials/independence | L20patch,L21waferlabels | Noindependentrepeat/trial/heldoutsplit/originalacquisitionpairingclaimverified;patch/wafer/CSVcountsnotreplicates |",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 21,
+        "byte_offset_0based": 2498,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 22,
+        "byte_offset_0based": 2499,
+        "text": "Literalpositivecolumn/sign/baselinelabeldescriptionusefulforSEPARATEfixedCSVselection",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 23,
+        "byte_offset_0based": 2585,
+        "text": "prereg,NOTCSVschema/units/force/time/trialtruth. PotentialtargetwouldincludeALLmatching",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 24,
+        "byte_offset_0based": 2673,
+        "text": "conditions+pre/postbaselines,notarbitrarybestcurve. Anyselectionrequiresexplicitmetadata",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 25,
+        "byte_offset_0based": 2762,
+        "text": "rule/newcaps/code/review BEFOREBODYREAD. HereSTOPendpointclassificationnotperformed,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 26,
+        "byte_offset_0based": 2847,
+        "text": "no physics/physiology/rights/inventioncredit. Priorarticlecannotfillunit/sourcegaps.",
+        "terminator": "LF"
+      }
+    ],
+    "doc290/algorithm_units/p08-electroadhesion-admission/a4/results-review/MANUAL-LEDGER.md": [
+      {
+        "line_ordinal_1based": 1,
+        "byte_offset_0based": 0,
+        "text": "# A4 per-member literal ledger, before classification",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 2,
+        "byte_offset_0based": 54,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 3,
+        "byte_offset_0based": 55,
+        "text": "ALL45metadata-selectedBmemberscompleted;389460137rawB,8103065lines. All8103065CRLF/comma2semicolon0tab0;zero blanks/quotes/literalNaNInftokens. This is literal text, NOT finite-number/dialect/units proof. Originalfullidentity/45sourceCRC/size/hashbindingsbeforetext,canonicalfrozenreplaycheckpoints/finalpins.",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 4,
+        "byte_offset_0based": 365,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 5,
+        "byte_offset_0based": 366,
+        "text": "|Ordinal|Filename literal|Bytes / lines|L1 literal|Final-line literal|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 6,
+        "byte_offset_0based": 437,
+        "text": "|---|---|---|---|---|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 7,
+        "byte_offset_0based": 459,
+        "text": "|628|7_C3_100um_100um_20um_0.00V_die_AC_sym_1.00Hz_0sec.csv|7603757 / 159142|2101.662385,58,0.070129435484657|2260.803385,58,0.0330157289028614|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 8,
+        "byte_offset_0based": 604,
+        "text": "|629|7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_0sec.csv|7237520 / 148415|4238.8126757,58,0.187459750140349|4387.2266757,58.0000008258044,0.575581917715838|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 9,
+        "byte_offset_0based": 764,
+        "text": "|630|7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_10sec.csv|7553391 / 157321|6794.3603073,58,0.466843311224722|6951.6803073,58,1.00710850709751|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 10,
+        "byte_offset_0based": 910,
+        "text": "|631|7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_30sec.csv|8259883 / 170905|286.6851262,58,0|457.5891262,58,0|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 11,
+        "byte_offset_0based": 1023,
+        "text": "|632|7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_90sec.csv|11145377 / 230426|3705.3449435,58,0.367098376256389|3935.7699435,58.0000012404562,0.695920737149287|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 12,
+        "byte_offset_0based": 1185,
+        "text": "|633|7_C3_100um_100um_20um_1.00V_die_AC_sym_1.00Hz_0sec.csv|7199277 / 148579|3724.5765524,58,0.267775399986571|3873.1545524,58,0.435536985738584|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 13,
+        "byte_offset_0based": 1331,
+        "text": "|634|7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_0sec.csv|7069569 / 147592|5811.6827027,58,0.377608725660371|5959.2737027,58,1.1103037848941|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 14,
+        "byte_offset_0based": 1475,
+        "text": "|635|7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_10sec.csv|7535524 / 157026|8318.4015494,58,0.415696510293375|8475.4265494,58,1.06301710032608|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 15,
+        "byte_offset_0based": 1621,
+        "text": "|636|7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_30sec.csv|8217495 / 170920|1797.0910183,58,0.97972144185405|1968.0100183,58,2.44691691497542|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 16,
+        "byte_offset_0based": 1766,
+        "text": "|637|7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_90sec.csv|14047187 / 291550|6121.8939549,58.0442156414757,1.5903060034612|6413.4429549,57.8,0.817072218470146|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 17,
+        "byte_offset_0based": 1928,
+        "text": "|638|7_C3_100um_100um_20um_1200.00V_die_AC_sym_1.00Hz_0sec.csv|7170389 / 149460|2993.3081114,58,0.554486749664925|3142.7671114,58.0000156057848,0.866323235309973|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 18,
+        "byte_offset_0based": 2091,
+        "text": "|639|7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_0sec.csv|6968418 / 148597|5199.710102,58,0.930295302423925|5348.306102,58,1.9173601760201|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 19,
+        "byte_offset_0based": 2236,
+        "text": "|640|7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_10sec.csv|7559354 / 157618|7703.5199531,58,0.593852515850001|7861.1369531,58,1.43779906651089|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 20,
+        "byte_offset_0based": 2385,
+        "text": "|641|7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_30sec.csv|8057674 / 171375|1160.3477917,58,1.10102486371287|1331.7217917,58,2.00406172341876|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 21,
+        "byte_offset_0based": 2533,
+        "text": "|642|7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_90sec.csv|11142643 / 230750|4834.7491338,58,0.797824511036271|5065.4981338,58.0000014916565,1.6436424835007|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 22,
+        "byte_offset_0based": 2696,
+        "text": "|643|7_C3_100um_100um_20um_1600.00V_die_AC_sym_1.00Hz_0sec.csv|7199037 / 149684|3184.5719029,58,0.420283325469458|3334.2549029,58.0000000024884,0.670932103281148|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 23,
+        "byte_offset_0based": 2859,
+        "text": "|644|7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_0sec.csv|7115445 / 148556|5384.6907564,58,1.31534081894698|5533.2457564,58,2.20812356522582|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 24,
+        "byte_offset_0based": 3006,
+        "text": "|645|7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_10sec.csv|7567377 / 157796|7961.4185358,58,1.11287618645469|8119.2135358,58.0000006575221,1.62458771004132|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 25,
+        "byte_offset_0based": 3168,
+        "text": "|646|7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_30sec.csv|7978727 / 171606|1375.9177711,58,0.625975273687559|1547.5227711,58,1.37414160540026|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 26,
+        "byte_offset_0based": 3317,
+        "text": "|647|7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_90sec.csv|11135575 / 230616|5235.4159972,58,0.819926532749695|5466.0309972,58,5.87900643442322|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 27,
+        "byte_offset_0based": 3467,
+        "text": "|648|7_C3_100um_100um_20um_2.00V_die_DC_sym_1.00Hz_0sec.csv|7059445 / 147202|6603.8635884,58,0.463296803729523|6751.0645884,58,0.880346752295077|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 28,
+        "byte_offset_0based": 3613,
+        "text": "|649|7_C3_100um_100um_20um_2.00V_die_DC_sym_1.00Hz_30sec.csv|8195835 / 170461|2577.4876019,58,0.535379668862118|2747.9476019,58.0000005970269,1.23602168832789|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 29,
+        "byte_offset_0based": 3773,
+        "text": "|650|7_C3_100um_100um_20um_2.00V_die_DC_sym_1.00Hz_90sec.csv|14178494 / 294086|7005.3753767,58.037597353504,0.792996233824946|7299.4603767,57.8000006781076,1.14197046382174|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 30,
+        "byte_offset_0based": 3947,
+        "text": "|651|7_C3_100um_100um_20um_200.00V_die_AC_sym_1.00Hz_0sec.csv|7726606 / 158558|2394.8030319,58,0.0626838365694612|2553.3600319,58,0.105530503351129|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 31,
+        "byte_offset_0based": 4096,
+        "text": "|652|7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_0sec.csv|7217861 / 148404|4674.3886149,58,0.236710237448597|4822.7916149,58.000000243234,0.611437405581722|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 32,
+        "byte_offset_0based": 4257,
+        "text": "|653|7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_10sec.csv|7627456 / 157210|7168.759085,58,0|7325.968085,58.0000221935191,0|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 33,
+        "byte_offset_0based": 4386,
+        "text": "|654|7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_30sec.csv|8163312 / 170721|505.2863377,58,0.0087230915192619|676.0063377,58,0.0292196162923494|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 34,
+        "byte_offset_0based": 4535,
+        "text": "|655|7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_90sec.csv|11180601 / 230316|3971.6627479,58,0.208290420087929|4201.9777479,58,0.590392523295726|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 35,
+        "byte_offset_0based": 4685,
+        "text": "|656|7_C3_100um_100um_20um_2000.00V_die_AC_sym_1.00Hz_0sec.csv|7207847 / 150178|3416.4465101,58,0.345535110359682|3566.6235101,58,1.09492122868309|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 36,
+        "byte_offset_0based": 4833,
+        "text": "|657|7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_0sec.csv|7130328 / 148880|5570.2418262,58,1.38164996425677|5719.1208262,58,2.64937676097393|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 37,
+        "byte_offset_0based": 4980,
+        "text": "|658|7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_10sec.csv|7591019 / 158273|8139.8036361,58,0.585644494956313|8298.0756361,58,1.53176854529894|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 38,
+        "byte_offset_0based": 5129,
+        "text": "|659|7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_30sec.csv|8250350 / 171593|1579.0998941,58,0.667345567030064|1750.6918941,58,0.932981240508123|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 39,
+        "byte_offset_0based": 5279,
+        "text": "|660|7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_90sec.csv|14098983 / 292606|5618.0224693,58.0438496938695,1.02166132105705|5910.6274693,57.8,1.0496065867619|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 40,
+        "byte_offset_0based": 5443,
+        "text": "|661|7_C3_100um_100um_20um_3.00V_die_DC_sym_1.00Hz_30sec.csv|9479392 / 196329|3461.5585628,58,0.399945643307028|3657.8865628,58,0.820600514159149|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 41,
+        "byte_offset_0based": 5590,
+        "text": "|662|7_C3_100um_100um_20um_3.00V_die_DC_sym_1.00Hz_90sec.csv|14353104 / 297444|7898.5912933,58.0285332389081,0.418457522561211|8196.0342933,57.8,0.723671891184983|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 42,
+        "byte_offset_0based": 5754,
+        "text": "|663|7_C3_100um_100um_20um_400.00V_die_AC_sym_1.00Hz_0sec.csv|7114531 / 149567|2589.278923,58,0|2738.844923,58,0.357644335148105|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 43,
+        "byte_offset_0based": 5884,
+        "text": "|664|7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_0sec.csv|7176457 / 148443|4849.9012682,58,0.262902719833883|4998.3432682,58.0000006064972,0.487906641574493|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 44,
+        "byte_offset_0based": 6046,
+        "text": "|665|7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_10sec.csv|7735351 / 157304|7349.7761546,58,0|7507.0791546,58.0000016355647,0|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 45,
+        "byte_offset_0based": 6177,
+        "text": "|666|7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_30sec.csv|8111080 / 170741|776.6619243,58,0.0121349614089407|947.4019243,58,0.326689584786607|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 46,
+        "byte_offset_0based": 6325,
+        "text": "|667|7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_90sec.csv|11181592 / 230183|4264.5656387,58,0.301288525363578|4494.7476387,58.0000001678706,0.487144050855856|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 47,
+        "byte_offset_0based": 6489,
+        "text": "|668|7_C3_100um_100um_20um_800.00V_die_AC_sym_1.00Hz_0sec.csv|7061376 / 149458|2787.216622,58,0.218666729312502|2936.673622,58,0.495855922656426|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 48,
+        "byte_offset_0based": 6635,
+        "text": "|669|7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_0sec.csv|7113139 / 148501|5023.3881892,58,0.477570887024392|5171.8881892,58,1.38469192951356|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 49,
+        "byte_offset_0based": 6782,
+        "text": "|670|7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_10sec.csv|7598781 / 157381|7525.4619401,58,0.0545391560386631|7682.8419401,58,0.39329081371315|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 50,
+        "byte_offset_0based": 6931,
+        "text": "|671|7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_30sec.csv|8016729 / 171093|968.6826219,58,0.342672207002134|1139.7746219,58,1.18113724335449|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 51,
+        "byte_offset_0based": 7078,
+        "text": "|672|7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_90sec.csv|11126849 / 230199|4562.1838089,58,0.308510752614178|4792.3818089,58.0000071723498,1.25900700387157|",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 52,
+        "byte_offset_0based": 7241,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 53,
+        "byte_offset_0based": 7242,
+        "text": "README claims relative time/position/force, but all selected texts only numeric-looking strings, no explicit headers/units/time provenance/trial independence. No numeric coercion/pressure conversion/sampling/phase derivation. Literal recurring filename7_C3/100um100um20um/die/sym/1.00Hz labels NOT actual independent geometry/device/trial truth. Filename0.00V claimed0Vbefore,1.00Vclaimed0VAFTER(residual),NOTphysical1V. Filename2.00V/3.00V labels ambiguous in selected README, neither physical drive nor residual identity inferred. No trial pooling/condition relabeling.",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 54,
+        "byte_offset_0based": 7814,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 55,
+        "byte_offset_0based": 7815,
+        "text": "All45 literal first/last/count bindings above, not measurements. Original failed stage28files kept excluded; no rescues. STOPbeforeclassification. Source-format positives preserved, calibration/units/independence/endpoint not established or repaired, not absent elsewhere/P08-08 closure.",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 56,
+        "byte_offset_0based": 8103,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 57,
+        "byte_offset_0based": 8104,
+        "text": "Reviewer limits verbatim: analysis_performed=false on late text failure means no complete admitted inventory, NOT zero parser work; do not claim the final scratch collection remains freshly verified at rename time - inventory is bound to measured input hashes under the stated protocol; caps not peak; output-dir rename not crash-durable fsync proof.",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 58,
+        "byte_offset_0based": 8455,
+        "text": "",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 59,
+        "byte_offset_0based": 8456,
+        "text": "HMAC local-key-not-compromised assumption, no hostile filesystem/authorship/atomic freshness proof. Atime-only fullfstat conservative false rejection possible, guard unchanged. Actual completed run no failures; two literal replay passes/member deterministic reproduction, not scientific truth/chronology.",
+        "terminator": "LF"
+      }
+    ],
+    "doc290/algorithm_units/p08-electroadhesion-admission/a4/results-review/summary.json": [
+      {
+        "line_ordinal_1based": 1,
+        "byte_offset_0based": 0,
+        "text": "{",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 2,
+        "byte_offset_0based": 2,
+        "text": "  \"status\": \"all_selected_raw_literal_text_inventories\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 3,
+        "byte_offset_0based": 59,
+        "text": "  \"members\": [",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 4,
+        "byte_offset_0based": 74,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 5,
+        "byte_offset_0based": 80,
+        "text": "      \"ordinal_1based\": 628,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 6,
+        "byte_offset_0based": 109,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_0.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 7,
+        "byte_offset_0based": 243,
+        "text": "      \"scratch_filename\": \"member-628.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 8,
+        "byte_offset_0based": 287,
+        "text": "      \"raw_bytes\": 7603757,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 9,
+        "byte_offset_0based": 315,
+        "text": "      \"raw_sha256_discovered\": \"03255ea16330c42761a5c95f52ac487c491dfffcf2f73de0dfdd9401f1a2c2fc\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 10,
+        "byte_offset_0based": 414,
+        "text": "      \"inventory_filename\": \"member-628.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 11,
+        "byte_offset_0based": 465,
+        "text": "      \"line_count\": 159142,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 12,
+        "byte_offset_0based": 493,
+        "text": "      \"inventory_sha256\": \"0115265b6ba09e7d49ef9ed1fcfb37508e46690f040b7195a495604fb0d5af7a\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 13,
+        "byte_offset_0based": 586,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 14,
+        "byte_offset_0based": 593,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 15,
+        "byte_offset_0based": 599,
+        "text": "      \"ordinal_1based\": 629,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 16,
+        "byte_offset_0based": 628,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 17,
+        "byte_offset_0based": 762,
+        "text": "      \"scratch_filename\": \"member-629.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 18,
+        "byte_offset_0based": 806,
+        "text": "      \"raw_bytes\": 7237520,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 19,
+        "byte_offset_0based": 834,
+        "text": "      \"raw_sha256_discovered\": \"cd78db8392e340c4e60031b83324c9d60382d6333bdbe8aacf90ddb9584126a8\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 20,
+        "byte_offset_0based": 933,
+        "text": "      \"inventory_filename\": \"member-629.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 21,
+        "byte_offset_0based": 984,
+        "text": "      \"line_count\": 148415,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 22,
+        "byte_offset_0based": 1012,
+        "text": "      \"inventory_sha256\": \"47b58fcf010c4bdfcd2b4a0e70a00e2855bc79a0b4e7979e75b130f91f181ba0\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 23,
+        "byte_offset_0based": 1105,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 24,
+        "byte_offset_0based": 1112,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 25,
+        "byte_offset_0based": 1118,
+        "text": "      \"ordinal_1based\": 630,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 26,
+        "byte_offset_0based": 1147,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 27,
+        "byte_offset_0based": 1282,
+        "text": "      \"scratch_filename\": \"member-630.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 28,
+        "byte_offset_0based": 1326,
+        "text": "      \"raw_bytes\": 7553391,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 29,
+        "byte_offset_0based": 1354,
+        "text": "      \"raw_sha256_discovered\": \"5e572a8b6c7dae2decaa65234e2a8274b56e5230334e0225c35ad0ade2a14c6b\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 30,
+        "byte_offset_0based": 1453,
+        "text": "      \"inventory_filename\": \"member-630.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 31,
+        "byte_offset_0based": 1504,
+        "text": "      \"line_count\": 157321,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 32,
+        "byte_offset_0based": 1532,
+        "text": "      \"inventory_sha256\": \"a6dd611ce5ec8b36e3c9c5f8cc74f5919be27b983e2e3b4bfc04fb22a6f7a7f7\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 33,
+        "byte_offset_0based": 1625,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 34,
+        "byte_offset_0based": 1632,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 35,
+        "byte_offset_0based": 1638,
+        "text": "      \"ordinal_1based\": 631,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 36,
+        "byte_offset_0based": 1667,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 37,
+        "byte_offset_0based": 1802,
+        "text": "      \"scratch_filename\": \"member-631.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 38,
+        "byte_offset_0based": 1846,
+        "text": "      \"raw_bytes\": 8259883,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 39,
+        "byte_offset_0based": 1874,
+        "text": "      \"raw_sha256_discovered\": \"5cca85932c2b3a77432931614fa915c45a710f3886e73a4043389159de1fb9bd\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 40,
+        "byte_offset_0based": 1973,
+        "text": "      \"inventory_filename\": \"member-631.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 41,
+        "byte_offset_0based": 2024,
+        "text": "      \"line_count\": 170905,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 42,
+        "byte_offset_0based": 2052,
+        "text": "      \"inventory_sha256\": \"485fa333e15449966e7fdada6901b8ee258e24b3fc267c23304e5590fed22d62\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 43,
+        "byte_offset_0based": 2145,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 44,
+        "byte_offset_0based": 2152,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 45,
+        "byte_offset_0based": 2158,
+        "text": "      \"ordinal_1based\": 632,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 46,
+        "byte_offset_0based": 2187,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_0.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 47,
+        "byte_offset_0based": 2322,
+        "text": "      \"scratch_filename\": \"member-632.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 48,
+        "byte_offset_0based": 2366,
+        "text": "      \"raw_bytes\": 11145377,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 49,
+        "byte_offset_0based": 2395,
+        "text": "      \"raw_sha256_discovered\": \"d3b0902d8b7d1017c389ea5c1f06de1f8b066598710797a33d2e1757ed49254f\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 50,
+        "byte_offset_0based": 2494,
+        "text": "      \"inventory_filename\": \"member-632.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 51,
+        "byte_offset_0based": 2545,
+        "text": "      \"line_count\": 230426,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 52,
+        "byte_offset_0based": 2573,
+        "text": "      \"inventory_sha256\": \"223cb132ba7667c67293f20a9a2ff00f7b7ff7491a7c234b75aa32fcd202e4ad\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 53,
+        "byte_offset_0based": 2666,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 54,
+        "byte_offset_0based": 2673,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 55,
+        "byte_offset_0based": 2679,
+        "text": "      \"ordinal_1based\": 633,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 56,
+        "byte_offset_0based": 2708,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 57,
+        "byte_offset_0based": 2842,
+        "text": "      \"scratch_filename\": \"member-633.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 58,
+        "byte_offset_0based": 2886,
+        "text": "      \"raw_bytes\": 7199277,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 59,
+        "byte_offset_0based": 2914,
+        "text": "      \"raw_sha256_discovered\": \"f606b00d1caa0f6ff7d0fbb0dfb0902ea3ac9075068e1d6a8beee9a84f49b145\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 60,
+        "byte_offset_0based": 3013,
+        "text": "      \"inventory_filename\": \"member-633.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 61,
+        "byte_offset_0based": 3064,
+        "text": "      \"line_count\": 148579,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 62,
+        "byte_offset_0based": 3092,
+        "text": "      \"inventory_sha256\": \"be7cc3a4991d1099e470dc55a5a771d2feeaf5838e1a2e04e962fc13cdd021b4\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 63,
+        "byte_offset_0based": 3185,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 64,
+        "byte_offset_0based": 3192,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 65,
+        "byte_offset_0based": 3198,
+        "text": "      \"ordinal_1based\": 634,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 66,
+        "byte_offset_0based": 3227,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 67,
+        "byte_offset_0based": 3361,
+        "text": "      \"scratch_filename\": \"member-634.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 68,
+        "byte_offset_0based": 3405,
+        "text": "      \"raw_bytes\": 7069569,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 69,
+        "byte_offset_0based": 3433,
+        "text": "      \"raw_sha256_discovered\": \"12e21390b639877470821573ddecb11d25a1707055c6fd42362a93ebc161e0bc\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 70,
+        "byte_offset_0based": 3532,
+        "text": "      \"inventory_filename\": \"member-634.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 71,
+        "byte_offset_0based": 3583,
+        "text": "      \"line_count\": 147592,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 72,
+        "byte_offset_0based": 3611,
+        "text": "      \"inventory_sha256\": \"16a72b60fa42c863af3a670b8e42e6076e29003746fa39a40a8afa309ece330f\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 73,
+        "byte_offset_0based": 3704,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 74,
+        "byte_offset_0based": 3711,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 75,
+        "byte_offset_0based": 3717,
+        "text": "      \"ordinal_1based\": 635,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 76,
+        "byte_offset_0based": 3746,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 77,
+        "byte_offset_0based": 3881,
+        "text": "      \"scratch_filename\": \"member-635.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 78,
+        "byte_offset_0based": 3925,
+        "text": "      \"raw_bytes\": 7535524,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 79,
+        "byte_offset_0based": 3953,
+        "text": "      \"raw_sha256_discovered\": \"f6d652e09d3f4cc0f57309b33be94ad569e71aaf42cf06403c8fece8ddb5fccb\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 80,
+        "byte_offset_0based": 4052,
+        "text": "      \"inventory_filename\": \"member-635.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 81,
+        "byte_offset_0based": 4103,
+        "text": "      \"line_count\": 157026,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 82,
+        "byte_offset_0based": 4131,
+        "text": "      \"inventory_sha256\": \"f23d47eb1712810280934312da202830e5b8bfb8eda84166f1c0f320735dec18\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 83,
+        "byte_offset_0based": 4224,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 84,
+        "byte_offset_0based": 4231,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 85,
+        "byte_offset_0based": 4237,
+        "text": "      \"ordinal_1based\": 636,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 86,
+        "byte_offset_0based": 4266,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 87,
+        "byte_offset_0based": 4401,
+        "text": "      \"scratch_filename\": \"member-636.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 88,
+        "byte_offset_0based": 4445,
+        "text": "      \"raw_bytes\": 8217495,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 89,
+        "byte_offset_0based": 4473,
+        "text": "      \"raw_sha256_discovered\": \"c71b3a5ec2cf244ebdcdf275543d79d7cb38d7dbf3167733b67e5e32e87b1c6c\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 90,
+        "byte_offset_0based": 4572,
+        "text": "      \"inventory_filename\": \"member-636.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 91,
+        "byte_offset_0based": 4623,
+        "text": "      \"line_count\": 170920,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 92,
+        "byte_offset_0based": 4651,
+        "text": "      \"inventory_sha256\": \"78ad7a3fea1c90c801e892c7f680575912f492d981b2a5b9003e7e0a9af96430\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 93,
+        "byte_offset_0based": 4744,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 94,
+        "byte_offset_0based": 4751,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 95,
+        "byte_offset_0based": 4757,
+        "text": "      \"ordinal_1based\": 637,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 96,
+        "byte_offset_0based": 4786,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 97,
+        "byte_offset_0based": 4921,
+        "text": "      \"scratch_filename\": \"member-637.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 98,
+        "byte_offset_0based": 4965,
+        "text": "      \"raw_bytes\": 14047187,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 99,
+        "byte_offset_0based": 4994,
+        "text": "      \"raw_sha256_discovered\": \"f74deb4b50ca909d73677f2fba0a7739f698dcd930956245271a42a43f80e961\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 100,
+        "byte_offset_0based": 5093,
+        "text": "      \"inventory_filename\": \"member-637.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 101,
+        "byte_offset_0based": 5144,
+        "text": "      \"line_count\": 291550,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 102,
+        "byte_offset_0based": 5172,
+        "text": "      \"inventory_sha256\": \"6bcff8aca24d3e1f4e85ca0fd7db4e1ef53e6b3538d67fbe0395811410ff4cc2\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 103,
+        "byte_offset_0based": 5265,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 104,
+        "byte_offset_0based": 5272,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 105,
+        "byte_offset_0based": 5278,
+        "text": "      \"ordinal_1based\": 638,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 106,
+        "byte_offset_0based": 5307,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1200.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 107,
+        "byte_offset_0based": 5444,
+        "text": "      \"scratch_filename\": \"member-638.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 108,
+        "byte_offset_0based": 5488,
+        "text": "      \"raw_bytes\": 7170389,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 109,
+        "byte_offset_0based": 5516,
+        "text": "      \"raw_sha256_discovered\": \"ab28525cdde6ffe9f2136db69bb3b22857e6cd58f2febb78ab1d99aceb686f9b\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 110,
+        "byte_offset_0based": 5615,
+        "text": "      \"inventory_filename\": \"member-638.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 111,
+        "byte_offset_0based": 5666,
+        "text": "      \"line_count\": 149460,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 112,
+        "byte_offset_0based": 5694,
+        "text": "      \"inventory_sha256\": \"b2865c1d76a4439b79781b9640bb17b96abb8950c8023981ff254352376b7f7a\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 113,
+        "byte_offset_0based": 5787,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 114,
+        "byte_offset_0based": 5794,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 115,
+        "byte_offset_0based": 5800,
+        "text": "      \"ordinal_1based\": 639,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 116,
+        "byte_offset_0based": 5829,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 117,
+        "byte_offset_0based": 5966,
+        "text": "      \"scratch_filename\": \"member-639.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 118,
+        "byte_offset_0based": 6010,
+        "text": "      \"raw_bytes\": 6968418,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 119,
+        "byte_offset_0based": 6038,
+        "text": "      \"raw_sha256_discovered\": \"dfb419f02aaf11a01fd299f78a0ee59be258a47dbaa5597e8927b621fb4b896c\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 120,
+        "byte_offset_0based": 6137,
+        "text": "      \"inventory_filename\": \"member-639.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 121,
+        "byte_offset_0based": 6188,
+        "text": "      \"line_count\": 148597,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 122,
+        "byte_offset_0based": 6216,
+        "text": "      \"inventory_sha256\": \"2656dfdfef4b07bc7b87d35f38ffe55205ebd4631318a12eb64c96d461ef6753\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 123,
+        "byte_offset_0based": 6309,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 124,
+        "byte_offset_0based": 6316,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 125,
+        "byte_offset_0based": 6322,
+        "text": "      \"ordinal_1based\": 640,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 126,
+        "byte_offset_0based": 6351,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 127,
+        "byte_offset_0based": 6489,
+        "text": "      \"scratch_filename\": \"member-640.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 128,
+        "byte_offset_0based": 6533,
+        "text": "      \"raw_bytes\": 7559354,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 129,
+        "byte_offset_0based": 6561,
+        "text": "      \"raw_sha256_discovered\": \"e545d1f825a5ad27d1ac152a2094f46e44cac88e2d99761dcad325b208315fef\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 130,
+        "byte_offset_0based": 6660,
+        "text": "      \"inventory_filename\": \"member-640.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 131,
+        "byte_offset_0based": 6711,
+        "text": "      \"line_count\": 157618,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 132,
+        "byte_offset_0based": 6739,
+        "text": "      \"inventory_sha256\": \"11c7bb9e24df0dd62ffe6be60b8b1d8aae292adf2651a65995f8f3e5b8fe1b3c\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 133,
+        "byte_offset_0based": 6832,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 134,
+        "byte_offset_0based": 6839,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 135,
+        "byte_offset_0based": 6845,
+        "text": "      \"ordinal_1based\": 641,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 136,
+        "byte_offset_0based": 6874,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 137,
+        "byte_offset_0based": 7012,
+        "text": "      \"scratch_filename\": \"member-641.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 138,
+        "byte_offset_0based": 7056,
+        "text": "      \"raw_bytes\": 8057674,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 139,
+        "byte_offset_0based": 7084,
+        "text": "      \"raw_sha256_discovered\": \"8e7dfce6a976d37d603417d655d59a562576db0d01d5c23c39bd9fe594468496\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 140,
+        "byte_offset_0based": 7183,
+        "text": "      \"inventory_filename\": \"member-641.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 141,
+        "byte_offset_0based": 7234,
+        "text": "      \"line_count\": 171375,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 142,
+        "byte_offset_0based": 7262,
+        "text": "      \"inventory_sha256\": \"e0eb13257c32e6049259f76faaf20c99e6e29ed7ebd60bac4bbb6669208cf2d2\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 143,
+        "byte_offset_0based": 7355,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 144,
+        "byte_offset_0based": 7362,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 145,
+        "byte_offset_0based": 7368,
+        "text": "      \"ordinal_1based\": 642,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 146,
+        "byte_offset_0based": 7397,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1200.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 147,
+        "byte_offset_0based": 7535,
+        "text": "      \"scratch_filename\": \"member-642.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 148,
+        "byte_offset_0based": 7579,
+        "text": "      \"raw_bytes\": 11142643,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 149,
+        "byte_offset_0based": 7608,
+        "text": "      \"raw_sha256_discovered\": \"320bbbea419ce6d40b718ac2123c33b81c8cd4cd435474dbc9990a475d84108e\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 150,
+        "byte_offset_0based": 7707,
+        "text": "      \"inventory_filename\": \"member-642.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 151,
+        "byte_offset_0based": 7758,
+        "text": "      \"line_count\": 230750,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 152,
+        "byte_offset_0based": 7786,
+        "text": "      \"inventory_sha256\": \"debf84ceb2b62d1f469b2fadf7681c0c92a0cb9cd9fa89075b898bdf87215373\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 153,
+        "byte_offset_0based": 7879,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 154,
+        "byte_offset_0based": 7886,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 155,
+        "byte_offset_0based": 7892,
+        "text": "      \"ordinal_1based\": 643,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 156,
+        "byte_offset_0based": 7921,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1600.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 157,
+        "byte_offset_0based": 8058,
+        "text": "      \"scratch_filename\": \"member-643.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 158,
+        "byte_offset_0based": 8102,
+        "text": "      \"raw_bytes\": 7199037,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 159,
+        "byte_offset_0based": 8130,
+        "text": "      \"raw_sha256_discovered\": \"c3af3ea470c9fa8ee25cf5336a9307be036f97f539d0d38efe8f80ece220a68d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 160,
+        "byte_offset_0based": 8229,
+        "text": "      \"inventory_filename\": \"member-643.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 161,
+        "byte_offset_0based": 8280,
+        "text": "      \"line_count\": 149684,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 162,
+        "byte_offset_0based": 8308,
+        "text": "      \"inventory_sha256\": \"5e019cb26d35d3f05833bdc28c9559c850a6ea1c213fca01a489fedbe1710340\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 163,
+        "byte_offset_0based": 8401,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 164,
+        "byte_offset_0based": 8408,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 165,
+        "byte_offset_0based": 8414,
+        "text": "      \"ordinal_1based\": 644,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 166,
+        "byte_offset_0based": 8443,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 167,
+        "byte_offset_0based": 8580,
+        "text": "      \"scratch_filename\": \"member-644.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 168,
+        "byte_offset_0based": 8624,
+        "text": "      \"raw_bytes\": 7115445,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 169,
+        "byte_offset_0based": 8652,
+        "text": "      \"raw_sha256_discovered\": \"0dc0271ea8406daa4c47de819edca1d625c086dfd4e1d2dd97b55166e1946c8d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 170,
+        "byte_offset_0based": 8751,
+        "text": "      \"inventory_filename\": \"member-644.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 171,
+        "byte_offset_0based": 8802,
+        "text": "      \"line_count\": 148556,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 172,
+        "byte_offset_0based": 8830,
+        "text": "      \"inventory_sha256\": \"fbac1affb400186fc2b894d530e7cb56c50e2372c787123146327f05416a1538\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 173,
+        "byte_offset_0based": 8923,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 174,
+        "byte_offset_0based": 8930,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 175,
+        "byte_offset_0based": 8936,
+        "text": "      \"ordinal_1based\": 645,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 176,
+        "byte_offset_0based": 8965,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 177,
+        "byte_offset_0based": 9103,
+        "text": "      \"scratch_filename\": \"member-645.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 178,
+        "byte_offset_0based": 9147,
+        "text": "      \"raw_bytes\": 7567377,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 179,
+        "byte_offset_0based": 9175,
+        "text": "      \"raw_sha256_discovered\": \"2f4e0a426beed2c613223589a11822ef10cb46c2f856bd9ae10c8f12533361eb\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 180,
+        "byte_offset_0based": 9274,
+        "text": "      \"inventory_filename\": \"member-645.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 181,
+        "byte_offset_0based": 9325,
+        "text": "      \"line_count\": 157796,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 182,
+        "byte_offset_0based": 9353,
+        "text": "      \"inventory_sha256\": \"3dfabd18764101121ce9a1353105a98b19818c935d7424ba26fb2c413bfd719d\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 183,
+        "byte_offset_0based": 9446,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 184,
+        "byte_offset_0based": 9453,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 185,
+        "byte_offset_0based": 9459,
+        "text": "      \"ordinal_1based\": 646,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 186,
+        "byte_offset_0based": 9488,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 187,
+        "byte_offset_0based": 9626,
+        "text": "      \"scratch_filename\": \"member-646.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 188,
+        "byte_offset_0based": 9670,
+        "text": "      \"raw_bytes\": 7978727,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 189,
+        "byte_offset_0based": 9698,
+        "text": "      \"raw_sha256_discovered\": \"63403db96341483a7a436f2fc94cec9463e36127bfe6bc5314c9e774d62a36b5\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 190,
+        "byte_offset_0based": 9797,
+        "text": "      \"inventory_filename\": \"member-646.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 191,
+        "byte_offset_0based": 9848,
+        "text": "      \"line_count\": 171606,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 192,
+        "byte_offset_0based": 9876,
+        "text": "      \"inventory_sha256\": \"48165d8e3ccb06e58c926b53ce5248c416327e516feea1aab02d53d68fcaa7a2\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 193,
+        "byte_offset_0based": 9969,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 194,
+        "byte_offset_0based": 9976,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 195,
+        "byte_offset_0based": 9982,
+        "text": "      \"ordinal_1based\": 647,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 196,
+        "byte_offset_0based": 10011,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_1600.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 197,
+        "byte_offset_0based": 10149,
+        "text": "      \"scratch_filename\": \"member-647.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 198,
+        "byte_offset_0based": 10193,
+        "text": "      \"raw_bytes\": 11135575,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 199,
+        "byte_offset_0based": 10222,
+        "text": "      \"raw_sha256_discovered\": \"38ec4ed6f156715afc2e8ba99355ccf6f85ffc0f4968e445d473a7b0efb16e0a\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 200,
+        "byte_offset_0based": 10321,
+        "text": "      \"inventory_filename\": \"member-647.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 201,
+        "byte_offset_0based": 10372,
+        "text": "      \"line_count\": 230616,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 202,
+        "byte_offset_0based": 10400,
+        "text": "      \"inventory_sha256\": \"bda5adba73707f6497e75b572b70c729747ac06a6c2469bc6d0fc08983afa41d\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 203,
+        "byte_offset_0based": 10493,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 204,
+        "byte_offset_0based": 10500,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 205,
+        "byte_offset_0based": 10506,
+        "text": "      \"ordinal_1based\": 648,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 206,
+        "byte_offset_0based": 10535,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 207,
+        "byte_offset_0based": 10669,
+        "text": "      \"scratch_filename\": \"member-648.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 208,
+        "byte_offset_0based": 10713,
+        "text": "      \"raw_bytes\": 7059445,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 209,
+        "byte_offset_0based": 10741,
+        "text": "      \"raw_sha256_discovered\": \"d373e544226e020cc0479db2f7f902e9f8b224798611e7ea265194c9002a3bb9\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 210,
+        "byte_offset_0based": 10840,
+        "text": "      \"inventory_filename\": \"member-648.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 211,
+        "byte_offset_0based": 10891,
+        "text": "      \"line_count\": 147202,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 212,
+        "byte_offset_0based": 10919,
+        "text": "      \"inventory_sha256\": \"cb08503e3bd205ee06587c2720a3f1969bf834784cbac2943a678760d66ae29e\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 213,
+        "byte_offset_0based": 11012,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 214,
+        "byte_offset_0based": 11019,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 215,
+        "byte_offset_0based": 11025,
+        "text": "      \"ordinal_1based\": 649,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 216,
+        "byte_offset_0based": 11054,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 217,
+        "byte_offset_0based": 11189,
+        "text": "      \"scratch_filename\": \"member-649.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 218,
+        "byte_offset_0based": 11233,
+        "text": "      \"raw_bytes\": 8195835,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 219,
+        "byte_offset_0based": 11261,
+        "text": "      \"raw_sha256_discovered\": \"a74db00fda8e422c7638e779402a6424e36cffce357b4f96bcce18eea97b158d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 220,
+        "byte_offset_0based": 11360,
+        "text": "      \"inventory_filename\": \"member-649.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 221,
+        "byte_offset_0based": 11411,
+        "text": "      \"line_count\": 170461,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 222,
+        "byte_offset_0based": 11439,
+        "text": "      \"inventory_sha256\": \"4fe863db5e0128445d5c25eb64ec5a2735726405ccbbaf0596661385331dd860\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 223,
+        "byte_offset_0based": 11532,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 224,
+        "byte_offset_0based": 11539,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 225,
+        "byte_offset_0based": 11545,
+        "text": "      \"ordinal_1based\": 650,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 226,
+        "byte_offset_0based": 11574,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 227,
+        "byte_offset_0based": 11709,
+        "text": "      \"scratch_filename\": \"member-650.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 228,
+        "byte_offset_0based": 11753,
+        "text": "      \"raw_bytes\": 14178494,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 229,
+        "byte_offset_0based": 11782,
+        "text": "      \"raw_sha256_discovered\": \"d81f9411354128d57e6636644e064e7266e7365aebc0a2ea988765420e58b775\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 230,
+        "byte_offset_0based": 11881,
+        "text": "      \"inventory_filename\": \"member-650.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 231,
+        "byte_offset_0based": 11932,
+        "text": "      \"line_count\": 294086,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 232,
+        "byte_offset_0based": 11960,
+        "text": "      \"inventory_sha256\": \"ec41b2c882219027dfdb820f28d939864ed5dd0a5f5992ab73742a5b90145442\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 233,
+        "byte_offset_0based": 12053,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 234,
+        "byte_offset_0based": 12060,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 235,
+        "byte_offset_0based": 12066,
+        "text": "      \"ordinal_1based\": 651,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 236,
+        "byte_offset_0based": 12095,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_200.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 237,
+        "byte_offset_0based": 12231,
+        "text": "      \"scratch_filename\": \"member-651.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 238,
+        "byte_offset_0based": 12275,
+        "text": "      \"raw_bytes\": 7726606,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 239,
+        "byte_offset_0based": 12303,
+        "text": "      \"raw_sha256_discovered\": \"33f6a9bd3eead78a33a11b46ebad28c00e63cac86ab46e21cfafefafae69ee55\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 240,
+        "byte_offset_0based": 12402,
+        "text": "      \"inventory_filename\": \"member-651.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 241,
+        "byte_offset_0based": 12453,
+        "text": "      \"line_count\": 158558,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 242,
+        "byte_offset_0based": 12481,
+        "text": "      \"inventory_sha256\": \"7340de9e776e4b9dab546f152ad9a8045ec52f52ee4a184fb79f9433471708bf\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 243,
+        "byte_offset_0based": 12574,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 244,
+        "byte_offset_0based": 12581,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 245,
+        "byte_offset_0based": 12587,
+        "text": "      \"ordinal_1based\": 652,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 246,
+        "byte_offset_0based": 12616,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 247,
+        "byte_offset_0based": 12752,
+        "text": "      \"scratch_filename\": \"member-652.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 248,
+        "byte_offset_0based": 12796,
+        "text": "      \"raw_bytes\": 7217861,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 249,
+        "byte_offset_0based": 12824,
+        "text": "      \"raw_sha256_discovered\": \"d3c23b1d72703d9eeb4258f9c857736223dfee479877626558724ae97f3ba839\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 250,
+        "byte_offset_0based": 12923,
+        "text": "      \"inventory_filename\": \"member-652.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 251,
+        "byte_offset_0based": 12974,
+        "text": "      \"line_count\": 148404,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 252,
+        "byte_offset_0based": 13002,
+        "text": "      \"inventory_sha256\": \"81efcbc10e473b349d65f9b52e63d0824fdad1901d91f3881a20be7a0737c083\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 253,
+        "byte_offset_0based": 13095,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 254,
+        "byte_offset_0based": 13102,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 255,
+        "byte_offset_0based": 13108,
+        "text": "      \"ordinal_1based\": 653,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 256,
+        "byte_offset_0based": 13137,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 257,
+        "byte_offset_0based": 13274,
+        "text": "      \"scratch_filename\": \"member-653.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 258,
+        "byte_offset_0based": 13318,
+        "text": "      \"raw_bytes\": 7627456,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 259,
+        "byte_offset_0based": 13346,
+        "text": "      \"raw_sha256_discovered\": \"70ea96729f1b320e131380986f46a435f2109ee801c67f1d4d5811230dfc65b2\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 260,
+        "byte_offset_0based": 13445,
+        "text": "      \"inventory_filename\": \"member-653.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 261,
+        "byte_offset_0based": 13496,
+        "text": "      \"line_count\": 157210,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 262,
+        "byte_offset_0based": 13524,
+        "text": "      \"inventory_sha256\": \"75ffded1659a9ab8b33ef4bb823d96a4bdf10caf8f90f9af96a69b64277e9404\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 263,
+        "byte_offset_0based": 13617,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 264,
+        "byte_offset_0based": 13624,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 265,
+        "byte_offset_0based": 13630,
+        "text": "      \"ordinal_1based\": 654,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 266,
+        "byte_offset_0based": 13659,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 267,
+        "byte_offset_0based": 13796,
+        "text": "      \"scratch_filename\": \"member-654.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 268,
+        "byte_offset_0based": 13840,
+        "text": "      \"raw_bytes\": 8163312,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 269,
+        "byte_offset_0based": 13868,
+        "text": "      \"raw_sha256_discovered\": \"5779f74bc5772c43d93122d7443d7c38fe726cc7f1e7387cb3ebca5d64abb96a\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 270,
+        "byte_offset_0based": 13967,
+        "text": "      \"inventory_filename\": \"member-654.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 271,
+        "byte_offset_0based": 14018,
+        "text": "      \"line_count\": 170721,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 272,
+        "byte_offset_0based": 14046,
+        "text": "      \"inventory_sha256\": \"677581da1ce1f29f0e7b342a36ff919b47d69d28236acb1a5644d243a8d82b89\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 273,
+        "byte_offset_0based": 14139,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 274,
+        "byte_offset_0based": 14146,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 275,
+        "byte_offset_0based": 14152,
+        "text": "      \"ordinal_1based\": 655,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 276,
+        "byte_offset_0based": 14181,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_200.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 277,
+        "byte_offset_0based": 14318,
+        "text": "      \"scratch_filename\": \"member-655.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 278,
+        "byte_offset_0based": 14362,
+        "text": "      \"raw_bytes\": 11180601,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 279,
+        "byte_offset_0based": 14391,
+        "text": "      \"raw_sha256_discovered\": \"f898aa2081598d87c2ea95ae262f600f9a27501d170ab23f6bd3d638f88d6c3d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 280,
+        "byte_offset_0based": 14490,
+        "text": "      \"inventory_filename\": \"member-655.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 281,
+        "byte_offset_0based": 14541,
+        "text": "      \"line_count\": 230316,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 282,
+        "byte_offset_0based": 14569,
+        "text": "      \"inventory_sha256\": \"166dfd55d34794f4f16bf14077f20c392446fb49bd367bef1e200b75faf2f4e0\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 283,
+        "byte_offset_0based": 14662,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 284,
+        "byte_offset_0based": 14669,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 285,
+        "byte_offset_0based": 14675,
+        "text": "      \"ordinal_1based\": 656,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 286,
+        "byte_offset_0based": 14704,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2000.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 287,
+        "byte_offset_0based": 14841,
+        "text": "      \"scratch_filename\": \"member-656.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 288,
+        "byte_offset_0based": 14885,
+        "text": "      \"raw_bytes\": 7207847,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 289,
+        "byte_offset_0based": 14913,
+        "text": "      \"raw_sha256_discovered\": \"027488e296a20babefd16f4fb5a798c8bcbc70d57cece9e3b5d01c186dc34b0f\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 290,
+        "byte_offset_0based": 15012,
+        "text": "      \"inventory_filename\": \"member-656.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 291,
+        "byte_offset_0based": 15063,
+        "text": "      \"line_count\": 150178,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 292,
+        "byte_offset_0based": 15091,
+        "text": "      \"inventory_sha256\": \"1c45afbf237ae6548042d5ce9a11390a0b1794cd40e825981fa9eb36a0fa8229\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 293,
+        "byte_offset_0based": 15184,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 294,
+        "byte_offset_0based": 15191,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 295,
+        "byte_offset_0based": 15197,
+        "text": "      \"ordinal_1based\": 657,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 296,
+        "byte_offset_0based": 15226,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 297,
+        "byte_offset_0based": 15363,
+        "text": "      \"scratch_filename\": \"member-657.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 298,
+        "byte_offset_0based": 15407,
+        "text": "      \"raw_bytes\": 7130328,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 299,
+        "byte_offset_0based": 15435,
+        "text": "      \"raw_sha256_discovered\": \"5bc3c54542f600d6341d95f1dc571620e2d67016bed0b52d01fa4681ee58b9d0\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 300,
+        "byte_offset_0based": 15534,
+        "text": "      \"inventory_filename\": \"member-657.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 301,
+        "byte_offset_0based": 15585,
+        "text": "      \"line_count\": 148880,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 302,
+        "byte_offset_0based": 15613,
+        "text": "      \"inventory_sha256\": \"60485de77f3dbc0809171339947dce2eb308e98e82a7ec52dc07615d98961851\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 303,
+        "byte_offset_0based": 15706,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 304,
+        "byte_offset_0based": 15713,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 305,
+        "byte_offset_0based": 15719,
+        "text": "      \"ordinal_1based\": 658,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 306,
+        "byte_offset_0based": 15748,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 307,
+        "byte_offset_0based": 15886,
+        "text": "      \"scratch_filename\": \"member-658.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 308,
+        "byte_offset_0based": 15930,
+        "text": "      \"raw_bytes\": 7591019,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 309,
+        "byte_offset_0based": 15958,
+        "text": "      \"raw_sha256_discovered\": \"b0dbe3cc19b85fef0e6e34fdccb1baca02c2ac51da26b608209a03c1fdd21211\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 310,
+        "byte_offset_0based": 16057,
+        "text": "      \"inventory_filename\": \"member-658.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 311,
+        "byte_offset_0based": 16108,
+        "text": "      \"line_count\": 158273,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 312,
+        "byte_offset_0based": 16136,
+        "text": "      \"inventory_sha256\": \"ce3492eb75dd1e8c91c8d98363cf16d07fd1e26be6374981d03653eba9faf08e\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 313,
+        "byte_offset_0based": 16229,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 314,
+        "byte_offset_0based": 16236,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 315,
+        "byte_offset_0based": 16242,
+        "text": "      \"ordinal_1based\": 659,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 316,
+        "byte_offset_0based": 16271,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 317,
+        "byte_offset_0based": 16409,
+        "text": "      \"scratch_filename\": \"member-659.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 318,
+        "byte_offset_0based": 16453,
+        "text": "      \"raw_bytes\": 8250350,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 319,
+        "byte_offset_0based": 16481,
+        "text": "      \"raw_sha256_discovered\": \"5e8294c1522c17af6cfbcbed49ec2074088f117e5fd227498aa3a26264fcd2c9\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 320,
+        "byte_offset_0based": 16580,
+        "text": "      \"inventory_filename\": \"member-659.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 321,
+        "byte_offset_0based": 16631,
+        "text": "      \"line_count\": 171593,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 322,
+        "byte_offset_0based": 16659,
+        "text": "      \"inventory_sha256\": \"0f5ee8c5ae8931c958e3441a7c20f6b934e9b5111b23782a34a86d0d2fbf69d5\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 323,
+        "byte_offset_0based": 16752,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 324,
+        "byte_offset_0based": 16759,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 325,
+        "byte_offset_0based": 16765,
+        "text": "      \"ordinal_1based\": 660,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 326,
+        "byte_offset_0based": 16794,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_2000.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 327,
+        "byte_offset_0based": 16932,
+        "text": "      \"scratch_filename\": \"member-660.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 328,
+        "byte_offset_0based": 16976,
+        "text": "      \"raw_bytes\": 14098983,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 329,
+        "byte_offset_0based": 17005,
+        "text": "      \"raw_sha256_discovered\": \"f4db5e41f242ecad31f049b34e76e664e4914102120748e637260afe9f571ef8\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 330,
+        "byte_offset_0based": 17104,
+        "text": "      \"inventory_filename\": \"member-660.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 331,
+        "byte_offset_0based": 17155,
+        "text": "      \"line_count\": 292606,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 332,
+        "byte_offset_0based": 17183,
+        "text": "      \"inventory_sha256\": \"4a4ae020221eea420129bea79778d770704237a6596a41e743cd68925f9513c6\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 333,
+        "byte_offset_0based": 17276,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 334,
+        "byte_offset_0based": 17283,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 335,
+        "byte_offset_0based": 17289,
+        "text": "      \"ordinal_1based\": 661,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 336,
+        "byte_offset_0based": 17318,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_3.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 337,
+        "byte_offset_0based": 17453,
+        "text": "      \"scratch_filename\": \"member-661.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 338,
+        "byte_offset_0based": 17497,
+        "text": "      \"raw_bytes\": 9479392,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 339,
+        "byte_offset_0based": 17525,
+        "text": "      \"raw_sha256_discovered\": \"cbd705274ce5979ee5e44839d2ea79debe10be4c4c98581c6c5940f37b6cdacb\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 340,
+        "byte_offset_0based": 17624,
+        "text": "      \"inventory_filename\": \"member-661.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 341,
+        "byte_offset_0based": 17675,
+        "text": "      \"line_count\": 196329,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 342,
+        "byte_offset_0based": 17703,
+        "text": "      \"inventory_sha256\": \"69dd56a546a6938e5748bfb96c8afd2d94d93f5be94b372a674c66238796b728\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 343,
+        "byte_offset_0based": 17796,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 344,
+        "byte_offset_0based": 17803,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 345,
+        "byte_offset_0based": 17809,
+        "text": "      \"ordinal_1based\": 662,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 346,
+        "byte_offset_0based": 17838,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_3.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 347,
+        "byte_offset_0based": 17973,
+        "text": "      \"scratch_filename\": \"member-662.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 348,
+        "byte_offset_0based": 18017,
+        "text": "      \"raw_bytes\": 14353104,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 349,
+        "byte_offset_0based": 18046,
+        "text": "      \"raw_sha256_discovered\": \"f8e595a14173b7e9bb459eba71dfbb54548064d7d39e4d616c8144fdde4b5c38\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 350,
+        "byte_offset_0based": 18145,
+        "text": "      \"inventory_filename\": \"member-662.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 351,
+        "byte_offset_0based": 18196,
+        "text": "      \"line_count\": 297444,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 352,
+        "byte_offset_0based": 18224,
+        "text": "      \"inventory_sha256\": \"99e704c30f97730133816c13046737d8ef902afd0e61cc552b3001d5a3b3f1e0\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 353,
+        "byte_offset_0based": 18317,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 354,
+        "byte_offset_0based": 18324,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 355,
+        "byte_offset_0based": 18330,
+        "text": "      \"ordinal_1based\": 663,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 356,
+        "byte_offset_0based": 18359,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_400.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 357,
+        "byte_offset_0based": 18495,
+        "text": "      \"scratch_filename\": \"member-663.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 358,
+        "byte_offset_0based": 18539,
+        "text": "      \"raw_bytes\": 7114531,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 359,
+        "byte_offset_0based": 18567,
+        "text": "      \"raw_sha256_discovered\": \"5b3aaaa410cc2fe63839181f1b77843c0d86b741faf2bb26b35960d9535f0d51\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 360,
+        "byte_offset_0based": 18666,
+        "text": "      \"inventory_filename\": \"member-663.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 361,
+        "byte_offset_0based": 18717,
+        "text": "      \"line_count\": 149567,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 362,
+        "byte_offset_0based": 18745,
+        "text": "      \"inventory_sha256\": \"260e55567ce019f5bc88e9acb2b133e786a0644ec2bcc99f002428b0453a9601\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 363,
+        "byte_offset_0based": 18838,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 364,
+        "byte_offset_0based": 18845,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 365,
+        "byte_offset_0based": 18851,
+        "text": "      \"ordinal_1based\": 664,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 366,
+        "byte_offset_0based": 18880,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 367,
+        "byte_offset_0based": 19016,
+        "text": "      \"scratch_filename\": \"member-664.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 368,
+        "byte_offset_0based": 19060,
+        "text": "      \"raw_bytes\": 7176457,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 369,
+        "byte_offset_0based": 19088,
+        "text": "      \"raw_sha256_discovered\": \"47661e6f912687506b0a5486919f945817f0c992cf970c7a831394b715897c57\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 370,
+        "byte_offset_0based": 19187,
+        "text": "      \"inventory_filename\": \"member-664.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 371,
+        "byte_offset_0based": 19238,
+        "text": "      \"line_count\": 148443,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 372,
+        "byte_offset_0based": 19266,
+        "text": "      \"inventory_sha256\": \"49ccba1cd5c0de9bb671982ca661e19283eca875c4829326fda2c28ccce05d8d\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 373,
+        "byte_offset_0based": 19359,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 374,
+        "byte_offset_0based": 19366,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 375,
+        "byte_offset_0based": 19372,
+        "text": "      \"ordinal_1based\": 665,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 376,
+        "byte_offset_0based": 19401,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 377,
+        "byte_offset_0based": 19538,
+        "text": "      \"scratch_filename\": \"member-665.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 378,
+        "byte_offset_0based": 19582,
+        "text": "      \"raw_bytes\": 7735351,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 379,
+        "byte_offset_0based": 19610,
+        "text": "      \"raw_sha256_discovered\": \"887ca7c4383d89e1d9652c14338e91f014f6099c6069d28666fc78896b598955\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 380,
+        "byte_offset_0based": 19709,
+        "text": "      \"inventory_filename\": \"member-665.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 381,
+        "byte_offset_0based": 19760,
+        "text": "      \"line_count\": 157304,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 382,
+        "byte_offset_0based": 19788,
+        "text": "      \"inventory_sha256\": \"3263a24f27a337e3d1d8a6c0d69756948451523e65c4afc7ff1c0425012aa6df\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 383,
+        "byte_offset_0based": 19881,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 384,
+        "byte_offset_0based": 19888,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 385,
+        "byte_offset_0based": 19894,
+        "text": "      \"ordinal_1based\": 666,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 386,
+        "byte_offset_0based": 19923,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 387,
+        "byte_offset_0based": 20060,
+        "text": "      \"scratch_filename\": \"member-666.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 388,
+        "byte_offset_0based": 20104,
+        "text": "      \"raw_bytes\": 8111080,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 389,
+        "byte_offset_0based": 20132,
+        "text": "      \"raw_sha256_discovered\": \"89b50a42d5af5387159e1716491364c85ccdfc0bc233038f98982b4792d9bc1d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 390,
+        "byte_offset_0based": 20231,
+        "text": "      \"inventory_filename\": \"member-666.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 391,
+        "byte_offset_0based": 20282,
+        "text": "      \"line_count\": 170741,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 392,
+        "byte_offset_0based": 20310,
+        "text": "      \"inventory_sha256\": \"2fe11b3926ec8b5254b27603c46fa9d62c39e96ff3c2bb37f0ff4875d54c6d8a\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 393,
+        "byte_offset_0based": 20403,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 394,
+        "byte_offset_0based": 20410,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 395,
+        "byte_offset_0based": 20416,
+        "text": "      \"ordinal_1based\": 667,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 396,
+        "byte_offset_0based": 20445,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_400.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 397,
+        "byte_offset_0based": 20582,
+        "text": "      \"scratch_filename\": \"member-667.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 398,
+        "byte_offset_0based": 20626,
+        "text": "      \"raw_bytes\": 11181592,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 399,
+        "byte_offset_0based": 20655,
+        "text": "      \"raw_sha256_discovered\": \"482af523d4f9831e314062ead577f796b029bbae5f908f591ecbb8b59774df2b\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 400,
+        "byte_offset_0based": 20754,
+        "text": "      \"inventory_filename\": \"member-667.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 401,
+        "byte_offset_0based": 20805,
+        "text": "      \"line_count\": 230183,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 402,
+        "byte_offset_0based": 20833,
+        "text": "      \"inventory_sha256\": \"b597bc74952c4328e18b3b3fc4a2f6667987cc86578b82680820da1bb61e85d0\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 403,
+        "byte_offset_0based": 20926,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 404,
+        "byte_offset_0based": 20933,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 405,
+        "byte_offset_0based": 20939,
+        "text": "      \"ordinal_1based\": 668,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 406,
+        "byte_offset_0based": 20968,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_800.00V_die_AC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 407,
+        "byte_offset_0based": 21104,
+        "text": "      \"scratch_filename\": \"member-668.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 408,
+        "byte_offset_0based": 21148,
+        "text": "      \"raw_bytes\": 7061376,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 409,
+        "byte_offset_0based": 21176,
+        "text": "      \"raw_sha256_discovered\": \"ad71c29fd14b1293dec200c6aedc77b812a020825febb6eb2c667ecdf22d92fd\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 410,
+        "byte_offset_0based": 21275,
+        "text": "      \"inventory_filename\": \"member-668.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 411,
+        "byte_offset_0based": 21326,
+        "text": "      \"line_count\": 149458,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 412,
+        "byte_offset_0based": 21354,
+        "text": "      \"inventory_sha256\": \"159d12e32c209e9b88b85dd0beb7b4a42e78bf82848fd23b6c933d2d6098569c\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 413,
+        "byte_offset_0based": 21447,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 414,
+        "byte_offset_0based": 21454,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 415,
+        "byte_offset_0based": 21460,
+        "text": "      \"ordinal_1based\": 669,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 416,
+        "byte_offset_0based": 21489,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_0sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 417,
+        "byte_offset_0based": 21625,
+        "text": "      \"scratch_filename\": \"member-669.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 418,
+        "byte_offset_0based": 21669,
+        "text": "      \"raw_bytes\": 7113139,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 419,
+        "byte_offset_0based": 21697,
+        "text": "      \"raw_sha256_discovered\": \"74bf2f2ca817f4646a119eee2390d6a0d6d03c31698470d3d1ee8ccbc1755ccd\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 420,
+        "byte_offset_0based": 21796,
+        "text": "      \"inventory_filename\": \"member-669.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 421,
+        "byte_offset_0based": 21847,
+        "text": "      \"line_count\": 148501,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 422,
+        "byte_offset_0based": 21875,
+        "text": "      \"inventory_sha256\": \"8d2dead6af5194c62945511a5edafa31e185a59ec222086b073d4014784ce8b8\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 423,
+        "byte_offset_0based": 21968,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 424,
+        "byte_offset_0based": 21975,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 425,
+        "byte_offset_0based": 21981,
+        "text": "      \"ordinal_1based\": 670,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 426,
+        "byte_offset_0based": 22010,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_10sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 427,
+        "byte_offset_0based": 22147,
+        "text": "      \"scratch_filename\": \"member-670.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 428,
+        "byte_offset_0based": 22191,
+        "text": "      \"raw_bytes\": 7598781,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 429,
+        "byte_offset_0based": 22219,
+        "text": "      \"raw_sha256_discovered\": \"808c5c66beec606d23b44ebd17451593e8d3a8aa2d55cd14ca12bb720f8f089a\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 430,
+        "byte_offset_0based": 22318,
+        "text": "      \"inventory_filename\": \"member-670.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 431,
+        "byte_offset_0based": 22369,
+        "text": "      \"line_count\": 157381,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 432,
+        "byte_offset_0based": 22397,
+        "text": "      \"inventory_sha256\": \"27ab785bbaa79602adac647416e63a066916db31cad21a7e3102dcb7f7a69001\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 433,
+        "byte_offset_0based": 22490,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 434,
+        "byte_offset_0based": 22497,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 435,
+        "byte_offset_0based": 22503,
+        "text": "      \"ordinal_1based\": 671,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 436,
+        "byte_offset_0based": 22532,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_30sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 437,
+        "byte_offset_0based": 22669,
+        "text": "      \"scratch_filename\": \"member-671.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 438,
+        "byte_offset_0based": 22713,
+        "text": "      \"raw_bytes\": 8016729,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 439,
+        "byte_offset_0based": 22741,
+        "text": "      \"raw_sha256_discovered\": \"8d9be13fc5d61618a084aec0c8c328885b2869d751835ea4929a1282f39d1b17\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 440,
+        "byte_offset_0based": 22840,
+        "text": "      \"inventory_filename\": \"member-671.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 441,
+        "byte_offset_0based": 22891,
+        "text": "      \"line_count\": 171093,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 442,
+        "byte_offset_0based": 22919,
+        "text": "      \"inventory_sha256\": \"473c90de889230bd1d4f28f2dedc0cbbfb109f04dd672e98d95456168a869bec\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 443,
+        "byte_offset_0based": 23012,
+        "text": "    },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 444,
+        "byte_offset_0based": 23019,
+        "text": "    {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 445,
+        "byte_offset_0based": 23025,
+        "text": "      \"ordinal_1based\": 672,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 446,
+        "byte_offset_0based": 23054,
+        "text": "      \"filename\": \"Data/B) ACDC adhesion,releasing,residual pressure results/7_C3_100um_100um_20um_800.00V_die_DC_sym_1.00Hz_90sec.csv\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 447,
+        "byte_offset_0based": 23191,
+        "text": "      \"scratch_filename\": \"member-672.raw\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 448,
+        "byte_offset_0based": 23235,
+        "text": "      \"raw_bytes\": 11126849,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 449,
+        "byte_offset_0based": 23264,
+        "text": "      \"raw_sha256_discovered\": \"577afab60daec09e2359910b13867902cef775a93c60f9c3b231e08f2a21d8ad\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 450,
+        "byte_offset_0based": 23363,
+        "text": "      \"inventory_filename\": \"member-672.jsonl.gz\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 451,
+        "byte_offset_0based": 23414,
+        "text": "      \"line_count\": 230199,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 452,
+        "byte_offset_0based": 23442,
+        "text": "      \"inventory_sha256\": \"2586d6637b0eb231682bcb73b1c9df63783dcc949afd9157e52b008b0d508eba\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 453,
+        "byte_offset_0based": 23535,
+        "text": "    }",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 454,
+        "byte_offset_0based": 23541,
+        "text": "  ],",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 455,
+        "byte_offset_0based": 23546,
+        "text": "  \"total_lines\": 8103065,",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 456,
+        "byte_offset_0based": 23572,
+        "text": "  \"grammar\": \"CRLF/CR/LF only; 0based raw byte offsets; body excludes terminator, full span body+terminator; 1based lines; no fictitious trailing empty after delimiter, empty raw zero lines, VT/FF/NEL/Unicode separators literal\"",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 457,
+        "byte_offset_0based": 23801,
+        "text": "}",
+        "terminator": "LF"
+      }
+    ],
+    "doc290/algorithm_units/p08-electroadhesion-admission/a4/results-review/full-output-hashes.json": [
+      {
+        "line_ordinal_1based": 1,
+        "byte_offset_0based": 0,
+        "text": "{",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 2,
+        "byte_offset_0based": 2,
+        "text": "  \"manifest.json\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 3,
+        "byte_offset_0based": 23,
+        "text": "    \"sha256\": \"043e427fb28b6be1b16862f7269326b383da32c76fede05bd01c9c265d36df08\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 4,
+        "byte_offset_0based": 105,
+        "text": "    \"bytes\": 4385",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 5,
+        "byte_offset_0based": 123,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 6,
+        "byte_offset_0based": 128,
+        "text": "  \"member-628.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 7,
+        "byte_offset_0based": 155,
+        "text": "    \"sha256\": \"0115265b6ba09e7d49ef9ed1fcfb37508e46690f040b7195a495604fb0d5af7a\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 8,
+        "byte_offset_0based": 237,
+        "text": "    \"bytes\": 3652624",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 9,
+        "byte_offset_0based": 258,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 10,
+        "byte_offset_0based": 263,
+        "text": "  \"member-629.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 11,
+        "byte_offset_0based": 290,
+        "text": "    \"sha256\": \"47b58fcf010c4bdfcd2b4a0e70a00e2855bc79a0b4e7979e75b130f91f181ba0\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 12,
+        "byte_offset_0based": 372,
+        "text": "    \"bytes\": 3406291",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 13,
+        "byte_offset_0based": 393,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 14,
+        "byte_offset_0based": 398,
+        "text": "  \"member-630.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 15,
+        "byte_offset_0based": 425,
+        "text": "    \"sha256\": \"a6dd611ce5ec8b36e3c9c5f8cc74f5919be27b983e2e3b4bfc04fb22a6f7a7f7\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 16,
+        "byte_offset_0based": 507,
+        "text": "    \"bytes\": 3465285",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 17,
+        "byte_offset_0based": 528,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 18,
+        "byte_offset_0based": 533,
+        "text": "  \"member-631.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 19,
+        "byte_offset_0based": 560,
+        "text": "    \"sha256\": \"485fa333e15449966e7fdada6901b8ee258e24b3fc267c23304e5590fed22d62\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 20,
+        "byte_offset_0based": 642,
+        "text": "    \"bytes\": 3658153",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 21,
+        "byte_offset_0based": 663,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 22,
+        "byte_offset_0based": 668,
+        "text": "  \"member-632.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 23,
+        "byte_offset_0based": 695,
+        "text": "    \"sha256\": \"223cb132ba7667c67293f20a9a2ff00f7b7ff7491a7c234b75aa32fcd202e4ad\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 24,
+        "byte_offset_0based": 777,
+        "text": "    \"bytes\": 4446762",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 25,
+        "byte_offset_0based": 798,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 26,
+        "byte_offset_0based": 803,
+        "text": "  \"member-633.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 27,
+        "byte_offset_0based": 830,
+        "text": "    \"sha256\": \"be7cc3a4991d1099e470dc55a5a771d2feeaf5838e1a2e04e962fc13cdd021b4\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 28,
+        "byte_offset_0based": 912,
+        "text": "    \"bytes\": 3374210",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 29,
+        "byte_offset_0based": 933,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 30,
+        "byte_offset_0based": 938,
+        "text": "  \"member-634.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 31,
+        "byte_offset_0based": 965,
+        "text": "    \"sha256\": \"16a72b60fa42c863af3a670b8e42e6076e29003746fa39a40a8afa309ece330f\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 32,
+        "byte_offset_0based": 1047,
+        "text": "    \"bytes\": 3322857",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 33,
+        "byte_offset_0based": 1068,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 34,
+        "byte_offset_0based": 1073,
+        "text": "  \"member-635.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 35,
+        "byte_offset_0based": 1100,
+        "text": "    \"sha256\": \"f23d47eb1712810280934312da202830e5b8bfb8eda84166f1c0f320735dec18\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 36,
+        "byte_offset_0based": 1182,
+        "text": "    \"bytes\": 3477170",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 37,
+        "byte_offset_0based": 1203,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 38,
+        "byte_offset_0based": 1208,
+        "text": "  \"member-636.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 39,
+        "byte_offset_0based": 1235,
+        "text": "    \"sha256\": \"78ad7a3fea1c90c801e892c7f680575912f492d981b2a5b9003e7e0a9af96430\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 40,
+        "byte_offset_0based": 1317,
+        "text": "    \"bytes\": 3612329",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 41,
+        "byte_offset_0based": 1338,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 42,
+        "byte_offset_0based": 1343,
+        "text": "  \"member-637.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 43,
+        "byte_offset_0based": 1370,
+        "text": "    \"sha256\": \"6bcff8aca24d3e1f4e85ca0fd7db4e1ef53e6b3538d67fbe0395811410ff4cc2\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 44,
+        "byte_offset_0based": 1452,
+        "text": "    \"bytes\": 5907830",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 45,
+        "byte_offset_0based": 1473,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 46,
+        "byte_offset_0based": 1478,
+        "text": "  \"member-638.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 47,
+        "byte_offset_0based": 1505,
+        "text": "    \"sha256\": \"b2865c1d76a4439b79781b9640bb17b96abb8950c8023981ff254352376b7f7a\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 48,
+        "byte_offset_0based": 1587,
+        "text": "    \"bytes\": 3386490",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 49,
+        "byte_offset_0based": 1608,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 50,
+        "byte_offset_0based": 1613,
+        "text": "  \"member-639.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 51,
+        "byte_offset_0based": 1640,
+        "text": "    \"sha256\": \"2656dfdfef4b07bc7b87d35f38ffe55205ebd4631318a12eb64c96d461ef6753\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 52,
+        "byte_offset_0based": 1722,
+        "text": "    \"bytes\": 3366219",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 53,
+        "byte_offset_0based": 1743,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 54,
+        "byte_offset_0based": 1748,
+        "text": "  \"member-640.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 55,
+        "byte_offset_0based": 1775,
+        "text": "    \"sha256\": \"11c7bb9e24df0dd62ffe6be60b8b1d8aae292adf2651a65995f8f3e5b8fe1b3c\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 56,
+        "byte_offset_0based": 1857,
+        "text": "    \"bytes\": 3477683",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 57,
+        "byte_offset_0based": 1878,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 58,
+        "byte_offset_0based": 1883,
+        "text": "  \"member-641.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 59,
+        "byte_offset_0based": 1910,
+        "text": "    \"sha256\": \"e0eb13257c32e6049259f76faaf20c99e6e29ed7ebd60bac4bbb6669208cf2d2\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 60,
+        "byte_offset_0based": 1992,
+        "text": "    \"bytes\": 3635897",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 61,
+        "byte_offset_0based": 2013,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 62,
+        "byte_offset_0based": 2018,
+        "text": "  \"member-642.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 63,
+        "byte_offset_0based": 2045,
+        "text": "    \"sha256\": \"debf84ceb2b62d1f469b2fadf7681c0c92a0cb9cd9fa89075b898bdf87215373\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 64,
+        "byte_offset_0based": 2127,
+        "text": "    \"bytes\": 4593753",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 65,
+        "byte_offset_0based": 2148,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 66,
+        "byte_offset_0based": 2153,
+        "text": "  \"member-643.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 67,
+        "byte_offset_0based": 2180,
+        "text": "    \"sha256\": \"5e019cb26d35d3f05833bdc28c9559c850a6ea1c213fca01a489fedbe1710340\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 68,
+        "byte_offset_0based": 2262,
+        "text": "    \"bytes\": 3407544",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 69,
+        "byte_offset_0based": 2283,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 70,
+        "byte_offset_0based": 2288,
+        "text": "  \"member-644.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 71,
+        "byte_offset_0based": 2315,
+        "text": "    \"sha256\": \"fbac1affb400186fc2b894d530e7cb56c50e2372c787123146327f05416a1538\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 72,
+        "byte_offset_0based": 2397,
+        "text": "    \"bytes\": 3372850",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 73,
+        "byte_offset_0based": 2418,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 74,
+        "byte_offset_0based": 2423,
+        "text": "  \"member-645.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 75,
+        "byte_offset_0based": 2450,
+        "text": "    \"sha256\": \"3dfabd18764101121ce9a1353105a98b19818c935d7424ba26fb2c413bfd719d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 76,
+        "byte_offset_0based": 2532,
+        "text": "    \"bytes\": 3462577",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 77,
+        "byte_offset_0based": 2553,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 78,
+        "byte_offset_0based": 2558,
+        "text": "  \"member-646.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 79,
+        "byte_offset_0based": 2585,
+        "text": "    \"sha256\": \"48165d8e3ccb06e58c926b53ce5248c416327e516feea1aab02d53d68fcaa7a2\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 80,
+        "byte_offset_0based": 2667,
+        "text": "    \"bytes\": 3696887",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 81,
+        "byte_offset_0based": 2688,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 82,
+        "byte_offset_0based": 2693,
+        "text": "  \"member-647.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 83,
+        "byte_offset_0based": 2720,
+        "text": "    \"sha256\": \"bda5adba73707f6497e75b572b70c729747ac06a6c2469bc6d0fc08983afa41d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 84,
+        "byte_offset_0based": 2802,
+        "text": "    \"bytes\": 4552131",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 85,
+        "byte_offset_0based": 2823,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 86,
+        "byte_offset_0based": 2828,
+        "text": "  \"member-648.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 87,
+        "byte_offset_0based": 2855,
+        "text": "    \"sha256\": \"cb08503e3bd205ee06587c2720a3f1969bf834784cbac2943a678760d66ae29e\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 88,
+        "byte_offset_0based": 2937,
+        "text": "    \"bytes\": 3324424",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 89,
+        "byte_offset_0based": 2958,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 90,
+        "byte_offset_0based": 2963,
+        "text": "  \"member-649.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 91,
+        "byte_offset_0based": 2990,
+        "text": "    \"sha256\": \"4fe863db5e0128445d5c25eb64ec5a2735726405ccbbaf0596661385331dd860\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 92,
+        "byte_offset_0based": 3072,
+        "text": "    \"bytes\": 3632723",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 93,
+        "byte_offset_0based": 3093,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 94,
+        "byte_offset_0based": 3098,
+        "text": "  \"member-650.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 95,
+        "byte_offset_0based": 3125,
+        "text": "    \"sha256\": \"ec41b2c882219027dfdb820f28d939864ed5dd0a5f5992ab73742a5b90145442\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 96,
+        "byte_offset_0based": 3207,
+        "text": "    \"bytes\": 5944658",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 97,
+        "byte_offset_0based": 3228,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 98,
+        "byte_offset_0based": 3233,
+        "text": "  \"member-651.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 99,
+        "byte_offset_0based": 3260,
+        "text": "    \"sha256\": \"7340de9e776e4b9dab546f152ad9a8045ec52f52ee4a184fb79f9433471708bf\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 100,
+        "byte_offset_0based": 3342,
+        "text": "    \"bytes\": 3583022",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 101,
+        "byte_offset_0based": 3363,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 102,
+        "byte_offset_0based": 3368,
+        "text": "  \"member-652.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 103,
+        "byte_offset_0based": 3395,
+        "text": "    \"sha256\": \"81efcbc10e473b349d65f9b52e63d0824fdad1901d91f3881a20be7a0737c083\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 104,
+        "byte_offset_0based": 3477,
+        "text": "    \"bytes\": 3394634",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 105,
+        "byte_offset_0based": 3498,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 106,
+        "byte_offset_0based": 3503,
+        "text": "  \"member-653.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 107,
+        "byte_offset_0based": 3530,
+        "text": "    \"sha256\": \"75ffded1659a9ab8b33ef4bb823d96a4bdf10caf8f90f9af96a69b64277e9404\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 108,
+        "byte_offset_0based": 3612,
+        "text": "    \"bytes\": 3504838",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 109,
+        "byte_offset_0based": 3633,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 110,
+        "byte_offset_0based": 3638,
+        "text": "  \"member-654.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 111,
+        "byte_offset_0based": 3665,
+        "text": "    \"sha256\": \"677581da1ce1f29f0e7b342a36ff919b47d69d28236acb1a5644d243a8d82b89\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 112,
+        "byte_offset_0based": 3747,
+        "text": "    \"bytes\": 3648004",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 113,
+        "byte_offset_0based": 3768,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 114,
+        "byte_offset_0based": 3773,
+        "text": "  \"member-655.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 115,
+        "byte_offset_0based": 3800,
+        "text": "    \"sha256\": \"166dfd55d34794f4f16bf14077f20c392446fb49bd367bef1e200b75faf2f4e0\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 116,
+        "byte_offset_0based": 3882,
+        "text": "    \"bytes\": 4538879",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 117,
+        "byte_offset_0based": 3903,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 118,
+        "byte_offset_0based": 3908,
+        "text": "  \"member-656.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 119,
+        "byte_offset_0based": 3935,
+        "text": "    \"sha256\": \"1c45afbf237ae6548042d5ce9a11390a0b1794cd40e825981fa9eb36a0fa8229\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 120,
+        "byte_offset_0based": 4017,
+        "text": "    \"bytes\": 3415678",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 121,
+        "byte_offset_0based": 4038,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 122,
+        "byte_offset_0based": 4043,
+        "text": "  \"member-657.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 123,
+        "byte_offset_0based": 4070,
+        "text": "    \"sha256\": \"60485de77f3dbc0809171339947dce2eb308e98e82a7ec52dc07615d98961851\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 124,
+        "byte_offset_0based": 4152,
+        "text": "    \"bytes\": 3384397",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 125,
+        "byte_offset_0based": 4173,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 126,
+        "byte_offset_0based": 4178,
+        "text": "  \"member-658.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 127,
+        "byte_offset_0based": 4205,
+        "text": "    \"sha256\": \"ce3492eb75dd1e8c91c8d98363cf16d07fd1e26be6374981d03653eba9faf08e\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 128,
+        "byte_offset_0based": 4287,
+        "text": "    \"bytes\": 3587557",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 129,
+        "byte_offset_0based": 4308,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 130,
+        "byte_offset_0based": 4313,
+        "text": "  \"member-659.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 131,
+        "byte_offset_0based": 4340,
+        "text": "    \"sha256\": \"0f5ee8c5ae8931c958e3441a7c20f6b934e9b5111b23782a34a86d0d2fbf69d5\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 132,
+        "byte_offset_0based": 4422,
+        "text": "    \"bytes\": 3675111",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 133,
+        "byte_offset_0based": 4443,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 134,
+        "byte_offset_0based": 4448,
+        "text": "  \"member-660.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 135,
+        "byte_offset_0based": 4475,
+        "text": "    \"sha256\": \"4a4ae020221eea420129bea79778d770704237a6596a41e743cd68925f9513c6\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 136,
+        "byte_offset_0based": 4557,
+        "text": "    \"bytes\": 6006654",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 137,
+        "byte_offset_0based": 4578,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 138,
+        "byte_offset_0based": 4583,
+        "text": "  \"member-661.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 139,
+        "byte_offset_0based": 4610,
+        "text": "    \"sha256\": \"69dd56a546a6938e5748bfb96c8afd2d94d93f5be94b372a674c66238796b728\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 140,
+        "byte_offset_0based": 4692,
+        "text": "    \"bytes\": 4229089",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 141,
+        "byte_offset_0based": 4713,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 142,
+        "byte_offset_0based": 4718,
+        "text": "  \"member-662.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 143,
+        "byte_offset_0based": 4745,
+        "text": "    \"sha256\": \"99e704c30f97730133816c13046737d8ef902afd0e61cc552b3001d5a3b3f1e0\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 144,
+        "byte_offset_0based": 4827,
+        "text": "    \"bytes\": 6070390",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 145,
+        "byte_offset_0based": 4848,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 146,
+        "byte_offset_0based": 4853,
+        "text": "  \"member-663.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 147,
+        "byte_offset_0based": 4880,
+        "text": "    \"sha256\": \"260e55567ce019f5bc88e9acb2b133e786a0644ec2bcc99f002428b0453a9601\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 148,
+        "byte_offset_0based": 4962,
+        "text": "    \"bytes\": 3391848",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 149,
+        "byte_offset_0based": 4983,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 150,
+        "byte_offset_0based": 4988,
+        "text": "  \"member-664.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 151,
+        "byte_offset_0based": 5015,
+        "text": "    \"sha256\": \"49ccba1cd5c0de9bb671982ca661e19283eca875c4829326fda2c28ccce05d8d\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 152,
+        "byte_offset_0based": 5097,
+        "text": "    \"bytes\": 3363440",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 153,
+        "byte_offset_0based": 5118,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 154,
+        "byte_offset_0based": 5123,
+        "text": "  \"member-665.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 155,
+        "byte_offset_0based": 5150,
+        "text": "    \"sha256\": \"3263a24f27a337e3d1d8a6c0d69756948451523e65c4afc7ff1c0425012aa6df\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 156,
+        "byte_offset_0based": 5232,
+        "text": "    \"bytes\": 3499205",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 157,
+        "byte_offset_0based": 5253,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 158,
+        "byte_offset_0based": 5258,
+        "text": "  \"member-666.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 159,
+        "byte_offset_0based": 5285,
+        "text": "    \"sha256\": \"2fe11b3926ec8b5254b27603c46fa9d62c39e96ff3c2bb37f0ff4875d54c6d8a\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 160,
+        "byte_offset_0based": 5367,
+        "text": "    \"bytes\": 3645384",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 161,
+        "byte_offset_0based": 5388,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 162,
+        "byte_offset_0based": 5393,
+        "text": "  \"member-667.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 163,
+        "byte_offset_0based": 5420,
+        "text": "    \"sha256\": \"b597bc74952c4328e18b3b3fc4a2f6667987cc86578b82680820da1bb61e85d0\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 164,
+        "byte_offset_0based": 5502,
+        "text": "    \"bytes\": 4525584",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 165,
+        "byte_offset_0based": 5523,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 166,
+        "byte_offset_0based": 5528,
+        "text": "  \"member-668.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 167,
+        "byte_offset_0based": 5555,
+        "text": "    \"sha256\": \"159d12e32c209e9b88b85dd0beb7b4a42e78bf82848fd23b6c933d2d6098569c\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 168,
+        "byte_offset_0based": 5637,
+        "text": "    \"bytes\": 3378454",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 169,
+        "byte_offset_0based": 5658,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 170,
+        "byte_offset_0based": 5663,
+        "text": "  \"member-669.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 171,
+        "byte_offset_0based": 5690,
+        "text": "    \"sha256\": \"8d2dead6af5194c62945511a5edafa31e185a59ec222086b073d4014784ce8b8\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 172,
+        "byte_offset_0based": 5772,
+        "text": "    \"bytes\": 3350136",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 173,
+        "byte_offset_0based": 5793,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 174,
+        "byte_offset_0based": 5798,
+        "text": "  \"member-670.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 175,
+        "byte_offset_0based": 5825,
+        "text": "    \"sha256\": \"27ab785bbaa79602adac647416e63a066916db31cad21a7e3102dcb7f7a69001\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 176,
+        "byte_offset_0based": 5907,
+        "text": "    \"bytes\": 3506567",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 177,
+        "byte_offset_0based": 5928,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 178,
+        "byte_offset_0based": 5933,
+        "text": "  \"member-671.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 179,
+        "byte_offset_0based": 5960,
+        "text": "    \"sha256\": \"473c90de889230bd1d4f28f2dedc0cbbfb109f04dd672e98d95456168a869bec\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 180,
+        "byte_offset_0based": 6042,
+        "text": "    \"bytes\": 3647723",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 181,
+        "byte_offset_0based": 6063,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 182,
+        "byte_offset_0based": 6068,
+        "text": "  \"member-672.jsonl.gz\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 183,
+        "byte_offset_0based": 6095,
+        "text": "    \"sha256\": \"2586d6637b0eb231682bcb73b1c9df63783dcc949afd9157e52b008b0d508eba\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 184,
+        "byte_offset_0based": 6177,
+        "text": "    \"bytes\": 4541739",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 185,
+        "byte_offset_0based": 6198,
+        "text": "  },",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 186,
+        "byte_offset_0based": 6203,
+        "text": "  \"summary.json\": {",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 187,
+        "byte_offset_0based": 6223,
+        "text": "    \"sha256\": \"283d0f6491534efb8e220c9bec9250cb4db36817791f740841bf08a45dc82132\",",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 188,
+        "byte_offset_0based": 6305,
+        "text": "    \"bytes\": 23803",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 189,
+        "byte_offset_0based": 6324,
+        "text": "  }",
+        "terminator": "LF"
+      },
+      {
+        "line_ordinal_1based": 190,
+        "byte_offset_0based": 6328,
+        "text": "}",
+        "terminator": "LF"
+      }
+    ]
+  },
+  "metadata": "structural consistency only, NOT measurements/units/trial proof"
+}

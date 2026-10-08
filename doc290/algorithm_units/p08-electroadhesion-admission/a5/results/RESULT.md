@@ -1,0 +1,25 @@
+# A5 endpoint classification Outcome B, scoped evidence rejection
+
+Preregp61589ec/freezefbedcdbpublishedbeforeadmission;all5exactpublishedsourceblob
+identitiesPASS43927B thenstaticinventory/JSONall45ordinal/aggregate/47hashcorrelation.
+Manualsource-citedperbindingledgercompleteBEFORERuleA/Bclassification. Chronology
+document-reported,replayreproducibilitynothistoricalattestation/scientifictruth.
+
+RuleAFAILS:actualtime/position/forceunitandsensor-calibration/phase/trial-independent
+heldoutbenchmark-comparator/metric/matchingbudgetbindingsNOTestablishedwithinthese
+5texts+theircompleteall45literal-ledgercoverage. Magneticblood-wallanchoringphysical
+transfer/forcing/geometry/material/rheology/devicebindingsalsoNOTadmitted;EAelectric
+laboratorysetupnotmagneticphysiology. No unit/phase/independence/benchmarkrepair.
+
+OutcomeB:REJECTendpointcalibrationqualificationwithinthisfixedevidencesurface.
+NOTdatasetabsenceelsewhere/sourceclaimfalsity/corruption/sciencefailure/P08-08closure.
+Preservepositives:identity/completeformat,relative3columnclaim,force-sign/25mm2area/
+pre-postbaseline descriptions. 1.00VfilenameCLAIMED0VAFTERdriveresidualbaseline,
+NOTphysical1V;2.00V/3.00Vlabelsunresolvedverbatim. No trialpooling/pressure conversion.
+All45literalCRLFcomma2/zeroNaNInftokensNOTnumericfinite/dialect/schema/unitsproof.
+
+No measuredperformance/model/RL/invention/rights/physiologycredit. OriginalA4-1
+HMACkey/atimefalse-rejection/capsnotpeak/renamenotcrashdurability/noatomicfreshness
+limitationsunchanged. No newsource/memberreads/LFS/arrays/visualspatialclaims.
+ResultsrequireexactreviewBEFOREclassificationpublication;notglobalgateclosure.
+Inventory+manifestbyte-identical2exactpublishedsource replays,unchangedexecutable.
