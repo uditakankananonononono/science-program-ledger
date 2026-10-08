@@ -11,3 +11,15 @@ Fifteen fresh workers (five per mask) passed correctness on the unchanged B1 ten
 Recorded deltas are single-environment OBSERVATIONS, not reproducible magnitude, and no statistical or stable superiority claim survives. B1 FOVEA originally recorded 10.417% reduction; independent review rerun was 1.103%. B2 here records 8.272% under a different actual-pipeline measurement protocol. These are not interchangeable samples or evidence that instability was fixed.
 
 Only one development mask per source, ten farthest-anchor queries from one lexical source. Proportional scenarios reduce to shortest steps. NOT difficult minimax, physiology, novelty or arbitrary-workload superiority. No RAM cap; no performance ceiling. Query correctness checked after each timed pipeline. Freeze/harness commits precede this recorded run, but history does not prove no private pre-freeze experiment. Raw samples retained; no post-freeze tuning.
+
+## Independent B2 rerun qualification
+
+Independent review reports median reductions HRF 22.24%, FIVES 18.22%, FOVEA
+5.38%, versus retained 16.62%, 11.91%, 8.27%. Directionally faster on these three
+development masks under this harness; magnitudes unstable across runs. No
+statistical/stable-superiority, physiology, novelty or arbitrary-workload claims.
+Individual losses are retained: reviewer reports one of five FOVEA repetitions
+lost, with raw rerun records retaining one loss each in FIVES and FOVEA. Median
+positive direction does not mean every repetition won. These are review-reported
+rerun observations, not replacement samples for the retained local run. Freeze
+is provenance, not proof against private earlier tuning.
