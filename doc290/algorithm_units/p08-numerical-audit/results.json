@@ -1,0 +1,32 @@
+{
+  "scope": "non-scoring failure-path software audit, not domain-calibrated tolerances",
+  "kalman_sha256": "6ee2d4b522690dc122ea055c16c08d23410d3adc292aa94eab8fecac0701d288",
+  "numpy_version": "2.2.6",
+  "cases": [
+    {
+      "case": "finite_dt_python_power_overflow",
+      "exception": "OverflowError",
+      "state_and_covariance_unchanged": true
+    },
+    {
+      "case": "finite_measurement_innovation_square_overflow",
+      "exception": "FloatingPointError",
+      "state_and_covariance_unchanged": true
+    },
+    {
+      "case": "nonfinite_dt_rejected",
+      "exception": "ValueError",
+      "state_and_covariance_unchanged": true
+    },
+    {
+      "case": "singular_R_rejected",
+      "exception": "ValueError",
+      "state_and_covariance_unchanged": true
+    }
+  ],
+  "limitations": [
+    "Exception classes are heterogeneous and intentionally recorded, not normalized.",
+    "No near-singular condition threshold or physical noise calibration is established.",
+    "Four fixtures cannot establish safety for every finite input."
+  ]
+}
