@@ -1,0 +1,10 @@
+DROP is justified, but for identifiability—not demonstrated low power. With zero DEV metrics and no paired patient-level score distribution, the claim that the study lacks defensible power for +0.03 AP is necessarily provisional. You cannot estimate variance, within-patient correlation, or comparator/candidate covariance from the stated results. Calling this “not decidable at the power-identifiability gate” is defensible; calling it simply “underpowered” is not.
+
+The pre-split annotation audit is not contamination as described. Inspecting all 25 patients’ labels for integrity before hashing is not outcome leakage unless that inspection informed inclusion/exclusion, preprocessing, thresholds, model design, split assignment, or any analysis decision. “Label-blind hash split” does not mean labels must literally never be viewed by the builder. However, the registry should explicitly preserve the distinction between label inspection for QC and outcome access. If QC decisions were made using TEST labels, that would change the verdict.
+
+The center/line-frequency confound is severe. Tel Aviv = 50 Hz and UCLA = 60 Hz means center and line frequency are perfectly collinear. Any apparent center, acquisition, preprocessing, or frequency-related effect cannot be separated from the others. Worse, with only five TEST patients, there is little empirical basis for disentangling this nuisance structure. A model improvement could therefore reflect site/acquisition differences rather than IED detection.
+
+Registry wording:
+“DROP — not decidable at the preregistered power/identifiability gate. No DEV metrics or TEST outcomes were computed. Five sealed TEST patients are insufficient to establish a defensible +0.03 patient-independent AP comparison without paired patient-level score distributions. Center is perfectly confounded with line frequency (50 vs 60 Hz). Pre-split label inspection was QC-only; no model, score, outcome, or split decision used TEST labels.”
+
+The license conflict and row-count/event discrepancies are separate provenance issues, not reasons to inflate the power argument.
