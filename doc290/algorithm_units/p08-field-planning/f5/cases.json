@@ -1,0 +1,1763 @@
+[
+  {
+    "expected": "FEASIBLE",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J1",
+    "witness": {
+      "controls": [
+        "1/2"
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J1:outbound",
+    "witness": {
+      "controls": [
+        10
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J1:terminal",
+    "witness": {
+      "controls": [
+        0
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J1:shape",
+    "witness": {
+      "controls": [],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          "1/2"
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J1:bool",
+    "witness": {
+      "controls": [
+        true
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INFEASIBLE",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J2",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J2:negative",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J2:zeros",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J2:station",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J2:shape",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "expected": "INFEASIBLE",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          -1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          "-1/2"
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J3",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          -1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          "-1/2"
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J3:negative",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          -1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          "-1/2"
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J3:zeros",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          -1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          "-1/2"
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J3:station",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          "1/2"
+        ],
+        [
+          -1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          "-1/2"
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "J3:shape",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "expected": "FEASIBLE",
+    "model": {
+      "dt": [
+        "1/2",
+        "3/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "lower": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          [
+            2,
+            -3
+          ]
+        ]
+      ],
+      "previous": [
+        "1/2",
+        "-1/2"
+      ],
+      "slew": [
+        1,
+        2
+      ],
+      "upper": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "x": [
+        1,
+        -1
+      ]
+    },
+    "name": "J4",
+    "witness": {
+      "controls": [
+        "1/2",
+        "-1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        "1/2",
+        "3/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "lower": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          [
+            2,
+            -3
+          ]
+        ]
+      ],
+      "previous": [
+        "1/2",
+        "-1/2"
+      ],
+      "slew": [
+        1,
+        2
+      ],
+      "upper": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "x": [
+        1,
+        -1
+      ]
+    },
+    "name": "J4:outbound",
+    "witness": {
+      "controls": [
+        10,
+        "-1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        "1/2",
+        "3/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "lower": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          [
+            2,
+            -3
+          ]
+        ]
+      ],
+      "previous": [
+        "1/2",
+        "-1/2"
+      ],
+      "slew": [
+        1,
+        2
+      ],
+      "upper": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "x": [
+        1,
+        -1
+      ]
+    },
+    "name": "J4:terminal",
+    "witness": {
+      "controls": [
+        0,
+        "-1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        "1/2",
+        "3/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "lower": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          [
+            2,
+            -3
+          ]
+        ]
+      ],
+      "previous": [
+        "1/2",
+        "-1/2"
+      ],
+      "slew": [
+        1,
+        2
+      ],
+      "upper": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "x": [
+        1,
+        -1
+      ]
+    },
+    "name": "J4:shape",
+    "witness": {
+      "controls": [
+        "1/2",
+        "-1/2",
+        "1/2"
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        "1/2",
+        "3/2"
+      ],
+      "limit": [
+        2,
+        2
+      ],
+      "lower": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            -1,
+            4
+          ],
+          [
+            2,
+            -3
+          ]
+        ]
+      ],
+      "previous": [
+        "1/2",
+        "-1/2"
+      ],
+      "slew": [
+        1,
+        2
+      ],
+      "upper": [
+        [
+          4,
+          1
+        ],
+        [
+          -4,
+          4
+        ]
+      ],
+      "x": [
+        1,
+        -1
+      ]
+    },
+    "name": "J4:bool",
+    "witness": {
+      "controls": [
+        true,
+        "-1/2",
+        "1/2",
+        "-1/2"
+      ],
+      "kind": "primal"
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:missing",
+    "witness": null
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1.0
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:floatdt",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:interval",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:mapshape",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:badkind",
+    "witness": {
+      "kind": "other",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:extrakey",
+    "witness": {
+      "extra": 0,
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        0
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:zerotime",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "lower": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "upper": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "control:signedzero",
+    "witness": {
+      "kind": "farkas",
+      "multipliers": [
+        "-0/1",
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ]
+    }
+  }
+]

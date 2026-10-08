@@ -1,0 +1,23 @@
+# F5 shared-schedule certificates freeze candidate
+
+Prereg fullOIDf2093fcab67014450a0f9f6723a989c41c2adc68; parent535309d235be8289053e5f4808d7f8e2ee0e42cc.
+CandidateOID/tree inreviewbundle. Newexactassembler freeu, allactuator/slew/
+terminalrows independentfromfloatingassembler. Primalallinequalities AND separate
+schedule/previous-offset/allscenariotrajectoryreplay. Farkasnonnegative stationary
+strictnegativeRHS; zero/positiveRHS UNAVAILABLE. Invalidmodelbeforemissing, exact
+keys/shapes/grammar/caps via unchangedpinnedF3helper. Noautomaticsearch/statusproof.
+
+Sixdevelopmenttests: every24signedasymmetricmultidimensional/nonuniformdt/
+2scenario rowresidual againstdirecttrajectorysemantics; separateFarkascontradiction/
+zeroRHS/nonstationary/negativelambda, multi-mapprimalreplay, model-first/keys/refusal,
+comparator disagreement/threadgatingbeforeload. 28casesconstructed, NOevaluation
+or4floatingcalls. EarlierF3/F4/fieldmodules unchangedpinned. Runtimeexactloaded
+sources/executable beforecases/baseline, notcompleteOS/sharedlib/loaderclosure.
+Importsforidentity only, noLPcallbeforegates. Capsnotpeakmemory/hostilesandboxproof.
+
+Afterreview/publication: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python3 compare.py results/report.json.
+All28rows/reasons/digests and4descriptivebaselines retained. Resultreviewbefore
+publication. Finiteenumeratedconstantmodels only; no recourse/corridor/unlistedmap/
+continuousrobustness/invention/hardware/physiology/sciencegate claim. Missingproof
+staysunavailable; floatingbaselineinfeasibility neverpromoted intoexactcertificate.
