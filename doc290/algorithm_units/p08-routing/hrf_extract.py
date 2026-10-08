@@ -13,6 +13,11 @@ def extract_member(archive,member):
     with zipfile.ZipFile(archive) as z:raw=z.read(member)
     with Image.open(io.BytesIO(raw)) as im:
         a=np.array(im)
+    original_shape=list(a.shape)
+    if a.ndim==3 and a.shape[2]==3:
+        if not (np.array_equal(a[:,:,0],a[:,:,1]) and np.array_equal(a[:,:,0],a[:,:,2])):
+            raise ValueError('RGB annotation channels differ; no grayscale inference')
+        a=a[:,:,0]
     if a.ndim!=2 or not set(np.unique(a)).issubset({0,255}):
         raise ValueError('requires 2D 0/255 annotation')
     mask=a==255
@@ -25,7 +30,7 @@ def extract_member(archive,member):
     if len(graph)!=int(skeleton.sum()):raise AssertionError('vertex count mismatch')
     degrees={}
     for edges in graph.values():degrees[str(len(edges))]=degrees.get(str(len(edges)),0)+1
-    return {'member':member,'image_sha256':hashlib.sha256(raw).hexdigest(),'shape':list(a.shape),
+    return {'member':member,'image_sha256':hashlib.sha256(raw).hexdigest(),'shape':list(a.shape),'original_shape':original_shape,
             'foreground_pixels':int(mask.sum()),'skeleton_pixels':int(skeleton.sum()),
             'components_8_before':before,'components_8_after':after,
             'vertices':len(graph),'directed_edges':sum(map(len,graph.values())),

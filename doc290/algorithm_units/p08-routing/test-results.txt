@@ -7,8 +7,10 @@ test_invalid_all_units (test_hardening.HardenedTests) ... ok
 test_malformed_edges_and_nodes (test_hardening.HardenedTests) ... ok
 test_overflow_rejected (test_hardening.HardenedTests) ... ok
 test_parallel_edge_witness (test_hardening.HardenedTests) ... ok
+test_equal_rgb_channels (test_hrf_extract.ExtractionTests) ... ok
 test_invalid_gray (test_hrf_extract.ExtractionTests) ... ok
 test_known_chain (test_hrf_extract.ExtractionTests) ... ok
+test_unequal_rgb_rejected (test_hrf_extract.ExtractionTests) ... ok
 test_bad_inputs (test_integrated.IntegratedTests) ... ok
 test_random_oracle_and_witness (test_integrated.IntegratedTests) ... ok
 test_required_revisit_and_budget (test_integrated.IntegratedTests) ... ok
@@ -45,6 +47,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 45 tests in 1.057s
+Ran 47 tests in 1.039s
 
 OK

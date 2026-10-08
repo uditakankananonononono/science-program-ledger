@@ -23,3 +23,12 @@ class ExtractionTests(unittest.TestCase):
         self.assertEqual(int(skeleton.sum()),3)
     def test_invalid_gray(self):
         with self.assertRaises(ValueError):self.fixture(np.full((5,5),128,dtype=np.uint8))
+
+    def test_equal_rgb_channels(self):
+        a=np.zeros((5,5),dtype=np.uint8);a[2,1:4]=255
+        record,_=self.fixture(np.repeat(a[:,:,None],3,axis=2))
+        self.assertEqual(record['vertices'],3)
+        self.assertEqual(record['original_shape'],[5,5,3])
+    def test_unequal_rgb_rejected(self):
+        a=np.zeros((5,5,3),dtype=np.uint8);a[2,1:4,0]=255
+        with self.assertRaises(ValueError):self.fixture(a)

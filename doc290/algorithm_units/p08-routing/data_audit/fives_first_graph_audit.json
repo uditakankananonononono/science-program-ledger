@@ -1,0 +1,32 @@
+{
+  "member": "downloads/FIVES_masks/FIVES A Fundus Image Dataset for AI-based Vessel Segmentation/train/Ground truth/100_A.png",
+  "image_sha256": "8cfc461b44024ad1670d77dcdc1da868920cd8939c592ef1092edffa212d93d0",
+  "shape": [
+    2048,
+    2048
+  ],
+  "original_shape": [
+    2048,
+    2048,
+    3
+  ],
+  "foreground_pixels": 314052,
+  "skeleton_pixels": 23952,
+  "components_8_before": 3,
+  "components_8_after": 3,
+  "vertices": 23952,
+  "directed_edges": 48304,
+  "degree_histogram": {
+    "1": 83,
+    "2": 23450,
+    "4": 59,
+    "3": 358,
+    "6": 1,
+    "5": 1
+  },
+  "skeleton_sha256": "4cee2e264754727f0b6e52957d6d5413572002d3b5458fd380cd1f3c63b79b04",
+  "cost_scope": "unit pixel adjacency only; bidirectional, no diagonal correction or flow",
+  "dataset": "FIVES",
+  "verified_transferred_mask_hashes": 800,
+  "scope": "single development mask extraction, not full-dataset QC"
+}

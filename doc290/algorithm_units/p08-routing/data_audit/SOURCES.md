@@ -59,3 +59,22 @@ DRIVE third-party candidate fetched:
 https://www.kaggle.com/datasets/andrewmvd/drive-digital-retinal-images-for-vessel-extraction
 The mirror says no original license specified and credits original authors;
 this is not an official grant. Mirror identity/license/download checks are pending.
+
+## FIVES transferred masks and first extraction
+
+Publisher source/license record: https://api.figshare.com/v2/articles/19688169
+Publisher paper: https://www.nature.com/articles/s41597-022-01564-3
+Dataset license name verbatim: "CC BY 4.0"; license URL
+https://creativecommons.org/licenses/by/4.0/
+Transfer agent reports full RAR MD5 matching 789c80dd5376a82063e27fa49192bac9.
+This lane independently verified all three transfer part hashes, concatenated ZIP
+SHA256 e5df9ba3f301e3d1858ecdfc75384bca6ecc203f91850703656dbd70786da70d,
+ZIP CRC, and all 800 file sizes/SHA256s against its transferred manifest.
+
+First training mask 100_A.png is RGB with exactly equal binary channels 0/255.
+HRF-only 2D contract rejected it initially. Extractor was explicitly extended to
+accept equal RGB channels only, preserve original_shape and reject differing
+channels; no averaging/thresholding introduced. 314,052 foreground pixels became
+23,952 skeleton vertices and 48,304 directed edges; three eight-neighbor components
+before/after. Native skeleton crop visually inspected. This is one development
+mask, not all-800 extraction QC. No new routing/flow or anatomy fidelity claim.
