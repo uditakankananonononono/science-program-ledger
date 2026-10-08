@@ -170,3 +170,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | P07-09 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
 | P07-10 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
 | P07-pkg | package sha256 45a4ce3d...6b61f; patch sha256 b7138b3f...87694 (builder-reported closure, no compute by me) | | | |
+| 153 | UCI-481 EMG36 calibration (batch-10) | SUPERSEDED, NO LOCK: DEV headroom gate failed as prespecified (Brier reduction +0.00071, CI [-0.0228,+0.0268]; ECE worsened .1259->.1496); no TEST outcome computed. INCIDENT: TEST subject 34 file accidentally read during a failed parse, no values/labels retained or used; remaining TEST subjects off-limits. Builder-reported; closure zip sha256 b4de8311...7e6a2 | no lock hashes |
