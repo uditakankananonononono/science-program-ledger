@@ -1,0 +1,17 @@
+import os,json,glob,numpy as np,pandas as pd
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import balanced_accuracy_score
+from scipy.stats import nct,t
+root='/tmp/unit165/';d=pd.concat([pd.read_csv(root+f'dev_raw/features_{s}.csv') for s in [1,3,5,7,9,11,13]],ignore_index=True);subjects=[int(s) for s in sorted(d.subject.unique())];raw=[f'f{i}' for i in range(5)];local=raw+[f'd{i}' for i in range(5)]+[f'c{i}' for i in range(5)];conf=['time','trial'];models={};records=[]
+# Exploratory fixed grid, LOSODEV only; selection bias disclosed. No TEST features available.
+for name,cols,kind in [('LR_raw',raw,'lr'),('RF_raw',raw,'rf'),('LR_local',local,'lr'),('RF_local',local,'rf'),('LR_time_trial',conf,'lr'),('RF_time_trial',conf,'rf')]:
+ for sid in subjects:
+  tr=d.subject!=sid;te=~tr
+  model=make_pipeline(StandardScaler(),LogisticRegression(C=1,class_weight='balanced',max_iter=1500,random_state=165)) if kind=='lr' else RandomForestClassifier(n_estimators=150,max_depth=8,min_samples_leaf=10,class_weight='balanced',random_state=165,n_jobs=2)
+  model.fit(d.loc[tr,cols],d.loc[tr,'y']);pred=model.predict(d.loc[te,cols]);score=balanced_accuracy_score(d.loc[te,'y'],pred);records.append({'model':name,'subject':int(sid),'balanced_accuracy':float(score),'n':int(te.sum())})
+ print(name,round(np.mean([r['balanced_accuracy'] for r in records if r['model']==name]),5),flush=True)
+r=pd.DataFrame(records);means=r.groupby('model').balanced_accuracy.mean().to_dict();base=max(['LR_raw','RF_raw'],key=lambda x:means[x]);method=max(['LR_local','RF_local'],key=lambda x:means[x]);b=r[r.model==base].set_index('subject').balanced_accuracy;l=r[r.model==method].set_index('subject').balanced_accuracy;gain=l-b;sd=float(gain.std(ddof=1));n=6;crit=t.ppf(.975,n-1);ncp=.03*np.sqrt(n)/sd if sd>0 else np.inf;power=float(nct.sf(crit,n-1,ncp)+nct.cdf(-crit,n-1,ncp));delta_grid=np.linspace(.0001,1,10000);pw=nct.sf(crit,n-1,delta_grid*np.sqrt(n)/sd)+nct.cdf(-crit,n-1,delta_grid*np.sqrt(n)/sd);mde=float(delta_grid[np.flatnonzero(pw>=.8)[0]]) if (pw>=.8).any() else None
+out={'unit':165,'status':'DEV_GATE_ASSESSMENT','primary_metric_candidate':'subject-mean3-class balanced accuracy','dev_subjects':subjects,'test_cluster_count_from_split_only':6,'dev_windows':len(d),'dev_exploratory_model_means':means,'strongest_raw_baseline':base,'local_selected':method,'subject_paired_deltas':gain.to_dict(),'dev_gain':float(gain.mean()),'paired_subject_sd':sd,'win_threshold':.03,'headroom_vs_ceiling':1-means[base],'headroom_pass':means[base]>1/3 and 1-means[base]>.06,'power_model':'two-sided paired t noncentral-t planning, alpha.05, six independent subjectclusters, DEV paired SD plug-in; does not count correlated windows as n','power_at_delta_003':power,'mde_for_80percent_power':mde,'power_pass':power>=.8,'caveats':['Exploratory DEV model-family selection, not locked tuning','7 DEV clusters gives uncertain variance and power; planning estimate not empirical TEST power','Subject-mean BA requires each class per subject; class counts inspected onDEV','Outcome-model feasibility assessed onlyDEV; subjective target/time-order confounding','This primary metric candidate not full modeling prereg; no TEST parsed or evaluated']};json.dump(out,open(root+'DEV_GATES.json','w'),indent=2);r.to_csv(root+'DEV_LOSO.csv',index=False);print(json.dumps(out,indent=2))

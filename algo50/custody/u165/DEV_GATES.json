@@ -1,0 +1,59 @@
+{
+  "unit": 165,
+  "status": "STOP_PRE_PREREG_POWER_AND_CONFOUND",
+  "primary_metric_candidate": "subject-mean3-class balanced accuracy",
+  "dev_subjects": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "test_cluster_count_from_split_only": 6,
+  "dev_windows": 4848,
+  "dev_exploratory_model_means": {
+    "LR_local": 0.4131014293476603,
+    "LR_raw": 0.34849264219566906,
+    "LR_time_trial": 0.46130025695614535,
+    "RF_local": 0.41086394013185823,
+    "RF_raw": 0.32662633610163916,
+    "RF_time_trial": 0.5555737197119839
+  },
+  "strongest_raw_baseline": "LR_raw",
+  "local_selected": "LR_local",
+  "subject_paired_deltas": {
+    "1": -0.02549901741728805,
+    "3": 0.11190735517313022,
+    "5": 0.15255481200136656,
+    "7": 0.14896601630994472,
+    "9": 0.01625094482237338,
+    "11": 0.0856840126434063,
+    "13": -0.037602613468994406
+  },
+  "dev_gain": 0.06460878715199124,
+  "paired_subject_sd": 0.08003856657923723,
+  "win_threshold": 0.03,
+  "headroom_vs_ceiling": 0.6515073578043309,
+  "headroom_pass": null,
+  "power_model": "two-sided paired t noncentral-t planning, alpha.05, six independent subjectclusters, DEV paired SD plug-in; does not count correlated windows as n",
+  "power_at_delta_003": 0.11721800403563697,
+  "mde_for_80percent_power": 0.1149,
+  "power_pass": false,
+  "caveats": [
+    "Exploratory DEV model-family selection, not locked tuning",
+    "7 DEV clusters gives uncertain variance and power; planning estimate not empirical TEST power",
+    "Subject-mean BA requires each class per subject; class counts inspected onDEV",
+    "Outcome-model feasibility assessed onlyDEV; subjective target/time-order confounding",
+    "This primary metric candidate not full modeling prereg; no TEST parsed or evaluated"
+  ],
+  "stronger_confound_comparator": {
+    "name": "RF_time_trial",
+    "balanced_accuracy": 0.5555737197119838,
+    "local_minus_comparator": -0.1424722903643235,
+    "paired_subject_sd": 0.08453096483776926,
+    "power_at_delta_003": 0.11016019880731465
+  },
+  "headroom_caveat": "No defensible matched strongest-baseline headroom pass asserted: raw skill weak and time/trial confound comparator dominates. Earlier raw-ceiling boolean only was necessary not sufficient."
+}

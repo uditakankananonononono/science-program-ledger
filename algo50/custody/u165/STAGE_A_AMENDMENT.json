@@ -1,0 +1,12 @@
+{
+  "unit": 165,
+  "stageA_parent_verified_sha256": "0f8adb3161d21ff91d921b407b9e96deea1e3edefe49d35e01881d5f01e8adf7",
+  "amendment_signed_parent_time": "2026-10-08T12:19:25+05:30",
+  "clauses": [
+    "Any nonincreasing label timestamp anywhere in a trial flags the whole trial for exclusion, even outside EMG support; no repair, no common-support rescue.",
+    "Small nonzero label starts retained without shift; joins restricted to true common support."
+  ],
+  "rationale": "Publisher paper states hardware-trigger start synchronization. Small first-sample offsets do not justify clock shifting; export-origin interpretation supplied by parent is a hypothesis, not verified publisher explanation.",
+  "boundary_json_sha256": "875c06d2bf4d4290efde9446cc04855696cddc706f9d956121ff94625e8875d2",
+  "guardrail": "more than8 of84 DEV trials or more than6 of12 for any subject stops before StageB"
+}
