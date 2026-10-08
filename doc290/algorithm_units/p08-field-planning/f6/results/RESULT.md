@@ -1,0 +1,29 @@
+# F6 exact discrete-corridor certificate result
+
+Publishedfreeze571524602185e77540dfb764e95bacf844a4428c/tree
+fa4fd205e97c3d6f6004cd17dc4fbc7093566ae4. Source/runtime488/thread/version
+gatespassedbefore28rows+4descriptivefloatingcalls. Publish-before-scoring tool-log
+recorded, not independently proved by this text/replay alone.
+
+28/28expectedactualverdictagreement, allrows/digests/reasons retained:
+2FEASIBLE(C1excursion,C4asymmetric),2INFEASIBLE(C2intermediateimpossible,
+C3initialcontradiction),21INVALID,3UNAVAILABLE(zerolambdas/missingwitness).
+Primalindependentcontrol/previousslew/allnode/terminalreplay exact. C2/C3nonnegative
+Farkasstationarity0, combinedRHS-1 each. C3zero-node0coefficientrow is validlogical
+contradiction, not schema-invalid; fixedinitialcannotoccupy its suppliedbox.
+C2terminal-onlytarget0 feasible butintermediateexactnode2 unreachableundersupplied
+cap1; no inferencefromterminal-onlywitness tofullcorridorfeasibility.
+
+Floatingunchangedcorridorcalls: C1/C4primal_checked,C2solver_infeasible,
+C3initial_node_outside_corridor. Rawcontrols/path/residuals/status/certificatefields
+retained; noexceptions. FloatingstatusesnotFarkasproof, nofloatwitnessmanufacture.
+Sixdevelopmenttests separate; nopostfreezechanges/retuning/droppedlosses.
+
+Deliveredexactdiscreteprefix/node/terminal/controlcertificateadapter, documented
+boundedcorridorgapclosed with externalwitness checking, notautomaticplanner/
+certificatefind, continuous-timecollision/safety, anatomy/hardware/physiology,
+physicaltruth, newalgorithm/invention/sciencegate, blindholdout/CI/speedclaim.
+Allboxesapplyonlyatdiscretenodes, earlier14sourcepinsunchanged. Missingor
+noncontradictoryproof remainsunavailable; INVALIDclaimnotmodelinfeasibility.
+F3canonicalgrammar/JSONhelperreusedpinned; integer-0normalizationcarried.
+RuntimepinsnotcompleteOS/sharedlib/dynamicloaderclosure, capsnotpeakmemory/sandbox.

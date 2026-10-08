@@ -1,0 +1,436 @@
+{
+  "agreement_count": 28,
+  "baseline": [
+    {
+      "name": "C1",
+      "result": {
+        "controls": [
+          [
+            1.0
+          ],
+          [
+            -1.0
+          ]
+        ],
+        "residuals": {
+          "actuator_bound_violation": 0.0,
+          "node_corridor_violation": 0.0,
+          "slew_bound_violation": 0.0,
+          "terminal_max_abs": 0.0
+        },
+        "scope": "discrete node-box constrained linear integrator; not continuous safety, anatomy, or hardware validation",
+        "status": "primal_checked",
+        "trajectory": [
+          [
+            0.0
+          ],
+          [
+            1.0
+          ],
+          [
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "C2",
+      "result": {
+        "certificate": "no independently verified dual certificate",
+        "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "status": "solver_infeasible"
+      }
+    },
+    {
+      "name": "C3",
+      "result": {
+        "certificate": "fixed initial state violates node box beyond tolerance",
+        "status": "initial_node_outside_corridor"
+      }
+    },
+    {
+      "name": "C4",
+      "result": {
+        "controls": [
+          [
+            0.5,
+            -0.5
+          ],
+          [
+            0.5,
+            -0.5
+          ]
+        ],
+        "residuals": {
+          "actuator_bound_violation": 0.0,
+          "node_corridor_violation": 0.0,
+          "slew_bound_violation": 0.0,
+          "terminal_max_abs": 0.0
+        },
+        "scope": "discrete node-box constrained linear integrator; not continuous safety, anatomy, or hardware validation",
+        "status": "primal_checked",
+        "trajectory": [
+          [
+            1.0,
+            -1.0
+          ],
+          [
+            1.75,
+            -0.5
+          ],
+          [
+            4.0,
+            1.0
+          ]
+        ]
+      }
+    }
+  ],
+  "row_count": 28,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "FEASIBLE",
+      "input_sha256": "f52f83b88d388598f32f1e432bd9003c975bbb106180b739b26d0a4874187f16",
+      "name": "C1",
+      "result": {
+        "controls": [
+          [
+            "1/1"
+          ],
+          [
+            "-1/1"
+          ]
+        ],
+        "path": [
+          [
+            "0/1"
+          ],
+          [
+            "1/1"
+          ],
+          [
+            "0/1"
+          ]
+        ],
+        "reason": "exact discrete corridor and independent replay",
+        "status": "FEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "72fe0231da39c4fac3726084a5634f5a94b25c3b33fe466f9873ed92f2c97076",
+      "name": "C1:outbound",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "04f0469682b9bc2e4252032dd89d5de684fd0b4635e8f5a413785b288856057d",
+      "name": "C1:node",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "d46b95c88d190e85b89284338e476a59f367bc5476cd00ade5f8557fbd898647",
+      "name": "C1:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "aa2fa25242d9f875df330828ea0ae82144d43f8c175900d78172c4adfb2c3879",
+      "name": "C1:bool",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INFEASIBLE",
+      "input_sha256": "40e0068c3b3a370476c12dc92f0830d7f3a8e0bb334fbf7b5b1ea070cf8b230b",
+      "name": "C2",
+      "result": {
+        "combined_rhs": "-1/1",
+        "reason": "strict Farkas contradiction",
+        "stationarity": [
+          "0/1",
+          "0/1"
+        ],
+        "status": "INFEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "275c1e295cc3bb1b9a8a9fc36d47a91a05f520908eb5441a564cbeab84487fbb",
+      "name": "C2:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "036fef172513f67f687912a7b9cce63633755f57b772367881eea408decf0876",
+      "name": "C2:zeros",
+      "result": {
+        "combined_rhs": "0/1",
+        "reason": "noncontradictory multipliers",
+        "stationarity": [
+          "0/1",
+          "0/1"
+        ],
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "9bb1afcec45a8c925344d47bc24bdafcbb58bda29fd01cbe1309493be1e71727",
+      "name": "C2:station",
+      "result": {
+        "reason": "nonstationary multipliers",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "ff27c6eda0f8f975f609d94b2568840484f3027db303ddb4fe12fa2d95a0bd48",
+      "name": "C2:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INFEASIBLE",
+      "input_sha256": "7cf92842afcdc1505835e91d2039eddec54548d3f3fb20c013d4327740452deb",
+      "name": "C3",
+      "result": {
+        "combined_rhs": "-1/1",
+        "reason": "strict Farkas contradiction",
+        "stationarity": [
+          "0/1",
+          "0/1"
+        ],
+        "status": "INFEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "2b9fa4583cecd4cf9d740bf2f433769990a259fb7897c5bc24b72a98c0ff7ed0",
+      "name": "C3:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "403ec2b22f6f4d9d56df22c289826c235ca61f7f173e6c2b0a31962cb4eb5bf3",
+      "name": "C3:zeros",
+      "result": {
+        "combined_rhs": "0/1",
+        "reason": "noncontradictory multipliers",
+        "stationarity": [
+          "0/1",
+          "0/1"
+        ],
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "257b5ccc475934eb406abd17290cea168075c333e4d207ab39f77ec85ec439a5",
+      "name": "C3:station",
+      "result": {
+        "reason": "nonstationary multipliers",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "bddd5eb4e02a9db38d6196a3ceb97199a2b95a356b51c3f19e2bbae5f1c63ab9",
+      "name": "C3:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE",
+      "input_sha256": "46bfca6d797b6e2aca1eb8e03ee28f37c8e28cd3ac2d2031934bda2f3bf7851d",
+      "name": "C4",
+      "result": {
+        "controls": [
+          [
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "1/2",
+            "-1/2"
+          ]
+        ],
+        "path": [
+          [
+            "1/1",
+            "-1/1"
+          ],
+          [
+            "7/4",
+            "-1/2"
+          ],
+          [
+            "4/1",
+            "1/1"
+          ]
+        ],
+        "reason": "exact discrete corridor and independent replay",
+        "status": "FEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8c59db3de9c00ceda0cecb3aaba0514cfc3c537339fd5ce3fe6557a08638c0f9",
+      "name": "C4:outbound",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "bf3966f9aecc65a0df4471d19cb792944f2304732562b7c653071b281520ff11",
+      "name": "C4:node",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "ae3ce717394a459580180ad03f6e755541ff1da4a642afe44f10b2b4cd5bd3df",
+      "name": "C4:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b0dd4e68237bab3d820745b8285a572888fc4839ee6158777d2bd1d3fbe18787",
+      "name": "C4:bool",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "438f945ece3be7929cf2a5c9b83bdc900e2ce3335c234db823aa64f962c24ea2",
+      "name": "control:missing",
+      "result": {
+        "reason": "missing witness",
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c991f2beb088ebfcca1856a1d65350a81760695ef766a12aafaa3e3b0045d75c",
+      "name": "control:floatdt",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "bfa30e029356d07a0a305a1ed99038028b1892a99007e7d97aaacf0d87001055",
+      "name": "control:nodeshape",
+      "result": {
+        "reason": "node dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "cad535c1eae5d342c5d650fa0bd7dd86edbf627a6bec9afb88e4799fa2fd5a45",
+      "name": "control:interval",
+      "result": {
+        "reason": "node interval",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "118ed7b12125cd61e7c595e92beafda2964df1ba7200838c7e39c3a29441846e",
+      "name": "control:extrakey",
+      "result": {
+        "reason": "object keys",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "daa8d08a2465b83bcb92153aa3c34734b3b78d7463afafdf6af0f62fadebd5d9",
+      "name": "control:badkind",
+      "result": {
+        "reason": "witness kind",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "687b589f755748e31f0acec1a37737f2c19a79fe44a0eed40059092c2d560d1c",
+      "name": "control:zerotime",
+      "result": {
+        "reason": "model bounds",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b78eb7bee02aaf61775585bf6a57b5e2e38158a425103ce724c8b86a7c73819b",
+      "name": "control:signedzero",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    }
+  ],
+  "scope": "supplied rational models, external certificates; descriptive floating status not proof"
+}
