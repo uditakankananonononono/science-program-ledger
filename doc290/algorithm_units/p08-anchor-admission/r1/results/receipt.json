@@ -1,0 +1,117 @@
+{
+  "freeze": "c32722011fd2ecc46201b1a2e5235293c1a33079",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.35",
+  "packages": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9"
+  },
+  "code_sha256": "8c468582a43cf134f0c5ff9933289591c6419eb865240faf9bc4caaf12415372",
+  "protocol_sha256": "6aa2209d0b85a61f68aa90841ae36ccab9ade9c063d8e0dc141979b495206945",
+  "output_sha256": {
+    "trajectory_1V.csv": "dfe251a1388c46478d43641aaefde3b1d5acd5b90ea8c92fddcb3a342910e403",
+    "ramp.png": "4319e0971c122be8c51aeeb85976a82eec1406aabcbcfcd4d7e5193753692954",
+    "profile_1V.csv": "b4eccd2ec13bd7ea60d412ce55c7fe2fe52e438e8dc75822a33df9addf349540",
+    "ramp.csv": "8cd6e63dbf09f06004156858bc3910c91504c718a99885832eb22d33926ed1b9",
+    "derived-manifest.json": "b87dbcb95f676cd7ce34b924f6d30cbc7c353ca849c6037837d5fd06abbc02e9",
+    "trajectory_2V.csv": "cba7245c5c6c6d09b7e2571fae998ad0c79c40438f93b08c24edc6369eca84bb",
+    "trajectory_4V.csv": "e4cb60e348e6fcac075940870fff40bf156baa78f98e15d51b4ef64f9daaf515",
+    "constant_and_profiles.png": "fa15f6c0da883765868cd5671f5519b388a5906e96bd2c3d2720db0bdbe8b096",
+    "trajectory_3V.csv": "324f0f17ffe6546bd81ea5ce373e0b5bb79699871639303b73afb21869103c44",
+    "trajectory_5V.csv": "06716e10a53b8794760d742ff6dcefb1e6eb0eee60278729eb4be95e21de6c28",
+    "profile_3V.csv": "95324da9f783c8e3fb047f9102a005eb15abe080943985773a69069197cb8301",
+    "profile_4V.csv": "0c262f7e5602da14a97abb2cfc30869b467c5d860ed7233055781aed8d459eff",
+    "profile_2V.csv": "243c93b7bf09b34a05fb0a64aad87f8ff1933655e3936c8acba7f91d5fd8766d",
+    "profile_5V.csv": "33c2e0816651a39697fa38585a1d8e4c5ce70c68c38cd19b7cf9020eedf21f15"
+  },
+  "csv_readback": [
+    {
+      "file": "profile_1V.csv",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 1
+    },
+    {
+      "file": "profile_2V.csv",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 1
+    },
+    {
+      "file": "profile_3V.csv",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 1
+    },
+    {
+      "file": "profile_4V.csv",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 0
+    },
+    {
+      "file": "profile_5V.csv",
+      "shape": [
+        20,
+        2
+      ],
+      "nonfinite_count": 0
+    },
+    {
+      "file": "ramp.csv",
+      "shape": [
+        5946,
+        4
+      ],
+      "nonfinite_count": 0
+    },
+    {
+      "file": "trajectory_1V.csv",
+      "shape": [
+        1847,
+        4
+      ],
+      "nonfinite_count": 0
+    },
+    {
+      "file": "trajectory_2V.csv",
+      "shape": [
+        1634,
+        4
+      ],
+      "nonfinite_count": 0
+    },
+    {
+      "file": "trajectory_3V.csv",
+      "shape": [
+        1543,
+        4
+      ],
+      "nonfinite_count": 0
+    },
+    {
+      "file": "trajectory_4V.csv",
+      "shape": [
+        1294,
+        4
+      ],
+      "nonfinite_count": 0
+    },
+    {
+      "file": "trajectory_5V.csv",
+      "shape": [
+        996,
+        4
+      ],
+      "nonfinite_count": 0
+    }
+  ]
+}
