@@ -1,0 +1,39 @@
+{
+  "environment": {
+    "pins": {
+      "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+      "python_executable_path": "/usr/bin/python3",
+      "python_executable_sha256": "a2f33a6e006989270f4340528eb61f8f97366e00a5d1b602ac8672ea44fc56ae",
+      "modules": {
+        "defusedxml": {
+          "path": "/usr/lib/python3/dist-packages/defusedxml/__init__.py",
+          "sha256": "45ccde695246eb8a76160cb58e50b36ee45d72110f9c468206bc6093c249fe93"
+        },
+        "defusedxml.ElementTree": {
+          "path": "/usr/lib/python3/dist-packages/defusedxml/ElementTree.py",
+          "sha256": "18b4aaa42cf9f285c63c6cb37ff1f296c3d2f7f75c1953f948de1d2bbcafc8fc"
+        },
+        "defusedxml.common": {
+          "path": "/usr/lib/python3/dist-packages/defusedxml/common.py",
+          "sha256": "ddddba8cd5b87cd5f38235a1bd47ecf3701f8b3e44571143ba941bba09123197"
+        },
+        "xml.etree.ElementTree": {
+          "path": "/usr/lib/python3.10/xml/etree/ElementTree.py",
+          "sha256": "1c6570383703b110583676c4b8419f60e20bff8ad28898bc9491f23c9433b8ee"
+        }
+      }
+    },
+    "caps": {
+      "depth": 128,
+      "nodes": 200000,
+      "text_characters": 8388608,
+      "attribute_characters": 2097152
+    },
+    "xml_comments_processing_instructions": "omitted from element inventory; original bytes retained, not whole XML token inventory",
+    "namespace_policy": "expanded {URI}local names, original prefix spelling only retained raw; no namespace event claims"
+  },
+  "outputs": {
+    "inputs.json": "fba91337f2b4517e2a553f6de41c6ad45ef982dd21d593d3a6fbaccb51fb9c21",
+    "inventory.json": "50c771ab7c5c35ef7bf7d169634c8a1d3fed6dc17c03c5381325e7a392336a25"
+  }
+}
