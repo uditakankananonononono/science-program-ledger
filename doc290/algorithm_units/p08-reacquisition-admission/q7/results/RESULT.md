@@ -1,0 +1,25 @@
+# Q7 Rule B: scoped MEMTrack selected-evidence endpoint qualification reject
+
+Publishedprereg13627e53/freezef11f15065 BEFOREall4evidenceadmission/manualledger/decision.
+All4identity/schema/UTF8strictJSON PASS8662B. Completeperbindingcitationledger first,
+then RuleA necessaryconjunction evaluated: varyinglost/reappearanceeventclock and
+confirmationtruth, independentGT/sensorcalibration, actualsearchactions/cost, independent
+trials/heldoutsplit, fixedendpointcomparator/metric/matchedbudget NOTestablished within
+selected4texts+theirALL2CSVliteralcoverage. Secondsheaderpositive butALL2100data
+cells literal0 eachfile; PID/TID cannotreplaceeventclock/trials/GT. Physicalmedical/
+magneticdomaintransfer alsoNOTestablished. No phase/unit/label/clock/source repair.
+
+RuleB outcome: REJECT endpointcalibrationqualificationWITHINfixedselectedevidence.
+NOTglobaldataabsence/sourcefalsity/corruption/sciencefailure/P08-07closure. Preserve
+completebyte/schema/admissionpositives,pixel/sec/deglabels/TIDPIDstrings/bodyCRCs/
+counts; categories/questionmarklabels/READMEcontradiction unresolved. No numerical
+conversion/episodefabrication/model/RL/proxyscoring/physiology/rights/inventioncredit.
+Sourceoriginmosaic/unscanned/authorship/capsnotpeak/localconcurrency/durabilitylimits
+carry. ThisclosesMEMTrackselectedevidencequalificationunit only, notoverall endpoint.
+
+ExactresultreviewBEFOREclassificationpublication; privatefullsourceinventorynot
+published, owncitedledger/admissionmanifest/digests only. New measuredsource research
+cancontinue viafreshprereg chains; no hiddenextensionlessTrack/video/image/member
+rescue underthisclassification. Rawpass1 remainsprivateintact.
+Two unchangedlocalreplaysall4inventory+manifestbyte-identical, notredefinitionof
+scientificvalidation/historyattestation. Exactindependentreviewstillrequired.
