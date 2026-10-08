@@ -1,0 +1,76 @@
+{
+  "id": "P08-08-P1",
+  "subset_sha256": "edad61737c91fdffae3d89f410c433efbdd8993fabddb2b25be2b4f398383f21",
+  "profiles": [
+    {
+      "name": "Fig3/Poiseuille_E0V_flowprofile_1V.txt",
+      "size": 579,
+      "sha256": "e3ec16338eca595560adf32ae3748d9ace9125384623969adc296aa928ac7fd4",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 1,
+      "header": "#y[um] u[um/s] ",
+      "inspection_skiprows": 0
+    },
+    {
+      "name": "Fig3/Poiseuille_E0V_flowprofile_2V.txt",
+      "size": 515,
+      "sha256": "c6d2009090576df1b8ff882c95f58a4a30535adc6606780cb09bca2c57a7ca75",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 1,
+      "header": "#y[um] u[um/s] ",
+      "inspection_skiprows": 0
+    },
+    {
+      "name": "Fig3/Poiseuille_E0V_flowprofile_3V.txt",
+      "size": 603,
+      "sha256": "18652bfdf3f8995b08b5ba51e557d834932b8f6bf492a695e39386d3d02992ac",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 1,
+      "header": "#y[um] u[um/s] ",
+      "inspection_skiprows": 0
+    },
+    {
+      "name": "Fig3/Poiseuille_E0V_flowprofile_4V.txt",
+      "size": 530,
+      "sha256": "3ea54c33d8a5e1bc6478ea07bda7f5cafa137a30df82dc4f710a69b5abd38580",
+      "shape": [
+        19,
+        2
+      ],
+      "nonfinite_count": 0,
+      "header": "#y[um] u[um/s] ",
+      "inspection_skiprows": 0
+    },
+    {
+      "name": "Fig3/Poiseuille_E0V_flowprofile_5V.txt",
+      "size": 769,
+      "sha256": "1cbd97a2f9851bd4ce8f42dbc838820c6bd89251936215ca1c60a01613db94d0",
+      "shape": [
+        20,
+        2
+      ],
+      "nonfinite_count": 0,
+      "header": "#y[um] u[um/s] ",
+      "inspection_skiprows": 0
+    }
+  ],
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "packages": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9"
+  },
+  "model": "A*(1-(y/50)^2), amplitude only, no constraints",
+  "arithmetic_comparator_atol": 1e-10,
+  "arithmetic_comparator_rtol": 1e-12,
+  "missingness": "three speed NaNs retained,not zero",
+  "leave_one_location": "all finite rows individually withheld; descriptive,not held-out validation"
+}
