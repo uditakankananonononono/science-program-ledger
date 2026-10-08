@@ -44,6 +44,11 @@ test_no_silent_ignored_parameters (test_runner.RunnerTests) ... ok
 test_strict_fields_and_rules (test_runner.RunnerTests) ... ok
 test_subprocess_result_and_failure (test_runner.RunnerTests) ... ok
 test_turn_delay_and_forbidden (test_runner.RunnerTests) ... ok
+test_all_3x3_masks_edge_formula (test_topology_audit.TopologyTests) ... ok
+test_chain_and_isolate (test_topology_audit.TopologyTests) ... ok
+test_empty (test_topology_audit.TopologyTests) ... ok
+test_invalid_representation (test_topology_audit.TopologyTests) ... ok
+test_loop_and_branch (test_topology_audit.TopologyTests) ... ok
 test_forbidden_and_penalty (test_turns.TurnTests) ... ok
 test_invalid_and_empty (test_turns.TurnTests) ... ok
 test_parallel_identity (test_turns.TurnTests) ... ok
@@ -51,6 +56,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 51 tests in 0.985s
+Ran 56 tests in 1.035s
 
 OK

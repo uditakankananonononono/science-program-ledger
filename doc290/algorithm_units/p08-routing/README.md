@@ -208,3 +208,15 @@ This is input/pipeline provenance checking, not tamper-proof result authenticati
 concurrent-write safety or a timeout/memory guarantee. Current hashing time is
 outside the per-batch time window. Partial trailing lines raise a decoding error;
 no automatic repair or silent record dropping. No original masks reprocessed here.
+
+## Independent graph topology representation audit
+
+56 test methods pass. topology_audit audits undirected simple graphs for reciprocal
+adjacency and reports component count, isolates, endpoints, branch vertices and
+cycle rank E-V+C. Rejects self/parallel/asymmetric adjacency rather than pretending
+it is a simple undirected skeleton graph. Tests cover known chain/loop/branch
+fixtures and all 512 binary 3x3 masks at both connectivities, with a separate
+pairwise edge-count oracle. It does not check cost reciprocity or anatomical
+meaning. Eight-neighbor pixel triangles may create cycle rank despite no biological
+loop; this statistic is representation-specific, not a vascular finding.
+Frozen 975-mask QC and separate reject-protocol outcomes are unchanged.
