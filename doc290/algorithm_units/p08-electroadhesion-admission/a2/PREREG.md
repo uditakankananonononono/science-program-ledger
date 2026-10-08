@@ -1,0 +1,59 @@
+# A2 P08-08 archive identity/directory admission for electroadhesion measurements
+
+Nextunworkedsource,notnewrankornewinvention. Question:fixedpublicarchiveidentityand
+boundedcentral-directorymetadata permit separately preregisteringactualattachment/
+detachmenttiming/force/provenancetextmemberselection? NOTforcearrays/calibrationnow.
+
+## Prior exposure and immutable selection
+
+https://zenodo.org/records/6417174
+https://zenodo.org/api/records/6417174
+SingleData.zip627211731bytes,MD559a1ca596587186d2da93c6cad3aa02f,
+exactobservedURLhttps://zenodo.org/api/records/6417174/files/Data.zip/content.
+MetadataassertsCCBY4.0,notrights/physiologyclearance;descriptionclaimsREADMEinside.
+ZIPbytes/directory/membercontentsNOTfetched/read. selectionmetadataSHA256pinned.
+
+Prior-exposedarticlehttps://pmc.ncbi.nlm.nih.gov/articles/PMC10359345/ describes
+precontactversuspostcontactEAforces,electricalwaveforms/holdingtime/electrode
+geometry/glasswafer/labsetup. Neitherwettedblood-wallmagneticrobotadhesionnor
+physiologyassumed;noforce/timevaluesimported. Literatureclaimsnotrawmeasurements.
+
+Excludedtriage:hydrogelpackingshttps://zenodo.org/records/14945584 is1.56GBarchive
+andarticle10mmspheres,notadmitted,rescueforbidden. Priorconceptpaper
+https://www.pnas.org/doi/abs/10.1073/pnas.2207767119 fetchednoqualifyingbyteshere.
+Othersearchleadsnotall-byte-complete,notexhaustivenoveltyscreen.
+
+## Frozen executable before source fetch
+
+Review/publishpreregthenfreezeBEFOREdownload. No-redirectexactURL,noalternate
+route/credentials/archive/source. Singlearchive<=640MiB,streamed64KiBchunksto
+scratchfileforactualsize+MD5+SHA256,nofullarchiveRAMload. Status200/exactURL/
+identityContentEncoding/declaredContentLength+EOFrequired;20ssocket+1200sbetween
+readdeadlinechecksNOThardwalltimeorpeakRAMquota. Identityfailure->unavailable,
+ZEROZIPparsing. Streamingfreepublicaccess,notempiricallyprovenpeak2GBresources.
+
+IdentitybeforeANYZIPdirectoryparse. BoundedEOCDread<=65557tailbytes,EOCDexact
+EOF/commentlength,central-directory<=16MiB,entrycount<=100000. RejectZIP64,
+multipart,unrecognized/ambiguousEOCD,centraldiroutofrange beforeZipFileallocation.
+PinactualPythonexecutable+zipfilemodulebytes. ZipFiledirectorymetadataONLY:
+ordinal1based,filename/reprname,flags/compression/CRC/compressed+uncompressedsizes,
+headeroffset/datetime/create/externalattrs/extras/comments,namespacesasliteral
+pathsnotfilesystemdestinations. Declare4096Unicodecharacters/membername.
+Caps/ZipFileentrymetadataallocationnotpeak-memoryguarantee. No memberopens,
+extraction,decompression/CRCmembervalidation,testzip/sourcecode/notebookexecution.
+Symlink/pathtraversal/duplicate/encryption/capsrecordscopedunresolvednometadata
+silentlypassedassafeextraction. Parser/capfailureNOpartialmemberinventoryexposed.
+
+Tests:identityparse-spy,streamcaps/truncation/redirect,ZIP64/multipart/EOCDtailbounds,
+directory/entry/namecaps,duplicate/unsafe/encryptedmetadata,no member-open trap.
+Constructedsmallfixturesonly,notrawsourceproxiesorempiricalscore.
+
+## Stop point
+
+Manualarchiveledger:identity,directorystructure,names/suffixes/compression/size,
+READMEclaimedversusobservedname,sourcecodeversusdataleads. Namesnotmeasurements,
+time/sensor/forceunits/trialsnorrights. DirectorysuccesspermitsONLYanotherfixed
+memberselectionprereg+separateparsebeforeforce/provenanceledger. No favorable
+memberpeek,extensionheuristic=>actualsemantics,metrics/training/physics/invention.
+Noendpointclassificationthisunit;scopedunavailableonfailure,noglobaldataabsence.
+AllP08-08sciencegatesremainopen. Exactcommitreviewbeforepublication.
