@@ -129,3 +129,14 @@ unchanged skeleton check in all ten derived masks. Original ledger remains
 962 accepted / 13 rejected. Separate channel-normalized development QC permits
 ten FIVES derived masks; it is not a claim that the original contract passed.
 No anatomy/flow validation. No threshold rule promoted into the production extractor.
+
+## Analysis-only three-first-mask topology application
+
+Topology audit is in independent review pending freeze-verification verdict.
+Applied without extraction/QC changes to the same HRF/FIVES/FOVEA development
+first-mask skeletons. Source and skeleton hashes match earlier audit records.
+Components and vertex/edge counts match the extractor's records. Statistics:
+HRF endpoints 320, branches 1230, cycle rank 566; FIVES 83/419/203; FOVEA
+40/238/140. Zero isolated vertices in these three graphs. Cycle rank is an
+8-neighbor pixel representation statistic, not anatomical vascular loops.
+These selected masks do not establish dataset-wide behavior or biological fidelity.

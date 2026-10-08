@@ -1,0 +1,53 @@
+[
+  {
+    "dataset": "HRF",
+    "member": "01_h.tif",
+    "image_sha256": "248a0aadd7cb0e53ae2b69ca950a166cfe244939143ec0fec2ee71fa1b39d3a8",
+    "skeleton_sha256": "28dcaa5f68fdf0956bd8922cb883ee7ceb87b376b828e809ebda5faf065060f2",
+    "connectivity": 8,
+    "topology": {
+      "vertices": 75057,
+      "undirected_edges": 75609,
+      "components": 14,
+      "isolated_vertices": 0,
+      "endpoints": 320,
+      "branch_vertices": 1230,
+      "cycle_rank": 566
+    },
+    "scope": "one development mask per dataset; cycle rank is pixel graph statistic, not biological loops"
+  },
+  {
+    "dataset": "FIVES",
+    "member": "downloads/FIVES_masks/FIVES A Fundus Image Dataset for AI-based Vessel Segmentation/train/Ground truth/100_A.png",
+    "image_sha256": "8cfc461b44024ad1670d77dcdc1da868920cd8939c592ef1092edffa212d93d0",
+    "skeleton_sha256": "4cee2e264754727f0b6e52957d6d5413572002d3b5458fd380cd1f3c63b79b04",
+    "connectivity": 8,
+    "topology": {
+      "vertices": 23952,
+      "undirected_edges": 24152,
+      "components": 3,
+      "isolated_vertices": 0,
+      "endpoints": 83,
+      "branch_vertices": 419,
+      "cycle_rank": 203
+    },
+    "scope": "one development mask per dataset; cycle rank is pixel graph statistic, not biological loops"
+  },
+  {
+    "dataset": "FOVEA",
+    "member": "downloads/FOVEA_masks/FOVEA001_i_ve_1.png",
+    "image_sha256": "ef8f20162d88850a62f02f1d22bcf9d8f888ab2d325639a889b3f3662b048398",
+    "skeleton_sha256": "cb680a9fae2299f320119ec1ac9fdfd3ebc5f4b48fb2984e4050c7fc2ab00920",
+    "connectivity": 8,
+    "topology": {
+      "vertices": 10964,
+      "undirected_edges": 11103,
+      "components": 1,
+      "isolated_vertices": 0,
+      "endpoints": 40,
+      "branch_vertices": 238,
+      "cycle_rank": 140
+    },
+    "scope": "one development mask per dataset; cycle rank is pixel graph statistic, not biological loops"
+  }
+]
