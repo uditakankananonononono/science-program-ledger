@@ -14,3 +14,14 @@ class ResourceProbeTests(unittest.TestCase):
         got=probe(sizes=(31,),timeout=5)['records'][0]
         self.assertEqual(got['status'],'failed')
         self.assertEqual(got['returncode'],2)
+
+    def test_timeout_branch_and_continue(self):
+        from unittest.mock import patch
+        import json, subprocess
+        completed = subprocess.CompletedProcess(['worker'],0,stdout=json.dumps({'size':4,'status':'passed'}),stderr='')
+        with patch('resource_probe.subprocess.run',side_effect=[subprocess.TimeoutExpired(['worker'],5),completed]) as mocked:
+            records=probe(sizes=(3,4),timeout=5)['records']
+        self.assertEqual(records,[{'size':3,'status':'timeout','timeout_seconds':5},{'size':4,'status':'passed'}])
+        self.assertEqual(mocked.call_count,2)
+        self.assertEqual(mocked.call_args_list[0].kwargs['timeout'],5)
+        self.assertEqual(mocked.call_args_list[1].kwargs['timeout'],5)

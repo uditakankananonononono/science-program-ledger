@@ -184,3 +184,11 @@ not confidence intervals or performance promises. See resource-results.json.
 There is a timeout but no worker memory cap. Exponential frontier growth remains
 possible on nonuniform correlated costs. No resource-limit or scientific gate
 is passed by these observations. Existing routing and runner files are unchanged.
+
+## V9.1 timeout control-flow coverage
+
+43 test methods pass. A deterministic mocked subprocess.TimeoutExpired test
+checks timeout record fields and that probing continues to the next size, with
+the configured timeout passed to both launches. It does not induce a real OS
+worker timeout, establish process-kill behavior, or measure resource ceilings.
+All production files and recorded resource observations are unchanged from v9.
