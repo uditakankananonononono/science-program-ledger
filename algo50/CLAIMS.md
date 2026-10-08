@@ -158,3 +158,15 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | P09-09 | cluster uncertainty | DROPPED for data: no licensed glioma MRE | no compute |
 | P09-10 | open MRE benchmark with locked splits | DROPPED for data: nothing licensed to lock; census is the prerequisite output | no compute |
 | 155 | SensSmartTech PPG HR fusion (batch-10) | DROPPED at DEV headroom gate before prereg: 4-channel fusion worsened DEV LOSO-OOF MAE (9.486 vs 6.248 single-channel); closure only, no TEST access, no win claim; builder-reported, not recomputed | builder commit c4ef9518; closure zip sha256 ca54010977705e181a3d1324532c47667132a2b1e48c31c64ef9c4eb9d0a5d76 |
+
+| P07-01 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-02 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-03 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-04 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-05 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-06 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-07 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-08 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-09 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-10 | CBIO021 GlueForge (2026) | DROPPED-FOR-DATA/LICENSE-SEMANTICS | CLOSURE.md + outputs/ | NO BIOLOGICAL RESULT |
+| P07-pkg | package sha256 45a4ce3d...6b61f; patch sha256 b7138b3f...87694 (builder-reported closure, no compute by me) | | | |
