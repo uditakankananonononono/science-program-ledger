@@ -1,4 +1,4 @@
-"""Additive chain-cost adapter. Anchor-only and turn-free scope."""
+"""Produces Edge routing input; anchor-only/turn-free are caller preconditions."""
 from chain_costs import serialize_chain_costs
 from routing import Edge, finite_totals
 
@@ -24,6 +24,7 @@ def aggregate_chains(graph):
 
 
 def expand_route(result,witnesses):
+    """Expand supplied witnesses, not universal route validation or authority."""
     if result is None:return None
     path=[result['path'][0]]
     for edge in result['edges']:

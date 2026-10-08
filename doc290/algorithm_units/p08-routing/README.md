@@ -261,3 +261,19 @@ costs or inference. Original cost-serialization unit remains independently revie
 types beyond the kernel contract; retained originals, no aggregation/inference,
 no routing input, no interior-endpoint or turn-rule equivalence, cycle directions
 separate. Those notes apply to serialization, not this experimental new adapter.
+
+
+## Adapter review scope and mandatory interface clarification
+
+Independent review established integer-scope original/compressed feasibility,
+cost and objective equivalence on 77,334 fixture comparisons across all 1024
+small mask/connectivity cases plus theta graphs, including cycles/parallel chains.
+This is fixture evidence, not a proof for arbitrary inputs or floating arithmetic.
+
+The aggregation adapter DOES produce Edge routing input, and its tests feed the
+routing kernels. The earlier serialization-only unit does NOT produce routing
+input; that statement must not be applied to the adapter. Anchor-only and turn-free
+are caller PRECONDITIONS, not enforced by the interface for arbitrary expand_route
+results. Witness expansion is a representation operation, not universal route
+authority or validation. Integer-only comparisons do not validate exact floats;
+regrouping can change float totals and budget feasibility. No physiological claim.
