@@ -6,6 +6,8 @@ test_duplicate_legacy_and_pipeline_rejected (test_batch_qc.BatchTests) ... ok
 test_input_mutation_rejected_before_append (test_batch_qc.BatchTests) ... ok
 test_real_resume_and_retained_failure (test_batch_qc.BatchTests) ... ok
 test_zero_window_and_duplicate_sources (test_batch_qc.BatchTests) ... ok
+test_bad_witness_rejected (test_benchmark_b1.BenchmarkTests) ... ok
+test_comparator_and_coordinate_oracle (test_benchmark_b1.BenchmarkTests) ... ok
 test_asymmetric_totals_and_expansion (test_chain_aggregate.AggregateTests) ... ok
 test_float_regrouping_changes_feasibility_documented (test_chain_aggregate.AggregateTests) ... ok
 test_invalid_vectors_and_overflow (test_chain_aggregate.AggregateTests) ... ok
@@ -70,6 +72,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 70 tests in 1.238s
+Ran 72 tests in 1.238s
 
 OK
