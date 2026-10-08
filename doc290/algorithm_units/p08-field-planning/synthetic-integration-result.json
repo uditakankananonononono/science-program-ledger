@@ -1,0 +1,89 @@
+{
+  "scope": "synthetic integration fixture with arbitrary units; no hardware admission",
+  "gradient_coefficients": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "moment": [
+    1,
+    0,
+    0
+  ],
+  "mobility_diagonal": [
+    1,
+    2,
+    3
+  ],
+  "target": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "dt": [
+    1.0,
+    1.0
+  ],
+  "schedule": {
+    "status": "primal_checked",
+    "controls": [
+      [
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5,
+        0.5
+      ]
+    ],
+    "trajectory": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5,
+        1.0,
+        1.5
+      ],
+      [
+        1.0,
+        2.0,
+        3.0
+      ]
+    ],
+    "residuals": {
+      "terminal_max_abs": 0.0,
+      "actuator_bound_violation": 0.0,
+      "slew_bound_violation": 0.0
+    },
+    "scope": "discrete linear integrator with componentwise limits; not field magnitude, anatomy, or hardware validation"
+  },
+  "independent_force_replay_terminal": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "replay_max_abs_error": 0.0
+}

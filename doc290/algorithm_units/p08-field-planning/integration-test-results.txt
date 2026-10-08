@@ -1,0 +1,38 @@
+test_bad_boxes_rejected (test_corridor.CorridorTests) ... ok
+test_dense_map_node_reconstruction (test_corridor.CorridorTests) ... ok
+test_forced_intermediate_node (test_corridor.CorridorTests) ... ok
+test_initial_and_terminal_outside (test_corridor.CorridorTests) ... ok
+test_intermediate_reach_infeasible (test_corridor.CorridorTests) ... ok
+test_bad_input_preserves_buffers (test_feasibility.FeasibilityTests) ... ok
+test_dense_map_terminal_readback (test_feasibility.FeasibilityTests) ... ok
+test_rank_deficient_unreachable (test_feasibility.FeasibilityTests) ... ok
+test_slew_first_step_limits_reach (test_feasibility.FeasibilityTests) ... ok
+test_unique_scalar_solution (test_feasibility.FeasibilityTests) ... ok
+test_asymmetry_and_trace_negative_controls (test_gradient_structure.StructureTests) ... ok
+test_bad_inputs (test_gradient_structure.StructureTests) ... ok
+test_construct_and_map (test_gradient_structure.StructureTests) ... ok
+test_frame_rotation_preserves_structure (test_gradient_structure.StructureTests) ... ok
+test_corrupt_successful_solver_epigraph_rejected (test_minimax.MinimaxTests) ... ok
+test_slew_limited_optimum (test_minimax.MinimaxTests) ... ok
+test_two_gains_analytic_optimum (test_minimax.MinimaxTests) ... ok
+test_zero_error_feasible (test_minimax.MinimaxTests) ... ok
+test_axis_convention_dense_hand_calculation (test_mobility_map.MapTests) ... ok
+test_fixed_gradient_force_current_identity (test_mobility_map.MapTests) ... ok
+test_invalid_mobility_and_nonfinite_rejected (test_mobility_map.MapTests) ... ok
+test_zero_moment_zero_map (test_mobility_map.MapTests) ... ok
+test_common_schedule_two_gain_maps (test_scenarios.ScenarioTests) ... ok
+test_individual_feasible_but_joint_infeasible (test_scenarios.ScenarioTests) ... ok
+test_interval_shared_solution (test_scenarios.ScenarioTests) ... ok
+test_strict_tolerance_and_invalid_map (test_scenarios.ScenarioTests) ... ok
+test_unlisted_map_is_not_guaranteed (test_scenarios.ScenarioTests) ... ok
+test_actuator_and_slew_success_rejected (test_solver_corruption.SolverCorruptionTests) ... ok
+test_correct_injected_output_accepted (test_solver_corruption.SolverCorruptionTests) ... ok
+test_corridor_only_violation_success_rejected (test_solver_corruption.SolverCorruptionTests) ... ok
+test_nonfinite_success_rejected_all_modules (test_solver_corruption.SolverCorruptionTests) ... ok
+test_wrong_terminal_success_rejected_all_modules (test_solver_corruption.SolverCorruptionTests) ... ok
+test_unique_saturated_schedule_and_force_replay (test_synthetic_integration.IntegrationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.041s
+
+OK
