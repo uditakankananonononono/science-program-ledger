@@ -1,4 +1,4 @@
-test_disagreement (test_verify.ComparatorControl) ... ERROR
+test_disagreement (test_verify.ComparatorControl) ... ok
 test_grammar (test_verify.Development) ... ok
 test_invalid_dimensions (test_verify.Development) ... ok
 test_json (test_verify.Development) ... ok
@@ -6,17 +6,7 @@ test_missing (test_verify.Development) ... ok
 test_multidimensional_assembly (test_verify.Development) ... ok
 test_slew_tight_certificate (test_verify.Development) ... ok
 
-======================================================================
-ERROR: test_disagreement (test_verify.ComparatorControl)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-field-planning/f3/test_verify.py", line 40, in test_disagreement
-    from compare import agreed
-  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-field-planning/f3/compare.py", line 7, in <module>
-    import scipy.optimize._highs._highs_wrapper
-ModuleNotFoundError: No module named 'scipy.optimize._highs'
+Ran 7 tests in 0.266s
 
-----------------------------------------------------------------------
-Ran 7 tests in 0.310s
-
-FAILED (errors=1)
+OK

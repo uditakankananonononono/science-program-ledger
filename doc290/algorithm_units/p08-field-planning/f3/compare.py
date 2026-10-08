@@ -4,7 +4,7 @@ import re, fractions, _hashlib, _json, _sre
 import numpy,scipy
 import numpy.core._multiarray_umath
 import scipy.optimize._linprog
-import scipy.optimize._highs._highs_wrapper
+import scipy.optimize._highspy._highs_wrapper
 from pathlib import Path
 from fractions import Fraction as F
 from verify import load_bytes,verify,Invalid
@@ -24,7 +24,7 @@ def run(output):
         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=identity['sha256']:raise Invalid('runtime source mismatch '+name)
     for name in env['module_names']:
         module=sys.modules.get(name)
-        if module is None or str(Path(module.__file__).resolve())!=env['runtime_sources'][name]['path']:raise Invalid('loaded module path mismatch '+name)
+        if module is None or (str(Path(module.__file__).resolve()) if getattr(module,'__file__',None) else str(Path(sys.executable).resolve()))!=env['runtime_sources'][name]['path']:raise Invalid('loaded module path mismatch '+name)
     if str(Path(sys.executable).resolve())!=env['runtime_sources']['python_executable']['path']:raise Invalid('executable path mismatch')
     if scipy.__version__!=env['scipy'] or numpy.__version__!=env['numpy']:raise Invalid('baseline version mismatch')
     cases=load_bytes((ROOT/'cases.json').read_bytes())

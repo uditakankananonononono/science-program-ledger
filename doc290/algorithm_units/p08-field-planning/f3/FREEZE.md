@@ -48,3 +48,10 @@ OS provenance, or adversarial replacement sandbox. NumPy/SciPy imports occur for
 identity verification; no baseline LP runs before admission. No scores obtained.
 Both direct test script and discovery now run seven development tests. No math,
 fixture, baseline or 30-row scope changes. Witness validator still solver-free.
+
+Builder corrections: intermediate5adf0bf6 failed development import because it
+assumed obsolete SciPy _highs path; retained rejected history, no review/publication
+or evaluation. Inspected actual loaded SciPy1.15.3 _highspy paths, corrected import.
+Built-in _sre has no separate source file: bind its bytes to Python executable,
+check loaded built-in path via executable. Generated runtime identity set and reran
+seven direct/discovery tests. Builder-found, not reviewer-requested math repair.
