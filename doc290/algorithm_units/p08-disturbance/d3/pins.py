@@ -1,0 +1,2 @@
+"""Committed admission hashes; change requires disclosed refreeze."""
+PINS = {'d1/manifest.json': '3f2fc6129db09e71a8c855a6459d5532e1543c2220216f7e7e8b7362d1485c4e', 'd2/manifest.json': '12fa0ff88a18a062938a3ac69373ab2a0b3002b07df6ad1abe2024c9a86cf916', 'd2/harness.py': '285260b84617602092278b26cf10cf07ba774c2d6cdc84c341f92ec68cf1c452', 'd2/compare.py': '93e2a10fbf7425879e51b7cdd3c09bedef97417fe19e92a6449471e209b805a7', 'd3/manifest.json': '8f811ef250a3d0105b7537225253ad446c7d2210af9ddce5c1f2dd94108c390b'}
