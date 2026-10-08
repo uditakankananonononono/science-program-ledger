@@ -1,0 +1,31 @@
+You are a skeptical methods reviewer judging a computational study closure (numbers by an automated agent; treat nothing as vetted). perm=false means the real unpermuted run; no TEST evaluation exists. Reply in under 300 words: (1) is the disposition (completed fixed DEV benchmark, not a WIN, not a gate failure) supported and the wording honest, (2) biggest methodological weakness, (3) one stronger design. No flattery.
+
+CLOSURE:
+**Outcome:** Completed DEV benchmark. This is not a WIN claim and not a gate failure. No test-set evaluation was performed.
+
+## Locked analysis and result
+
+The locked analysis used the five official training subjects per class, 400 total Train segments, ten-fold leave-one-subject-out cross-validation, and the preregistered fixed six-feature time-domain logistic-regression pipeline. All 400 official Train files were downloaded and validated against the locked Zenodo file inventory (source-reported byte size and MD5) before execution. Artifact hashes were unchanged at run time.
+
+| Measure | Result |
+|---|---:|
+| Pooled out-of-fold balanced accuracy (primary) | 0.745 |
+| Sensitivity, epilepsy class | 0.770 |
+| Specificity, healthy class | 0.720 |
+| Confusion matrix (true H/E rows, predicted H/E columns) | `[[144, 56], [46, 154]]` |
+| Per-subject segment accuracy range | 0.175-1.000 |
+| Per-subject median segment accuracy | 0.900 |
+
+| Training subject | Segments | Accuracy |
+|---|---:|---:|
+| E1 | 40 | 0.875 |
+| E2 | 40 | 1.000 |
+| E3 | 40 | 1.000 |
+| E4 | 40 | 0.625 |
+| E5 | 40 | 0.350 |
+| H1 | 40 | 0.175 |
+| H2 | 40 | 0.925 |
+| H3 | 40 | 0.550 |
+| H4 | 40 | 1.000 |
+| H5 | 40 | 0.950 |
+
