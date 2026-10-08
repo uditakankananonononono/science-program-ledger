@@ -140,3 +140,14 @@ HRF endpoints 320, branches 1230, cycle rank 566; FIVES 83/419/203; FOVEA
 40/238/140. Zero isolated vertices in these three graphs. Cycle rank is an
 8-neighbor pixel representation statistic, not anatomical vascular loops.
 These selected masks do not establish dataset-wide behavior or biological fidelity.
+
+## Three-first-mask chain analysis
+
+Chain algorithm independently reviewed; application result still in independent
+review. "Lossless" means topological pixel-path representation ONLY: original
+edge COSTS are not serialized; no physiological cost inference; not a routing
+input. On the same hashed skeletons, HRF 75,057 vertices become 1,550 anchors/2,102
+chains; FIVES 23,952 become 502/702; FOVEA 10,964 become 278/417. Every original
+undirected edge is represented exactly once. Compressed multigraph cycle ranks
+match 566/203/140; this is pixel topology, not biological loops or performance.
+No extraction, masks, routing or QC gates changed.

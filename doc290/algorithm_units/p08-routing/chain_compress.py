@@ -1,4 +1,4 @@
-"""Lossless undirected simple-graph degree-two chain representation.
+"""Topologically lossless pixel-path representation ONLY; costs not serialized.
 No routing costs or physiological lengths are assigned.
 """
 from topology_audit import audit_topology
