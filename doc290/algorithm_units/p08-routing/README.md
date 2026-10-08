@@ -100,3 +100,24 @@ infeasibility when that revisit cannot be afforded.
 Scientific data ingestion, physiological calibration, performance evaluation and
 prior-art investigation of any proposed invention remain outstanding. Synthetic
 correctness checks are not scientific gate completion or medical validation.
+
+## V6 strict JSON runner
+
+Run `python3 runner.py input.json` or pipe JSON to `python3 runner.py -`.
+Required fields: method, graph, start, goal. Graph maps vertex strings to lists of
+edges with target, time, exposure, and optional scenario_times (number list).
+Methods: budget, scenario, budget-scenario, turn, integrated. A budget is required
+only for budget, budget-scenario and integrated. Turn rules are accepted only by
+turn and integrated. All costs must be finite/nonnegative; no attributes inferred.
+
+Optional forbidden rules: list of pairs of edge IDs. An edge ID is a JSON pair
+[source_string, adjacency_index]. Optional penalties: list of objects containing
+incoming edge ID, outgoing edge ID, and delay. Duplicate keys/rules, unknown fields,
+unsupported parameters and non-standard NaN/Infinity JSON tokens are rejected.
+
+Success or infeasible results are JSON on stdout with exit code 0; parse/validation/
+I/O failures are JSON on stderr with exit code 2. Infeasible is not a crash.
+25 test methods pass, including subprocess parsing/output/error checks and all
+prior oracle comparisons. Input is loaded into memory; no large-file, security,
+physiology or performance validation is claimed. This runner adds usability,
+not a sixth optimization algorithm or a scientific discovery.
