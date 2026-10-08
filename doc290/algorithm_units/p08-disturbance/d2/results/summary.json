@@ -1,0 +1,71 @@
+{
+  "freeze": "0422d8dd0e0da931291869c8fee1740859412cc5",
+  "rows": 20,
+  "pairs": 10,
+  "raw_sha256": "f8d292d0311cfa1b836b2c42a0024160eb06f1cea9ee68ce4ec15d24592ed8b3",
+  "manifest_sha256": "12fa0ff88a18a062938a3ac69373ab2a0b3002b07df6ad1abe2024c9a86cf916",
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.35",
+    "scored_at": "2026-10-08T22:52:37.041239+05:30"
+  },
+  "per_policy": {
+    "hold_p": {
+      "terminal_miss": 4,
+      "success": 1
+    },
+    "predict_p": {
+      "terminal_miss": 5
+    },
+    "hold_sign": {
+      "success": 5
+    },
+    "predict_sign": {
+      "success": 5
+    }
+  },
+  "differences": {
+    "final_error": {
+      "comparable": 10,
+      "noncomparable": 0,
+      "negative": 0,
+      "zero": 9,
+      "positive": 1
+    },
+    "control_effort": {
+      "comparable": 10,
+      "noncomparable": 0,
+      "negative": 1,
+      "zero": 9,
+      "positive": 0
+    },
+    "estimation_mae": {
+      "comparable": 10,
+      "noncomparable": 0,
+      "negative": 2,
+      "zero": 8,
+      "positive": 0
+    },
+    "estimation_mse": {
+      "comparable": 10,
+      "noncomparable": 0,
+      "negative": 2,
+      "zero": 8,
+      "positive": 0
+    },
+    "dropout_mae": {
+      "comparable": 2,
+      "noncomparable": 8,
+      "negative": 2,
+      "zero": 0,
+      "positive": 0
+    },
+    "dropout_mse": {
+      "comparable": 2,
+      "noncomparable": 8,
+      "negative": 2,
+      "zero": 0,
+      "positive": 0
+    }
+  }
+}
