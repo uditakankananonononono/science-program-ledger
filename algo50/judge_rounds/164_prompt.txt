@@ -1,0 +1,26 @@
+You are a skeptical methods reviewer judging a closure of a computational study (numbers by an automated agent; treat nothing as vetted). perm=false means the real unpermuted run; no TEST run exists. Dropped at the DEV power gate, no prereg or lock. Reply in under 300 words: (1) is the drop justified and disclosure adequate (incl. the initial +0.0517 weak-baseline reading superseded by a strong-baseline reconciliation), (2) biggest methodological weakness, (3) one stronger design. No flattery.
+
+CLOSURE:
+# Unit 164 closure: Pinch-only cross-subject EMG
+
+Status: DROPPED-power-gate before prereg. No confirmatory result or WIN/NEGATIVE/NULL outcome is claimed. No TEST data loaded, no lock, no push. Roshambo is unscored.
+
+## Exact scope and provenance
+Zenodo record 3194792, EMG from forearm datasets for hand gestures recognition, Elisa Donati (2019), https://zenodo.org/records/3194792 . Exact-record archived API https://zenodo.org/api/records/3194792 states dataset license CC BY 4.0. Live record was checked against this evidence. The two full payload archive sizes and publisher MD5s were independently verified and local SHA256 computed (integrity.json). Both have only NPY files and directory entries, no archive license/README to contradict the publisher grant. For strict no-TEST operation, this builder did not decompress TEST members for CRC validation; the supplied screen reports full CRC validation by the scout. Archive MD5 verification reads archive bytes, not numerical TEST arrays.
+
+The supplied full registry snapshot has no Pinch/Roshambo exact-source match. Prior EMG36 unit 153 is a different source. This is a registry snapshot check, not a live repository check. Same-numbered IDs across Pinch and Roshambo are not established participant links: no 32-person cohort or independent replication claim.
+
+## Split and access
+Numeric subject IDs 1..22, sorted naturally. DEV uses 0-based even positions: 1,3,5,7,9,11,13,15,17,19,21. Reserved TEST: 2,4,6,8,10,12,14,16,18,20,22. All sessions remain with their subject. The guard precedes all NPY member loads. access_audit.json lists 66 distinct DEV-only array members (the same members were reloaded in the cost-aware audit), 3 EMG/annotation pairs per person. Roshambo was hashed and its member names inventoried but not loaded. No TEST permutation smoke was attempted. The older convention requesting pre-lock TEST permutation conflicts with the explicit no-TEST restriction and was not followed.
+
+## DEV task and model comparison
+Four active native pinch classes. 'none' is excluded as a task definition, not treated as a negative. 200 ms non-overlapping absolute-grid windows wholly within one active class; incomplete, mixed or none windows excluded. This is annotation-gated active gesture classification, not continuous gesture spotting or clinical diagnosis. 4670 DEV windows in 33 sessions. Feature vectors use channel log1p RMS/MAV/waveform length and sign-change fractions. Three subject-grouped folds; metric is mean subject balanced accuracy.
+
+DEV plan used raw and session-scalar-normalized LR/RBF/RF baselines and raw+session-channel-normalized augmentation. Whole-session normalization uses only EMG but uses the entire session, so it is offline/transductive and not causal. The post-first-look cost-aware audit also evaluated standalone channel normalization with exactly the same LR/RBF/RF grid. That stronger baseline must govern the comparison. Model selection and reported comparisons share DEV folds and are optimistic, not independent confirmation.
+
+Initial weaker headline: 0.439872; augmented: 0.491579; apparent gain +0.051707. Reconciled headline: channel-normalized RBF C=10, gamma=.01, balanced classes, 0.489454. Augmented RBF C=1, gamma=scale, 0.491579. Reconciled paired gain +0.002125, SD 0.068044, descriptive DEV subject-bootstrap 95% CI [-0.041565, +0.034668]. Best C and explicit gamma are not grid edges; the augmentation chooses lowest RBF C, an edge, disclosed. Exact complete grid scores are in dev_results.json and dev_channel_baselines.json.
+
+## Gates and correction
+Feasible with healthy subject clustering; baseline has skill above .25 and 0.510546 ceiling headroom. Headroom does not mean a novel algorithm is available. The initial local DEV plan mistakenly used +.05 WIN and an optimistic +.10 alternative for planning; parent corrected the program rule to gain >=.03 with positive paired CI and >=80% power at the DEV-observed effect. Those older assumptions remain in DEV_PLAN.md as audit history, not adopted rules. Initial +.10 planning power is not a gate pass.
+
+With the reconciled observed effect +0.002125, 3,000 subject-cluster trials of 11 sampled subjects, each using 1,000 percentile cluster bootstraps, met the corrected WIN rule in 184/3000 trials: planning power 6.133%, Monte Carlo interval [5.301%, 7.052%], far below 80%. This is a plug-in planning estimate using DEV label-based OOF gains, not a label-free variance estimate, and not TEST power or a confirmatory p-va
