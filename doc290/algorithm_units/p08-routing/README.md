@@ -243,3 +243,21 @@ mask/connectivity cases check exact directed-edge/cost coverage, plus asymmetric
 and cycle/isolate fixtures. Still not an aggregated routing input: interior query
 endpoints and turn constraints are unresolved. Earlier chain-only representation
 is topologically lossless only; this separate wrapper adds per-step costs.
+
+## Experimental additive chain adapter
+
+65 tests pass locally. chain_aggregate sums existing directed per-step time,
+exposure and homogeneous scenario vectors into separate chain directions, with
+original pixel witnesses for route expansion. Rejects heterogeneous vector sizes
+and accumulated overflow. Current route checks are small integer fixtures only.
+
+NOT an independently verified general routing-equivalence claim. Queries must
+be chain anchors and turn-free. No interior-endpoint or turn-rule equivalence.
+Floating-point regrouping can change totals/budget feasibility, so exact float
+route equivalence is NOT claimed; use integer-scaled values for exact comparisons.
+Pure-cycle self edges and parallel chains are retained. No measured/physiological
+costs or inference. Original cost-serialization unit remains independently reviewed:
+'exact' covers validated int/float cost values and vectors, not arbitrary numeric
+types beyond the kernel contract; retained originals, no aggregation/inference,
+no routing input, no interior-endpoint or turn-rule equivalence, cycle directions
+separate. Those notes apply to serialization, not this experimental new adapter.
