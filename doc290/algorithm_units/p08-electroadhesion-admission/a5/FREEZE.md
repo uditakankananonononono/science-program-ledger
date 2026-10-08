@@ -1,0 +1,14 @@
+# A5 bounded prior-evidence identity/inventory freeze
+
+Preregp61589ecpublishedbeforebuild. Exact5commit-pathGitblobs boundsourcecommit,
+Gitmetadata sizebeforelocalread,all5size/SHA1/SHA256+capsbeforeANYtext/JSONanalysis.
+StrictUTF8CRLF/CR/LFgrammar,0basedrawbyteoffset/1basedlines,blank/finalpreserved,
+Unicodeotherseparatorsliteral. StrictJSONduplicate/nonstandardconstantsreject,
+summary45membersordinals628..672,totalraw389460137+lineaggregate,47outputcoverage/
+SHA256membercorrelation/typeboolreject. StructuralmetadataNOTrawmeasurements.
+FailureNOpartialinventory;localGit source-read failuresblockbeforeoutputs.
+ActualPythonexecutablebytes/version+code/selectionpinned,notalltransitivemoduleproof.
+4groupsPASS. No source/memberbody/numericarray/dialect/force/time/phase/unitsrepair,
+no visualspatialclaim/no arbitraryclassification score. Manualper-bindingledger
+AFTERadmissionBEFOREclassification,outcomeexactreviewbeforepublication.
+Runafterreview/publication:python3 admit.py NEW_DIRECTORY
