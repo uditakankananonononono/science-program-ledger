@@ -1,0 +1,50 @@
+{
+  "rows": 80,
+  "raw_sha256": "0842a68340ff263072e361969b36dc1f2a0d21e39b1b1bd7264b51413c91c056",
+  "phase": {
+    "p": {
+      "patient_phase_pairs": 40,
+      "insufficient": 0,
+      "query_count": 4800,
+      "counts": {
+        "both_reachable": 4756,
+        "A1_only": 0,
+        "A2_only": 15,
+        "neither": 29
+      },
+      "pairs_any_query_disagreement": 1,
+      "shared_pixels_min": 2382,
+      "shared_pixels_max": 8977,
+      "shared_pixel_coverage_A1": {
+        "numerator": 198647,
+        "denominator": 1286714
+      },
+      "shared_pixel_coverage_A2": {
+        "numerator": 198647,
+        "denominator": 1289762
+      }
+    },
+    "i": {
+      "patient_phase_pairs": 40,
+      "insufficient": 0,
+      "query_count": 4800,
+      "counts": {
+        "both_reachable": 4800,
+        "A1_only": 0,
+        "A2_only": 0,
+        "neither": 0
+      },
+      "pairs_any_query_disagreement": 0,
+      "shared_pixels_min": 722,
+      "shared_pixels_max": 3717,
+      "shared_pixel_coverage_A1": {
+        "numerator": 74628,
+        "denominator": 310773
+      },
+      "shared_pixel_coverage_A2": {
+        "numerator": 74628,
+        "denominator": 312780
+      }
+    }
+  }
+}
