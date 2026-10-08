@@ -8,6 +8,7 @@ test_dense_map_terminal_readback (test_feasibility.FeasibilityTests) ... ok
 test_rank_deficient_unreachable (test_feasibility.FeasibilityTests) ... ok
 test_slew_first_step_limits_reach (test_feasibility.FeasibilityTests) ... ok
 test_unique_scalar_solution (test_feasibility.FeasibilityTests) ... ok
+test_corrupt_successful_solver_epigraph_rejected (test_minimax.MinimaxTests) ... ok
 test_slew_limited_optimum (test_minimax.MinimaxTests) ... ok
 test_two_gains_analytic_optimum (test_minimax.MinimaxTests) ... ok
 test_zero_error_feasible (test_minimax.MinimaxTests) ... ok
@@ -18,6 +19,6 @@ test_strict_tolerance_and_invalid_map (test_scenarios.ScenarioTests) ... ok
 test_unlisted_map_is_not_guaranteed (test_scenarios.ScenarioTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.026s
+Ran 19 tests in 0.042s
 
 OK

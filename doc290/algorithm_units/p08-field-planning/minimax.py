@@ -28,13 +28,16 @@ def minimax_terminal(initial,dt,maps,limit,slew,previous,targets,tolerance=1e-8)
     result=linprog(objective,A_ub=A,b_ub=np.array(rhs),bounds=[(-limit[j],limit[j]) for k in range(n) for j in range(m)]+[(0,None)],method='highs')
     if result.status==2:return {'status':'solver_infeasible','certificate':'no independently checked dual certificate'}
     if not result.success:raise RuntimeError(result.message)
-    u=result.x[:-1].reshape(n,m);error_bound=float(result.x[-1]);paths=np.array([np.vstack((x,x+np.cumsum(dt[:,None]*(u@B.T),axis=0))) for B in Bs])
+    u=result.x[:-1].reshape(n,m);error_bound=float(result.x[-1])
+    if not np.isfinite(error_bound) or error_bound<0:raise RuntimeError('invalid solver epigraph bound')
+    paths=np.array([np.vstack((x,x+np.cumsum(dt[:,None]*(u@B.T),axis=0))) for B in Bs])
     change=np.diff(np.vstack((previous,u)),axis=0)
     residuals={'actuator_violation':float(max(0,np.max(abs(u)-limit))),
                'slew_violation':float(max(0,np.max(abs(change)-dt[:,None]*slew))),
                'terminal_box_violation_per_scenario':[float(max(0,np.max(l-path[-1]),np.max(path[-1]-h))) for path,l,h in zip(paths,lo,hi)]}
     actual=max(residuals['terminal_box_violation_per_scenario'])
     residuals['objective_readback_abs']=abs(actual-error_bound)
+    if not np.isfinite([actual,residuals['objective_readback_abs'],residuals['actuator_violation'],residuals['slew_violation']]+residuals['terminal_box_violation_per_scenario']).all():raise RuntimeError('nonfinite objective/residual readback')
     if residuals['objective_readback_abs']>tolerance:raise RuntimeError('objective readback failed')
     if not np.isfinite(paths).all() or not np.isfinite(u).all() or max([residuals['actuator_violation'],residuals['slew_violation']])>tolerance:raise RuntimeError('primal readback failed')
     return {'status':'primal_checked','controls':u.tolist(),'worst_terminal_coordinate_error':actual,'solver_error_bound':error_bound,'scenario_trajectories':paths.tolist(),'residuals':residuals,

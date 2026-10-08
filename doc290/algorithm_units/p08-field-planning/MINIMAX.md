@@ -20,3 +20,11 @@ coordinate infinity error gives each coordinate equal numerical weight; physical
 units/scaling need a future explicit policy. Floating point solver status, tolerance,
 dense scaling, duplicated assembly drift and extreme finite arithmetic remain limits.
 Original reviewed scenario/corridor/feasibility modules unchanged. Review pending.
+
+Review-discovered defect retained: first implementation accepted a monkeypatched
+successful solver response with NaN epigraph bound because NaN > tolerance is false.
+Repair rejects nonfinite or negative bound before objective readback, then checks
+finite actual objective and every reported residual before accepting. New control
+covers NaN, infinity, -1 and tiny negative bounds. 19 development methods pass.
+This repairs output verification, not proof of independent dual optimality. Prior
+18-test package was HOLD and never published; confirmatory review pending.

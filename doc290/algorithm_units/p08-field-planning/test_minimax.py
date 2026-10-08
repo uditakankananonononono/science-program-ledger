@@ -11,4 +11,12 @@ class MinimaxTests(unittest.TestCase):
     def test_zero_error_feasible(self):
         r=minimax_terminal([0],[1],[[[1]],[[2]]],[2],[2],[0],[[1],[2]])
         self.assertAlmostEqual(r['worst_terminal_coordinate_error'],0)
+    def test_corrupt_successful_solver_epigraph_rejected(self):
+        from unittest.mock import patch
+        from types import SimpleNamespace
+        for bound in (float('nan'),float('inf'),-1.,-.000000000001):
+            with self.subTest(bound=bound):
+                fake=SimpleNamespace(status=0,success=True,x=np.array([1.,bound]))
+                with patch('minimax.linprog',return_value=fake):
+                    with self.assertRaises(RuntimeError):minimax_terminal([0],[1],[[[1]]],[2],[2],[0],[[1]])
 if __name__=='__main__':unittest.main()
