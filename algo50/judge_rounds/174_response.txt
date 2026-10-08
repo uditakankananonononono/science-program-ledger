@@ -1,0 +1,10 @@
+1. DEV-WIN supported, wording mostly honest.
+Yes, as a DEV-only empirical result: the preregistered comparison was run on five DEV subjects, the paired deltas are consistently positive, and the bootstrap interval excludes zero. Calling it a “DEV-only WIN” is defensible provided WIN means the locked DEV criterion was met, not evidence of generalization or superiority. The explicit statement that no TEST subjects were opened is appropriate. However, the post-hoc power calculation adds little and should not be presented as validation; with n=5 subjects, it is unstable and partly circular.
+
+2. Biggest methodological weakness: n=5 independent subjects.
+The effective sample size is five, not the number of windows/epochs/segments. The apparently strong mean delta (+0.270) is therefore based on an extremely small and heterogeneous subject sample. S07's +0.042 shows the effect is not uniformly large. The bootstrap CI cannot manufacture information absent from five clusters. More importantly, the TEST set contains only two subjects and both reportedly have no freezing events, so the claimed held-out confirmation is structurally weak: it cannot meaningfully test event-detection generalization even if opened.
+
+A secondary concern is the comparator: selecting among three lower-dimensional variants within folds is legitimate if fully locked, but it is not a strong external benchmark.
+
+3. Stronger design.
+Pre-specify a subject-level nested evaluation across substantially more independent subjects, with a fixed external comparator (preferably a published Daphnet FOG method or clearly defined baseline), all preprocessing/model selection confined to training folds. Reserve a TEST cohort containing multiple subjects with actual freeze events, and report subject-level performance plus uncertainty—not window-level metrics or post-hoc power.
