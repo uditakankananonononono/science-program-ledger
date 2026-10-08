@@ -1,0 +1,26 @@
+# A2 identity + bounded directory + manual archive ledger, no classification
+
+Prereg8b7d43688027e2f265dcbe396e61b1506e7d338c andfreeze
+5f53daf3b3158a004860c78fce8317fafb18ea03 published/readbackbeforesourcefetch.
+Chronologydocument-reported,replaysnotindependenthistoricalorderingattestation.
+
+IdentityPASS:mandatorydeclaredlength+EOF627211731B,MD5
+59a1ca596587186d2da93c6cad3aa02f,SHA256
+e119e77c52ecb8e3e5c2590da69c2b0ed11f45fd7b1ed83fa12b609d2d8d4bd5.
+Heldfileidentity+fstatrecheckedafterfrozendirectoryscan. No routeamendment/rescue.
+Directorycompleteunderboundedprotocol:673entries,108712centralbytes;literal
+names/sizes/flags/compression/CRCmetadataonly. 668.csvsuffix,1README.txt,4directory
+entries;669deflate/4stored. Centraldeclareduncompressedtotal2201599260B NOT actual
+memberCRC/decompression/measurementvalidity. No memberbodyopen/read/extract/testzip.
+
+Manualarchiveledgercomplete. EndpointUNCLASSIFIED/NOTPERFORMED,not sciencefailure
+orarchivecorruptionclaim. LiteralCSV/unitsnamesnotactualschema/time/trial/calibration.
+No physiologicalmagneticbloodwallanchoring/forcecurve/rights/inventioncredit.
+Next ONLYseparatemember-selectionpreregcanpermitmemberread,notadmissionfromnames.
+
+627211731B original retainedlocallynotGit/attachmentdelivered;exactupstreamsource
+https://zenodo.org/api/records/6417174/files/Data.zip/content andidentityrecordpublic.
+Download+inspectionnotpeak-memoryproof;capsnot2GBmeasured/hardwallquotas. Conservative
+EOCDcommentedgenote retained;noformatdiagnosisbeyondfrozenprotocol.
+Two retained-original replays,all3JSONoutputsbyte-identical;unchangedexecutable.
+No memberbodyreads. Deterministicdirectoryreproductionnotmeasurementvalidation.
