@@ -1,0 +1,57 @@
+# A4 complete B-group raw CSV text/schema provenance admission
+
+NewunitafterA3soleREADME,notextensionbyinference. FixedALL45.csvmatchesunderexact
+Data/B) ACDC adhesion,releasing,residual pressure results/ prefixfromA2directory;
+389460137declareduncompressedbytes,max14353104. NoCSVbodiesread/peeked. Directory+
+README+articleprior-exposed,notblindvalidation. Completefunctionalgroupcompares
+waveform/holding/residual labels,notarbitrarypatch/bestcurve/smallfiles. A-group
+623CSVsdeliberatelyexcluded,notunavailable. Selection copiedallcentralfields.
+
+README L32-36claims3columnsrelative time/position/force,sign,25mm2areaBUTNOactual
+units/schema/measurement/trialtruth. L38filename0.00Vclaims0VBEFOREdrive;L39filename
+1.00Vclaims0VAFTERdrive,residualbaselineNOTphysical1V. Preserveaslabels,notvoltage
+conversion/trialpairing. No filenamesunits/timesorarticlefill. README0sdelayversus
+actual0secconflictpreserved,nosilentrewrite. No inventedphase/transforms/forcefit.
+
+## Review/freeze before ALL member reads
+
+Original627211731BfullMD559a1ca596587186d2da93c6cad3aa02f+SHA256
+e119e77c52ecb8e3e5c2590da69c2b0ed11f45fd7b1ed83fa12b609d2d8d4bd5
+heldfileidentityBEFOREboundedcopiedA2scanner;fixedcomplete45metadata+ordinalset
+agreement. Retainedarchiveonly,no sourcefallback/network/routing/memberrescue.
+https://zenodo.org/api/records/6417174/files/Data.zip/content
+
+StreamONLYselectedZipInfosintoordinalscratchrawfiles,CRCactuallycheckedatEOF,
+exactsizeeach/allwithin16MiB/member,400MiBcombined. ALL45CRC/sizehashverifiedAND
+postreadoriginalhash+fstatBEFOREANYUTF8/schemaanalysis;failureZEROanalysis,
+partialrawretainedstatusnotanalyzed. RawmemberSHA256newdiscoverynotprepin. Nofull
+archive/multimemberRAMload. Diskerrorsscopedunavailable,neveroriginalcleanup.
+ActualPython/zipfile/copiedscannerbytes+frozen selection/caps boundbefore read.
+
+AnalysisONLYstrictUTF8streamliteralCRLF/CR/LFgrammar(rawbyteoffset1? Freezeexplicit
+0basedbyteoffsetand1basedlineordinal),blank/finalterminator+VT/FF/NEL/Unicodechars
+literal. <=65536rawbytes/line,<=10000000totallines;postreadlinechecksnotpeakquota.
+Retainnumberedlineinventoryasstreamedmtime0gzip,field-separatorliteralcounts ONLY
+comma/semicolon/tab,notguessedCSVdialect. No numericcoercion/headerrowskipping/
+3-columnenforcement/arrayfitting/dropnonfinite/NaNcleanup/sort/phaseboundaryderive.
+Filename.csvnotproofCSVschema. Explicitrecordwhetherquotecharacterspresent,
+no csv.reader multilineguess from README. Originalbytesretained,completecounts
+checkedbeforeinventoryexposure;parse/encoding/capsfailure no partialinventory.
+
+Fixturesall45identitygatezeroanalysis/memberCRC/EOF/truncation+caps+mutation,
+selectedonly/nonselectedopen/fallbacknetwork/sourceexecution/extractionroutes,
+linebyteoffsetgrammar/chunkboundaryUTF8/delimiters/blankfinal/noUnicode splitlines,
+malformed/nonfinite/rawdelimitersreproduction. Syntheticfixturesnotperformance.
+No observed2GBpeakresource/hardwallclaim;streamedoutputsizepotentiallylarge,
+compression/storageonlynotmeasurementsemantics.
+
+## Manual per-member ledger then STOP
+
+Exactrawheader/lines/delimiterpatterns+READMEcontradictions/no unitbindings;
+statecolumns/units/force/phase/time/trials/conditions/independenceonlyifexplicit
+selectedrawtext,notnumericcoincidence/title. PreserveallbaselineAC/DC/holding-label
+rowswithoutmerging/relabelingmeasurements. No physicalarea/pressureconversion/
+microrobotphysiology/rights/inventionfromadmission. Unclassifiedscopeuntilreview;
+manualledgerBEFOREanyendpointdecision. No plot/image/spatialclaim. Separaterunnable
+benchmarkwouldneedadmittedunits/calibration/trial/comparator/holdout,inventiongap,
+notmerely3columnsordeterministicparse. Reviewexactresultbeforepublication.
