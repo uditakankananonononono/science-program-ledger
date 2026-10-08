@@ -1,0 +1,1579 @@
+[
+  {
+    "expected": "VERIFIED",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-gain",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/3",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-gain:gap",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/3",
+        "4/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-gain:control",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "8/3",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-gain:negative",
+    "witness": {
+      "lambda": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/3",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-gain:stationarity",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "z": [
+        "2/3",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-gain:shape",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0
+      ],
+      "z": [
+        "2/3",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "VERIFIED",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "capped",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "1/2",
+        "1/2"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "capped:gap",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "1/2",
+        "3/2"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "capped:control",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "5/2",
+        "1/2"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "capped:negative",
+    "witness": {
+      "lambda": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "1/2",
+        "1/2"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "capped:stationarity",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "z": [
+        "1/2",
+        "1/2"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "capped:shape",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "z": [
+        "1/2",
+        "1/2"
+      ]
+    }
+  },
+  {
+    "expected": "VERIFIED",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          0
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "zero",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "z": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          0
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "zero:gap",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "z": [
+        0,
+        "1/1"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          0
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "zero:control",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "z": [
+        "2/1",
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          0
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "zero:negative",
+    "witness": {
+      "lambda": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "z": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          0
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "zero:stationarity",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "z": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          0
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "zero:shape",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "z": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "expected": "VERIFIED",
+    "model": {
+      "dt": [
+        1,
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          2
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-step-capped",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "1/2",
+        "1/2",
+        1
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1,
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          2
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-step-capped:gap",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "1/2",
+        "1/2",
+        "2/1"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1,
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          2
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-step-capped:control",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "5/2",
+        "1/2",
+        1
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1,
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          2
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-step-capped:negative",
+    "witness": {
+      "lambda": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "z": [
+        "1/2",
+        "1/2",
+        1
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1,
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          2
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-step-capped:stationarity",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "z": [
+        "1/2",
+        "1/2",
+        1
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1,
+        1
+      ],
+      "limit": [
+        "1/2"
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          2
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "two-step-capped:shape",
+    "witness": {
+      "lambda": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "z": [
+        "1/2",
+        "1/2",
+        1
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1.0
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "malformed:float-dt",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/3",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        true
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "malformed:bool-limit",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/3",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "malformed:unreduced",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/4",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "malformed:zero-denominator",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/0",
+        "1/3"
+      ]
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "malformed:missing",
+    "witness": null
+  },
+  {
+    "expected": "INVALID",
+    "model": {
+      "dt": [
+        1
+      ],
+      "limit": [
+        1
+      ],
+      "maps": [
+        [
+          [
+            1
+          ]
+        ],
+        [
+          [
+            2
+          ]
+        ]
+      ],
+      "previous": [
+        0
+      ],
+      "slew": [
+        2
+      ],
+      "targets": [
+        [
+          1,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "x": [
+        0
+      ]
+    },
+    "name": "malformed:target-shape",
+    "witness": {
+      "lambda": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "2/3",
+        "1/3",
+        0,
+        0
+      ],
+      "z": [
+        "2/3",
+        "1/3"
+      ]
+    }
+  }
+]
