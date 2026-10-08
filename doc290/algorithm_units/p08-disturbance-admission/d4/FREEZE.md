@@ -1,0 +1,18 @@
+# D4 static disassembly freeze
+
+Preregebbcfabpublished/readback;sourcepickle NOTfetched/disassembled. Python3.10.12
++actualpickletoolsmodulehashpinned. IdentitysizeMD5beforeALLdisassembly. genopsnever
+unpickles/reconstructsmemoobjects/callables,nopayloadGLOBAL/REDUCE/BUILDexecution.
+STOPoffsetexplicit;trailingcount+SHA256retained,originalbytescomplete,prefixnotwhole
+streamadmission. MissingSTOP/unknownopcode/truncatedarg/opcode/reprcap->unresolved,
+no partial opcodesexposed. Reprstringsonly,nonfinitefloatNOTnumericcalibration.
+Capsnotparseallocation/peakoutputwallquotas;reprcreatedbeforelengthcheck,nopeakclaim.
+Sixliteralgroupscovertransport/STOPtrailing/malformed/reprUnicodecaps/executableeval
+trap/identityzeroanalysis. No syntheticcounts/arrays/temporalnoiseconversion.
+
+Manualserialization/provenanceledgerbeforeclassification. Excluded4simulationarchives,
+no borrowedflowunits/pairedbifurcationorderintoindependence/time/dropout/microrobot
+transfer. Safeopcodeinspectionnot schema/datasafety/rights/inventiongate. Noimages/
+plots/spatialclaims. Chronologydocument-reported,replaynotordering.
+Runafterreview/publication:python3 admit.py NEW_OUTPUT_DIRECTORY
+Replay:python3 admit.py NEW_DIRECTORY RETAINED_SOURCES
