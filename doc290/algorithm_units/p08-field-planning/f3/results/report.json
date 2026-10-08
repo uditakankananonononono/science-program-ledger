@@ -1,0 +1,514 @@
+{
+  "agreement_count": 30,
+  "baseline": [
+    {
+      "binary_float_objective_minus_exact": "1/27021597764222976",
+      "name": "two-gain",
+      "result": {
+        "controls": [
+          [
+            0.6666666666666666
+          ]
+        ],
+        "residuals": {
+          "actuator_violation": 0.0,
+          "objective_readback_abs": 0.0,
+          "slew_violation": 0.0,
+          "terminal_box_violation_per_scenario": [
+            0.33333333333333337,
+            0.33333333333333326
+          ]
+        },
+        "scenario_trajectories": [
+          [
+            [
+              0.0
+            ],
+            [
+              0.6666666666666666
+            ]
+          ],
+          [
+            [
+              0.0
+            ],
+            [
+              1.3333333333333333
+            ]
+          ]
+        ],
+        "scope": "finite-scenario LP minimax terminal error; no independently checked dual optimality certificate",
+        "solver_error_bound": 0.33333333333333337,
+        "status": "primal_checked",
+        "worst_terminal_coordinate_error": 0.33333333333333337
+      }
+    },
+    {
+      "binary_float_objective_minus_exact": "0/1",
+      "name": "capped",
+      "result": {
+        "controls": [
+          [
+            0.5
+          ]
+        ],
+        "residuals": {
+          "actuator_violation": 0.0,
+          "objective_readback_abs": 0.0,
+          "slew_violation": 0.0,
+          "terminal_box_violation_per_scenario": [
+            0.5
+          ]
+        },
+        "scenario_trajectories": [
+          [
+            [
+              0.0
+            ],
+            [
+              0.5
+            ]
+          ]
+        ],
+        "scope": "finite-scenario LP minimax terminal error; no independently checked dual optimality certificate",
+        "solver_error_bound": 0.5,
+        "status": "primal_checked",
+        "worst_terminal_coordinate_error": 0.5
+      }
+    },
+    {
+      "binary_float_objective_minus_exact": "0/1",
+      "name": "zero",
+      "result": {
+        "controls": [
+          [
+            -0.0
+          ]
+        ],
+        "residuals": {
+          "actuator_violation": 0.0,
+          "objective_readback_abs": 0.0,
+          "slew_violation": 0.0,
+          "terminal_box_violation_per_scenario": [
+            0.0
+          ]
+        },
+        "scenario_trajectories": [
+          [
+            [
+              0.0
+            ],
+            [
+              0.0
+            ]
+          ]
+        ],
+        "scope": "finite-scenario LP minimax terminal error; no independently checked dual optimality certificate",
+        "solver_error_bound": 0.0,
+        "status": "primal_checked",
+        "worst_terminal_coordinate_error": 0.0
+      }
+    },
+    {
+      "binary_float_objective_minus_exact": "0/1",
+      "name": "two-step-capped",
+      "result": {
+        "controls": [
+          [
+            0.5
+          ],
+          [
+            0.5
+          ]
+        ],
+        "residuals": {
+          "actuator_violation": 0.0,
+          "objective_readback_abs": 0.0,
+          "slew_violation": 0.0,
+          "terminal_box_violation_per_scenario": [
+            1.0
+          ]
+        },
+        "scenario_trajectories": [
+          [
+            [
+              0.0
+            ],
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ]
+        ],
+        "scope": "finite-scenario LP minimax terminal error; no independently checked dual optimality certificate",
+        "solver_error_bound": 1.0,
+        "status": "primal_checked",
+        "worst_terminal_coordinate_error": 1.0
+      }
+    }
+  ],
+  "row_count": 30,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "VERIFIED",
+      "input_sha256": "d92c8b7ad0cb1a93673dd311bca6c23b162828ea191dcfe929c7408e15e36ca2",
+      "name": "two-gain",
+      "result": {
+        "complementarity": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "dual": "1/3",
+        "primal": "1/3",
+        "reason": "exact matching feasible bounds",
+        "row_count": 9,
+        "status": "VERIFIED",
+        "variable_count": 2
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "94f422fe3805fa83b0725c421ef3d01ec90a9cc114c40d884cdb5da6d9625314",
+      "name": "two-gain:gap",
+      "result": {
+        "reason": "objective gap",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "226495411a5925f7cec4905678ecacd307f315f8261d42878ef2602e3faa100e",
+      "name": "two-gain:control",
+      "result": {
+        "reason": "primal infeasible",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f34277340c2398898fa7718cb54af1cc10cd93a2bc3dbe34ba87575535d413cf",
+      "name": "two-gain:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "6114a189a1391d6e8c0d080916d4b734aaecb87541db7f8fb2bc9c28644f96e4",
+      "name": "two-gain:stationarity",
+      "result": {
+        "reason": "stationarity",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "81d98750a11a522533d54df88e9e60c2cb0949f0248ff0ab9b1135fd2d13b0df",
+      "name": "two-gain:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "VERIFIED",
+      "input_sha256": "0280806ab281b57c952750e0b30d58add6206c34f1331c7bd5d84d9aa844cb29",
+      "name": "capped",
+      "result": {
+        "complementarity": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "dual": "1/2",
+        "primal": "1/2",
+        "reason": "exact matching feasible bounds",
+        "row_count": 7,
+        "status": "VERIFIED",
+        "variable_count": 2
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "710c46dc752f26eb51bd25c3bea410f4224b27fde854c0f8356cee16ddd32718",
+      "name": "capped:gap",
+      "result": {
+        "reason": "objective gap",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "86388b6096d3b669052706bf71c8e1e49d2088833afdc2df2650bcd79d3f32cd",
+      "name": "capped:control",
+      "result": {
+        "reason": "primal infeasible",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "74d5d50f2f393273effbf6cf3dbfa192bf81d1b1f4fb57a7892b141548b6f9fc",
+      "name": "capped:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a6cd009bae9cd498dd9e9f8d5d7b209c66c89cef48e0257ad24ca9ad44a3e7f9",
+      "name": "capped:stationarity",
+      "result": {
+        "reason": "stationarity",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "bb51e431e502bd099b176475b99a88bd50d76af5937fe1420f5c69a5256cda11",
+      "name": "capped:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "VERIFIED",
+      "input_sha256": "f5edec50018985b4a6c81b5eb73ea3c0ce601ca6a3e3e4a7699c367b4ac813ec",
+      "name": "zero",
+      "result": {
+        "complementarity": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "dual": "0/1",
+        "primal": "0/1",
+        "reason": "exact matching feasible bounds",
+        "row_count": 7,
+        "status": "VERIFIED",
+        "variable_count": 2
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "fb4815a4ac582d5d4ed6e56cd19071ec18c070b627a095112a95c750e20af2c2",
+      "name": "zero:gap",
+      "result": {
+        "reason": "objective gap",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "178182a926a7d78f15ff14fc3be6dafdcb95a70d43f551ebf7971a31c92587af",
+      "name": "zero:control",
+      "result": {
+        "reason": "primal infeasible",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "44fc9f3d083643634d9fc5e61d8e3348a8178502199362669f0ddc4413606b26",
+      "name": "zero:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "121bfcadcefe11a6c2ea6ee991b46af3da80776d599f891e7435e6f96f787e95",
+      "name": "zero:stationarity",
+      "result": {
+        "reason": "stationarity",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "4a6aae8db5d6440fe820565a18204864cbd48c3ad0878c09690e006bc530a721",
+      "name": "zero:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "VERIFIED",
+      "input_sha256": "dd392d6cafc3c045de5aa2a366550a5410c9dc6f5c0fed8a752940f4fca3eccd",
+      "name": "two-step-capped",
+      "result": {
+        "complementarity": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "dual": "1/1",
+        "primal": "1/1",
+        "reason": "exact matching feasible bounds",
+        "row_count": 11,
+        "status": "VERIFIED",
+        "variable_count": 3
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8eab293038f72b44d54c500781d5d9e5875a6f46861216ffa88e6343f97ef1ca",
+      "name": "two-step-capped:gap",
+      "result": {
+        "reason": "objective gap",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "abeb3b00a2a882e8a27b2da64db0cde2116d055fb975e0a6feb1ecddfbb97e88",
+      "name": "two-step-capped:control",
+      "result": {
+        "reason": "primal infeasible",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8a66899147fa0fca2a6ecac1f047e1f8cc4b357fb1ccb5fac290289832687417",
+      "name": "two-step-capped:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c7ae23847fa7a5e5176b7494235609d45abcab912fd344d45890588e81394ba8",
+      "name": "two-step-capped:stationarity",
+      "result": {
+        "reason": "stationarity",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "5f3de3585b9524b642bf7503219b29b548e19476c336bec58cae96a3f0242b14",
+      "name": "two-step-capped:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "467fe04e1125768ce93a08c0093c351daf9a9046809982f61b58c3191b5addee",
+      "name": "malformed:float-dt",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "6d3ff6ac514880571e154b237e1d378ad854b30a8a664f706b0a37b40d5f7d1d",
+      "name": "malformed:bool-limit",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "20db633be591c9662e26b6c628870e079170e3eeb971df6f9ced8bd1f7c0777f",
+      "name": "malformed:unreduced",
+      "result": {
+        "reason": "unreduced rational",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "99fce11feee08d8fb1ee0a56f0b98d0a7f94a164e3f94bed214fb39e4da9a24a",
+      "name": "malformed:zero-denominator",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "9bfd2f1f2f7f3b0a7a81e3763cad04d9c8db2a308b7658779c6f4c4d4b5520ad",
+      "name": "malformed:missing",
+      "result": {
+        "reason": "missing witness",
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "e8ee9ab9a10265d5931f9395029992fab979188c978581622395db71cc9f6eef",
+      "name": "malformed:target-shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    }
+  ],
+  "scope": "supplied rational models only; disclosed development fixtures; no novelty/physiology/superiority"
+}
