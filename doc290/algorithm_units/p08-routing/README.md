@@ -287,3 +287,14 @@ At budget 1e16 original scalar/scenario-budget routes are feasible while compres
 routes are not. Regression preserves this counterexample as a documented limitation,
 not an adapter correctness claim. Use integer-scaled costs for exact equivalence
 comparisons; no float feasibility guarantee. No kernel arithmetic changed.
+
+## Enforced integer anchor-query wrapper
+
+70 test methods pass locally. route_integer_anchors explicitly rejects floats,
+booleans, non-anchor endpoints and unsupported objectives; only budget, scenario,
+and budget-scenario dispatch, with integer nonnegative budgets where applicable.
+The wrapper returns both compressed result and expanded pixel path. It enforces
+these input restrictions; the underlying general adapter still treats anchor-only/
+turn-free as caller preconditions. Kernel boundaries (absent scenario count,
+finite-total limits) remain inherited. Integer restrictions do not establish a
+proof for arbitrary graphs or physiological validity; current evidence is fixtures.
