@@ -168,3 +168,19 @@ Diagonal edges retain caller costs with no correction. A failed initial fixture
 incorrectly expected an all-isolated scenario graph to return infeasible; it was
 fixed to assert the inherited documented error boundary, without changing kernels.
 No universal promise that extracted masks are immediately scenario-routable.
+
+## V9 bounded resource characterization
+
+Run `python3 resource_probe.py`. Four fixed synthetic full grids (5,10,20,30 per
+side) run in separate workers, each with a five-second wall timeout. Two scenarios
+have uniform costs 1 and 2; a unit-cost Manhattan oracle checks objectives. This
+is deliberately easy data, not an adversarial Pareto-frontier test or a benchmark
+against published implementations. 42 test methods pass.
+
+Recorded on this Linux run: 25-900 vertices, solve time 0.0011-0.0526 seconds,
+whole-worker lifetime peak RSS 12,492-15,336 KiB. RSS includes Python/imports/build
+and solver; it is not isolated solver allocation. Measurements are single runs,
+not confidence intervals or performance promises. See resource-results.json.
+There is a timeout but no worker memory cap. Exponential frontier growth remains
+possible on nonuniform correlated costs. No resource-limit or scientific gate
+is passed by these observations. Existing routing and runner files are unchanged.

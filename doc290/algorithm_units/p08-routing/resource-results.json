@@ -1,0 +1,67 @@
+{
+  "scope": "synthetic uniform grids only; timings are observations, not performance gates",
+  "rss_scope": "Linux worker whole-process lifetime peak, including interpreter and imports; not isolated solver allocation",
+  "timeout_per_worker_seconds": 5,
+  "records": [
+    {
+      "size": 5,
+      "vertices": 25,
+      "directed_edges": 80,
+      "build_seconds": 0.00011884900004588417,
+      "solve_seconds": 0.001142258999607293,
+      "peak_process_rss_kib": 12492,
+      "oracle": "unit-cost 4-neighbor full-grid Manhattan distance",
+      "expected_steps": 8,
+      "status": "passed",
+      "scenario_totals": [
+        8,
+        16
+      ]
+    },
+    {
+      "size": 10,
+      "vertices": 100,
+      "directed_edges": 360,
+      "build_seconds": 0.0005853229999956966,
+      "solve_seconds": 0.00457323999989967,
+      "peak_process_rss_kib": 12964,
+      "oracle": "unit-cost 4-neighbor full-grid Manhattan distance",
+      "expected_steps": 18,
+      "status": "passed",
+      "scenario_totals": [
+        18,
+        36
+      ]
+    },
+    {
+      "size": 20,
+      "vertices": 400,
+      "directed_edges": 1520,
+      "build_seconds": 0.001755681000304321,
+      "solve_seconds": 0.021391484000105265,
+      "peak_process_rss_kib": 14108,
+      "oracle": "unit-cost 4-neighbor full-grid Manhattan distance",
+      "expected_steps": 38,
+      "status": "passed",
+      "scenario_totals": [
+        38,
+        76
+      ]
+    },
+    {
+      "size": 30,
+      "vertices": 900,
+      "directed_edges": 3480,
+      "build_seconds": 0.005074682999747893,
+      "solve_seconds": 0.05258963699998276,
+      "peak_process_rss_kib": 15336,
+      "oracle": "unit-cost 4-neighbor full-grid Manhattan distance",
+      "expected_steps": 58,
+      "status": "passed",
+      "scenario_totals": [
+        58,
+        116
+      ]
+    }
+  ]
+}
