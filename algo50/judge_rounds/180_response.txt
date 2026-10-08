@@ -1,0 +1,7 @@
+Characterization: broadly yes, but with a caveat. Calling this a predeclared-threshold feasibility screen PASS, not a WIN is fair if the threshold and analysis plan were genuinely fixed before looking at outcomes. OOF AUC 0.7036 clears 0.70, and the bootstrap lower bound (.540) clears .50. The disclosure that there is no TEST/external validation is appropriate. However, the margin above the AUC threshold is tiny, so “PASS” should not imply robust evidence of discrimination.
+
+Biggest methodological weakness: the 47-person single-site sample is too small for a stable 80-feature classifier, even with participant-level folds. The reported AUC and especially its threshold crossing are vulnerable to sampling variability. The bootstrap CI illustrates this: the lower bound is only .540. The unverified channel-row mapping is an additional reproducibility/data-integrity concern and should be resolved before treating the result as substantive.
+
+Stronger design: use a locked external participant-level validation cohort from a different site, with preprocessing/channel mapping fixed beforehand. Keep the 0.70 gate unchanged and report the external AUC with a confidence interval. If external data are unavailable, a repeated/nested participant-level resampling design would better quantify instability, but it still would not substitute for external validation.
+
+Bottom line: PASS as a narrowly defined DEV feasibility screen, not evidence of a validated depression classifier or a research “WIN.”
