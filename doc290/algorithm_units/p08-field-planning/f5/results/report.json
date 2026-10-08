@@ -1,0 +1,475 @@
+{
+  "agreement_count": 28,
+  "baseline": [
+    {
+      "name": "J1",
+      "result": {
+        "controls": [
+          [
+            0.5
+          ]
+        ],
+        "residuals": {
+          "actuator_violation": 0.0,
+          "slew_violation": 0.0,
+          "terminal_box_violation_per_scenario": [
+            0.0,
+            0.0
+          ]
+        },
+        "scenario_trajectories": [
+          [
+            [
+              0.0
+            ],
+            [
+              0.5
+            ]
+          ],
+          [
+            [
+              0.0
+            ],
+            [
+              1.0
+            ]
+          ]
+        ],
+        "scope": "one shared schedule for enumerated constant maps only; no unlisted uncertainty or hardware guarantee",
+        "status": "primal_checked"
+      }
+    },
+    {
+      "name": "J2",
+      "result": {
+        "certificate": "no independently checked dual certificate",
+        "status": "solver_infeasible"
+      }
+    },
+    {
+      "name": "J3",
+      "result": {
+        "certificate": "no independently checked dual certificate",
+        "status": "solver_infeasible"
+      }
+    },
+    {
+      "name": "J4",
+      "result": {
+        "controls": [
+          [
+            -0.0,
+            -1.5
+          ],
+          [
+            0.6666666666666666,
+            -0.16666666666666666
+          ]
+        ],
+        "residuals": {
+          "actuator_violation": 0.0,
+          "slew_violation": 0.0,
+          "terminal_box_violation_per_scenario": [
+            0.0,
+            0.0
+          ]
+        },
+        "scenario_trajectories": [
+          [
+            [
+              1.0,
+              -1.0
+            ],
+            [
+              2.5,
+              -1.75
+            ],
+            [
+              4.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              1.0,
+              -1.0
+            ],
+            [
+              -2.0,
+              1.25
+            ],
+            [
+              -4.0,
+              4.0
+            ]
+          ]
+        ],
+        "scope": "one shared schedule for enumerated constant maps only; no unlisted uncertainty or hardware guarantee",
+        "status": "primal_checked"
+      }
+    }
+  ],
+  "row_count": 28,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "FEASIBLE",
+      "input_sha256": "55f5da432b1a2af3fd541309879e19944f1edf986e0a0c8136c583f2fdba9db6",
+      "name": "J1",
+      "result": {
+        "controls": [
+          [
+            "1/2"
+          ]
+        ],
+        "reason": "exact shared schedule and independent replay",
+        "scenario_paths": [
+          [
+            [
+              "0/1"
+            ],
+            [
+              "1/2"
+            ]
+          ],
+          [
+            [
+              "0/1"
+            ],
+            [
+              "1/1"
+            ]
+          ]
+        ],
+        "status": "FEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "02c3be0e8eb03cc7cd8e4374cf074bcb4db58ec0685c5d3d9b1c7431fbda586f",
+      "name": "J1:outbound",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "51df55864bba91996740ac3bd3f424fe4dbfed75108a6a0f5bd5242905390f99",
+      "name": "J1:terminal",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f6dbcf306618644ae54fe3ddd590100975586efdb5e7fc74c5c772aea1547612",
+      "name": "J1:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "537cfea5bcdb9ff2e15d7286e6061eff37083fa7ac5e449f881acab99502a367",
+      "name": "J1:bool",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INFEASIBLE",
+      "input_sha256": "e5a45fa5846fb890d0dad161200371687da9f29ac2d5e3ae9db8ad8f46b1d154",
+      "name": "J2",
+      "result": {
+        "combined_rhs": "-1/1",
+        "reason": "strict Farkas contradiction",
+        "stationarity": [
+          "0/1"
+        ],
+        "status": "INFEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f6db191697e3558e53fc6b2959f3870e9a47eba38eb25c85e3928338a290ed1a",
+      "name": "J2:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "81fbc8db83dac82df353c372478625c36bfaad84abde77a2c5af4aa471d0f778",
+      "name": "J2:zeros",
+      "result": {
+        "combined_rhs": "0/1",
+        "reason": "noncontradictory multipliers",
+        "stationarity": [
+          "0/1"
+        ],
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a30778ca25d72a3b6641a96805d543af149266c8bddb2cccadb4bee8fcb9d73c",
+      "name": "J2:station",
+      "result": {
+        "reason": "nonstationary multipliers",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "1e206046ee6e52d68dfa4c01c4ebf90ab4d94de6fc16bd0a8883325cc2fc8a41",
+      "name": "J2:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INFEASIBLE",
+      "input_sha256": "85c347ceab6be25f394d8e51af75085ae7a243a0145f63c5dbe17fbe7197baa5",
+      "name": "J3",
+      "result": {
+        "combined_rhs": "-1/1",
+        "reason": "strict Farkas contradiction",
+        "stationarity": [
+          "0/1"
+        ],
+        "status": "INFEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "39f119c6cc3b08874b7359a9ec8e8b62d432dc4a61997541c92ad7eb4140024d",
+      "name": "J3:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "16fd3b4e0cb941ebb01c9f14fcca7898a41acebddcf59d05da33b92e605b9a53",
+      "name": "J3:zeros",
+      "result": {
+        "combined_rhs": "0/1",
+        "reason": "noncontradictory multipliers",
+        "stationarity": [
+          "0/1"
+        ],
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "490ade0559a651b7f2aa4578ca7959356d17a11148ccf461ece717f3135d8486",
+      "name": "J3:station",
+      "result": {
+        "reason": "nonstationary multipliers",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "28eb50a632bd0092f37c3bc8dc88fc4a3bd81dc004abc4c2958ae72362396d1b",
+      "name": "J3:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE",
+      "input_sha256": "3850dac32327bf3b8e380d4eaa45b0c07fbe1df4666cd5d6c2772d173d233a1f",
+      "name": "J4",
+      "result": {
+        "controls": [
+          [
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "1/2",
+            "-1/2"
+          ]
+        ],
+        "reason": "exact shared schedule and independent replay",
+        "scenario_paths": [
+          [
+            [
+              "1/1",
+              "-1/1"
+            ],
+            [
+              "7/4",
+              "-1/2"
+            ],
+            [
+              "4/1",
+              "1/1"
+            ]
+          ],
+          [
+            [
+              "1/1",
+              "-1/1"
+            ],
+            [
+              "-1/4",
+              "1/4"
+            ],
+            [
+              "-4/1",
+              "4/1"
+            ]
+          ]
+        ],
+        "status": "FEASIBLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "789b179901a1d2e53158fe599c2b157abaa4695c3adbef4c45c08b931faeba5c",
+      "name": "J4:outbound",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "40a32171f040d93647d58e63bf9a6636a5213b6f2d6b858bf52698a06b8782c2",
+      "name": "J4:terminal",
+      "result": {
+        "reason": "primal inequality violation",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "55de80ed085d2b3572f6f12d1f1be8119dcdaa40b90e780d44a72d86879ad8bd",
+      "name": "J4:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f82b2ec95d0da0d01625e260ae1a5d495d7da3602f6afad2a20022ecbc7c1b11",
+      "name": "J4:bool",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "72b8daa1d7f43829fa1fad130fd20d1531034a9709ee28fae978d63369e0d994",
+      "name": "control:missing",
+      "result": {
+        "reason": "missing witness",
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "238bb1a8b5877c0c81b9a795a3a5c0190ab047eba77fa082a6455234c3b18912",
+      "name": "control:floatdt",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b241a3cf77a874710f3dc0da39efefccf795e8476ae5d995ad28fb1904bb5cc2",
+      "name": "control:interval",
+      "result": {
+        "reason": "terminal interval",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "cbc30309388ae88e11cbd4ead55750b725d9e877744839c46184f1a467edc62f",
+      "name": "control:mapshape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "7298bc4ba47d4c42c7f54fc035923532eb64093f2d23714f4d5aad2d002ad55f",
+      "name": "control:badkind",
+      "result": {
+        "reason": "witness kind",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "83355350cc6db77eabdfe94404b17f5b0778e57e6317eb388853b1532d86b02d",
+      "name": "control:extrakey",
+      "result": {
+        "reason": "object keys",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "cb1e4431aa592cf5c12d76439f89c6b01358c26cc64b09da52159c13f7d3f5a2",
+      "name": "control:zerotime",
+      "result": {
+        "reason": "model bounds",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "57d07c8ba7391461a1145ae0c0b4c273453c285dbe0b9231331b431cabbad50b",
+      "name": "control:signedzero",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    }
+  ],
+  "scope": "supplied rational models, external certificates; descriptive floating status not proof"
+}
