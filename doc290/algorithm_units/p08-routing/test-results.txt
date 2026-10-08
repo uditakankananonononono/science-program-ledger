@@ -3,6 +3,7 @@ test_input_mutation_rejected_before_append (test_batch_qc.BatchTests) ... ok
 test_real_resume_and_retained_failure (test_batch_qc.BatchTests) ... ok
 test_zero_window_and_duplicate_sources (test_batch_qc.BatchTests) ... ok
 test_asymmetric_totals_and_expansion (test_chain_aggregate.AggregateTests) ... ok
+test_float_regrouping_changes_feasibility_documented (test_chain_aggregate.AggregateTests) ... ok
 test_invalid_vectors_and_overflow (test_chain_aggregate.AggregateTests) ... ok
 test_isolate_and_empty (test_chain_aggregate.AggregateTests) ... ok
 test_chain_cycle_and_isolate (test_chain_compress.CompressionTests) ... ok
@@ -65,6 +66,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 65 tests in 1.251s
+Ran 66 tests in 1.387s
 
 OK

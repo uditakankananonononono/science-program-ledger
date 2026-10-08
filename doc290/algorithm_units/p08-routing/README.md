@@ -277,3 +277,13 @@ are caller PRECONDITIONS, not enforced by the interface for arbitrary expand_rou
 results. Witness expansion is a representation operation, not universal route
 authority or validation. Integer-only comparisons do not validate exact floats;
 regrouping can change float totals and budget feasibility. No physiological claim.
+
+## Executable floating-point non-equivalence regression
+
+66 tests pass locally. A deliberately constructed anchor-junction graph has
+exposure sequence 1e16,1,1. Original sequential float addition rounds to 1e16;
+compression groups the latter two costs and yields 1.0000000000000002e16.
+At budget 1e16 original scalar/scenario-budget routes are feasible while compressed
+routes are not. Regression preserves this counterexample as a documented limitation,
+not an adapter correctness claim. Use integer-scaled costs for exact equivalence
+comparisons; no float feasibility guarantee. No kernel arithmetic changed.

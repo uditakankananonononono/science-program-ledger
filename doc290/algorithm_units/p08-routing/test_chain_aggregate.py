@@ -30,3 +30,20 @@ class AggregateTests(unittest.TestCase):
         result=exposure_budget_route(g,'a','a',0)
         self.assertEqual(expand_route(result,w),['a'])
         self.assertIsNone(expand_route(None,w))
+
+    def test_float_regrouping_changes_feasibility_documented(self):
+        # b is a junction/anchor; b-c-d is compressed independently of a-b.
+        g={'a':[Edge('b',1,1e16,(1,))],
+           'b':[Edge('a',1,1e16,(1,)),Edge('c',1,1.0,(1,)),Edge('x',1,1e16,(1,))],
+           'c':[Edge('b',1,1.0,(1,)),Edge('d',1,1.0,(1,))],
+           'd':[Edge('c',1,1.0,(1,))],'x':[Edge('b',1,1e16,(1,))]}
+        compressed,w=aggregate_chains(g)
+        original=exposure_budget_route(g,'a','d',1e16)
+        derived=exposure_budget_route(compressed,'a','d',1e16)
+        self.assertIsNotNone(original)
+        self.assertEqual(original['exposure'],1e16)
+        self.assertIsNone(derived)
+        original=budgeted_scenario_route(g,'a','d',1e16)
+        derived=budgeted_scenario_route(compressed,'a','d',1e16)
+        self.assertIsNotNone(original)
+        self.assertIsNone(derived)
