@@ -1,0 +1,29 @@
+You are a skeptical methods reviewer judging a computational study closure (numbers by an automated agent; treat nothing as vetted). perm=false means the real unpermuted run. Reply in under 300 words: (1) is the disposition (completed single fixed benchmark, not a WIN, not a gate failure) supported and is the wording honest, (2) biggest methodological weakness, (3) one stronger design. No flattery.
+
+CLOSURE:
+# Unit 173 - DEV benchmark closure
+
+Status: completed DEV benchmark under the parent-authorized lock. This is a single fixed benchmark, not a WIN claim and not a gate failure. No additional runs were conducted under this lock.
+
+## Locked protocol and run identity
+
+- Frozen preregistration SHA-256: `bcd9ce5aadb9c0557002710fa37e07209122f113ed101189aa76ea508cedb34a`
+- Frozen runner SHA-256: `86df729b55d27d774d7a00d2381e4b66b1473b95bfd0a8d28e4c4485696886f5`
+- Frozen split manifest SHA-256: `e292599ab9324b6d9f1bea6cbd1ef491ec542c52bfe90a6835b787e937c16ae5`
+- Input outer ZIP SHA-256: `f161da296e4d6adbf8cc2f5d78c9b9c924f7dcd290b6f4c27424841df644e991`
+- Runner-verified extracted CSV SHA-256: `9495d1100beaa24005ea951d4b6588186091de4c21cc45009b027f38f699b8ab`
+- Results JSON SHA-256: `882d7293e105527ab7aa952c771c94ed55373e02aa68837d50e4d768a715cbab`
+
+The runner verified the pinned input hash before fitting. The manifest partitions all 252 subject IDs without overlap. Pre-aggregation validation found 756 rows, exactly three same-label recordings per subject, and no missing values. Per the locked plan, the model aggregates recordings by subject mean, uses 752 measurement predictors (excluding ID, gender, and class), fits training-only standardization and one balanced L2 logistic regression, and evaluates once on the held-out participants.
+
+## Held-out DEV numbers
+
+- Participants: 252 total; train 201 (150 PD, 51 controls); test 51 (38 PD, 13 controls).
+- Primary participant-level ROC-AUC: **0.787449**.
+- Fixed 0.5 threshold: accuracy 0.647059; balanced accuracy 0.611336; sensitivity 0.684211; specificity 0.538462; F1 0.742857; MCC 0.200714.
+- Confusion matrix, rows true class 0/1 and columns predicted class 0/1: `[[7, 6], [12, 26]]`.
+- Runtime versions: Python 3.10.12, NumPy 2.2.6, pandas 2.3.3, scikit-learn 1.7.2.
+
+## Limits
+
+This is a small, single-site, single-split benchmark on pre-extracted sustained-vowel features, not clinical validation. The test set has only 13 controls, so specificity and related estimates are especially uncertain. The locked preregistration specified no baseline gate, confidence interval, or power requirement; accordingly, this completes the DEV benchmark and is neither a WIN claim nor a gate failure. No additional runs were conducted under this lock.
