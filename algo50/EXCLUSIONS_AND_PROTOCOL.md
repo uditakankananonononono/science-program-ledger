@@ -7,3 +7,5 @@ Open Government Licence v3.0 (UK) joins the allow-list (CC0, CC BY, ODC-By) as a
 
 ## License amendment (2026-10-08 13:24 IST, main ruling) - CC BY-NC
 CC BY-NC is admitted for strictly non-commercial research use with attribution, with the non-commercial restriction recorded in every affected prereg and row. This REVERSES the earlier standing rule that non-commercial licenses are dropped (ODbL and statutory restrictions remain dropped; CC BY-SA still needs an explicit user yes). Where the repository record and the packaged dataset files disagree on license, the packaged statement governs and the conflict is disclosed verbatim. Registry note: no dataset bytes or derived data from an NC unit may be redistributed or used commercially; only code, hashes and result summaries go into the repo.
+
+Reversal record (2026-10-08 13:24 IST): the earlier NC-drop rule is superseded house-wide by main's ruling (reason: research-use fit). Conditions, restated in every NC unit's prereg: non-commercial use only, attribution, no redistribution of dataset bytes or derived data in any repo (code, hashes and result summaries only).
