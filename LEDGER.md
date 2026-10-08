@@ -9,3 +9,5 @@ Governing lock SHA-256 (original + A-1 + A-2): 204cef2b6e0bd93ebbb73a87647624995
 Independent audit: APPROVE, zero defects.
 Drive folder: https://drive.google.com/drive/folders/1Fjy2ADFxBpqlIPAlRsfWKmEmaHlOwzIC
 Data pack SHA-256: 82b162f8c5c88d970935cc499bf6e0cc53b70bd3f149f54ff7f23165c51ad0f5
+
+|161|SWIFTIES15172815(displayedv5) recording-originEMG fatigue/exertion|DROPPED-DEV-candidates:noTEST.RPEassumedzero-origin16subjects849rows protocolridgeMAE1.7485vsEMGdrift1.9493,gain-.2008CI[-.3362,-.0352], all5offsetscenarioslosing; synchronizationunresolved.EnduranceprefixSECONDLOOK125tasks baselineMAE42.1326s vs42.2607s,gain-.1281CI[-5.9077,5.9161],observed-effectpower.0237; headroomreal,nomethodwin.BothPERM noskill, nofakeWIN.Healthyadultlab/no causal,clinical or synchronizedenduranceclaim.NoTEST/push.Finaladvisoryjudgepending.|DEV-onlyprotocol/codehashlockb6f1ed33.../4b2cd767...;noTESTlock|
