@@ -8,7 +8,7 @@ actuators permit separate weights, so the integral set is a Cartesian box. Under
 constant B, terminal increment is B times this integral vector. No target search
 or joint feasibility solver implemented; caller supplies candidate integrals.
 
-49 local dev methods pass (45 prior + 4): exact midpoint schedule, zero-slew degenerate
+49 local dev methods pass (45 prior + 4): exact interior schedule, zero-slew degenerate
 interval, independent actuator mixtures and B-integral versus full-schedule terminal
 identity, and outside/float refusal. Exact rational replay/bounds checked internally.
 Returns Fractions, not JSON-ready. Fraction growth unprofiled. Only supplied rational

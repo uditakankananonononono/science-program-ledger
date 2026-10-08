@@ -2,7 +2,7 @@ import unittest
 from fractions import Fraction as F
 from integral_lift import lift
 class LiftTests(unittest.TestCase):
-    def test_midpoint_exact(self):
+    def test_interior_exact(self):
         r=lift([1,1],[2],['1/2'],[0],['3/4'])
         self.assertEqual(r['controls'],[[F(1,4)],[F(1,2)]]);self.assertEqual(r['mixing_weights'],[F(3,4)])
     def test_degenerate_zero_slew(self):
