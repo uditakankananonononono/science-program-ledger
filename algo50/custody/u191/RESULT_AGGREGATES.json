@@ -1,0 +1,9 @@
+{"unit":191,"results_json_sha256":"e92720452282ca96e4da16ba1ba0d82ea3e704bdeb0946b775d6afd414d0c516","note":"results.json and split_manifest.json (patient-level) kept in private custody, not in repo",
+"split_manifest_sha256":"fcc31bad5de5057fcd34cb01dd0034401c61e2e5bee7a7627a98585279a07413",
+"n_dev":53636,"n_test":17878,"test_pos":2714,"test_neg":15164,
+"test_auc":{"candidate":0.70429993651333,"lgbm":0.7235422923081021,"demographic":0.6348604192297352},
+"delta_candidate_minus_lgbm":-0.01924235579477207,"bootstrap_ci95_lgbm":[-0.025403080679376015,-0.01306414408818877],"bootstrap_ci95_demographic":[0.06079184023582164,0.07865902922327653],"bootstraps":2000,
+"sens_age_bin_change_excluded_auc":{"candidate":0.7071516537109345,"lgbm":0.725944774805664,"demographic":0.6387451703862155,"delta_vs_lgbm":-0.018793121094729526,"ids_excluded_dev":1184,"ids_excluded_test":388},
+"sens_all23_meds_excluded_auc":{"candidate":0.6970550499991545,"lgbm":0.7197876418512059,"demographic":0.6348604192297352,"delta_vs_lgbm":-0.022732591852051454},
+"test_label_shuffle_auc":{"candidate":0.5053067182737224,"lgbm":0.5028857058187886,"demographic":0.5046951536694265},
+"dev_auc":{"candidate":0.7109443537,"lgbm":0.7322285852,"demographic":0.6396590208},"win_threshold":0.03,"win":false}

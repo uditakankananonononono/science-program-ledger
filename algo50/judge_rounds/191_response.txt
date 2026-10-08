@@ -1,0 +1,12 @@
+Verdict: FAIL as a candidate-win claim; usable as a conservative comparator-negative result.
+
+Fairness / tuning: Not classifier-class parity. The candidate is logistic regression while the main comparator is LightGBM, so the comparison mixes representation + classifier capacity. The candidate also had no grid, but neither did LightGBM; that is not tuning asymmetry so much as a deliberately unequal model-class comparison. The demographic LR is a fairer classifier-class comparison and the candidate beats it by ~0.062–0.069 AUC. Against the locked strongest comparator, however, candidate loses: .70430 vs .72354, CI for difference entirely below 0. The gap cannot be attributed solely to representation.
+
+Leakage: The stated medication sensitivity is reassuring but does not prove that all HF-therapy medication proxies were removed; it only shows the result after excluding all 23 medications. Diagnosis-code leakage is more serious: HF is literally defined from ICD-9 428 in diag_1–3, so any diagnosis-derived predictor containing that information would be direct target leakage. The supplied description does not establish that all diagnosis codes were excluded from features. ID-integrity and age-bin sensitivities preserve the negative candidate-vs-LightGBM gap, but they do not establish absence of leakage.
+The test labels loaded into memory are a protocol violation/credibility defect, even with the builder's assertion that nothing escaped. It prevents an unconditional “strictly label-blind frozen run” claim. The prereg lock timing is also not fully provable.
+
+Claim scope: Must stay strictly at concurrent coding/association within this extract. No temporal, predictive, causal, clinical, site-generalization, or chronological wording is justified. “One encounter” is selection by lowest numeric encounter_id, not evidence of earliest encounter.
+
+Exact ledger wording:
+
+“Candidate did not beat the locked comparator for concurrent HF coding association within this UCI extract: TEST AUROC 0.70430 vs LightGBM 0.72354 (Δ −0.01924, paired person-bootstrap 95% CI −0.02540 to −0.01306; WIN threshold 0.03 not met). Candidate exceeded the age/sex/race LR by 0.0693 AUC. Medication-exclusion and ID-integrity sensitivities preserved the comparator advantage. Interpretation is restricted to concurrent coding/association within this extract; no chronology, site, clinical, causal, or temporal inference.”
