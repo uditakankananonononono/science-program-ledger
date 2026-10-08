@@ -1,0 +1,246 @@
+{
+  "source_commit": "1a0364c7509468dde0df86b4a82a8d8546b45818",
+  "inventory_paths_sha256": "9ea8d2cccc974317b7bb7a7795714263c180f56d58077e34b1abdf1320682662",
+  "selection": [
+    {
+      "robot": "cube",
+      "split": "test",
+      "source_prefix": "Cube2",
+      "frame_token": "000008",
+      "image": "cube/images/test/Cube2-000008.png",
+      "label": "cube/labels/test/Cube2-000008.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "cube",
+      "split": "train",
+      "source_prefix": "Cube2",
+      "frame_token": "000001",
+      "image": "cube/images/train/Cube2-000001.png",
+      "label": "cube/labels/train/Cube2-000001.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "cube",
+      "split": "val",
+      "source_prefix": "Cube2",
+      "frame_token": "000000",
+      "image": "cube/images/val/Cube2-000000.png",
+      "label": "cube/labels/val/Cube2-000000.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "cylinder",
+      "split": "test",
+      "source_prefix": "Cylinder",
+      "frame_token": "000006",
+      "image": "cylinder/images/test/Cylinder-000006.png",
+      "label": "cylinder/labels/test/Cylinder-000006.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "cylinder",
+      "split": "train",
+      "source_prefix": "Cylinder",
+      "frame_token": "000000",
+      "image": "cylinder/images/train/Cylinder-000000.png",
+      "label": "cylinder/labels/train/Cylinder-000000.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "cylinder",
+      "split": "val",
+      "source_prefix": "Cylinder",
+      "frame_token": "000002",
+      "image": "cylinder/images/val/Cylinder-000002.png",
+      "label": "cylinder/labels/val/Cylinder-000002.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "flagella",
+      "split": "test",
+      "source_prefix": "flagela",
+      "frame_token": "000001",
+      "image": "flagella/images/test/flagela-000001.png",
+      "label": "flagella/labels/test/flagela-000001.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "flagella",
+      "split": "train",
+      "source_prefix": "flagela",
+      "frame_token": "000002",
+      "image": "flagella/images/train/flagela-000002.png",
+      "label": "flagella/labels/train/flagela-000002.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "flagella",
+      "split": "val",
+      "source_prefix": "flagela",
+      "frame_token": "000008",
+      "image": "flagella/images/val/flagela-000008.png",
+      "label": "flagella/labels/val/flagela-000008.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "helical",
+      "split": "test",
+      "source_prefix": "helical1",
+      "frame_token": "000012",
+      "image": "helical/images/test/helical1-000012.png",
+      "label": "helical/labels/test/helical1-000012.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "helical",
+      "split": "train",
+      "source_prefix": "helical1",
+      "frame_token": "000007",
+      "image": "helical/images/train/helical1-000007.png",
+      "label": "helical/labels/train/helical1-000007.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "helical",
+      "split": "val",
+      "source_prefix": "helical1",
+      "frame_token": "000006",
+      "image": "helical/images/val/helical1-000006.png",
+      "label": "helical/labels/val/helical1-000006.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "rollingcube",
+      "split": "test",
+      "source_prefix": "cubeR",
+      "frame_token": "000002",
+      "image": "rollingcube/images/test/cubeR-000002.png",
+      "label": "rollingcube/labels/test/cubeR-000002.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "rollingcube",
+      "split": "train",
+      "source_prefix": "cubeR",
+      "frame_token": "000000",
+      "image": "rollingcube/images/train/cubeR-000000.png",
+      "label": "rollingcube/labels/train/cubeR-000000.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "rollingcube",
+      "split": "val",
+      "source_prefix": "cubeR",
+      "frame_token": "000003",
+      "image": "rollingcube/images/val/cubeR-000003.png",
+      "label": "rollingcube/labels/val/cubeR-000003.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "sheetrobot",
+      "split": "test",
+      "source_prefix": "Sheet",
+      "frame_token": "000001",
+      "image": "sheetrobot/images/test/Sheet-000001.png",
+      "label": "sheetrobot/labels/test/Sheet-000001.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "sheetrobot",
+      "split": "train",
+      "source_prefix": "Sheet",
+      "frame_token": "000002",
+      "image": "sheetrobot/images/train/Sheet-000002.png",
+      "label": "sheetrobot/labels/train/Sheet-000002.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "sheetrobot",
+      "split": "val",
+      "source_prefix": "Sheet",
+      "frame_token": "000007",
+      "image": "sheetrobot/images/val/Sheet-000007.png",
+      "label": "sheetrobot/labels/val/Sheet-000007.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "sphere1",
+      "split": "test",
+      "source_prefix": "Robot1",
+      "frame_token": "000000",
+      "image": "sphere1/images/test/Robot1-000000.png",
+      "label": "sphere1/labels/test/Robot1-000000.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "sphere1",
+      "split": "train",
+      "source_prefix": "Robot1",
+      "frame_token": "000001",
+      "image": "sphere1/images/train/Robot1-000001.png",
+      "label": "sphere1/labels/train/Robot1-000001.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "sphere1",
+      "split": "val",
+      "source_prefix": "Robot1",
+      "frame_token": "000003",
+      "image": "sphere1/images/val/Robot1-000003.png",
+      "label": "sphere1/labels/val/Robot1-000003.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "sphere3",
+      "split": "test",
+      "source_prefix": "Robot3",
+      "frame_token": "002578",
+      "image": "sphere3/images/test/Robot3-002578.png",
+      "label": "sphere3/labels/test/Robot3-002578.txt",
+      "label_inventory_present": true,
+      "overlay": true
+    },
+    {
+      "robot": "sphere3",
+      "split": "train",
+      "source_prefix": "Robot3",
+      "frame_token": "002579",
+      "image": "sphere3/images/train/Robot3-002579.png",
+      "label": "sphere3/labels/train/Robot3-002579.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    },
+    {
+      "robot": "sphere3",
+      "split": "val",
+      "source_prefix": "Robot3",
+      "frame_token": "002592",
+      "image": "sphere3/images/val/Robot3-002592.png",
+      "label": "sphere3/labels/val/Robot3-002592.txt",
+      "label_inventory_present": true,
+      "overlay": false
+    }
+  ]
+}
