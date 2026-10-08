@@ -1,0 +1,41 @@
+Pre and post contact characterization of electro-adhesive pressure with submillimeter interdigitated electrodes.
+
+Authors: Sylvain Schaller and Prof. Herbert Shea
+
+This README presents the structure of the data acquired for this paper and an explanation of the namings of the different files.
+
+Structure:
+A) ElectroAdhesion force measurements
+	I) Conductive object
+		csv files of measurements
+	II) Dielectric object
+		csv files of measurements
+
+B) ACDC Adhesion, releasing, residual pressure results
+csv files of measurements
+
+
+the format for csv files measurements is the following:
+Ex: 1_A1_20um_20um_6um_0.00V_cond_AC_sym_5.00Hz_0sdelay
+"1": index of the patch on the wafer
+"A1": id of wafer based on designed A
+"20um": width of interdigitated electrodes on the patch
+"20um": gap between interdigitated electrodes on the patch
+"6um": thickness of the insulating material (P(VDF-TrFE-CTFE))
+"0.00V": Voltage
+"cond": measure on conductive object
+"AC": AC signal supplied
+"sym": the signal was symetric
+"5.00Hz": frequency
+"0sdelay": the delay once the contact is made between the patch and the object is 0 second
+
+On each csv file, we recorded 3 informations corresponding respectively to the 3 columns in the file:
+- The relative time value. On the graphs we rescaled every time period to start at 0 by subtracting the first time value on every lines.
+- The relative position of the sensor (object). Again we rescaled it to 0 for the position.
+- The force value where positive value correspond to tension stress (EA force) of the sensor and negative value to compression stress (when the sensor is pushing on the patch).
+  We computed and used the pressure value by dividing the value by 25 corresponding to the surface of the object (25 mm2)
+
+The data labeled at 0.00 V correspond to the measurement at 0V done BEFORE the voltage measurement in order to ensure that no residual pressure would influence the measurement.
+The one labeled at 1.00 V correspond to the measurement at 0V done AFTER the voltage measurement in order to record residual pressure.
+
+

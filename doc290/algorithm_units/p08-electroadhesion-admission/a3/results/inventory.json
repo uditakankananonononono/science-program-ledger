@@ -1,0 +1,215 @@
+{
+  "status": "literal_UTF8_CR_LF_line_inventory",
+  "lines": [
+    {
+      "line_ordinal_1based": 1,
+      "text": "Pre and post contact characterization of electro-adhesive pressure with submillimeter interdigitated electrodes.",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 2,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 3,
+      "text": "Authors: Sylvain Schaller and Prof. Herbert Shea",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 4,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 5,
+      "text": "This README presents the structure of the data acquired for this paper and an explanation of the namings of the different files.",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 6,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 7,
+      "text": "Structure:",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 8,
+      "text": "A) ElectroAdhesion force measurements",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 9,
+      "text": "\tI) Conductive object",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 10,
+      "text": "\t\tcsv files of measurements",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 11,
+      "text": "\tII) Dielectric object",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 12,
+      "text": "\t\tcsv files of measurements",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 13,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 14,
+      "text": "B) ACDC Adhesion, releasing, residual pressure results",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 15,
+      "text": "csv files of measurements",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 16,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 17,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 18,
+      "text": "the format for csv files measurements is the following:",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 19,
+      "text": "Ex: 1_A1_20um_20um_6um_0.00V_cond_AC_sym_5.00Hz_0sdelay",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 20,
+      "text": "\"1\": index of the patch on the wafer",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 21,
+      "text": "\"A1\": id of wafer based on designed A",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 22,
+      "text": "\"20um\": width of interdigitated electrodes on the patch",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 23,
+      "text": "\"20um\": gap between interdigitated electrodes on the patch",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 24,
+      "text": "\"6um\": thickness of the insulating material (P(VDF-TrFE-CTFE))",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 25,
+      "text": "\"0.00V\": Voltage",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 26,
+      "text": "\"cond\": measure on conductive object",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 27,
+      "text": "\"AC\": AC signal supplied",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 28,
+      "text": "\"sym\": the signal was symetric",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 29,
+      "text": "\"5.00Hz\": frequency",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 30,
+      "text": "\"0sdelay\": the delay once the contact is made between the patch and the object is 0 second",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 31,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 32,
+      "text": "On each csv file, we recorded 3 informations corresponding respectively to the 3 columns in the file:",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 33,
+      "text": "- The relative time value. On the graphs we rescaled every time period to start at 0 by subtracting the first time value on every lines.",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 34,
+      "text": "- The relative position of the sensor (object). Again we rescaled it to 0 for the position.",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 35,
+      "text": "- The force value where positive value correspond to tension stress (EA force) of the sensor and negative value to compression stress (when the sensor is pushing on the patch).",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 36,
+      "text": "  We computed and used the pressure value by dividing the value by 25 corresponding to the surface of the object (25 mm2)",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 37,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 38,
+      "text": "The data labeled at 0.00 V correspond to the measurement at 0V done BEFORE the voltage measurement in order to ensure that no residual pressure would influence the measurement.",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 39,
+      "text": "The one labeled at 1.00 V correspond to the measurement at 0V done AFTER the voltage measurement in order to record residual pressure.",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 40,
+      "text": "",
+      "terminator": "CRLF"
+    },
+    {
+      "line_ordinal_1based": 41,
+      "text": "",
+      "terminator": "CRLF"
+    }
+  ],
+  "empty_original": false,
+  "final_terminator": "CRLF",
+  "raw_sha256_discovered": "bd671c4ccd557793b1b0d7fb3ee6eeaf71b3013f38e258f0ed1113d3725e0f63",
+  "raw_bytes": 2101,
+  "grammar": "Only CRLF/CR/LF delimit lines; VT/FF/NEL/U+2028/U+2029 remain literal. No fictitious empty line after final delimiter; blank delimited lines preserved."
+}

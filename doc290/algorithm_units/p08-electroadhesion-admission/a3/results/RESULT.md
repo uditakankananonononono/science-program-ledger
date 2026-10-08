@@ -1,0 +1,23 @@
+# A3 sole README raw text + manual ledger, no classification
+
+Prereg d43922edf7c6d9c9dfdca7dbc368cc04bd030d6d and freeze
+99d4d1353ade2186e85ecf249ed78acbcbd87db1 published/readback before member read.
+Document-reported chronology,notindependenthistoricalattestation.
+
+All original gates PASS:size627211731B/MD559a1ca596587186d2da93c6cad3aa02f/SHA256
+e119e77c52ecb8e3e5c2590da69c2b0ed11f45fd7b1ed83fa12b609d2d8d4bd5 beforefull
+boundedscanner;completeentry673fields/ordinalmatch;ONLYselectedZipInfoopen;complete
+EOF CRC+2101bytes;postreadfullhash+fstatstableBEFOREANYlines. NoCSVbodyreads/fallback.
+StrictUTF8inventory41CRLFlines,blanklines/finalCRLFpreserved. READMEnewSHA256
+bd671c4ccd557793b1b0d7fb3ee6eeaf71b3013f38e258f0ed1113d3725e0f63 discoverynotprepin.
+
+ManualREADMEledgercomplete. Usefulliteral3column/sign/25mm2area/filenamelabelclaims,
+notCSVschema/forceunits/time/sampling/independence/physiologytruth. CRITICALbaseline
+claimL39:1.00Vfilename means0VAFTERdrive,residualbaseline,notphysical1V;L38 0.00V
+beforebaseline. 0sdelayREADMEexamplevs0secactualnamesandforce/pressurefolderwording
+preservedunrepaired. No pressureconversion/forcefit/datarepair/physicalendpoint.
+
+STOPbeforeclassification;onlyseparateCSV-selectionpreregmaypermitfixedsubsetread.
+No invention/rights/physiologycredit,noA3failedscienceorP08-08closure.
+Two retained-original replays,README.raw+inventory+manifest byte-identical. Unchanged
+frozenexecutable;replayauthenticatesdeterministictextreproduction,notCSVtruth/chronology.
