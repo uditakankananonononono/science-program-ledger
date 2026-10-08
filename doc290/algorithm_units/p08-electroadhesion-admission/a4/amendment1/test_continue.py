@@ -15,7 +15,7 @@ def fixture(root):
  scanner.dump(root/'inputs.json',rs);return archive,scratch,sel,rs
 def setup(root):
  archive,scratch,sel,rs=fixture(root);stage=root/'stage';stage.mkdir();keypath=root/'key';keypath.write_bytes(b'x'*32)
- w.save(stage,{'type':w.TYPE,'pins':w.codepins(),'raw_records':rs,'members':[]},keypath.read_bytes());return archive,scratch,sel,rs,stage,keypath
+ w.save(stage,{'type':w.TYPE,'pins':w.codepins(),'raw_records':rs,'source_verified_ordinals':[],'members':[]},keypath.read_bytes());return archive,scratch,sel,rs,stage,keypath
 # isolated invocation with fixture selection, while preserving all algorithm gates
 class PatchConfig:
  def __init__(self,sel):self.sel=sel
@@ -32,6 +32,7 @@ class Tests(unittest.TestCase):
   with tempfile.TemporaryDirectory() as d:
    root=Path(d);archive,scratch,sel,rs,stage,key=setup(root)
    with PatchConfig(sel):
+    for _ in range(15):w.run(stage,scratch,archive,key,'source')
     for i in range(15):r=w.run(stage,scratch,archive,key,'batch');self.assertLessEqual(r['members_processed_this_call'],3)
     w.run(stage,scratch,archive,key,'final',root/'success')
    old.analyze_transaction(rs,sel,scratch,root/'original')
@@ -39,7 +40,9 @@ class Tests(unittest.TestCase):
  def test_coherent_mutation_reject(self):
   with tempfile.TemporaryDirectory() as d:
    root=Path(d);archive,scratch,sel,rs,stage,key=setup(root)
-   with PatchConfig(sel):w.run(stage,scratch,archive,key,'batch')
+   with PatchConfig(sel):
+    for _ in range(15):w.run(stage,scratch,archive,key,'source')
+    w.run(stage,scratch,archive,key,'batch')
    doc=json.loads((stage/'state.json').read_text());doc['payload']['members'][0]['line_count']=999
    scanner.dump(stage/'state.json',doc)
    with PatchConfig(sel):
@@ -48,7 +51,9 @@ class Tests(unittest.TestCase):
   for append in (b'x',b'\x1f\x8b\x08'+b'junk',b''):
    with tempfile.TemporaryDirectory() as d:
     root=Path(d);archive,scratch,sel,rs,stage,key=setup(root)
-    with PatchConfig(sel):w.run(stage,scratch,archive,key,'batch')
+    with PatchConfig(sel):
+     for _ in range(15):w.run(stage,scratch,archive,key,'source')
+     w.run(stage,scratch,archive,key,'batch')
     p=next(stage.glob('*.gz'));raw=p.read_bytes();p.write_bytes(raw+append if append else raw[:-1])
     with PatchConfig(sel):
      with self.assertRaises(ValueError):w.run(stage,scratch,archive,key,'final',root/'success')
@@ -66,9 +71,21 @@ class Tests(unittest.TestCase):
   with tempfile.TemporaryDirectory() as d:
    root=Path(d);archive,scratch,sel,rs,stage,key=setup(root)
    with PatchConfig(sel):
+    for _ in range(15):w.run(stage,scratch,archive,key,'source')
     for i in range(15):w.run(stage,scratch,archive,key,'batch')
    archive.write_bytes(b'x'+archive.read_bytes()[1:])
    with PatchConfig(sel):
     with self.assertRaises(ValueError):w.run(stage,scratch,archive,key,'final',root/'success')
+   self.assertFalse((root/'success').exists())
+ def test_coherent_preinit_swap(self):
+  with tempfile.TemporaryDirectory() as d:
+   root=Path(d);archive,scratch,sel,rs,stage,key=setup(root)
+   for r in rs:
+    (scratch/r['scratch_filename']).write_bytes(b'Z,Z\r\n');r['raw_sha256_discovered']=scanner.sha(b'Z,Z\r\n')
+   scanner.dump(root/'inputs.json',rs)
+   w.save(stage,{'type':w.TYPE,'pins':w.codepins(),'raw_records':rs,'source_verified_ordinals':[],'members':[]},key.read_bytes())
+   with PatchConfig(sel),patch.object(w,'replay',side_effect=AssertionError('text trap')):
+    with self.assertRaises(ValueError):w.run(stage,scratch,archive,key,'source')
+    with self.assertRaises(ValueError):w.run(stage,scratch,archive,key,'batch')
    self.assertFalse((root/'success').exists())
 if __name__=='__main__':unittest.main()

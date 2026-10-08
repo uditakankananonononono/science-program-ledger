@@ -56,7 +56,7 @@ def run(stage,rawdir,archive,keypath,mode,destination=None):
  if mode=='init':
   if stage.exists() or keypath.exists():raise ValueError('fresh stage/key required')
   stage.mkdir();keypath.write_bytes(os.urandom(32));keypath.chmod(0o600);key=keypath.read_bytes()
-  save(stage,{'type':TYPE,'pins':codepins(),'raw_records':rs,'members':[]},key);return {'status':'initialized_only','new_analysis':False}
+  save(stage,{'type':TYPE,'pins':codepins(),'raw_records':rs,'source_verified_ordinals':[],'members':[]},key);return {'status':'initialization_pending_source_binding_NO_analysis','new_analysis':False}
  payload,key=load(stage,keypath)
  if payload['raw_records']!=rs:raise ValueError('raw receipt changed')
  valid={r['ordinal_1based']:r for r in rs}
@@ -64,6 +64,29 @@ def run(stage,rawdir,archive,keypath,mode,destination=None):
   if c['ordinal_1based'] not in valid or any(c[k]!=valid[c['ordinal_1based']][k] for k in valid[c['ordinal_1based']]):raise ValueError('foreign/mismatched checkpoint')
   if old.file_sha(stage/c['inventory_filename'])!=c['inventory_sha256']:raise ValueError('checkpoint gzip altered after replay receipt')
  if sum(c['line_count'] for c in payload['members'])>sel['max_total_lines']:raise ValueError('replay-receipted total line cap')
+ if mode=='source':
+  verified=payload['source_verified_ordinals']
+  if len(set(verified))!=len(verified) or any(o not in valid for o in verified):raise ValueError('source receipt coverage')
+  todo=[r for r in rs if r['ordinal_1based'] not in verified][:3]
+  with Path(archive).open('rb') as f:
+   old.identity(f,sel);state=os.fstat(f.fileno())
+   with old.zipfile.ZipFile(f,'r') as z:
+    infos=z.infolist()
+    for r in todo:
+     size=0;sh=hashlib.sha256();info=infos[r['ordinal_1based']-1]
+     if info.filename!=r['filename']:raise ValueError('source ordinal')
+     with z.open(info,'r') as member:
+      while True:
+       b=member.read(min(65536,sel['max_member_bytes']-size+1))
+       if not b:break
+       size+=len(b);sh.update(b)
+       if size>sel['max_member_bytes']:raise ValueError('source cap')
+     if size!=r['raw_bytes'] or sh.hexdigest()!=r['raw_sha256_discovered']:raise ValueError('source-to-scratch mismatch BEFORE any text')
+   old.identity(f,sel)
+   if state!=os.fstat(f.fileno()):raise ValueError('source archive metadata changed')
+  verified.extend(r['ordinal_1based'] for r in todo);save(stage,payload,key)
+  return {'status':'source_binding_complete_NO_text' if len(verified)==len(rs) else 'source_binding_pending_NO_text','verified_members':len(verified),'processed_this_call':len(todo)}
+ if payload['source_verified_ordinals']!=[r['ordinal_1based'] for r in rs]:raise ValueError('initialization incomplete: all45 source-to-raw bindings required')
  if mode=='batch':
   done={c['ordinal_1based'] for c in payload['members']};todo=[r for r in rs if r['ordinal_1based'] not in done][:3]
   # Each newly made inventory is literal replay output; verify independent second replay <=3 members total.
