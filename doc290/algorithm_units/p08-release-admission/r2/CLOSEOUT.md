@@ -1,0 +1,20 @@
+# R2 terminal closeout: endpoint unclassified,not science failure
+
+Identity PASS:originalTable6.xls5632bytes+MD55865634d32816186133e426c559bcd29verified.
+Transport PASS after reviewed amendments1+2:amend1allowedboundedredirects/publicIP
+pinning;amend2finiteoncevalidatedaddressfailover. ONEamend2fetchfollowedone302to200,
+addressfailures/successesretained. Original302andamend1IPv6unavailablerecordsunmodified.
+Static parser PASS:unchangedfrozenxlrdparseoneTable6sheet10x5,cachedinventoryONLY;
+not formulaabsence/recalculation/measurementclaim,not endpointinterpretation.
+Visual gate SCOPED UNAVAILABLE:originalXLSviewerunsupported,installedLO7.3BIFF
+no-recalcguaranteenotverified;no sourceOfficeopen/render/nativepixelscompleted.
+Endpoint UNCLASSIFIED:explicitly NOT evidence-binding rejection of release kinetics,
+NOT science failure. No originalnativeheader/coordinatevisualbinding or manual
+scientificendpointclassification. No pHtarget-feeder or kinetics-latencyconversion,
+control/physiology/rights/inventioncredit. No closureofallP08-09.
+
+Reviewerconfirmed3e5466beidentity/retainedcopies/frozenparserreplayandLOrecalcgap.
+Chronologydocument-reported,replayreproducibilitynotordering. Originalbytesreadonly
+inworkflow,neverexecuted;parserpostparsecapsnotallocation/peakguarantees. Prior
+RESULT.mdtransport-unavailabledescribespriorattemptonly,notthesuccessfulamend2state.
+Thiscloseoutis authoritative terminalstateforR2,not replacementofthehonesthistory.
