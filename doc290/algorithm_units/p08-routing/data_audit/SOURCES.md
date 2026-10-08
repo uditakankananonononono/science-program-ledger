@@ -151,3 +151,14 @@ chains; FIVES 23,952 become 502/702; FOVEA 10,964 become 278/417. Every original
 undirected edge is represented exactly once. Compressed multigraph cycle ranks
 match 566/203/140; this is pixel topology, not biological loops or performance.
 No extraction, masks, routing or QC gates changed.
+
+## Exact thinning reproduction independent verdict
+
+VERIFIED exact thinning reproduction for these 3 hashed annotation masks ONLY:
+HRF 01_h, FIVES train 100_A, FOVEA001_i_ve_1. Independent review in a fresh pinned
+environment checked original byte hashes, channel/binary contracts and external
+Zhang thinning, matching all three delivered bool hashes. This closes exact
+reproduction uncertainty for those masks only. Still NO anatomical/biological
+fidelity, correct vessel-crossing topology, scientific validation, or whole-QC
+certification. Real-chain partition verdict is scoped to reproduced-equivalent
+skeletons, not biological correctness.

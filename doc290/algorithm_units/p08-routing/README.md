@@ -232,3 +232,14 @@ collapsed. Tests check original-edge coverage exactly once across all 512 3x3
 masks at both connectivities plus chain/cycle/isolate fixtures. This representation
 is separate from the simple-graph topology API and is not passed to the routing
 kernels. No cost aggregation, physical length, physiology or novelty claim.
+
+## Original chain edge-cost serialization
+
+62 test methods pass locally. chain_costs serializes each existing directed edge's
+original time, exposure and scenario vector along both directions of every chain.
+No costs are inferred, averaged or aggregated. Asymmetric directed costs retained;
+pure-cycle directions remain distinguishable by step sequence. All 1024 small
+mask/connectivity cases check exact directed-edge/cost coverage, plus asymmetric
+and cycle/isolate fixtures. Still not an aggregated routing input: interior query
+endpoints and turn constraints are unresolved. Earlier chain-only representation
+is topologically lossless only; this separate wrapper adds per-step costs.
