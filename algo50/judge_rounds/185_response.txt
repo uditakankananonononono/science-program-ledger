@@ -1,0 +1,7 @@
+Label: Defensible, but only narrowly. “Conditional admission as a preprocessed-source dataset, conflicts in scope” is more accurate than “limited-availability.” The dataset is actually available and sufficiently parseable for DEV work; the problem is provenance/scope uncertainty, not mere availability. However, “admission” must not imply that the scientific metadata are validated.
+
+Biggest risk: Confounding and irreproducible preprocessing could masquerade as SZ-vs-HC signal. The severe sex imbalance, age discrepancies, missing EO recordings, undocumented rereferencing, and contradiction between the stated pipeline and the validation-section ASR/FIR claims create multiple routes for classifier performance to reflect acquisition/preprocessing artifacts rather than schizophrenia. The unequal recording lengths add another possible shortcut.
+
+Required builder precaution: Treat the released MAT files as the immutable analysis source and explicitly model/audit subject-level acquisition metadata before classification. Do not reconstruct “raw” EEG or silently apply the paper's alternative ASR/FIR description. Lock preprocessing exactly as observed, verify channel/sample-rate conventions independently, enforce subject-level splits, and report performance stratified or adjusted for sex, age, and EO/EC availability. Any classifier result should remain conditional until the unresolved headroom/comparator gate is passed.
+
+Verdict: Conditional admission is justified; scientific validity is not yet established.
