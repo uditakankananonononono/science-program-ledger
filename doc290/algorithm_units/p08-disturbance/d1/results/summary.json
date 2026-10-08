@@ -1,0 +1,24 @@
+{
+  "freeze": "63c10afc2d997aeb6ad453de81bc70f485bd2455",
+  "rows": 10,
+  "raw_sha256": "2756aa7b62aa66ee9e9054b3f7ed34efdacd0f2524c96699bff1def5fef18123",
+  "manifest_sha256": "3f2fc6129db09e71a8c855a6459d5532e1543c2220216f7e7e8b7362d1485c4e",
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-6.1.158+-x86_64-with-glibc2.35",
+    "scored_at": "2026-10-08T22:07:59.792704+05:30"
+  },
+  "outcomes": {
+    "terminal_miss": 4,
+    "success": 6
+  },
+  "per_policy": {
+    "proportional": {
+      "terminal_miss": 4,
+      "success": 1
+    },
+    "sign": {
+      "success": 5
+    }
+  }
+}
