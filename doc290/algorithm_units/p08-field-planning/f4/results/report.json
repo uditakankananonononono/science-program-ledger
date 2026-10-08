@@ -1,0 +1,446 @@
+{
+  "agreement_count": 26,
+  "baseline": [
+    {
+      "name": "R1",
+      "result": {
+        "controls": [
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        "integrals": [
+          -0.0,
+          1.0
+        ],
+        "lp_variables": 2,
+        "residuals": {
+          "actuator": 0.0,
+          "integral_replay": 0.0,
+          "slew": 0.0,
+          "solver_integral_clamp": 0.0,
+          "terminal": 0.0
+        },
+        "scope": "constant-map independent control/slew terminal-only reduction; not novelty or speed claim",
+        "status": "primal_checked",
+        "trajectory": [
+          [
+            0.0
+          ],
+          [
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "R2",
+      "result": {
+        "certificate": "no independent dual certificate",
+        "status": "solver_infeasible"
+      }
+    },
+    {
+      "name": "R3",
+      "result": {
+        "certificate": "no independent dual certificate",
+        "status": "solver_infeasible"
+      }
+    },
+    {
+      "name": "R4",
+      "result": {
+        "controls": [
+          [
+            0.0,
+            0.5
+          ]
+        ],
+        "integrals": [
+          0.0,
+          0.25
+        ],
+        "lp_variables": 2,
+        "residuals": {
+          "actuator": 0.0,
+          "integral_replay": 0.0,
+          "slew": 0.0,
+          "solver_integral_clamp": 0.0,
+          "terminal": 0.0
+        },
+        "scope": "constant-map independent control/slew terminal-only reduction; not novelty or speed claim",
+        "status": "primal_checked",
+        "trajectory": [
+          [
+            1.0
+          ],
+          [
+            1.5
+          ]
+        ]
+      }
+    }
+  ],
+  "row_count": 26,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "REACHABLE",
+      "input_sha256": "3edea81939abc43fb0b65f6b8fc754947d2697754b2c63ac77634fc526283166",
+      "name": "R1",
+      "result": {
+        "controls": [
+          [
+            "1/2",
+            "1/2"
+          ]
+        ],
+        "integrals": [
+          "1/2",
+          "1/2"
+        ],
+        "lower": [
+          "-1/1",
+          "-1/1"
+        ],
+        "mix": [
+          "3/4",
+          "3/4"
+        ],
+        "reason": "exact feasible integral and schedule",
+        "status": "REACHABLE",
+        "terminal": [
+          "1/1"
+        ],
+        "upper": [
+          "1/1",
+          "1/1"
+        ]
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a5ca2ab150bd4b2b7e5b0322c0e7eff8c4076a7796d9397c28eda5aab1eddb03",
+      "name": "R1:outbox",
+      "result": {
+        "reason": "integral outside box",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "bd610f2dc4ba272e7427f32eb310b9481b2086d37dd9ea37d258f9672e73dc0b",
+      "name": "R1:terminal",
+      "result": {
+        "reason": "terminal integral mismatch",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "bce6e2b29a9097ead9d724686f6d3a277a2fac9bd0f8f30db8912d2becb6700e",
+      "name": "R1:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "5c83a85b2c1558a346f4158f2e39f20803e4abb7d561eb7da71394fad00b1bee",
+      "name": "R1:bool",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNREACHABLE",
+      "input_sha256": "2c12dab0b315faecf285a297e18d275de47d53ee77aaaed5c37ae112cc9d9786",
+      "name": "R2",
+      "result": {
+        "lower": [
+          "-1/1"
+        ],
+        "margin": "2/1",
+        "projection": "2/1",
+        "reason": "strict oriented separation",
+        "status": "UNREACHABLE",
+        "support": "0/1",
+        "upper": [
+          "1/1"
+        ]
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "8397129953dcb202c8fdf03149acc1dbdba7afd8171cdfe9a32ce0c60231b015",
+      "name": "R2:opposite",
+      "result": {
+        "lower": [
+          "-1/1"
+        ],
+        "margin": "-2/1",
+        "projection": "-2/1",
+        "reason": "nonseparating direction",
+        "status": "UNAVAILABLE",
+        "support": "0/1",
+        "upper": [
+          "1/1"
+        ]
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "ec948eced6755ee01defc19fe5a401836b0f493d41623b704c3d1d0a2eff5d8d",
+      "name": "R2:zero",
+      "result": {
+        "reason": "zero direction",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "937994710eaac33ad0d36c83d164b4cda7a2d0094b2da5eacee78733fe3f4a2b",
+      "name": "R2:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "5de043ee1d1946a545b0780ddb8752aee4b62ff74bd580f7358e9d9a7c814c71",
+      "name": "R2:float",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNREACHABLE",
+      "input_sha256": "3ef761e73c7ef4e809eaea4940fc2a6d7e20fa64abc9b34fe07878935f7c0392",
+      "name": "R3",
+      "result": {
+        "lower": [
+          "-1/1"
+        ],
+        "margin": "2/1",
+        "projection": "2/1",
+        "reason": "strict oriented separation",
+        "status": "UNREACHABLE",
+        "support": "0/1",
+        "upper": [
+          "1/1"
+        ]
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "12f4ddd8c54f189d592eb33082b8d184de708940c22229f2d25f42dcc190c998",
+      "name": "R3:opposite",
+      "result": {
+        "lower": [
+          "-1/1"
+        ],
+        "margin": "-2/1",
+        "projection": "-2/1",
+        "reason": "nonseparating direction",
+        "status": "UNAVAILABLE",
+        "support": "0/1",
+        "upper": [
+          "1/1"
+        ]
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a4e0fa1e92fe9c08a2e8c43128149029b6b0badf423089c55aae0a9d703bde4b",
+      "name": "R3:zero",
+      "result": {
+        "reason": "zero direction",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "aabdbf2e10e6549975d889bec1d51661f9d6d6776e5aefb9cae6f355a2eeddbc",
+      "name": "R3:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "609559bf9371c4aadc1b2bd055eea78715885a90ec4725debf624591ecfbc19c",
+      "name": "R3:float",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "REACHABLE",
+      "input_sha256": "b3ca54c52e353ae341feb78f1c616f7a5aaaa0bc37a3d5736396939e59c71fb5",
+      "name": "R4",
+      "result": {
+        "controls": [
+          [
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "integrals": [
+          "1/4",
+          "1/8"
+        ],
+        "lower": [
+          "0/1",
+          "-1/4"
+        ],
+        "mix": [
+          "1/2",
+          "3/4"
+        ],
+        "reason": "exact feasible integral and schedule",
+        "status": "REACHABLE",
+        "terminal": [
+          "3/2"
+        ],
+        "upper": [
+          "1/2",
+          "1/4"
+        ]
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c1b08ec9f117a97ff6241bf44ba7b701de1101cfffc93673fc0e0a301b8f2a70",
+      "name": "R4:outbox",
+      "result": {
+        "reason": "integral outside box",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c5ec179082990e2a9dc04061cc009f59df79634702498222bc3409565d5b2f0a",
+      "name": "R4:terminal",
+      "result": {
+        "reason": "terminal integral mismatch",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "df53076fa237138891844027f39fd1081a7c878e6e091f775ee6d3bbf46d30bc",
+      "name": "R4:shape",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b94bfd24435a6f82daa86e689d3d2515065789c3d16160bbd753a1b3aa8be0a4",
+      "name": "R4:bool",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "2defea4da0e826c6160ccf10456af6a6d8365976872a643b9aa89af7ef90c292",
+      "name": "control:missing",
+      "result": {
+        "reason": "missing witness",
+        "status": "UNAVAILABLE"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "29a69bedc2a90228ab7710c53a92b8d3f3b500cc21f010931041945b1dde021a",
+      "name": "control:floatdt",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "ca4d4adba2970530b16fcbc7eb23c90970b11be3ba3495be84d425b7390dea81",
+      "name": "control:negativetime",
+      "result": {
+        "reason": "model bounds",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "470a74efe94e63240127ee977fcb5010b0ad21336babcbdd44aa13e19a468b05",
+      "name": "control:badB",
+      "result": {
+        "reason": "vector dimension",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "0d885e442f7036f5d091d8d1572e777e8d1ad3fc4631cf9af5adc7c7ccadb3b8",
+      "name": "control:signedzero",
+      "result": {
+        "reason": "canonical rational scalar",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "b7bdd5b953900cff02cfcd66db8c00e50bccd0cea45fbf0afb55a4cf4cc98e0c",
+      "name": "control:boundary",
+      "result": {
+        "lower": [
+          "-1/1",
+          "-1/1"
+        ],
+        "margin": "0/1",
+        "projection": "2/1",
+        "reason": "nonseparating direction",
+        "status": "UNAVAILABLE",
+        "support": "2/1",
+        "upper": [
+          "1/1",
+          "1/1"
+        ]
+      }
+    }
+  ],
+  "scope": "supplied rational models, external certificates; descriptive floating status not proof"
+}
