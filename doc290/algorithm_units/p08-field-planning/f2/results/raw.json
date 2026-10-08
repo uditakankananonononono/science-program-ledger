@@ -1,0 +1,703 @@
+{
+  "protocol_id": "P08-04-F2",
+  "scope": "Numerical boundary diagnostic against supplied rational model, not physical truth or benchmark superiority",
+  "raw": [
+    {
+      "scale": "1/1000000",
+      "offset": "-1/1000000",
+      "declared_target": "1499999/1000000000000",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "-3339/73786976294838206464000000",
+      "float_target_conversion_delta": "11987601/1152921504606846976000000000000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 2.117582368135751e-22,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              0.999999
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "13510789874912233/9007199254740992000000",
+          "exact_declared_target_error": "4047/140737488355328000000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 2.117582368135751e-22,
+            "integral_replay": 2.220446049250313e-16,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.4999996666666666
+            ],
+            [
+              0.9999993333333332
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "1688848734364029/1125899906842624000000",
+          "exact_declared_target_error": "2459/17592186044416000000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1/1000000",
+      "offset": "-1/10000000000",
+      "declared_target": "14999999999/10000000000000000",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "-3339/73786976294838206464000000",
+      "float_target_conversion_delta": "-26284337689/720575940379279360000000000000000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 2.117582368135751e-22,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              0.9999999998999999
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "13510798881210767/9007199254740992000000",
+          "exact_declared_target_error": "10493417/87960930222080000000000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 2.117582368135751e-22,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.49999999996666666
+            ],
+            [
+              0.9999999999333333
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "844424930075673/562949953421312000000",
+          "exact_declared_target_error": "45487/5497558138880000000000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1/1000000",
+      "offset": "0",
+      "declared_target": "3/2000000",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "-3339/73786976294838206464000000",
+      "float_target_conversion_delta": "701/18446744073709551616000000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 2.220446049250313e-16
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0000000000000002
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "1351079888211149/900719925474099200000",
+          "exact_declared_target_error": "1/4503599627370496000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "1/4503599627370496"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 0.0,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "3/2000000",
+          "exact_declared_target_error": "0",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1/1000000",
+      "offset": "1/10000000000",
+      "declared_target": "15000000001/10000000000000000",
+      "exact_status": "exact_model_unreachable",
+      "float_B_conversion_delta": "-3339/73786976294838206464000000",
+      "float_target_conversion_delta": "-279445031/2814749767106560000000000000000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 1.000000082740371e-10
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0000000001
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "844424930188263/562949953421312000000",
+          "exact_declared_target_error": "45487/5497558138880000000000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "56295/562949953421312"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 9.999986271989544e-17,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 1.000000082740371e-10
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "3/2000000",
+          "exact_declared_target_error": "1/10000000000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1/1000000",
+      "offset": "1/1000000",
+      "declared_target": "1500001/1000000000000",
+      "exact_status": "exact_model_unreachable",
+      "float_B_conversion_delta": "-3339/73786976294838206464000000",
+      "float_target_conversion_delta": "75637399/1152921504606846976000000000000",
+      "float_results": {
+        "full": {
+          "status": "solver_infeasible",
+          "residuals": null,
+          "exception": null
+        },
+        "reduced": {
+          "status": "solver_infeasible",
+          "residuals": null,
+          "exception": null
+        }
+      }
+    },
+    {
+      "scale": "1",
+      "offset": "-1/1000000",
+      "declared_target": "1499999/1000000",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "5789/70368744177664000000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              0.9999990000000001
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "6755394937456117/4503599627370496",
+          "exact_declared_target_error": "5789/70368744177664000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 2.220446049250313e-16,
+            "integral_replay": 2.220446049250313e-16,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.4999996666666666
+            ],
+            [
+              0.9999993333333332
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "1688848734364029/1125899906842624",
+          "exact_declared_target_error": "2459/17592186044416000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1",
+      "offset": "-1/10000000000",
+      "declared_target": "14999999999/10000000000",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "-45487/5497558138880000000000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              0.9999999999
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "844424930075673/562949953421312",
+          "exact_declared_target_error": "45487/5497558138880000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 0.0,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.49999999996666666
+            ],
+            [
+              0.9999999999333333
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "844424930075673/562949953421312",
+          "exact_declared_target_error": "45487/5497558138880000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1",
+      "offset": "0",
+      "declared_target": "3/2",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "0",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "3/2",
+          "exact_declared_target_error": "0",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 0.0,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "3/2",
+          "exact_declared_target_error": "0",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1",
+      "offset": "1/10000000000",
+      "declared_target": "15000000001/10000000000",
+      "exact_status": "exact_model_unreachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "45487/5497558138880000000000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 1.000000082740371e-10
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0000000001
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "844424930188263/562949953421312",
+          "exact_declared_target_error": "45487/5497558138880000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "56295/562949953421312"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 1.000000082740371e-10,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 1.000000082740371e-10
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "3/2",
+          "exact_declared_target_error": "1/10000000000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1",
+      "offset": "1/1000000",
+      "declared_target": "1500001/1000000",
+      "exact_status": "exact_model_unreachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "-5789/70368744177664000000",
+      "float_results": {
+        "full": {
+          "status": "solver_infeasible",
+          "residuals": null,
+          "exception": null
+        },
+        "reduced": {
+          "status": "solver_infeasible",
+          "residuals": null,
+          "exception": null
+        }
+      }
+    },
+    {
+      "scale": "1000000",
+      "offset": "-1/1000000",
+      "declared_target": "1499999",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "0",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              0.999999
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "211106091795503640625/140737488355328",
+          "exact_declared_target_error": "4047/140737488355328",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 0.0,
+            "integral_replay": 2.220446049250313e-16,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.4999996666666666
+            ],
+            [
+              0.9999993333333332
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "26388261474437953125/17592186044416",
+          "exact_declared_target_error": "2459/17592186044416",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1000000",
+      "offset": "-1/10000000000",
+      "declared_target": "14999999999/10000",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "-169/2684354560000",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              0.9999999999
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "13194139532432390625/8796093022208",
+          "exact_declared_target_error": "45487/5497558138880000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 2.3283064365386963e-10,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.49999999996666666
+            ],
+            [
+              0.9999999999333333
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "13194139532432390625/8796093022208",
+          "exact_declared_target_error": "45487/5497558138880000",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1000000",
+      "offset": "0",
+      "declared_target": "1500000",
+      "exact_status": "exact_model_reachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "0",
+      "float_results": {
+        "full": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal_max_abs": 0.0,
+            "actuator_bound_violation": 0.0,
+            "slew_bound_violation": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "1500000",
+          "exact_declared_target_error": "0",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        },
+        "reduced": {
+          "status": "primal_checked",
+          "residuals": {
+            "terminal": 0.0,
+            "integral_replay": 0.0,
+            "actuator": 0.0,
+            "slew": 0.0,
+            "solver_integral_clamp": 0.0
+          },
+          "exception": null,
+          "controls": [
+            [
+              0.5
+            ],
+            [
+              1.0
+            ]
+          ],
+          "exact_binary_control_declared_terminal": "1500000",
+          "exact_declared_target_error": "0",
+          "exact_actuator_violation": "0",
+          "exact_slew_violation": "0"
+        }
+      }
+    },
+    {
+      "scale": "1000000",
+      "offset": "1/10000000000",
+      "declared_target": "15000000001/10000",
+      "exact_status": "exact_model_unreachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "169/2684354560000",
+      "float_results": {
+        "full": {
+          "status": "solver_infeasible",
+          "residuals": null,
+          "exception": null
+        },
+        "reduced": {
+          "status": "exception",
+          "exception": "RuntimeError: primal lift failed"
+        }
+      }
+    },
+    {
+      "scale": "1000000",
+      "offset": "1/1000000",
+      "declared_target": "1500001",
+      "exact_status": "exact_model_unreachable",
+      "float_B_conversion_delta": "0",
+      "float_target_conversion_delta": "0",
+      "float_results": {
+        "full": {
+          "status": "solver_infeasible",
+          "residuals": null,
+          "exception": null
+        },
+        "reduced": {
+          "status": "solver_infeasible",
+          "residuals": null,
+          "exception": null
+        }
+      }
+    }
+  ],
+  "summary": {
+    "full": {
+      "rows": 15,
+      "exceptions": 0,
+      "exact_unreachable_float_primal_checked": 2,
+      "exact_reachable_float_infeasible": 0
+    },
+    "reduced": {
+      "rows": 15,
+      "exceptions": 1,
+      "exact_unreachable_float_primal_checked": 2,
+      "exact_reachable_float_infeasible": 0
+    }
+  },
+  "published_freeze_reference": "p08-s1-freeze@edeca0b75984331cdc79d9659979049563a4f7f4",
+  "manifest_hashes": {
+    "f2/protocol.json": "f9cc47636636c92586809f3b9e2326120ea0b674408c90050237e0dcc0194efe",
+    "f2/compare.py": "55b9fc01214d40dc46939b52905932abcf89a2d10d367d0325657d6f548651c5",
+    "feasibility.py": "f3feb6b5016c83a19d7964888dd49d060a7d10678f9a7ad63a4cd3c33cb96e91",
+    "reduced_terminal.py": "6e0e49df57d6f5c0e8a87c07d528a42455dbf457411acbd8df7be23d814e3ef5",
+    "rational_terminal.py": "96d23fedf197a992fbcad178b6f676a1a76c1b2f848d424b93064806d475948f",
+    "integral_lift.py": "7cfee1299cc04ae7060e3c151afbe56b6ab2d199f832692babed5eb12bc4435a",
+    "rational_support.py": "c15d573f41ae7112fd93aea8457735a357fa4d3a711fc10b3063768707193569"
+  }
+}
