@@ -1,0 +1,24 @@
+# K2 offline RTS isolation/numerical audit freeze candidate
+
+Prereg947b7b5d117ca3a07023609e47310c4ec5cfcb07,parentec92f1d18f840223cbc548d7929c70ee5fd825b4.
+CandidateOID/treeinreviewbundle. All12inputsconstructed,N1emptyarraysreshaped
+explicitly(0,4)/(0,4,4), allfiveinputbuffers genuinesnapshots. Outputshape/finite/
+FractionoraclechecksBEFOREtags/probes. Shares_memoryeachoutput-allinputs+other
+output; isolationmutationsets0iffoldnonzeroelse1, actuallychangeslarge/zerovalue,
+restoresinf inally-equivalentfinallyblock; cross-output+allinputschecked eachprobe.
+Outputsnapshotsbeforeafterprobe retained, noaliasnotinferredfromvalueequality.
+Refusalrequiresactualexception+allinputunchanged; anyfiniteunexpected/nonfinite/
+mutationMISMATCH. Warningcapturewholecall/solvepatchcontextrestoredallexits.
+
+Sevenseparatedtoydevtests snapshotcopy/largezeroactualprobe+restore/aliasdetection/
+finite-tags/refusal+inputmutation/emptyshapevalidandunexpected/threadgate. No12
+productioncallsrun. Source/runtime114/executable/module/version/threadpinsbefore
+inputconstruction/injection, productionsmoother/kalman/metrics/K1audit/F3helper
+unchanged. No oraclecorrectionafterfreeze, K1FAILretained, no productionpatch.
+
+Afterreview/publication: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python3 audit.py results/report.json.
+Allrows/warnings/returns/exceptions/bytes/alias/probesretained,resultreviewbefore
+publication. Offlinefuture-data only,nophysicalcalibration/newtracker/CI/heldout/
+benchmarkwin/invention/scienceclaim. RuntimepinsnotOS/sharedlib/loaderclosure;
+capsnotpeakmemory/adversarialsandbox/hardtimeoutproof.
