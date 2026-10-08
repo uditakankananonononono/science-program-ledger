@@ -1,0 +1,812 @@
+[
+  {
+    "available": [
+      true
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ]
+    ],
+    "expected": "VALID",
+    "inject": null,
+    "name": "V1",
+    "oracle": {
+      "excluded": 0,
+      "mean": 25,
+      "nees": [
+        25
+      ],
+      "position_squared": 25,
+      "scored": 1,
+      "total": 1,
+      "velocity_squared": 0
+    },
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true,
+      true
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5
+      ]
+    ],
+    "expected": "VALID",
+    "inject": null,
+    "name": "V2",
+    "oracle": {
+      "excluded": 0,
+      "mean": "75/4",
+      "nees": [
+        25,
+        "25/2"
+      ],
+      "position_squared": "25/2",
+      "scored": 2,
+      "total": 2,
+      "velocity_squared": "25/2"
+    },
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true,
+      false
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": "VALID",
+    "inject": null,
+    "name": "V3",
+    "oracle": {
+      "excluded": 1,
+      "mean": 25,
+      "nees": [
+        25
+      ],
+      "position_squared": 25,
+      "scored": 1,
+      "total": 2,
+      "velocity_squared": 0
+    },
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        }
+      ]
+    ]
+  },
+  {
+    "available": [
+      false
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ]
+    ],
+    "expected": "VALID",
+    "inject": null,
+    "name": "V4",
+    "oracle": {
+      "excluded": 1,
+      "mean": null,
+      "nees": [],
+      "position_squared": null,
+      "scored": 0,
+      "total": 1,
+      "velocity_squared": null
+    },
+    "truth": [
+      [
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        }
+      ]
+    ]
+  },
+  {
+    "available": [
+      1
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": null,
+    "name": "R1",
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": null,
+    "name": "R2",
+    "truth": [
+      [
+        {
+          "nonfinite": "NaN"
+        },
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true,
+      false
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": null,
+    "name": "R3",
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        },
+        {
+          "nonfinite": "NaN"
+        }
+      ]
+    ]
+  },
+  {
+    "available": [
+      true
+    ],
+    "covariances": [
+      [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": null,
+    "name": "R4",
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        "1e200",
+        0,
+        0,
+        0
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": null,
+    "name": "R5",
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        "1e308",
+        0,
+        0,
+        0
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": null,
+    "name": "R6",
+    "truth": [
+      [
+        "-1e308",
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": "raise",
+    "name": "S1",
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "available": [
+      true
+    ],
+    "covariances": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "estimated": [
+      [
+        3,
+        4,
+        0,
+        0
+      ]
+    ],
+    "expected": "REFUSE",
+    "inject": "nan",
+    "name": "S2",
+    "truth": [
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+]

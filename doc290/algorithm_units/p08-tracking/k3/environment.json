@@ -1,0 +1,587 @@
+{
+  "module_names": [
+    "_sre",
+    "collections",
+    "re",
+    "_json",
+    "json.scanner",
+    "json.decoder",
+    "json.encoder",
+    "json",
+    "_hashlib",
+    "hashlib",
+    "warnings",
+    "collections.abc",
+    "math",
+    "fractions",
+    "contextlib",
+    "unittest.util",
+    "unittest.result",
+    "importlib._bootstrap",
+    "importlib._bootstrap_external",
+    "importlib",
+    "importlib.machinery",
+    "unittest.case",
+    "unittest.suite",
+    "unittest.loader",
+    "unittest.signals",
+    "unittest.runner",
+    "unittest.main",
+    "unittest",
+    "unittest.mock",
+    "numpy._utils._convertions",
+    "numpy._utils",
+    "numpy._globals",
+    "numpy._expired_attrs_2_0",
+    "numpy.version",
+    "numpy._distributor_init",
+    "numpy._utils._inspect",
+    "numpy.exceptions",
+    "numpy._core._exceptions",
+    "numpy._core.printoptions",
+    "numpy.dtypes",
+    "numpy._core._multiarray_umath",
+    "numpy._core.overrides",
+    "numpy._core.multiarray",
+    "numpy._core.umath",
+    "numpy._core._string_helpers",
+    "numpy._core._type_aliases",
+    "numpy._core._dtype",
+    "numpy._core.numerictypes",
+    "numpy._core._methods",
+    "numpy._core.fromnumeric",
+    "numpy._core.shape_base",
+    "numpy._core._ufunc_config",
+    "numpy._core.arrayprint",
+    "numpy._core._asarray",
+    "numpy._core.numeric",
+    "numpy._core.records",
+    "numpy._core.memmap",
+    "numpy._core.function_base",
+    "numpy._core._machar",
+    "numpy._core.getlimits",
+    "numpy._core.einsumfunc",
+    "numpy._core._add_newdocs",
+    "numpy._core._add_newdocs_scalars",
+    "numpy._core._dtype_ctypes",
+    "numpy._core._internal",
+    "numpy._pytesttester",
+    "numpy._core",
+    "numpy.__config__",
+    "numpy.lib._array_utils_impl",
+    "numpy.lib.array_utils",
+    "numpy.lib.introspect",
+    "numpy.lib.mixins",
+    "numpy.lib._utils_impl",
+    "numpy.lib.format",
+    "numpy.lib._datasource",
+    "numpy.lib._iotools",
+    "numpy.lib._npyio_impl",
+    "numpy.lib.npyio",
+    "numpy.lib._ufunclike_impl",
+    "numpy.lib._type_check_impl",
+    "numpy.lib._scimath_impl",
+    "numpy.lib.scimath",
+    "numpy.lib._stride_tricks_impl",
+    "numpy.lib.stride_tricks",
+    "numpy.linalg.linalg",
+    "numpy.lib._twodim_base_impl",
+    "numpy.linalg._umath_linalg",
+    "numpy._typing._nested_sequence",
+    "numpy._typing._nbit_base",
+    "numpy._typing._nbit",
+    "numpy._typing._char_codes",
+    "numpy._typing._scalars",
+    "numpy._typing._shape",
+    "numpy._typing._dtype_like",
+    "numpy._typing._array_like",
+    "numpy._typing._ufunc",
+    "numpy._typing",
+    "numpy.linalg._linalg",
+    "numpy.linalg",
+    "numpy.matrixlib.defmatrix",
+    "numpy.matrixlib",
+    "numpy.lib._histograms_impl",
+    "numpy.lib._function_base_impl",
+    "numpy.lib._index_tricks_impl",
+    "numpy.lib._nanfunctions_impl",
+    "numpy.lib._shape_base_impl",
+    "numpy.lib._arraysetops_impl",
+    "numpy.lib._polynomial_impl",
+    "numpy.lib._arrayterator_impl",
+    "numpy.lib._arraypad_impl",
+    "numpy.lib._version",
+    "numpy.lib",
+    "numpy._array_api_info",
+    "numpy"
+  ],
+  "numpy": "2.2.6",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "runtime_sources": {
+    "_hashlib": {
+      "path": "/usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "aaa7cad4595fb421be5a9206efea579ec852f820d44e1d76a8de9ab46e02200c"
+    },
+    "_json": {
+      "path": "/usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "d02668cbf0664d30f194230b767f940d0abf9da851204c54b84640f987bcb145"
+    },
+    "_sre": {
+      "path": "/usr/bin/python3.10",
+      "sha256": "a2f33a6e006989270f4340528eb61f8f97366e00a5d1b602ac8672ea44fc56ae"
+    },
+    "collections": {
+      "path": "/usr/lib/python3.10/collections/__init__.py",
+      "sha256": "5d7b9d899fb1407a614cb2ade46b6d2400ba797634e9fed7d770fc4b7e372760"
+    },
+    "collections.abc": {
+      "path": "/usr/lib/python3.10/collections/abc.py",
+      "sha256": "9cb4208f99128a0489b6c8e6c61637617dd7d4250c59e065491957eda084dd10"
+    },
+    "contextlib": {
+      "path": "/usr/lib/python3.10/contextlib.py",
+      "sha256": "2e17d45cf3da698c9752c58a668c8a03d0ce2280fdffd6e352794a38a94d9f07"
+    },
+    "fractions": {
+      "path": "/usr/lib/python3.10/fractions.py",
+      "sha256": "c98b837e35c0ed2dd71d1d3551490553e5490ce954233f48e63e756c5f15938e"
+    },
+    "hashlib": {
+      "path": "/usr/lib/python3.10/hashlib.py",
+      "sha256": "9d56ebad0263a48ac94e0b2b7a3723625f2ff4dc7707d1156580e008d40bc790"
+    },
+    "importlib": {
+      "path": "/usr/lib/python3.10/importlib/__init__.py",
+      "sha256": "49ad4fdc8139026f7f3773e3f50f09207ff6bd8e92a2c382545525235448e525"
+    },
+    "importlib._bootstrap": {
+      "path": "/usr/lib/python3.10/importlib/_bootstrap.py",
+      "sha256": "11125bbe628d2f82afdcd480c6454f6248f229d9caf6a8ac1e231c3402facaa1"
+    },
+    "importlib._bootstrap_external": {
+      "path": "/usr/lib/python3.10/importlib/_bootstrap_external.py",
+      "sha256": "a5eaa30689fd793ca058fce597a4c8781c36e5bce4930e441f899494071d3989"
+    },
+    "importlib.machinery": {
+      "path": "/usr/lib/python3.10/importlib/machinery.py",
+      "sha256": "b7b47efe3d95ae817e0c61d852682ddf8b8ce95aaf36ae4cf333e145416baf18"
+    },
+    "json": {
+      "path": "/usr/lib/python3.10/json/__init__.py",
+      "sha256": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5"
+    },
+    "json.decoder": {
+      "path": "/usr/lib/python3.10/json/decoder.py",
+      "sha256": "9f02654649816145bc76f8c210a5fe3ba1de142d4d97a1c93105732e747c285b"
+    },
+    "json.encoder": {
+      "path": "/usr/lib/python3.10/json/encoder.py",
+      "sha256": "06b881b824f71e95d72af4ab865de4c35553e791b6d959a125caac61401cc350"
+    },
+    "json.scanner": {
+      "path": "/usr/lib/python3.10/json/scanner.py",
+      "sha256": "8604d9d03786d0d509abb49e9f069337278ea988c244069ae8ca2c89acc2cb08"
+    },
+    "math": {
+      "path": "/usr/bin/python3.10",
+      "sha256": "a2f33a6e006989270f4340528eb61f8f97366e00a5d1b602ac8672ea44fc56ae"
+    },
+    "numpy": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/__init__.py",
+      "sha256": "6ae17b070c0f70a8e3cad89a510a256942e5a1f37ea5feb120cec167ed2a6236"
+    },
+    "numpy.__config__": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/__config__.py",
+      "sha256": "e431a2f0837f44a4c4745558df7545087eb72195de072ad797c642709d45f7b1"
+    },
+    "numpy._array_api_info": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_array_api_info.py",
+      "sha256": "aa21c90d51b9f2b024d624e55ec16b9e167b63e8213d493206926232f3cada38"
+    },
+    "numpy._core": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/__init__.py",
+      "sha256": "1fde7ecd24f4087ea99e739b8d75175e23e0b6e6fd337e4804669813eab8c2b5"
+    },
+    "numpy._core._add_newdocs": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_add_newdocs.py",
+      "sha256": "b2d295ad95a4587fa0fe6a7b3303be3750e431f2978cbc41b2b96eac15e6780e"
+    },
+    "numpy._core._add_newdocs_scalars": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_add_newdocs_scalars.py",
+      "sha256": "78f99ab34988e8e0a9abd5bc66ccd71f212192db01523fe1bc4b7aa336fc6627"
+    },
+    "numpy._core._asarray": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_asarray.py",
+      "sha256": "ee864fa8d8ee0cbd08c48793ed5fd4256d7d96c292dde9f2fa394de076be8680"
+    },
+    "numpy._core._dtype": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_dtype.py",
+      "sha256": "e0fcfa289409472c25b0c85d1fc35b22e833883c908b57a4bf664cc3bce89b3a"
+    },
+    "numpy._core._dtype_ctypes": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_dtype_ctypes.py",
+      "sha256": "75c647438eaa8d5d27ee5f77e16218c3b92ffb51e81f17a5bb9d282085fb1965"
+    },
+    "numpy._core._exceptions": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_exceptions.py",
+      "sha256": "75958aa9f74b46f26f6c0106fdfa1fffc8a410ac636a400332dcb590b0bf97f3"
+    },
+    "numpy._core._internal": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_internal.py",
+      "sha256": "07cb7a9b1bda0e8bb113e08e474d74bf8fcf507373385f261e015ab513e52569"
+    },
+    "numpy._core._machar": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_machar.py",
+      "sha256": "dfdf6da6114f1b3272d5ba5b7972c38d45194de6d6b68d65a33075a6b68e45f1"
+    },
+    "numpy._core._methods": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_methods.py",
+      "sha256": "a6398fd7201bb557ac5d3cadbaea46217a233b9e72f0b052fbc7c440fbac3485"
+    },
+    "numpy._core._multiarray_umath": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "c634eaf05367af02b815cf3d2020fbeee9b47426af1fe26cf3189e4798932dc5"
+    },
+    "numpy._core._string_helpers": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_string_helpers.py",
+      "sha256": "82edf1d1d1274678779a73a4be25f5eebf2b0a66a05606077f120bb7d43d8ab0"
+    },
+    "numpy._core._type_aliases": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_type_aliases.py",
+      "sha256": "e0053f7157a404a0c85ced544653902ac333f27ac3c35b47aff9c1750cef373a"
+    },
+    "numpy._core._ufunc_config": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/_ufunc_config.py",
+      "sha256": "2e51694d49c715e1d094d162b811efaea567fa743b12f2205049f71d4725b7b9"
+    },
+    "numpy._core.arrayprint": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/arrayprint.py",
+      "sha256": "b3994c2efdd6cbf7dade10753aa51a33887525af5207f5fedf3024416d53bb81"
+    },
+    "numpy._core.einsumfunc": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/einsumfunc.py",
+      "sha256": "c6c6286b0bf32b8100d9021876d9392b2ac591409ee244ade703ad5c29bfbf5b"
+    },
+    "numpy._core.fromnumeric": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/fromnumeric.py",
+      "sha256": "80af26d98de5489e6ab3380d13e17e65d37ab9a6f8d1c5b9041b03e1238d1cb0"
+    },
+    "numpy._core.function_base": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/function_base.py",
+      "sha256": "85f71875abcd79e0db8988ef4c1a8303a3891f11f57ee34374cb536548b74598"
+    },
+    "numpy._core.getlimits": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/getlimits.py",
+      "sha256": "532dd6e9e270bb697b47aa2fa9d7de3b24326c5e638e53c447cf2948cdff24f8"
+    },
+    "numpy._core.memmap": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/memmap.py",
+      "sha256": "077939119f10c338cfc16c0eb55455c84a1f409486fe90817160859273be19a5"
+    },
+    "numpy._core.multiarray": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/multiarray.py",
+      "sha256": "d0fed9047291d26234b5ab72a83087c277dec04122438f1dc2bcd52f63d0024d"
+    },
+    "numpy._core.numeric": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/numeric.py",
+      "sha256": "bec88470c8a0e101f031ff473f999aa8e845b1b96a19b87c02d138717d3c0fbc"
+    },
+    "numpy._core.numerictypes": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/numerictypes.py",
+      "sha256": "5be12efc0bf9ccd3411c364718b36598d6f652e301c8a45dc163d3b09c40e684"
+    },
+    "numpy._core.overrides": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/overrides.py",
+      "sha256": "733b9bbb924749d89ddf521fd162ea39810cdd6880634ded2e6ca86b4e2c5a38"
+    },
+    "numpy._core.printoptions": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/printoptions.py",
+      "sha256": "15463efa11b4fa8a1bbed1ce63ae03e7406cffe24599ff8dcdaec2f485ce4456"
+    },
+    "numpy._core.records": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/records.py",
+      "sha256": "d14bf6676c41bf161052c021a79cd9dbad9814799237a47f6dacc8fc4c91134d"
+    },
+    "numpy._core.shape_base": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/shape_base.py",
+      "sha256": "08adcbadc7d62a70a1a24526d5e1d8b0be3743b0f9a8fabb4310cfb9860c9c05"
+    },
+    "numpy._core.umath": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_core/umath.py",
+      "sha256": "3ac6dabe62d1c4a34d6d5f129cf11cde654d93d10856332165e46cf67094b135"
+    },
+    "numpy._distributor_init": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_distributor_init.py",
+      "sha256": "20acb64c7c26bb9520063b556f06c3f47f80a7cb9a509a0f2766ed43825ab5da"
+    },
+    "numpy._expired_attrs_2_0": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_expired_attrs_2_0.py",
+      "sha256": "653577229784e147094a7d914d92f12808b1125e79ecc90a2b847bc6e6f0d51c"
+    },
+    "numpy._globals": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_globals.py",
+      "sha256": "5d5b943e914bb9ea8a513370aa23a35966a19ccfaf1b11b2e2d600de987e1001"
+    },
+    "numpy._pytesttester": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_pytesttester.py",
+      "sha256": "8ad5313045dd6104ff98262a75efbb0aa8f1380e7dc222c5c89788ca856d1a02"
+    },
+    "numpy._typing": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/__init__.py",
+      "sha256": "d32ef4a2e523dbf94a19c03abc66e6fcd595478f312a8caefdceeba26fc0129e"
+    },
+    "numpy._typing._array_like": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_array_like.py",
+      "sha256": "403e2ec53cafb8c11133902113a3f1cdd2f9c8750c6f650e8bb1dd40514d5e82"
+    },
+    "numpy._typing._char_codes": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_char_codes.py",
+      "sha256": "4494af008032f1300441b15fa03368b9474b7189e0981995e17ec0b7ad9251b5"
+    },
+    "numpy._typing._dtype_like": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_dtype_like.py",
+      "sha256": "deaecc7bf457afbe5b6b8a75bcfcbe9f0e4d44b5ac9c29c7b1fcd51a764c3628"
+    },
+    "numpy._typing._nbit": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_nbit.py",
+      "sha256": "2e200fb8c3dd749f428d24adc3ccef5d0d66fc56cd23397f88cca03bce753348"
+    },
+    "numpy._typing._nbit_base": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_nbit_base.py",
+      "sha256": "1c79f6cd858dfb7c0bb328a077dedcb3dbb223736f45851c43af4e2ce742fa4b"
+    },
+    "numpy._typing._nested_sequence": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_nested_sequence.py",
+      "sha256": "ee274dd04c8423a36dd151fdc675958f8b32a9ebbf2caf0811267073355c2b58"
+    },
+    "numpy._typing._scalars": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_scalars.py",
+      "sha256": "f6ffb5c5a842f53660dbc1537c11b5e6f5827270c1d5b7d6cfb7a34f4783ad5c"
+    },
+    "numpy._typing._shape": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_shape.py",
+      "sha256": "7d8d6a8ba5031633d6d5be066b185c27db51010bba4972d920d77f572eb45d26"
+    },
+    "numpy._typing._ufunc": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_typing/_ufunc.py",
+      "sha256": "53a3827432c7cd74add5f6d295d1c53f4be2587878bb763508306fcc1518f3e3"
+    },
+    "numpy._utils": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_utils/__init__.py",
+      "sha256": "7c3b9cd8bb02e28968d2eb685a302cdcb5eec7e80f60714a8538651088b878e4"
+    },
+    "numpy._utils._convertions": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_utils/_convertions.py",
+      "sha256": "d3133175e2cece20e61ec44cffc96e121e12fa441d328320e86c4d0c36acebd9"
+    },
+    "numpy._utils._inspect": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/_utils/_inspect.py",
+      "sha256": "2dc6c7509d8a3c3a4f78d8b1c8878a3945af39168b1b927e1f4b88de21c8b0e0"
+    },
+    "numpy.dtypes": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/dtypes.py",
+      "sha256": "cee3f0802d228c5da80d100e27a23d24a85a26e857140ca00722d06a856d4f9e"
+    },
+    "numpy.exceptions": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/exceptions.py",
+      "sha256": "d841f73b00d5a09b40b11383b869672d603586b8c39e2a25095911f3bf9e1c8a"
+    },
+    "numpy.lib": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/__init__.py",
+      "sha256": "22f52848edbb9c75a66930ace1fa892c321621c6a3fae4486d1f587e4ca9b40a"
+    },
+    "numpy.lib._array_utils_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_array_utils_impl.py",
+      "sha256": "78c19d662edabaeeb6d35878bf87906769a217c2a674c1830296c1160444fba4"
+    },
+    "numpy.lib._arraypad_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_arraypad_impl.py",
+      "sha256": "c66f0f92e9edec300a016be7c9212ca166e332f72664bf8e0bba9ef8b41aaee4"
+    },
+    "numpy.lib._arraysetops_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_arraysetops_impl.py",
+      "sha256": "0810e81b67d6cf1d0e2136d910a9450f9594a3d1d046a9acc1ea0c3ad1ca423b"
+    },
+    "numpy.lib._arrayterator_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_arrayterator_impl.py",
+      "sha256": "ab1ea0ab12d3358e0b79ae8b87a27e0ae7784722c8aa710b862fa43302bcbca5"
+    },
+    "numpy.lib._datasource": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_datasource.py",
+      "sha256": "149ee4d4782144453bb9d87c66e3b96591779c725f3a48fb8968a3868545a884"
+    },
+    "numpy.lib._function_base_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_function_base_impl.py",
+      "sha256": "79e65a8b3169b022de8ac2dcc6b43e78ae11fbc7a7c3a60a3d5d637833f00b35"
+    },
+    "numpy.lib._histograms_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_histograms_impl.py",
+      "sha256": "2f0ffd2df33f67ba8179fddba1a987e4bb4beea893d748292325b2f548fa953a"
+    },
+    "numpy.lib._index_tricks_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_index_tricks_impl.py",
+      "sha256": "d768868e36a4de188c7f09e1e7347626a03bf3ea2bfaef4fd604c609c8c90f41"
+    },
+    "numpy.lib._iotools": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_iotools.py",
+      "sha256": "98c87178606df93f29ae35a93619ffc6f6428fabba3965a69acbca3fabdb339c"
+    },
+    "numpy.lib._nanfunctions_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_nanfunctions_impl.py",
+      "sha256": "817e8d50a80240abee15348039b86a7eba9021722cc6728840e73e85e3a7eebb"
+    },
+    "numpy.lib._npyio_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_npyio_impl.py",
+      "sha256": "500f386e9385f717c42c1b1a8004a31dfd44e4680b5afb3f63f1a6b69964a2fc"
+    },
+    "numpy.lib._polynomial_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_polynomial_impl.py",
+      "sha256": "eab0f90b2e264839360acb807493aada17be3d26be662aac760cb2400179ab1d"
+    },
+    "numpy.lib._scimath_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_scimath_impl.py",
+      "sha256": "754c5bf570fe0093dba0afcb3b72c0d0a83290549410e1b90551ab8709b642aa"
+    },
+    "numpy.lib._shape_base_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_shape_base_impl.py",
+      "sha256": "0076d73e9e2c1f48042604b233403dce098cf4cc26ea347fa79a56b545dea95f"
+    },
+    "numpy.lib._stride_tricks_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_stride_tricks_impl.py",
+      "sha256": "cb7531a778c5cc3c26210d77ecddb36a9efebd6fe338d5109979db7eaaeceb40"
+    },
+    "numpy.lib._twodim_base_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_twodim_base_impl.py",
+      "sha256": "af7d5a067cc2481a6afde9b81f22e248c793891ce51c09fb05de325d8ab21056"
+    },
+    "numpy.lib._type_check_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_type_check_impl.py",
+      "sha256": "0eff5aed0091d5ba811e85e00a398fac611ec06d6fd8106d13ff157dc178c925"
+    },
+    "numpy.lib._ufunclike_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_ufunclike_impl.py",
+      "sha256": "d1e7a67ff11894b9926b88a736bde2b89d5ea1332a2f2211d27e9d4329a06b76"
+    },
+    "numpy.lib._utils_impl": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_utils_impl.py",
+      "sha256": "e31610733a17ee2ff01e3ba09e5d1b6b5544c526d5e3c9dd568c34f12f06d164"
+    },
+    "numpy.lib._version": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/_version.py",
+      "sha256": "9f245a8130ae13af7ed0ff494c870a2bb8dbcd119bb209ea56d148acdcd316c3"
+    },
+    "numpy.lib.array_utils": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/array_utils.py",
+      "sha256": "ce868bc3d4efac0151921f67f2e332afc92fba0dc8bd59544fb2dc2730774e4d"
+    },
+    "numpy.lib.format": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/format.py",
+      "sha256": "5cc310cd83af73c2e078da715fb4297eeae58b66c6e68f6301a798e79b4ff390"
+    },
+    "numpy.lib.introspect": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/introspect.py",
+      "sha256": "4a24393b082f13ed51a103afdabfff58e6d2e5011406885a9f209ded77bcd145"
+    },
+    "numpy.lib.mixins": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/mixins.py",
+      "sha256": "ff26f78b0c3351f49b37b1e9252a77161164815dd65624c74b94801e42bc2e67"
+    },
+    "numpy.lib.npyio": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/npyio.py",
+      "sha256": "342c6a59e7496d233933ec2bebd4c40fcc7b297732049d31e6ee3dbe3e2c3e42"
+    },
+    "numpy.lib.scimath": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/scimath.py",
+      "sha256": "88ed088838291e4d44bab754bc9204d8aa83cd539fbd2b14dcc148949b2420e1"
+    },
+    "numpy.lib.stride_tricks": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/lib/stride_tricks.py",
+      "sha256": "54647933c272c3c202e12e97101f4d37f1942d3249423ff542b22d222fc12623"
+    },
+    "numpy.linalg": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/linalg/__init__.py",
+      "sha256": "5cdb5d2e8df74954e341b5de8a62c56b966e773a441309df241368ad56f1bb27"
+    },
+    "numpy.linalg._linalg": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/linalg/_linalg.py",
+      "sha256": "40d795507d435d07bb5f9620a7e2d5f56d6d37bb1bc1b84c5c841b44d3d8257d"
+    },
+    "numpy.linalg._umath_linalg": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "c6bc9d5c4db6cea333d46d905e15fbcd8f541ec5b23704ca3c44547ee2ee5187"
+    },
+    "numpy.linalg.linalg": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/linalg/linalg.py",
+      "sha256": "25059c12f8d8fdb8e168c1d7639bc393af4e2283335f946f6e7d5e196d850af1"
+    },
+    "numpy.matrixlib": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/matrixlib/__init__.py",
+      "sha256": "04706940aa10bf81234f452958103e0a4e0be4eb0ca9323622e636e29fae7179"
+    },
+    "numpy.matrixlib.defmatrix": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/matrixlib/defmatrix.py",
+      "sha256": "046577a15710f7cfa0cea32cdd6342d3ec7be9f99f6864bfd9b0e72c11cf87dd"
+    },
+    "numpy.version": {
+      "path": "/usr/local/lib/python3.10/dist-packages/numpy/version.py",
+      "sha256": "a7fcfa08bc3d730a77a7d31ec027bf53a9695812c353a526dd077dc1451b7d7a"
+    },
+    "python_executable": {
+      "path": "/usr/bin/python3.10",
+      "sha256": "a2f33a6e006989270f4340528eb61f8f97366e00a5d1b602ac8672ea44fc56ae"
+    },
+    "re": {
+      "path": "/usr/lib/python3.10/re.py",
+      "sha256": "018b1a2c70e8ef537cc328d1026afdeca5839392ce47235a7b8d22e1b788cdc7"
+    },
+    "unittest": {
+      "path": "/usr/lib/python3.10/unittest/__init__.py",
+      "sha256": "07bdf1fff20e4121ba61cfb64ea3c404d54ac56b053475a3a105907f48685210"
+    },
+    "unittest.case": {
+      "path": "/usr/lib/python3.10/unittest/case.py",
+      "sha256": "9fa2e873ba608253b6e3d2158e36baf02433a46e68071b76b5e961a7accec2d2"
+    },
+    "unittest.loader": {
+      "path": "/usr/lib/python3.10/unittest/loader.py",
+      "sha256": "4b8d7dbfe68bc38f50e6b3952fda338e1cf9de43f299ab910cfef31c219e0342"
+    },
+    "unittest.main": {
+      "path": "/usr/lib/python3.10/unittest/main.py",
+      "sha256": "360d56268ce4d561681faccf0206dc2164830de7a6dcd135f655ae5fdbdc59cf"
+    },
+    "unittest.mock": {
+      "path": "/usr/lib/python3.10/unittest/mock.py",
+      "sha256": "199d3774b59a89dbe34409b4bdcefcbfab419c5c5a987f3ab91b748da34afae6"
+    },
+    "unittest.result": {
+      "path": "/usr/lib/python3.10/unittest/result.py",
+      "sha256": "eb3f6ed6a6d339b8113479f6878f1946bf082b8818a89daf85f0b63a5be1f9c1"
+    },
+    "unittest.runner": {
+      "path": "/usr/lib/python3.10/unittest/runner.py",
+      "sha256": "7ab57b963cd64f210d5a074b15e8dae9b4d1699da980dd523362d3f88e966847"
+    },
+    "unittest.signals": {
+      "path": "/usr/lib/python3.10/unittest/signals.py",
+      "sha256": "f8286e818ca56e10e03745bc056cdfd31147678f9a1dc8cb6b0fe96ef9a4362a"
+    },
+    "unittest.suite": {
+      "path": "/usr/lib/python3.10/unittest/suite.py",
+      "sha256": "ed2da92bc9f97c53403ee2d3d12cc53b16a96e85d596ebc887b5a93458f3f6bc"
+    },
+    "unittest.util": {
+      "path": "/usr/lib/python3.10/unittest/util.py",
+      "sha256": "fdcc640c3505d16deab9c32eae7c3f5f67c3b5e81c563dc6698fa7fcf403854d"
+    },
+    "warnings": {
+      "path": "/usr/lib/python3.10/warnings.py",
+      "sha256": "b8e7748e4c67eb65cea5d3b3bd888d245771c0ebe63117f747189a55a9b622db"
+    }
+  },
+  "thread_keys": [
+    "OPENBLAS_NUM_THREADS",
+    "OMP_NUM_THREADS",
+    "MKL_NUM_THREADS"
+  ]
+}
