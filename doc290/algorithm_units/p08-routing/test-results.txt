@@ -15,6 +15,11 @@ test_diagonal_choice (test_mask_graph.MaskGraphTests) ... ok
 test_invalid (test_mask_graph.MaskGraphTests) ... ok
 test_junction_and_disconnected (test_mask_graph.MaskGraphTests) ... ok
 test_random_pairwise_adjacency_oracle (test_mask_graph.MaskGraphTests) ... ok
+test_actual_chain_subprocess (test_mask_runner.MaskRunnerTests) ... ok
+test_diagonal_and_disconnected (test_mask_runner.MaskRunnerTests) ... ok
+test_empty_foreground_boundary (test_mask_runner.MaskRunnerTests) ... ok
+test_isolated_scenario_boundary_and_scalar_identity (test_mask_runner.MaskRunnerTests) ... ok
+test_schema_decoder_and_bool_failures (test_mask_runner.MaskRunnerTests) ... ok
 test_budget_tradeoff (test_routing.Tests) ... ok
 test_correlated_scenarios_not_edgewise_worst (test_routing.Tests) ... ok
 test_identity_and_disconnected (test_routing.Tests) ... ok
@@ -35,6 +40,6 @@ test_random_expanded_state_oracle (test_turns.TurnTests) ... ok
 test_vertex_revisit_can_be_required (test_turns.TurnTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 35 tests in 0.443s
+Ran 40 tests in 1.019s
 
 OK

@@ -148,3 +148,23 @@ is inferred. IDs are row,column strings. Foreground absence returns an empty
 graph, which cannot satisfy a routing request. Real data ingestion/calibration
 and P08 scientific gates remain unpassed. This is another input component,
 not an additional optimization algorithm or invention.
+
+## V8 separate mask-file CLI
+
+Run `python3 mask_runner.py input.json` or pipe JSON to `python3 mask_runner.py -`.
+Input fields are mask, connectivity, costs and query. Costs require time and
+exposure, plus optional scenario_times list. Query uses the graph runner's method,
+start, goal and method-specific budget/turn parameters; callers cannot supply a
+graph field here. Pixel endpoint IDs are row,column strings chosen by the caller.
+
+mask_to_graph remains a Python API that raises Python exceptions. The separate
+mask_runner CLI converts tested parse/schema/extractor/kernel failures into JSON
+stderr with exit 2; runner.py remains graph-only and byte-unchanged.
+40 test methods pass, including real mask-CLI subprocesses. Empty foreground is
+accepted by extraction but missing endpoints fail routing with exit 2. All-isolated
+masks retain vertices but scenario routing fails on absent scenario edge count;
+scalar budget identity can succeed and disconnected scalar endpoints are infeasible.
+Diagonal edges retain caller costs with no correction. A failed initial fixture
+incorrectly expected an all-isolated scenario graph to return infeasible; it was
+fixed to assert the inherited documented error boundary, without changing kernels.
+No universal promise that extracted masks are immediately scenario-routable.
