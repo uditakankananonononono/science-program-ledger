@@ -220,3 +220,15 @@ pairwise edge-count oracle. It does not check cost reciprocity or anatomical
 meaning. Eight-neighbor pixel triangles may create cycle rank despite no biological
 loop; this statistic is representation-specific, not a vascular finding.
 Frozen 975-mask QC and separate reject-protocol outcomes are unchanged.
+
+## Degree-two chain representation
+
+59 test methods pass locally with optional imaging dependencies installed.
+chain_compress retains vertices whose degree is not two, plus one deterministic
+anchor per all-degree-two component, then records each full original pixel path
+and its edge-step count. Pure cycles become explicit self-returning chains;
+isolates remain anchors. Parallel compressed chains may exist and must not be
+collapsed. Tests check original-edge coverage exactly once across all 512 3x3
+masks at both connectivities plus chain/cycle/isolate fixtures. This representation
+is separate from the simple-graph topology API and is not passed to the routing
+kernels. No cost aggregation, physical length, physiology or novelty claim.
