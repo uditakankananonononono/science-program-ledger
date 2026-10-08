@@ -1,0 +1,18 @@
+# D4 static-format positive,temporal calibration unestablished
+
+IdentityPASS/frozenstaticdisassemblyPASS:1010serializationopcodes,STOPbyte4573,
+no trailingbytes,PROTO2,fourliteralvesselnamesmatchmetadata.420BINFLOATtokens are
+literalreprstrings,NOT420measurements/trials or calibratedvelocityarray. No unpickle,
+memoobjectreconstruction/codeexecution/import. Static syntaxnotobject/schema proof.
+
+Mandatoryserialization/provenanceledger reportsOutcomeB:temporal-disturbance
+calibrationNOTESTABLISHEDwithinONEpickle+metadata static surface. Actualmeasurement
+schema/dataadmissionUNRESOLVED,not scientificsource rejection. No units/trial/time/
+noise/dropout/microrobottransferclaims. Metadata median/pairedordering notcadence,
+independence or perturbationlaw. Simulationarchives/flowunits excluded,notborrowed.
+
+Usefulstaticidentity/format/labelpositivesretained. No endpointclassificationbeyond
+frozenprotocol,physiology/controller/rights/inventioncredit or allP08-06closure.
+Retainedreplayinputs/inventory/manifestbyte-identical,reproducibilitynotordering.
+Chronologydocument-reported;nopeakquota/output/hardwallpromise. Text-only,noimages/
+plot/spatialclaim. Resultsawaitexactreviewbeforepublication. Stophere,nopickleload.
