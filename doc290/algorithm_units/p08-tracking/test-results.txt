@@ -1,3 +1,5 @@
+test_development_reproducibility_counts (test_compare.ComparisonTests) ... ok
+test_generator_model_matches_prediction (test_compare.ComparisonTests) ... ok
 test_invalid_inputs_no_mutation (test_kalman.KalmanTests) ... ok
 test_prediction_closed_form (test_kalman.KalmanTests) ... ok
 test_process_partition_identity (test_kalman.KalmanTests) ... ok
@@ -14,6 +16,6 @@ test_rejections_leave_inputs_unchanged (test_smoother.SmootherTests) ... ok
 test_single_record_copy (test_smoother.SmootherTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 0.062s
+Ran 16 tests in 0.061s
 
 OK

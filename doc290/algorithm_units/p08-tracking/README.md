@@ -47,3 +47,25 @@ Hand-calculated errors, missing-truth cases, invalid-input and NEES linear-coord
 invariance fixtures pass. NEES numbers alone do not demonstrate calibration or
 chi-square guarantees: model correctness and dependence assumptions remain open.
 No real trajectory comparison, noise calibration, invention or win.
+
+## S1 pre-score synthetic comparison freeze candidate
+
+comparison_protocol.json and compare.py lock 20 seeds across three declared regimes,
+80 variable-dt times, paired realizations and all per-trajectory losses. Only seed
+999 with six times was exercised in development, including no/all observations.
+Evaluation seeds have NOT been run. 16 test methods pass locally. Publication
+confirmation required before scoring. Protocol and code hashes accompany results.
+The command's reference flag records provenance, not proof of publication.
+
+This deliberately uses a matched linear Gaussian model and known q/R, which favors
+Kalman/RTS. It is not an imaging calibration, innovation, or success on G1-G3.
+Last-observation hold lacks velocity estimates/covariance; only position compared.
+Offline RTS sees future data and is separate from causal Kalman/hold.
+Prediction generator matches implementation formula; that fixture is an integration
+check, not an independent validation of the stochastic model. No inferential or
+stable superiority claim is planned. Any scoring exception aborts, not drops a seed.
+
+Retained independent review notes: prior 14 tests and separate dense conditional/
+NEES fixtures passed as software/math baselines. dt=1e200 raises Python OverflowError
+before numpy errstate, while leaving filter state/covariance unchanged. Error-type
+coverage unfinished; ill-conditioning and near-zero PSD tolerances uncalibrated.
