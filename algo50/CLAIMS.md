@@ -157,3 +157,4 @@ Algorithm studies in bio/medicine (not counted toward the flagship 100). Lane sp
 | P09-08 | minimal MRE protocol | DROPPED for data: no licensed multifrequency glioma MRE | no compute |
 | P09-09 | cluster uncertainty | DROPPED for data: no licensed glioma MRE | no compute |
 | P09-10 | open MRE benchmark with locked splits | DROPPED for data: nothing licensed to lock; census is the prerequisite output | no compute |
+| 155 | SensSmartTech PPG HR fusion (batch-10) | DROPPED at DEV headroom gate before prereg: 4-channel fusion worsened DEV LOSO-OOF MAE (9.486 vs 6.248 single-channel); closure only, no TEST access, no win claim; builder-reported, not recomputed | builder commit c4ef9518 |
