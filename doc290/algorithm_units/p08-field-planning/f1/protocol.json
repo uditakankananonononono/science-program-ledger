@@ -1,0 +1,15 @@
+{
+ "id":"P08-04-F1","status":"pre-score freeze candidate",
+ "scope":"Synthetic software full-vs-reduced terminal LP comparison; no invention or physical gate",
+ "development_seed":2999,"evaluation_seeds":[3000,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019],
+ "horizons":[8,32,128],"classes":["constructed_feasible","rank_deficient_impossible"],"state_dimension":3,"actuators":5,
+ "dt_uniform":[0.05,0.2],"B_standard_normal":true,"actuator_limit":1.0,"slew":0.5,"previous_uniform":[-0.2,0.2],"mixture_uniform":[0.1,0.9],
+ "generation":"Fixed initial zero. Construct saturated lower/upper ramps and independent interior mixing to generate feasible terminal. Impossible class zeros first row of B and sets target coordinate 0 to exactly 1. Other coordinates from constructed target. Matched abstract model; impossible class intentionally simple, no general infeasibility runtime claim.",
+ "repetitions":3,"warmup":"Development seed 2999, horizon 8, constructed_feasible, each solver once, never included in summaries",
+ "order":"alternate full/reduced first by instance ordinal plus repetition parity; calls sequential same process, no cache flush",
+ "primary":"All status pairs and residuals, lower/equal/higher total-call wall time per paired repeat; retain every loss and mismatch. Expected status grounded by constructed witness or zero row, but solver infeasible is no general dual certificate.",
+ "timing_scope":"Whole solver function including validation/assembly/solve/reconstruction; instance generation outside timer. No isolated solver timing, statistical superiority, or stable hardware speed claim. Shared process warm caches and OS noise uncontrolled.",
+ "summary":"Per horizon/class median paired full/reduced time ratio and arithmetic mean full/reduced call seconds; retain raw repeats. Ratio >1 means full call slower. No pass/winner cutoff, no post-hoc outlier removal.",
+ "failure_rule":"On exception record exception with method and repeat, continue other method/instances; include exception counts and never omit failed rows from status tables. No tuning after freeze; any change needs disclosed version. No speed ratios for failed pairs.",
+ "resources":"One BLAS/OMP thread, CPU-only numpy/scipy; no downloads, training or GPU; target budget 2 cores/2 GB"
+}
