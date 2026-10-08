@@ -1,0 +1,10 @@
+# Amendment2 finite address failover freeze
+
+PerhopONEDNSpublicvalidatedsortedlist;connect/TLSexplicitBEFOREputrequest/HTTPbytes.
+Tryeachlistaddressonceonlyonconnect/TLSfailure,candidateclosed,eacherror/successaddress
+recorded. AfterTLSrequestcodeOUTSIDEloop;partialwrite/read/statusfailuresstop. Production
+Connectionauto_open=0plusconnect-calledguardblockshttp.clientautomaticreconnect.
+NoDNSreresolution/newaddress/proxy/urllibfallback,oldhostSNI/certverify/Hostpreserved.
+Perconnectiontimeoutonly,not totalwallclock. Max3redirects/sameidentity/pixelgates.
+Sixgroupsfinitefailover/allfailclosed/partialwrite-read/reconnectguard/onceDNS/identity.
+Oldfreeze/amend1codeunchanged,newdelta/hashmanifest. Noamend2sourcefetchyet.
