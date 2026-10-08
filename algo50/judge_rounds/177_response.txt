@@ -1,0 +1,7 @@
+Label honest? — Yes, with one wording caution. “DEV-screen DROP” is supported: the preregistered candidate loses to the constant-mean baseline by 0.1248 pp, with the CI entirely below zero and 11/12 subject-level deltas negative. “Not a general negative on the hypothesis” is also appropriately restrained. This is a DEV result, not evidence about unseen holdout performance.
+
+Biggest methodological weakness: Only 12 subjects. Even with subject-level LOSO evaluation, the effective inferential sample is 12 independent subjects, so the bootstrap CI and “significance” should not be treated as strong confirmatory evidence. The consistent direction strengthens the observed DEV failure, but does not solve the small-n/generalizability problem.
+
+Power-field bug — Patch required before reuse. Yes. Returning achieved power of 1.000000 for a specified +0.5 pp effect when the observed effect is negative is internally suspicious enough that the runner's power calculation should be audited and patched before that field is used in another study. It does not invalidate this DROP, because the gate does not depend on power.
+
+Stronger design: Predefine a larger, independently held-out subject-level test set and perform model selection entirely within DEV, with the constant baseline locked in advance. Ideally obtain substantially more independent subjects rather than merely more subject-days; otherwise the effective sample size remains the central limitation.
