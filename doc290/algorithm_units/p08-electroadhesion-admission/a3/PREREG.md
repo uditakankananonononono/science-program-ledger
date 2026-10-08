@@ -1,0 +1,43 @@
+# A3 sole README member text/schema-provenance admission
+
+SeparateunitafterA2e92292fidentity/directoryonly. Expectedvalue:soleexplicitREADME
+metadatalabel,2101declaredbytes,maybeunits/column/exptlabels cheaply;no668CSVbodies
+favorablepeekor2.05GiBdecompression. ChoicebasedALLsoleREADMEentry,notreadcontent.
+READMEbodiesunread;priorarticle+directoryexposuresinA2,notblind. NoCSV/othermember
+opens,nosourcecodeexecution/numericarrays/physics/physiology/rights/invention.
+
+## Selection and freeze gates
+
+ExactA2original627211731B/MD559a1ca596587186d2da93c6cad3aa02f/SHA256
+ e119e77c52ecb8e3e5c2590da69c2b0ed11f45fd7b1ed83fa12b609d2d8d4bd5.
+https://zenodo.org/api/records/6417174/files/Data.zip/content
+ONEentry673Data/README.txt,uncompressed2101,othercentralfieldsinselectioncopied
+frompinnedA2inventorySHA256. No newsourcefetchiflocaloriginalidentityvalid;invalid
+retainedoriginal->scopedunavailable,noarchive/routingrescue. Fullsize+MD5+SHA256gate
+BEFOREdirectory/decompression;holdfilehash+fstatrecheckafterbeforeANYtextanalysis.
+
+Freezeafterreview/publish,actualPython+zipfilebytes,copy/pinA2scannerforbounded
+fullcentraldir(unchanged)noZipFileallocationwithoutcentralguards. Verifyselected
+allcentralmetadataexact+singlenameordinalmatch. OpenONLYselectedREADMEbyZipInfo,
+noextract/testzip/othermemberread. Streambounded<=64KiBdecompressed,EOFexact2101+
+CRCmatch,compressed-size/centralfieldschecked;neverwholearchiveRAMload. Failure
+no partialtextinventory. CRCzipconsistency,notindependentREADMEauthorauthentication.
+SelectedrawREADMEbytesretained,SHA256reported,notpreexistingexpectedSHA256.
+StrictUTF8decodedliteralnumberedlines,newlinesincludingblank/CR/LFstatuses retained,
+<=1000lines/<=16384Unicodecharsline. Syntax/textcapsnotpeakmemoryquota. NoCSVload,
+code/notebookexecution/schemaevaluation/importorarticlefilltorepairREADME.
+
+Trapnonselectedmemberopen,extract/extractall/testzip/network/sourceexecution;
+CRC/truncation/decompressedcaps/UTF8/identityzeroanalysis/mutationfailuresandstrict
+centralmetadataagreement. RawtextdoesnotestablishCSVheaders/rows/data/trials/timing.
+
+## Manual README ledger then STOP
+
+Exactlinecitations:columns/units,filenameconvention,force-sign/normalization/area,
+precontact/contact/release/holding phases,measurementtime/sensor/drivebindings,
+trials/replicates/splits/sourceprovenance. Preserveambiguity/missinglimits. Filename
+labels+READMEclaims notactualCSV/exptcalibration. STOPbeforeendpointclassification;
+onlynewfixedCSVselectionpreregif defensibleexplicitfields,name-matchingmetadata
+ruleandboundedALLmatchselection. No arbitraryfavorablefilepick/physiologicaltransfer.
+CCBY4metadataassertiononly. Zero science/inventioncreditfromREADMEadmissionalone.
+Reviewexactresultsbeforepublication. F1separateonefreshsamefreeze rerununchanged.
