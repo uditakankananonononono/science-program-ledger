@@ -1,0 +1,37 @@
+# A4-1 wrapper design notes for exact review
+
+Original functions/selection/transaction representation unchanged. Recomputesarchive
+fullsize/MD5/SHA256 andfulloriginalcentral/ordinalALLmatchseteverycall. ALLrawsize/
+hashesrecheckedfromacquireinputs beforeANYnewanalysis. Originalpartial28-filestage
+excluded;freshstageexplicitA4-1-checkpoint-v1,no unmanifested/temp/foreign ordinals.
+<=3distinctmembers/callincludingtwo literal replays pernewmember (same member twice,
+not6distinctmembers). Each canonical gzip replay hash/count/body/newline/grammar/
+delimiterfieldsfromEXACTfrozenline_records/JSON/gzip;no storedcountsacceptedwithout
+private-keysealedreceipt. GeneratedlocalHMACkeyoutsidecheckpointstage,notusersecret/
+publication;protectscoherentstage/manifest/receiptalterationunderlocal-key-not-altered
+assumption,NOThostilefilesystemattackerwithkeyaccessproof. Explicitlynotdataauthorship.
+
+Allstoredcheckpointhashes+rawhashesfreshrecheckedeverycall. Signed computedcounts
+for10Mcap,code/selection/raw/gzipidentitiessealed;latefailurecheckpointNOTSUCCESS.
+Finalall45coverage/allraw/allgzip/archive/codebeforefullsummary/manifest/rename;
+NOwholecollectionliteralreplayinfinalization. Finalrepresentationidenticaloriginal
+fulltransaction(no localHMAC/receipt/time/path fields). DirectoryrenameNOTcrash-durable
+fsyncproof;all-rawhashesobservednotcontinuoushostilemutationatomicproof,capsnotpeak.
+No sourcefallback/bodyselectionchange/newmetric/units/force/trial/classification.
+Original/failureinputsuntouched. InitialidentityfailnoNEWanalysis;lateparserfailure
+maydiscardsteps. Needtests/executablefreeze reviewBEFORErun,NOTreviewedreadyyet.
+
+Executable test status:5groupsPASS,fixture full45resumed representation identical
+originaltransaction byte-for-byte. Initialtestpatchimportusedunregisteredmodule
+name,changedpatch.object(w,..);no sourceexecution. Actualwrapper runNOT started.
+Integrityscope:private generatedHMAC key readableonlylocal0600path,notpublished/
+passedtoagents;keycompromise outside claim. Receiptcountscomputedtwice independently
+fromsamefrozenliteralfunction,notindependentalgorithm/scientifictruth. Finalfresh
+hashesobserveallraw+gzip/archive+code,not simultaneousatomicfilesystemprotection.
+Resumealready-verified unchanged checkpoints through keyed receipts;different
+literalencodedgzip bytes/alteredcounts/coherentunsignedstate failseal/freshhashes.
+Thisintroduceslocalreceiptmechanism (execution-integrity engineering),not changes
+tophysicaldataadmission/science/noinventedunits. Exactproposalreviewneeded.
+Invocation:python3 continue.py NEW_STAGE RAWDIR ORIGINAL_ARCHIVE NEW_KEY_PATH init
+then ... batch (<=3distinctmembersincludingvalidationreplay),then ... final SUCCESS_DIR.
+No originalfailedstage/source-rescue. SuccessONLYcompleteoriginalrepresentation.
