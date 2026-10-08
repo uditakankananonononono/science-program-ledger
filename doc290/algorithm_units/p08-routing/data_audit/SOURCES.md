@@ -78,3 +78,27 @@ channels; no averaging/thresholding introduced. 314,052 foreground pixels became
 23,952 skeleton vertices and 48,304 directed edges; three eight-neighbor components
 before/after. Native skeleton crop visually inspected. This is one development
 mask, not all-800 extraction QC. No new routing/flow or anatomy fidelity claim.
+
+## FOVEA transfer and first-mask extraction
+
+Publisher article: https://www.nature.com/articles/s41597-025-04965-2
+Dataset metadata: https://api.figshare.com/v2/articles/28329338
+License name verbatim: "CC BY"; URL https://creativecommons.org/licenses/by/4.0/
+Dataset CC BY is separate from article CC BY-NC-ND. Verified TLS range-fetch
+observed ZIP signature; transfer agent reports complete ZIP MD5 equal to publisher
+36ca4a0cf119a63f8ff14de7a30ad91b. This lane independently checked transferred ZIP
+CRC, exact 160-mask membership, and all per-mask sizes/SHA256s in transfer manifest.
+160 vessel masks are 80 preoperative and 80 intraoperative, two annotators over
+40 patients. No image/video/optic-disc files in the transfer.
+
+First intraoperative mask FOVEA001_i_ve_1.png: L, 1080x1920, values 0/255.
+31,399 foreground -> 10,964 skeleton vertices, 22,206 directed edges. One
+8-neighbor component before/after. Native crop visually inspected: thin continuous
+centerlines and branch crossings visible. Crossings/loops are pixel topology,
+not verified anatomy. No threshold/channel conversion needed. Only first-mask QC.
+
+The narrow three-independent-source first-mask extraction check is now 3/3:
+HRF, FIVES, FOVEA. It does not certify whole-dataset extraction, anatomical
+fidelity, calibrated flow, independent validation or P08 G2-G4. All inputs are
+exposed development; patient/annotator correlation must be preserved in splits.
+DRIVE/STARE/CHASE stay pending, not declared unavailable.
