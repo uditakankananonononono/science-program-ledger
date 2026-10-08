@@ -67,7 +67,8 @@ Stochastic delayed execution MDP and policy search; observed delay assumption ma
 Not a robust partially observed irreversible release guarantee. No RL implementation
 or training admitted; cited to avoid treating action queues/delay as new.
 
-S7 Precision Drug Dosing: Delay and Prolongedness of Action Effects (AAAI2023),abstract:
+S7 On the Challenges of Using Reinforcement Learning in Precision Drug Dosing:
+Delay and Prolongedness of Action Effects (AAAI2023), publisher abstract:
 https://ojs.aaai.org/index.php/AAAI/article/view/26650
 PAE-POMDP addresses prolonged action effects; not direct cargo-release timing dataset
 or proof of a complete release solution. Physiological analogy does not equal data.
