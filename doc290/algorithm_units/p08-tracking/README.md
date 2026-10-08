@@ -35,3 +35,15 @@ incorrect (it produced positive covariance); corrected fixture uses a filtered
 covariance of 5I against prediction 2I and terminal I, giving negative output.
 No production formula was changed to force a test pass. No real-data/calibration,
 causal benefit, discovery or benchmark win. Independent review pending.
+
+## Error-metric unit
+
+14 tracking tests pass locally. metrics.evaluate reports position/velocity RMSE
+and full-state NEES with explicit boolean truth availability. Missing truth is
+excluded and counted, never zero-filled; all-missing yields None metrics, not a
+perfect score. Estimate/covariance validation covers every row, including excluded
+truth. Positive-definite evaluation covariance required; singular unsupported.
+Hand-calculated errors, missing-truth cases, invalid-input and NEES linear-coordinate
+invariance fixtures pass. NEES numbers alone do not demonstrate calibration or
+chi-square guarantees: model correctness and dependence assumptions remain open.
+No real trajectory comparison, noise calibration, invention or win.
