@@ -30,3 +30,32 @@ Limitations: annotations are masks, not ready-made directed vascular graphs.
 Segmentation/skeletonization, physical spacing, flow and cost calibration remain
 unbuilt. All acquired annotations are exposed development inputs; not untouched
 validation. Reading masks is not completion of P08 G1 (three datasets).
+
+## First HRF extraction, development only
+
+01_h.tif was thinned using scikit-image 0.25.2 skeletonize(method='zhang'), an
+established thinning algorithm, not our invention. Documentation fetched:
+https://scikit-image.org/docs/stable/auto_examples/edges/plot_skeleton.html
+Documentation describes Zhang/Suen (1984). First annotation: 833,888 foreground
+pixels -> 75,057 skeleton pixels; 14 eight-neighbor connected components before
+and after. Extracted bidirectional eight-neighbor pixel graph: 75,057 vertices,
+151,218 directed edges. Component-count agreement alone does not prove anatomical
+or full-topological fidelity. A 700x700 native-resolution crop was visually
+inspected and shows thin connected vessel lines. No routing/flow result claimed.
+
+hrf_extract.py requires optional Pillow/numpy/scipy/scikit-image dependencies;
+core routing remains standard-library only. Full-image Python list/graph creation
+can use substantial memory; no 2-GB resource-limit claim. Synthetic TIFF tests
+cover a known chain and rejected gray values; missing optional packages skip
+these tests explicitly, rather than certify image ingestion.
+
+Access continuation: the exact official STARE HTTP page returned archive hrefs
+successfully, avoiding the failed HTTPS certificate route without disabling TLS
+verification. HTTP bytes lack transport authentication; no STARE download or
+identity/hash correspondence verified yet. Observed label href:
+http://cecas.clemson.edu/~ahoover/stare/probing/labels-ah.tar
+
+DRIVE third-party candidate fetched:
+https://www.kaggle.com/datasets/andrewmvd/drive-digital-retinal-images-for-vessel-extraction
+The mirror says no original license specified and credits original authors;
+this is not an official grant. Mirror identity/license/download checks are pending.
