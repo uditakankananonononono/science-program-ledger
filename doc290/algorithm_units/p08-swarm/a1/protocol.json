@@ -1,0 +1,13 @@
+{
+  "id":"P08-05-A1", "status":"frozen-before-scoring",
+  "scope":"synthetic supplied-model decision sensitivity, not invention validation",
+  "single_ranges":[["2/5","4/5"],["3/5","4/5"],["7/10","9/10"]],
+  "split_ranges":[[["1/2","3/4"],["1/2","3/4"]],[["3/5","4/5"],["2/5","4/5"]],[["7/10","9/10"],["7/10","9/10"]]],
+  "thresholds":["1/2","1"],"payload_single":["1"],"payload_split":["1/2","1/2"],
+  "nominal":"maximize independent success at interval midpoint; menu-order tie break",
+  "robust":"maximize arbitrary-dependence success minimum over rectangular marginal ranges; menu-order tie break",
+  "metrics":["worst-case guaranteed success", "independent midpoint success"],
+  "report":"all 18 Cartesian cases, exact values, robust-minus-nominal differences on both metrics, all losses/ties/wins",
+  "expectations":"Robust cannot lose on its own optimized worst-case objective by construction; this is not superiority evidence. It may lose on nominal objective. No tuning after scoring.",
+  "compute":"local exact rational, no GPU/training", "data":"constructed, no measured data admitted"
+}
