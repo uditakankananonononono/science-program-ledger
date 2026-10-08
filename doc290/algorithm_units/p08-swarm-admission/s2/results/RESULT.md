@@ -8,7 +8,7 @@ selection,caps and rules unchanged. No extra source contents or TIFF/video used.
 Useful literal positives: spectroscopy/material-property labels(2θ,binding energy,
 m/z,intensity,magnetic field/moment),H2O2/UV speed conditions,frequency-speed/errorbar,
 zeta-potential material classes and Before/After quality-rate values. Exact strings,
-367,428 raw lines,403 tab-only lines and original Ga-header typo retained. These are
+367,428 raw lines,403 whitespace-only lines (400 tab-only + 3 empty) and original Ga-header typo retained. These are
 literal source observations,not fitted/validated schemas or event trials.
 
 Critical losses: source describes environmental microplastic capture/degradation,

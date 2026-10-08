@@ -8,8 +8,9 @@ and manual-ledger-before-classification chronology below is document-reported.
 
 Coordinates: exact Python str.splitlines 1-based,blank-inclusive,including its
 Unicode separators; not UNIX lines/CSV records/frame indices.367,428 raw lines.
-No BOM/VT/FF detected in these actual files; convention still applies. Tab-only
-lines preserved,not dropped: Ga L402-436(35),O L102-435(334),W L152-185(34).
+No BOM/VT/FF detected in these actual files; convention still applies. 403 whitespace-only lines (400 tab-only + 3 empty) preserved,not dropped:
+Ga L402-436(35),O L102-435(334),W L152-185(34). Ga L402,O L102 and
+W L152 are empty; subsequent lines in those tails are tab-only.
 Original spelling `Binging` in Ga L1 retained,not corrected.
 
 ## Coverage and literal table labels
@@ -26,9 +27,9 @@ raw coordinate citations; full original bytes and every line retained.
 | File | Raw lines | Literal labels/evidence |
 |---|---:|---|
 | Figure 1C.txt |1753|L1 `2θ (Degree)`/`Intensity (a.u.)`;L2 `Fe nanoparticles LiquidBots Y`;L3 `20\t6435\t20\t6035`;L1753 `90\t12703\t90\t1431`|
-| Figure 1D-Ga.txt |436|L1 `Binging energy (eV)`,Ga2p/fitresult/peaks/Intensity;L2 `1110.07` first entry;tab-only tail preserved|
-| Figure 1D-O.txt |435|L1 `Binding energy (eV)`,O1s/fitresult/peaks/Intensity;tab-only tail preserved|
-| Figure 1D-W.txt |185|L1 `Binding energy (eV)`,W4f/fitresult/peaks/Intensity;tab-only tail preserved|
+| Figure 1D-Ga.txt |436|L1 `Binging energy (eV)`,Ga2p/fitresult/peaks/Intensity;L2 `1110.07` first entry;whitespace-only tail preserved (initial empty line, then tab-only)|
+| Figure 1D-O.txt |435|L1 `Binding energy (eV)`,O1s/fitresult/peaks/Intensity;whitespace-only tail preserved (initial empty line, then tab-only)|
+| Figure 1D-W.txt |185|L1 `Binding energy (eV)`,W4f/fitresult/peaks/Intensity;whitespace-only tail preserved (initial empty line, then tab-only)|
 | Figure 2B.txt |10|L2 `H2O2 concentration (wt%)`, `Speed (μm/s)`, `Error bars`;L3-10 No UV/UV light with0,0.1,1,2.5 printed concentrations|
 | Figure 5-down.txt |120731|L1 `X m/z`, `Y Intensity (a.u.)`;L2 `800.01\t1253`;L120731 `6000.028\t712`|
 | Figure 5-up.txt |120718|L1 same m/z/intensity labels;L2 `800\t767`;L120718 `6000.075\t229`|
