@@ -12,7 +12,7 @@ def solve_scenarios(initial,dt,maps,limit,slew,previous,terminal_lower,terminal_
     if any(a.shape!=(m,) for a in (limit,slew,previous)) or lo.shape!=(s,d) or hi.shape!=lo.shape:raise ValueError('bound shape')
     if not all(np.isfinite(a).all() for a in (x,dt,Bs,limit,slew,previous,lo,hi)):raise ValueError('nonfinite input')
     if (dt<=0).any() or (limit<=0).any() or (slew<0).any() or (abs(previous)>limit).any() or (lo>hi).any():raise ValueError('invalid bounds')
-    if isinstance(tolerance,(bool,str)) or not np.isscalar(tolerance) or not np.isfinite(tolerance) or tolerance<=0:raise ValueError('invalid tolerance')
+    if isinstance(tolerance,(bool,np.bool_,str)) or not np.isscalar(tolerance) or not np.isfinite(tolerance) or tolerance<=0:raise ValueError('invalid tolerance')
     rows=[];rhs=[]
     for k in range(n):
         for j in range(m):

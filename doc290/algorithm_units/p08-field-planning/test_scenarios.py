@@ -17,7 +17,7 @@ class ScenarioTests(unittest.TestCase):
         r=self.call([[[1]],[[1.1]]],[[.9],[.9]],[[1.1],[1.1]])
         u=r['controls'][0][0];self.assertGreater(2*u,1.1)
     def test_strict_tolerance_and_invalid_map(self):
-        for t in (True,'1',float('nan'),0):
+        for t in (True,np.bool_(True),np.bool_(False),'1',float('nan'),0):
             with self.assertRaises(ValueError):self.call([[[1]]],[[0]],[[1]],tolerance=t)
         with self.assertRaises(ValueError):self.call([[[float('inf')]]],[[0]],[[1]])
 if __name__=='__main__':unittest.main()
