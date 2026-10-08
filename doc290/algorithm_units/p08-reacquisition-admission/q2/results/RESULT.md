@@ -1,0 +1,16 @@
+# Q2 opaque same-byte binding discovered, no content admission
+
+Preregp00b34caa/freezef19895c reviewed+publishedbeforefrozenproductionacquisition.
+Twofreshrequests completeEOF with exactURL200/strongquotedopaqueETag/HTTPgates.
+ObservedContent-Length128786 equalsactual128786B bothreads, not pre-pinnedexpected.
+FullstreambytecomparisonPASS and localrehashPASS. DiscoveredSHA256 in bindingJSON
+is a NEW bytebinding, NOT pre-existingindependentidentityauthentication.
+
+Bodyopaque/unparsed; localrawretainedprivateonly, publicationonlymetadata/digest.
+TwoHTTPreadsNOTindependentservers/originimmutability/authorship/measurementsemantics.
+Caps/timeouts/rename/interruption/SIGKILL/localconcurrencylimitationsunchanged.
+Outcome: same_byte_binding_discovered. NoendpointRuleA/B, no qualifyingmeasurement,
+benchmark/performance/invention/physiology/rightscredit. Alltime/GT/searchcostgatesopen.
+
+STOP:exactresultreviewBEFOREpublication;publishrevieweddiscoveredbindingBEFORE
+separatePDF-contentadmissionprereg/freeze. Summaryplots/modelmetricsnotendpointrescue.
