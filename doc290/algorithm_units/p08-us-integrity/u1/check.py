@@ -16,7 +16,11 @@ def download(url,limit,budget,opener=None):
         if response.status!=200:raise ValueError('HTTP status')
         if response.headers.get('Content-Encoding','identity')!='identity':raise ValueError('compressed transfer unsupported')
         length=response.headers.get('Content-Length')
-        if length and int(length)>min(limit,budget[0]):raise ValueError('declared byte cap')
+        declared=None
+        if length is not None:
+            if not length.isdigit():raise ValueError('invalid content length')
+            declared=int(length)
+            if declared>min(limit,budget[0]):raise ValueError('declared byte cap')
         while True:
             remaining=min(limit-len(data),budget[0])
             if time.monotonic()-started>40:raise ValueError('40s transport deadline')
@@ -28,6 +32,7 @@ def download(url,limit,budget,opener=None):
             budget[0]-=len(chunk)
             if len(chunk)>remaining:raise ValueError('stream byte cap')
             data.extend(chunk)
+        if declared is not None and len(data)!=declared:raise ValueError('truncated content length')
     return bytes(data)
 
 def decode(raw):
@@ -53,7 +58,9 @@ def labels(raw,w,h):
                     if cls<0 or not cls.is_integer():row['issues'].append('class_nonnegative_integer')
                     if bw<=0 or bh<=0:row['issues'].append('nonpositive_wh')
                     corners=[x-bw/2,y-bh/2,x+bw/2,y+bh/2]
-                    row['corners_px']=[corners[0]*w,corners[1]*h,corners[2]*w,corners[3]*h]
+                    pixel=[corners[0]*w,corners[1]*h,corners[2]*w,corners[3]*h]
+                    if not all(math.isfinite(c) for c in corners+pixel):row['issues'].append('derived_arithmetic_nonfinite')
+                    else:row['corners_px']=pixel
                     if any(c<0 or c>1 for c in corners):row['issues'].append('out_of_frame')
             except ValueError:row['issues'].append('non_numeric')
         row['valid']=not row['issues'];rows.append(row)
@@ -101,7 +108,7 @@ def run(folder):
         checked.append(row)
         if s['overlay']:
             panel=Image.new('RGB',(640,400),'#fff');d=ImageDraw.Draw(panel)
-            if im is not None:
+            if im is not None and row['status']=='checked' and 'annotation' in row:
                 for box in row['annotation']['rows']:
                     if box['corners_px'] is not None and box['valid']:
                         ImageDraw.Draw(im).rectangle(box['corners_px'],outline='red',width=4)

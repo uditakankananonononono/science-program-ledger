@@ -1,8 +1,29 @@
 test_decode (test_check.Tests) ... ok
+test_end_to_end_invalid (test_check.Tests) ... /tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/check.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/environment.json' mode='r' encoding='UTF-8'>
+  root=Path(__file__).parent;environment=json.load(open(root/'environment.json'))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/check.py:72: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/selection.json' mode='r' encoding='UTF-8'>
+  sel=json.load(open(root/'selection.json'));paths=(root/'paths.txt').read_text().splitlines()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/test_check.py:41: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpge4l_2y2/out/integrity.json' mode='r' encoding='UTF-8'>
+  check.run(str(Path(d)/'out'));r=json.load(open(Path(d)/'out/integrity.json'))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/check.py:70: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/environment.json' mode='r' encoding='UTF-8'>
+  root=Path(__file__).parent;environment=json.load(open(root/'environment.json'))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/check.py:72: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/selection.json' mode='r' encoding='UTF-8'>
+  sel=json.load(open(root/'selection.json'));paths=(root/'paths.txt').read_text().splitlines()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/doc230/build_units/doc290/algorithm_units/p08-us-integrity/u1/test_check.py:41: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpv_vh1zha/out/integrity.json' mode='r' encoding='UTF-8'>
+  check.run(str(Path(d)/'out'));r=json.load(open(Path(d)/'out/integrity.json'))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
 test_labels (test_check.Tests) ... ok
+test_overflow (test_check.Tests) ... ok
 test_stream (test_check.Tests) ... ok
+test_truncated (test_check.Tests) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.010s
+Ran 6 tests in 0.728s
 
 OK

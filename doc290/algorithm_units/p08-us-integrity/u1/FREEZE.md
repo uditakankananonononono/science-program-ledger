@@ -36,3 +36,9 @@ Run after review/publication: `python3 check.py results` from this directory. Ne
 directory only; partial retrieval records retained explicitly,not mistaken for complete
 source slice. Actual overlays inspected before results report. No imaging admission
 reopens rejected wall/rheology/dynamics calibration or establishes a new algorithm.
+
+Review HOLD fixes before any source retrieval: derived normalized/pixel arithmetic
+finiteness checked,overflow retains null corners+explicit issue,invalid UTF8 label
+keeps unavailable panel rather than dereferencing absent annotation,declared body
+length checked at EOF. New fixtures include all three plus end-to-end24mocked pairs/
+overlays for UTF8 failure and finite overflow. No source measurements executed.
