@@ -1,0 +1,9 @@
+# Reviewer-requested connection-time boundary repair
+
+Priorf783852 precheckedDNSbuturllibcouldresolveagain. Heldbeforepublication/use.
+Replacedproductionopenerwithmanualhttp.clientHTTPSconnectiontopinnedpublicnumericIP,
+originalhostSNI/defaultcertificate+hostnameverification/Hostheaderkept. Connection
+methodvalidatespublicIPagain;everyconnection/reconnectusesthatsameIP,nohostDNSlookup.
+EveryredirecthasnewpublicDNSvalidation/pinning,noimplicitredirect/retry/auth/cookie.
+SynthetictestsassertnumericconnecttargetandSNI,repeatedconnectunderDNSlookuptrap,
+privateconnectionreject,anddefaultCERT_REQUIRED/check_hostname. No sourcefetchyet.

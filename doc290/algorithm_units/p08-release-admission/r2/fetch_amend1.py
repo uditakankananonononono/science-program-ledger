@@ -1,5 +1,5 @@
 """Amendment1 identity-only fetch; no parser/visual calls."""
-import hashlib,ipaddress,json,socket,sys,urllib.error,urllib.parse,urllib.request
+import hashlib,http.client,ipaddress,json,socket,ssl,sys,urllib.error,urllib.parse,urllib.request
 from pathlib import Path
 import admit
 
@@ -19,12 +19,44 @@ def target(url,resolver=socket.getaddrinfo):
     if any(not ipaddress.ip_address(ip).is_global for ip in ips):raise ValueError('DNS nonpublic target')
     return {'url':url,'dns_addresses':ips}
 
+class PinnedHTTPSConnection(http.client.HTTPSConnection):
+    def __init__(self,host,ip,timeout=20):
+        self.validated_ip=ip
+        super().__init__(host,port=443,timeout=timeout,context=ssl.create_default_context())
+    def connect(self):
+        if not ipaddress.ip_address(self.validated_ip).is_global:raise ValueError('connection IP not public')
+        # Numeric address only; original hostname is never resolved at connect time.
+        self.sock=socket.create_connection((self.validated_ip,443),self.timeout,self.source_address)
+        try:self.sock=self._context.wrap_socket(self.sock,server_hostname=self.host)
+        except Exception:
+            self.sock.close();raise
+class PinnedResponse:
+    def __init__(self,response,connection,url):
+        self.response=response;self.connection=connection;self.url=url
+        self.status=response.status;self.headers=response.headers
+    def geturl(self):return self.url
+    def read(self,n):return self.response.read(n)
+    def close(self):
+        self.response.close();self.connection.close()
+    def __enter__(self):return self
+    def __exit__(self,*args):self.close()
+def request_pinned(url,checked):
+    p=urllib.parse.urlsplit(url);ip=checked['dns_addresses'][0]
+    c=PinnedHTTPSConnection(p.hostname,ip)
+    path=urllib.parse.urlunsplit(('', '',p.path or '/',p.query,''))
+    try:
+        c.putrequest('GET',path,skip_host=True,skip_accept_encoding=True)
+        for key,value in {'Host':p.netloc,'Accept-Encoding':'identity','User-Agent':'source-admission/redirect-amend1'}.items():c.putheader(key,value)
+        c.endheaders()
+        return PinnedResponse(c.getresponse(),c,url)
+    except Exception:
+        c.close();raise
+
 class ResponseOpener:
     def __init__(self,r):self.r=r
     def open(self,req,timeout):return self.r
 
 def fetch(url,limit,budget,chain,opener=None,resolver=socket.getaddrinfo):
-    opener=opener or urllib.request.build_opener(admit.NoRedirect())
     current=url;seen=set();hops=0
     while True:
         step={'requested_url':current};chain.append(step)
@@ -32,8 +64,10 @@ def fetch(url,limit,budget,chain,opener=None,resolver=socket.getaddrinfo):
             if current in seen:raise ValueError('redirect loop before request')
             checked=target(current,resolver);step['validated_dns']=checked['dns_addresses'];seen.add(current)
             req=urllib.request.Request(current,headers={'Accept-Encoding':'identity','User-Agent':'source-admission/redirect-amend1'})
-            try:r=opener.open(req,timeout=20)
-            except urllib.error.HTTPError as e:r=e
+            if opener is None:r=request_pinned(current,checked)
+            else:
+                try:r=opener.open(req,timeout=20)
+                except urllib.error.HTTPError as e:r=e
             status=getattr(r,'status',getattr(r,'code',None));step['status']=status
             if r.geturl()!=current:r.close();raise ValueError('unrecorded implicit redirect')
             if status in (301,302,303,307,308):

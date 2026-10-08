@@ -41,6 +41,22 @@ class Tests(unittest.TestCase):
     def test_final_and_implicit(self):
         for r in [R(URL,404),R('https://other.test/x')]:
             with self.assertRaises(ValueError):a.fetch(URL,8,[8],[],O([r]),dns)
+    def test_pinned_connection_dns_change(self):
+        checked=a.target(URL,dns)
+        class Sock:
+            def close(self):pass
+        class TLS:
+            check_hostname=True;verify_mode=2
+            def wrap_socket(self,sock,server_hostname):
+                self.server_hostname=server_hostname;return sock
+        tls=TLS()
+        with patch.object(a.ssl,'create_default_context',return_value=tls),patch.object(a.socket,'create_connection',return_value=Sock()) as connect,patch.object(a.socket,'getaddrinfo',side_effect=AssertionError('hostname must not be re-resolved')):
+            c=a.PinnedHTTPSConnection('fixed.test',checked['dns_addresses'][0]);c.connect()
+            self.assertEqual(connect.call_args.args[0],('8.8.8.8',443));self.assertEqual(tls.server_hostname,'fixed.test')
+            c.connect();self.assertEqual(connect.call_args.args[0],('8.8.8.8',443))
+        with self.assertRaises(ValueError):a.PinnedHTTPSConnection('fixed.test','127.0.0.1').connect()
+    def test_tls_defaults(self):
+        c=a.PinnedHTTPSConnection('fixed.test','8.8.8.8');self.assertTrue(c._context.check_hostname);self.assertEqual(c._context.verify_mode,a.ssl.CERT_REQUIRED)
     def test_identity_gate(self):
         with tempfile.TemporaryDirectory() as t,patch.object(a,'fetch',return_value=b'bad'),patch.object(a.admit,'parse') as parser:
             a.run(Path(t)/'out');parser.assert_not_called();j=json.loads((Path(t)/'out/identity.json').read_text());self.assertEqual(j['status'],'unavailable');self.assertFalse(j['visual_performed'])
