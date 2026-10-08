@@ -1,10 +1,12 @@
 """Q5 scanner adapted from separately pinned A2 original; directory only."""
 import json,re,stat,struct,zipfile
 def extras(raw):
- pos=0
+ pos=0;seen=set()
  while pos<len(raw):
   if pos+4>len(raw):raise ValueError('malformed extra header')
   typ,n=struct.unpack_from('<HH',raw,pos);pos+=4
+  if typ in seen:raise ValueError('ambiguous duplicate extra ID')
+  seen.add(typ)
   if pos+n>len(raw) or typ==1:raise ValueError('malformed/ZIP64 extra')
   pos+=n
 def unsafe(name,flag,creator,attr):
@@ -60,5 +62,7 @@ def directory(f,sel):
    for key,other in [('filename',b.filename),('flags',b.flag_bits),('compression',b.compress_type),('crc',b.CRC),('compressed_size',b.compress_size),('uncompressed_size',b.file_size),('header_offset',b.header_offset),('external_attr',b.external_attr),('extra_hex',b.extra.hex()),('comment_hex',b.comment.hex()),('required_version',b.extract_version),('internal_attr',b.internal_attr)]:
     if a[key]!=other:raise ValueError('parser disagreement '+key)
    if a['create_version']!=b.create_system*256+b.create_version:raise ValueError('creator disagreement')
+   expected_date=((a['dos_date']>>9)+1980,(a['dos_date']>>5)&15,a['dos_date']&31,a['dos_time']>>11,(a['dos_time']>>5)&63,(a['dos_time']&31)*2)
+   if tuple(b.date_time)!=expected_date:raise ValueError('literal DOS decoded date disagreement')
    a.update(ordinal_1based=ordinal,filename_repr=repr(a['filename']),datetime=list(b.date_time))
  return {'status':'complete_bounded_directory_metadata','entries':records,'entry_count':n,'central_directory_bytes':cdsize,'central_directory_offset':cdoffset,'EOCD_offset':offset,'comment_hex':tail[-clen:].hex() if clen else '', 'allocation_charge':allocation_charge,'claims':'central directory only; local minimum-span bounds are conservative central declarations, not verified local headers/member CRC/content/extraction'}

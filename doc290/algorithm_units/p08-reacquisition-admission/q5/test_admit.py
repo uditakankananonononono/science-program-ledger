@@ -62,7 +62,6 @@ class Tests(unittest.TestCase):
             infos=original(z);infos[0].internal_attr=3;return infos
         with mock.patch.object(zipfile.ZipFile,'infolist',wrong):
             with self.assertRaises(ValueError):s.directory(io.BytesIO(fixture()),SEL)
-if __name__=='__main__':unittest.main()
 
 class Additional(unittest.TestCase):
     def test_aggregate_cap(self):
@@ -79,3 +78,17 @@ class Additional(unittest.TestCase):
         f=io.BytesIO()
         with zipfile.ZipFile(f,'w') as z:z.writestr('same',b'x');z.writestr('same',b'x')
         with self.assertRaises(ValueError):s.directory(io.BytesIO(f.getvalue()),SEL)
+
+class RepairControls(unittest.TestCase):
+    def test_duplicate_extra_ids(self):
+        f=io.BytesIO()
+        with zipfile.ZipFile(f,'w') as z:
+            zi=zipfile.ZipInfo('test');zi.extra=b'\x02\x00\x01\x00A\x02\x00\x01\x00B';z.writestr(zi,b'opaque')
+        with self.assertRaisesRegex(ValueError,'duplicate extra'):s.directory(io.BytesIO(f.getvalue()),SEL)
+    def test_raw_dos_date_disagreement(self):
+        raw=fixture();original=zipfile.ZipFile.infolist
+        def wrong(z):
+            infos=original(z);infos[0].date_time=(2001,1,1,0,0,0);return infos
+        with mock.patch.object(zipfile.ZipFile,'infolist',wrong):
+            with self.assertRaisesRegex(ValueError,'DOS decoded date'):s.directory(io.BytesIO(raw),SEL)
+if __name__=='__main__':unittest.main()

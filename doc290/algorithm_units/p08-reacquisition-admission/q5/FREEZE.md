@@ -41,3 +41,15 @@ limitsunchanged. Exactfreezereview/publicationBEFOREboundarchivescan. Reviewer o
 boundedconfirmatoryscanner independent, not implementationreplay scienceclaim.
 Resultsmanualwholemetadata ledger exactreviewbeforepublication, NEWmemberselection
 prereglater. Noeventtime/GT/searchcost/calibration/endpointRuleA-B/inventioncredit.
+
+## Prepublication repair after exactreview HOLD6185f875
+
+Reviewer syntheticcontrols found two realgaps, no sourcearchiveparseoccurred:
+extras length/ZIP64test omittedduplicateIDambiguity, andrawDOSdate/time didn'tgate
+ZipInfodecodeddate. scanner.py nowrejectsANYduplicateextraID andcomputes literal
+DOSexpectedtuplecomparedtoZipInfo.date_time BEFORE recordoutput. AddeddistinctA/B
+ID0x0002duplicatefixture andpatchedinfolistdate-disagreement control. unittest.main
+movedafterALLclasses so direct/discovery both11tests. Exactexecutablechanges disclosed;
+originalA2copystaysunchangedpinnedasprovenance, adaptedscannerNEWhash. Preregunchanged,
+contracts tightenednotnarrowed. Thisreplacementfreeze needsseparatereview before
+publication/sourceparse; rejectedfreeze6185f875 wasneverpublished orusedon source.
