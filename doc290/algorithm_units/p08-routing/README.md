@@ -298,3 +298,13 @@ these input restrictions; the underlying general adapter still treats anchor-onl
 turn-free as caller preconditions. Kernel boundaries (absent scenario count,
 finite-total limits) remain inherited. Integer restrictions do not establish a
 proof for arbitrary graphs or physiological validity; current evidence is fixtures.
+
+## B1 performance evidence limits
+
+Recorded deltas are single-environment OBSERVATIONS, not reproducible magnitude,
+and no statistical or stable superiority claim survives. Recorded FOVEA 10.417%
+reduction contrasts with independent review's fresh-worker 1.103% reduction
+(0.142817s baseline versus 0.141242s paired preprocessing+query). Performance delta
+is NOT stable across environments; correctness remains verified. Protocol+record
+is the artifact, not a validated win. Preprocessing pairing estimates amortization,
+not measured end-to-end pipeline wall time.
