@@ -1,0 +1,67 @@
+# T3 P08-03 bounded RBC XML annotation tracking admission
+
+Unworkedcandidate,notrecoveredrank. NewsourceafterultrasoundU1/U2,not moretoy
+tracking. Question:dofixedtwoXMLannotationfilesbindframe/order/objecttrackIDs,
+missingannotationsemantics,sampling/calibration/trialprovenance sufficientlyto
+proposeSEPARATEfrozenannotation-gapbenchmark? Nocausaltracker/detectortraining,
+noGPU/neural/simulation/CFDflowimport/proxyscore/invention/physiologycredit.
+
+## Source/pins and honest prior exposure
+
+https://github.com/icimrak/RBCdataset
+PinnedliveGitHEADfe7eb12cf2ea669f9683622268882b381a7a163c,commit+recursivepathlist
+retained. FixedALLtwo.xmlpaths inthatlist,notcontent-selected:
+- cellsFourSlits/fourSlits_annotated_cells_and_tracks_frames_1_150.xml,
+  HEADContent-Length1833839,GitblobSHA1b3cd30c8f5d6e188e06c0f0ad06ad187b232b187.
+- cellsUshapedChannel/uShape_annotated_cells_and_tracks_frames_1_300.xml,
+  HEADContent-Length4834769,GitblobSHA19bcdc18f3a8e4373e0ce77a31df6f4fe8e05decb.
+ExactimmutableobservedHEADURLs/metadata inselection,sizesHTTPmetadata notidentity
+untilcompleteGitblobhashverified. GitSHA1repositoryidentity,not hostileauthenticity.
+
+READMEpageandarticlehttps://www.mdpi.com/2306-5729/8/6/106 alreadyreadfortriage:
+claimsRBCboundingboxes/IDs,someoutoffocus/occludedgapssameIDs;flowmatrixCFD,not
+measuredfluidvelocity. Articlepx-to-μmstatementandvelocityformulaappearunit-inconsistent
+(400μm/1280pxversusprinted1px=3.2μm);doNOTsilentlyrepairorimportscale/fps. These
+prior-exposedclaims notrawXML/imagevalidation. Noarticlesource rescueafterfreeze.
+PageCC0licenseassertionnotcomponentrights/patent/clinicalclearance.
+
+GitHubAPI403forcedpartialbareclone. ls-tree-lmetadataattemptinterrupted45s,triggered
+lazyfetchofotherblobs(~9.6MBpackcache);noall-content-unfetched/blindclaim. Exacttwo
+selectedXMLobjectspresencecheckGIT_NO_LAZY_FETCHcat-file-e returnedmissing. XML
+bodyNOTpeeked/read/parsed;HEADresponsesonly,filebodiesdiscarded/notrequested.
+Priorotherblobtransportexposuredisclosed,nofavorablecontentfilter. Images/videos,
+CFDarchives/LICENSEbytesnotadmitted/nocontentexaminedasrescue.
+
+## Frozen static XML inventory before source use
+
+Review/publishfreezeBEFOREfetch/parse. Exacttwoidentitysize+GitblobSHA1checksBEFORE
+ANYUTF8/XMLanalysis;SHA256additional. No-redirectexactURL/identityencoding/lengthEOF/
+truncationstreamcaps5MiBperfile/8MiBcombined,2files.20ssocket/40sbetween-readchecks,
+notwallquota/peakoutputlimit;JSONexpansionpossible,no measuredpeak2core/2GBclaim.
+Transport/hashfailure->scopedunavailablezeroanalysis,noroute/source rescue.
+
+PinPython+actualdefusedxmlmodulebytes,DTD/entity/externalreferencesforbidden. Parse
+syntaxONLY,no numericcoercion/header/frame/tracksemanticsfromfilenames. Raworiginal
+bytesretained;inventoryliteralXMLelementpath/text/attributes,coordinateconvention
+XMLdocumentordinalnotimagetime/pixels. Depth/node/textcaps BEFOREexposingpartial
+inventory;malformed/unsafe/cap->unresolvedno partial analyzedoutput. FixturesDTD/
+entity/externalblocked,malformed/depth/nodes/textcaps,unicode/rawstringnonfinite,
+identityeachpositionzeroanalysis. No networkXMLresolution/codeexecution/plot/images.
+Visualbbox/framebinding NOTdone:noimage/pixelclaim;not qualifiedgroundtruth fromXML.
+
+## Mandatory manual annotation/provenance ledger
+
+CiteXMLpaths/sourcekeysforframeindex/order,sourcefilenames,bboxcoordinate/unitfields,
+trackidentity/gap/exclusionsemantics,timestamps/fps/physicalscale,annotationprocess,
+trial/splitindependence andimagebinding. Annotatedabsenceisnotautomaticallysensor
+dropout/false-negative;completevideos/imagesexcludednotunavailable. No deriveμm/
+secondsfromarticlecontradictionorassumeIDsindependent. CFDsimulationnotmeasurement.
+
+A:source-specificsafeannotation/frame/gap/unit/trialbindings explicit ->propose
+separateendpoint-appropriatefrozenbenchmark,noperformance/inventioncreditfromadmission.
+B:missing/conflicting/unavailable->boundedtracking-calibrationNOTESTABLISHEDwithin
+TWOXML+prior-exposuremetadata;preserveliteralannotationformatpositives. Actualpixel/
+physicalendpointunresolvedwithoutadmittedimage/timingbinding. Notsourceinvalidity/
+absenceelsewhere/allP08-03closure. Noarrays/trackingmetrics/interpolation/learned
+models/physiology/rights/inventioncredit. Manualledgerbeforeclassification,chronology
+document-reported,replayreproducibilitynotordering. Exactresultreviewbeforepublication.
