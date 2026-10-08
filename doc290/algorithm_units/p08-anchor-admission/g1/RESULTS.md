@@ -57,12 +57,12 @@ Explicit±50um plotting walls for ALL five,not individually measured wall estima
 No profile y translation/sign flip there; trajectory branch at cell9 line14 DOES
 flip its y,so do not transfer that transformation to the profiles.
 
-E4: arXiv PDF page8,Supplement 'Channel setup',retained splitlines-index lines482-486:
+E4: arXiv PDF page8,Supplement 'Channel setup',PDF text lines475-477 (UNIX newline convention):
 'quasi-two-dimensional PDMS structure containing12parallel channels of length9mm,
 width100um and height52um'. Fig1 caption says approximately100um width. This is
 nominal/general geometry,not measured wall/origin records for the five PIV tables.
 
-E5: arXiv PDF page9,Supplement 'Particle Image Velocimetry',retained splitlines-index lines550-558:
+E5: arXiv PDF page9,Supplement 'Particle Image Velocimetry',PDF text lines543-550 (UNIX newline convention):
 'open-source MATLAB module PIVlab'; 'flow field grid spacing was5x5px2 at a
 magnification of40x (Interrogation area:Pass1:24,pass2:16and pass3:10),yielding
 a spatial resolution of approximately2.5x2.5um2. Wall slip below this length scale
@@ -100,7 +100,11 @@ action or raw-data request underway. No new residuals/refits/retuning/method com
 P1 mismatch is measured-but-unattributed,not dismissed or promoted to missing physics,
 wall slip,invention,voltage-effect evidence or a completed P08 scientific gate.
 
-Citation correction after review: original report mixed UNIX newline numbering with
-Python splitlines numbering,which also treats PDF form feeds as line breaks. Retained
-excerpts now explicitly specify splitlines-index convention and include full PIVlab/
-grid statement. No source content or classification changed; no computation performed.
+Excerpt-ledger correction after review: original ledger used Python splitlines,which
+counts form feeds as breaks,while citations used UNIX PDF text lines. Ledger now
+regenerated with UNIX newline counting (equivalent to nl -ba),matching the citation
+convention,and includes full PIVlab/grid details. Review independently verified the
+PDF text citations and actual pages8/9; only ledger needed repair. Follow-up ad0bdb2
+briefly standardized on splitlines; this commit follows the clarified reviewer request
+to keep verified PDF citation ranges and repair the excerpt ledger. No source content
+or binding classification change; no computation/refitting performed.

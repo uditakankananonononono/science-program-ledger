@@ -1,39 +1,29 @@
-Numbering: Python str.splitlines() on pdftotext -layout output, INCLUDING form-feed boundaries as line breaks. Not UNIX nl numbering. PDF SHA in evidence-manifest.json.
-Original splitlines-index lines 479-486, https://arxiv.org/pdf/2401.14376
-479:                       Channel setup                                            Experimental protocols
-480: 
-481: 
-482:    We performed the experiments in a quasi-two-                   For experiments, we added stock to surfactant solu-
-483: dimensional PDMS structure containing 12 parallel chan-        tion at a strongly supramicellar target concentration of
-484: nels of length 9 mm, width 100 µm and height 52 µm (see        7.5 wt% TTAB, at a ratio of 1:60 between stock and
-485: S2b), corresponding to one droplet diameter in height          swimming solutions and pipetted them into the channel
-486: and two in width. To ensure identical boundary condi-          structure. We started recording videomicroscopy once a
-Original splitlines-index lines 520-535, https://arxiv.org/pdf/2401.14376
-520:                                                                                                                         −7.5                 20 V
-521:                                                                                                                                              30 V
-522:                                                                          −10
-523: FIG. S2. Sketch of the channel setup. (a) micrograph, top                                                       −10.0
-524:                                                                                      0    10   20     30            −50           0     50
-525: view, (b) top view schematic, (c) side view schematic with                                  U [V]                              y [µm]
-526: reservoirs and electrodes, (d) Definitions of coordinate and
-527: field directions, top view.
-528:                                                                FIG. S3. Electroosmotic flow calibration for TTAB solution
-529:                                                                depending on the external voltage. Data from PIV in an
-530: Thermo Fisher) to the swimming medium at a volume              experiment without droplets. Mean flow speeds (a) and flow
-531: fraction of 10−3 .                                             speed profiles across the channel width at different voltages
-532:                                                                (b).
-533:    We mounted the microfluidic chips on an inverted mi-
-534: croscope (Olympus IX81), with the focal plane set to
-535: the middle of the channel structure. The electroosmotic           To calibrate the electroosmotic mobility, we recorded
-Original splitlines-index lines 548-558, https://arxiv.org/pdf/2401.14376
-548:           Particle Image Velocimetry (PIV)
-549: 
-550:    We analyzed the electroosmotic and droplet-driven
-551: flow velocities by Particle Image Velocimetry (PIV) [54]
-552: on videomicroscopy data recorded at 100 fps, using the
-553: open-source MATLAB module PIVlab [55]. The flow
-554: field grid spacing was 5x5 px2 at a magnification of 40x
-555: (Interrogation area: Pass 1: 24, pass 2: 16 and pass
-556: 3: 10), yielding a spatial resolution of approximately
-557: 2.5x2.5 µm2 . Wall slip below this length scale could not
-558: be resolved.
+Numbering: UNIX newline-delimited pdftotext -layout output (equivalent to nl -ba). Form-feed stays within its line, not an added line break. PDF/text hashes in evidence-manifest.json.
+Original UNIX text lines 472-479, https://arxiv.org/pdf/2401.14376
+472:                       Channel setup                                            Experimental protocols
+473: 
+474: 
+475:    We performed the experiments in a quasi-two-                   For experiments, we added stock to surfactant solu-
+476: dimensional PDMS structure containing 12 parallel chan-        tion at a strongly supramicellar target concentration of
+477: nels of length 9 mm, width 100 µm and height 52 µm (see        7.5 wt% TTAB, at a ratio of 1:60 between stock and
+478: S2b), corresponding to one droplet diameter in height          swimming solutions and pipetted them into the channel
+479: and two in width. To ensure identical boundary condi-          structure. We started recording videomicroscopy once a
+Original UNIX text lines 515-520, https://arxiv.org/pdf/2401.14376
+515: FIG. S2. Sketch of the channel setup. (a) micrograph, top                                                       −10.0
+516:                                                                                      0    10   20     30            −50           0     50
+517: view, (b) top view schematic, (c) side view schematic with                                  U [V]                              y [µm]
+518: reservoirs and electrodes, (d) Definitions of coordinate and
+519: field directions, top view.
+520:                                                                FIG. S3. Electroosmotic flow calibration for TTAB solution
+Original UNIX text lines 540-550, https://arxiv.org/pdf/2401.14376
+540:           Particle Image Velocimetry (PIV)
+541: 
+542:    We analyzed the electroosmotic and droplet-driven
+543: flow velocities by Particle Image Velocimetry (PIV) [54]
+544: on videomicroscopy data recorded at 100 fps, using the
+545: open-source MATLAB module PIVlab [55]. The flow
+546: field grid spacing was 5x5 px2 at a magnification of 40x
+547: (Interrogation area: Pass 1: 24, pass 2: 16 and pass
+548: 3: 10), yielding a spatial resolution of approximately
+549: 2.5x2.5 µm2 . Wall slip below this length scale could not
+550: be resolved.
