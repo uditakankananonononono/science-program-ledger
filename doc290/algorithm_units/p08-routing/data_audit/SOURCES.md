@@ -162,3 +162,16 @@ reproduction uncertainty for those masks only. Still NO anatomical/biological
 fidelity, correct vessel-crossing topology, scientific validation, or whole-QC
 certification. Real-chain partition verdict is scoped to reproduced-equivalent
 skeletons, not biological correctness.
+
+## Artificial unit-cost routing on reproduced first-mask topology
+
+One deterministic anchor pair per first-mask graph: lexical first anchor to the
+farthest reachable other anchor by independent coordinate BFS, lexical tie-break.
+HRF/FIVES/FOVEA BFS distances 4524/1824/1036 pixel steps. Three turn-free objectives
+match these distances, expanded adjacency and artificial scenario totals [d,2d].
+Costs are time=1, exposure=0, scenarios=[1,2], NOT physiological observations.
+Proportional scenario costs collapse this check to shortest steps; this is NOT an
+independent difficult scenario-minimax benchmark. This verifies selected routing
+composition on development topology only, not superiority or anatomy validity.
+Exact queries/hash/results recorded; verify_real_unit_routes.py recomputes using
+previously delivered full skeleton artifacts. Independent review still pending.
