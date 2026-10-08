@@ -1,0 +1,17 @@
+You are a skeptical methods reviewer judging a computational study closure (numbers by an automated agent; treat nothing as vetted). perm=false means the real unpermuted run; no prereg, no lock, no TEST. Reply in under 300 words: (1) is the DROP at the DEV no-skill gate supported and disclosure adequate, (2) biggest methodological weakness, (3) one stronger design. No flattery.
+
+CLOSURE:
+# Unit 162 closure - UNIVERSE (Zenodo 10371068, CC BY 4.0): DROPPED at DEV headroom/no-skill gate
+Question scoped: controlled (Lab1+Lab2 hard vs easy) -> uncontrolled Wild (self-reported workload high vs low), person-independent transfer. No prereg written, nothing locked, no TEST outcomes or TEST features touched, no pushes.
+Evidence (DEV, 11 persons, LOPO, per-person AUROC): controlled->Wild 0.378 [0.267,0.484]; in-setting controlled LOPO 0.565; Wild->Wild reference 0.64-0.66 [0.46,0.78]; 6/11 DEV persons evaluable; person-bootstrap half-width ~0.15.
+Data used: Features + Task_Labels only (2506 files, ~9MB) by ranged HTTP reads; archive sizes matched the record (20,286,913,717 B); Zenodo MD5s recorded (64ff57fc16d9d7093bb1db9507662200, 9efe0aa556b6db4d83e94c07c5471fd1) but full-archive MD5 verification was NOT completed (stopped on instruction); bulk archives never downloaded.
+Disclosure: aggregate Wild workload label counts across all 22 analysis-set persons were printed (label metadata, not TEST per-person, no TEST outcomes).
+Completeness facts from archive index: Wild missing UN_103, UN_120; Lab2 missing UN_112, UN_120; analysis set by file presence = 22 persons.
+
+DEV Wild evaluable persons (both classes present): 6 of 11 (UN_101,106,108,114,121,123). Single-class: 104,110,118 (high only), 112,116 (low only).
+Results (per-person AUROC on held-out person's Wild windows, LOPO over DEV, mean of 6; person-bootstrap 95% CI):
+ controlled->Wild (train other DEV persons' Lab1+Lab2, LR balanced): C=0.01 0.385 [0.267,0.497]; C=0.1 0.378 [0.267,0.484]; C=1 0.379 [0.270,0.481]
+ Wild->Wild LOPO (reference): 0.658 [0.482,0.782]; 0.642 [0.46,0.784]; 0.638 [0.457,0.785]
+ controlled LOPO within controlled (design difficulty): mean 0.565, range 0.44-0.70
+Per person L2W C=0.1: 101 .46, 106 .18, 108 .51, 114 .42, 121 .20, 123 .51.
+Reading: controlled-trained detector has no skill in-setting (0.565) and transfers at/below chance (sign inverted, not exploitable). Participant count binding: 6 evaluable DEV persons.
