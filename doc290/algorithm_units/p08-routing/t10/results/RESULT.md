@@ -7,8 +7,8 @@ model/proof/selection/input/domain/checker edits, retries/drops/rescoring.
 32/32 bounded worker PASS and parent-validated expected-verdict agreements.
 Top4PRESERVED/12COMPLETED/16INVALID. These are not32 absence certificates.
 Sixteen valid downstream proofs:4CERTIFIED_NO_TURN_PATH/
-3CERTIFIED_BUDGET_INFEASIBLE/9UNAVAILABLE. Eleven corrupted supplied proofs
-retain exact unchanged T5 downstreamINVALID; five malformed model/rule/budget
+3CERTIFIED_BUDGET_INFEASIBLE/9UNAVAILABLE. Ten corrupted supplied proofs
+retain exact unchanged T5 downstreamINVALID; six malformed model/rule/budget
 inputs INVALID before a downstream proof. Invalids not repaired or excluded.
 
 Original20 T5 statements copied exact. Existing four valid A-D proofs PRESERVED
@@ -106,3 +106,7 @@ No automatic production integration; source/runtime pins notOS lifetimeproof.
 | control10:delay | PASS | COMPLETED | UNAVAILABLE | 2 |
 | control10:allstate | PASS | COMPLETED | UNAVAILABLE | 1 |
 | control10:invalid | PASS | INVALID | None | None |
+
+Pre-review result prose count repair: draftd526d128 said11corrupted supplied/5
+modelinvalid; actual retainedreceipts are10/6. Corrected prose only, no run or
+source change; originaldraft retained in history.
