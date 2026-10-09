@@ -87,7 +87,8 @@ def trace_check(s,trace,ds,charged,W,c):
 
 def check(s,payload,certificate=True):
     required={'route','counters','proof','certificate','scenario_proof','incumbent','charged_proof','bound_trace'}
-    if type(payload) is not dict or not required<=set(payload):raise Invalid('all top proof stages present')
+    wrapper={'status','solve_seconds','build_seconds','rss_kib','affinity','as_limit_bytes','identity'}
+    if type(payload) is not dict or set(payload) not in (required,required|wrapper):raise Invalid('exact method stages or separated exact worker wrapper')
     original_t7_proof.check(s,payload,certificate=False)
     c=payload.get('counters');names=BASE_COUNTERS|NEW_COUNTERS
     if type(c) is not dict or set(c)!=names:raise Invalid('full counter schema')
@@ -139,6 +140,40 @@ def exact_trace_expected(s,ds,charged,W,exposure):
 _original_check=check
 def check(s,payload,certificate=True):
     _original_check(s,payload,certificate)
+    preprocessing_check(s,payload,True)
     if not payload['certificate']['early_exit'] and not payload['certificate']['equality_exit']:
         expected,c,r=exact_trace_expected(s,payload['scenario_proof']['distances'],payload['charged_proof']['distances'],payload['certificate']['upper'],payload['proof']['distances'])
         if canonical(payload['bound_trace'])!=canonical(expected) or any(payload['counters'][k]!=v for k,v in c.items()) or canonical(payload['route'])!=canonical(r):raise Invalid('complete original exact event/counter/firstgoal replay')
+
+def preprocessing_expected(s,include_charged):
+    # Separate raw-topology count audit reproduces deterministic heap/tie order,
+    # including stale-pop skips and source/sink break, without method imports.
+    st,aa=topology(s);n=next(len(e['scenario_times']) for es in s['graph'].values() for e in es);incoming=[[] for _ in st];outgoing=[[] for _ in st]
+    for a in aa:incoming[a['target']].append(a);outgoing[a['source']].append(a)
+    def reverse(kind,column=0):
+        d=[None]*len(st);d[-1]=0;q=[(0,len(st)-1)];count=0
+        while q:
+            value,v=heapq.heappop(q)
+            if value!=d[v]:continue
+            for a in incoming[v]:
+                count+=1;cost=a['risk'] if kind=='exposure' else a['scenarios'][column]+(a['risk'] if kind=='charged' else 0);u=a['source'];x=value+cost
+                if d[u] is None or x<d[u]:d[u]=x;heapq.heappush(q,(x,u))
+        return d,count
+    d,count=reverse('exposure');c={'reverse_relaxations':count,'scenario_reverse_inspections':0,'incumbent_inspections':0}
+    if include_charged:c['charged_reverse_inspections']=0
+    if d[0] is None or d[0]>s['budget']:return c
+    c['scenario_reverse_inspections']=sum(reverse('scenario',k)[1] for k in range(n))
+    if include_charged:c['charged_reverse_inspections']=sum(reverse('charged',k)[1] for k in range(n))
+    forward=[None]*len(st);forward[0]=0;q=[(0,0,0)];serial=0
+    while q:
+        value,_,u=heapq.heappop(q)
+        if value!=forward[u]:continue
+        if u==len(st)-1:break
+        for a in outgoing[u]:
+            c['incumbent_inspections']+=1;v=a['target'];x=value+a['risk']
+            if forward[v] is None or x<forward[v]:forward[v]=x;serial+=1;heapq.heappush(q,(x,serial,v))
+    return c
+
+def preprocessing_check(s,payload,include_charged):
+    for key,value in preprocessing_expected(s,include_charged).items():
+        if type(payload['counters'].get(key)) is not int or payload['counters'][key]!=value:raise Invalid('independent preprocessing inspection count '+key)

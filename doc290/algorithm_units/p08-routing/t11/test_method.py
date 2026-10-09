@@ -15,6 +15,10 @@ class Development(unittest.TestCase):
         m,_=load('t11')
         for c in development():
             s=c['statement'];r=m.solve(s);changes=[]
+            x=copy.deepcopy(r);x['extra']=0;changes.append(x)
+            for key in ('reverse_relaxations','scenario_reverse_inspections','incumbent_inspections','charged_reverse_inspections'):
+                for add in (1,999):
+                    x=copy.deepcopy(r);x['counters'][key]+=add;changes.append(x)
             for key in r:
                 x=copy.deepcopy(r);del x[key];changes.append(x)
             for key,value in [('charged_lambda',True),('charged_lambda',1.0),('lower',False),('old_lower',False),('source_bound_stronger',1),('reason',False)]:

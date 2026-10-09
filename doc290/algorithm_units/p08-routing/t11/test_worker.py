@@ -18,6 +18,10 @@ class Controls(unittest.TestCase):
                         rr=copy.deepcopy(r);rr['worker']['charged_proof']['distances'][0][0]=False;changes.append(rr)
                     if r['worker']['bound_trace']:
                         rr=copy.deepcopy(r);rr['worker']['bound_trace'].pop();changes.append(rr)
+                countnames=('reverse_relaxations','scenario_reverse_inspections','incumbent_inspections')+(('charged_reverse_inspections',) if m=='variant' else ())
+                for key in countnames:
+                    for add in (1,999):
+                        rr=copy.deepcopy(r);rr['worker']['counters'][key]+=add;changes.append(rr)
                 for rr in changes:
                     rr['stdout']=json.dumps(rr['worker']);self.assertEqual(validate_record(args,rr)['status'],'FAIL')
         Path('/tmp/t11-dev-receipts.json').write_text(json.dumps(saved,indent=2)+'\n')

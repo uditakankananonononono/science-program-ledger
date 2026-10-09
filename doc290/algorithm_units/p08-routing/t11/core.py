@@ -67,6 +67,8 @@ def validate_record(args,record,validated_identity=None):
                 if type(payload.get('counters')) is not dict or set(payload['counters'])!=BASE_COUNTERS:raise Invalid('baseline exact counters')
                 for v in payload['counters'].values():exact_int(v)
                 bp.check(c['statement'],payload)
+                from proof import preprocessing_check
+                preprocessing_check(c['statement'],payload,False)
                 from proof import incumbent_expected
                 if payload['incumbent'] is not None and canonical(payload['incumbent'])!=canonical(incumbent_expected(c['statement'])):raise Invalid('baseline original incumbent')
             else:raise Invalid('method')

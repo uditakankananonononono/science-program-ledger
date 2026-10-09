@@ -1,12 +1,12 @@
 {
   "0:variant": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.12931201200262876,
+    "worker_elapsed_seconds": 0.09552712900040206,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.02603864800039446, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": true, \"lower\": 1, \"old_lower\": 0, \"reason\": \"equality_exit\", \"source_bound_stronger\": true, \"upper\": 1}, \"charged_proof\": {\"distances\": [[1, 0, 0, 1, 0], [1, 0, 0, 1, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 14, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"rss_kib\": 24512, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0007015419978415594, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01805197099747602, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": true, \"lower\": 1, \"old_lower\": 0, \"reason\": \"equality_exit\", \"source_bound_stronger\": true, \"upper\": 1}, \"charged_proof\": {\"distances\": [[1, 0, 0, 1, 0], [1, 0, 0, 1, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 14, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"rss_kib\": 24916, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.00046920799650251865, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -17,7 +17,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.02603864800039446,
+      "build_seconds": 0.01805197099747602,
       "certificate": {
         "budget": 0,
         "charged_lambda": 1,
@@ -102,7 +102,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -191,7 +191,7 @@
         "turn_penalty": 0,
         "worst_time": 1
       },
-      "rss_kib": 24512,
+      "rss_kib": 24916,
       "scenario_proof": {
         "distances": [
           [
@@ -246,7 +246,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0007015419978415594,
+      "solve_seconds": 0.00046920799650251865,
       "status": "OK"
     },
     "check": {
@@ -276,12 +276,12 @@
   },
   "0:t9": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.12342417600302724,
+    "worker_elapsed_seconds": 0.09042858600150794,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.020789399000932463, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 1}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 2, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"rss_kib\": 30264, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0005283110003801994, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.013741599002969451, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 1}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 2, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"rss_kib\": 30720, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0003402259972062893, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -292,7 +292,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.020789399000932463,
+      "build_seconds": 0.013741599002969451,
       "certificate": {
         "budget": 0,
         "early_exit": false,
@@ -317,7 +317,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -406,7 +406,7 @@
         "turn_penalty": 0,
         "worst_time": 1
       },
-      "rss_kib": 30264,
+      "rss_kib": 30720,
       "scenario_proof": {
         "distances": [
           [
@@ -461,7 +461,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0005283110003801994,
+      "solve_seconds": 0.0003402259972062893,
       "status": "OK"
     },
     "check": {
@@ -491,12 +491,12 @@
   },
   "1:variant": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.15317657799459994,
+    "worker_elapsed_seconds": 0.10218933900614502,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [{\"exposure\": 0, \"extra_exclusion\": false, \"indices\": [0], \"new_bound\": 3, \"old_bound\": 3, \"path\": [\"q\", \"z\"], \"pruned\": false, \"state\": 1, \"stronger\": false, \"totals\": [3, 3]}], \"build_seconds\": 0.022464626999862958, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 2, \"old_lower\": 0, \"reason\": \"strict_gap_search\", \"source_bound_stronger\": true, \"upper\": 3}, \"charged_proof\": {\"distances\": [[2, 0, 0, 2, 0], [2, 0, 0, 2, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"counters\": {\"candidate_edges\": 2, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 14, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"rss_kib\": 30264, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0005816190023324452, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [{\"exposure\": 0, \"extra_exclusion\": false, \"indices\": [0], \"new_bound\": 3, \"old_bound\": 3, \"path\": [\"q\", \"z\"], \"pruned\": false, \"state\": 1, \"stronger\": false, \"totals\": [3, 3]}], \"build_seconds\": 0.022398973000235856, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 2, \"old_lower\": 0, \"reason\": \"strict_gap_search\", \"source_bound_stronger\": true, \"upper\": 3}, \"charged_proof\": {\"distances\": [[2, 0, 0, 2, 0], [2, 0, 0, 2, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"counters\": {\"candidate_edges\": 2, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 14, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"rss_kib\": 31124, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0007599010059493594, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -528,7 +528,7 @@
           ]
         }
       ],
-      "build_seconds": 0.022464626999862958,
+      "build_seconds": 0.022398973000235856,
       "certificate": {
         "budget": 0,
         "charged_lambda": 1,
@@ -613,7 +613,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -702,7 +702,7 @@
         "turn_penalty": 0,
         "worst_time": 3
       },
-      "rss_kib": 30264,
+      "rss_kib": 31124,
       "scenario_proof": {
         "distances": [
           [
@@ -757,7 +757,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0005816190023324452,
+      "solve_seconds": 0.0007599010059493594,
       "status": "OK"
     },
     "check": {
@@ -787,12 +787,12 @@
   },
   "1:t9": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.08714563099783845,
+    "worker_elapsed_seconds": 0.08851054799742997,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.012528197999927215, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 3}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 2, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"rss_kib\": 30264, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0003940579990739934, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01370745000167517, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 3}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 2, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 3], \"turn_penalty\": 0, \"worst_time\": 3}, \"rss_kib\": 31124, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.00036740500218002126, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -803,7 +803,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.012528197999927215,
+      "build_seconds": 0.01370745000167517,
       "certificate": {
         "budget": 0,
         "early_exit": false,
@@ -828,7 +828,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -917,7 +917,7 @@
         "turn_penalty": 0,
         "worst_time": 3
       },
-      "rss_kib": 30264,
+      "rss_kib": 31124,
       "scenario_proof": {
         "distances": [
           [
@@ -972,7 +972,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0003940579990739934,
+      "solve_seconds": 0.00036740500218002126,
       "status": "OK"
     },
     "check": {
@@ -1002,12 +1002,12 @@
   },
   "2:variant": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.09447354899748461,
+    "worker_elapsed_seconds": 0.09294907400180819,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [{\"exposure\": 0, \"extra_exclusion\": false, \"indices\": [0], \"new_bound\": 1, \"old_bound\": 1, \"path\": [\"q\", \"z\"], \"pruned\": false, \"state\": 1, \"stronger\": false, \"totals\": [1, 1]}, {\"exposure\": 2, \"extra_exclusion\": false, \"indices\": [1], \"new_bound\": 0, \"old_bound\": 0, \"path\": [\"q\", \"z\"], \"pruned\": false, \"state\": 2, \"stronger\": false, \"totals\": [0, 0]}], \"build_seconds\": 0.018079538996971678, \"certificate\": {\"budget\": 9, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"old_lower\": 0, \"reason\": \"strict_gap_search\", \"source_bound_stronger\": false, \"upper\": 1}, \"charged_proof\": {\"distances\": [[1, 0, 0, 1, 0], [1, 0, 0, 1, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"counters\": {\"candidate_edges\": 2, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 14, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 3, \"max_live_queue\": 2, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 2, \"path\": [\"q\", \"z\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 30884, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0005498219979926944, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [{\"exposure\": 0, \"extra_exclusion\": false, \"indices\": [0], \"new_bound\": 1, \"old_bound\": 1, \"path\": [\"q\", \"z\"], \"pruned\": false, \"state\": 1, \"stronger\": false, \"totals\": [1, 1]}, {\"exposure\": 2, \"extra_exclusion\": false, \"indices\": [1], \"new_bound\": 0, \"old_bound\": 0, \"path\": [\"q\", \"z\"], \"pruned\": false, \"state\": 2, \"stronger\": false, \"totals\": [0, 0]}], \"build_seconds\": 0.01772011400316842, \"certificate\": {\"budget\": 9, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"old_lower\": 0, \"reason\": \"strict_gap_search\", \"source_bound_stronger\": false, \"upper\": 1}, \"charged_proof\": {\"distances\": [[1, 0, 0, 1, 0], [1, 0, 0, 1, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"counters\": {\"candidate_edges\": 2, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 14, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 3, \"max_live_queue\": 2, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 2, \"path\": [\"q\", \"z\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 31388, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0005538540062843822, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -1059,7 +1059,7 @@
           ]
         }
       ],
-      "build_seconds": 0.018079538996971678,
+      "build_seconds": 0.01772011400316842,
       "certificate": {
         "budget": 9,
         "charged_lambda": 1,
@@ -1144,7 +1144,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -1233,7 +1233,7 @@
         "turn_penalty": 0,
         "worst_time": 0
       },
-      "rss_kib": 30884,
+      "rss_kib": 31388,
       "scenario_proof": {
         "distances": [
           [
@@ -1288,7 +1288,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0005498219979926944,
+      "solve_seconds": 0.0005538540062843822,
       "status": "OK"
     },
     "check": {
@@ -1318,12 +1318,12 @@
   },
   "2:t9": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.0861779130063951,
+    "worker_elapsed_seconds": 0.08932710599765414,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01256603700312553, \"certificate\": {\"budget\": 9, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 1}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 2, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 3, \"max_live_queue\": 2, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 2, \"path\": [\"q\", \"z\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 30884, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0004108729990548454, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.013321038997673895, \"certificate\": {\"budget\": 9, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 1}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 2, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 3, \"max_live_queue\": 2, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 7, \"scenario_reverse_inspections\": 14, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [1, 1], \"turn_penalty\": 0, \"worst_time\": 1}, \"proof\": {\"distances\": [0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 2, \"path\": [\"q\", \"z\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 31388, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.00046794799709459767, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -1334,7 +1334,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.01256603700312553,
+      "build_seconds": 0.013321038997673895,
       "certificate": {
         "budget": 9,
         "early_exit": false,
@@ -1359,7 +1359,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -1448,7 +1448,7 @@
         "turn_penalty": 0,
         "worst_time": 0
       },
-      "rss_kib": 30884,
+      "rss_kib": 31388,
       "scenario_proof": {
         "distances": [
           [
@@ -1503,7 +1503,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0004108729990548454,
+      "solve_seconds": 0.00046794799709459767,
       "status": "OK"
     },
     "check": {
@@ -1533,12 +1533,12 @@
   },
   "3:variant": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.09055019899824401,
+    "worker_elapsed_seconds": 0.09176877400022931,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01645152099808911, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"old_lower\": null, \"reason\": \"no_allowed_turn_path\", \"source_bound_stronger\": false, \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 0, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 0, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [null, null, 0], \"start_minimum\": null, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 30884, \"scenario_proof\": null, \"solve_seconds\": 0.00011310900299577042, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.017995152004004922, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"old_lower\": null, \"reason\": \"no_allowed_turn_path\", \"source_bound_stronger\": false, \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 0, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 0, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [null, null, 0], \"start_minimum\": null, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 32708, \"scenario_proof\": null, \"solve_seconds\": 7.766599446767941e-05, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -1549,7 +1549,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.01645152099808911,
+      "build_seconds": 0.017995152004004922,
       "certificate": {
         "budget": 0,
         "charged_lambda": 1,
@@ -1580,7 +1580,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": null,
@@ -1613,9 +1613,9 @@
         ]
       },
       "route": null,
-      "rss_kib": 30884,
+      "rss_kib": 32708,
       "scenario_proof": null,
-      "solve_seconds": 0.00011310900299577042,
+      "solve_seconds": 7.766599446767941e-05,
       "status": "OK"
     },
     "check": {
@@ -1625,12 +1625,12 @@
   },
   "3:t9": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.08390017900092062,
+    "worker_elapsed_seconds": 0.08653532999596791,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.012216930001159199, \"certificate\": {\"budget\": 0, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"reason\": \"no_allowed_turn_path\", \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 0, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [null, null, 0], \"start_minimum\": null, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 30884, \"scenario_proof\": null, \"solve_seconds\": 8.597299893153831e-05, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.013490966004610527, \"certificate\": {\"budget\": 0, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"reason\": \"no_allowed_turn_path\", \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 0, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [null, null, 0], \"start_minimum\": null, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 32708, \"scenario_proof\": null, \"solve_seconds\": 8.399099897360429e-05, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -1641,7 +1641,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.012216930001159199,
+      "build_seconds": 0.013490966004610527,
       "certificate": {
         "budget": 0,
         "early_exit": true,
@@ -1666,7 +1666,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": null,
@@ -1699,9 +1699,9 @@
         ]
       },
       "route": null,
-      "rss_kib": 30884,
+      "rss_kib": 32708,
       "scenario_proof": null,
-      "solve_seconds": 8.597299893153831e-05,
+      "solve_seconds": 8.399099897360429e-05,
       "status": "OK"
     },
     "check": {
@@ -1711,12 +1711,12 @@
   },
   "4:variant": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.08645721599896206,
+    "worker_elapsed_seconds": 0.09375498699955642,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01622418899933109, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": true, \"lower\": 0, \"old_lower\": 0, \"reason\": \"equality_exit\", \"source_bound_stronger\": false, \"upper\": 0}, \"charged_proof\": {\"distances\": [[0, null, 0, 0, 0], [0, null, 0, 0, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 10, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 5, \"scenario_reverse_inspections\": 10, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"proof\": {\"distances\": [0, null, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"route\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 30884, \"scenario_proof\": {\"distances\": [[0, null, 0, 0, 0], [0, null, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"solve_seconds\": 0.0004232900028000586, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01783162799983984, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": true, \"lower\": 0, \"old_lower\": 0, \"reason\": \"equality_exit\", \"source_bound_stronger\": false, \"upper\": 0}, \"charged_proof\": {\"distances\": [[0, null, 0, 0, 0], [0, null, 0, 0, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 10, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 5, \"scenario_reverse_inspections\": 10, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"proof\": {\"distances\": [0, null, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"route\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 32708, \"scenario_proof\": {\"distances\": [[0, null, 0, 0, 0], [0, null, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"solve_seconds\": 0.0004935889955959283, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -1727,7 +1727,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.01622418899933109,
+      "build_seconds": 0.01783162799983984,
       "certificate": {
         "budget": 0,
         "charged_lambda": 1,
@@ -1812,7 +1812,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -1887,7 +1887,7 @@
         "turn_penalty": 0,
         "worst_time": 0
       },
-      "rss_kib": 30884,
+      "rss_kib": 32708,
       "scenario_proof": {
         "distances": [
           [
@@ -1942,7 +1942,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0004232900028000586,
+      "solve_seconds": 0.0004935889955959283,
       "status": "OK"
     },
     "check": {
@@ -1959,12 +1959,12 @@
   },
   "4:t9": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.0869792099983897,
+    "worker_elapsed_seconds": 0.11150344800262246,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01284109599509975, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"equality_exit\": true, \"lower\": 0, \"reason\": \"equality_exit\", \"upper\": 0}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 5, \"scenario_reverse_inspections\": 10, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"proof\": {\"distances\": [0, null, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"route\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 30884, \"scenario_proof\": {\"distances\": [[0, null, 0, 0, 0], [0, null, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"solve_seconds\": 0.00029376699967542663, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.018180542007030454, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"equality_exit\": true, \"lower\": 0, \"reason\": \"equality_exit\", \"upper\": 0}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 3, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 5, \"scenario_reverse_inspections\": 10, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"proof\": {\"distances\": [0, null, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"route\": {\"edges\": [], \"exposure\": 0, \"path\": [\"q\"], \"scenario_totals\": [0, 0], \"turn_penalty\": 0, \"worst_time\": 0}, \"rss_kib\": 32708, \"scenario_proof\": {\"distances\": [[0, null, 0, 0, 0], [0, null, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"q\", 1], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"q\"}]}, \"solve_seconds\": 0.00043415000254753977, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -1975,7 +1975,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.01284109599509975,
+      "build_seconds": 0.018180542007030454,
       "certificate": {
         "budget": 0,
         "early_exit": false,
@@ -2000,7 +2000,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -2075,7 +2075,7 @@
         "turn_penalty": 0,
         "worst_time": 0
       },
-      "rss_kib": 30884,
+      "rss_kib": 32708,
       "scenario_proof": {
         "distances": [
           [
@@ -2130,7 +2130,7 @@
           }
         ]
       },
-      "solve_seconds": 0.00029376699967542663,
+      "solve_seconds": 0.00043415000254753977,
       "status": "OK"
     },
     "check": {
@@ -2147,12 +2147,12 @@
   },
   "5:variant": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.08609318800154142,
+    "worker_elapsed_seconds": 0.0999234670016449,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [{\"exposure\": 0, \"extra_exclusion\": false, \"indices\": [0], \"new_bound\": 5, \"old_bound\": 5, \"path\": [\"a\", \"g\"], \"pruned\": false, \"state\": 1, \"stronger\": false, \"totals\": [5, 5]}, {\"exposure\": 1, \"extra_exclusion\": true, \"indices\": [2], \"new_bound\": 6, \"old_bound\": 0, \"path\": [\"a\", \"b\"], \"pruned\": true, \"state\": 3, \"stronger\": true, \"totals\": [0, 0]}], \"build_seconds\": 0.015500396002607886, \"certificate\": {\"budget\": 1, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 1, \"old_lower\": 0, \"reason\": \"strict_gap_search\", \"source_bound_stronger\": true, \"upper\": 5}, \"charged_proof\": {\"distances\": [[2, 0, 0, 6, 0, 0, 0], [2, 0, 0, 6, 0, 0, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"counters\": {\"candidate_edges\": 3, \"charged_bound_stronger\": 1, \"charged_reverse_inspections\": 18, \"charged_strict_exclusions\": 1, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 4, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 1, \"pops\": 2, \"reverse_relaxations\": 9, \"scenario_reverse_inspections\": 18, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"proof\": {\"distances\": [0, 0, 0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"rss_kib\": 30884, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"solve_seconds\": 0.0005764699963037856, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [{\"exposure\": 0, \"extra_exclusion\": false, \"indices\": [0], \"new_bound\": 5, \"old_bound\": 5, \"path\": [\"a\", \"g\"], \"pruned\": false, \"state\": 1, \"stronger\": false, \"totals\": [5, 5]}, {\"exposure\": 1, \"extra_exclusion\": true, \"indices\": [2], \"new_bound\": 6, \"old_bound\": 0, \"path\": [\"a\", \"b\"], \"pruned\": true, \"state\": 3, \"stronger\": true, \"totals\": [0, 0]}], \"build_seconds\": 0.020155757003522012, \"certificate\": {\"budget\": 1, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 1, \"old_lower\": 0, \"reason\": \"strict_gap_search\", \"source_bound_stronger\": true, \"upper\": 5}, \"charged_proof\": {\"distances\": [[2, 0, 0, 6, 0, 0, 0], [2, 0, 0, 6, 0, 0, 0]], \"lambda\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"counters\": {\"candidate_edges\": 3, \"charged_bound_stronger\": 1, \"charged_reverse_inspections\": 18, \"charged_strict_exclusions\": 1, \"dominance_pruned\": 0, \"feasibility_pruned\": 1, \"forbidden_skipped\": 0, \"incumbent_inspections\": 4, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 1, \"pops\": 2, \"reverse_relaxations\": 9, \"scenario_reverse_inspections\": 18, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"proof\": {\"distances\": [0, 0, 0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"rss_kib\": 32708, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"solve_seconds\": 0.0005789010028820485, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -2204,7 +2204,7 @@
           ]
         }
       ],
-      "build_seconds": 0.015500396002607886,
+      "build_seconds": 0.020155757003522012,
       "certificate": {
         "budget": 1,
         "charged_lambda": 1,
@@ -2309,7 +2309,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -2416,7 +2416,7 @@
         "turn_penalty": 0,
         "worst_time": 5
       },
-      "rss_kib": 30884,
+      "rss_kib": 32708,
       "scenario_proof": {
         "distances": [
           [
@@ -2491,7 +2491,7 @@
           }
         ]
       },
-      "solve_seconds": 0.0005764699963037856,
+      "solve_seconds": 0.0005789010028820485,
       "status": "OK"
     },
     "check": {
@@ -2521,12 +2521,12 @@
   },
   "5:t9": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.08750657399650663,
+    "worker_elapsed_seconds": 0.08538884199515451,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.013092617002257612, \"certificate\": {\"budget\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 5}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 5, \"dominance_pruned\": 0, \"feasibility_pruned\": 2, \"forbidden_skipped\": 0, \"incumbent_inspections\": 4, \"labels_inserted\": 3, \"max_live_queue\": 2, \"objective_bound_pruned\": 1, \"pops\": 3, \"reverse_relaxations\": 9, \"scenario_reverse_inspections\": 18, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"proof\": {\"distances\": [0, 0, 0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"rss_kib\": 31148, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"solve_seconds\": 0.000445238001702819, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.013366976003453601, \"certificate\": {\"budget\": 1, \"early_exit\": false, \"equality_exit\": false, \"lower\": 0, \"reason\": \"strict_gap_search\", \"upper\": 5}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 5, \"dominance_pruned\": 0, \"feasibility_pruned\": 2, \"forbidden_skipped\": 0, \"incumbent_inspections\": 4, \"labels_inserted\": 3, \"max_live_queue\": 2, \"objective_bound_pruned\": 1, \"pops\": 3, \"reverse_relaxations\": 9, \"scenario_reverse_inspections\": 18, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"proof\": {\"distances\": [0, 0, 0, 0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"g\"], \"scenario_totals\": [5, 5], \"turn_penalty\": 0, \"worst_time\": 5}, \"rss_kib\": 32708, \"scenario_proof\": {\"distances\": [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}]}, \"solve_seconds\": 0.0003901009986293502, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -2537,7 +2537,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.013092617002257612,
+      "build_seconds": 0.013366976003453601,
       "certificate": {
         "budget": 1,
         "early_exit": false,
@@ -2562,7 +2562,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": {
@@ -2669,7 +2669,7 @@
         "turn_penalty": 0,
         "worst_time": 5
       },
-      "rss_kib": 31148,
+      "rss_kib": 32708,
       "scenario_proof": {
         "distances": [
           [
@@ -2744,7 +2744,7 @@
           }
         ]
       },
-      "solve_seconds": 0.000445238001702819,
+      "solve_seconds": 0.0003901009986293502,
       "status": "OK"
     },
     "check": {
@@ -2774,12 +2774,12 @@
   },
   "6:variant": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.08896841399837285,
+    "worker_elapsed_seconds": 0.12584373900608625,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.015745491000416223, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"old_lower\": null, \"reason\": \"budget_infeasible\", \"source_bound_stronger\": false, \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 0, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 4, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [3, 0, 3, 0], \"start_minimum\": 3, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 31148, \"scenario_proof\": null, \"solve_seconds\": 0.00010112099698744714, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.026872203998209443, \"certificate\": {\"budget\": 0, \"charged_lambda\": 1, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"old_lower\": null, \"reason\": \"budget_infeasible\", \"source_bound_stronger\": false, \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 0, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 4, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [3, 0, 3, 0], \"start_minimum\": 3, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 32708, \"scenario_proof\": null, \"solve_seconds\": 0.00010194000060437247, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -2790,7 +2790,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.015745491000416223,
+      "build_seconds": 0.026872203998209443,
       "certificate": {
         "budget": 0,
         "charged_lambda": 1,
@@ -2821,7 +2821,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": null,
@@ -2863,9 +2863,9 @@
         ]
       },
       "route": null,
-      "rss_kib": 31148,
+      "rss_kib": 32708,
       "scenario_proof": null,
-      "solve_seconds": 0.00010112099698744714,
+      "solve_seconds": 0.00010194000060437247,
       "status": "OK"
     },
     "check": {
@@ -2875,12 +2875,12 @@
   },
   "6:t9": {
     "status": "PASS",
-    "worker_elapsed_seconds": 0.08529981099854922,
+    "worker_elapsed_seconds": 0.08944539399817586,
     "returncode": 0,
     "timed_out": false,
     "kill_sent": false,
     "reaped": true,
-    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.012840368995966855, \"certificate\": {\"budget\": 0, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"reason\": \"budget_infeasible\", \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 4, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [3, 0, 3, 0], \"start_minimum\": 3, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 31148, \"scenario_proof\": null, \"solve_seconds\": 0.0001291009975830093, \"status\": \"OK\"}\n",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.01347763100056909, \"certificate\": {\"budget\": 0, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"reason\": \"budget_infeasible\", \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 4, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [3, 0, 3, 0], \"start_minimum\": 3, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": null, \"rss_kib\": 32708, \"scenario_proof\": null, \"solve_seconds\": 0.00011229100346099585, \"status\": \"OK\"}\n",
     "stderr": "",
     "worker": {
       "affinity": [
@@ -2891,7 +2891,7 @@
         134217728
       ],
       "bound_trace": [],
-      "build_seconds": 0.012840368995966855,
+      "build_seconds": 0.01347763100056909,
       "certificate": {
         "budget": 0,
         "early_exit": true,
@@ -2916,7 +2916,7 @@
         "stale_pops": 0
       },
       "identity": {
-        "manifest_sha256": "454a0f7b10e537a48ca8a3794988b943e2a155748ea1dcd43c019ba21ea5094f",
+        "manifest_sha256": "3d1e215b74d749defd69c7c320438a92893a5cc56d3d9d72c2eb9f86452ad311",
         "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
       },
       "incumbent": null,
@@ -2958,9 +2958,9 @@
         ]
       },
       "route": null,
-      "rss_kib": 31148,
+      "rss_kib": 32708,
       "scenario_proof": null,
-      "solve_seconds": 0.0001291009975830093,
+      "solve_seconds": 0.00011229100346099585,
       "status": "OK"
     },
     "check": {

@@ -56,3 +56,11 @@ invention/generaloptimizer/science/speed/CI/production/physiologyclaim. Fresh
 synthetic notblind/external; inheritednegative/retraction/historyunchanged.
 Draft creation interruptioncheckedtwice absent thenreissuedonce, no duplicate
 publication/run, processdisclosure notcryptographicproof.
+Rejected freeze5075faf: parent independently found feasible preprocessing counts
+accepted false999 values and method check accepted extra top field. Repaired
+exact8stage method schema vs explicit exact7field worker wrapper, plus separate
+raw original-topology heap/tie/order count audit for ALL exposure/scenario/
+charged/forwardincumbent inspections, baseline3counts and variant4counts. No
+baseline source/checker edits. BOTH actual parent receipts mutations +1/+999
+for everycount across equality/strict/early cases now reject. Overheadcounts
+independently bound, audit overhead itself still not included in these counts.
