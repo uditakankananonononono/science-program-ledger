@@ -60,3 +60,7 @@ class Development(unittest.TestCase):
         from model import load_bytes
         for b in (b'{"x":1,"x":2}',b'{"x":NaN}',b'['*11+b'0'+b']'*11):
             with self.assertRaises(Invalid):load_bytes(b)
+    def test_parent_schedule_independent(self):
+        from proof import verify
+        r=generate(self.s())
+        with patch('generator.candidates',side_effect=RuntimeError('must not use shared schedule')):verify(self.s(),r)

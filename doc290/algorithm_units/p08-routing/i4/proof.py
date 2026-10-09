@@ -58,7 +58,6 @@ def reconcile(s,w,lam,h,arcs,primal,result):
     return LB
 
 def verify(s,result):
-    from generator import candidates
     from model import Invalid,rational
     G,n,states,arcs,primal=model(s)
     import json
@@ -70,7 +69,12 @@ def verify(s,result):
     if set(result)!={'status','reason','selected_index','best_lower','gap','primal','candidates'} or type(result['reason']) is not str:raise Failure('result exact schema')
     if canonical(result['primal'])!=canonical(primal):raise Failure('top-level primal binding')
     if result['selected_index'] is not None and type(result['selected_index']) is not int:raise Failure('selected index strict type')
-    rows=result['candidates'];expected=candidates(n)
+    rows=result['candidates']
+    # Parent reconstructs the prereg schedule without generator imports.
+    weight_rows=[tuple(Fraction(1 if j==k else 0,1) for j in range(n)) for k in range(n)]
+    uniform=tuple(Fraction(1,n) for _ in range(n))
+    if uniform not in weight_rows:weight_rows.append(uniform)
+    expected=[(w,lam) for w in weight_rows for lam in (Fraction(0,1),Fraction(1,2),Fraction(1,1),Fraction(2,1))]
     if type(rows) is not list:raise Failure('candidate list schema')
     if len(rows)!=len(expected):raise Failure('complete finite candidate coverage')
     best=None;selected=None
@@ -99,6 +103,9 @@ def verify(s,result):
             h,M=constructed
             if row['clamp']!=text(M) or row['potential']!=[text(v) for v in h]:raise Failure('receipt clamp/potential')
             for v in (sum(x*y for x,y in zip(w,primal['scenario_totals'])),sum(x*y for x,y in zip(w,primal['scenario_totals']))+lam*primal['exposure'],lam*s['budget'],h[-1]-lam*s['budget']):text(v)
+            from model import SPEC_PATH
+            from pathlib import Path
+            if Path(i3.__file__).resolve()!=SPEC_PATH.resolve():raise Failure('receipt original I3 loaded path')
             check=i3.check(dict(s,weights=[text(v) for v in w],multiplier=text(lam),potential=[text(v) for v in h]));LB=reconcile(s,w,lam,h,aa,primal,check)
             import json
             if json.dumps(check,sort_keys=True)!=json.dumps(row['checker'],sort_keys=True) or row['status']!=check['status'] or row['lower_bound']!=text(LB) or row['gap']!=text(Fraction(primal['worst_time'])-LB):raise Failure('receipt emitted checker/algebra')

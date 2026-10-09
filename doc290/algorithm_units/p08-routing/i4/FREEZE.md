@@ -41,3 +41,10 @@ row schemas, strictint index/selectedindex, topprimal/gap/best/status/selection
 rederived; emittedrows exactkeys, domainpartialstagepairs bounded, topology
 noemission precedence unchanged. Real successfulparentreceipt mutations topgap/
 primal/False/equalfloatindexes/missing/extra/count/order nowFAIL. I3unchanged.
+
+Additional prereview requirement: parent verifier no longer imports generator.
+candidates. It independently reconstructs unitvectors+deduplicateduniform and
+lambda0,1/2,1,2 Cartesian schedule. Claim-level independent arcs/BF/algebra/
+schedule, NOT wholly independent source implementation (shared unchangedchecker/
+modelhelpers). Parent re-emission explicitlychecksoriginalI3loadedpath; source
+bytes/transitivehelpers remain manifestpinned, no checkeredit.
