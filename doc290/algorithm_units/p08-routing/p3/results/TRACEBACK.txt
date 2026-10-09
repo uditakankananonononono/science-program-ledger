@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/p3/compare.py", line 13, in <module>
+    if __name__=='__main__':run(sys.argv[1])
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/p3/compare.py", line 11, in run
+    r={'name':c['name'],'oracle':c['oracle'],'input_sha256':hashlib.sha256(json.dumps(c,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'subjects':{m:launch(['subject',i,m]) for m in ('variant','baseline')}};r['agreement']=all(v['status']=='PASS' for v in r['subjects'].values());rows.append(r)
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/p3/compare.py", line 11, in <dictcomp>
+    r={'name':c['name'],'oracle':c['oracle'],'input_sha256':hashlib.sha256(json.dumps(c,sort_keys=True,separators=(',',':')).encode()).hexdigest(),'subjects':{m:launch(['subject',i,m]) for m in ('variant','baseline')}};r['agreement']=all(v['status']=='PASS' for v in r['subjects'].values());rows.append(r)
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/p3/core.py", line 38, in launch
+    integer(payload['rss_kib']);cpu=payload['affinity']
+NameError: name 'integer' is not defined
