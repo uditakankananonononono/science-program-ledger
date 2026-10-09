@@ -1,0 +1,194 @@
+{
+  "baseline": {
+    "check": {
+      "exposure": 0,
+      "ledger": [
+        {
+          "delay": 0,
+          "edge": [
+            "q",
+            0
+          ],
+          "exposure": 0,
+          "scenarios": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "turn_penalty": 0,
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0009385730008943938, \"counters\": null, \"identity\": {\"manifest_sha256\": \"7be74ec37ff358c48004e1a2daa39fdc97e6b17c3178dd55dce1e762b5d25234\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"proof\": null, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"turn_penalty\": 0, \"worst_time\": 4}, \"rss_kib\": 28124, \"solve_seconds\": 9.97340030153282e-05, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0009385730008943938,
+      "counters": null,
+      "identity": {
+        "manifest_sha256": "7be74ec37ff358c48004e1a2daa39fdc97e6b17c3178dd55dce1e762b5d25234",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "proof": null,
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "turn_penalty": 0,
+        "worst_time": 4
+      },
+      "rss_kib": 28124,
+      "solve_seconds": 9.97340030153282e-05,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.06071394800528651
+  },
+  "variant": {
+    "check": {
+      "exposure": 0,
+      "ledger": [
+        {
+          "delay": 0,
+          "edge": [
+            "q",
+            0
+          ],
+          "exposure": 0,
+          "scenarios": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "turn_penalty": 0,
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0016780039950390346, \"counters\": {\"candidate_edges\": 1, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"labels_inserted\": 2, \"max_live_queue\": 1, \"pops\": 2, \"reverse_relaxations\": 3, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"7be74ec37ff358c48004e1a2daa39fdc97e6b17c3178dd55dce1e762b5d25234\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"proof\": {\"distances\": [0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"turn_penalty\": 0, \"worst_time\": 4}, \"rss_kib\": 28124, \"solve_seconds\": 0.0001709930002107285, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0016780039950390346,
+      "counters": {
+        "candidate_edges": 1,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "labels_inserted": 2,
+        "max_live_queue": 1,
+        "pops": 2,
+        "reverse_relaxations": 3,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "7be74ec37ff358c48004e1a2daa39fdc97e6b17c3178dd55dce1e762b5d25234",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "proof": {
+        "distances": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "start_minimum": 0,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "q"
+          },
+          {
+            "incoming": [
+              "q",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "z"
+          },
+          {
+            "incoming": [
+              "z",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "q"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "z"
+          }
+        ]
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "turn_penalty": 0,
+        "worst_time": 4
+      },
+      "rss_kib": 28124,
+      "solve_seconds": 0.0001709930002107285,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.06010767700354336
+  }
+}
