@@ -1,0 +1,1478 @@
+[
+  {
+    "expected": "PRESERVED",
+    "name": "A",
+    "statement": {
+      "budget": 10,
+      "distances": [
+        null,
+        null,
+        0,
+        0
+      ],
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:sink",
+    "statement": {
+      "budget": 10,
+      "distances": [
+        null,
+        null,
+        0,
+        1
+      ],
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:source",
+    "statement": {
+      "budget": 10,
+      "distances": [
+        0,
+        null,
+        0,
+        0
+      ],
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:budget",
+    "statement": {
+      "budget": true,
+      "distances": [
+        null,
+        null,
+        0,
+        0
+      ],
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "PRESERVED",
+    "name": "B",
+    "statement": {
+      "budget": 1,
+      "distances": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:sink",
+    "statement": {
+      "budget": 1,
+      "distances": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:source",
+    "statement": {
+      "budget": 1,
+      "distances": [
+        3,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:budget",
+    "statement": {
+      "budget": true,
+      "distances": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "PRESERVED",
+    "name": "C",
+    "statement": {
+      "budget": 2,
+      "distances": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [
+        {
+          "delay": 7,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:sink",
+    "statement": {
+      "budget": 2,
+      "distances": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [
+        {
+          "delay": 7,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:source",
+    "statement": {
+      "budget": 2,
+      "distances": [
+        3,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [
+        {
+          "delay": 7,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:budget",
+    "statement": {
+      "budget": true,
+      "distances": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [
+        {
+          "delay": 7,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "PRESERVED",
+    "name": "D",
+    "statement": {
+      "budget": 0,
+      "distances": [
+        0,
+        3,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:sink",
+    "statement": {
+      "budget": 0,
+      "distances": [
+        0,
+        3,
+        0,
+        1
+      ],
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:source",
+    "statement": {
+      "budget": 0,
+      "distances": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:budget",
+    "statement": {
+      "budget": true,
+      "distances": [
+        0,
+        3,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control:null",
+    "statement": {
+      "budget": 10,
+      "distances": null,
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:drop",
+    "statement": {
+      "budget": 10,
+      "distances": [
+        null,
+        null,
+        0
+      ],
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:bool",
+    "statement": {
+      "budget": 1,
+      "distances": [
+        true,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:rule",
+    "statement": {
+      "budget": 2,
+      "distances": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "a",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [
+        {
+          "delay": 7,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "A:null",
+    "statement": {
+      "budget": 10,
+      "distances": null,
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "B:null",
+    "statement": {
+      "budget": 1,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "C:null",
+    "statement": {
+      "budget": 2,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [
+        {
+          "delay": 7,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "D:null",
+    "statement": {
+      "budget": 0,
+      "distances": null,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control10:unreachable",
+    "statement": {
+      "budget": 0,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 0,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control10:budget",
+    "statement": {
+      "budget": 1,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control10:identity",
+    "statement": {
+      "budget": 0,
+      "distances": null,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control10:larger",
+    "statement": {
+      "budget": 1,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          },
+          {
+            "exposure": 3,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          },
+          {
+            "exposure": 4,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          },
+          {
+            "exposure": 5,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          },
+          {
+            "exposure": 6,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          },
+          {
+            "exposure": 7,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control10:zero",
+    "statement": {
+      "budget": 0,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 0,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 0,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control10:delay",
+    "statement": {
+      "budget": 2,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [
+        {
+          "delay": 9,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "COMPLETED",
+    "name": "control10:allstate",
+    "statement": {
+      "budget": 1,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "u",
+            "time": 1
+          }
+        ],
+        "u": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "z": [
+          {
+            "exposure": 8,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control10:invalid",
+    "statement": {
+      "budget": true,
+      "distances": null,
+      "forbidden": [],
+      "goal": "g",
+      "graph": {
+        "a": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              1,
+              1
+            ],
+            "target": "g",
+            "time": 1
+          }
+        ],
+        "g": []
+      },
+      "penalties": [],
+      "start": "a"
+    }
+  }
+]

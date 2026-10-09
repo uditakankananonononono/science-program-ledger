@@ -1,0 +1,46 @@
+{
+  "sleep": {
+    "status": "FAIL",
+    "worker_elapsed_seconds": 0.3018531449997681,
+    "returncode": -9,
+    "timed_out": true,
+    "kill_sent": true,
+    "reaped": true,
+    "stdout": "sleep-ready\n",
+    "stderr": "",
+    "reason": "worker timeout"
+  },
+  "memory": {
+    "status": "FAIL",
+    "worker_elapsed_seconds": 0.0786440530064283,
+    "returncode": 2,
+    "timed_out": false,
+    "kill_sent": false,
+    "reaped": true,
+    "stdout": "{\"status\": \"FAIL\", \"exception_type\": \"MemoryError\", \"exception\": \"\"}\n",
+    "stderr": "",
+    "reason": "worker nonzero"
+  },
+  "gatefail": {
+    "status": "FAIL",
+    "worker_elapsed_seconds": 0.06829598100011935,
+    "returncode": 2,
+    "timed_out": false,
+    "kill_sent": false,
+    "reaped": true,
+    "stdout": "{\"status\": \"FAIL\", \"exception_type\": \"Invalid\", \"exception\": \"intentional gate refusal\"}\n",
+    "stderr": "",
+    "reason": "worker nonzero"
+  },
+  "badjson": {
+    "status": "FAIL",
+    "worker_elapsed_seconds": 0.07966254599887179,
+    "returncode": 0,
+    "timed_out": false,
+    "kill_sent": false,
+    "reaped": true,
+    "stdout": "not-json\n",
+    "stderr": "",
+    "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  }
+}

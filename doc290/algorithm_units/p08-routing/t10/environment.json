@@ -1,0 +1,356 @@
+{
+  "modules": [
+    "_collections_abc",
+    "_frozen_importlib",
+    "_frozen_importlib_external",
+    "_hashlib",
+    "_json",
+    "_opcode",
+    "_sitebuiltins",
+    "_weakrefset",
+    "abc",
+    "apport_python_hook",
+    "ast",
+    "bisect",
+    "codecs",
+    "collections",
+    "collections.abc",
+    "contextlib",
+    "copy",
+    "copyreg",
+    "dataclasses",
+    "dis",
+    "encodings",
+    "encodings.aliases",
+    "encodings.utf_8",
+    "enum",
+    "fnmatch",
+    "functools",
+    "genericpath",
+    "hashlib",
+    "heapq",
+    "importlib",
+    "importlib._bootstrap",
+    "importlib._bootstrap_external",
+    "importlib.machinery",
+    "inspect",
+    "io",
+    "ipaddress",
+    "json",
+    "json.decoder",
+    "json.encoder",
+    "json.scanner",
+    "keyword",
+    "linecache",
+    "ntpath",
+    "opcode",
+    "operator",
+    "os",
+    "os.path",
+    "pathlib",
+    "posixpath",
+    "random",
+    "re",
+    "reprlib",
+    "resource",
+    "selectors",
+    "signal",
+    "site",
+    "sre_compile",
+    "sre_constants",
+    "sre_parse",
+    "stat",
+    "subprocess",
+    "threading",
+    "token",
+    "tokenize",
+    "types",
+    "urllib",
+    "urllib.parse",
+    "warnings",
+    "weakref"
+  ],
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "sources": {
+    "_collections_abc": {
+      "path": "/usr/lib/python3.10/_collections_abc.py",
+      "sha256": "48560945f0f48a364ceff93de6e4cd2e2779b5effce505e70258506be4c67dba"
+    },
+    "_frozen_importlib": {
+      "path": "/usr/lib/python3.10/importlib/_bootstrap.py",
+      "sha256": "11125bbe628d2f82afdcd480c6454f6248f229d9caf6a8ac1e231c3402facaa1"
+    },
+    "_frozen_importlib_external": {
+      "path": "/usr/lib/python3.10/importlib/_bootstrap_external.py",
+      "sha256": "a5eaa30689fd793ca058fce597a4c8781c36e5bce4930e441f899494071d3989"
+    },
+    "_hashlib": {
+      "path": "/usr/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "aaa7cad4595fb421be5a9206efea579ec852f820d44e1d76a8de9ab46e02200c"
+    },
+    "_json": {
+      "path": "/usr/lib/python3.10/lib-dynload/_json.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "d02668cbf0664d30f194230b767f940d0abf9da851204c54b84640f987bcb145"
+    },
+    "_opcode": {
+      "path": "/usr/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "57b17b5a12dcb7ddd890f968acd7d8afed00439d7f27deb656a3e5c81dc7d8f4"
+    },
+    "_sitebuiltins": {
+      "path": "/usr/lib/python3.10/_sitebuiltins.py",
+      "sha256": "b9388bc1d6d12ed6be12da420ab1feca40f99c0e33ec315d92b1e01cb69b25bc"
+    },
+    "_weakrefset": {
+      "path": "/usr/lib/python3.10/_weakrefset.py",
+      "sha256": "49fb432325ef836f89caa60e50b152eb6f32b700ed71fedcd4d56815723f77ba"
+    },
+    "abc": {
+      "path": "/usr/lib/python3.10/abc.py",
+      "sha256": "c702f783a7e81f9c37a1d22095c05360b11916d144d2730ff735c36f879523c5"
+    },
+    "apport_python_hook": {
+      "path": "/usr/lib/python3/dist-packages/apport_python_hook.py",
+      "sha256": "7f56fc0bcfe9e80e8152f32262ec190c4db3b10bf2081c0db73e976285cab69e"
+    },
+    "ast": {
+      "path": "/usr/lib/python3.10/ast.py",
+      "sha256": "2bacf018a141dd55b5ab20e4e2cc39ca7390b26f06948f8a8cb6edbedc292829"
+    },
+    "bisect": {
+      "path": "/usr/lib/python3.10/bisect.py",
+      "sha256": "e5b2ff166f48a06e70ae831d8c9b47283fcd0c254306eee12d3dae9c55e11526"
+    },
+    "codecs": {
+      "path": "/usr/lib/python3.10/codecs.py",
+      "sha256": "166ffd0f0fe40631bb7adef898ebfe59c7fb9efeb25f635b0fd50b68e9353b6a"
+    },
+    "collections": {
+      "path": "/usr/lib/python3.10/collections/__init__.py",
+      "sha256": "5d7b9d899fb1407a614cb2ade46b6d2400ba797634e9fed7d770fc4b7e372760"
+    },
+    "collections.abc": {
+      "path": "/usr/lib/python3.10/collections/abc.py",
+      "sha256": "9cb4208f99128a0489b6c8e6c61637617dd7d4250c59e065491957eda084dd10"
+    },
+    "contextlib": {
+      "path": "/usr/lib/python3.10/contextlib.py",
+      "sha256": "2e17d45cf3da698c9752c58a668c8a03d0ce2280fdffd6e352794a38a94d9f07"
+    },
+    "copy": {
+      "path": "/usr/lib/python3.10/copy.py",
+      "sha256": "27dcfc53a4b9d4fbc3d90c74e549eb6eca9301524d6d2fbff9a6589cf51b6fd5"
+    },
+    "copyreg": {
+      "path": "/usr/lib/python3.10/copyreg.py",
+      "sha256": "65cc0a30e07e9768ff97c78391985459a237083dce0c9086abfb879dc517420b"
+    },
+    "dataclasses": {
+      "path": "/usr/lib/python3.10/dataclasses.py",
+      "sha256": "fa2e3728d8184954479c6fcd17015a5e0c176850f18f119f5c548fca49019441"
+    },
+    "dis": {
+      "path": "/usr/lib/python3.10/dis.py",
+      "sha256": "67075458fb59ec9e0d6206440df6b2f31944fcb4c480b9f6fe202094bc455d1d"
+    },
+    "encodings": {
+      "path": "/usr/lib/python3.10/encodings/__init__.py",
+      "sha256": "05f07fc2a0fbd9a9cc92aa7567df84f343ebbb17fc676432e108e127d81913df"
+    },
+    "encodings.aliases": {
+      "path": "/usr/lib/python3.10/encodings/aliases.py",
+      "sha256": "6fdcc49ba23a0203ae6cf28e608f8e6297d7c4d77d52e651db3cb49b9564c6d2"
+    },
+    "encodings.utf_8": {
+      "path": "/usr/lib/python3.10/encodings/utf_8.py",
+      "sha256": "ba0cac060269583523ca9506473a755203037c57d466a11aa89a30a5f6756f3d"
+    },
+    "enum": {
+      "path": "/usr/lib/python3.10/enum.py",
+      "sha256": "59a62af0e129ae688f5549d6a273c51c5db80b534521f98dae2e4ceb485d9f75"
+    },
+    "fnmatch": {
+      "path": "/usr/lib/python3.10/fnmatch.py",
+      "sha256": "8a47ad23c243c6af0314bca4fc59b077035b6074f1915b6fc2b7c00864a7c16d"
+    },
+    "functools": {
+      "path": "/usr/lib/python3.10/functools.py",
+      "sha256": "1604a69d2d60921502b375a8af0d662702abe625987b773637a34c09c76a8a25"
+    },
+    "genericpath": {
+      "path": "/usr/lib/python3.10/genericpath.py",
+      "sha256": "9d58ad64056a89f12258a62596c2073cd9e52b459dde152f710edc0cffcd865b"
+    },
+    "hashlib": {
+      "path": "/usr/lib/python3.10/hashlib.py",
+      "sha256": "9d56ebad0263a48ac94e0b2b7a3723625f2ff4dc7707d1156580e008d40bc790"
+    },
+    "heapq": {
+      "path": "/usr/lib/python3.10/heapq.py",
+      "sha256": "0351667ed3afd3310ebd353526824d6f6f34d641ef0a785552c6893b7f95fdf3"
+    },
+    "importlib": {
+      "path": "/usr/lib/python3.10/importlib/__init__.py",
+      "sha256": "49ad4fdc8139026f7f3773e3f50f09207ff6bd8e92a2c382545525235448e525"
+    },
+    "importlib._bootstrap": {
+      "path": "/usr/lib/python3.10/importlib/_bootstrap.py",
+      "sha256": "11125bbe628d2f82afdcd480c6454f6248f229d9caf6a8ac1e231c3402facaa1"
+    },
+    "importlib._bootstrap_external": {
+      "path": "/usr/lib/python3.10/importlib/_bootstrap_external.py",
+      "sha256": "a5eaa30689fd793ca058fce597a4c8781c36e5bce4930e441f899494071d3989"
+    },
+    "importlib.machinery": {
+      "path": "/usr/lib/python3.10/importlib/machinery.py",
+      "sha256": "b7b47efe3d95ae817e0c61d852682ddf8b8ce95aaf36ae4cf333e145416baf18"
+    },
+    "inspect": {
+      "path": "/usr/lib/python3.10/inspect.py",
+      "sha256": "98cc184ae793fa1c45de2f28de2539f6d63bf7bec8338df580549f8263baa905"
+    },
+    "io": {
+      "path": "/usr/lib/python3.10/io.py",
+      "sha256": "ee094fcf87d17a3a25816c663b67bd8797dccc3eebabad5a23f6da162146a0a8"
+    },
+    "ipaddress": {
+      "path": "/usr/lib/python3.10/ipaddress.py",
+      "sha256": "b2dc2c1f2bf13ca8b54a1f69b43a7dd20b81d8ef97bd1a5af717b18bc5cd0a1b"
+    },
+    "json": {
+      "path": "/usr/lib/python3.10/json/__init__.py",
+      "sha256": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5"
+    },
+    "json.decoder": {
+      "path": "/usr/lib/python3.10/json/decoder.py",
+      "sha256": "9f02654649816145bc76f8c210a5fe3ba1de142d4d97a1c93105732e747c285b"
+    },
+    "json.encoder": {
+      "path": "/usr/lib/python3.10/json/encoder.py",
+      "sha256": "06b881b824f71e95d72af4ab865de4c35553e791b6d959a125caac61401cc350"
+    },
+    "json.scanner": {
+      "path": "/usr/lib/python3.10/json/scanner.py",
+      "sha256": "8604d9d03786d0d509abb49e9f069337278ea988c244069ae8ca2c89acc2cb08"
+    },
+    "keyword": {
+      "path": "/usr/lib/python3.10/keyword.py",
+      "sha256": "afbe73afb68d32fa998e5ff3d081090deec457152470f5331cc2bd430a0e9d2a"
+    },
+    "linecache": {
+      "path": "/usr/lib/python3.10/linecache.py",
+      "sha256": "e814839fc75010db274ae034f45b0fff7e529ccb702319048545fef84c2045b7"
+    },
+    "ntpath": {
+      "path": "/usr/lib/python3.10/ntpath.py",
+      "sha256": "db35d89f9729091b0f518e155e041cc9f1001da7563efa2724cb0f9ddb1845f7"
+    },
+    "opcode": {
+      "path": "/usr/lib/python3.10/opcode.py",
+      "sha256": "042223e56632d8ff283e63e190e0496f9af6945f0d6dfb692ac9d129aabc85dc"
+    },
+    "operator": {
+      "path": "/usr/lib/python3.10/operator.py",
+      "sha256": "fd931e2bf493ddd239208b0c0a2249324602b48aabc984c85b7d8dcc4d99a17d"
+    },
+    "os": {
+      "path": "/usr/lib/python3.10/os.py",
+      "sha256": "70e420e105d021d5ba2ec4d8a9b2131561db6d93e800e8580ddeb86cbd6959c3"
+    },
+    "os.path": {
+      "path": "/usr/lib/python3.10/posixpath.py",
+      "sha256": "b7fe3db38f32ea2cf16945b6e7d0c09265e0f73306387cc3d53c3f53aea92959"
+    },
+    "pathlib": {
+      "path": "/usr/lib/python3.10/pathlib.py",
+      "sha256": "936f14a3ecc4ac5e896e4d673666d76b25a9d581f3b4c8d8d424e830fda2a69b"
+    },
+    "posixpath": {
+      "path": "/usr/lib/python3.10/posixpath.py",
+      "sha256": "b7fe3db38f32ea2cf16945b6e7d0c09265e0f73306387cc3d53c3f53aea92959"
+    },
+    "python_executable": {
+      "path": "/usr/bin/python3.10",
+      "sha256": "a2f33a6e006989270f4340528eb61f8f97366e00a5d1b602ac8672ea44fc56ae"
+    },
+    "random": {
+      "path": "/usr/lib/python3.10/random.py",
+      "sha256": "ce80a2471965e64ae93caea14490f16850432e65dce87f15edfe25b6f562f8d1"
+    },
+    "re": {
+      "path": "/usr/lib/python3.10/re.py",
+      "sha256": "018b1a2c70e8ef537cc328d1026afdeca5839392ce47235a7b8d22e1b788cdc7"
+    },
+    "reprlib": {
+      "path": "/usr/lib/python3.10/reprlib.py",
+      "sha256": "dc786fbc528e10bc6ea3c1fa84e4178e85c4f3c9b937a4b191546aec317e9cb9"
+    },
+    "resource": {
+      "path": "/usr/lib/python3.10/lib-dynload/resource.cpython-310-x86_64-linux-gnu.so",
+      "sha256": "a08b98ad6eac99adf06043a5f39e841b85198a62189f47f9896906f9148224b9"
+    },
+    "selectors": {
+      "path": "/usr/lib/python3.10/selectors.py",
+      "sha256": "b16e673c110fd6a362414308ef73ffc3c15125c87361333b309791735931040d"
+    },
+    "signal": {
+      "path": "/usr/lib/python3.10/signal.py",
+      "sha256": "6ae9e49fe09b607bc161fc80067de9763aa48f523567a34992f00be06057f00a"
+    },
+    "site": {
+      "path": "/usr/lib/python3.10/site.py",
+      "sha256": "65c45a60fad444d6cca1a42302fc74df15ad8ead399774de8638a578c1e0b95d"
+    },
+    "sre_compile": {
+      "path": "/usr/lib/python3.10/sre_compile.py",
+      "sha256": "800f4c7df096e10336cd54f1aa6382721d6fcb974669463fe67f7a9189e52407"
+    },
+    "sre_constants": {
+      "path": "/usr/lib/python3.10/sre_constants.py",
+      "sha256": "6d5f1ff40e42f4be9b98899b58684dffcdb9c0ef1b3b942c17a3fcafc0bbcdc1"
+    },
+    "sre_parse": {
+      "path": "/usr/lib/python3.10/sre_parse.py",
+      "sha256": "dad10892e970f3b9d0ad874d893edde31c0303e39ea5e2678935129e29128c2f"
+    },
+    "stat": {
+      "path": "/usr/lib/python3.10/stat.py",
+      "sha256": "052af0327eae6941b69b05c088b3e748f79995635f80ac4cc7125eb333eb4c77"
+    },
+    "subprocess": {
+      "path": "/usr/lib/python3.10/subprocess.py",
+      "sha256": "53bb0d0780e166ef4ae94f3b2a817a8aae49a84d899db1f4c31f933d429057d6"
+    },
+    "threading": {
+      "path": "/usr/lib/python3.10/threading.py",
+      "sha256": "a21926e636bec8c2e5579f3e79cce144c36379ef93c4596252af29970983553d"
+    },
+    "token": {
+      "path": "/usr/lib/python3.10/token.py",
+      "sha256": "2cabb6a81cafa84b475fc852c20b6bad45955ec0f88063720a831495215f776b"
+    },
+    "tokenize": {
+      "path": "/usr/lib/python3.10/tokenize.py",
+      "sha256": "b76fe3cc91541b872f16a879db6c9ff44c7ba4c2df366d40a3a211948edafba5"
+    },
+    "types": {
+      "path": "/usr/lib/python3.10/types.py",
+      "sha256": "5e6c3b3380332249908d7907bc4c1102c0bf14076248c8244d03314f6b2e2078"
+    },
+    "urllib": {
+      "path": "/usr/lib/python3.10/urllib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "urllib.parse": {
+      "path": "/usr/lib/python3.10/urllib/parse.py",
+      "sha256": "182c08612deeb0c00861e2cca2ead81d365f43ae34382564cadc7d41d06917ab"
+    },
+    "warnings": {
+      "path": "/usr/lib/python3.10/warnings.py",
+      "sha256": "b8e7748e4c67eb65cea5d3b3bd888d245771c0ebe63117f747189a55a9b622db"
+    },
+    "weakref": {
+      "path": "/usr/lib/python3.10/weakref.py",
+      "sha256": "dd8e03473ee5667c1a2caa43ede07797652bcb4035fabb60d60af10bb23a0886"
+    }
+  }
+}
