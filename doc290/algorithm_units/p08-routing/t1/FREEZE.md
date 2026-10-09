@@ -1,0 +1,21 @@
+# T1 original-edge turn witness freeze candidate
+
+Prereg2408a50497dab779571e34526b1852c3f93e111d,parent4f8874060b9646dbaf80350748d0dd762b941219.
+CandidateOID/treeinreviewbundle. Exactinteger-not-booloriginalscenario dimension
+beforealltotals; capsappliedexposure,sumdelays,EVERYscenariototal. Rulesvalidated
+existing/consecutive/duplicate/types evenunused/null. Positive1..4dimensionMUST
+establishedbyatleastonegraphedge: no-edgegraphsINVALID. Isolatedidentityvertex
+allowedifothergraphedgeestablishesdimension, noinferredzero-scenarioallowance.
+Dnegativeindexmutationfailsquery/pathtoo, NOTisolatednegativeindexcontrol; A/B/C
+andliteraldevelopmentnegativeindex isolateit. All20constructedinputsNOTevaluated.
+
+Sixdevelopmenttests literalturnledger/firstedge/negativeindex, nullunusedbadrule,
+scenarioerase/boolcost/floatdelay/totaloverflow, noedge/isolatedidentitypolicy,
+forbiddenwin/duplicatepenalty, disagreement. Source/runtimegatebeforecases/solver,
+productionrouting/C1C2unchangedpinned. Scalarpairdelayonly,no compressedtranslation.
+Afterreview/publication: PYTHONDONTWRITEBYTECODE=1 python3 compare.py results/report.json.
+Allrows/reasons/digests/ledger/baselines/exceptionsretained; validatorwarningscaptured
+perrow, baselinewarningcapture notcomplete(ordinaryscopedcommandwarningsnotproof).
+Resultreviewbeforepublication. Separateartifactexplicitinvocation, noproduction
+integration/optimality/universal-equivalence/turncompression/newalgorithm/physical
+scienceclaim. Caps/pinsnotOS/sharedlibrary/peakmemory/hardtimeout/sandboxproof.

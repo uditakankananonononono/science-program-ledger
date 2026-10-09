@@ -1,0 +1,1616 @@
+[
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "A",
+    "statement": {
+      "budget": 3,
+      "forbidden": [],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          8,
+          7
+        ],
+        "turn_penalty": 2,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:negative",
+    "statement": {
+      "budget": 3,
+      "forbidden": [],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          8,
+          7
+        ],
+        "turn_penalty": 2,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:turntotal",
+    "statement": {
+      "budget": 3,
+      "forbidden": [],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          8,
+          7
+        ],
+        "turn_penalty": 3,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:scenario",
+    "statement": {
+      "budget": 3,
+      "forbidden": [],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          9,
+          7
+        ],
+        "turn_penalty": 2,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "B",
+    "statement": {
+      "budget": 4,
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      ],
+      "goal": "d",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "d": []
+      },
+      "penalties": [
+        {
+          "delay": 3,
+          "incoming": [
+            "c",
+            0
+          ],
+          "outgoing": [
+            "b",
+            1
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "d"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "b",
+          "c",
+          "b",
+          "d"
+        ],
+        "scenario_totals": [
+          7
+        ],
+        "turn_penalty": 3,
+        "worst_time": 7
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:negative",
+    "statement": {
+      "budget": 4,
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      ],
+      "goal": "d",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "d": []
+      },
+      "penalties": [
+        {
+          "delay": 3,
+          "incoming": [
+            "c",
+            0
+          ],
+          "outgoing": [
+            "b",
+            1
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "d"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "b",
+          "c",
+          "b",
+          "d"
+        ],
+        "scenario_totals": [
+          7
+        ],
+        "turn_penalty": 3,
+        "worst_time": 7
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:turntotal",
+    "statement": {
+      "budget": 4,
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      ],
+      "goal": "d",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "d": []
+      },
+      "penalties": [
+        {
+          "delay": 3,
+          "incoming": [
+            "c",
+            0
+          ],
+          "outgoing": [
+            "b",
+            1
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "d"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "b",
+          "c",
+          "b",
+          "d"
+        ],
+        "scenario_totals": [
+          7
+        ],
+        "turn_penalty": 4,
+        "worst_time": 7
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:scenario",
+    "statement": {
+      "budget": 4,
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      ],
+      "goal": "d",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "d": []
+      },
+      "penalties": [
+        {
+          "delay": 3,
+          "incoming": [
+            "c",
+            0
+          ],
+          "outgoing": [
+            "b",
+            1
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "d"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "b",
+          "c",
+          "b",
+          "d"
+        ],
+        "scenario_totals": [
+          8
+        ],
+        "turn_penalty": 3,
+        "worst_time": 7
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "C",
+    "statement": {
+      "budget": 2,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [
+        {
+          "delay": 4,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "a",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          },
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          6,
+          8
+        ],
+        "turn_penalty": 4,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:negative",
+    "statement": {
+      "budget": 2,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [
+        {
+          "delay": 4,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "a",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "a",
+            "target": "a"
+          },
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          6,
+          8
+        ],
+        "turn_penalty": 4,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:turntotal",
+    "statement": {
+      "budget": 2,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [
+        {
+          "delay": 4,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "a",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          },
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          6,
+          8
+        ],
+        "turn_penalty": 5,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:scenario",
+    "statement": {
+      "budget": 2,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [
+        {
+          "delay": 4,
+          "incoming": [
+            "a",
+            0
+          ],
+          "outgoing": [
+            "a",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          },
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          7,
+          8
+        ],
+        "turn_penalty": 4,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "D",
+    "statement": {
+      "budget": 0,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "turn_penalty": 0,
+        "worst_time": 0
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:negative",
+    "statement": {
+      "budget": 0,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          8,
+          7
+        ],
+        "turn_penalty": 2,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:turntotal",
+    "statement": {
+      "budget": 0,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "turn_penalty": 1,
+        "worst_time": 0
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:scenario",
+    "statement": {
+      "budget": 0,
+      "forbidden": [],
+      "goal": "a",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "scenario_totals": [
+          1,
+          0
+        ],
+        "turn_penalty": 0,
+        "worst_time": 0
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:forbidden",
+    "statement": {
+      "budget": 3,
+      "forbidden": [
+        [
+          [
+            "a",
+            1
+          ],
+          [
+            "b",
+            0
+          ]
+        ]
+      ],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          8,
+          7
+        ],
+        "turn_penalty": 2,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:budget",
+    "statement": {
+      "budget": 2,
+      "forbidden": [],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          8,
+          7
+        ],
+        "turn_penalty": 2,
+        "worst_time": 8
+      },
+      "start": "a"
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "name": "control:null",
+    "statement": {
+      "budget": 3,
+      "forbidden": [],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": null,
+      "start": "a"
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:badrule",
+    "statement": {
+      "budget": 3,
+      "forbidden": [],
+      "goal": "c",
+      "graph": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              2,
+              3
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              5,
+              1
+            ],
+            "target": "b",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              4
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": []
+      },
+      "penalties": [
+        {
+          "delay": 2,
+          "incoming": [
+            "a",
+            -1
+          ],
+          "outgoing": [
+            "b",
+            0
+          ]
+        }
+      ],
+      "route": null,
+      "start": "a"
+    }
+  }
+]
