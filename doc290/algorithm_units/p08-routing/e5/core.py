@@ -57,18 +57,8 @@ def launch(args,timeout=5):
                 for v in counters.values():exact_int(v)
                 if payload['incumbent'] is not None:witness(c['statement'],payload['incumbent'])
                 if args[2]=='variant':
-                    cert=payload.get('certificate');names={'early_exit','reason','start_distances','lower_bound','upper_bound'}
-                    if type(cert) is not dict or set(cert)!=names or type(cert['early_exit']) is not bool:raise Invalid('certificate fields')
-                    ns=len(next(e for es in c['statement']['graph'].values() for e in es)['scenario_times'])
-                    if type(cert['start_distances']) is not list or len(cert['start_distances'])!=ns:raise Invalid('distance dimension')
-                    for v in cert['start_distances']:
-                        if v is not None:exact_int(v)
-                    for k in ('lower_bound','upper_bound'):
-                        if cert[k] is not None:exact_int(cert[k])
-                    if cert['early_exit']:
-                        if cert['lower_bound']!=cert['upper_bound'] or cert['lower_bound']!=max(cert['start_distances']) or payload['route']!=payload['incumbent']:raise Invalid('equality certificate mismatch')
-                        for k in ('candidate_edges','labels_inserted','pops','stale_pops','max_live_queue'):
-                            if counters[k]!=0:raise Invalid('early exit phase counter')
+                    from proof import check as proof_check
+                    proof_check(c['statement'],payload)
         record['status']='PASS'
     except (ValueError,KeyError,TypeError,IndexError) as e:record['reason']=type(e).__name__+': '+str(e)
     return record

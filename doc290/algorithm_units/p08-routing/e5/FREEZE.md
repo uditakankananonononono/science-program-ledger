@@ -30,3 +30,12 @@ claim. ASvirtualaddress notRSS/tree/container/OS/sharedlibs/schedulerproof.
 Freshsynthetic notexternal/realheldout/strongblind validation. PriorM4slower446/600,
 P3FAIL/I3CFAIL/K1K2/gaps/float/history unchangedpinned. No priorartscreenclaim
 withoutactualsources; algebra itself groundsstandardboundstatement. Resultreview.
+
+## Rejected output-proof checker freeze repair
+Rejected6d958e7a retained: core accepted false distances/L/W metadata when route
+itself correct. Repaired proof.py independent Bellman-Ford n-1 rounds from original
+scenario costs (not method reverse helper); bind upper bound to independently
+recomputed indexed incumbent W; lower to reconstructed start distances, exact
+classification/reason/unreachable consistency and all exact-phase counters.
+Genuine-success false-proof payload controls added. Method/corpus/oracles unchanged;
+no400subjects executed orrescored. This is output-checker repair, not solver rescue.

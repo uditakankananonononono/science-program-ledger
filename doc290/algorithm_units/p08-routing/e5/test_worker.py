@@ -21,3 +21,20 @@ class WorkerControls(unittest.TestCase):
                 def communicate(self,timeout=None):return json.dumps(payload).encode(),b''
                 def poll(self):return 0
             with patch('core.subprocess.Popen',return_value=P()):self.assertEqual(launch(['devsubject',0,'variant'])['status'],'FAIL')
+
+    def test_false_certificate_genuine_success(self):
+        from unittest.mock import patch
+        import copy
+        base=launch(['devsubject',0,'variant']);self.assertEqual(base['status'],'PASS',base)
+        mutations=[]
+        p=copy.deepcopy(base['worker']);p['certificate'].update(start_distances=[0,0],lower_bound=0,upper_bound=0);mutations.append(p)
+        for field,value in (('upper_bound',0),('lower_bound',0),('start_distances',[3,0]),('early_exit',False),('reason','forward exhaustion'),('upper_bound',True)):
+            p=copy.deepcopy(base['worker']);p['certificate'][field]=value;mutations.append(p)
+        p=copy.deepcopy(base['worker']);p['counters']['lb_pruned']=1;mutations.append(p)
+        p=copy.deepcopy(base['worker']);p['incumbent']=None;mutations.append(p)
+        for payload in mutations:
+            class P:
+                returncode=0
+                def communicate(self,timeout=None):return json.dumps(payload).encode(),b''
+                def poll(self):return 0
+            with patch('core.subprocess.Popen',return_value=P()):self.assertEqual(launch(['devsubject',0,'variant'])['status'],'FAIL')
