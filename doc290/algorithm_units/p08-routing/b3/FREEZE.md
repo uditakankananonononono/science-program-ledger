@@ -1,0 +1,22 @@
+# B3 exposure Lagrange certificate freeze candidate
+
+Prereg2441a99dac530afeb59cdfa12ad2fecd117540f5,parent80cf219c425b9600ffd37ae9f76832290690b910.
+CandidateOID/treeinreviewbundle. UnchangedF3canonicalrationalgrammar/signedpotentials/
+nonnegativelambda, fullsortedvertexdimension, EVERYoriginaledge inclgoaloutgoing/
+unreachable. Exactcapsweightededge/path/budgetcharge/LB andprimaltime/exposure/
+budget/indexreplay. Modelcheckedbeforemissingproof, fullinequalitiesBEFOREslack
+UNAVAILABLE, optionalhomogeneousscenario dimensionsdespiteunusedobjective.
+
+Sixdevelopmenttests literalall3edges/FractionLB/negativeunusedpotential, infeasible-
+before-slack, grammar/bool/float/unreduced/signedzero/negative/caps, optionaldimmodel-
+first, primalindex/budget/identity, disagreement. TwentyconstructedinputsNOTscored.
+DgenuineincompletenessLB2vsoptimum3 retained, noautolambda/potentialgeneration or
+completenessclaim. Earlierrouting/T2/T1/C1C2/F3helperunchangedpinned; gatesbefore
+cases/baseline. Validatorrowwarningcaptureonly/baselineprovenanceincomplete.
+
+Afterreview/publication: PYTHONDONTWRITEBYTECODE=1 python3 compare.py results/report.json.
+Allrows/edgeweightedslacks/routeledger/LB/gap/reasons/digests/baselinesretained,
+resultreviewbeforepublication. Established exactsufficientcertificate only, not
+newoptimizer/turn/compression/invention/physicalexposurecalibration/scienceclaim.
+Separateartifactnoautomaticproductionintegration. RuntimepinsnotOS/sharedlibrary
+closure,capsnotpeakmemory/hardtimeout/sandboxproof. K1K2FAILsremainpublic.
