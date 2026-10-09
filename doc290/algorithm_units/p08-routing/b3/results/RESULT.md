@@ -1,0 +1,32 @@
+# B3 exposure-budget Lagrange certificate: bounded PASS with incomplete bound
+
+Publishedfreezee9af5943964fdb1999738c79317dbbbb1b907d3e/tree
+5d0d52ef04dcd6408ea72744f5a49d4e2e21a4f1. Source/runtime23identitiespassedbefore
+20rows+4baselinecalls. Publish-before-scoring tool-log recorded, notprovenonlyby
+thistext/replay. Productionrouting/T2/T1/C1C2/F3helperunchangedpinned.
+
+20/20expectedagreement:3CERTIFIED_OPTIMAL,15INVALID,2UNAVAILABLE. ActivebudgetA
+matchingLB1/t1; slackbudgetB matchingLB2/t2 withlambda0; rationalmultiplierC
+lambda1/2 matchingLB1/t1. Dfeasibleroute t3/r0/budget1 butfixedlambda1 LB2,
+gap1, correctlyUNAVAILABLE, notoptimalitycertificate. Missingmultiplieralso
+UNAVAILABLEaftermodelchecks; negative/float/badpotential/falseprimalbudget refused.
+Allweightededgecosts/slacks/routeledger/LB/budgetcharge/gap/digests/reasons retained.
+No droppedlosses/postfreezechanges/multiplierrescue/retuning. SixseparateddevPASS.
+
+Dgenuineincompleteness: min(1+2lambda,3)-lambda hasmaximum2 atlambda1 while
+budget1 permitsonlytime3edge, so scalarLagrangecertificate cannotclosegap here.
+DoNOTpromoteUNAVAILABLEintoalgorithmfailure,feasiblecertificationorglobalabsence.
+FixedexpectedagreementPASSdoesnotmeanallfourbases receiveoptimalitycertificates.
+
+Fourunchangedexposurebaselinesreturnedtimes1/2/1/3; suppliedfixedcertificatechecks
+threeCERTIFIED/DU NAVAILABLE. Noexceptions. Validatorper-rowcapturedwarnings0,
+baselinewarningprovenanceincomplete. Baselinestatusneverproof; exactrational
+potentialtelescoping+feasible route suppliesproofwhereequalityholds.
+
+Separateexplicitartifact, noautomaticproductionintegration/newsearch/optimizer/
+completecertificategenerator/turn/compressionequivalence/physicalexposurecalibration/
+clinical/invention/CI/heldout/scienceclaim. Canonicalsignedrationalgrammar/nonnegative
+lambda/alloriginaledgesincgoaloutgoing-unused/fullsortedvertex dimension/type/caps
+carried. Missingproofnotinfeasibility, complete slackproofchecksallinequalitiesfirst.
+RuntimepinsnotOS/sharedlibraryclosure; capsnotpeakmemory/timeout/sandboxproof.
+Knownfloatnon-equivalence/K1K2FAILsremainunchangedpublic.
