@@ -1,0 +1,236 @@
+{
+  "activated_details": [
+    {
+      "name": "turn044",
+      "originalW": 9,
+      "prefix": {
+        "original_L": 2,
+        "remaining_scenario_indices": [
+          1,
+          2
+        ],
+        "scenario_count": 1,
+        "selected_W": 2,
+        "selected_index": 1,
+        "semantics": "ordered produced PREFIX, omitted candidates NOT constructed/audited",
+        "terminal_reason": "bound_equality"
+      },
+      "selectedW": 2,
+      "selected_index": 1
+    },
+    {
+      "name": "turn110",
+      "originalW": 7,
+      "prefix": {
+        "original_L": 6,
+        "remaining_scenario_indices": [
+          1,
+          2
+        ],
+        "scenario_count": 1,
+        "selected_W": 6,
+        "selected_index": 1,
+        "semantics": "ordered produced PREFIX, omitted candidates NOT constructed/audited",
+        "terminal_reason": "bound_equality"
+      },
+      "selectedW": 6,
+      "selected_index": 1
+    }
+  ],
+  "activated_pair_count": 2,
+  "activation_classes": {
+    "exposure_exit": 135,
+    "old_bound_equality": 65
+  },
+  "agreement_count": 200,
+  "attempt_count": 400,
+  "baseline_classes": {
+    "budget_infeasible": 17,
+    "equality_exit": 65,
+    "no_allowed_turn_path": 118
+  },
+  "both_candidate_analysis": {
+    "t14": {
+      "W_improved": 2,
+      "W_tied": 0,
+      "W_worsened": 0,
+      "candidate_ledger_PASS_denominator": 2,
+      "duplicate_cases": 2,
+      "duplicate_rows_after_first": 4,
+      "early_excluded": 135,
+      "eligible": 8,
+      "failure_excluded": 0,
+      "ordered_candidates": 8,
+      "over_budget_valid_ineligible": 0,
+      "scenario_candidates": 6,
+      "scenario_eligible": 6,
+      "scenario_over_budget": 0,
+      "selected_index_counts": {
+        "1": 2
+      },
+      "selected_objective_counts": {
+        "scenario": 2
+      },
+      "skip_excluded": 63
+    },
+    "variant": {
+      "W_improved": 2,
+      "W_tied": 0,
+      "W_worsened": 0,
+      "candidate_ledger_PASS_denominator": 2,
+      "duplicate_cases": 0,
+      "duplicate_rows_after_first": 0,
+      "early_excluded": 135,
+      "eligible": 4,
+      "failure_excluded": 0,
+      "ordered_candidates": 4,
+      "over_budget_valid_ineligible": 0,
+      "scenario_candidates": 2,
+      "scenario_eligible": 2,
+      "scenario_over_budget": 0,
+      "selected_index_counts": {
+        "1": 2
+      },
+      "selected_objective_counts": {
+        "scenario": 2
+      },
+      "skip_excluded": 63
+    }
+  },
+  "both_counter_totals": {
+    "t14": {
+      "candidate_edges": 0,
+      "charged_bound_stronger": 0,
+      "charged_reverse_inspections": 0,
+      "charged_strict_exclusions": 0,
+      "dominance_pruned": 0,
+      "feasibility_pruned": 0,
+      "forbidden_skipped": 0,
+      "incumbent_inspections": 279,
+      "labels_inserted": 0,
+      "max_live_queue": 0,
+      "objective_bound_pruned": 0,
+      "pops": 0,
+      "reverse_relaxations": 568,
+      "scalar_candidate_inspections": 34,
+      "scenario_reverse_inspections": 1074,
+      "stale_pops": 0
+    },
+    "variant": {
+      "candidate_edges": 0,
+      "charged_bound_stronger": 0,
+      "charged_reverse_inspections": 0,
+      "charged_strict_exclusions": 0,
+      "dominance_pruned": 0,
+      "feasibility_pruned": 0,
+      "forbidden_skipped": 0,
+      "incumbent_inspections": 279,
+      "labels_inserted": 0,
+      "max_live_queue": 0,
+      "objective_bound_pruned": 0,
+      "pops": 0,
+      "reverse_relaxations": 568,
+      "scalar_candidate_inspections": 13,
+      "scenario_reverse_inspections": 1074,
+      "stale_pops": 0
+    }
+  },
+  "candidate_activation_classes": {
+    "candidates_activated": 2,
+    "exposure_exit": 135,
+    "original_bound_equality": 63
+  },
+  "chunk_count": 100,
+  "chunk_max_seconds": 4.879267505995813,
+  "comparison": {
+    "candidate_edges": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "charged_reverse_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "labels_inserted": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "scalar_candidate_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 198,
+      "wins": 2
+    }
+  },
+  "development_provenance": {
+    "actual_frozen_manifest_sha256": "cfc744bc8c56bf3fe8016a5a33de587a19ba9e61d67fcca8c66e5545c39d616c",
+    "final_author_manifest_identities": [
+      "cfc744bc8c56bf3fe8016a5a33de587a19ba9e61d67fcca8c66e5545c39d616c"
+    ],
+    "fixed_run_manifest_identity": "cfc744bc8c56bf3fe8016a5a33de587a19ba9e61d67fcca8c66e5545c39d616c",
+    "initial_PRE_final": true,
+    "initial_manifest_identities": [
+      "e49bb70ac28dcfe0581548e6ebf75cdc865331a94571a0443b95b736231de58b"
+    ],
+    "scope": "recorded ordering only, no private-run-absence proof"
+  },
+  "eligible_scalar_win_cases": [
+    "turn044",
+    "turn110"
+  ],
+  "extra_exclusion_cases": 0,
+  "feasible_pair_count": 65,
+  "finalize_seconds": 4.239204908997635,
+  "freeze": "ad5a45d69361550586c00e66ea65cf7f7ed1c565",
+  "incumbent_improved": 2,
+  "incumbent_tied": 0,
+  "last_equality_prefix_count": 0,
+  "omitted_route_eligibility": "UNKNOWN, not constructed/audited",
+  "orders": {
+    "t14/variant": 100,
+    "variant/t14": 100
+  },
+  "pair_count": 200,
+  "pass_count": 400,
+  "positive_remaining_selected_eligible_equality_prefix_count": 2,
+  "prefix_terminal_classes": {
+    "bound_equality": 2
+  },
+  "remaining_scenario_index_count": 4,
+  "scalar_saved": 21,
+  "scope": "fresh synthetic paired400 one run, no timing superiority",
+  "source_bound_stronger": 0,
+  "variant_classes": {
+    "budget_infeasible": 17,
+    "equality_exit": 65,
+    "no_allowed_turn_path": 118
+  },
+  "variant_counter_totals": {
+    "candidate_edges": 0,
+    "charged_bound_stronger": 0,
+    "charged_reverse_inspections": 0,
+    "charged_strict_exclusions": 0,
+    "dominance_pruned": 0,
+    "feasibility_pruned": 0,
+    "forbidden_skipped": 0,
+    "incumbent_inspections": 279,
+    "labels_inserted": 0,
+    "max_live_queue": 0,
+    "objective_bound_pruned": 0,
+    "pops": 0,
+    "reverse_relaxations": 568,
+    "scalar_candidate_inspections": 13,
+    "scenario_reverse_inspections": 1074,
+    "stale_pops": 0
+  }
+}
