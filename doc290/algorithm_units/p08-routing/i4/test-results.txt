@@ -12,8 +12,13 @@ test_false_payload (test_worker.Controls) ... ok
 test_real_failures (test_worker.Controls) ... ok
 test_real_success_top_level_schema_and_index_mutations (test_worker.Controls) ... ok
 test_success_real (test_worker.Controls) ... ok
+test_concurrent_refusal_partial_and_guard (test_durable.RealDurability) ... ok
+test_corruption_foreign_identity_plan_coverage (test_durable.RealDurability) ... ok
+test_final_synthesis_interruption_idempotent (test_durable.RealDurability) ... ok
+test_real_crash_matrix_reconcile_no_duplicate (test_durable.RealDurability) ... ok
+test_unreceipted_uncertainty_locks_and_death_releases (test_durable.RealDurability) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 1.339s
+Ran 19 tests in 5.362s
 
 OK

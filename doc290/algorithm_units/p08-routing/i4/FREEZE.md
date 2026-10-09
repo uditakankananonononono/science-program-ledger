@@ -56,3 +56,16 @@ parent computesall cappedrepresentation first, tracks actualstagefields, require
 exactdomain-stage agreement. Mixedadmitted+UNAVAILABLE_DOMAIN devgeneratorresult
 now parentverifySUCCESS; inventedstates/distances atearlydomainstage rejects.
 Scheduleindependence+strictschema+checkerbytepins retained; no scoredrerun.
+
+Operational delta after0658ef2f technicalPASS: that candidate staysUNEXECUTED/
+UNPUBLISHED; originalend-onlycompare notused. Generator/model/proof/fixtures/
+cases bytesIDENTICAL to0658ef2f. Added exactM6durable controller engine plusI4
+20slotadapter, frozenuniqueplan, max4subjects/30s/headroom7 perinvocation,
+canonical savedreceiptfullrevalidation/source/slot/input binding. Eachsubject
+atomicfile+directoryfsync beforeadvance, permanentFAILonuncertaininflight,
+POSIXflockreconciliation/finalize no lockunlink, no retry/overwrite. Adjacent
+2receipt storage markers are durabilitycoverage only, notcasecomparisons.
+Finalreport separate lockedidempotentcall onlyexact20receipts/10markers/ledger20,
+noinflight/FAIL. Ordinaryshortcalls notabsolutelifetimeguarantee, controller-only
+syntheticcrash tests notorphanworkerproof. CoretechnicalPASS remains byteidentical,
+operationaldelta separatelyreviewed before singlefreezepublication/fixed20.
