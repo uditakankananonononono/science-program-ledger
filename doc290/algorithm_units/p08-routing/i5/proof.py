@@ -62,14 +62,14 @@ def verify(s,result):
     if type(result) is not dict:raise Failure('result dict')
     short={'status','reason','paths','weights'}
     if s['route'] is None:
-        if set(result)!=short or result['status']!='UNAVAILABLE' or result['paths']!=[] or result['weights']!=[]:raise Failure('missing route category/schema')
+        if set(result)!=short or type(result['reason']) is not str or result['status']!='UNAVAILABLE' or result['paths']!=[] or result['weights']!=[]:raise Failure('missing route category/schema')
         return
     if sum(map(len,G.values()))>6:
-        if set(result)!=short or result['status']!='UNAVAILABLE_DOMAIN' or result['paths']!=[] or result['weights']!=[]:raise Failure('model domain category/schema')
+        if set(result)!=short or type(result['reason']) is not str or result['status']!='UNAVAILABLE_DOMAIN' or result['paths']!=[] or result['weights']!=[]:raise Failure('model domain category/schema')
         return
     raw,overflow=raw_paths(s,n)
     if overflow:
-        if set(result)!=short or result['status']!='UNAVAILABLE_ENUMERATION' or canonical(result['paths'])!=canonical(raw) or result['weights']!=[]:raise Failure('enumeration no-prefix category')
+        if set(result)!=short or type(result['reason']) is not str or result['status']!='UNAVAILABLE_ENUMERATION' or canonical(result['paths'])!=canonical(raw) or result['weights']!=[]:raise Failure('enumeration no-prefix category')
         return
     if set(result)!={'status','reason','primal','paths','weights','selected_weight','best_lower','gap'} or type(result['reason']) is not str or canonical(result['primal'])!=canonical(primal) or canonical(result['paths'])!=canonical(raw):raise Failure('parent top/path/primal schema')
     if not raw or min(p['exposure'] for p in raw)>s['budget']:raise Failure('parent feasible path contradiction')

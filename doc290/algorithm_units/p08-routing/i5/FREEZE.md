@@ -25,3 +25,8 @@ Pre-freeze devcapfixture correction: complete8stateDAG has exactly64 source-sink
 paths, so cannotexercise65threfusal. Replacedsynthetichelperinputwithfull8state
 digraph toexercise65th; outsideadmitted6edge model, explicitlyhelperguardtest,
 notclaimedactualdomaincapincidence. No fixed20 evaluation/rescue.
+Rejected freeze906fc9fe: parent found short missing/modelDomain/enumeration
+branches accepted non-string reason despite declared typed schemas. All three
+now require exact str. Added helper enumeration refusal mutation tests and
+actual synthetic devmissing/devdomain subprocess parent receipt mutations for
+False/object/list/int/null. These are outside corpus, not fixed20 evaluation.

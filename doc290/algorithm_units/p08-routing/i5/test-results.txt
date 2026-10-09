@@ -7,8 +7,10 @@ test_parent_independent_and_domain (test_generator.Development) ... ok
 test_schedule_no_generator_import (test_generator.Development) ... ok
 test_schema_point_path_selection (test_generator.Development) ... ok
 test_selected_domain_no_smaller_rescue (test_generator.Development) ... ok
+test_short_reason_types_all_branches (test_generator.Development) ... ok
 test_real_controls (test_worker.Controls) ... ok
 test_real_parent_mutations (test_worker.Controls) ... ok
+test_real_short_receipt_reason_mutations (test_worker.Controls) ... ok
 test_real_success (test_worker.Controls) ... ok
 test_concurrent_refusal_partial_and_guard (test_durable.RealDurability) ... ok
 test_corruption_foreign_identity_plan_coverage (test_durable.RealDurability) ... ok
@@ -17,6 +19,6 @@ test_real_crash_matrix_reconcile_no_duplicate (test_durable.RealDurability) ... 
 test_unreceipted_uncertainty_locks_and_death_releases (test_durable.RealDurability) ... ok
 
 ----------------------------------------------------------------------
-Ran 17 tests in 5.140s
+Ran 19 tests in 5.651s
 
 OK

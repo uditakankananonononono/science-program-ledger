@@ -34,7 +34,7 @@ class Development(unittest.TestCase):
         s['budget']=True;self.assertEqual(generate(s)['status'],'INVALID')
     def test_no_subset_envelope_and_unique_arc_guard(self):
         # Actual model <=6-edge guard checked on admitted graphs. Synthetic 8state
-        # complete DAG exceeds64 and demonstrates no prefixenvelope authority.
+        # full digraph exceeds64 and demonstrates no prefixenvelope authority.
         G={str(k):[] for k in range(8)};states=[{}]*8;arcs=[]
         for a in range(8):
             for b in range(8):
@@ -59,3 +59,20 @@ class Development(unittest.TestCase):
         s=devstatement()
         with patch('generator.text',side_effect=Domain('selected cap')),patch.object(old,'reverse') as reverse:
             r=generate(s);self.assertEqual(r['status'],'UNAVAILABLE_DOMAIN');self.assertEqual(len(r['weights']),3);reverse.assert_not_called()
+
+    def test_short_reason_types_all_branches(self):
+        from core import devcase
+        for mode in ('devmissing','devdomain'):
+            s=devcase(mode)['statement'];r=generate(s);verify(s,r)
+            for v in (False,{},[],0,None):
+                x=copy.deepcopy(r);x['reason']=v
+                with self.assertRaises(Failure):verify(s,x)
+        # Enumeration refusal is a helper-stage control outside admitted model,
+        # no fixed corpus and no claim that a six-edge model reaches the cap.
+        s=devstatement();raw=[{'arcs':[0],'exposure':0,'scenario_totals':[2,2]}]*65
+        r={'status':'UNAVAILABLE_ENUMERATION','reason':'helper overflow','paths':raw,'weights':[]}
+        with patch('proof.raw_paths',return_value=(raw,True)):
+            verify(s,r)
+            for v in (False,{},[],0,None):
+                x=copy.deepcopy(r);x['reason']=v
+                with self.assertRaises(Failure):verify(s,x)

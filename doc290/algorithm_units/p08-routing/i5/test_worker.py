@@ -16,3 +16,12 @@ class Controls(unittest.TestCase):
         rr=copy.deepcopy(r);del rr['worker']['result']['gap'];changes.append(rr)
         for rr in changes:
             rr['stdout']=json.dumps(rr['worker']);self.assertEqual(validate_record(['devsubject',0],rr)['status'],'FAIL')
+
+    def test_real_short_receipt_reason_mutations(self):
+        saved={}
+        for mode in ('devmissing','devdomain'):
+            args=[mode,0];r=launch(args);self.assertEqual(r['status'],'PASS',r);saved[mode]=r
+            for v in (False,{},[],0,None):
+                rr=copy.deepcopy(r);rr['worker']['result']['reason']=v
+                rr['stdout']=json.dumps(rr['worker']);self.assertEqual(validate_record(args,rr)['status'],'FAIL')
+        Path('/tmp/i5-dev-short.json').write_text(json.dumps(saved,indent=2)+'\n')

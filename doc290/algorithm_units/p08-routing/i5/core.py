@@ -47,9 +47,9 @@ def validate_record(args,record,validated_identity=None):
         if type(cpu) is not list or len(cpu)!=1 or type(cpu[0]) is not int:raise Invalid('worker affinity')
         if payload['as_limit_bytes']!=[134217728,134217728] or any(type(v) is not int for v in payload['as_limit_bytes']):raise Invalid('worker address cap')
         if payload.get('identity')!=(gate() if validated_identity is None else validated_identity):raise Invalid('worker source/runtime identity mismatch')
-        if args[0] in ('subject','devsubject'):
+        if args[0] in ('subject','devsubject','devmissing','devdomain'):
             from model import load_bytes
-            c=load_bytes((ROOT/'cases.json').read_bytes())[int(args[1])] if args[0]=='subject' else {'statement':devstatement(),'expected':'CERTIFIED_INTEGRATED'}
+            c=load_bytes((ROOT/'cases.json').read_bytes())[int(args[1])] if args[0]=='subject' else devcase(args[0])
             result=payload['result']
             if result['status']!=c['expected']:raise Failure('expected verdict mismatch')
             from proof import verify
@@ -66,3 +66,10 @@ def validate_record(args,record,validated_identity=None):
 
 def devstatement():
     return {'graph':{'q':[{'target':'z','time':1,'exposure':0,'scenario_times':[2,2]}],'z':[{'target':'q','time':1,'exposure':0,'scenario_times':[1,1]}]},'start':'q','goal':'z','budget':0,'forbidden':[[['q',0],['z',0]]],'penalties':[],'route':{'path':['q','z'],'edges':[{'source':'q','edge_index':0,'target':'z'}],'scenario_totals':[2,2],'worst_time':2,'exposure':0,'turn_penalty':0}}
+
+def devcase(mode):
+    s=devstatement();expected='CERTIFIED_INTEGRATED'
+    if mode=='devmissing':s['route']=None;expected='UNAVAILABLE'
+    elif mode=='devdomain':s['graph']['z']*=6;expected='UNAVAILABLE_DOMAIN'
+    elif mode!='devsubject':raise Invalid('development mode')
+    return {'statement':s,'expected':expected}

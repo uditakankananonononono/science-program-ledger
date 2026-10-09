@@ -1,0 +1,78 @@
+{
+  "devmissing": {
+    "status": "PASS",
+    "worker_elapsed_seconds": 0.08794812799897045,
+    "returncode": 0,
+    "timed_out": false,
+    "kill_sent": false,
+    "reaped": true,
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.009288326000387315, \"identity\": {\"manifest_sha256\": \"f0574281b79b73a610392e2d45221cc1aa0c5f1ea92854f89c036e13f659f517\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"paths\": [], \"reason\": \"missing route after model\", \"status\": \"UNAVAILABLE\", \"weights\": []}, \"rss_kib\": 29396, \"solve_seconds\": 6.400399433914572e-05, \"status\": \"OK\"}\n",
+    "stderr": "",
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.009288326000387315,
+      "identity": {
+        "manifest_sha256": "f0574281b79b73a610392e2d45221cc1aa0c5f1ea92854f89c036e13f659f517",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "paths": [],
+        "reason": "missing route after model",
+        "status": "UNAVAILABLE",
+        "weights": []
+      },
+      "rss_kib": 29396,
+      "solve_seconds": 6.400399433914572e-05,
+      "status": "OK"
+    },
+    "check": {
+      "status": "PASS",
+      "verdict": "UNAVAILABLE",
+      "candidate_count": 0
+    }
+  },
+  "devdomain": {
+    "status": "PASS",
+    "worker_elapsed_seconds": 0.0827109579986427,
+    "returncode": 0,
+    "timed_out": false,
+    "kill_sent": false,
+    "reaped": true,
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.009398433001479134, \"identity\": {\"manifest_sha256\": \"f0574281b79b73a610392e2d45221cc1aa0c5f1ea92854f89c036e13f659f517\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"paths\": [], \"reason\": \"six original edge research cap\", \"status\": \"UNAVAILABLE_DOMAIN\", \"weights\": []}, \"rss_kib\": 29396, \"solve_seconds\": 0.00011423699470469728, \"status\": \"OK\"}\n",
+    "stderr": "",
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.009398433001479134,
+      "identity": {
+        "manifest_sha256": "f0574281b79b73a610392e2d45221cc1aa0c5f1ea92854f89c036e13f659f517",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "paths": [],
+        "reason": "six original edge research cap",
+        "status": "UNAVAILABLE_DOMAIN",
+        "weights": []
+      },
+      "rss_kib": 29396,
+      "solve_seconds": 0.00011423699470469728,
+      "status": "OK"
+    },
+    "check": {
+      "status": "PASS",
+      "verdict": "UNAVAILABLE_DOMAIN",
+      "candidate_count": 0
+    }
+  }
+}
