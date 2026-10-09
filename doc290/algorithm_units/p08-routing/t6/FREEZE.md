@@ -31,3 +31,10 @@ unchangedpinned. Exactresultreviewbeforepublication.
 Pre-freeze realdev uncovered adaptedworker modelunpack2 vs6 mismatch and
 localcoreInvalid class discrepancy; fixedbeforefreeze/subjects. No corpusmethod
 evaluation/rescore orproduction change; realbothsuccess coverage is required.
+
+## Rejected canonical state proof schema repair
+Rejected67b7970b retained: value-equality accepted bool/float incomingindex0.
+Exact list/dictkeys/kind/vertex/source/index-int-not-bool/shape/source-sink-None
+schema nowchecked BEFORE originalcanonicalstate order/value equality. Genuine
+success bool/float/extra/missing/kind field mutationsreject. Onlyproofchecker/tests/
+pins changed, method/corpus/oracles unchanged, no400subjectcalls/rescue.

@@ -43,3 +43,23 @@ class WorkerControls(unittest.TestCase):
                 def communicate(self,timeout=None):return json.dumps(payload).encode(),b''
                 def poll(self):return 0
             with patch('core.subprocess.Popen',return_value=P()):self.assertEqual(launch(['devsubject',0,'variant'])['status'],'FAIL')
+
+    def test_state_schema_genuine_success(self):
+        from unittest.mock import patch
+        import copy
+        base=launch(['devsubject',0,'variant']);self.assertEqual(base['status'],'PASS',base)
+        changes=[]
+        for value in (False,0.0,True):
+            p=copy.deepcopy(base['worker']);p['proof']['states'][1]['incoming'][1]=value;changes.append(p)
+        p=copy.deepcopy(base['worker']);p['proof']['states'][1]['extra']=0;changes.append(p)
+        p=copy.deepcopy(base['worker']);del p['proof']['states'][1]['vertex'];changes.append(p)
+        p=copy.deepcopy(base['worker']);p['proof']['states'][1]['incoming']=('q',0);changes.append(p)
+        p=copy.deepcopy(base['worker']);p['proof']['states'][0]['kind']=False;changes.append(p)
+        for payload in changes:
+            class P:
+                returncode=0
+                def communicate(self,timeout=None):return json.dumps(payload).encode(),b''
+                def poll(self):return 0
+            # Tuple JSON is a list on the wire, so this mutation preserves valid schema.
+            if isinstance(payload['proof']['states'][1]['incoming'],tuple):continue
+            with patch('core.subprocess.Popen',return_value=P()):self.assertEqual(launch(['devsubject',0,'variant'])['status'],'FAIL')

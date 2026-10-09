@@ -28,7 +28,15 @@ def check(s,payload):
     model(s);p=payload.get('proof')
     if type(p) is not dict or set(p)!= {'states','distances','start_minimum'}:raise Invalid('full-state proof fields')
     states,d=distances(s)
-    if p['states']!=states:raise Invalid('original canonical state ledger')
+    supplied=p['states']
+    if type(supplied) is not list or len(supplied)!=len(states):raise Invalid('state list dimension')
+    for state in supplied:
+        if type(state) is not dict or set(state)!={'kind','vertex','incoming'} or type(state['kind']) is not str or state['kind'] not in ('source','edge','goal') or type(state['vertex']) is not str:raise Invalid('state fields/kind/vertex')
+        incoming=state['incoming']
+        if state['kind']=='edge':
+            if type(incoming) is not list or len(incoming)!=2 or type(incoming[0]) is not str or type(incoming[1]) is not int or incoming[1]<0:raise Invalid('strict incoming original index')
+        elif incoming is not None:raise Invalid('source/sink incoming None')
+    if supplied!=states:raise Invalid('original canonical state ledger')
     v=p['distances']
     if type(v) is not list or len(v)!=len(d):raise Invalid('distance dimension')
     for c in v:
