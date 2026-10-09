@@ -1,0 +1,24 @@
+test_all_synthetic_cases_both_methods (test_method.Development) ... ok
+test_audit_fail_before_decision_and_no_fallback (test_method.Development) ... ok
+test_revisit_turn_delay_correlated_goal_suffix (test_method.Development) ... ok
+test_typed_metadata_event_completeness (test_method.Development) ... FAIL
+test_real_both_final_and_parent_mutations (test_worker.Controls) ... ok
+test_real_controls (test_worker.Controls) ... ok
+test_concurrent_refusal_partial_and_guard (test_durable.RealDurability) ... ok
+test_corruption_foreign_identity_plan_coverage (test_durable.RealDurability) ... ok
+test_final_synthesis_interruption_idempotent (test_durable.RealDurability) ... ok
+test_real_crash_matrix_reconcile_no_duplicate (test_durable.RealDurability) ... ok
+test_unreceipted_uncertainty_locks_and_death_releases (test_durable.RealDurability) ... ok
+
+======================================================================
+FAIL: test_typed_metadata_event_completeness (test_method.Development)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/t11/test_method.py", line 29, in test_typed_metadata_event_completeness
+    with self.assertRaises((Invalid,KeyError,TypeError)):check(s,x)
+AssertionError: (<class 'verify.Invalid'>, <class 'KeyError'>, <class 'TypeError'>) not raised
+
+----------------------------------------------------------------------
+Ran 11 tests in 7.089s
+
+FAILED (failures=1)

@@ -1,0 +1,25 @@
+import unittest,copy,json
+from pathlib import Path
+from core import launch,validate_record
+class Controls(unittest.TestCase):
+    def test_real_both_final_and_parent_mutations(self):
+        saved={}
+        for k in range(7):
+            for m in ('variant','t9'):
+                args=['devsubject',k,m];r=launch(args);self.assertEqual(r['status'],'PASS',r);saved[f'{k}:{m}']=r;changes=[]
+                for key in ('route','counters','proof','certificate','scenario_proof','incumbent','charged_proof','bound_trace'):
+                    rr=copy.deepcopy(r);del rr['worker'][key];changes.append(rr)
+                rr=copy.deepcopy(r);rr['worker']['extra']=0;changes.append(rr)
+                rr=copy.deepcopy(r);rr['worker']['counters']['labels_inserted']=False;changes.append(rr)
+                rr=copy.deepcopy(r);rr['worker']['certificate']['reason']=False;changes.append(rr)
+                if m=='variant':
+                    rr=copy.deepcopy(r);rr['worker']['certificate']['charged_lambda']=True;changes.append(rr)
+                    if r['worker']['charged_proof'] is not None:
+                        rr=copy.deepcopy(r);rr['worker']['charged_proof']['distances'][0][0]=False;changes.append(rr)
+                    if r['worker']['bound_trace']:
+                        rr=copy.deepcopy(r);rr['worker']['bound_trace'].pop();changes.append(rr)
+                for rr in changes:
+                    rr['stdout']=json.dumps(rr['worker']);self.assertEqual(validate_record(args,rr)['status'],'FAIL')
+        Path('/tmp/t11-dev-receipts.json').write_text(json.dumps(saved,indent=2)+'\n')
+    def test_real_controls(self):
+        rs={m:launch([m],timeout=.3 if m=='sleep' else 5) for m in ('sleep','memory','gatefail','badjson')};self.assertTrue(all(r['status']=='FAIL' and r['reaped'] for r in rs.values()));Path('/tmp/t11-dev-controls.json').write_text(json.dumps(rs,indent=2)+'\n')
