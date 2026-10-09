@@ -25,3 +25,9 @@ All8rows includingFAILs retained with stdout/stderr/rc/durations/RSS/affinity/ca
 identity/inputdigest/original witness/check. Theoreticalfrontier notobservedcount;
 no productioninstrumentation/newalgorithm/invention/science/clinicalclaim. Prior
 I3CbaselineFAIL/K1K2FAILs/gaps/floatloss retained. Exactresultreviewbeforepublication.
+
+## Rejected freeze repair
+49a54ebf retained as rejected: dev tests rewrote pinned measured receipts and
+broke later gates. Dev fresh outputs now /tmp/r3-dev-*-current.json, outside
+frozen sources; initial measured receipts immutable. No subjectevaluation yet.
+Replay tests run twice under updated final source manifest, no source mutation.

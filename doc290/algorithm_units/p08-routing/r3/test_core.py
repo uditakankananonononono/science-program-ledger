@@ -32,11 +32,11 @@ class Development(unittest.TestCase):
             with self.assertRaises(Invalid):family(n)
         with self.assertRaises(Invalid):oracle(3,'other')
     def test_real_sleep_kill_reap(self):
-        r=launch(['sleep'],timeout=.3);self.assertEqual(r['status'],'FAIL');self.assertTrue(r['timed_out']);self.assertTrue(r['kill_sent']);self.assertTrue(r['reaped']);self.assertEqual(r['returncode'],-9);self.assertEqual(r['stdout'],'sleep-ready\n');(ROOT/'sleep-control.json').write_text(json.dumps(r,sort_keys=True,indent=2)+'\n')
+        r=launch(['sleep'],timeout=.3);self.assertEqual(r['status'],'FAIL');self.assertTrue(r['timed_out']);self.assertTrue(r['kill_sent']);self.assertTrue(r['reaped']);self.assertEqual(r['returncode'],-9);self.assertEqual(r['stdout'],'sleep-ready\n');Path('/tmp/r3-dev-sleep-current.json').write_text(json.dumps(r,sort_keys=True,indent=2)+'\n')
     def test_actual_cap_gate_and_parse_failures(self):
         rows={m:launch([m]) for m in ('memory','gatefail','badjson')}
         for r in rows.values():self.assertEqual(r['status'],'FAIL');self.assertTrue(r['reaped']);self.assertFalse(r['timed_out'])
-        self.assertIn('MemoryError',rows['memory']['stdout']);self.assertIn('intentional gate refusal',rows['gatefail']['stdout']);self.assertEqual(rows['badjson']['returncode'],0);self.assertIn('JSONDecodeError',rows['badjson']['reason']);(ROOT/'failure-controls.json').write_text(json.dumps(rows,sort_keys=True,indent=2)+'\n')
+        self.assertIn('MemoryError',rows['memory']['stdout']);self.assertIn('intentional gate refusal',rows['gatefail']['stdout']);self.assertEqual(rows['badjson']['returncode'],0);self.assertIn('JSONDecodeError',rows['badjson']['reason']);Path('/tmp/r3-dev-failures-current.json').write_text(json.dumps(rows,sort_keys=True,indent=2)+'\n')
     def test_source_gate_disagree(self):
         self.assertEqual(set(gate()),{'manifest_sha256','runtime_sha256'})
         import unittest.mock
