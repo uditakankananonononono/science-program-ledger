@@ -1,0 +1,28 @@
+test_actual_skip_and_parent_no_scalar_expected_no_audit (test_method.Development) ... ok
+test_all_both_oracle_single_preprocess (test_method.Development) ... ok
+test_audit_error_activated_and_early (test_method.Development) ... ok
+test_exact_stage_and_skip_mutations (test_method.Development) ... ok
+test_real_both_final_and_parent_mutations (test_worker.Controls) ... ERROR
+test_real_controls (test_worker.Controls) ... ok
+test_concurrent_refusal_partial_and_guard (test_durable.RealDurability) ... ok
+test_corruption_foreign_identity_plan_coverage (test_durable.RealDurability) ... ok
+test_final_synthesis_interruption_idempotent (test_durable.RealDurability) ... ok
+test_real_crash_matrix_reconcile_no_duplicate (test_durable.RealDurability) ... ok
+test_unreceipted_uncertainty_locks_and_death_releases (test_durable.RealDurability) ... ok
+
+======================================================================
+ERROR: test_real_both_final_and_parent_mutations (test_worker.Controls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/t14/test_worker.py", line 9, in test_real_both_final_and_parent_mutations
+    args=['devsubject',k,m];r=launch(args);self.assertEqual(r['status'],'PASS',r);saved[f'{k}:{m}']=r;changes=[]
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/t14/core.py", line 32, in launch
+    return validate_record(args,record)
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/t14/core.py", line 61, in validate_record
+    from proof import check,BASE_COUNTERS,canonical
+ImportError: cannot import name 'BASE_COUNTERS' from 'proof' (/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/t14/proof.py)
+
+----------------------------------------------------------------------
+Ran 11 tests in 4.593s
+
+FAILED (errors=1)
