@@ -32,7 +32,7 @@ only, with deterministic heap serial and strict relaxation, original arc order.
 Reconstruct original indexed walk from predecessor transitions to the sink; zero
 sink arc is not a traversed edge. Independently recompute all scenario totals,
 turn penalty and exposure against actual budget with pinned original witness
-validator BEFORE using W. Positive source exposure bound <=budget guarantees this
+validator BEFORE using W. Finite/nonnegative source exposure minimum <=budget guarantees this
 path exists; absence/reconstruction/audit contradiction propagates FAIL. Incumbent
 is produced by this method, not T7/oracle/beam, and remains fixed. Identity gives
 zero empty-edge walk. Return/store the full incumbent witness, not only a number.

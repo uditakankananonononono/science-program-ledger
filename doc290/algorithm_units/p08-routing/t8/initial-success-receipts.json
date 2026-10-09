@@ -1,0 +1,319 @@
+{
+  "t7": {
+    "check": {
+      "exposure": 0,
+      "ledger": [
+        {
+          "delay": 0,
+          "edge": [
+            "q",
+            0
+          ],
+          "exposure": 0,
+          "scenarios": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "turn_penalty": 0,
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.00935784700413933, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"reason\": \"feasible_search\"}, \"counters\": {\"candidate_edges\": 1, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"labels_inserted\": 2, \"max_live_queue\": 1, \"pops\": 2, \"reverse_relaxations\": 3, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"6338b63b25ff52e1bd5c1be78f8d794b129e8f9723b1986c7f604093da135610\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"turn_penalty\": 0, \"worst_time\": 4}, \"rss_kib\": 29104, \"scenario_proof\": null, \"solve_seconds\": 0.0004010780030512251, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.00935784700413933,
+      "certificate": {
+        "budget": 0,
+        "early_exit": false,
+        "reason": "feasible_search"
+      },
+      "counters": {
+        "candidate_edges": 1,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "labels_inserted": 2,
+        "max_live_queue": 1,
+        "pops": 2,
+        "reverse_relaxations": 3,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "6338b63b25ff52e1bd5c1be78f8d794b129e8f9723b1986c7f604093da135610",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": null,
+      "proof": {
+        "distances": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "start_minimum": 0,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "q"
+          },
+          {
+            "incoming": [
+              "q",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "z"
+          },
+          {
+            "incoming": [
+              "z",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "q"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "z"
+          }
+        ]
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "turn_penalty": 0,
+        "worst_time": 4
+      },
+      "rss_kib": 29104,
+      "scenario_proof": null,
+      "solve_seconds": 0.0004010780030512251,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.11565398999664467
+  },
+  "variant": {
+    "check": {
+      "exposure": 0,
+      "ledger": [
+        {
+          "delay": 0,
+          "edge": [
+            "q",
+            0
+          ],
+          "exposure": 0,
+          "scenarios": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "turn_penalty": 0,
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.009172291000140831, \"certificate\": {\"budget\": 0, \"early_exit\": false, \"reason\": \"feasible_search\"}, \"counters\": {\"candidate_edges\": 1, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 2, \"labels_inserted\": 2, \"max_live_queue\": 1, \"objective_bound_pruned\": 0, \"pops\": 2, \"reverse_relaxations\": 3, \"scenario_reverse_inspections\": 6, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"6338b63b25ff52e1bd5c1be78f8d794b129e8f9723b1986c7f604093da135610\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"turn_penalty\": 0, \"worst_time\": 4}, \"proof\": {\"distances\": [0, 0, 0, 0], \"start_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"turn_penalty\": 0, \"worst_time\": 4}, \"rss_kib\": 29104, \"scenario_proof\": {\"distances\": [[3, 0, 3, 0], [4, 0, 4, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"q\"}, {\"incoming\": [\"q\", 0], \"kind\": \"edge\", \"vertex\": \"z\"}, {\"incoming\": [\"z\", 0], \"kind\": \"edge\", \"vertex\": \"q\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"z\"}]}, \"solve_seconds\": 0.0006598639956791885, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.009172291000140831,
+      "certificate": {
+        "budget": 0,
+        "early_exit": false,
+        "reason": "feasible_search"
+      },
+      "counters": {
+        "candidate_edges": 1,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 2,
+        "labels_inserted": 2,
+        "max_live_queue": 1,
+        "objective_bound_pruned": 0,
+        "pops": 2,
+        "reverse_relaxations": 3,
+        "scenario_reverse_inspections": 6,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "6338b63b25ff52e1bd5c1be78f8d794b129e8f9723b1986c7f604093da135610",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "turn_penalty": 0,
+        "worst_time": 4
+      },
+      "proof": {
+        "distances": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "start_minimum": 0,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "q"
+          },
+          {
+            "incoming": [
+              "q",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "z"
+          },
+          {
+            "incoming": [
+              "z",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "q"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "z"
+          }
+        ]
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "turn_penalty": 0,
+        "worst_time": 4
+      },
+      "rss_kib": 29104,
+      "scenario_proof": {
+        "distances": [
+          [
+            3,
+            0,
+            3,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            0
+          ]
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "q"
+          },
+          {
+            "incoming": [
+              "q",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "z"
+          },
+          {
+            "incoming": [
+              "z",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "q"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "z"
+          }
+        ]
+      },
+      "solve_seconds": 0.0006598639956791885,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.11409485500189476
+  }
+}
