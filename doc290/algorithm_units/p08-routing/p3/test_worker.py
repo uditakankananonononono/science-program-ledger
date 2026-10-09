@@ -8,3 +8,10 @@ class WorkerControls(unittest.TestCase):
         self.assertEqual(rows['sleep']['returncode'],-9);self.assertTrue(rows['sleep']['kill_sent']);self.assertEqual(rows['sleep']['stdout'],'sleep-ready\n');self.assertIn('MemoryError',rows['memory']['stdout']);self.assertIn('intentional gate refusal',rows['gatefail']['stdout']);self.assertIn('JSONDecodeError',rows['badjson']['reason'])
         Path('/tmp/p3-dev-controls-current.json').write_text(json.dumps(rows,sort_keys=True,indent=2)+'\n')
     def test_sourcegate(self):self.assertEqual(set(gate()),{'manifest_sha256','runtime_sha256'})
+
+    def test_success_subject_real_end_to_end(self):
+        rows={m:launch(['devsubject',0,m]) for m in ('variant','baseline')}
+        for r in rows.values():
+            self.assertEqual(r['status'],'PASS',r);self.assertEqual(r['returncode'],0);self.assertTrue(r['reaped']);self.assertEqual(r['check']['worst_time'],4)
+        self.assertIsNotNone(rows['variant']['worker']['counters'])
+        Path('/tmp/p3-dev-success-current.json').write_text(json.dumps(rows,sort_keys=True,indent=2)+'\n')

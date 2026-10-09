@@ -3,6 +3,7 @@ import random,json,hashlib,sys,os,time,resource,subprocess,selectors,signal,math
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 class Invalid(ValueError):pass
+from model import integer
 def gate():
     manifest=json.loads((ROOT/'manifest.json').read_text())
     for name,digest in manifest['files'].items():
@@ -39,8 +40,8 @@ def launch(args,timeout=5):
         if type(cpu) is not list or len(cpu)!=1 or type(cpu[0]) is not int:raise Invalid('worker affinity')
         if payload['as_limit_bytes']!=[134217728,134217728] or any(type(v) is not int for v in payload['as_limit_bytes']):raise Invalid('worker address cap')
         if payload.get('identity')!=gate():raise Invalid('worker source/runtime identity mismatch')
-        if args[0]=='subject':
-            c=json.loads((ROOT/'cases.json').read_text())[int(args[1])]
+        if args[0] in ('subject','devsubject'):
+            c=json.loads((ROOT/'cases.json').read_text())[int(args[1])] if args[0]=='subject' else {'statement':{'graph':{'q':[{'target':'z','time':1,'exposure':0,'scenario_times':[3,4]}],'z':[]},'start':'q','goal':'z'},'oracle':4}
             from model import witness,integer as exact_int
             if c['oracle'] is None:
                 if payload['route'] is not None:raise Invalid('oracle unreachable disagreement')

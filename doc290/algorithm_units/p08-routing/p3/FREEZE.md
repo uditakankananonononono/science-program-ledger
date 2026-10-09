@@ -31,3 +31,12 @@ Primary106pairsbothoracle/witnessPASS; every212attempt/FAIL/stdout/stderr/rc/cap
 affinity/sourceidentity/digest/primalcheck/variantcounter retained. No postfreeze
 edit/rescue/drop, no performancewinrequirement or novelty/science/clinicalclaim.
 Exactresultreviewbeforepublication. Separateexplicitmethod notautomaticintegration.
+
+## Repaired freeze after locked evaluation failure
+2ec6d251 first evaluation FAILED with undefined core.integer RSS parser; locked
+artifact4b215c09 retained. Import model.integer restores parser validation only;
+method/corpus/oracles/production unchanged. Added real devsubject literal q->z
+[3,4] (outside106corpus) variant+baseline end-to-end successful parser/check controls.
+All212original subjects restart fresh only after repaired freeze review/publication.
+Original failure is not relabelled/rescored/rescued. Dev receipts immutable,
+fresh dev output /tmp. This repair is disclosed post-first-freeze change.

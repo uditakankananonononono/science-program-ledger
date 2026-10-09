@@ -9,8 +9,10 @@ try:
     if mode=='memory':x=bytearray(268435456)
     if mode=='gatefail':raise Invalid('intentional gate refusal after real gate')
     if mode=='badjson':print('not-json');sys.exit(0)
-    if mode!='subject':raise Invalid('unknownmode')
-    cases=json.loads((ROOT/'cases.json').read_text());s=cases[int(sys.argv[2])]['statement'];method=sys.argv[3]
+    if mode not in ('subject','devsubject'):raise Invalid('unknownmode')
+    if mode=='subject':cases=json.loads((ROOT/'cases.json').read_text());s=cases[int(sys.argv[2])]['statement']
+    else:s={'graph':{'q':[{'target':'z','time':1,'exposure':0,'scenario_times':[3,4]}],'z':[]},'start':'q','goal':'z'}
+    method=sys.argv[3]
     from model import model
     G,ns=model(s);counters=None;inc=None;t=time.perf_counter()
     if method=='baseline':
