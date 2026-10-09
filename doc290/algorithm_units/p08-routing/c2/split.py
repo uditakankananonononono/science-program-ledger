@@ -2,7 +2,7 @@
 import sys,importlib.util,copy
 from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parent.parent/'c1'))
-from validate import validate as c1_validate,Invalid,integer,vertex,load_bytes,keys
+from validate import validate as c1_validate,Invalid,integer,vertex,load_bytes,keys,graph
 
 def prepare(s):
     keys(s,('original','compressed','witnesses','start','goal','budget','forbidden','penalties'))
@@ -34,7 +34,17 @@ def split(s):
     except Invalid as e:return {'status':'INVALID','reason':str(e)}
 
 def verify_output(s,r):
-    anchors=prepare(s);G=s['original'];lookup={a:{e['target']:e for e in es} for a,es in G.items()}
+    try:return _verify_output(s,r)
+    except (KeyError,TypeError,IndexError,AttributeError) as e:raise Invalid('malformed output container/provenance') from e
+
+def _verify_output(s,r):
+    anchors=prepare(s);G=s['original']
+    keys(r,('status','compressed','witnesses','provenance','anchors'))
+    if r['status']!='SPLIT_REPRESENTATION':raise Invalid('output status')
+    ns=graph(G,True)
+    if graph(r['compressed'],False)!=ns:raise Invalid('output scenario dimension')
+    if type(r['witnesses']) is not dict or type(r['provenance']) is not dict or type(r['anchors']) is not list:raise Invalid('output container shape')
+    lookup={a:{e['target']:e for e in es} for a,es in G.items()}
     if set(r['compressed'])!=anchors or set(r['witnesses'])!=anchors or set(r['provenance'])!=anchors or r['anchors']!=sorted(anchors):raise Invalid('output anchors')
     # Independent maximal-chain tracing starts at augmented anchors, never cuts source witnesses.
     traced=[]
@@ -42,9 +52,9 @@ def verify_output(s,r):
         for nxt in sorted(lookup[a]):
             path=[a,nxt];previous=a;current=nxt
             while current not in anchors:
-                ns=[v for v in lookup[current] if v!=previous]
-                if len(ns)!=1:raise Invalid('output continuation degree')
-                previous,current=current,ns[0];path.append(current)
+                onward=[v for v in lookup[current] if v!=previous]
+                if len(onward)!=1:raise Invalid('output continuation degree')
+                previous,current=current,onward[0];path.append(current)
                 if len(path)>len(G)+1:raise Invalid('output tracing loop')
             traced.append(tuple(path))
     actual=[];positions_seen=set();expected_positions=set();coverage={}
@@ -53,7 +63,7 @@ def verify_output(s,r):
             cuts=[j for j,v in enumerate(path) if v in anchors]
             expected_positions.update((source,i,a,b) for a,b in zip(cuts,cuts[1:]))
     for a,es in r['compressed'].items():
-        if len(es)!=len(r['witnesses'][a]) or len(es)!=len(r['provenance'][a]):raise Invalid('output shape')
+        if type(r['witnesses'][a]) is not list or type(r['provenance'][a]) is not list or len(es)!=len(r['witnesses'][a]) or len(es)!=len(r['provenance'][a]):raise Invalid('output shape')
         for e,path,pr in zip(es,r['witnesses'][a],r['provenance'][a]):
             keys(pr,('source','edge_index','first_position','last_position'))
             source=pr['source'];i=integer(pr['edge_index']);first=integer(pr['first_position']);last=integer(pr['last_position'])
@@ -62,7 +72,8 @@ def verify_output(s,r):
             if identity in positions_seen or identity not in expected_positions:raise Invalid('provenance cuts')
             positions_seen.add(identity)
             if path!=s['witnesses'][source][i][first:last+1] or path[0]!=a or path[-1]!=e['target']:raise Invalid('provenance segment')
-            actual.append(tuple(path));tot=[0,0]+[0]*len(e['scenario_times'])
+            if type(path) is not list or not 2<=len(path)<=256 or any(type(v) is not str or v not in G for v in path):raise Invalid('output path schema')
+            actual.append(tuple(path));tot=[0,0]+[0]*(ns or 0)
             for v,t in zip(path,path[1:]):
                 oe=lookup[v][t];coverage[(v,t)]=coverage.get((v,t),0)+1;tot=[integer(x+y) for x,y in zip(tot,[oe['time'],oe['exposure']]+oe['scenario_times'])]
             if tot!=[e['time'],e['exposure']]+e['scenario_times']:raise Invalid('output cost')

@@ -25,3 +25,17 @@ compare.py results/report.json. Resultreviewbeforepublication; norescoring/rescu
 Integerturn-freefixedcomparison only, no universalequivalence/optimalityproof/
 anatomy/calibration/novelty/scienceclaim. Runtimecaps/pinsnotOS/sharedlib/peakmemory/
 hardtimeout/sandboxproof. Existingfloatnon-equivalence/K1K2FAILsremain unchanged.
+
+## Replacement after reviewer HOLD
+
+Rejected9aea69ee8da38031bc1486e55d06ce5cafe3028e retained, neverpublished/scored.
+Reviewer found outputchecker couldaccept erasedscenarios andboolcosts: untrusted
+vectorlength/ziptruncation and Python1==True. Repair strictoutputgraphedgekeys/types/
+knownvertices/caps/nonboolintegercosts/originalscenario dimension BEFOREsums;
+expectedtotals initializedfromadmittedoriginaldimension. Bothcounterexamples plus
+extra-scenario/float-equalcost/extra-key/malformedcontainer/provenance development
+refusals. OrdinarymalformedoutputTypeError/KeyError/IndexError/AttributeError wrapped
+asInvalid, notcheckedadmission. C1/production/fixtures/oracle unchanged, nogridrun.
+Builder-found pre-refreeze correction: neworiginaldimensionvariable ns was shadowed
+by independenttrace neighborlist, causing cycledevelopmentrefusal; renamedneighbor
+list onward, reranall7tests. No grid/commit/publication before this correction.

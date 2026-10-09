@@ -21,6 +21,20 @@ class Development(unittest.TestCase):
     def test_oracle_hand_and_disagreement(self):
         from compare import oracle
         s=self.chain();self.assertEqual(oracle(s['original'],'b','a',4),7);self.assertIsNone(oracle(s['original'],'b','a',3));self.assertNotEqual(oracle(s['original'],'b','c',0),99)
+    def test_output_cost_schema_tamper(self):
+        s=self.chain();r=split(s)
+        for mutation in ('erase','bool','extra','float','keys','container','provenance'):
+            t=copy.deepcopy(r)
+            if mutation=='erase':
+                for es in t['compressed'].values():
+                    for e in es:e['scenario_times']=[]
+            if mutation=='bool':t['compressed']['b'][0]['time']=True
+            if mutation=='extra':t['compressed']['b'][0]['scenario_times'].append(0)
+            if mutation=='float':t['compressed']['b'][0]['time']=1.0
+            if mutation=='keys':t['compressed']['b'][0]['extra']=0
+            if mutation=='container':t['witnesses']['b']=None
+            if mutation=='provenance':t['provenance']['b'][0]['source']=[]
+            with self.assertRaises(Invalid):verify_output(s,t)
     def test_source_gate_refusal(self):
         from compare import gate
         from unittest.mock import patch
