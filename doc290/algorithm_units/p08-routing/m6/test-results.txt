@@ -17,8 +17,9 @@ test_corruption_foreign_identity_plan_coverage (test_durable.RealDurability) ...
 test_final_synthesis_interruption_idempotent (test_durable.RealDurability) ... ok
 test_real_crash_matrix_reconcile_no_duplicate (test_durable.RealDurability) ... ok
 test_unreceipted_uncertainty_locks_and_death_releases (test_durable.RealDurability) ... ok
+test_real_persisted_type_mutations (test_receipts.ReceiptPersistence) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 7.853s
+Ran 20 tests in 8.675s
 
 OK

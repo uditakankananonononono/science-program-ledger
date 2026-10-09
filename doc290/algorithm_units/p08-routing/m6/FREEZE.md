@@ -51,3 +51,12 @@ storage/revalidation maxchunk6.349389115s, finalsynthesis5.133545946s,
 repeat6.3830499s, reportbytesunchanged. These are size-controls, notcorpus timings,
 not absolutecapguarantees. No source/proof validation skipped. All actual future
 chunkelapsedtimes retained and inspected; sourcepreflight refusal consumesno slot.
+
+REJECTED freeze301ea612192af0b4db7e206cd4f980e6f9987507 retained UNEXECUTED:
+review reproduced saved result.worker int0->False andrssint->equalfloataccepted
+by Python checked!=result despite unchangedstrict stdout. Repaired controller
+compares canonical serialized reconstructedcheckedresult toserializedsavedresult,
+notPythonvalueequality; every savedworker/check/counter type binds tostdout.
+Realpersisted non-corpusworker receipt mutations bool/equalfloat counter/rss/check
+withstdoutunchanged nowdurableFAIL before newlaunch, repeatedinvocationlaunchesnone.
+No corpusmethods/evaluation/refreeze-rescore, original rejectedcandidate retained.

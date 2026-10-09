@@ -26,7 +26,7 @@ def validate(entry,result):
     t=result['worker_elapsed_seconds']
     if type(t) not in (int,float) or not math.isfinite(t) or t<0:raise LockedFailure('receipt elapsed')
     checked=validate_record(['subject',entry['case_index'],entry['method']],result,validated_identity=VALIDATED_IDENTITY)
-    if checked!=result:raise LockedFailure('saved checked payload mismatch')
+    if encoded(checked)!=encoded(result):raise LockedFailure('saved checked payload mismatch')
 
 def synthesize(path,receipts,classes):
     begin=time.monotonic();rows=[]
