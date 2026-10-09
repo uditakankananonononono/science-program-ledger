@@ -1,0 +1,23 @@
+# C1 checked chain expansion freeze candidate
+
+Prereg67c063f226837ad16a7aa64a8b306185a356d968 afterrejected4ab4c9a0 retained.
+CandidateOID/tree inreviewbundle. Independentoriginaltopology/anchors/degree2
+continuation/no-repeat/fullanchoredcycle/whole-directed-coverage checks, exact
+per-directionintegercosts, routeedgeindices/continuity/expandedoriginaltotals/budget.
+Nullonlyafterrepresentation/query/turnvalidation. Integerdomain<=2^53-1 incltotals,
+explicitcaps/schema, nofloats/bools/turnrules/interiorqueries/optimalityinference.
+No productionchainbuilder usedasvalidatororacle. Baselineexposure-onlyroutes have
+scenariofields independentlysummedfromexpandedoriginaledges,notvalidatororacle.
+
+Sixdevelopmenttests includeliteralchainvalid/negativeindex, reviewerwalkpartition
+counterexample, null-invalidrepresentation/interior/turn/cost/coverage, integer
+float/bool/cap refusal, isolatedidentityroute, comparatordisagreement. Full20rows/
+fourbaselinecallsNOTexecuted. Earlierproductionrouting/chain modulesunchangedpinned.
+RuntimePython/loadedmodule/executablepins beforecases/baseline, notOS/shared-library
+closure/adversarialsandbox/timeout/peakmemoryproof. Purestdlib noBLASdependency.
+
+Afterreview/publication: PYTHONDONTWRITEBYTECODE=1 python3 compare.py results/report.json.
+Allrows/reasons/digests/expandededgeidentity/totals andbaselineexceptionsretained;
+resultreviewbeforepublication. Suppliedanchorintegerturn-freechains only, no
+novelty/generalrouting-equivalence/optimality/physiology/sciencecompletionclaim.
+Knownfloatregroupingnon-equivalence unchanged, notsilentlyrepaired.

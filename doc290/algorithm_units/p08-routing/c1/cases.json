@@ -1,0 +1,2850 @@
+[
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "A",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "c"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:negative_index",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "c"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:totals",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "c"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "A:unknown_interior",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "c"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "unknown",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "B",
+    "statement": {
+      "budget": 6,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "a"
+          }
+        ],
+        "exposure": 6,
+        "path": [
+          "c",
+          "a"
+        ],
+        "scenario_totals": [
+          12,
+          14
+        ],
+        "time": 16,
+        "worst_time": 14
+      },
+      "start": "c",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:negative_index",
+    "statement": {
+      "budget": 6,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "c",
+            "target": "a"
+          }
+        ],
+        "exposure": 6,
+        "path": [
+          "c",
+          "a"
+        ],
+        "scenario_totals": [
+          12,
+          14
+        ],
+        "time": 16,
+        "worst_time": 14
+      },
+      "start": "c",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:totals",
+    "statement": {
+      "budget": 6,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "a"
+          }
+        ],
+        "exposure": 7,
+        "path": [
+          "c",
+          "a"
+        ],
+        "scenario_totals": [
+          12,
+          14
+        ],
+        "time": 16,
+        "worst_time": 14
+      },
+      "start": "c",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "B:unknown_interior",
+    "statement": {
+      "budget": 6,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "a"
+          }
+        ],
+        "exposure": 6,
+        "path": [
+          "c",
+          "a"
+        ],
+        "scenario_totals": [
+          12,
+          14
+        ],
+        "time": 16,
+        "worst_time": 14
+      },
+      "start": "c",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "unknown",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "C",
+    "statement": {
+      "budget": 3,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          },
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          3
+        ],
+        "time": 3,
+        "worst_time": 3
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:negative_index",
+    "statement": {
+      "budget": 3,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          },
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          3
+        ],
+        "time": 3,
+        "worst_time": 3
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:totals",
+    "statement": {
+      "budget": 3,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          },
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          3
+        ],
+        "time": 3,
+        "worst_time": 3
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "C:unknown_interior",
+    "statement": {
+      "budget": 3,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          },
+          {
+            "exposure": 3,
+            "scenario_times": [
+              3
+            ],
+            "target": "a",
+            "time": 3
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "a",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1
+            ],
+            "target": "a",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "a"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "a"
+        ],
+        "scenario_totals": [
+          3
+        ],
+        "time": 3,
+        "worst_time": 3
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "unknown",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "FEASIBLE_WITNESS",
+    "name": "D",
+    "statement": {
+      "budget": 2,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          }
+        ],
+        "z": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "z",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "d": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "z": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "z"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "z"
+        ],
+        "scenario_totals": [
+          2,
+          4
+        ],
+        "time": 2,
+        "worst_time": 4
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "z"
+          ],
+          [
+            "a",
+            "c",
+            "z"
+          ],
+          [
+            "a",
+            "d",
+            "z"
+          ]
+        ],
+        "z": [
+          [
+            "z",
+            "b",
+            "a"
+          ],
+          [
+            "z",
+            "c",
+            "a"
+          ],
+          [
+            "z",
+            "d",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:negative_index",
+    "statement": {
+      "budget": 2,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          }
+        ],
+        "z": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "z",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "d": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "z": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": -1,
+            "source": "a",
+            "target": "z"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "z"
+        ],
+        "scenario_totals": [
+          2,
+          4
+        ],
+        "time": 2,
+        "worst_time": 4
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "z"
+          ],
+          [
+            "a",
+            "c",
+            "z"
+          ],
+          [
+            "a",
+            "d",
+            "z"
+          ]
+        ],
+        "z": [
+          [
+            "z",
+            "b",
+            "a"
+          ],
+          [
+            "z",
+            "c",
+            "a"
+          ],
+          [
+            "z",
+            "d",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:totals",
+    "statement": {
+      "budget": 2,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          }
+        ],
+        "z": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "z",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "d": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "z": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "z"
+          }
+        ],
+        "exposure": 3,
+        "path": [
+          "a",
+          "z"
+        ],
+        "scenario_totals": [
+          2,
+          4
+        ],
+        "time": 2,
+        "worst_time": 4
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "z"
+          ],
+          [
+            "a",
+            "c",
+            "z"
+          ],
+          [
+            "a",
+            "d",
+            "z"
+          ]
+        ],
+        "z": [
+          [
+            "z",
+            "b",
+            "a"
+          ],
+          [
+            "z",
+            "c",
+            "a"
+          ],
+          [
+            "z",
+            "d",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "D:unknown_interior",
+    "statement": {
+      "budget": 2,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "z",
+            "time": 2
+          }
+        ],
+        "z": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          },
+          {
+            "exposure": 2,
+            "scenario_times": [
+              2,
+              4
+            ],
+            "target": "a",
+            "time": 2
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "z",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ],
+        "b": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "d": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "a",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "z",
+            "time": 1
+          }
+        ],
+        "z": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "b",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "c",
+            "time": 1
+          },
+          {
+            "exposure": 1,
+            "scenario_times": [
+              1,
+              2
+            ],
+            "target": "d",
+            "time": 1
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "z"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "z"
+        ],
+        "scenario_totals": [
+          2,
+          4
+        ],
+        "time": 2,
+        "worst_time": 4
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "unknown",
+            "z"
+          ],
+          [
+            "a",
+            "c",
+            "z"
+          ],
+          [
+            "a",
+            "d",
+            "z"
+          ]
+        ],
+        "z": [
+          [
+            "z",
+            "b",
+            "a"
+          ],
+          [
+            "z",
+            "c",
+            "a"
+          ],
+          [
+            "z",
+            "d",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:interior",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "c"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "start": "b",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:turn",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [
+        [
+          [
+            "a",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      ],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "c"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "INVALID",
+    "name": "control:float",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2.0
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "c"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "expected": "UNAVAILABLE",
+    "name": "control:null",
+    "statement": {
+      "budget": 1,
+      "compressed": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              5,
+              5
+            ],
+            "target": "c",
+            "time": 3
+          }
+        ],
+        "c": [
+          {
+            "exposure": 6,
+            "scenario_times": [
+              12,
+              14
+            ],
+            "target": "a",
+            "time": 16
+          }
+        ]
+      },
+      "forbidden": [],
+      "goal": "c",
+      "original": {
+        "a": [
+          {
+            "exposure": 1,
+            "scenario_times": [
+              3,
+              4
+            ],
+            "target": "b",
+            "time": 2
+          }
+        ],
+        "b": [
+          {
+            "exposure": 4,
+            "scenario_times": [
+              5,
+              6
+            ],
+            "target": "a",
+            "time": 7
+          },
+          {
+            "exposure": 0,
+            "scenario_times": [
+              2,
+              1
+            ],
+            "target": "c",
+            "time": 1
+          }
+        ],
+        "c": [
+          {
+            "exposure": 2,
+            "scenario_times": [
+              7,
+              8
+            ],
+            "target": "b",
+            "time": 9
+          }
+        ]
+      },
+      "penalties": [],
+      "route": null,
+      "start": "a",
+      "witnesses": {
+        "a": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "c": [
+          [
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      }
+    }
+  }
+]
