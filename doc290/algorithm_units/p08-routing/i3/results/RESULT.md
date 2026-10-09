@@ -30,7 +30,13 @@ No postfreeze source/fixture/proof/cap/classification changes; no rescue/drop.
 
 3CERTIFIED_INTEGRATED/15INVALID/2UNAVAILABLE: A4/B7/C5; D LB2<W3 gap1 retained.
 B whole-path7 not edge-worst11; C forbidden transition removed but unreachable zero sinkarc remains with potential5.
-Four unchanged integrated_route descriptive baselines worst4/7/5/3; supplied fixed proofs A/B/C matching,D UNAVAILABLE.
+Frozen descriptive baselines A worst4 and B worst7 match supplied proofs; D worst3 stays UNAVAILABLE.
+C baseline harness FAIL: TypeError "unhashable type: list", because compare.py passes
+JSON nested-list forbidden rules without tuple-normalizing for integrated_route.
+No C solver route or proof check exists. The frozen C certificate fixture independently
+CERTIFIED_INTEGRATED W5; that must not be called a baseline result.
+Erroneous result narrative d224cf86 is retained in history, corrected here without
+code/fixture changes or rescore; baseline harness failure remains locked.
 Validator warnings 0; baseline warning provenance incomplete. Separate explicit sufficient certificate only.
 Inherited unused scalar edge.time+delay cap narrows admitted model; weightedobjective independently scenario+delay+lambdaexposure.
 No proof generation/completeness/new solver/production integration/compressedturn/physical units/calibration/clinical/invention/science claim.
