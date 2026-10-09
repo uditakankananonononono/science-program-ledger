@@ -60,3 +60,23 @@ notPythonvalueequality; every savedworker/check/counter type binds tostdout.
 Realpersisted non-corpusworker receipt mutations bool/equalfloat counter/rss/check
 withstdoutunchanged nowdurableFAIL before newlaunch, repeatedinvocationlaunchesnone.
 No corpusmethods/evaluation/refreeze-rescore, original rejectedcandidate retained.
+
+Operational scope disclosure requested in rereview: real kill tests kill the child
+CONTROLLER with a synchronous synthetic execute, NOT an actual long-running
+solver subprocess killed mid-call. They establish receipt-boundary recovery and
+no duplicate launch, NOT absence of an orphan worker after arbitrary controller
+kill. Missing receipt still locks, so no retry/double-timing path. No absolute
+lifetime/crash guarantees. Arbitrary interruption during setup/fsync can fail
+closed, not seamless resume.
+Reviewer minimal-synthetic real-filesystem1200-slot benchmark: maxchunk0.721s /
+final0.302s /repeat0.270s, no duplicates; NOTfullpayloadcost. Prior copied-DEV
+fullpayload6.349/5.134/6.383s are observed artifacts, not independently reproduced.
+Postcanonicalrepair sizebenchmark repeats below retained as separate measurements,
+not substitutes for actual runtime or broad safetyproof.
+
+Postcanonicalrepair copied-DEV fullpayload1200slot benchmark actual maxchunk
+5.964506318s, final5.499309416s, repeat6.030794767s, context0.057108054s;
+immutable reportbytesunchanged. All30elapsedchunkrecords retained in
+repaired-size-evidence.json. Syntheticpayload/devinputs, nottimedcorpus subjects.
+Reviewer minimalnumbers above are attributed to parent's08:11:12 review relay;
+our independently observed fullpayload benchmark is separate, no authorityclaim.
