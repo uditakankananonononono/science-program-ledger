@@ -1,0 +1,22 @@
+# S3 whole-path minimax simplex proof freeze candidate
+
+Prereg17e767772cb6c12121bbcd395af3ac38bbb06bfb,parent90972e57ae0006ee3d311d7d3b277a7d76274832.
+CandidateOID/treeinreviewbundle. Exactsimplexcanonicalnonnegativerational/intnotbool,
+originaldimension,sum1; sortedfullsignedpotential/ALLedgesincunused/goaloutgoing.
+Originalprimaledgeidentities/whole-scenariototals/worstinteger/caps, weightededge/
+path/LBcaps, completeinequalityfeasibilityBEFOREslack; modelbeforemissing. Identity
+requirespositivedimensionestablishedbyedgeselseINVALID. Time/exposurevalidated
+butunused, no budget/turnauthority inferred. No trustedproxyedgeworstobjective.
+
+Sixdevtests exactall-edgeweightedalgebra/negativeunusedpotential/simplexgrammar/
+feasibility-before-slack/model-first/dimension/identity/primalindex/type/caps/
+disagreement. TwentyinputsconstructedNOTscored. Earlierrouting/B3/T2/T1/C1C2/helper
+unchangedpinned/runtimegatesbeforecases/baseline. Validatorper-rowwarningcapture
+only/baselineprovenanceincomplete. A/Bcertificates2/6,Cvalidincomplete0<3,Dgenuine
+simplexgap2<discrete4; no automaticweight/potentialfind or completenessclaim.
+
+Afterreview/publication: PYTHONDONTWRITEBYTECODE=1 python3 compare.py results/report.json.
+Allrows/ledgers/slacks/LB/gap/digests/reasons/baselinesretained,resultreviewbefore
+publication. Separateartifactnoautomaticintegration/newalgorithm/compressedturn/
+budget/science/physiology/inventionclaim. Caps/pinsnotOS/sharedlib/peakmemory/
+timeout/sandboxproof. K1K2FAILs/B3gap/knownfloatlossremainunchangedpublic.
