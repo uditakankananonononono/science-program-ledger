@@ -1,0 +1,32 @@
+# S3 whole-path scenario minimax simplex proof: bounded PASS with gaps
+
+Publishedfreezec8332489e82810f37e32ad8d9cc6ed36fce812a1/tree
+6908bda72ab317f41d02b74dcbad83df3b50e587. Source/runtime23identitiespassedbefore
+20rows+4baselinecalls. Publish-before-scoring tool-log recorded, notprovenonlyby
+thistext/replay. Productionrouting/B3/T2/T1/C1C2/helperunchangedpinned.
+
+20/20expectedagreement:2CERTIFIED_MINIMAX,15INVALID,3UNAVAILABLE. Awholepathworst2
+matchingLB2; Bwholepathworst6matchingLB6, notsumedgeworst10. Cfeasibleworst3,
+fixedsimplexLB0gap3 UNAVAILABLE (no claimallweightsfailC); Dworst4,LB2gap2,
+genuineweightedcertificateincompleteness retained. NullweightsUNAVAILABLEaftermodel.
+Allwhole-scenarioledgers/weightededgecosts/slacks/LB/gap/digests/reasons retained.
+No proxyedgeworstscore/potentialrescue/retuning/postfreezechanges/droppedlosses.
+SixseparateddevelopmenttestsPASS, no inventioncreditfromtheseconstructioncounts.
+
+Dmax_w min(4w,4(1-w))=2 versusdiscretebest4; sufficientlowerboundcertificate
+NOTcomplete. ExpectedagreementPASSdoesnotmeanallfourbasescertifiedoptimal.
+Fourunchangedscenario_robust_route baselinesworst2/6/3/4; fixedsuppliedproofchecks
+A/Bcertified,C/Dunavailable. Noexceptions. Validatorper-rowcapturedwarnings0 only;
+baselinewarningprovenanceincomplete. Baselineoutputsnotproofauthority.
+
+Exactcanonicalnonnegativesimplexsum1/dimension, fullsortedpotentials/ALLedgesincl
+unused/goaloutgoing, originalrouteedgeIDs/exactwhole-scenariointegercappedtotals,
+weightededge/path/LBcaps carried. InvalidcompleteinequalityproofcheckedBEFOREslack,
+model/dimensionbeforemissing; identityrequirespositiveedge-establisheddimension.
+Time/exposurevalidatedunused, no budget/turnauthorityinferred.
+
+Separateexplicitartifact/noautomaticproductionintegration/newrobustoptimizer/search/
+turn/budget/compressionproof/calibration/clinical/anatomy/invention/CI/heldout/science
+claim. RuntimepinsnotOS/sharedlibraryclosure; capsnotpeakmemory/timeout/sandboxproof.
+K1K2FAILs/B3gap/knownfloatnon-equivalenceunchangedpublic. Wholepathcorrelationbound
+onlyonsuppliedenumeratedscenarios, notcontinuousuncertainty orphysiologicaltruth.

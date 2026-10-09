@@ -1,0 +1,709 @@
+{
+  "agreement_count": 20,
+  "baseline": [
+    {
+      "certificate_check_with_supplied_potential": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "1/2",
+            "target": "g",
+            "weighted_cost": "5/2"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "2/1",
+        "reason": "matching feasible worst/simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              2,
+              2
+            ]
+          }
+        ],
+        "route_worst": 2,
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "status": "CERTIFIED_MINIMAX",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "2/1"
+      },
+      "name": "A",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "worst_time": 2
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "b",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "6/1",
+        "reason": "matching feasible worst/simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              1,
+              5
+            ]
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "scenario_totals": [
+              6,
+              6
+            ]
+          }
+        ],
+        "route_worst": 6,
+        "scenario_totals": [
+          6,
+          6
+        ],
+        "status": "CERTIFIED_MINIMAX",
+        "vertices": [
+          "a",
+          "b",
+          "g"
+        ],
+        "weighted_route_cost": "6/1"
+      },
+      "name": "B",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          6,
+          6
+        ],
+        "worst_time": 6
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "3/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "0/1"
+          }
+        ],
+        "gap": "3/1",
+        "lower_bound": "0/1",
+        "reason": "feasible incomplete simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              1,
+              3
+            ]
+          }
+        ],
+        "route_worst": 3,
+        "scenario_totals": [
+          1,
+          3
+        ],
+        "status": "UNAVAILABLE",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "3/1"
+      },
+      "name": "C",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          1,
+          3
+        ],
+        "worst_time": 3
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          }
+        ],
+        "gap": "2/1",
+        "lower_bound": "2/1",
+        "reason": "feasible incomplete simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              0,
+              4
+            ]
+          }
+        ],
+        "route_worst": 4,
+        "scenario_totals": [
+          0,
+          4
+        ],
+        "status": "UNAVAILABLE",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "2/1"
+      },
+      "name": "D",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          0,
+          4
+        ],
+        "worst_time": 4
+      }
+    }
+  ],
+  "row_count": 20,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_MINIMAX",
+      "input_sha256": "2da267edc63e61e4649c870bffe9c9c9b0cbc53692be7368e5a962919b69c5a2",
+      "name": "A",
+      "result": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "1/2",
+            "target": "g",
+            "weighted_cost": "5/2"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "2/1",
+        "reason": "matching feasible worst/simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              2,
+              2
+            ]
+          }
+        ],
+        "route_worst": 2,
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "status": "CERTIFIED_MINIMAX",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "2/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "ebfc4106d4543260074af671036243ad428c068d2c6954a6f86c1e048a579eb2",
+      "name": "A:worst",
+      "result": {
+        "reason": "whole-path scenario totals/worst",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "496448801b0226393f68ebcdcd48e6b66019faaf830f7fe013667e06dcb35043",
+      "name": "A:negative",
+      "result": {
+        "reason": "nonnegative simplex sum",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "0806dcaf2e2708423cfa83732b430851faf1e397b9b6ecff3c2c636dd4048a46",
+      "name": "A:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_MINIMAX",
+      "input_sha256": "670afbf1226d4ad82106a0f649d3e1f718161b7a35ec70924a3849bc6135a2a1",
+      "name": "B",
+      "result": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "b",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "6/1",
+        "reason": "matching feasible worst/simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              1,
+              5
+            ]
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "scenario_totals": [
+              6,
+              6
+            ]
+          }
+        ],
+        "route_worst": 6,
+        "scenario_totals": [
+          6,
+          6
+        ],
+        "status": "CERTIFIED_MINIMAX",
+        "vertices": [
+          "a",
+          "b",
+          "g"
+        ],
+        "weighted_route_cost": "6/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "7643031085a5cfd8c0b234880c580f18c290c394ea48473367138108ccf8c8bc",
+      "name": "B:worst",
+      "result": {
+        "reason": "whole-path scenario totals/worst",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "0656804594a22ac8a5f02029e40b1dd38ae7166497bc1e278e737a4789a2b9d7",
+      "name": "B:negative",
+      "result": {
+        "reason": "nonnegative simplex sum",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "37511cf93e717195a4af5e4251b7115fea046c32fb89c6cb1aec59f8b6f94cd7",
+      "name": "B:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "5eaf910aba12f7c23b253de7ee22cfc44bc76a00646d5adc01112717e4608cc9",
+      "name": "C",
+      "result": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "3/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "0/1"
+          }
+        ],
+        "gap": "3/1",
+        "lower_bound": "0/1",
+        "reason": "feasible incomplete simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              1,
+              3
+            ]
+          }
+        ],
+        "route_worst": 3,
+        "scenario_totals": [
+          1,
+          3
+        ],
+        "status": "UNAVAILABLE",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "3/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "1daf0d759be64e5cab2e442cd2c6795172d87e253e3538b828a1213ce28f6daa",
+      "name": "C:worst",
+      "result": {
+        "reason": "whole-path scenario totals/worst",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "e9ff894e757c2f0eda31c2e812a2ddb5318d206102660766dce930125819701d",
+      "name": "C:negative",
+      "result": {
+        "reason": "nonnegative simplex sum",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "3565df3b4b6b98dbcdb45a2733a30919079d8e6efcd7a1e580ea82e83f3261fd",
+      "name": "C:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "0a8cd9ecfe3d0b0a6ce5c81a28f93be21ee47c70ea09d4ec3ff331cc4f1b07be",
+      "name": "D",
+      "result": {
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          }
+        ],
+        "gap": "2/1",
+        "lower_bound": "2/1",
+        "reason": "feasible incomplete simplex bound",
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "scenario_totals": [
+              0,
+              4
+            ]
+          }
+        ],
+        "route_worst": 4,
+        "scenario_totals": [
+          0,
+          4
+        ],
+        "status": "UNAVAILABLE",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "2/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a58f4e1316a38ab3d3857075c0b1f72e0537808b5242463048f5ee68123e1a8f",
+      "name": "D:worst",
+      "result": {
+        "reason": "whole-path scenario totals/worst",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b7d492b2518c1be2208c2ecb7b84b4bcf59d83d97b3709e1f613f44924be5413",
+      "name": "D:negative",
+      "result": {
+        "reason": "nonnegative simplex sum",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "95b60f3dc4bc6d8e1cd89aa4fad7136eff28200db55eca08227ead01f968badd",
+      "name": "D:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "af90c05e18456c6edb6fd9f28da6ec32157fd37eca5d3e31eec27ba98dc24acf",
+      "name": "control:null",
+      "result": {
+        "reason": "missing route/proof after model checks",
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "91fe5e0572d2cb01df198f8ee30642d71944fd4d6dd79d4386e8445687af67dc",
+      "name": "control:sum",
+      "result": {
+        "reason": "nonnegative simplex sum",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "fa69517f8a303c484426917d90dcc5fee86966f801a4c61118a9cb47f1543740",
+      "name": "control:proxy",
+      "result": {
+        "reason": "whole-path scenario totals/worst",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "193fddbeb30afa56075e4a0ad542b9ea06c0f6884f9c5dfb0d388b5005e7124d",
+      "name": "control:dimension",
+      "result": {
+        "reason": "edge/scenario cap",
+        "status": "INVALID"
+      },
+      "warnings": []
+    }
+  ],
+  "scope": "scalar exposure Lagrange certificate is sufficient, not complete/search/clinical"
+}
