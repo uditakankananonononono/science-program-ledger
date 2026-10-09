@@ -1,0 +1,428 @@
+{
+  "agreement_count": 20,
+  "baseline": [
+    {
+      "expanded_path": [
+        "a",
+        "b",
+        "c"
+      ],
+      "independent_original_totals": {
+        "exposure": 1,
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "time": 3,
+        "worst_time": 5
+      },
+      "name": "A",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "c"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "c"
+        ],
+        "time": 3
+      }
+    },
+    {
+      "expanded_path": [
+        "c",
+        "b",
+        "a"
+      ],
+      "independent_original_totals": {
+        "exposure": 6,
+        "scenario_totals": [
+          12,
+          14
+        ],
+        "time": 16,
+        "worst_time": 14
+      },
+      "name": "B",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "a"
+          }
+        ],
+        "exposure": 6,
+        "path": [
+          "c",
+          "a"
+        ],
+        "time": 16
+      }
+    },
+    {
+      "expanded_path": [
+        "a"
+      ],
+      "independent_original_totals": {
+        "exposure": 0,
+        "scenario_totals": [
+          0
+        ],
+        "time": 0,
+        "worst_time": 0
+      },
+      "name": "C",
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "time": 0
+      }
+    },
+    {
+      "expanded_path": [
+        "a",
+        "b",
+        "z"
+      ],
+      "independent_original_totals": {
+        "exposure": 2,
+        "scenario_totals": [
+          2,
+          4
+        ],
+        "time": 2,
+        "worst_time": 4
+      },
+      "name": "D",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "z"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "z"
+        ],
+        "time": 2
+      }
+    }
+  ],
+  "row_count": 20,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "d31ba083d9c514bd534868dce0c492f7b6329034b04ec2c99c923f5ce83717b3",
+      "name": "A",
+      "result": {
+        "expanded_path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "exposure": 1,
+        "original_edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "reason": "checked integer chain route",
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "time": 3,
+        "worst_time": 5
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "9ca07a9f0597a7b4efbd16eab529fc18bbb96011da1044bc0030d1031c56f131",
+      "name": "A:negative_index",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "214246f53e31fad414f1b23e845e5f4c83b5179535e2dadba36f1e8eecb6bcb1",
+      "name": "A:totals",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "e96de14437c5efad6b11cdccd3d129071d3cc9acc913e26deafd06b9023d5ea6",
+      "name": "A:unknown_interior",
+      "result": {
+        "reason": "witness path shape/vertex",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "e58a2551528203a3031a443c806629c121be26def87f536d76dcf605e4d3c60d",
+      "name": "B",
+      "result": {
+        "expanded_path": [
+          "c",
+          "b",
+          "a"
+        ],
+        "exposure": 6,
+        "original_edges": [
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "a"
+          }
+        ],
+        "reason": "checked integer chain route",
+        "scenario_totals": [
+          12,
+          14
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "time": 16,
+        "worst_time": 14
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f42e73584dd686e4ef85227a8578fdcd05d5968cf68e4a5b44b336b092d9fde4",
+      "name": "B:negative_index",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "d0704ca0bd396e28d577c4303a3ac85e9cb0d207849073457ed3a20b12939ce8",
+      "name": "B:totals",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8c95a385c294dbc104e1b0c84bf46920a400ca0d9500a6323ec558c9ec7bc519",
+      "name": "B:unknown_interior",
+      "result": {
+        "reason": "witness path shape/vertex",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "ac2c8a39569f09a7b051ec92d3066c98c8adcdb2cd48c5d984868293767b2812",
+      "name": "C",
+      "result": {
+        "expanded_path": [
+          "a",
+          "b",
+          "c",
+          "a"
+        ],
+        "exposure": 3,
+        "original_edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 1,
+            "source": "c",
+            "target": "a"
+          }
+        ],
+        "reason": "checked integer chain route",
+        "scenario_totals": [
+          3
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "time": 3,
+        "worst_time": 3
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "9f164fdccea44da4ad23ac89357936d7355142fcfa5a97dd97fc24f9544c5fe8",
+      "name": "C:negative_index",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "19a83d0d96d55aaf5dae6a41f675a6e96a173085ff01c2f8e3ffa97265ad970c",
+      "name": "C:totals",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "ede68ac3985302da2ad276ea72ae89674f39926dab5fb20ca296b6f415067476",
+      "name": "C:unknown_interior",
+      "result": {
+        "reason": "witness path shape/vertex",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "6e08c1492a564375e1561cd7ba0480c362642d02d57608da9304b06c76a657bb",
+      "name": "D",
+      "result": {
+        "expanded_path": [
+          "a",
+          "c",
+          "z"
+        ],
+        "exposure": 2,
+        "original_edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "c"
+          },
+          {
+            "edge_index": 1,
+            "source": "c",
+            "target": "z"
+          }
+        ],
+        "reason": "checked integer chain route",
+        "scenario_totals": [
+          2,
+          4
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "time": 2,
+        "worst_time": 4
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "3adf42073617e4d0ac3c12a656c1866d52184df24c7d9a36304ba97234d96361",
+      "name": "D:negative_index",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f652bfb9f6e0694fcc3a4ac6d5e71224eb3701ef90d2746e23b302d1ab39536e",
+      "name": "D:totals",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f3eae9c3e2b347ea6aa7efcb1e374e81fa2c30d8d3323a25e037c2c5dc189ba1",
+      "name": "D:unknown_interior",
+      "result": {
+        "reason": "witness path shape/vertex",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "3f8f26beb66be284524871a76cbc8910098285b3fca0a8dd32c0358cff533851",
+      "name": "control:interior",
+      "result": {
+        "reason": "query must use anchors",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "dedbff6253ee70ad0cb43b0cf7b495daf5acf6be0a0d852b463f5a4a00875841",
+      "name": "control:turn",
+      "result": {
+        "reason": "turn rules unsupported",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "7658e3e4b55092bacaf88d2702edd4e4d26738db5ecc1586d0c138856ae6320b",
+      "name": "control:float",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      }
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "314a3bf2937913fb8dea449cdaca1928e3c262edd829da45d4681dc6c52a424c",
+      "name": "control:null",
+      "result": {
+        "reason": "missing route after representation validation",
+        "status": "UNAVAILABLE"
+      }
+    }
+  ],
+  "scope": "integer anchor turn-free supplied witnesses, not optimality/equivalence"
+}
