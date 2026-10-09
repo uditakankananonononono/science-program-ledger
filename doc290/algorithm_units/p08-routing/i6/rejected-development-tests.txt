@@ -1,0 +1,42 @@
+test_generator (unittest.loader._FailedTest) ... ERROR
+test_real_operational_controls (test_worker.Controls) ... ok
+test_real_synthetic_allstage_receipts_and_mutations (test_worker.Controls) ... FAIL
+test_concurrent_refusal_partial_and_guard (test_durable.RealDurability) ... ok
+test_corruption_foreign_identity_plan_coverage (test_durable.RealDurability) ... ok
+test_final_synthesis_interruption_idempotent (test_durable.RealDurability) ... ok
+test_real_crash_matrix_reconcile_no_duplicate (test_durable.RealDurability) ... ok
+test_unreceipted_uncertainty_locks_and_death_releases (test_durable.RealDurability) ... ok
+
+======================================================================
+ERROR: test_generator (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_generator
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/i6/test_generator.py", line 3, in <module>
+    from generator import generate,previous
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/i6/generator.py", line 5, in <module>
+    spec=importlib.util.spec_from_file_location('i6_unchanged_i5_generator',Path(__file__).resolve().parent.parent/'i5/generator.py');previous=importlib.util.module_from_spec(spec);spec.loader.exec_module(previous)
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/i5/generator.py", line 6, in <module>
+    spec=importlib.util.spec_from_file_location('i5_i4_generator',Path(__file__).resolve().parent.parent/'i4'/'generator.py');old=importlib.util.module_from_spec(spec);spec.loader.exec_module(old)
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/i4/generator.py", line 5, in <module>
+    from proof import audit,guarded_potential,reconcile
+ImportError: cannot import name 'audit' from 'proof' (/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/i6/proof.py)
+
+
+======================================================================
+FAIL: test_real_synthetic_allstage_receipts_and_mutations (test_worker.Controls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/i6/test_worker.py", line 8, in test_real_synthetic_allstage_receipts_and_mutations
+    args=['devsubject',index];r=launch(args);self.assertEqual(r['status'],'PASS',r);saved[str(index)]=r;changes=[]
+AssertionError: 'FAIL' != 'PASS'
+- FAIL
++ PASS
+ : {'status': 'FAIL', 'worker_elapsed_seconds': 0.08014620299945818, 'returncode': 2, 'timed_out': False, 'kill_sent': False, 'reaped': True, 'stdout': '{"status": "FAIL", "exception_type": "ImportError", "exception": "cannot import name \'audit\' from \'proof\' (/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/i6/proof.py)"}\n', 'stderr': '', 'reason': 'worker nonzero'}
+
+----------------------------------------------------------------------
+Ran 8 tests in 4.719s
+
+FAILED (failures=1, errors=1)

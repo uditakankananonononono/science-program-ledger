@@ -1,0 +1,218 @@
+[
+  {
+    "case_index": 0,
+    "expected": "PRESERVED",
+    "input_sha256": "fae5842e9c9fc37f73c2ad5cdd4f50797f7fd8b5c7475ecefafd830f6fda5217",
+    "name": "A"
+  },
+  {
+    "case_index": 1,
+    "expected": "INVALID",
+    "input_sha256": "4a66ac815aae939e59ec948e10e3b0211f382ec11d4e4aad17b7c1edb9066313",
+    "name": "A:worst"
+  },
+  {
+    "case_index": 2,
+    "expected": "PRESERVED",
+    "input_sha256": "52b6f8629d736dbe2022cb8b0f5ddb0224fe791247128338a9ca3501135cf2ab",
+    "name": "B"
+  },
+  {
+    "case_index": 3,
+    "expected": "INVALID",
+    "input_sha256": "7e917990b6ddbf47029ec7dfc8de2d65b697fa5fe8edba2641991649ce7be705",
+    "name": "B:worst"
+  },
+  {
+    "case_index": 4,
+    "expected": "PRESERVED",
+    "input_sha256": "36964bcb5b20140d6842e016f18d40aadd558e7631f402beda67d9218f7266f1",
+    "name": "C"
+  },
+  {
+    "case_index": 5,
+    "expected": "INVALID",
+    "input_sha256": "ab1786d5f7e9e6b5807ca493e18d8f35abfecce0b678042eb69543a3a091111e",
+    "name": "C:worst"
+  },
+  {
+    "case_index": 6,
+    "expected": "PRESERVED",
+    "input_sha256": "7eb8c14728425c6edb98c4c9e19b2184a38c21e550961d9d04f84a4998f06e2a",
+    "name": "D"
+  },
+  {
+    "case_index": 7,
+    "expected": "INVALID",
+    "input_sha256": "1872800d433e92b195394d62cdfff240d19d33130986d012f0090355c0ac7b32",
+    "name": "D:worst"
+  },
+  {
+    "case_index": 8,
+    "expected": "PRESERVED",
+    "input_sha256": "24bebcb2933c26ef46e654b48d75d6d0c0c2db26c279d3c40a72250723810092",
+    "name": "E"
+  },
+  {
+    "case_index": 9,
+    "expected": "INVALID",
+    "input_sha256": "c685dc8326277f32df584d21ac0d3deb25becc1ad9557b83b451db11018ed177",
+    "name": "E:worst"
+  },
+  {
+    "case_index": 10,
+    "expected": "PRESERVED",
+    "input_sha256": "52a049dae118f194fbff66fdab0b2a976b7b69a19cf110bcdd5b2ba56a0203b5",
+    "name": "F"
+  },
+  {
+    "case_index": 11,
+    "expected": "INVALID",
+    "input_sha256": "a96f9d432ca8545bac6d1c1d3785b616cc4bcfc64b4ceab5e573affdd9b37bb7",
+    "name": "F:worst"
+  },
+  {
+    "case_index": 12,
+    "expected": "PRESERVED",
+    "input_sha256": "182b94614cfaad9a9e49670cb0c0d5b672e85e75d91317955dff4b6107ddea15",
+    "name": "G"
+  },
+  {
+    "case_index": 13,
+    "expected": "INVALID",
+    "input_sha256": "58120418991f9341b793d97391a766e0306fc1cafe31fcddc39f3772ce2999a5",
+    "name": "G:worst"
+  },
+  {
+    "case_index": 14,
+    "expected": "PRESERVED",
+    "input_sha256": "9488c6e5091a13b38c4d7b3fca2da8eb75c7fedb136ea2c48315c535b524b22f",
+    "name": "H"
+  },
+  {
+    "case_index": 15,
+    "expected": "INVALID",
+    "input_sha256": "c2b6a24f951f60fa3ae128adc659c3d07a3337e498bc9902bef9a4bb04e9019c",
+    "name": "H:worst"
+  },
+  {
+    "case_index": 16,
+    "expected": "COMPLETED",
+    "input_sha256": "6e61aa049a30e7fc8f3fa4d02402b7ae9b6005199bc2db8a6c698add3e73ce91",
+    "name": "control:null"
+  },
+  {
+    "case_index": 17,
+    "expected": "INVALID",
+    "input_sha256": "5fa02569d72a4b99ea9eb21ec3940b21ffbff64a87fd639dc415bcabcfe3fd54",
+    "name": "control:boolindex"
+  },
+  {
+    "case_index": 18,
+    "expected": "INVALID",
+    "input_sha256": "ebbde536c0f523549a082a8dc5abe0d74169746e521921a1b7f9ef0d30a0f59c",
+    "name": "control:dimension"
+  },
+  {
+    "case_index": 19,
+    "expected": "INVALID",
+    "input_sha256": "810128adcf1cf2bbb5d4f35f42631a86fb2e58c17fda7b8fc7f584463c8bdbd0",
+    "name": "control:negative"
+  },
+  {
+    "case_index": 20,
+    "expected": "COMPLETED",
+    "input_sha256": "b3e8e2f35ff5cb1d9973c505abc43faf94f0db721dcd7c84a8c6debd8184f746",
+    "name": "A:null"
+  },
+  {
+    "case_index": 21,
+    "expected": "COMPLETED",
+    "input_sha256": "1e1f1fd0c01292be54a94cce18214b007a211414161ad1c3195e13d93a832b02",
+    "name": "B:null"
+  },
+  {
+    "case_index": 22,
+    "expected": "COMPLETED",
+    "input_sha256": "dafdc14e3c759b8d1821105a1199a043ec84ccf82e59b78daee341e745fcdf5c",
+    "name": "C:null"
+  },
+  {
+    "case_index": 23,
+    "expected": "COMPLETED",
+    "input_sha256": "c684cf7bdedb3fb6bc0edad53657ff80349219b8a1051944a81d7b4230f60935",
+    "name": "D:null"
+  },
+  {
+    "case_index": 24,
+    "expected": "COMPLETED",
+    "input_sha256": "283ddbd3fb13637e10f41a77862dd727757f2c289768f8cdd0c21f76a07b6fc3",
+    "name": "E:null"
+  },
+  {
+    "case_index": 25,
+    "expected": "COMPLETED",
+    "input_sha256": "cc0393a76cbd0d0de2ab404bfee9776a77038504742caccf601413ce7edd3e6d",
+    "name": "F:null"
+  },
+  {
+    "case_index": 26,
+    "expected": "COMPLETED",
+    "input_sha256": "8dbed33cc5bbca8a24e2dac7d29ef0fe1f597d64ff588192a8c94655f3f3f71b",
+    "name": "G:null"
+  },
+  {
+    "case_index": 27,
+    "expected": "COMPLETED",
+    "input_sha256": "6eb0d15f89aa2ee7b70d81942cc987c8870a0e89c7888c3cce6c51dd69b2ca52",
+    "name": "H:null"
+  },
+  {
+    "case_index": 28,
+    "expected": "NO_FEASIBLE_PATH",
+    "input_sha256": "d9d3088e47faa02185798aec274382b1ee3c66ad6d0aacc1f79ac3fcf105b0d3",
+    "name": "control6:unreachable"
+  },
+  {
+    "case_index": 29,
+    "expected": "NO_FEASIBLE_PATH",
+    "input_sha256": "be6ccc2de7f30a750b097c781184331ad160626b89885bc6b913c6e311ee01c0",
+    "name": "control6:budget"
+  },
+  {
+    "case_index": 30,
+    "expected": "COMPLETED",
+    "input_sha256": "030b60872bdd67f5c952a724795ae39fe1a090bb47a5c1c3233754d501ccdd37",
+    "name": "control6:identity"
+  },
+  {
+    "case_index": 31,
+    "expected": "COMPLETED",
+    "input_sha256": "9543f6ea875045526f77a0ef9c04dccf1b7fe1d1bb3fcf3c83e15969efa53ed6",
+    "name": "control6:revisit"
+  },
+  {
+    "case_index": 32,
+    "expected": "COMPLETED",
+    "input_sha256": "78126fc359891ffca21e2dd7b8633591276b7ba3ffbf13699c9e30d85e44ab3e",
+    "name": "control6:tie"
+  },
+  {
+    "case_index": 33,
+    "expected": "UNAVAILABLE_DOMAIN",
+    "input_sha256": "2089550abdd578cb220d2ad95892ce32594c3a1bcd99fbcb5bba4c519a8cab19",
+    "name": "control6:modelDomain"
+  },
+  {
+    "case_index": 34,
+    "expected": "INVALID",
+    "input_sha256": "e8caf5f7bb274b5dab82dae7dbcc135a3c4b01e3c5f8ed4dd813d82e9ae59987",
+    "name": "control6:invalid"
+  },
+  {
+    "case_index": 35,
+    "expected": "UNAVAILABLE_WITNESS_DOMAIN",
+    "input_sha256": "4939632a88f7760ca66d3ef85234ea38be55db58ad26f9c89eb85e8f85861ee7",
+    "name": "control6:witnessDomain"
+  }
+]
