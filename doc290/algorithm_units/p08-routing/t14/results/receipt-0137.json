@@ -1,0 +1,974 @@
+{
+  "entry": {
+    "case_index": 68,
+    "input_sha256": "271fd3c3239b6c40d48a240c895b836650558519089371c932019fc45cb7b023",
+    "method": "t13",
+    "name": "turn068",
+    "oracle": 10,
+    "order": [
+      "variant",
+      "t13"
+    ]
+  },
+  "identity": {
+    "manifest_sha256": "90e2bcb28072c574ad43310e6977a20b7968509c1b740d88f5767219ee9c94a7",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "exposure": 5,
+      "ledger": [
+        {
+          "delay": 0,
+          "edge": [
+            "a",
+            1
+          ],
+          "exposure": 2,
+          "scenarios": [
+            5,
+            3,
+            1
+          ]
+        },
+        {
+          "delay": 1,
+          "edge": [
+            "c",
+            2
+          ],
+          "exposure": 5,
+          "scenarios": [
+            8,
+            10,
+            6
+          ]
+        }
+      ],
+      "scenario_totals": [
+        8,
+        10,
+        6
+      ],
+      "status": "PASS",
+      "turn_penalty": 1,
+      "worst_time": 10
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"activation\": \"old_bound_equality\", \"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.02197542200156022, \"candidate_activation\": null, \"candidate_ledger\": [{\"audit\": {\"checked\": {\"exposure\": 5, \"ledger\": [{\"delay\": 0, \"edge\": [\"a\", 1], \"exposure\": 2, \"scenarios\": [5, 3, 1]}, {\"delay\": 1, \"edge\": [\"c\", 2], \"exposure\": 5, \"scenarios\": [8, 10, 6]}], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"eligibility_budget\": 11, \"eligible\": true, \"state\": \"valid_eligible\", \"validation_budget\": 9007199254740991, \"validation_scope\": \"validation-only MAX budget copy; original input unchanged\"}, \"index\": 0, \"objective\": \"exposure\", \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"a\", \"target\": \"c\"}, {\"edge_index\": 2, \"source\": \"c\", \"target\": \"d\"}], \"exposure\": 5, \"path\": [\"a\", \"c\", \"d\"], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"scenario_index\": null, \"stop_ledger\": null}, {\"audit\": {\"checked\": {\"exposure\": 5, \"ledger\": [{\"delay\": 0, \"edge\": [\"a\", 1], \"exposure\": 2, \"scenarios\": [5, 3, 1]}, {\"delay\": 1, \"edge\": [\"c\", 2], \"exposure\": 5, \"scenarios\": [8, 10, 6]}], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"eligibility_budget\": 11, \"eligible\": true, \"state\": \"valid_eligible\", \"validation_budget\": 9007199254740991, \"validation_scope\": \"validation-only MAX budget copy; original input unchanged\"}, \"index\": 1, \"objective\": \"scenario\", \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"a\", \"target\": \"c\"}, {\"edge_index\": 2, \"source\": \"c\", \"target\": \"d\"}], \"exposure\": 5, \"path\": [\"a\", \"c\", \"d\"], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"scenario_index\": 0, \"stop_ledger\": {\"inspections\": 8, \"pops\": [{\"distance\": 0, \"serial\": 0, \"stale\": false, \"state\": 0}, {\"distance\": 3, \"serial\": 1, \"stale\": false, \"state\": 1}, {\"distance\": 5, \"serial\": 2, \"stale\": false, \"state\": 2}, {\"distance\": 8, \"serial\": 4, \"stale\": false, \"state\": 4}, {\"distance\": 8, \"serial\": 5, \"stale\": false, \"state\": 5}, {\"distance\": 8, \"serial\": 8, \"stale\": false, \"state\": 8}], \"predecessor_arc\": [null, 0, 1, 2, 3, 4, 7, 8, 9], \"remaining_heap\": [[9, 7, 7], [14, 3, 3], [11, 6, 6]], \"semantics\": \"tentative at first sink pop, NOT complete ALL-state distances\", \"settled_order\": [0, 1, 2, 4, 5, 8], \"state_status\": [\"settled\", \"settled\", \"settled\", \"queued\", \"settled\", \"settled\", \"queued\", \"queued\", \"settled\"], \"tentative_distances\": [0, 3, 5, 14, 8, 8, 11, 9, 8]}}, {\"audit\": {\"checked\": {\"exposure\": 5, \"ledger\": [{\"delay\": 0, \"edge\": [\"a\", 1], \"exposure\": 2, \"scenarios\": [5, 3, 1]}, {\"delay\": 1, \"edge\": [\"c\", 2], \"exposure\": 5, \"scenarios\": [8, 10, 6]}], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"eligibility_budget\": 11, \"eligible\": true, \"state\": \"valid_eligible\", \"validation_budget\": 9007199254740991, \"validation_scope\": \"validation-only MAX budget copy; original input unchanged\"}, \"index\": 2, \"objective\": \"scenario\", \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"a\", \"target\": \"c\"}, {\"edge_index\": 2, \"source\": \"c\", \"target\": \"d\"}], \"exposure\": 5, \"path\": [\"a\", \"c\", \"d\"], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"scenario_index\": 1, \"stop_ledger\": {\"inspections\": 8, \"pops\": [{\"distance\": 0, \"serial\": 0, \"stale\": false, \"state\": 0}, {\"distance\": 3, \"serial\": 2, \"stale\": false, \"state\": 2}, {\"distance\": 5, \"serial\": 1, \"stale\": false, \"state\": 1}, {\"distance\": 5, \"serial\": 4, \"stale\": false, \"state\": 4}, {\"distance\": 10, \"serial\": 5, \"stale\": false, \"state\": 5}, {\"distance\": 10, \"serial\": 8, \"stale\": false, \"state\": 8}], \"predecessor_arc\": [null, 0, 1, 2, 3, 4, 7, 8, 9], \"remaining_heap\": [[12, 3, 3], [13, 6, 6], [16, 7, 7]], \"semantics\": \"tentative at first sink pop, NOT complete ALL-state distances\", \"settled_order\": [0, 2, 1, 4, 5, 8], \"state_status\": [\"settled\", \"settled\", \"settled\", \"queued\", \"settled\", \"settled\", \"queued\", \"queued\", \"settled\"], \"tentative_distances\": [0, 5, 3, 12, 5, 10, 13, 16, 10]}}, {\"audit\": {\"checked\": {\"exposure\": 5, \"ledger\": [{\"delay\": 0, \"edge\": [\"a\", 1], \"exposure\": 2, \"scenarios\": [5, 3, 1]}, {\"delay\": 1, \"edge\": [\"c\", 2], \"exposure\": 5, \"scenarios\": [8, 10, 6]}], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"eligibility_budget\": 11, \"eligible\": true, \"state\": \"valid_eligible\", \"validation_budget\": 9007199254740991, \"validation_scope\": \"validation-only MAX budget copy; original input unchanged\"}, \"index\": 3, \"objective\": \"scenario\", \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"a\", \"target\": \"c\"}, {\"edge_index\": 2, \"source\": \"c\", \"target\": \"d\"}], \"exposure\": 5, \"path\": [\"a\", \"c\", \"d\"], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"scenario_index\": 2, \"stop_ledger\": {\"inspections\": 10, \"pops\": [{\"distance\": 0, \"serial\": 0, \"stale\": false, \"state\": 0}, {\"distance\": 1, \"serial\": 1, \"stale\": false, \"state\": 1}, {\"distance\": 1, \"serial\": 2, \"stale\": false, \"state\": 2}, {\"distance\": 1, \"serial\": 4, \"stale\": false, \"state\": 4}, {\"distance\": 4, \"serial\": 3, \"stale\": false, \"state\": 3}, {\"distance\": 6, \"serial\": 5, \"stale\": false, \"state\": 5}, {\"distance\": 6, \"serial\": 8, \"stale\": false, \"state\": 8}], \"predecessor_arc\": [null, 0, 1, 2, 3, 4, 7, 8, 9], \"remaining_heap\": [[8, 6, 6], [9, 7, 7]], \"semantics\": \"tentative at first sink pop, NOT complete ALL-state distances\", \"settled_order\": [0, 1, 2, 4, 3, 5, 8], \"state_status\": [\"settled\", \"settled\", \"settled\", \"settled\", \"settled\", \"settled\", \"queued\", \"queued\", \"settled\"], \"tentative_distances\": [0, 1, 1, 4, 1, 6, 8, 9, 6]}}], \"certificate\": {\"budget\": 11, \"charged_lambda\": 1, \"early_exit\": false, \"equality_exit\": true, \"lower\": 10, \"old_lower\": 10, \"reason\": \"equality_exit\", \"source_bound_stronger\": false, \"upper\": 10}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 0, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 13, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 8, \"scalar_candidate_inspections\": 26, \"scenario_reverse_inspections\": 24, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"90e2bcb28072c574ad43310e6977a20b7968509c1b740d88f5767219ee9c94a7\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 1, \"source\": \"a\", \"target\": \"c\"}, {\"edge_index\": 2, \"source\": \"c\", \"target\": \"d\"}], \"exposure\": 5, \"path\": [\"a\", \"c\", \"d\"], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"incumbent_original_upper\": 10, \"incumbent_selected_upper\": 10, \"proof\": {\"distances\": [5, null, 3, 5, null, 0, null, 3, 0], \"start_minimum\": 5, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"a\"}, {\"incoming\": [\"c\", 1], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"c\", 2], \"kind\": \"edge\", \"vertex\": \"d\"}, {\"incoming\": [\"d\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"d\", 1], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"d\"}]}, \"route\": {\"edges\": [{\"edge_index\": 1, \"source\": \"a\", \"target\": \"c\"}, {\"edge_index\": 2, \"source\": \"c\", \"target\": \"d\"}], \"exposure\": 5, \"path\": [\"a\", \"c\", \"d\"], \"scenario_totals\": [8, 10, 6], \"turn_penalty\": 1, \"worst_time\": 10}, \"rss_kib\": 28276, \"scenario_proof\": {\"distances\": [[8, null, 3, 8, null, 0, null, 2, 0], [10, null, 7, 10, null, 0, null, 6, 0], [6, null, 5, 6, null, 0, null, 4, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"a\"}, {\"incoming\": [\"c\", 1], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"c\", 2], \"kind\": \"edge\", \"vertex\": \"d\"}, {\"incoming\": [\"d\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"d\", 1], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"d\"}]}, \"selected_candidate\": 0, \"solve_seconds\": 0.002556148996518459, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "activation": "old_bound_equality",
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "bound_trace": [],
+      "build_seconds": 0.02197542200156022,
+      "candidate_activation": null,
+      "candidate_ledger": [
+        {
+          "audit": {
+            "checked": {
+              "exposure": 5,
+              "ledger": [
+                {
+                  "delay": 0,
+                  "edge": [
+                    "a",
+                    1
+                  ],
+                  "exposure": 2,
+                  "scenarios": [
+                    5,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "delay": 1,
+                  "edge": [
+                    "c",
+                    2
+                  ],
+                  "exposure": 5,
+                  "scenarios": [
+                    8,
+                    10,
+                    6
+                  ]
+                }
+              ],
+              "scenario_totals": [
+                8,
+                10,
+                6
+              ],
+              "turn_penalty": 1,
+              "worst_time": 10
+            },
+            "eligibility_budget": 11,
+            "eligible": true,
+            "state": "valid_eligible",
+            "validation_budget": 9007199254740991,
+            "validation_scope": "validation-only MAX budget copy; original input unchanged"
+          },
+          "index": 0,
+          "objective": "exposure",
+          "route": {
+            "edges": [
+              {
+                "edge_index": 1,
+                "source": "a",
+                "target": "c"
+              },
+              {
+                "edge_index": 2,
+                "source": "c",
+                "target": "d"
+              }
+            ],
+            "exposure": 5,
+            "path": [
+              "a",
+              "c",
+              "d"
+            ],
+            "scenario_totals": [
+              8,
+              10,
+              6
+            ],
+            "turn_penalty": 1,
+            "worst_time": 10
+          },
+          "scenario_index": null,
+          "stop_ledger": null
+        },
+        {
+          "audit": {
+            "checked": {
+              "exposure": 5,
+              "ledger": [
+                {
+                  "delay": 0,
+                  "edge": [
+                    "a",
+                    1
+                  ],
+                  "exposure": 2,
+                  "scenarios": [
+                    5,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "delay": 1,
+                  "edge": [
+                    "c",
+                    2
+                  ],
+                  "exposure": 5,
+                  "scenarios": [
+                    8,
+                    10,
+                    6
+                  ]
+                }
+              ],
+              "scenario_totals": [
+                8,
+                10,
+                6
+              ],
+              "turn_penalty": 1,
+              "worst_time": 10
+            },
+            "eligibility_budget": 11,
+            "eligible": true,
+            "state": "valid_eligible",
+            "validation_budget": 9007199254740991,
+            "validation_scope": "validation-only MAX budget copy; original input unchanged"
+          },
+          "index": 1,
+          "objective": "scenario",
+          "route": {
+            "edges": [
+              {
+                "edge_index": 1,
+                "source": "a",
+                "target": "c"
+              },
+              {
+                "edge_index": 2,
+                "source": "c",
+                "target": "d"
+              }
+            ],
+            "exposure": 5,
+            "path": [
+              "a",
+              "c",
+              "d"
+            ],
+            "scenario_totals": [
+              8,
+              10,
+              6
+            ],
+            "turn_penalty": 1,
+            "worst_time": 10
+          },
+          "scenario_index": 0,
+          "stop_ledger": {
+            "inspections": 8,
+            "pops": [
+              {
+                "distance": 0,
+                "serial": 0,
+                "stale": false,
+                "state": 0
+              },
+              {
+                "distance": 3,
+                "serial": 1,
+                "stale": false,
+                "state": 1
+              },
+              {
+                "distance": 5,
+                "serial": 2,
+                "stale": false,
+                "state": 2
+              },
+              {
+                "distance": 8,
+                "serial": 4,
+                "stale": false,
+                "state": 4
+              },
+              {
+                "distance": 8,
+                "serial": 5,
+                "stale": false,
+                "state": 5
+              },
+              {
+                "distance": 8,
+                "serial": 8,
+                "stale": false,
+                "state": 8
+              }
+            ],
+            "predecessor_arc": [
+              null,
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              8,
+              9
+            ],
+            "remaining_heap": [
+              [
+                9,
+                7,
+                7
+              ],
+              [
+                14,
+                3,
+                3
+              ],
+              [
+                11,
+                6,
+                6
+              ]
+            ],
+            "semantics": "tentative at first sink pop, NOT complete ALL-state distances",
+            "settled_order": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              8
+            ],
+            "state_status": [
+              "settled",
+              "settled",
+              "settled",
+              "queued",
+              "settled",
+              "settled",
+              "queued",
+              "queued",
+              "settled"
+            ],
+            "tentative_distances": [
+              0,
+              3,
+              5,
+              14,
+              8,
+              8,
+              11,
+              9,
+              8
+            ]
+          }
+        },
+        {
+          "audit": {
+            "checked": {
+              "exposure": 5,
+              "ledger": [
+                {
+                  "delay": 0,
+                  "edge": [
+                    "a",
+                    1
+                  ],
+                  "exposure": 2,
+                  "scenarios": [
+                    5,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "delay": 1,
+                  "edge": [
+                    "c",
+                    2
+                  ],
+                  "exposure": 5,
+                  "scenarios": [
+                    8,
+                    10,
+                    6
+                  ]
+                }
+              ],
+              "scenario_totals": [
+                8,
+                10,
+                6
+              ],
+              "turn_penalty": 1,
+              "worst_time": 10
+            },
+            "eligibility_budget": 11,
+            "eligible": true,
+            "state": "valid_eligible",
+            "validation_budget": 9007199254740991,
+            "validation_scope": "validation-only MAX budget copy; original input unchanged"
+          },
+          "index": 2,
+          "objective": "scenario",
+          "route": {
+            "edges": [
+              {
+                "edge_index": 1,
+                "source": "a",
+                "target": "c"
+              },
+              {
+                "edge_index": 2,
+                "source": "c",
+                "target": "d"
+              }
+            ],
+            "exposure": 5,
+            "path": [
+              "a",
+              "c",
+              "d"
+            ],
+            "scenario_totals": [
+              8,
+              10,
+              6
+            ],
+            "turn_penalty": 1,
+            "worst_time": 10
+          },
+          "scenario_index": 1,
+          "stop_ledger": {
+            "inspections": 8,
+            "pops": [
+              {
+                "distance": 0,
+                "serial": 0,
+                "stale": false,
+                "state": 0
+              },
+              {
+                "distance": 3,
+                "serial": 2,
+                "stale": false,
+                "state": 2
+              },
+              {
+                "distance": 5,
+                "serial": 1,
+                "stale": false,
+                "state": 1
+              },
+              {
+                "distance": 5,
+                "serial": 4,
+                "stale": false,
+                "state": 4
+              },
+              {
+                "distance": 10,
+                "serial": 5,
+                "stale": false,
+                "state": 5
+              },
+              {
+                "distance": 10,
+                "serial": 8,
+                "stale": false,
+                "state": 8
+              }
+            ],
+            "predecessor_arc": [
+              null,
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              8,
+              9
+            ],
+            "remaining_heap": [
+              [
+                12,
+                3,
+                3
+              ],
+              [
+                13,
+                6,
+                6
+              ],
+              [
+                16,
+                7,
+                7
+              ]
+            ],
+            "semantics": "tentative at first sink pop, NOT complete ALL-state distances",
+            "settled_order": [
+              0,
+              2,
+              1,
+              4,
+              5,
+              8
+            ],
+            "state_status": [
+              "settled",
+              "settled",
+              "settled",
+              "queued",
+              "settled",
+              "settled",
+              "queued",
+              "queued",
+              "settled"
+            ],
+            "tentative_distances": [
+              0,
+              5,
+              3,
+              12,
+              5,
+              10,
+              13,
+              16,
+              10
+            ]
+          }
+        },
+        {
+          "audit": {
+            "checked": {
+              "exposure": 5,
+              "ledger": [
+                {
+                  "delay": 0,
+                  "edge": [
+                    "a",
+                    1
+                  ],
+                  "exposure": 2,
+                  "scenarios": [
+                    5,
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "delay": 1,
+                  "edge": [
+                    "c",
+                    2
+                  ],
+                  "exposure": 5,
+                  "scenarios": [
+                    8,
+                    10,
+                    6
+                  ]
+                }
+              ],
+              "scenario_totals": [
+                8,
+                10,
+                6
+              ],
+              "turn_penalty": 1,
+              "worst_time": 10
+            },
+            "eligibility_budget": 11,
+            "eligible": true,
+            "state": "valid_eligible",
+            "validation_budget": 9007199254740991,
+            "validation_scope": "validation-only MAX budget copy; original input unchanged"
+          },
+          "index": 3,
+          "objective": "scenario",
+          "route": {
+            "edges": [
+              {
+                "edge_index": 1,
+                "source": "a",
+                "target": "c"
+              },
+              {
+                "edge_index": 2,
+                "source": "c",
+                "target": "d"
+              }
+            ],
+            "exposure": 5,
+            "path": [
+              "a",
+              "c",
+              "d"
+            ],
+            "scenario_totals": [
+              8,
+              10,
+              6
+            ],
+            "turn_penalty": 1,
+            "worst_time": 10
+          },
+          "scenario_index": 2,
+          "stop_ledger": {
+            "inspections": 10,
+            "pops": [
+              {
+                "distance": 0,
+                "serial": 0,
+                "stale": false,
+                "state": 0
+              },
+              {
+                "distance": 1,
+                "serial": 1,
+                "stale": false,
+                "state": 1
+              },
+              {
+                "distance": 1,
+                "serial": 2,
+                "stale": false,
+                "state": 2
+              },
+              {
+                "distance": 1,
+                "serial": 4,
+                "stale": false,
+                "state": 4
+              },
+              {
+                "distance": 4,
+                "serial": 3,
+                "stale": false,
+                "state": 3
+              },
+              {
+                "distance": 6,
+                "serial": 5,
+                "stale": false,
+                "state": 5
+              },
+              {
+                "distance": 6,
+                "serial": 8,
+                "stale": false,
+                "state": 8
+              }
+            ],
+            "predecessor_arc": [
+              null,
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              8,
+              9
+            ],
+            "remaining_heap": [
+              [
+                8,
+                6,
+                6
+              ],
+              [
+                9,
+                7,
+                7
+              ]
+            ],
+            "semantics": "tentative at first sink pop, NOT complete ALL-state distances",
+            "settled_order": [
+              0,
+              1,
+              2,
+              4,
+              3,
+              5,
+              8
+            ],
+            "state_status": [
+              "settled",
+              "settled",
+              "settled",
+              "settled",
+              "settled",
+              "settled",
+              "queued",
+              "queued",
+              "settled"
+            ],
+            "tentative_distances": [
+              0,
+              1,
+              1,
+              4,
+              1,
+              6,
+              8,
+              9,
+              6
+            ]
+          }
+        }
+      ],
+      "certificate": {
+        "budget": 11,
+        "charged_lambda": 1,
+        "early_exit": false,
+        "equality_exit": true,
+        "lower": 10,
+        "old_lower": 10,
+        "reason": "equality_exit",
+        "source_bound_stronger": false,
+        "upper": 10
+      },
+      "charged_proof": null,
+      "counters": {
+        "candidate_edges": 0,
+        "charged_bound_stronger": 0,
+        "charged_reverse_inspections": 0,
+        "charged_strict_exclusions": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 13,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 8,
+        "scalar_candidate_inspections": 26,
+        "scenario_reverse_inspections": 24,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "90e2bcb28072c574ad43310e6977a20b7968509c1b740d88f5767219ee9c94a7",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "c"
+          },
+          {
+            "edge_index": 2,
+            "source": "c",
+            "target": "d"
+          }
+        ],
+        "exposure": 5,
+        "path": [
+          "a",
+          "c",
+          "d"
+        ],
+        "scenario_totals": [
+          8,
+          10,
+          6
+        ],
+        "turn_penalty": 1,
+        "worst_time": 10
+      },
+      "incumbent_original_upper": 10,
+      "incumbent_selected_upper": 10,
+      "proof": {
+        "distances": [
+          5,
+          null,
+          3,
+          5,
+          null,
+          0,
+          null,
+          3,
+          0
+        ],
+        "start_minimum": 5,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "c"
+          },
+          {
+            "incoming": [
+              "c",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "c",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "c",
+              2
+            ],
+            "kind": "edge",
+            "vertex": "d"
+          },
+          {
+            "incoming": [
+              "d",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "d",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "c"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "d"
+          }
+        ]
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "c"
+          },
+          {
+            "edge_index": 2,
+            "source": "c",
+            "target": "d"
+          }
+        ],
+        "exposure": 5,
+        "path": [
+          "a",
+          "c",
+          "d"
+        ],
+        "scenario_totals": [
+          8,
+          10,
+          6
+        ],
+        "turn_penalty": 1,
+        "worst_time": 10
+      },
+      "rss_kib": 28276,
+      "scenario_proof": {
+        "distances": [
+          [
+            8,
+            null,
+            3,
+            8,
+            null,
+            0,
+            null,
+            2,
+            0
+          ],
+          [
+            10,
+            null,
+            7,
+            10,
+            null,
+            0,
+            null,
+            6,
+            0
+          ],
+          [
+            6,
+            null,
+            5,
+            6,
+            null,
+            0,
+            null,
+            4,
+            0
+          ]
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "c"
+          },
+          {
+            "incoming": [
+              "c",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "c",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "c",
+              2
+            ],
+            "kind": "edge",
+            "vertex": "d"
+          },
+          {
+            "incoming": [
+              "d",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "d",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "c"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "d"
+          }
+        ]
+      },
+      "selected_candidate": 0,
+      "solve_seconds": 0.002556148996518459,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.09993348699936178
+  },
+  "slot": 137
+}
