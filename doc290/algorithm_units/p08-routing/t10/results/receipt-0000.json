@@ -1,0 +1,207 @@
+{
+  "entry": {
+    "case_index": 0,
+    "expected": "PRESERVED",
+    "input_sha256": "b60e9630379181b1cb09207917f99c2289e59d6a800aec8f6e507108a4bdba23",
+    "name": "A"
+  },
+  "identity": {
+    "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "PRESERVED"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0005845740015502088, \"identity\": {\"manifest_sha256\": \"ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"completed_statement\": {\"budget\": 10, \"distances\": [null, null, 0, 0], \"forbidden\": [[[\"a\", 0], [\"b\", 0]]], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"start\": \"a\"}, \"downstream\": {\"budget\": 10, \"distances\": [null, null, 0, 0], \"exposure_arcs\": [{\"delay_ignored\": 0, \"edge\": [\"a\", 0], \"exposure\": 1, \"source\": 0, \"target\": 1}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 2, \"target\": 3}], \"reason\": \"no allowed turn path\", \"source_minimum\": null, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_NO_TURN_PATH\"}, \"original\": {\"budget\": 10, \"distances\": [null, null, 0, 0], \"forbidden\": [[[\"a\", 0], [\"b\", 0]]], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"start\": \"a\"}, \"proof_source\": \"supplied\", \"reason\": \"supplied proof checked and preserved\", \"status\": \"PRESERVED\"}, \"rss_kib\": 23308, \"solve_seconds\": 0.00032734200067352504, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0005845740015502088,
+      "identity": {
+        "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "completed_statement": {
+          "budget": 10,
+          "distances": [
+            null,
+            null,
+            0,
+            0
+          ],
+          "forbidden": [
+            [
+              [
+                "a",
+                0
+              ],
+              [
+                "b",
+                0
+              ]
+            ]
+          ],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "downstream": {
+          "budget": 10,
+          "distances": [
+            null,
+            null,
+            0,
+            0
+          ],
+          "exposure_arcs": [
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "exposure": 1,
+              "source": 0,
+              "target": 1
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 2,
+              "target": 3
+            }
+          ],
+          "reason": "no allowed turn path",
+          "source_minimum": null,
+          "states": [
+            {
+              "incoming": null,
+              "kind": "source",
+              "vertex": "a"
+            },
+            {
+              "incoming": [
+                "a",
+                0
+              ],
+              "kind": "edge",
+              "vertex": "b"
+            },
+            {
+              "incoming": [
+                "b",
+                0
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": null,
+              "kind": "goal",
+              "vertex": "g"
+            }
+          ],
+          "status": "CERTIFIED_NO_TURN_PATH"
+        },
+        "original": {
+          "budget": 10,
+          "distances": [
+            null,
+            null,
+            0,
+            0
+          ],
+          "forbidden": [
+            [
+              [
+                "a",
+                0
+              ],
+              [
+                "b",
+                0
+              ]
+            ]
+          ],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "proof_source": "supplied",
+        "reason": "supplied proof checked and preserved",
+        "status": "PRESERVED"
+      },
+      "rss_kib": 23308,
+      "solve_seconds": 0.00032734200067352504,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07746182800474344
+  },
+  "slot": 0
+}

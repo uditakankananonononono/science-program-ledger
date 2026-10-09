@@ -1,0 +1,210 @@
+{
+  "entry": {
+    "case_index": 12,
+    "expected": "PRESERVED",
+    "input_sha256": "f1abd997103fbf7eb75ce06708def9b5d87d7f83af0b4e10c722c44231899a75",
+    "name": "D"
+  },
+  "identity": {
+    "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "PRESERVED"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0005669070014846511, \"identity\": {\"manifest_sha256\": \"ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"completed_statement\": {\"budget\": 0, \"distances\": [0, 3, 0, 0], \"forbidden\": [], \"goal\": \"a\", \"graph\": {\"a\": [{\"exposure\": 3, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 3, \"scenario_times\": [1, 1], \"target\": \"a\", \"time\": 1}]}, \"penalties\": [], \"start\": \"a\"}, \"downstream\": {\"budget\": 0, \"distances\": [0, 3, 0, 0], \"exposure_arcs\": [{\"delay_ignored\": 0, \"edge\": [\"a\", 0], \"exposure\": 3, \"source\": 0, \"target\": 1}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 0, \"target\": 3}, {\"delay_ignored\": 0, \"edge\": [\"b\", 0], \"exposure\": 3, \"source\": 1, \"target\": 2}, {\"delay_ignored\": 0, \"edge\": [\"a\", 0], \"exposure\": 3, \"source\": 2, \"target\": 1}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 2, \"target\": 3}], \"reason\": \"minimum exposure feasible, no optimal scenario claim\", \"source_minimum\": 0, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"a\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"a\"}], \"status\": \"UNAVAILABLE\"}, \"original\": {\"budget\": 0, \"distances\": [0, 3, 0, 0], \"forbidden\": [], \"goal\": \"a\", \"graph\": {\"a\": [{\"exposure\": 3, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 3, \"scenario_times\": [1, 1], \"target\": \"a\", \"time\": 1}]}, \"penalties\": [], \"start\": \"a\"}, \"proof_source\": \"supplied\", \"reason\": \"supplied proof checked and preserved\", \"status\": \"PRESERVED\"}, \"rss_kib\": 23200, \"solve_seconds\": 0.00036784899566555396, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0005669070014846511,
+      "identity": {
+        "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "completed_statement": {
+          "budget": 0,
+          "distances": [
+            0,
+            3,
+            0,
+            0
+          ],
+          "forbidden": [],
+          "goal": "a",
+          "graph": {
+            "a": [
+              {
+                "exposure": 3,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 3,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "a",
+                "time": 1
+              }
+            ]
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "downstream": {
+          "budget": 0,
+          "distances": [
+            0,
+            3,
+            0,
+            0
+          ],
+          "exposure_arcs": [
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "exposure": 3,
+              "source": 0,
+              "target": 1
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 0,
+              "target": 3
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "b",
+                0
+              ],
+              "exposure": 3,
+              "source": 1,
+              "target": 2
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "exposure": 3,
+              "source": 2,
+              "target": 1
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 2,
+              "target": 3
+            }
+          ],
+          "reason": "minimum exposure feasible, no optimal scenario claim",
+          "source_minimum": 0,
+          "states": [
+            {
+              "incoming": null,
+              "kind": "source",
+              "vertex": "a"
+            },
+            {
+              "incoming": [
+                "a",
+                0
+              ],
+              "kind": "edge",
+              "vertex": "b"
+            },
+            {
+              "incoming": [
+                "b",
+                0
+              ],
+              "kind": "edge",
+              "vertex": "a"
+            },
+            {
+              "incoming": null,
+              "kind": "goal",
+              "vertex": "a"
+            }
+          ],
+          "status": "UNAVAILABLE"
+        },
+        "original": {
+          "budget": 0,
+          "distances": [
+            0,
+            3,
+            0,
+            0
+          ],
+          "forbidden": [],
+          "goal": "a",
+          "graph": {
+            "a": [
+              {
+                "exposure": 3,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 3,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "a",
+                "time": 1
+              }
+            ]
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "proof_source": "supplied",
+        "reason": "supplied proof checked and preserved",
+        "status": "PRESERVED"
+      },
+      "rss_kib": 23200,
+      "solve_seconds": 0.00036784899566555396,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07677022700227099
+  },
+  "slot": 12
+}

@@ -1,0 +1,254 @@
+{
+  "entry": {
+    "case_index": 21,
+    "expected": "COMPLETED",
+    "input_sha256": "45110d62a28615a9b54ef8f5d33ed464c78673bd2277969af76aca48276d7a38",
+    "name": "B:null"
+  },
+  "identity": {
+    "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "COMPLETED"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0005858799995621666, \"identity\": {\"manifest_sha256\": \"ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"completed_statement\": {\"budget\": 1, \"distances\": [2, 1, 0, 0], \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"start\": \"a\"}, \"distances\": [2, 1, 0, 0], \"downstream\": {\"budget\": 1, \"distances\": [2, 1, 0, 0], \"exposure_arcs\": [{\"delay_ignored\": 0, \"edge\": [\"a\", 0], \"exposure\": 1, \"source\": 0, \"target\": 1}, {\"delay_ignored\": 0, \"edge\": [\"b\", 0], \"exposure\": 1, \"source\": 1, \"target\": 2}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 2, \"target\": 3}], \"reason\": \"all allowed paths over exposure budget\", \"source_minimum\": 2, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_BUDGET_INFEASIBLE\"}, \"exposure_arcs\": [{\"delay_ignored\": 0, \"edge\": [\"a\", 0], \"exposure\": 1, \"source\": 0, \"target\": 1}, {\"delay_ignored\": 0, \"edge\": [\"b\", 0], \"exposure\": 1, \"source\": 1, \"target\": 2}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 2, \"target\": 3}], \"original\": {\"budget\": 1, \"distances\": null, \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"start\": \"a\"}, \"proof_source\": \"completed\", \"reason\": \"full exact exposure proof completed, downstream status separate\", \"source_minimum\": 2, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"COMPLETED\"}, \"rss_kib\": 23468, \"solve_seconds\": 0.00034063399652950466, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0005858799995621666,
+      "identity": {
+        "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "completed_statement": {
+          "budget": 1,
+          "distances": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "distances": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "downstream": {
+          "budget": 1,
+          "distances": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "exposure_arcs": [
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "exposure": 1,
+              "source": 0,
+              "target": 1
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "b",
+                0
+              ],
+              "exposure": 1,
+              "source": 1,
+              "target": 2
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 2,
+              "target": 3
+            }
+          ],
+          "reason": "all allowed paths over exposure budget",
+          "source_minimum": 2,
+          "states": [
+            {
+              "incoming": null,
+              "kind": "source",
+              "vertex": "a"
+            },
+            {
+              "incoming": [
+                "a",
+                0
+              ],
+              "kind": "edge",
+              "vertex": "b"
+            },
+            {
+              "incoming": [
+                "b",
+                0
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": null,
+              "kind": "goal",
+              "vertex": "g"
+            }
+          ],
+          "status": "CERTIFIED_BUDGET_INFEASIBLE"
+        },
+        "exposure_arcs": [
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "source": 0,
+            "target": 1
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "exposure": 1,
+            "source": 1,
+            "target": 2
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 2,
+            "target": 3
+          }
+        ],
+        "original": {
+          "budget": 1,
+          "distances": null,
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "proof_source": "completed",
+        "reason": "full exact exposure proof completed, downstream status separate",
+        "source_minimum": 2,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "COMPLETED"
+      },
+      "rss_kib": 23468,
+      "solve_seconds": 0.00034063399652950466,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07497526299994206
+  },
+  "slot": 21
+}

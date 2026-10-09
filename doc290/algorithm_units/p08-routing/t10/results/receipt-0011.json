@@ -1,0 +1,99 @@
+{
+  "entry": {
+    "case_index": 11,
+    "expected": "INVALID",
+    "input_sha256": "4742c283a525b725fbcf3a53ef215df2bf185a912d0ed9179c0b88a83bc43926",
+    "name": "C:budget"
+  },
+  "identity": {
+    "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "INVALID"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0006478040013462305, \"identity\": {\"manifest_sha256\": \"ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"original\": {\"budget\": true, \"distances\": [2, 1, 0, 0], \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [{\"delay\": 7, \"incoming\": [\"a\", 0], \"outgoing\": [\"b\", 0]}], \"start\": \"a\"}, \"reason\": \"integer cost/index domain\", \"status\": \"INVALID\"}, \"rss_kib\": 23624, \"solve_seconds\": 0.0003447130002314225, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0006478040013462305,
+      "identity": {
+        "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "original": {
+          "budget": true,
+          "distances": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [
+            {
+              "delay": 7,
+              "incoming": [
+                "a",
+                0
+              ],
+              "outgoing": [
+                "b",
+                0
+              ]
+            }
+          ],
+          "start": "a"
+        },
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "rss_kib": 23624,
+      "solve_seconds": 0.0003447130002314225,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07880020399898058
+  },
+  "slot": 11
+}

@@ -1,0 +1,103 @@
+{
+  "entry": {
+    "case_index": 10,
+    "expected": "INVALID",
+    "input_sha256": "1def5b174789e3025d6e49f6cef676b76f0e94fc062e8a52f71654a45280cf15",
+    "name": "C:source"
+  },
+  "identity": {
+    "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "INVALID"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0005842840037075803, \"identity\": {\"manifest_sha256\": \"ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"downstream\": {\"reason\": \"independent all-state distance mismatch\", \"status\": \"INVALID\"}, \"original\": {\"budget\": 2, \"distances\": [3, 1, 0, 0], \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [{\"delay\": 7, \"incoming\": [\"a\", 0], \"outgoing\": [\"b\", 0]}], \"start\": \"a\"}, \"reason\": \"invalid supplied proof\", \"status\": \"INVALID\"}, \"rss_kib\": 23624, \"solve_seconds\": 0.0002955170057248324, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0005842840037075803,
+      "identity": {
+        "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "downstream": {
+          "reason": "independent all-state distance mismatch",
+          "status": "INVALID"
+        },
+        "original": {
+          "budget": 2,
+          "distances": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [
+            {
+              "delay": 7,
+              "incoming": [
+                "a",
+                0
+              ],
+              "outgoing": [
+                "b",
+                0
+              ]
+            }
+          ],
+          "start": "a"
+        },
+        "reason": "invalid supplied proof",
+        "status": "INVALID"
+      },
+      "rss_kib": 23624,
+      "solve_seconds": 0.0002955170057248324,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07574928500253009
+  },
+  "slot": 10
+}

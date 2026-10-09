@@ -1,0 +1,619 @@
+{
+  "entry": {
+    "case_index": 27,
+    "expected": "COMPLETED",
+    "input_sha256": "eb0a308ed3b82a02a1661c1efe0a81c5fe067788535b5fb1ade0a729a52b00d4",
+    "name": "control10:larger"
+  },
+  "identity": {
+    "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "COMPLETED"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0005801259976578876, \"identity\": {\"manifest_sha256\": \"ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"completed_statement\": {\"budget\": 1, \"distances\": [1, 0, 0, 0, 0, 0, 0, 0, 0], \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 2, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 3, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 4, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 5, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 6, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 7, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"start\": \"a\"}, \"distances\": [1, 0, 0, 0, 0, 0, 0, 0, 0], \"downstream\": {\"budget\": 1, \"distances\": [1, 0, 0, 0, 0, 0, 0, 0, 0], \"exposure_arcs\": [{\"delay_ignored\": 0, \"edge\": [\"a\", 0], \"exposure\": 1, \"source\": 0, \"target\": 1}, {\"delay_ignored\": 0, \"edge\": [\"a\", 1], \"exposure\": 2, \"source\": 0, \"target\": 2}, {\"delay_ignored\": 0, \"edge\": [\"a\", 2], \"exposure\": 3, \"source\": 0, \"target\": 3}, {\"delay_ignored\": 0, \"edge\": [\"a\", 3], \"exposure\": 4, \"source\": 0, \"target\": 4}, {\"delay_ignored\": 0, \"edge\": [\"a\", 4], \"exposure\": 5, \"source\": 0, \"target\": 5}, {\"delay_ignored\": 0, \"edge\": [\"a\", 5], \"exposure\": 6, \"source\": 0, \"target\": 6}, {\"delay_ignored\": 0, \"edge\": [\"a\", 6], \"exposure\": 7, \"source\": 0, \"target\": 7}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 1, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 2, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 3, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 4, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 5, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 6, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 7, \"target\": 8}], \"reason\": \"minimum exposure feasible, no optimal scenario claim\", \"source_minimum\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 3], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 4], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 5], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 6], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"UNAVAILABLE\"}, \"exposure_arcs\": [{\"delay_ignored\": 0, \"edge\": [\"a\", 0], \"exposure\": 1, \"source\": 0, \"target\": 1}, {\"delay_ignored\": 0, \"edge\": [\"a\", 1], \"exposure\": 2, \"source\": 0, \"target\": 2}, {\"delay_ignored\": 0, \"edge\": [\"a\", 2], \"exposure\": 3, \"source\": 0, \"target\": 3}, {\"delay_ignored\": 0, \"edge\": [\"a\", 3], \"exposure\": 4, \"source\": 0, \"target\": 4}, {\"delay_ignored\": 0, \"edge\": [\"a\", 4], \"exposure\": 5, \"source\": 0, \"target\": 5}, {\"delay_ignored\": 0, \"edge\": [\"a\", 5], \"exposure\": 6, \"source\": 0, \"target\": 6}, {\"delay_ignored\": 0, \"edge\": [\"a\", 6], \"exposure\": 7, \"source\": 0, \"target\": 7}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 1, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 2, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 3, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 4, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 5, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 6, \"target\": 8}, {\"delay_ignored\": 0, \"edge\": null, \"exposure\": 0, \"source\": 7, \"target\": 8}], \"original\": {\"budget\": 1, \"distances\": null, \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 2, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 3, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 4, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 5, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 6, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 7, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"start\": \"a\"}, \"proof_source\": \"completed\", \"reason\": \"full exact exposure proof completed, downstream status separate\", \"source_minimum\": 1, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 2], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 3], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 4], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 5], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"a\", 6], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"COMPLETED\"}, \"rss_kib\": 23820, \"solve_seconds\": 0.00042673599818954244, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0005801259976578876,
+      "identity": {
+        "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "completed_statement": {
+          "budget": 1,
+          "distances": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 2,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 3,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 4,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 5,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 6,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 7,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "distances": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "downstream": {
+          "budget": 1,
+          "distances": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exposure_arcs": [
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "exposure": 1,
+              "source": 0,
+              "target": 1
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                1
+              ],
+              "exposure": 2,
+              "source": 0,
+              "target": 2
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                2
+              ],
+              "exposure": 3,
+              "source": 0,
+              "target": 3
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                3
+              ],
+              "exposure": 4,
+              "source": 0,
+              "target": 4
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                4
+              ],
+              "exposure": 5,
+              "source": 0,
+              "target": 5
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                5
+              ],
+              "exposure": 6,
+              "source": 0,
+              "target": 6
+            },
+            {
+              "delay_ignored": 0,
+              "edge": [
+                "a",
+                6
+              ],
+              "exposure": 7,
+              "source": 0,
+              "target": 7
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 1,
+              "target": 8
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 2,
+              "target": 8
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 3,
+              "target": 8
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 4,
+              "target": 8
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 5,
+              "target": 8
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 6,
+              "target": 8
+            },
+            {
+              "delay_ignored": 0,
+              "edge": null,
+              "exposure": 0,
+              "source": 7,
+              "target": 8
+            }
+          ],
+          "reason": "minimum exposure feasible, no optimal scenario claim",
+          "source_minimum": 1,
+          "states": [
+            {
+              "incoming": null,
+              "kind": "source",
+              "vertex": "a"
+            },
+            {
+              "incoming": [
+                "a",
+                0
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": [
+                "a",
+                1
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": [
+                "a",
+                2
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": [
+                "a",
+                3
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": [
+                "a",
+                4
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": [
+                "a",
+                5
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": [
+                "a",
+                6
+              ],
+              "kind": "edge",
+              "vertex": "g"
+            },
+            {
+              "incoming": null,
+              "kind": "goal",
+              "vertex": "g"
+            }
+          ],
+          "status": "UNAVAILABLE"
+        },
+        "exposure_arcs": [
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "source": 0,
+            "target": 1
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "exposure": 2,
+            "source": 0,
+            "target": 2
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              2
+            ],
+            "exposure": 3,
+            "source": 0,
+            "target": 3
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              3
+            ],
+            "exposure": 4,
+            "source": 0,
+            "target": 4
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              4
+            ],
+            "exposure": 5,
+            "source": 0,
+            "target": 5
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              5
+            ],
+            "exposure": 6,
+            "source": 0,
+            "target": 6
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              6
+            ],
+            "exposure": 7,
+            "source": 0,
+            "target": 7
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 1,
+            "target": 8
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 2,
+            "target": 8
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 3,
+            "target": 8
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 4,
+            "target": 8
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 5,
+            "target": 8
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 6,
+            "target": 8
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 7,
+            "target": 8
+          }
+        ],
+        "original": {
+          "budget": 1,
+          "distances": null,
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 2,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 3,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 4,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 5,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 6,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 7,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "start": "a"
+        },
+        "proof_source": "completed",
+        "reason": "full exact exposure proof completed, downstream status separate",
+        "source_minimum": 1,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              2
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              3
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              4
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              5
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              6
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "COMPLETED"
+      },
+      "rss_kib": 23820,
+      "solve_seconds": 0.00042673599818954244,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.08534685300401179
+  },
+  "slot": 27
+}

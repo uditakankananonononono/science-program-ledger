@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "case_index": 19,
+    "expected": "INVALID",
+    "input_sha256": "191aa207b443bf823ff7a3bc2ccd5ac3734db077b221283285609769d3460900",
+    "name": "control:rule"
+  },
+  "identity": {
+    "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "INVALID"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0005910809995839372, \"identity\": {\"manifest_sha256\": \"ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"original\": {\"budget\": 2, \"distances\": [2, 1, 0, 0], \"forbidden\": [[[\"a\", 0], [\"a\", 0]]], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [{\"delay\": 7, \"incoming\": [\"a\", 0], \"outgoing\": [\"b\", 0]}], \"start\": \"a\"}, \"reason\": \"nonconsecutive rule\", \"status\": \"INVALID\"}, \"rss_kib\": 23460, \"solve_seconds\": 0.00024425499577773735, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0005910809995839372,
+      "identity": {
+        "manifest_sha256": "ee50022395c301764a688a9afbe2e823ef6501d6af552fcb5a7dc5c6d7dc8361",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "original": {
+          "budget": 2,
+          "distances": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "forbidden": [
+            [
+              [
+                "a",
+                0
+              ],
+              [
+                "a",
+                0
+              ]
+            ]
+          ],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [
+            {
+              "delay": 7,
+              "incoming": [
+                "a",
+                0
+              ],
+              "outgoing": [
+                "b",
+                0
+              ]
+            }
+          ],
+          "start": "a"
+        },
+        "reason": "nonconsecutive rule",
+        "status": "INVALID"
+      },
+      "rss_kib": 23460,
+      "solve_seconds": 0.00024425499577773735,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07454555699951015
+  },
+  "slot": 19
+}

@@ -1,0 +1,87 @@
+{
+  "agreements": 32,
+  "chunks": [
+    {
+      "ceiling": 30,
+      "elapsed": 0.44578597999498015,
+      "from": 0,
+      "headroom": 7,
+      "launched": 4,
+      "next": 4
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.4865785590009182,
+      "from": 4,
+      "headroom": 7,
+      "launched": 4,
+      "next": 8
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.4763167990022339,
+      "from": 8,
+      "headroom": 7,
+      "launched": 4,
+      "next": 12
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.5193385929960641,
+      "from": 12,
+      "headroom": 7,
+      "launched": 4,
+      "next": 16
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.4674446339995484,
+      "from": 16,
+      "headroom": 7,
+      "launched": 4,
+      "next": 20
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.4761544240027433,
+      "from": 20,
+      "headroom": 7,
+      "launched": 4,
+      "next": 24
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.5025758400006453,
+      "from": 24,
+      "headroom": 7,
+      "launched": 4,
+      "next": 28
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.5278629000022192,
+      "from": 28,
+      "headroom": 7,
+      "launched": 4,
+      "next": 32
+    }
+  ],
+  "classes": {
+    "COMPLETED": 12,
+    "INVALID": 16,
+    "PRESERVED": 4
+  },
+  "corrupted_supplied_downstream_classes": {
+    "INVALID": 10
+  },
+  "corrupted_supplied_downstream_count": 10,
+  "finalize_elapsed_seconds": 0.09817263599688886,
+  "freeze": "6b9e1476c16ad40abab40d760f8b735e524c6b95",
+  "rows": 32,
+  "valid_downstream_classes": {
+    "CERTIFIED_BUDGET_INFEASIBLE": 3,
+    "CERTIFIED_NO_TURN_PATH": 4,
+    "UNAVAILABLE": 9
+  },
+  "valid_downstream_count": 16
+}
