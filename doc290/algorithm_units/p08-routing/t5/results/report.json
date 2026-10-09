@@ -1,0 +1,512 @@
+{
+  "agreement_count": 20,
+  "baseline": [
+    {
+      "independent_expanded_state_minimum_exposure": null,
+      "name": "A"
+    },
+    {
+      "independent_expanded_state_minimum_exposure": 2,
+      "name": "B"
+    },
+    {
+      "independent_expanded_state_minimum_exposure": 2,
+      "name": "C"
+    },
+    {
+      "independent_expanded_state_minimum_exposure": 0,
+      "name": "D"
+    }
+  ],
+  "row_count": 20,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_NO_TURN_PATH",
+      "input_sha256": "ac22832e6c3a2a04950244189a1b1f4d9eec4aae8e72c488bbb0cac2ebc0a90b",
+      "name": "A",
+      "result": {
+        "budget": 10,
+        "distances": [
+          null,
+          null,
+          0,
+          0
+        ],
+        "exposure_arcs": [
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "source": 0,
+            "target": 1
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 2,
+            "target": 3
+          }
+        ],
+        "reason": "no allowed turn path",
+        "source_minimum": null,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_NO_TURN_PATH"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "dea663da42ebaf3aa6c7a487bc0871b851dae444e887b6ea5aab793945d52d6b",
+      "name": "A:sink",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "1e839d4914e4f1add8a2ef12c8c1ff21d97a8dc2db9e306abd2ada2dd0fc4dd1",
+      "name": "A:source",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "fde0690451d590a4f1213e0c1aa13f9d1e5d81dae369c37f395171850499b06e",
+      "name": "A:budget",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_BUDGET_INFEASIBLE",
+      "input_sha256": "180d5717234f43b963a35e2cc9cf5bc667afe37b526051b97f869f11cec2f5c7",
+      "name": "B",
+      "result": {
+        "budget": 1,
+        "distances": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "exposure_arcs": [
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "source": 0,
+            "target": 1
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "exposure": 1,
+            "source": 1,
+            "target": 2
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 2,
+            "target": 3
+          }
+        ],
+        "reason": "all allowed paths over exposure budget",
+        "source_minimum": 2,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_BUDGET_INFEASIBLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c06c82062173ef11513012a1f33c6803325bc42c5e3cb4b51a80d8a5849e1772",
+      "name": "B:sink",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "54af03ba8e17c559d7fce39e4cc06df1c3956dddcd977f343a807fa322f04272",
+      "name": "B:source",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "32ec4eae2e64516586d364380563ada10b25128dc1ddb4c7b807abd0b332ea4c",
+      "name": "B:budget",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "e32f34cb5324a9da8de356b007ad305e6e50934f8536c9b5ba71bd399e072d65",
+      "name": "C",
+      "result": {
+        "budget": 2,
+        "distances": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "exposure_arcs": [
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "source": 0,
+            "target": 1
+          },
+          {
+            "delay_ignored": 7,
+            "edge": [
+              "b",
+              0
+            ],
+            "exposure": 1,
+            "source": 1,
+            "target": 2
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 2,
+            "target": 3
+          }
+        ],
+        "reason": "minimum exposure feasible, no optimal scenario claim",
+        "source_minimum": 2,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "dc048d10455eda51aa7eb4c0ddf239abae49904257b76255003aaa25d16fe6de",
+      "name": "C:sink",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "1def5b174789e3025d6e49f6cef676b76f0e94fc062e8a52f71654a45280cf15",
+      "name": "C:source",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "4742c283a525b725fbcf3a53ef215df2bf185a912d0ed9179c0b88a83bc43926",
+      "name": "C:budget",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "a75de60a766a6c0f535da344add01a29e1ac939f6dc536788d99fd1420be11ca",
+      "name": "D",
+      "result": {
+        "budget": 0,
+        "distances": [
+          0,
+          3,
+          0,
+          0
+        ],
+        "exposure_arcs": [
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 3,
+            "source": 0,
+            "target": 1
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 0,
+            "target": 3
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "exposure": 3,
+            "source": 1,
+            "target": 2
+          },
+          {
+            "delay_ignored": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 3,
+            "source": 2,
+            "target": 1
+          },
+          {
+            "delay_ignored": 0,
+            "edge": null,
+            "exposure": 0,
+            "source": 2,
+            "target": 3
+          }
+        ],
+        "reason": "minimum exposure feasible, no optimal scenario claim",
+        "source_minimum": 0,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "a"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "a"
+          }
+        ],
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "636b7a2f80d397d6e5d3071e80f0c4c6156f97e482a730e2e118a9006801ee06",
+      "name": "D:sink",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "ffbd041a578167064d3848eb24d9903e0b5769469a175d4c82657b24e6ee499c",
+      "name": "D:source",
+      "result": {
+        "reason": "independent all-state distance mismatch",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "2378b41fc9dc246b34a29a3c9ebac91aa645c7b3fe3491ad4e616b3fe10a44aa",
+      "name": "D:budget",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "e662fa76a6a41899292390084dc5808670288cb98bd6a0e2e54e41c5e23b7e4f",
+      "name": "control:null",
+      "result": {
+        "reason": "missing certificate after model checks",
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c10e6e06e7c118a8a71b36afe235d3d0d8b4af9ec2ae5ba1f636b1aef4ad1d71",
+      "name": "control:drop",
+      "result": {
+        "reason": "full state distance dimension",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "29aedc420b1a75d030bcffadcfccb06a3f6702ae208589ee3f2b33e9b0cebc10",
+      "name": "control:bool",
+      "result": {
+        "reason": "state distance cap/type",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "191aa207b443bf823ff7a3bc2ccd5ac3734db077b221283285609769d3460900",
+      "name": "control:rule",
+      "result": {
+        "reason": "nonconsecutive rule",
+        "status": "INVALID"
+      },
+      "warnings": []
+    }
+  ],
+  "scope": "turn-state exact exposure infeasibility certificate is sufficient, not complete/search/clinical"
+}
