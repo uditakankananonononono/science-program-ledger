@@ -1,0 +1,1071 @@
+{
+  "agreement_count": 20,
+  "baseline": [
+    {
+      "certificate_check_with_supplied_potential": {
+        "budget_charge": "2/1",
+        "gap": "0/1",
+        "lower_bound": "4/1",
+        "primal": {
+          "exposure": 2,
+          "ledger": [
+            {
+              "cumulative_exposure": 1,
+              "cumulative_scenarios": [
+                1,
+                1
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "previous": null,
+              "target": "b"
+            },
+            {
+              "cumulative_exposure": 2,
+              "cumulative_scenarios": [
+                4,
+                4
+              ],
+              "delay": 2,
+              "edge": [
+                "b",
+                0
+              ],
+              "previous": [
+                "a",
+                0
+              ],
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            4,
+            4
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 2,
+          "worst_time": 4
+        },
+        "reason": "matching feasible worst/integrated bound",
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_INTEGRATED",
+        "transition_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 1,
+            "weighted_cost": "2/1"
+          },
+          {
+            "delay": 2,
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "source": 1,
+            "target": 2,
+            "weighted_cost": "4/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 2,
+            "target": 3,
+            "weighted_cost": "0/1"
+          }
+        ],
+        "weighted_route_cost": "6/1",
+        "weighted_scenario_sum": "4/1"
+      },
+      "name": "A",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          4,
+          4
+        ],
+        "turn_penalty": 2,
+        "worst_time": 4
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "budget_charge": "1/1",
+        "gap": "0/1",
+        "lower_bound": "7/1",
+        "primal": {
+          "exposure": 2,
+          "ledger": [
+            {
+              "cumulative_exposure": 1,
+              "cumulative_scenarios": [
+                1,
+                5
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "previous": null,
+              "target": "b"
+            },
+            {
+              "cumulative_exposure": 2,
+              "cumulative_scenarios": [
+                7,
+                7
+              ],
+              "delay": 1,
+              "edge": [
+                "b",
+                0
+              ],
+              "previous": [
+                "a",
+                0
+              ],
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            7,
+            7
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 1,
+          "worst_time": 7
+        },
+        "reason": "matching feasible worst/integrated bound",
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_INTEGRATED",
+        "transition_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 1,
+            "weighted_cost": "7/2"
+          },
+          {
+            "delay": 1,
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "source": 1,
+            "target": 2,
+            "weighted_cost": "9/2"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 2,
+            "target": 3,
+            "weighted_cost": "0/1"
+          }
+        ],
+        "weighted_route_cost": "8/1",
+        "weighted_scenario_sum": "7/1"
+      },
+      "name": "B",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          7,
+          7
+        ],
+        "turn_penalty": 1,
+        "worst_time": 7
+      }
+    },
+    {
+      "exception": "unhashable type: 'list'",
+      "exception_type": "TypeError",
+      "name": "C"
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "budget_charge": "1/1",
+        "gap": "1/1",
+        "lower_bound": "2/1",
+        "primal": {
+          "exposure": 0,
+          "ledger": [
+            {
+              "cumulative_exposure": 0,
+              "cumulative_scenarios": [
+                3,
+                3
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                1
+              ],
+              "previous": null,
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            3,
+            3
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 0,
+          "worst_time": 3
+        },
+        "reason": "feasible incomplete integrated bound",
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "UNAVAILABLE",
+        "transition_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 1,
+            "weighted_cost": "3/1"
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 2,
+            "weighted_cost": "3/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 1,
+            "target": 3,
+            "weighted_cost": "0/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 2,
+            "target": 3,
+            "weighted_cost": "0/1"
+          }
+        ],
+        "weighted_route_cost": "3/1",
+        "weighted_scenario_sum": "3/1"
+      },
+      "name": "D",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          3,
+          3
+        ],
+        "turn_penalty": 0,
+        "worst_time": 3
+      }
+    }
+  ],
+  "row_count": 20,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_INTEGRATED",
+      "input_sha256": "eca8e494083d071f6120993aa03f10536afab94d1b8aea247401551c59c28241",
+      "name": "A",
+      "result": {
+        "budget_charge": "2/1",
+        "gap": "0/1",
+        "lower_bound": "4/1",
+        "primal": {
+          "exposure": 2,
+          "ledger": [
+            {
+              "cumulative_exposure": 1,
+              "cumulative_scenarios": [
+                1,
+                1
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "previous": null,
+              "target": "b"
+            },
+            {
+              "cumulative_exposure": 2,
+              "cumulative_scenarios": [
+                4,
+                4
+              ],
+              "delay": 2,
+              "edge": [
+                "b",
+                0
+              ],
+              "previous": [
+                "a",
+                0
+              ],
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            4,
+            4
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 2,
+          "worst_time": 4
+        },
+        "reason": "matching feasible worst/integrated bound",
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_INTEGRATED",
+        "transition_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 1,
+            "weighted_cost": "2/1"
+          },
+          {
+            "delay": 2,
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "source": 1,
+            "target": 2,
+            "weighted_cost": "4/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 2,
+            "target": 3,
+            "weighted_cost": "0/1"
+          }
+        ],
+        "weighted_route_cost": "6/1",
+        "weighted_scenario_sum": "4/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "33fadfe20418d1e6f917ccdae818dfc3e6b35da3de595ebec0b72e223d6c9f5e",
+      "name": "A:turn",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b3c3df944f3f954a269f1b3b0ac5211779db0c6d9ccf5e84f91de44376a7539d",
+      "name": "A:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "4eaa07c9ef84dcc390dd416039e56ded542515ca05d51baff0ebabdf9e9c8d5f",
+      "name": "A:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_INTEGRATED",
+      "input_sha256": "c843bff69198ca1de3bc87bba8db25e7fac2f1a7c1e57be4e616485c5a2e3ec7",
+      "name": "B",
+      "result": {
+        "budget_charge": "1/1",
+        "gap": "0/1",
+        "lower_bound": "7/1",
+        "primal": {
+          "exposure": 2,
+          "ledger": [
+            {
+              "cumulative_exposure": 1,
+              "cumulative_scenarios": [
+                1,
+                5
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "previous": null,
+              "target": "b"
+            },
+            {
+              "cumulative_exposure": 2,
+              "cumulative_scenarios": [
+                7,
+                7
+              ],
+              "delay": 1,
+              "edge": [
+                "b",
+                0
+              ],
+              "previous": [
+                "a",
+                0
+              ],
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            7,
+            7
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 1,
+          "worst_time": 7
+        },
+        "reason": "matching feasible worst/integrated bound",
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_INTEGRATED",
+        "transition_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 1,
+            "weighted_cost": "7/2"
+          },
+          {
+            "delay": 1,
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "source": 1,
+            "target": 2,
+            "weighted_cost": "9/2"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 2,
+            "target": 3,
+            "weighted_cost": "0/1"
+          }
+        ],
+        "weighted_route_cost": "8/1",
+        "weighted_scenario_sum": "7/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "00c8f748d9ec776c261de4b717cde8c8c5793d5e9d33fb092806cd191ae5fd09",
+      "name": "B:turn",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b23cb4da7ed7feb900fa34608e5168a3450a4406a1bd223c4ae3e6ea5f9bcfbd",
+      "name": "B:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "dbbb7730cec1cc3585ade8c283d31de964632ee9e8ea9d774dca02fac543b364",
+      "name": "B:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_INTEGRATED",
+      "input_sha256": "0132f94d807da30ad3292b44757317a874a410e724f6e1f7cb60b91130a596d8",
+      "name": "C",
+      "result": {
+        "budget_charge": "0/1",
+        "gap": "0/1",
+        "lower_bound": "5/1",
+        "primal": {
+          "exposure": 0,
+          "ledger": [
+            {
+              "cumulative_exposure": 0,
+              "cumulative_scenarios": [
+                5,
+                5
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                1
+              ],
+              "previous": null,
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            5,
+            5
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 0,
+          "worst_time": 5
+        },
+        "reason": "matching feasible worst/integrated bound",
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_INTEGRATED",
+        "transition_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 1,
+            "weighted_cost": "1/1"
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 2,
+            "weighted_cost": "5/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 2,
+            "target": 4,
+            "weighted_cost": "0/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 3,
+            "target": 4,
+            "weighted_cost": "0/1"
+          }
+        ],
+        "weighted_route_cost": "5/1",
+        "weighted_scenario_sum": "5/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "6774a5f3bda94e7bf52e64e7a57809e3ab143f9a196109f830054bd215bcd31c",
+      "name": "C:turn",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f26d65c0edc52e39a80b7b51e0fa1d901e7619db2a41480aa403124244b165e2",
+      "name": "C:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "4b08eb062d6db6ebb9691086c4938d74a5c3f30892e13f842fb00144f3cb83cf",
+      "name": "C:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "8e3816bcdb7fa1f556c29acf6ca99fa061839b0496a8f1f172e4bcc7c85aa15f",
+      "name": "D",
+      "result": {
+        "budget_charge": "1/1",
+        "gap": "1/1",
+        "lower_bound": "2/1",
+        "primal": {
+          "exposure": 0,
+          "ledger": [
+            {
+              "cumulative_exposure": 0,
+              "cumulative_scenarios": [
+                3,
+                3
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                1
+              ],
+              "previous": null,
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            3,
+            3
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 0,
+          "worst_time": 3
+        },
+        "reason": "feasible incomplete integrated bound",
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "UNAVAILABLE",
+        "transition_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 1,
+            "weighted_cost": "3/1"
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "source": 0,
+            "target": 2,
+            "weighted_cost": "3/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 1,
+            "target": 3,
+            "weighted_cost": "0/1"
+          },
+          {
+            "delay": 0,
+            "edge": null,
+            "slack": "0/1",
+            "source": 2,
+            "target": 3,
+            "weighted_cost": "0/1"
+          }
+        ],
+        "weighted_route_cost": "3/1",
+        "weighted_scenario_sum": "3/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "39bf4d0f0e4c08155ad3dcc4a9be29dfff60a4fbd4d06fee64f0e10932e4d37f",
+      "name": "D:turn",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "d10da59f987c80811c5253645d8c4d9534ceeb7e8bab672ab9da201e532405d0",
+      "name": "D:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "1297b548456ee07847b8c0f3d54ef5486db75d0bef0285e9a7079eaeae4f7647",
+      "name": "D:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "17e5a79cb4db89ab797038ef5cfb68b87c5d1f9c3ecfbf9acb77862699623245",
+      "name": "control:null",
+      "result": {
+        "reason": "missing route/proof after model checks",
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a2e940e169329ea7aacbabc0f2c128f330f2688d375f0a336610cce02e74fcc3",
+      "name": "control:sum",
+      "result": {
+        "reason": "nonnegative simplex sum",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c1972319709d63be8f54d33b274e6dc0ed3cbae1fbaba79a3450af3abf381411",
+      "name": "control:budget",
+      "result": {
+        "reason": "route exposure budget",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b05033e67bc459663b30c7a18295d8945a9e964e0f9b5d73ce0684bab8ec9fa1",
+      "name": "control:infeasible",
+      "result": {
+        "reason": "weighted potential infeasible transition",
+        "status": "INVALID"
+      },
+      "warnings": []
+    }
+  ],
+  "scope": "joint budget/common-scenario certificate is sufficient, not complete/search/clinical"
+}
