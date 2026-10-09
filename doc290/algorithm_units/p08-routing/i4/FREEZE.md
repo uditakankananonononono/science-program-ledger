@@ -1,0 +1,35 @@
+# I4 bounded exact generator freeze candidate
+
+Preregd63bfe01 published. ALLfinite state distances clamp, independent original
+FractionBF auditBEFOREguard/potential, fullarcslacks; strictcategoryprecedence.
+Auditmismatch/sourceNone/LB>W FAIL; None->finite guardUNAVAILABLE noemission only
+afteraudit; numericgrammar/capsUNAVAILABLE_DOMAIN, notINVALIDinput/searchsuccess.
+DirectexactI3loadedpath/sourcegate invocation EVERYemission; unchangedchecker
+INVALID/disagreementFAIL; originalprimal/algebra/transitionledgers reconciled.
+Allfixedcandidates evenaftercertification; highestLB/firsttie, Ddualitygap/Gfinite
+miss unchanged; lambda4 outside-list algebra only/norescoring. Missingroute not
+infeasibilityproof. Fulltransitivehelpers/pinnedpaths beforeboundedworker execution.
+
+Outside20 multi-max finite/clampboundary/unreachable-cycle/goaloutgoing literals,
+falseM/None/finite/potential/audit/schema/checkerINVALID/guardnoemission/domain/
+completecandidatecoverage controls. Pre-freeze devtest expecteduniformselected8
+was wrong: its chain already equalizeswholepath5 underunitweight0; firsttie
+correctselected0. Fixed testexpectation, notmethod/search. No20fixedrowrun.
+Independentreceipt verifier reconstructsfull originalFractiondistances/potential/
+checker/primal/slack/selection, notstatus-as-proof. Realfinalgate devsuccess with
+nonemptyforbidden, malformed/timeout/memory/gate controls. Initialreceipts
+PRE-finalmanifest labelled, finalrealrerunrequired. 128MiBAS/oneCPUbeforecore/
+helpers,5skill/drainonce/reap, ASnotRSS/tree/OS/sharedlibproof. No novelty,
+invention/science/production/CIclaim; historicalI3CFAIL/M4negative/M5lockedFAIL/
+M6rejectedhistoryunchanged. Afterreview/publication: compare.py results/report.json
+
+Additionaloutside20explicitclampfixture: D1, two source-unreachable butsink-
+reachableincomingstates d=M3, plusunreachablecycle, hNone=-2. Falseclamp1,
+falsefinite/None/allzero potential/typedstate mutations reject. Candidate
+scenario+delay overflow classifiedDOMAIN separately frominputmodelINVALID.
+Dev capfixture initially expecteddomainfailure fromlargeunreachable suffixalone,
+but D-M stillwithin cap; added originaledge exposureMAX to exercise actual
+weightedarc cap. Expectation/fixture corrected beforefreeze, no fixed20rescoring.
+Dev capfixture second correction: original x edge had no source/incoming-to-x
+transition, so it was never an allowed weightedarc. Added u->x originaledge to
+exercise thatarc; all original states stillretained, no fabricated weightedcost.
