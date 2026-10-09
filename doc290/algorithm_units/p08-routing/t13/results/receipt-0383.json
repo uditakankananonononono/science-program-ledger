@@ -1,0 +1,134 @@
+{
+  "entry": {
+    "case_index": 191,
+    "input_sha256": "9a01fe7177dfe122187a0bef1f031dd7c1cf1f0d6d5fc321b662aa84f1a246b4",
+    "method": "variant",
+    "name": "turn191",
+    "oracle": null,
+    "order": [
+      "t12",
+      "variant"
+    ]
+  },
+  "identity": {
+    "manifest_sha256": "4dcd2827c7d759444113af493bfc49ed51744e0a6a736035b1c81c3315a9a447",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "status": "PASS",
+      "unreachable_oracle": true
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"activation\": \"exposure_exit\", \"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.0229716450048727, \"candidate_ledger\": null, \"certificate\": {\"budget\": 9, \"charged_lambda\": 1, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"old_lower\": null, \"reason\": \"no_allowed_turn_path\", \"source_bound_stronger\": false, \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 0, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 2, \"scalar_candidate_inspections\": 0, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"4dcd2827c7d759444113af493bfc49ed51744e0a6a736035b1c81c3315a9a447\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"incumbent_original_upper\": null, \"incumbent_selected_upper\": null, \"proof\": {\"distances\": [null, null, null, 0, 0], \"start_minimum\": null, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"a\"}, {\"incoming\": [\"d\", 0], \"kind\": \"edge\", \"vertex\": \"d\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"d\"}]}, \"route\": null, \"rss_kib\": 33976, \"scenario_proof\": null, \"selected_candidate\": null, \"solve_seconds\": 0.00011481000547064468, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "activation": "exposure_exit",
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "bound_trace": [],
+      "build_seconds": 0.0229716450048727,
+      "candidate_ledger": null,
+      "certificate": {
+        "budget": 9,
+        "charged_lambda": 1,
+        "early_exit": true,
+        "equality_exit": false,
+        "lower": null,
+        "old_lower": null,
+        "reason": "no_allowed_turn_path",
+        "source_bound_stronger": false,
+        "upper": null
+      },
+      "charged_proof": null,
+      "counters": {
+        "candidate_edges": 0,
+        "charged_bound_stronger": 0,
+        "charged_reverse_inspections": 0,
+        "charged_strict_exclusions": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 0,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 2,
+        "scalar_candidate_inspections": 0,
+        "scenario_reverse_inspections": 0,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "4dcd2827c7d759444113af493bfc49ed51744e0a6a736035b1c81c3315a9a447",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": null,
+      "incumbent_original_upper": null,
+      "incumbent_selected_upper": null,
+      "proof": {
+        "distances": [
+          null,
+          null,
+          null,
+          0,
+          0
+        ],
+        "start_minimum": null,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "d",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "d"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "d"
+          }
+        ]
+      },
+      "route": null,
+      "rss_kib": 33976,
+      "scenario_proof": null,
+      "selected_candidate": null,
+      "solve_seconds": 0.00011481000547064468,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.10416797000652878
+  },
+  "slot": 383
+}
