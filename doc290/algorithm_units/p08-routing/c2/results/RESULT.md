@@ -1,0 +1,37 @@
+# C2 checked interior-query chain splitting: bounded PASS
+
+Publishedfreeze f85d47de8ab457754b7a366f698061527bdb4770/tree
+b37402534c9714d907d8e1810e69b5604b47dcf3, rejected9aea69ee retained. Source/runtime24
+gates passedbefore231rows. Per-row128KiBstrictJSON and2MiBcombinedarchive cap
+separate; actual241151-byteprotocol admittedwithoutsilentlyraisingperrowcap.
+Publish-before-scoring tool-log recorded, notsolelyprovedbythistext/replay.
+
+231/231expectedagreement:225SPLIT_REPRESENTATIONqueries+6INVALIDrefusals.
+225fixedqueries (asymchain63,triangle36,theta125,isolate1) eachoutputindependently
+tracedfromaugmentedanchors/provenancepositions/whole directedcoverage/exactoriginal
+stepcostschecked. Original/splitunchangedexposurekernelsagreewithindependentoriginal
+simplepath min-timeoracle onfeasible/None/integerobjective. Expandedreturnedwitness
+costs/source/goal/budget checked andretained. All6badcost/backtracking/missingcoverage/
+absentquery/turn/floatcontrols refused. Warnings0/exceptions0; allrows/digests/results/
+original+splitroutes/oracle/expandededgeidentities/provenance retained. No dropped
+losses/rescue/retuning/postfreezechanges. SevenseparateddevelopmenttestsPASS.
+
+Reviewer HOLD on9aea69ee identified outputchecker falseacceptance of erasedscenario
+vectors andbooleanemittedtime; repairedstrictedgekeys/types/nonboolintegers/original
+scenario dimension beforecostsums. Fourmandatoryerased/bool/extra-scenario/float-
+equalcost controls plusmalformedcontainer/provenance refusal retaineddevelopment.
+Builderpre-refreeze neighborlist shadowed originaldimension oncycletrace, development
+caught; renamedonwardbeforepublication/scoring. Rejectedhistorypreserved.
+
+Reviewer reported26,650weightedgraph/querychecks across1094graphs withindependent
+freshtracing (typed26,678 corrected); technicaldocument-reportedcorroboration,
+notuserpermission/generalproof/scientificvalidation. No inventioncreditfromcount.
+
+SeparateexplicitC2 artifact, noautomaticproductionrouting/aggregate/expand_route
+integration. C1unchangedstillanchor-only; augmentedanchorchecker independently
+implemented, notclaimC1acceptsinteriors. Integerturn-freefixed-gridcomparison only,
+notuniversalequivalence/optimalitycertificate, turn-rule/floatregroupingrepair,
+anatomy/calibration/hardware/clinical/newroutinginvention/sciencecompletion.
+Knownfloatnon-equivalence/K1K2FAILs unchanged. Capsnotpeakmemory/sandbox/timeout;
+runtimepinsnotcompleteOS/sharedlibraryprovenance. Missingroutefromkernel notproof
+artifact ofglobalinfeasibility, finitefixturecomparisononly.
