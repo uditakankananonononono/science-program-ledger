@@ -1,0 +1,1306 @@
+{
+  "entry": {
+    "case_index": 31,
+    "expected": "COMPLETED",
+    "input_sha256": "9543f6ea875045526f77a0ef9c04dccf1b7fe1d1bb3fcf3c83e15969efa53ed6",
+    "name": "control6:revisit"
+  },
+  "identity": {
+    "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 3,
+      "status": "PASS",
+      "verdict": "COMPLETED"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.010354312995332293, \"identity\": {\"manifest_sha256\": \"63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"completed_statement\": {\"budget\": 0, \"forbidden\": [[[\"a\", 0], [\"b\", 1]]], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"c\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"c\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"b\"}, {\"edge_index\": 0, \"source\": \"b\", \"target\": \"c\"}, {\"edge_index\": 0, \"source\": \"c\", \"target\": \"b\"}, {\"edge_index\": 1, \"source\": \"b\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"b\", \"c\", \"b\", \"g\"], \"scenario_totals\": [4, 4], \"turn_penalty\": 0, \"worst_time\": 4}, \"start\": \"a\"}, \"downstream\": {\"best_lower\": \"4/1\", \"gap\": \"0/1\", \"paths\": [{\"arcs\": [0, 1, 2, 5, 3], \"exposure\": 0, \"scenario_totals\": [4, 4]}], \"primal\": {\"exposure\": 0, \"ledger\": [{\"cumulative_exposure\": 0, \"cumulative_scenarios\": [1, 1], \"delay\": 0, \"edge\": [\"a\", 0], \"previous\": null, \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [2, 2], \"delay\": 0, \"edge\": [\"b\", 0], \"previous\": [\"a\", 0], \"target\": \"c\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [3, 3], \"delay\": 0, \"edge\": [\"c\", 0], \"previous\": [\"b\", 0], \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [4, 4], \"delay\": 0, \"edge\": [\"b\", 1], \"previous\": [\"c\", 0], \"target\": \"g\"}], \"reason\": \"checked original-edge turn route\", \"scenario_totals\": [4, 4], \"status\": \"FEASIBLE_WITNESS\", \"turn_penalty\": 0, \"worst_time\": 4}, \"reason\": \"exact lambda for fixed weights in small enumerated domain\", \"selected_weight\": 0, \"status\": \"CERTIFIED_INTEGRATED\", \"weights\": [{\"checker\": {\"budget_charge\": \"0/1\", \"gap\": \"0/1\", \"lower_bound\": \"4/1\", \"primal\": {\"exposure\": 0, \"ledger\": [{\"cumulative_exposure\": 0, \"cumulative_scenarios\": [1, 1], \"delay\": 0, \"edge\": [\"a\", 0], \"previous\": null, \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [2, 2], \"delay\": 0, \"edge\": [\"b\", 0], \"previous\": [\"a\", 0], \"target\": \"c\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [3, 3], \"delay\": 0, \"edge\": [\"c\", 0], \"previous\": [\"b\", 0], \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [4, 4], \"delay\": 0, \"edge\": [\"b\", 1], \"previous\": [\"c\", 0], \"target\": \"g\"}], \"reason\": \"checked original-edge turn route\", \"scenario_totals\": [4, 4], \"status\": \"FEASIBLE_WITNESS\", \"turn_penalty\": 0, \"worst_time\": 4}, \"reason\": \"matching feasible worst/integrated bound\", \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_INTEGRATED\", \"transition_ledger\": [{\"delay\": 0, \"edge\": [\"a\", 0], \"slack\": \"0/1\", \"source\": 0, \"target\": 1, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"b\", 0], \"slack\": \"0/1\", \"source\": 1, \"target\": 2, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"c\", 0], \"slack\": \"0/1\", \"source\": 2, \"target\": 4, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": null, \"slack\": \"0/1\", \"source\": 3, \"target\": 5, \"weighted_cost\": \"0/1\"}, {\"delay\": 0, \"edge\": [\"b\", 0], \"slack\": \"2/1\", \"source\": 4, \"target\": 2, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"b\", 1], \"slack\": \"0/1\", \"source\": 4, \"target\": 3, \"weighted_cost\": \"1/1\"}], \"weighted_route_cost\": \"4/1\", \"weighted_scenario_sum\": \"4/1\"}, \"clamp\": \"4/1\", \"distances\": [\"4/1\", \"3/1\", \"2/1\", \"0/1\", \"1/1\", \"0/1\"], \"index\": 0, \"lines\": [{\"intercept\": \"4/1\", \"slope\": 0}], \"minimum_slope\": 0, \"optimal_lower\": \"4/1\", \"points\": [{\"active_paths\": [0], \"lambda\": \"0/1\", \"lower_bound\": \"4/1\"}], \"potential\": [\"0/1\", \"1/1\", \"2/1\", \"4/1\", \"3/1\", \"4/1\"], \"selected_lambda\": \"0/1\", \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_INTEGRATED\", \"weights\": [\"1/1\", \"0/1\"]}, {\"checker\": {\"budget_charge\": \"0/1\", \"gap\": \"0/1\", \"lower_bound\": \"4/1\", \"primal\": {\"exposure\": 0, \"ledger\": [{\"cumulative_exposure\": 0, \"cumulative_scenarios\": [1, 1], \"delay\": 0, \"edge\": [\"a\", 0], \"previous\": null, \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [2, 2], \"delay\": 0, \"edge\": [\"b\", 0], \"previous\": [\"a\", 0], \"target\": \"c\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [3, 3], \"delay\": 0, \"edge\": [\"c\", 0], \"previous\": [\"b\", 0], \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [4, 4], \"delay\": 0, \"edge\": [\"b\", 1], \"previous\": [\"c\", 0], \"target\": \"g\"}], \"reason\": \"checked original-edge turn route\", \"scenario_totals\": [4, 4], \"status\": \"FEASIBLE_WITNESS\", \"turn_penalty\": 0, \"worst_time\": 4}, \"reason\": \"matching feasible worst/integrated bound\", \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_INTEGRATED\", \"transition_ledger\": [{\"delay\": 0, \"edge\": [\"a\", 0], \"slack\": \"0/1\", \"source\": 0, \"target\": 1, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"b\", 0], \"slack\": \"0/1\", \"source\": 1, \"target\": 2, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"c\", 0], \"slack\": \"0/1\", \"source\": 2, \"target\": 4, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": null, \"slack\": \"0/1\", \"source\": 3, \"target\": 5, \"weighted_cost\": \"0/1\"}, {\"delay\": 0, \"edge\": [\"b\", 0], \"slack\": \"2/1\", \"source\": 4, \"target\": 2, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"b\", 1], \"slack\": \"0/1\", \"source\": 4, \"target\": 3, \"weighted_cost\": \"1/1\"}], \"weighted_route_cost\": \"4/1\", \"weighted_scenario_sum\": \"4/1\"}, \"clamp\": \"4/1\", \"distances\": [\"4/1\", \"3/1\", \"2/1\", \"0/1\", \"1/1\", \"0/1\"], \"index\": 1, \"lines\": [{\"intercept\": \"4/1\", \"slope\": 0}], \"minimum_slope\": 0, \"optimal_lower\": \"4/1\", \"points\": [{\"active_paths\": [0], \"lambda\": \"0/1\", \"lower_bound\": \"4/1\"}], \"potential\": [\"0/1\", \"1/1\", \"2/1\", \"4/1\", \"3/1\", \"4/1\"], \"selected_lambda\": \"0/1\", \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_INTEGRATED\", \"weights\": [\"0/1\", \"1/1\"]}, {\"checker\": {\"budget_charge\": \"0/1\", \"gap\": \"0/1\", \"lower_bound\": \"4/1\", \"primal\": {\"exposure\": 0, \"ledger\": [{\"cumulative_exposure\": 0, \"cumulative_scenarios\": [1, 1], \"delay\": 0, \"edge\": [\"a\", 0], \"previous\": null, \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [2, 2], \"delay\": 0, \"edge\": [\"b\", 0], \"previous\": [\"a\", 0], \"target\": \"c\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [3, 3], \"delay\": 0, \"edge\": [\"c\", 0], \"previous\": [\"b\", 0], \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [4, 4], \"delay\": 0, \"edge\": [\"b\", 1], \"previous\": [\"c\", 0], \"target\": \"g\"}], \"reason\": \"checked original-edge turn route\", \"scenario_totals\": [4, 4], \"status\": \"FEASIBLE_WITNESS\", \"turn_penalty\": 0, \"worst_time\": 4}, \"reason\": \"matching feasible worst/integrated bound\", \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_INTEGRATED\", \"transition_ledger\": [{\"delay\": 0, \"edge\": [\"a\", 0], \"slack\": \"0/1\", \"source\": 0, \"target\": 1, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"b\", 0], \"slack\": \"0/1\", \"source\": 1, \"target\": 2, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"c\", 0], \"slack\": \"0/1\", \"source\": 2, \"target\": 4, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": null, \"slack\": \"0/1\", \"source\": 3, \"target\": 5, \"weighted_cost\": \"0/1\"}, {\"delay\": 0, \"edge\": [\"b\", 0], \"slack\": \"2/1\", \"source\": 4, \"target\": 2, \"weighted_cost\": \"1/1\"}, {\"delay\": 0, \"edge\": [\"b\", 1], \"slack\": \"0/1\", \"source\": 4, \"target\": 3, \"weighted_cost\": \"1/1\"}], \"weighted_route_cost\": \"4/1\", \"weighted_scenario_sum\": \"4/1\"}, \"clamp\": \"4/1\", \"distances\": [\"4/1\", \"3/1\", \"2/1\", \"0/1\", \"1/1\", \"0/1\"], \"index\": 2, \"lines\": [{\"intercept\": \"4/1\", \"slope\": 0}], \"minimum_slope\": 0, \"optimal_lower\": \"4/1\", \"points\": [{\"active_paths\": [0], \"lambda\": \"0/1\", \"lower_bound\": \"4/1\"}], \"potential\": [\"0/1\", \"1/1\", \"2/1\", \"4/1\", \"3/1\", \"4/1\"], \"selected_lambda\": \"0/1\", \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": [\"b\", 0], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": [\"b\", 1], \"kind\": \"edge\", \"vertex\": \"g\"}, {\"incoming\": [\"c\", 0], \"kind\": \"edge\", \"vertex\": \"b\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"g\"}], \"status\": \"CERTIFIED_INTEGRATED\", \"weights\": [\"1/2\", \"1/2\"]}]}, \"feasible_indices\": [0], \"objectives\": [4], \"original\": {\"budget\": 0, \"forbidden\": [[[\"a\", 0], [\"b\", 1]]], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"c\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"c\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"route\": null, \"start\": \"a\"}, \"paths\": [{\"arcs\": [0, 1, 2, 5, 3], \"exposure\": 0, \"scenario_totals\": [4, 4]}], \"reason\": \"bounded best missing witness completed, proof status separate\", \"route_check\": {\"exposure\": 0, \"ledger\": [{\"cumulative_exposure\": 0, \"cumulative_scenarios\": [1, 1], \"delay\": 0, \"edge\": [\"a\", 0], \"previous\": null, \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [2, 2], \"delay\": 0, \"edge\": [\"b\", 0], \"previous\": [\"a\", 0], \"target\": \"c\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [3, 3], \"delay\": 0, \"edge\": [\"c\", 0], \"previous\": [\"b\", 0], \"target\": \"b\"}, {\"cumulative_exposure\": 0, \"cumulative_scenarios\": [4, 4], \"delay\": 0, \"edge\": [\"b\", 1], \"previous\": [\"c\", 0], \"target\": \"g\"}], \"reason\": \"checked original-edge turn route\", \"scenario_totals\": [4, 4], \"status\": \"FEASIBLE_WITNESS\", \"turn_penalty\": 0, \"worst_time\": 4}, \"route_source\": \"completed\", \"selected_index\": 0, \"selected_route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"b\"}, {\"edge_index\": 0, \"source\": \"b\", \"target\": \"c\"}, {\"edge_index\": 0, \"source\": \"c\", \"target\": \"b\"}, {\"edge_index\": 1, \"source\": \"b\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"b\", \"c\", \"b\", \"g\"], \"scenario_totals\": [4, 4], \"turn_penalty\": 0, \"worst_time\": 4}, \"status\": \"COMPLETED\"}, \"rss_kib\": 24848, \"solve_seconds\": 0.004725628001324367, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.010354312995332293,
+      "identity": {
+        "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "completed_statement": {
+          "budget": 0,
+          "forbidden": [
+            [
+              [
+                "a",
+                0
+              ],
+              [
+                "b",
+                1
+              ]
+            ]
+          ],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "c",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "c": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "route": {
+            "edges": [
+              {
+                "edge_index": 0,
+                "source": "a",
+                "target": "b"
+              },
+              {
+                "edge_index": 0,
+                "source": "b",
+                "target": "c"
+              },
+              {
+                "edge_index": 0,
+                "source": "c",
+                "target": "b"
+              },
+              {
+                "edge_index": 1,
+                "source": "b",
+                "target": "g"
+              }
+            ],
+            "exposure": 0,
+            "path": [
+              "a",
+              "b",
+              "c",
+              "b",
+              "g"
+            ],
+            "scenario_totals": [
+              4,
+              4
+            ],
+            "turn_penalty": 0,
+            "worst_time": 4
+          },
+          "start": "a"
+        },
+        "downstream": {
+          "best_lower": "4/1",
+          "gap": "0/1",
+          "paths": [
+            {
+              "arcs": [
+                0,
+                1,
+                2,
+                5,
+                3
+              ],
+              "exposure": 0,
+              "scenario_totals": [
+                4,
+                4
+              ]
+            }
+          ],
+          "primal": {
+            "exposure": 0,
+            "ledger": [
+              {
+                "cumulative_exposure": 0,
+                "cumulative_scenarios": [
+                  1,
+                  1
+                ],
+                "delay": 0,
+                "edge": [
+                  "a",
+                  0
+                ],
+                "previous": null,
+                "target": "b"
+              },
+              {
+                "cumulative_exposure": 0,
+                "cumulative_scenarios": [
+                  2,
+                  2
+                ],
+                "delay": 0,
+                "edge": [
+                  "b",
+                  0
+                ],
+                "previous": [
+                  "a",
+                  0
+                ],
+                "target": "c"
+              },
+              {
+                "cumulative_exposure": 0,
+                "cumulative_scenarios": [
+                  3,
+                  3
+                ],
+                "delay": 0,
+                "edge": [
+                  "c",
+                  0
+                ],
+                "previous": [
+                  "b",
+                  0
+                ],
+                "target": "b"
+              },
+              {
+                "cumulative_exposure": 0,
+                "cumulative_scenarios": [
+                  4,
+                  4
+                ],
+                "delay": 0,
+                "edge": [
+                  "b",
+                  1
+                ],
+                "previous": [
+                  "c",
+                  0
+                ],
+                "target": "g"
+              }
+            ],
+            "reason": "checked original-edge turn route",
+            "scenario_totals": [
+              4,
+              4
+            ],
+            "status": "FEASIBLE_WITNESS",
+            "turn_penalty": 0,
+            "worst_time": 4
+          },
+          "reason": "exact lambda for fixed weights in small enumerated domain",
+          "selected_weight": 0,
+          "status": "CERTIFIED_INTEGRATED",
+          "weights": [
+            {
+              "checker": {
+                "budget_charge": "0/1",
+                "gap": "0/1",
+                "lower_bound": "4/1",
+                "primal": {
+                  "exposure": 0,
+                  "ledger": [
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        1,
+                        1
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "a",
+                        0
+                      ],
+                      "previous": null,
+                      "target": "b"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        2,
+                        2
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "b",
+                        0
+                      ],
+                      "previous": [
+                        "a",
+                        0
+                      ],
+                      "target": "c"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        3,
+                        3
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "c",
+                        0
+                      ],
+                      "previous": [
+                        "b",
+                        0
+                      ],
+                      "target": "b"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        4,
+                        4
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "b",
+                        1
+                      ],
+                      "previous": [
+                        "c",
+                        0
+                      ],
+                      "target": "g"
+                    }
+                  ],
+                  "reason": "checked original-edge turn route",
+                  "scenario_totals": [
+                    4,
+                    4
+                  ],
+                  "status": "FEASIBLE_WITNESS",
+                  "turn_penalty": 0,
+                  "worst_time": 4
+                },
+                "reason": "matching feasible worst/integrated bound",
+                "states": [
+                  {
+                    "incoming": null,
+                    "kind": "source",
+                    "vertex": "a"
+                  },
+                  {
+                    "incoming": [
+                      "a",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "b"
+                  },
+                  {
+                    "incoming": [
+                      "b",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "c"
+                  },
+                  {
+                    "incoming": [
+                      "b",
+                      1
+                    ],
+                    "kind": "edge",
+                    "vertex": "g"
+                  },
+                  {
+                    "incoming": [
+                      "c",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "b"
+                  },
+                  {
+                    "incoming": null,
+                    "kind": "goal",
+                    "vertex": "g"
+                  }
+                ],
+                "status": "CERTIFIED_INTEGRATED",
+                "transition_ledger": [
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "a",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 0,
+                    "target": 1,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 1,
+                    "target": 2,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "c",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 2,
+                    "target": 4,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": null,
+                    "slack": "0/1",
+                    "source": 3,
+                    "target": 5,
+                    "weighted_cost": "0/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      0
+                    ],
+                    "slack": "2/1",
+                    "source": 4,
+                    "target": 2,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      1
+                    ],
+                    "slack": "0/1",
+                    "source": 4,
+                    "target": 3,
+                    "weighted_cost": "1/1"
+                  }
+                ],
+                "weighted_route_cost": "4/1",
+                "weighted_scenario_sum": "4/1"
+              },
+              "clamp": "4/1",
+              "distances": [
+                "4/1",
+                "3/1",
+                "2/1",
+                "0/1",
+                "1/1",
+                "0/1"
+              ],
+              "index": 0,
+              "lines": [
+                {
+                  "intercept": "4/1",
+                  "slope": 0
+                }
+              ],
+              "minimum_slope": 0,
+              "optimal_lower": "4/1",
+              "points": [
+                {
+                  "active_paths": [
+                    0
+                  ],
+                  "lambda": "0/1",
+                  "lower_bound": "4/1"
+                }
+              ],
+              "potential": [
+                "0/1",
+                "1/1",
+                "2/1",
+                "4/1",
+                "3/1",
+                "4/1"
+              ],
+              "selected_lambda": "0/1",
+              "states": [
+                {
+                  "incoming": null,
+                  "kind": "source",
+                  "vertex": "a"
+                },
+                {
+                  "incoming": [
+                    "a",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "b"
+                },
+                {
+                  "incoming": [
+                    "b",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "c"
+                },
+                {
+                  "incoming": [
+                    "b",
+                    1
+                  ],
+                  "kind": "edge",
+                  "vertex": "g"
+                },
+                {
+                  "incoming": [
+                    "c",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "b"
+                },
+                {
+                  "incoming": null,
+                  "kind": "goal",
+                  "vertex": "g"
+                }
+              ],
+              "status": "CERTIFIED_INTEGRATED",
+              "weights": [
+                "1/1",
+                "0/1"
+              ]
+            },
+            {
+              "checker": {
+                "budget_charge": "0/1",
+                "gap": "0/1",
+                "lower_bound": "4/1",
+                "primal": {
+                  "exposure": 0,
+                  "ledger": [
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        1,
+                        1
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "a",
+                        0
+                      ],
+                      "previous": null,
+                      "target": "b"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        2,
+                        2
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "b",
+                        0
+                      ],
+                      "previous": [
+                        "a",
+                        0
+                      ],
+                      "target": "c"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        3,
+                        3
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "c",
+                        0
+                      ],
+                      "previous": [
+                        "b",
+                        0
+                      ],
+                      "target": "b"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        4,
+                        4
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "b",
+                        1
+                      ],
+                      "previous": [
+                        "c",
+                        0
+                      ],
+                      "target": "g"
+                    }
+                  ],
+                  "reason": "checked original-edge turn route",
+                  "scenario_totals": [
+                    4,
+                    4
+                  ],
+                  "status": "FEASIBLE_WITNESS",
+                  "turn_penalty": 0,
+                  "worst_time": 4
+                },
+                "reason": "matching feasible worst/integrated bound",
+                "states": [
+                  {
+                    "incoming": null,
+                    "kind": "source",
+                    "vertex": "a"
+                  },
+                  {
+                    "incoming": [
+                      "a",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "b"
+                  },
+                  {
+                    "incoming": [
+                      "b",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "c"
+                  },
+                  {
+                    "incoming": [
+                      "b",
+                      1
+                    ],
+                    "kind": "edge",
+                    "vertex": "g"
+                  },
+                  {
+                    "incoming": [
+                      "c",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "b"
+                  },
+                  {
+                    "incoming": null,
+                    "kind": "goal",
+                    "vertex": "g"
+                  }
+                ],
+                "status": "CERTIFIED_INTEGRATED",
+                "transition_ledger": [
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "a",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 0,
+                    "target": 1,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 1,
+                    "target": 2,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "c",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 2,
+                    "target": 4,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": null,
+                    "slack": "0/1",
+                    "source": 3,
+                    "target": 5,
+                    "weighted_cost": "0/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      0
+                    ],
+                    "slack": "2/1",
+                    "source": 4,
+                    "target": 2,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      1
+                    ],
+                    "slack": "0/1",
+                    "source": 4,
+                    "target": 3,
+                    "weighted_cost": "1/1"
+                  }
+                ],
+                "weighted_route_cost": "4/1",
+                "weighted_scenario_sum": "4/1"
+              },
+              "clamp": "4/1",
+              "distances": [
+                "4/1",
+                "3/1",
+                "2/1",
+                "0/1",
+                "1/1",
+                "0/1"
+              ],
+              "index": 1,
+              "lines": [
+                {
+                  "intercept": "4/1",
+                  "slope": 0
+                }
+              ],
+              "minimum_slope": 0,
+              "optimal_lower": "4/1",
+              "points": [
+                {
+                  "active_paths": [
+                    0
+                  ],
+                  "lambda": "0/1",
+                  "lower_bound": "4/1"
+                }
+              ],
+              "potential": [
+                "0/1",
+                "1/1",
+                "2/1",
+                "4/1",
+                "3/1",
+                "4/1"
+              ],
+              "selected_lambda": "0/1",
+              "states": [
+                {
+                  "incoming": null,
+                  "kind": "source",
+                  "vertex": "a"
+                },
+                {
+                  "incoming": [
+                    "a",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "b"
+                },
+                {
+                  "incoming": [
+                    "b",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "c"
+                },
+                {
+                  "incoming": [
+                    "b",
+                    1
+                  ],
+                  "kind": "edge",
+                  "vertex": "g"
+                },
+                {
+                  "incoming": [
+                    "c",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "b"
+                },
+                {
+                  "incoming": null,
+                  "kind": "goal",
+                  "vertex": "g"
+                }
+              ],
+              "status": "CERTIFIED_INTEGRATED",
+              "weights": [
+                "0/1",
+                "1/1"
+              ]
+            },
+            {
+              "checker": {
+                "budget_charge": "0/1",
+                "gap": "0/1",
+                "lower_bound": "4/1",
+                "primal": {
+                  "exposure": 0,
+                  "ledger": [
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        1,
+                        1
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "a",
+                        0
+                      ],
+                      "previous": null,
+                      "target": "b"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        2,
+                        2
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "b",
+                        0
+                      ],
+                      "previous": [
+                        "a",
+                        0
+                      ],
+                      "target": "c"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        3,
+                        3
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "c",
+                        0
+                      ],
+                      "previous": [
+                        "b",
+                        0
+                      ],
+                      "target": "b"
+                    },
+                    {
+                      "cumulative_exposure": 0,
+                      "cumulative_scenarios": [
+                        4,
+                        4
+                      ],
+                      "delay": 0,
+                      "edge": [
+                        "b",
+                        1
+                      ],
+                      "previous": [
+                        "c",
+                        0
+                      ],
+                      "target": "g"
+                    }
+                  ],
+                  "reason": "checked original-edge turn route",
+                  "scenario_totals": [
+                    4,
+                    4
+                  ],
+                  "status": "FEASIBLE_WITNESS",
+                  "turn_penalty": 0,
+                  "worst_time": 4
+                },
+                "reason": "matching feasible worst/integrated bound",
+                "states": [
+                  {
+                    "incoming": null,
+                    "kind": "source",
+                    "vertex": "a"
+                  },
+                  {
+                    "incoming": [
+                      "a",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "b"
+                  },
+                  {
+                    "incoming": [
+                      "b",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "c"
+                  },
+                  {
+                    "incoming": [
+                      "b",
+                      1
+                    ],
+                    "kind": "edge",
+                    "vertex": "g"
+                  },
+                  {
+                    "incoming": [
+                      "c",
+                      0
+                    ],
+                    "kind": "edge",
+                    "vertex": "b"
+                  },
+                  {
+                    "incoming": null,
+                    "kind": "goal",
+                    "vertex": "g"
+                  }
+                ],
+                "status": "CERTIFIED_INTEGRATED",
+                "transition_ledger": [
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "a",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 0,
+                    "target": 1,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 1,
+                    "target": 2,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "c",
+                      0
+                    ],
+                    "slack": "0/1",
+                    "source": 2,
+                    "target": 4,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": null,
+                    "slack": "0/1",
+                    "source": 3,
+                    "target": 5,
+                    "weighted_cost": "0/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      0
+                    ],
+                    "slack": "2/1",
+                    "source": 4,
+                    "target": 2,
+                    "weighted_cost": "1/1"
+                  },
+                  {
+                    "delay": 0,
+                    "edge": [
+                      "b",
+                      1
+                    ],
+                    "slack": "0/1",
+                    "source": 4,
+                    "target": 3,
+                    "weighted_cost": "1/1"
+                  }
+                ],
+                "weighted_route_cost": "4/1",
+                "weighted_scenario_sum": "4/1"
+              },
+              "clamp": "4/1",
+              "distances": [
+                "4/1",
+                "3/1",
+                "2/1",
+                "0/1",
+                "1/1",
+                "0/1"
+              ],
+              "index": 2,
+              "lines": [
+                {
+                  "intercept": "4/1",
+                  "slope": 0
+                }
+              ],
+              "minimum_slope": 0,
+              "optimal_lower": "4/1",
+              "points": [
+                {
+                  "active_paths": [
+                    0
+                  ],
+                  "lambda": "0/1",
+                  "lower_bound": "4/1"
+                }
+              ],
+              "potential": [
+                "0/1",
+                "1/1",
+                "2/1",
+                "4/1",
+                "3/1",
+                "4/1"
+              ],
+              "selected_lambda": "0/1",
+              "states": [
+                {
+                  "incoming": null,
+                  "kind": "source",
+                  "vertex": "a"
+                },
+                {
+                  "incoming": [
+                    "a",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "b"
+                },
+                {
+                  "incoming": [
+                    "b",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "c"
+                },
+                {
+                  "incoming": [
+                    "b",
+                    1
+                  ],
+                  "kind": "edge",
+                  "vertex": "g"
+                },
+                {
+                  "incoming": [
+                    "c",
+                    0
+                  ],
+                  "kind": "edge",
+                  "vertex": "b"
+                },
+                {
+                  "incoming": null,
+                  "kind": "goal",
+                  "vertex": "g"
+                }
+              ],
+              "status": "CERTIFIED_INTEGRATED",
+              "weights": [
+                "1/2",
+                "1/2"
+              ]
+            }
+          ]
+        },
+        "feasible_indices": [
+          0
+        ],
+        "objectives": [
+          4
+        ],
+        "original": {
+          "budget": 0,
+          "forbidden": [
+            [
+              [
+                "a",
+                0
+              ],
+              [
+                "b",
+                1
+              ]
+            ]
+          ],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "c",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "c": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "route": null,
+          "start": "a"
+        },
+        "paths": [
+          {
+            "arcs": [
+              0,
+              1,
+              2,
+              5,
+              3
+            ],
+            "exposure": 0,
+            "scenario_totals": [
+              4,
+              4
+            ]
+          }
+        ],
+        "reason": "bounded best missing witness completed, proof status separate",
+        "route_check": {
+          "exposure": 0,
+          "ledger": [
+            {
+              "cumulative_exposure": 0,
+              "cumulative_scenarios": [
+                1,
+                1
+              ],
+              "delay": 0,
+              "edge": [
+                "a",
+                0
+              ],
+              "previous": null,
+              "target": "b"
+            },
+            {
+              "cumulative_exposure": 0,
+              "cumulative_scenarios": [
+                2,
+                2
+              ],
+              "delay": 0,
+              "edge": [
+                "b",
+                0
+              ],
+              "previous": [
+                "a",
+                0
+              ],
+              "target": "c"
+            },
+            {
+              "cumulative_exposure": 0,
+              "cumulative_scenarios": [
+                3,
+                3
+              ],
+              "delay": 0,
+              "edge": [
+                "c",
+                0
+              ],
+              "previous": [
+                "b",
+                0
+              ],
+              "target": "b"
+            },
+            {
+              "cumulative_exposure": 0,
+              "cumulative_scenarios": [
+                4,
+                4
+              ],
+              "delay": 0,
+              "edge": [
+                "b",
+                1
+              ],
+              "previous": [
+                "c",
+                0
+              ],
+              "target": "g"
+            }
+          ],
+          "reason": "checked original-edge turn route",
+          "scenario_totals": [
+            4,
+            4
+          ],
+          "status": "FEASIBLE_WITNESS",
+          "turn_penalty": 0,
+          "worst_time": 4
+        },
+        "route_source": "completed",
+        "selected_index": 0,
+        "selected_route": {
+          "edges": [
+            {
+              "edge_index": 0,
+              "source": "a",
+              "target": "b"
+            },
+            {
+              "edge_index": 0,
+              "source": "b",
+              "target": "c"
+            },
+            {
+              "edge_index": 0,
+              "source": "c",
+              "target": "b"
+            },
+            {
+              "edge_index": 1,
+              "source": "b",
+              "target": "g"
+            }
+          ],
+          "exposure": 0,
+          "path": [
+            "a",
+            "b",
+            "c",
+            "b",
+            "g"
+          ],
+          "scenario_totals": [
+            4,
+            4
+          ],
+          "turn_penalty": 0,
+          "worst_time": 4
+        },
+        "status": "COMPLETED"
+      },
+      "rss_kib": 24848,
+      "solve_seconds": 0.004725628001324367,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.09074419300304726
+  },
+  "slot": 31
+}

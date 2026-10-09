@@ -1,0 +1,119 @@
+{
+  "entry": {
+    "case_index": 17,
+    "expected": "INVALID",
+    "input_sha256": "5fa02569d72a4b99ea9eb21ec3940b21ffbff64a87fd639dc415bcabcfe3fd54",
+    "name": "control:boolindex"
+  },
+  "identity": {
+    "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "INVALID"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.010928249001153745, \"identity\": {\"manifest_sha256\": \"63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"original\": {\"budget\": 2, \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 1, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [{\"delay\": 2, \"incoming\": [\"a\", 0], \"outgoing\": [\"b\", 0]}], \"route\": {\"edges\": [{\"edge_index\": true, \"source\": \"a\", \"target\": \"b\"}, {\"edge_index\": 0, \"source\": \"b\", \"target\": \"g\"}], \"exposure\": 2, \"path\": [\"a\", \"b\", \"g\"], \"scenario_totals\": [4, 4], \"turn_penalty\": 2, \"worst_time\": 4}, \"start\": \"a\"}, \"reason\": \"integer cost/index domain\", \"status\": \"INVALID\"}, \"rss_kib\": 24632, \"solve_seconds\": 0.00012401200365275145, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.010928249001153745,
+      "identity": {
+        "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "original": {
+          "budget": 2,
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 1,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [
+            {
+              "delay": 2,
+              "incoming": [
+                "a",
+                0
+              ],
+              "outgoing": [
+                "b",
+                0
+              ]
+            }
+          ],
+          "route": {
+            "edges": [
+              {
+                "edge_index": true,
+                "source": "a",
+                "target": "b"
+              },
+              {
+                "edge_index": 0,
+                "source": "b",
+                "target": "g"
+              }
+            ],
+            "exposure": 2,
+            "path": [
+              "a",
+              "b",
+              "g"
+            ],
+            "scenario_totals": [
+              4,
+              4
+            ],
+            "turn_penalty": 2,
+            "worst_time": 4
+          },
+          "start": "a"
+        },
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "rss_kib": 24632,
+      "solve_seconds": 0.00012401200365275145,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.09068995499546872
+  },
+  "slot": 17
+}

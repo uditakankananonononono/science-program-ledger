@@ -1,0 +1,410 @@
+{
+  "agreements": 36,
+  "chunks": [
+    {
+      "ceiling": 30,
+      "elapsed": 0.5512863659969298,
+      "from": 0,
+      "headroom": 7,
+      "launched": 4,
+      "next": 4
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.5642663780017756,
+      "from": 4,
+      "headroom": 7,
+      "launched": 4,
+      "next": 8
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.6135447770066094,
+      "from": 8,
+      "headroom": 7,
+      "launched": 4,
+      "next": 12
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.5852258609957062,
+      "from": 12,
+      "headroom": 7,
+      "launched": 4,
+      "next": 16
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.5958553910022601,
+      "from": 16,
+      "headroom": 7,
+      "launched": 4,
+      "next": 20
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.6981130479980493,
+      "from": 20,
+      "headroom": 7,
+      "launched": 4,
+      "next": 24
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.7191602950042579,
+      "from": 24,
+      "headroom": 7,
+      "launched": 4,
+      "next": 28
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.6888015859949519,
+      "from": 28,
+      "headroom": 7,
+      "launched": 4,
+      "next": 32
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.7733233370017842,
+      "from": 32,
+      "headroom": 7,
+      "launched": 4,
+      "next": 36
+    }
+  ],
+  "classes": {
+    "COMPLETED": 12,
+    "INVALID": 12,
+    "NO_FEASIBLE_PATH": 2,
+    "PRESERVED": 8,
+    "UNAVAILABLE_DOMAIN": 1,
+    "UNAVAILABLE_WITNESS_DOMAIN": 1
+  },
+  "completion_rows": [
+    {
+      "name": "control:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          4,
+          4
+        ],
+        "turn_penalty": 2,
+        "worst_time": 4
+      },
+      "selected_index": 0
+    },
+    {
+      "name": "A:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          4,
+          4
+        ],
+        "turn_penalty": 2,
+        "worst_time": 4
+      },
+      "selected_index": 0
+    },
+    {
+      "name": "B:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          7,
+          7
+        ],
+        "turn_penalty": 1,
+        "worst_time": 7
+      },
+      "selected_index": 0
+    },
+    {
+      "name": "C:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          5,
+          5
+        ],
+        "turn_penalty": 0,
+        "worst_time": 5
+      },
+      "selected_index": 0
+    },
+    {
+      "name": "D:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          3,
+          3
+        ],
+        "turn_penalty": 0,
+        "worst_time": 3
+      },
+      "selected_index": 1
+    },
+    {
+      "name": "E:null",
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "turn_penalty": 0,
+        "worst_time": 0
+      },
+      "selected_index": 1
+    },
+    {
+      "name": "F:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          3,
+          3
+        ],
+        "turn_penalty": 0,
+        "worst_time": 3
+      },
+      "selected_index": 1
+    },
+    {
+      "name": "G:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          7,
+          7
+        ],
+        "turn_penalty": 0,
+        "worst_time": 7
+      },
+      "selected_index": 1
+    },
+    {
+      "name": "H:null",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "turn_penalty": 0,
+        "worst_time": 2
+      },
+      "selected_index": 0
+    },
+    {
+      "name": "control6:identity",
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "turn_penalty": 0,
+        "worst_time": 0
+      },
+      "selected_index": 0
+    },
+    {
+      "name": "control6:revisit",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "b",
+          "c",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          4,
+          4
+        ],
+        "turn_penalty": 0,
+        "worst_time": 4
+      },
+      "selected_index": 0
+    },
+    {
+      "name": "control6:tie",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "turn_penalty": 0,
+        "worst_time": 2
+      },
+      "selected_index": 0
+    }
+  ],
+  "downstream_classes": {
+    "CERTIFIED_INTEGRATED": 16,
+    "UNAVAILABLE": 4
+  },
+  "downstream_count": 20,
+  "downstream_weight_classes": {
+    "CERTIFIED_INTEGRATED": 48,
+    "UNAVAILABLE": 12
+  },
+  "downstream_weights": 60,
+  "finalize_elapsed_seconds": 0.31203480099793524,
+  "freeze": "9959d987f914131e43b877d672adc7afda182c83",
+  "rows": 36
+}

@@ -1,0 +1,125 @@
+{
+  "entry": {
+    "case_index": 33,
+    "expected": "UNAVAILABLE_DOMAIN",
+    "input_sha256": "2089550abdd578cb220d2ad95892ce32594c3a1bcd99fbcb5bba4c519a8cab19",
+    "name": "control6:modelDomain"
+  },
+  "identity": {
+    "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "UNAVAILABLE_DOMAIN"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.011208347998035606, \"identity\": {\"manifest_sha256\": \"63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"original\": {\"budget\": 0, \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}, {\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"route\": null, \"start\": \"a\"}, \"reason\": \"six original edge research cap\", \"status\": \"UNAVAILABLE_DOMAIN\"}, \"rss_kib\": 25000, \"solve_seconds\": 0.00013937499898020178, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.011208347998035606,
+      "identity": {
+        "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "original": {
+          "budget": 0,
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              },
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "route": null,
+          "start": "a"
+        },
+        "reason": "six original edge research cap",
+        "status": "UNAVAILABLE_DOMAIN"
+      },
+      "rss_kib": 25000,
+      "solve_seconds": 0.00013937499898020178,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.10018621600465849
+  },
+  "slot": 33
+}

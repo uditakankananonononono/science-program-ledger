@@ -1,0 +1,71 @@
+{
+  "entry": {
+    "case_index": 34,
+    "expected": "INVALID",
+    "input_sha256": "e8caf5f7bb274b5dab82dae7dbcc135a3c4b01e3c5f8ed4dd813d82e9ae59987",
+    "name": "control6:invalid"
+  },
+  "identity": {
+    "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "INVALID"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.010834592001629062, \"identity\": {\"manifest_sha256\": \"63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"original\": {\"budget\": true, \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 2, \"scenario_times\": [1, 1], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"route\": null, \"start\": \"a\"}, \"reason\": \"integer cost/index domain\", \"status\": \"INVALID\"}, \"rss_kib\": 25000, \"solve_seconds\": 6.957199366297573e-05, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.010834592001629062,
+      "identity": {
+        "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "original": {
+          "budget": true,
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 2,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "route": null,
+          "start": "a"
+        },
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "rss_kib": 25000,
+      "solve_seconds": 6.957199366297573e-05,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.0890880320002907
+  },
+  "slot": 34
+}

@@ -1,0 +1,75 @@
+{
+  "entry": {
+    "case_index": 28,
+    "expected": "NO_FEASIBLE_PATH",
+    "input_sha256": "d9d3088e47faa02185798aec274382b1ee3c66ad6d0aacc1f79ac3fcf105b0d3",
+    "name": "control6:unreachable"
+  },
+  "identity": {
+    "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "NO_FEASIBLE_PATH"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.010657157996320166, \"identity\": {\"manifest_sha256\": \"63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"feasible_indices\": [], \"objectives\": [], \"original\": {\"budget\": 0, \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 0, \"scenario_times\": [1, 1], \"target\": \"b\", \"time\": 1}], \"b\": [], \"g\": []}, \"penalties\": [], \"route\": null, \"start\": \"a\"}, \"paths\": [], \"reason\": \"complete bounded original-state exhaustion\", \"status\": \"NO_FEASIBLE_PATH\"}, \"rss_kib\": 23344, \"solve_seconds\": 9.04159969650209e-05, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.010657157996320166,
+      "identity": {
+        "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "feasible_indices": [],
+        "objectives": [],
+        "original": {
+          "budget": 0,
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  1,
+                  1
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [],
+            "g": []
+          },
+          "penalties": [],
+          "route": null,
+          "start": "a"
+        },
+        "paths": [],
+        "reason": "complete bounded original-state exhaustion",
+        "status": "NO_FEASIBLE_PATH"
+      },
+      "rss_kib": 23344,
+      "solve_seconds": 9.04159969650209e-05,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.08941103299730457
+  },
+  "slot": 28
+}

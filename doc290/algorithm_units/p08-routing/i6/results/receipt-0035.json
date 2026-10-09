@@ -1,0 +1,129 @@
+{
+  "entry": {
+    "case_index": 35,
+    "expected": "UNAVAILABLE_WITNESS_DOMAIN",
+    "input_sha256": "4939632a88f7760ca66d3ef85234ea38be55db58ad26f9c89eb85e8f85861ee7",
+    "name": "control6:witnessDomain"
+  },
+  "identity": {
+    "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "UNAVAILABLE_WITNESS_DOMAIN"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.01415393699426204, \"identity\": {\"manifest_sha256\": \"63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"feasible_indices\": [0], \"objectives\": [18014398509481982], \"original\": {\"budget\": 0, \"forbidden\": [], \"goal\": \"g\", \"graph\": {\"a\": [{\"exposure\": 0, \"scenario_times\": [9007199254740991, 9007199254740991], \"target\": \"b\", \"time\": 1}], \"b\": [{\"exposure\": 0, \"scenario_times\": [9007199254740991, 9007199254740991], \"target\": \"g\", \"time\": 1}], \"g\": []}, \"penalties\": [], \"route\": null, \"start\": \"a\"}, \"paths\": [{\"arcs\": [0, 1, 2], \"exposure\": 0, \"scenario_totals\": [18014398509481982, 18014398509481982]}], \"reason\": \"selected witness totals exceed unchanged integer cap\", \"selected_index\": 0, \"selected_route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"b\"}, {\"edge_index\": 0, \"source\": \"b\", \"target\": \"g\"}], \"exposure\": 0, \"path\": [\"a\", \"b\", \"g\"], \"scenario_totals\": [18014398509481982, 18014398509481982], \"turn_penalty\": 0, \"worst_time\": 18014398509481982}, \"status\": \"UNAVAILABLE_WITNESS_DOMAIN\"}, \"rss_kib\": 25000, \"solve_seconds\": 0.00013207199663156644, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.01415393699426204,
+      "identity": {
+        "manifest_sha256": "63cc2f50720b055184a1d1e2dd76bb90a32720ddaceee2c82f030f1ed95c3dd3",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "feasible_indices": [
+          0
+        ],
+        "objectives": [
+          18014398509481982
+        ],
+        "original": {
+          "budget": 0,
+          "forbidden": [],
+          "goal": "g",
+          "graph": {
+            "a": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  9007199254740991,
+                  9007199254740991
+                ],
+                "target": "b",
+                "time": 1
+              }
+            ],
+            "b": [
+              {
+                "exposure": 0,
+                "scenario_times": [
+                  9007199254740991,
+                  9007199254740991
+                ],
+                "target": "g",
+                "time": 1
+              }
+            ],
+            "g": []
+          },
+          "penalties": [],
+          "route": null,
+          "start": "a"
+        },
+        "paths": [
+          {
+            "arcs": [
+              0,
+              1,
+              2
+            ],
+            "exposure": 0,
+            "scenario_totals": [
+              18014398509481982,
+              18014398509481982
+            ]
+          }
+        ],
+        "reason": "selected witness totals exceed unchanged integer cap",
+        "selected_index": 0,
+        "selected_route": {
+          "edges": [
+            {
+              "edge_index": 0,
+              "source": "a",
+              "target": "b"
+            },
+            {
+              "edge_index": 0,
+              "source": "b",
+              "target": "g"
+            }
+          ],
+          "exposure": 0,
+          "path": [
+            "a",
+            "b",
+            "g"
+          ],
+          "scenario_totals": [
+            18014398509481982,
+            18014398509481982
+          ],
+          "turn_penalty": 0,
+          "worst_time": 18014398509481982
+        },
+        "status": "UNAVAILABLE_WITNESS_DOMAIN"
+      },
+      "rss_kib": 25000,
+      "solve_seconds": 0.00013207199663156644,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.11044202800258063
+  },
+  "slot": 35
+}
