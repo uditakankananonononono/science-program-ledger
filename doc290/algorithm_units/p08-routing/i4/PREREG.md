@@ -41,7 +41,9 @@ M=max(allfinite d), including sink0. For finite d(v), h(v)=D-d(v); for None,
 h(v)=D-M. Thus h(source)=0 andh(sink)=D. Proof forEVERYallowedarc(a,b,c>=0):
 finite->finite shortestpath inequality d(a)<=c+d(b) yields h(b)<=h(a)+c;
 finite->None uses M>=d(a), hence d(a)<=c+M;
-None->finite cannotoccur (then a would reachsink), independently checked;
+None->finite cannotoccur (then a would reachsink), explicitly verified PERcandidate on concrete originalarcs at generation time;
+any None->finite arc records candidate UNAVAILABLE_TOPOLOGY and emitsNOproof,
+never assume reachability property or repair ledger;
 None->None constantpotential andnonnegativecost. Goaloutgoingarcs/unreachable
 fromsource-but-sinkreachable states NOTexcluded. This handles I3C's rejected
 hEb0=0->sink5 trap by includingthatstate's actualsuffix/potential.
@@ -86,7 +88,9 @@ No productionkernelcalls; independent originalstate budgetDFS confirms8primal
 optima but is not generatorauthority/proof. This20battery notrun beforefreeze.
 
 Developmentoutside20: Fraction telescoping/maxextension/goaloutgoing/unreachable
-source-vs-sink/identity/zero/forbidden/parallel/repeatedvertex, differentminima/
+source-vs-sink/identity/zero/forbidden/parallel/repeatedvertex, clampboundary
+state d(v)==M and nonuniquemaxfinite distance controls/mutations, injected
+None->finite arc guardUNAVAILABLE/noemission, differentminima/
 correlatedcost/budgetgap/finitecandidatemiss, domainoverflow/grammar/types,
 strict independentoracle, falseledger/potential/witness/candidateorder rejection,
 auditexceptionpropagation, allcandidates enumerated evenaftercertificate. Real
@@ -100,3 +104,9 @@ publishedfreeze, no postfreeze code/candidate/oracle/rescore/tolerance/rescue.
 AllpriorI3CbaselineFAIL/P3FAIL/K1K2/M4negative/M5harnessFAIL/M6rejectedhistory
 unchanged; noautomaticproductionintegration/CI/completion/physiology/scienceclaim.
 One-shotprocessreported, notcryptographicallyprovedbyGitancestry.
+
+## Prereg design clarification before implementation
+Parent08:24:06 requires the None->finite topology implication as concrete
+per-candidate guard (UNAVAILABLE_TOPOLOGY/noemission) and clamp-boundary/nonunique
+M controls; added here before any fixedrow/generator execution. Initial25a2bf19
+prereg draft retained locally as ancestor, notpublished/evaluated.
