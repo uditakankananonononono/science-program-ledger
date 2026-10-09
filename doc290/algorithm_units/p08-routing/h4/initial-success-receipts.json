@@ -1,0 +1,200 @@
+{
+  "p3": {
+    "check": {
+      "ledger": [
+        {
+          "edge": [
+            "q",
+            0
+          ],
+          "scenario_totals": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"beam_info\": null, \"build_seconds\": 0.001355937998596346, \"counters\": {\"candidate_edges\": 1, \"dominance_pruned\": 0, \"incumbent_relaxations\": 1, \"labels_inserted\": 2, \"lb_pruned\": 0, \"max_live_queue\": 1, \"pops\": 2, \"reverse_relaxations\": 2, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"64ffa8e090e0c0210c2db090d0dce1f8829181fac3c40263ac2a3d427a14ee8e\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"worst_time\": 4}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"worst_time\": 4}, \"rss_kib\": 27780, \"solve_seconds\": 0.00011011099923052825, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "beam_info": null,
+      "build_seconds": 0.001355937998596346,
+      "counters": {
+        "candidate_edges": 1,
+        "dominance_pruned": 0,
+        "incumbent_relaxations": 1,
+        "labels_inserted": 2,
+        "lb_pruned": 0,
+        "max_live_queue": 1,
+        "pops": 2,
+        "reverse_relaxations": 2,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "64ffa8e090e0c0210c2db090d0dce1f8829181fac3c40263ac2a3d427a14ee8e",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "worst_time": 4
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "worst_time": 4
+      },
+      "rss_kib": 27780,
+      "solve_seconds": 0.00011011099923052825,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07033353499718942
+  },
+  "variant": {
+    "check": {
+      "ledger": [
+        {
+          "edge": [
+            "q",
+            0
+          ],
+          "scenario_totals": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"beam_info\": {\"beam_depths\": 1, \"beam_expansions\": 1, \"beam_goal_candidates\": 1, \"beam_kept\": 0, \"beam_worst\": 4, \"old_worst\": 4, \"selected_source\": \"old\"}, \"build_seconds\": 0.002147851999325212, \"counters\": {\"candidate_edges\": 1, \"dominance_pruned\": 0, \"incumbent_relaxations\": 1, \"labels_inserted\": 2, \"lb_pruned\": 0, \"max_live_queue\": 1, \"pops\": 2, \"reverse_relaxations\": 2, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"64ffa8e090e0c0210c2db090d0dce1f8829181fac3c40263ac2a3d427a14ee8e\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"worst_time\": 4}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"worst_time\": 4}, \"rss_kib\": 27780, \"solve_seconds\": 0.00015868500122451223, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "beam_info": {
+        "beam_depths": 1,
+        "beam_expansions": 1,
+        "beam_goal_candidates": 1,
+        "beam_kept": 0,
+        "beam_worst": 4,
+        "old_worst": 4,
+        "selected_source": "old"
+      },
+      "build_seconds": 0.002147851999325212,
+      "counters": {
+        "candidate_edges": 1,
+        "dominance_pruned": 0,
+        "incumbent_relaxations": 1,
+        "labels_inserted": 2,
+        "lb_pruned": 0,
+        "max_live_queue": 1,
+        "pops": 2,
+        "reverse_relaxations": 2,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "64ffa8e090e0c0210c2db090d0dce1f8829181fac3c40263ac2a3d427a14ee8e",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "worst_time": 4
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "worst_time": 4
+      },
+      "rss_kib": 27780,
+      "solve_seconds": 0.00015868500122451223,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.07545980700160726
+  }
+}
