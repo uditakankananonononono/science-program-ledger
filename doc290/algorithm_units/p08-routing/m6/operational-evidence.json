@@ -1,0 +1,244 @@
+{
+  "scope": "synthetic1200slot operational benchmark using copied real DEV receipts, NOT1200corpusmethods or measuredspeed",
+  "max_chunk_seconds": 6.349389114999212,
+  "chunks": [
+    {
+      "state": "OPEN",
+      "next": 40,
+      "launched": 40,
+      "elapsed": 0.5075773140051751
+    },
+    {
+      "state": "OPEN",
+      "next": 80,
+      "launched": 40,
+      "elapsed": 0.7207836300003692
+    },
+    {
+      "state": "OPEN",
+      "next": 120,
+      "launched": 40,
+      "elapsed": 0.9611625260004075
+    },
+    {
+      "state": "OPEN",
+      "next": 160,
+      "launched": 40,
+      "elapsed": 1.0847488779982086
+    },
+    {
+      "state": "OPEN",
+      "next": 200,
+      "launched": 40,
+      "elapsed": 1.4849863390045357
+    },
+    {
+      "state": "OPEN",
+      "next": 240,
+      "launched": 40,
+      "elapsed": 1.477420148999954
+    },
+    {
+      "state": "OPEN",
+      "next": 280,
+      "launched": 40,
+      "elapsed": 1.4584251269989181
+    },
+    {
+      "state": "OPEN",
+      "next": 320,
+      "launched": 40,
+      "elapsed": 2.183328654995421
+    },
+    {
+      "state": "OPEN",
+      "next": 360,
+      "launched": 40,
+      "elapsed": 2.243725763000839
+    },
+    {
+      "state": "OPEN",
+      "next": 400,
+      "launched": 40,
+      "elapsed": 1.852824938003323
+    },
+    {
+      "state": "OPEN",
+      "next": 440,
+      "launched": 40,
+      "elapsed": 2.7659455469984096
+    },
+    {
+      "state": "OPEN",
+      "next": 480,
+      "launched": 40,
+      "elapsed": 2.9392877209975268
+    },
+    {
+      "state": "OPEN",
+      "next": 520,
+      "launched": 40,
+      "elapsed": 2.1660607020021416
+    },
+    {
+      "state": "OPEN",
+      "next": 560,
+      "launched": 40,
+      "elapsed": 2.3003296040042187
+    },
+    {
+      "state": "OPEN",
+      "next": 600,
+      "launched": 40,
+      "elapsed": 2.7470992610033136
+    },
+    {
+      "state": "OPEN",
+      "next": 640,
+      "launched": 40,
+      "elapsed": 3.2225585589985712
+    },
+    {
+      "state": "OPEN",
+      "next": 680,
+      "launched": 40,
+      "elapsed": 2.9062731320009334
+    },
+    {
+      "state": "OPEN",
+      "next": 720,
+      "launched": 40,
+      "elapsed": 3.8329852629976813
+    },
+    {
+      "state": "OPEN",
+      "next": 760,
+      "launched": 40,
+      "elapsed": 3.5260536880014115
+    },
+    {
+      "state": "OPEN",
+      "next": 800,
+      "launched": 40,
+      "elapsed": 3.471461419998377
+    },
+    {
+      "state": "OPEN",
+      "next": 840,
+      "launched": 40,
+      "elapsed": 4.330993144001695
+    },
+    {
+      "state": "OPEN",
+      "next": 880,
+      "launched": 40,
+      "elapsed": 4.1713813620008295
+    },
+    {
+      "state": "OPEN",
+      "next": 920,
+      "launched": 40,
+      "elapsed": 3.994712781997805
+    },
+    {
+      "state": "OPEN",
+      "next": 960,
+      "launched": 40,
+      "elapsed": 4.603796825002064
+    },
+    {
+      "state": "OPEN",
+      "next": 1000,
+      "launched": 40,
+      "elapsed": 5.014137527003186
+    },
+    {
+      "state": "OPEN",
+      "next": 1040,
+      "launched": 40,
+      "elapsed": 5.347156280993659
+    },
+    {
+      "state": "OPEN",
+      "next": 1080,
+      "launched": 40,
+      "elapsed": 6.349389114999212
+    },
+    {
+      "state": "OPEN",
+      "next": 1120,
+      "launched": 40,
+      "elapsed": 5.275048971998331
+    },
+    {
+      "state": "OPEN",
+      "next": 1160,
+      "launched": 40,
+      "elapsed": 5.854970540996874
+    },
+    {
+      "state": "READY_FINAL",
+      "next": 1200,
+      "launched": 40,
+      "elapsed": 5.168376405999879
+    }
+  ],
+  "final_synthesis_seconds": 5.133545946002414,
+  "repeat_synthesis_seconds": 6.383049899995967,
+  "immutable_report_repeat": true,
+  "context_setup_seconds": 0.04034647499793209,
+  "per_dev_receipt_gate_parser_before_seconds": 0.0177346773998579,
+  "per_dev_receipt_singlegate_parser_after_seconds": 0.0003220140999474097,
+  "receipt_policy": "all prior and new receipt bytes, slot/order/input/source and full payload/oracle/proofs revalidated every invocation; no trusted incremental prefix shortcut; only source gate reused within that invocation",
+  "real_crash_evidence": {
+    "receipt": {
+      "receipts_unchanged": true,
+      "launches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "next": 4
+    },
+    "ledger": {
+      "receipts_unchanged": true,
+      "launches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "next": 4
+    },
+    "clear": {
+      "receipts_unchanged": true,
+      "launches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "next": 4
+    },
+    "pair": {
+      "receipts_unchanged": true,
+      "launches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "next": 4
+    },
+    "both_before_pair": {
+      "launches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "receipts_unchanged": true
+    }
+  }
+}
