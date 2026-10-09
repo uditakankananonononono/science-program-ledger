@@ -1,0 +1,222 @@
+# E5 exact equality exit frozen result
+
+Repairedfreeze3c8bd5d71c57c620e824fe2c48c781cd858fc6d1, rejected6d958e7a retained.
+One-shot 200/200 pairs agree; 400/400 subjects PASS.
+Exact equality early exit 86/200; unreachable 81/200 retained.
+No postfreeze edits/retry/rescue/drop. Per-scenario reverse distances/L/W/originalindexedincumbent/independent Bellman-Ford checker retained.
+
+| Actual E5 vs P3 counter | Wins(lower) | Ties | Losses(higher) | Paired denominator | Fail excluded |
+| --- | --- | --- | --- | --- | --- |
+| labels_inserted | 86 | 114 | 0 | 200 | 0 |
+| candidate_edges | 86 | 114 | 0 | 200 | 0 |
+Preprocessingreverse/incumbent countsactual and separate; earlyexit exact-phasezero, NOTinventedtotalwork/speed savings.
+EqualitycertifiedindexedincumbentmaydifferfromP3tiepath; objective+independentwitness checked, notexactpathmatch.
+Freshprospectivesynthetic seed161803, NOTexternal/realheldout/strongblinding/sciencevalidation.
+No prior-art screen receipt claimed; exactboundalgebra grounds statement, notoriginality/invention.
+Initialdevsuccessreceipts PRE-finalmanifest; finaldevrerun/freshsubjectreceipts finalgate.
+Singlematchedboundarytiming/wholeworkerRSS uncontrolled, no inferentialwin/runtimewin/novelty/publicbaseline superiority.
+ASvirtualaddressnotRSS/tree/container/OS/sharedlibs/scheduler guarantee; sourcepinsnotOSproof.
+M4negative446/600slower retainedunchanged; P3originalFAIL/I3CFAIL/K1K2/gaps/float/rejectedhistory unchanged.
+
+| Case | Oracle | E5 | P3 | Early exit |
+| --- | --- | --- | --- | --- |
+| fresh000 | 7 | PASS | PASS | True |
+| fresh001 | 3 | PASS | PASS | True |
+| fresh002 | None | PASS | PASS | False |
+| fresh003 | 7 | PASS | PASS | False |
+| fresh004 | 13 | PASS | PASS | False |
+| fresh005 | None | PASS | PASS | False |
+| fresh006 | None | PASS | PASS | False |
+| fresh007 | 14 | PASS | PASS | True |
+| fresh008 | 10 | PASS | PASS | True |
+| fresh009 | 9 | PASS | PASS | True |
+| fresh010 | 3 | PASS | PASS | True |
+| fresh011 | 6 | PASS | PASS | True |
+| fresh012 | 11 | PASS | PASS | True |
+| fresh013 | 8 | PASS | PASS | True |
+| fresh014 | None | PASS | PASS | False |
+| fresh015 | None | PASS | PASS | False |
+| fresh016 | 13 | PASS | PASS | False |
+| fresh017 | 11 | PASS | PASS | False |
+| fresh018 | 4 | PASS | PASS | False |
+| fresh019 | None | PASS | PASS | False |
+| fresh020 | 6 | PASS | PASS | True |
+| fresh021 | None | PASS | PASS | False |
+| fresh022 | 19 | PASS | PASS | True |
+| fresh023 | 19 | PASS | PASS | False |
+| fresh024 | None | PASS | PASS | False |
+| fresh025 | 2 | PASS | PASS | True |
+| fresh026 | 8 | PASS | PASS | False |
+| fresh027 | 6 | PASS | PASS | True |
+| fresh028 | None | PASS | PASS | False |
+| fresh029 | 8 | PASS | PASS | False |
+| fresh030 | 5 | PASS | PASS | True |
+| fresh031 | 7 | PASS | PASS | False |
+| fresh032 | None | PASS | PASS | False |
+| fresh033 | None | PASS | PASS | False |
+| fresh034 | 8 | PASS | PASS | True |
+| fresh035 | 7 | PASS | PASS | True |
+| fresh036 | 13 | PASS | PASS | False |
+| fresh037 | 3 | PASS | PASS | False |
+| fresh038 | 10 | PASS | PASS | False |
+| fresh039 | 11 | PASS | PASS | True |
+| fresh040 | 3 | PASS | PASS | True |
+| fresh041 | 15 | PASS | PASS | False |
+| fresh042 | None | PASS | PASS | False |
+| fresh043 | 9 | PASS | PASS | False |
+| fresh044 | 6 | PASS | PASS | True |
+| fresh045 | 3 | PASS | PASS | True |
+| fresh046 | None | PASS | PASS | False |
+| fresh047 | None | PASS | PASS | False |
+| fresh048 | None | PASS | PASS | False |
+| fresh049 | 5 | PASS | PASS | True |
+| fresh050 | 13 | PASS | PASS | True |
+| fresh051 | 13 | PASS | PASS | True |
+| fresh052 | None | PASS | PASS | False |
+| fresh053 | None | PASS | PASS | False |
+| fresh054 | 13 | PASS | PASS | True |
+| fresh055 | None | PASS | PASS | False |
+| fresh056 | None | PASS | PASS | False |
+| fresh057 | None | PASS | PASS | False |
+| fresh058 | None | PASS | PASS | False |
+| fresh059 | 18 | PASS | PASS | True |
+| fresh060 | None | PASS | PASS | False |
+| fresh061 | 11 | PASS | PASS | True |
+| fresh062 | 7 | PASS | PASS | False |
+| fresh063 | 9 | PASS | PASS | True |
+| fresh064 | 7 | PASS | PASS | True |
+| fresh065 | 4 | PASS | PASS | True |
+| fresh066 | 8 | PASS | PASS | True |
+| fresh067 | 5 | PASS | PASS | True |
+| fresh068 | None | PASS | PASS | False |
+| fresh069 | 4 | PASS | PASS | False |
+| fresh070 | None | PASS | PASS | False |
+| fresh071 | None | PASS | PASS | False |
+| fresh072 | 13 | PASS | PASS | True |
+| fresh073 | 4 | PASS | PASS | True |
+| fresh074 | 7 | PASS | PASS | True |
+| fresh075 | 6 | PASS | PASS | True |
+| fresh076 | 10 | PASS | PASS | True |
+| fresh077 | None | PASS | PASS | False |
+| fresh078 | 8 | PASS | PASS | False |
+| fresh079 | None | PASS | PASS | False |
+| fresh080 | 10 | PASS | PASS | True |
+| fresh081 | None | PASS | PASS | False |
+| fresh082 | None | PASS | PASS | False |
+| fresh083 | 7 | PASS | PASS | True |
+| fresh084 | 8 | PASS | PASS | True |
+| fresh085 | None | PASS | PASS | False |
+| fresh086 | None | PASS | PASS | False |
+| fresh087 | None | PASS | PASS | False |
+| fresh088 | 10 | PASS | PASS | True |
+| fresh089 | 12 | PASS | PASS | True |
+| fresh090 | None | PASS | PASS | False |
+| fresh091 | None | PASS | PASS | False |
+| fresh092 | 5 | PASS | PASS | True |
+| fresh093 | None | PASS | PASS | False |
+| fresh094 | 9 | PASS | PASS | True |
+| fresh095 | None | PASS | PASS | False |
+| fresh096 | 7 | PASS | PASS | False |
+| fresh097 | 7 | PASS | PASS | False |
+| fresh098 | None | PASS | PASS | False |
+| fresh099 | None | PASS | PASS | False |
+| fresh100 | None | PASS | PASS | False |
+| fresh101 | None | PASS | PASS | False |
+| fresh102 | None | PASS | PASS | False |
+| fresh103 | None | PASS | PASS | False |
+| fresh104 | None | PASS | PASS | False |
+| fresh105 | 14 | PASS | PASS | True |
+| fresh106 | 7 | PASS | PASS | True |
+| fresh107 | None | PASS | PASS | False |
+| fresh108 | 4 | PASS | PASS | True |
+| fresh109 | 7 | PASS | PASS | True |
+| fresh110 | 6 | PASS | PASS | False |
+| fresh111 | 3 | PASS | PASS | True |
+| fresh112 | 18 | PASS | PASS | True |
+| fresh113 | 2 | PASS | PASS | True |
+| fresh114 | 4 | PASS | PASS | True |
+| fresh115 | None | PASS | PASS | False |
+| fresh116 | 10 | PASS | PASS | True |
+| fresh117 | None | PASS | PASS | False |
+| fresh118 | None | PASS | PASS | False |
+| fresh119 | 5 | PASS | PASS | True |
+| fresh120 | None | PASS | PASS | False |
+| fresh121 | 13 | PASS | PASS | True |
+| fresh122 | 13 | PASS | PASS | True |
+| fresh123 | None | PASS | PASS | False |
+| fresh124 | 5 | PASS | PASS | True |
+| fresh125 | None | PASS | PASS | False |
+| fresh126 | 4 | PASS | PASS | True |
+| fresh127 | None | PASS | PASS | False |
+| fresh128 | 3 | PASS | PASS | True |
+| fresh129 | None | PASS | PASS | False |
+| fresh130 | None | PASS | PASS | False |
+| fresh131 | 2 | PASS | PASS | True |
+| fresh132 | None | PASS | PASS | False |
+| fresh133 | 7 | PASS | PASS | True |
+| fresh134 | 6 | PASS | PASS | True |
+| fresh135 | 16 | PASS | PASS | False |
+| fresh136 | None | PASS | PASS | False |
+| fresh137 | 5 | PASS | PASS | False |
+| fresh138 | 10 | PASS | PASS | True |
+| fresh139 | None | PASS | PASS | False |
+| fresh140 | 8 | PASS | PASS | True |
+| fresh141 | 11 | PASS | PASS | False |
+| fresh142 | 5 | PASS | PASS | True |
+| fresh143 | 7 | PASS | PASS | True |
+| fresh144 | 6 | PASS | PASS | False |
+| fresh145 | 3 | PASS | PASS | True |
+| fresh146 | None | PASS | PASS | False |
+| fresh147 | 7 | PASS | PASS | True |
+| fresh148 | 10 | PASS | PASS | True |
+| fresh149 | 10 | PASS | PASS | True |
+| fresh150 | 3 | PASS | PASS | True |
+| fresh151 | None | PASS | PASS | False |
+| fresh152 | 17 | PASS | PASS | True |
+| fresh153 | 4 | PASS | PASS | True |
+| fresh154 | None | PASS | PASS | False |
+| fresh155 | None | PASS | PASS | False |
+| fresh156 | 16 | PASS | PASS | True |
+| fresh157 | None | PASS | PASS | False |
+| fresh158 | 7 | PASS | PASS | False |
+| fresh159 | None | PASS | PASS | False |
+| fresh160 | 7 | PASS | PASS | False |
+| fresh161 | None | PASS | PASS | False |
+| fresh162 | 5 | PASS | PASS | True |
+| fresh163 | None | PASS | PASS | False |
+| fresh164 | None | PASS | PASS | False |
+| fresh165 | 16 | PASS | PASS | True |
+| fresh166 | None | PASS | PASS | False |
+| fresh167 | None | PASS | PASS | False |
+| fresh168 | 6 | PASS | PASS | True |
+| fresh169 | 7 | PASS | PASS | True |
+| fresh170 | None | PASS | PASS | False |
+| fresh171 | None | PASS | PASS | False |
+| fresh172 | 11 | PASS | PASS | False |
+| fresh173 | 14 | PASS | PASS | False |
+| fresh174 | None | PASS | PASS | False |
+| fresh175 | None | PASS | PASS | False |
+| fresh176 | None | PASS | PASS | False |
+| fresh177 | None | PASS | PASS | False |
+| fresh178 | 10 | PASS | PASS | False |
+| fresh179 | 19 | PASS | PASS | False |
+| fresh180 | None | PASS | PASS | False |
+| fresh181 | 18 | PASS | PASS | True |
+| fresh182 | 0 | PASS | PASS | True |
+| fresh183 | 6 | PASS | PASS | True |
+| fresh184 | None | PASS | PASS | False |
+| fresh185 | 7 | PASS | PASS | True |
+| fresh186 | None | PASS | PASS | False |
+| fresh187 | None | PASS | PASS | False |
+| fresh188 | None | PASS | PASS | False |
+| fresh189 | 7 | PASS | PASS | False |
+| fresh190 | 11 | PASS | PASS | True |
+| fresh191 | 7 | PASS | PASS | True |
+| fresh192 | 7 | PASS | PASS | False |
+| fresh193 | None | PASS | PASS | False |
+| fresh194 | 19 | PASS | PASS | True |
+| fresh195 | None | PASS | PASS | False |
+| fresh196 | None | PASS | PASS | False |
+| fresh197 | 6 | PASS | PASS | True |
+| fresh198 | 11 | PASS | PASS | False |
+| fresh199 | 4 | PASS | PASS | True |
