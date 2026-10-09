@@ -33,3 +33,7 @@ generalrouting-equivalence/invention/clinical/anatomy/hardware/scienceclaim.
 Knownfloatregroupingnon-equivalence unchanged; floatcosts deliberatelyunsupported.
 Capsnotpeakmemory/hardtimeout/sandboxproof; runtimepinsnotcompleteOS/sharedlib
 provenance. Expansion validates suppliedwitness, not universalrouteauthority.
+
+Production expand_route remains unchanged and does NOT automatically gain these
+checks. This is a separate validator artifact callers must explicitly invoke.
+No production integration or mandatory enforcement claim follows from C1.
