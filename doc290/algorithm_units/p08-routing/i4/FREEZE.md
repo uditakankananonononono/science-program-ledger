@@ -48,3 +48,11 @@ lambda0,1/2,1,2 Cartesian schedule. Claim-level independent arcs/BF/algebra/
 schedule, NOT wholly independent source implementation (shared unchangedchecker/
 modelhelpers). Parent re-emission explicitlychecksoriginalI3loadedpath; source
 bytes/transitivehelpers remain manifestpinned, no checkeredit.
+
+AdditionalHOLD mixed-domainreceiptfailure reproduced beforefixed20: generator
+capped-distance RHS can raiseDomain before row.update states/distances, parent
+had comparedmissingfields before independently evaluatingthatdomain. Repaired
+parent computesall cappedrepresentation first, tracks actualstagefields, requires
+exactdomain-stage agreement. Mixedadmitted+UNAVAILABLE_DOMAIN devgeneratorresult
+now parentverifySUCCESS; inventedstates/distances atearlydomainstage rejects.
+Scheduleindependence+strictschema+checkerbytepins retained; no scoredrerun.

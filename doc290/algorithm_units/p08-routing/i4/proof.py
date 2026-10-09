@@ -92,16 +92,21 @@ def verify(s,result):
             if ('states' in row)!=('distances' in row) or ('clamp' in row)!=('potential' in row):raise Failure('domain stage fields')
         else:raise Failure('candidate status schema')
         if row['index']!=k or row['weights']!=[text(v) for v in w] or row['multiplier']!=text(lam):raise Failure('candidate order/parameters')
+        stage_fields=set()
         try:
             st,aa,dd=distances(s,w,lam)
             import json
-            if json.dumps(row.get('states'),sort_keys=True)!=json.dumps(st,sort_keys=True) or row.get('distances')!=[None if v is None else text(v) for v in dd]:raise Failure('receipt original distance ledger')
+            represented_distances=[None if v is None else text(v) for v in dd]
+            stage_fields={'states','distances'}
+            if json.dumps(row.get('states'),sort_keys=True)!=json.dumps(st,sort_keys=True) or row.get('distances')!=represented_distances:raise Failure('receipt original distance ledger')
             constructed=guarded_potential(dd,aa)
             if constructed is None:
                 if row['status']!='UNAVAILABLE_TOPOLOGY' or 'checker' in row:raise Failure('topology no-emission')
                 continue
             h,M=constructed
-            if row['clamp']!=text(M) or row['potential']!=[text(v) for v in h]:raise Failure('receipt clamp/potential')
+            represented_M=text(M);represented_h=[text(v) for v in h]
+            stage_fields |= {'clamp','potential'}
+            if row['clamp']!=represented_M or row['potential']!=represented_h:raise Failure('receipt clamp/potential')
             for v in (sum(x*y for x,y in zip(w,primal['scenario_totals'])),sum(x*y for x,y in zip(w,primal['scenario_totals']))+lam*primal['exposure'],lam*s['budget'],h[-1]-lam*s['budget']):text(v)
             from model import SPEC_PATH
             from pathlib import Path
@@ -111,6 +116,7 @@ def verify(s,result):
             if json.dumps(check,sort_keys=True)!=json.dumps(row['checker'],sort_keys=True) or row['status']!=check['status'] or row['lower_bound']!=text(LB) or row['gap']!=text(Fraction(primal['worst_time'])-LB):raise Failure('receipt emitted checker/algebra')
             if best is None or LB>best:best=LB;selected=k
         except Domain:
+            if set(row)!=basekeys|stage_fields|{'status','reason'}:raise Failure('domain stage agreement')
             if row['status']!='UNAVAILABLE_DOMAIN' or 'checker' in row:raise Failure('candidate domain category')
     status='UNAVAILABLE_DOMAIN' if best is None else 'CERTIFIED_INTEGRATED' if best==primal['worst_time'] else 'UNAVAILABLE'
     expectedgap=None if best is None else text(Fraction(primal['worst_time'])-best)

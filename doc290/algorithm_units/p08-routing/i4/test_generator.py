@@ -54,6 +54,11 @@ class Development(unittest.TestCase):
         with self.assertRaises(Failure):verify(s,rr)
     def test_domain_caps_and_larger_than_source_clamp(self):
         s=self.s();s['graph']['x'][0]['scenario_times']=[i3.b3.MAX,i3.b3.MAX];s['graph']['x'][0]['exposure']=i3.b3.MAX;s['graph']['u'].append(self.e('x',[0,0]));r=generate(s);self.assertTrue(any(c['status']=='UNAVAILABLE_DOMAIN' for c in r['candidates']));self.assertEqual(len(r['candidates']),12)
+        from proof import verify
+        verify(s,r)
+        rr=copy.deepcopy(r)
+        domain=next(c for c in rr['candidates'] if c['status']=='UNAVAILABLE_DOMAIN');domain['states']=[];domain['distances']=[]
+        with self.assertRaises(Failure):verify(s,rr)
     def test_revisit_and_json(self):
         s={'graph':{'a':[self.e('b',[1,1])],'b':[self.e('c',[1,1]),self.e('g',[1,1])],'c':[self.e('b',[1,1])],'g':[]},'start':'a','goal':'g','budget':0,'forbidden':[[['a',0],['b',1]]],'penalties':[],'route':{'path':['a','b','c','b','g'],'edges':[{'source':a,'edge_index':i,'target':b} for a,i,b in [('a',0,'b'),('b',0,'c'),('c',0,'b'),('b',1,'g')]],'scenario_totals':[4,4],'worst_time':4,'exposure':0,'turn_penalty':0}}
         self.assertEqual(generate(s)['status'],'CERTIFIED_INTEGRATED')
