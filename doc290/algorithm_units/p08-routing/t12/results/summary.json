@@ -1,0 +1,92 @@
+{
+  "activation_classes": {
+    "charged_bound": 3,
+    "exposure_exit": 141,
+    "old_bound_equality": 56
+  },
+  "agreement_count": 200,
+  "attempt_count": 400,
+  "baseline_classes": {
+    "budget_infeasible": 8,
+    "equality_exit": 56,
+    "no_allowed_turn_path": 133,
+    "strict_gap_search": 3
+  },
+  "baseline_counter_totals": {
+    "candidate_edges": 6,
+    "charged_bound_stronger": 0,
+    "charged_reverse_inspections": 921,
+    "charged_strict_exclusions": 0,
+    "dominance_pruned": 0,
+    "feasibility_pruned": 0,
+    "forbidden_skipped": 0,
+    "incumbent_inspections": 239,
+    "labels_inserted": 7,
+    "max_live_queue": 4,
+    "objective_bound_pruned": 2,
+    "pops": 6,
+    "reverse_relaxations": 472,
+    "scenario_reverse_inspections": 921,
+    "stale_pops": 0
+  },
+  "charged_inspections_saved": 831,
+  "chunk_count": 100,
+  "chunk_max_seconds": 4.256328618001135,
+  "comparison": {
+    "candidate_edges": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "charged_reverse_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 144,
+      "wins": 56
+    },
+    "labels_inserted": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    }
+  },
+  "extra_exclusion_cases": 0,
+  "finalize_seconds": 3.4480790170055116,
+  "freeze": "9abc86263fd76511e0bde3d720c57391f04b280c",
+  "orders": {
+    "t11/variant": 100,
+    "variant/t11": 100
+  },
+  "pair_count": 200,
+  "pass_count": 400,
+  "scope": "fresh synthetic paired400 one run, no timing superiority",
+  "source_bound_stronger": 0,
+  "variant_classes": {
+    "budget_infeasible": 8,
+    "equality_exit": 56,
+    "no_allowed_turn_path": 133,
+    "strict_gap_search": 3
+  },
+  "variant_counter_totals": {
+    "candidate_edges": 6,
+    "charged_bound_stronger": 0,
+    "charged_reverse_inspections": 90,
+    "charged_strict_exclusions": 0,
+    "dominance_pruned": 0,
+    "feasibility_pruned": 0,
+    "forbidden_skipped": 0,
+    "incumbent_inspections": 239,
+    "labels_inserted": 7,
+    "max_live_queue": 4,
+    "objective_bound_pruned": 2,
+    "pops": 6,
+    "reverse_relaxations": 472,
+    "scenario_reverse_inspections": 921,
+    "stale_pops": 0
+  }
+}

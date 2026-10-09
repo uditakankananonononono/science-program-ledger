@@ -1,0 +1,111 @@
+{
+  "entry": {
+    "case_index": 121,
+    "input_sha256": "17788628bc7ee09a9a2cdabe20ca43b25e17bce4b8414fa0319d5b753b35d088",
+    "method": "t11",
+    "name": "turn121",
+    "oracle": null,
+    "order": [
+      "t11",
+      "variant"
+    ]
+  },
+  "identity": {
+    "manifest_sha256": "5a3d300c7a9f135e676d6d4014aeff515b5f164cb97607a4ebd933cd406c7bf0",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "status": "PASS",
+      "unreachable_oracle": true
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"activation\": null, \"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.018156048994569574, \"certificate\": {\"budget\": 3, \"charged_lambda\": 1, \"early_exit\": true, \"equality_exit\": false, \"lower\": null, \"old_lower\": null, \"reason\": \"no_allowed_turn_path\", \"source_bound_stronger\": false, \"upper\": null}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"charged_bound_stronger\": 0, \"charged_reverse_inspections\": 0, \"charged_strict_exclusions\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 0, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 0, \"scenario_reverse_inspections\": 0, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"5a3d300c7a9f135e676d6d4014aeff515b5f164cb97607a4ebd933cd406c7bf0\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": null, \"proof\": {\"distances\": [null, null, 0], \"start_minimum\": null, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"d\", 0], \"kind\": \"edge\", \"vertex\": \"c\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"d\"}]}, \"route\": null, \"rss_kib\": 29616, \"scenario_proof\": null, \"solve_seconds\": 0.00012489700020523742, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "activation": null,
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "bound_trace": [],
+      "build_seconds": 0.018156048994569574,
+      "certificate": {
+        "budget": 3,
+        "charged_lambda": 1,
+        "early_exit": true,
+        "equality_exit": false,
+        "lower": null,
+        "old_lower": null,
+        "reason": "no_allowed_turn_path",
+        "source_bound_stronger": false,
+        "upper": null
+      },
+      "charged_proof": null,
+      "counters": {
+        "candidate_edges": 0,
+        "charged_bound_stronger": 0,
+        "charged_reverse_inspections": 0,
+        "charged_strict_exclusions": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 0,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 0,
+        "scenario_reverse_inspections": 0,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "5a3d300c7a9f135e676d6d4014aeff515b5f164cb97607a4ebd933cd406c7bf0",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": null,
+      "proof": {
+        "distances": [
+          null,
+          null,
+          0
+        ],
+        "start_minimum": null,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "d",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "c"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "d"
+          }
+        ]
+      },
+      "route": null,
+      "rss_kib": 29616,
+      "scenario_proof": null,
+      "solve_seconds": 0.00012489700020523742,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.09703401500155451
+  },
+  "slot": 242
+}
