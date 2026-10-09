@@ -1,0 +1,1228 @@
+{
+  "agreement_count": 20,
+  "baseline": [
+    {
+      "certificate_check_with_supplied_potential": {
+        "lower_bound": 2,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "total": 2
+          }
+        ],
+        "route_time": 2,
+        "slacks": [
+          0,
+          3,
+          0,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 2,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 5,
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "source": 0,
+            "target": 2
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 1,
+            "target": 3
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 2,
+            "target": 3
+          }
+        ]
+      },
+      "name": "A",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "path": [
+          "a",
+          "g"
+        ],
+        "time": 2,
+        "turn_penalty": 0
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "lower_bound": 4,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "total": 1
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "total": 2
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "c",
+              0
+            ],
+            "total": 3
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "b",
+              1
+            ],
+            "total": 4
+          }
+        ],
+        "route_time": 4,
+        "slacks": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "c"
+          },
+          {
+            "incoming": [
+              "b",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "c",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 1,
+            "target": 2
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "c",
+              0
+            ],
+            "source": 2,
+            "target": 4
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 3,
+            "target": 5
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 4,
+            "target": 2
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              1
+            ],
+            "source": 4,
+            "target": 3
+          }
+        ]
+      },
+      "name": "B",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "path": [
+          "a",
+          "b",
+          "c",
+          "b",
+          "g"
+        ],
+        "time": 4,
+        "turn_penalty": 0
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "lower_bound": 0,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [],
+        "route_time": 0,
+        "slacks": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "a"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "a"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 0,
+            "target": 2
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 1,
+            "target": 1
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 1,
+            "target": 2
+          }
+        ]
+      },
+      "name": "C",
+      "route": {
+        "edges": [],
+        "path": [
+          "a"
+        ],
+        "time": 0,
+        "turn_penalty": 0
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "lower_bound": 3,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "total": 2
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "total": 3
+          }
+        ],
+        "route_time": 3,
+        "slacks": [
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 2,
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "source": 0,
+            "target": 2
+          },
+          {
+            "cost": 6,
+            "delay": 5,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 1,
+            "target": 3
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 2,
+            "target": 3
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 3,
+            "target": 4
+          }
+        ]
+      },
+      "name": "D",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "time": 3,
+        "turn_penalty": 0
+      }
+    }
+  ],
+  "row_count": 20,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_OPTIMAL",
+      "input_sha256": "e66d93976b7bcb1ad0df352e9a05a7634c020da972f58ce73296a0e17283c450",
+      "name": "A",
+      "result": {
+        "lower_bound": 2,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "total": 2
+          }
+        ],
+        "route_time": 2,
+        "slacks": [
+          0,
+          3,
+          0,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 2,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 5,
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "source": 0,
+            "target": 2
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 1,
+            "target": 3
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 2,
+            "target": 3
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "fbbc60e22939d6fca12d49394a4406fc97d07cef1f5fefd53be25234a2465724",
+      "name": "A:time",
+      "result": {
+        "reason": "route reported total",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "53b10c5e94755eeb5e0fd897ba385c3c634609dd7c4721c74317f15cadfafb85",
+      "name": "A:source",
+      "result": {
+        "reason": "source potential nonzero",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a0391316d9b27403aef82a47dcd0d9f6fe491a429811885b97b61ce315b2a18a",
+      "name": "A:shape",
+      "result": {
+        "reason": "canonical potential dimension",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_OPTIMAL",
+      "input_sha256": "987067f1deb6a121d98f991f75782aa7437edcb75a4dcdf8562a9c1d995210d5",
+      "name": "B",
+      "result": {
+        "lower_bound": 4,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "total": 1
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "total": 2
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "c",
+              0
+            ],
+            "total": 3
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "b",
+              1
+            ],
+            "total": 4
+          }
+        ],
+        "route_time": 4,
+        "slacks": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "c"
+          },
+          {
+            "incoming": [
+              "b",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "c",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 1,
+            "target": 2
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "c",
+              0
+            ],
+            "source": 2,
+            "target": 4
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 3,
+            "target": 5
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 4,
+            "target": 2
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              1
+            ],
+            "source": 4,
+            "target": 3
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "0e2d0b214d22559b11ee57717bf2304d3fc78b3e0e67b0c301e0a6cd9b4ce843",
+      "name": "B:time",
+      "result": {
+        "reason": "route reported total",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "4f63fe0787ec27fc6848645ae788fdde9ca12bcd2ec4332010b8d9b17440f24b",
+      "name": "B:source",
+      "result": {
+        "reason": "source potential nonzero",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8d11d43b171ba3c717a36d5ec45f798b4a5f309b8c1b94b4f2ffb291c788d310",
+      "name": "B:shape",
+      "result": {
+        "reason": "canonical potential dimension",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_OPTIMAL",
+      "input_sha256": "27c20c0380f025afab7ab8fca558dfe676e3124a698b215a38ae914a26612651",
+      "name": "C",
+      "result": {
+        "lower_bound": 0,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [],
+        "route_time": 0,
+        "slacks": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "a"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "a"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 0,
+            "target": 2
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 1,
+            "target": 1
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 1,
+            "target": 2
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f616107077af9ceeffe39132d5471caccbb7aa6d802f862bc18685741b26efb2",
+      "name": "C:time",
+      "result": {
+        "reason": "route reported total",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "543cbb45aa4e92d3b47c9763591d3c08defe1cf75a847d80a4c9bfad23ec1f51",
+      "name": "C:source",
+      "result": {
+        "reason": "source potential nonzero",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "a5fa2d356af1e1775d148fd85153355ed06b6d652ec32db146b5db07e1239c3e",
+      "name": "C:shape",
+      "result": {
+        "reason": "canonical potential dimension",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_OPTIMAL",
+      "input_sha256": "6ce4101936fb417fe400da8467dbb02b4977acc53b484c04b8127554a3c6df1d",
+      "name": "D",
+      "result": {
+        "lower_bound": 3,
+        "reason": "matching exact feasible route/lower bound",
+        "route_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "total": 2
+          },
+          {
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "total": 3
+          }
+        ],
+        "route_time": 3,
+        "slacks": [
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "b"
+          },
+          {
+            "incoming": [
+              "b",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "CERTIFIED_OPTIMAL",
+        "transitions": [
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 2,
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "source": 0,
+            "target": 2
+          },
+          {
+            "cost": 6,
+            "delay": 5,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 1,
+            "target": 3
+          },
+          {
+            "cost": 1,
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "source": 2,
+            "target": 3
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 3,
+            "target": 4
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "664578f9a7308f636ff73088d4455861622c4e16cb081dff220419989f8271d0",
+      "name": "D:time",
+      "result": {
+        "reason": "route reported total",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "40edf30404d1cb9afbf5f4e19adea7535ea464971a88c3df5e4dee0695a6bb33",
+      "name": "D:source",
+      "result": {
+        "reason": "source potential nonzero",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8f6ff7efe642d9a054be0617936b8f66dc8691fd74bca8a6e6e228c82b8702e7",
+      "name": "D:shape",
+      "result": {
+        "reason": "canonical potential dimension",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "88e4eae457820e4e643c5c6c319b30af6ae75470973725779dac323b4d51495d",
+      "name": "control:null",
+      "result": {
+        "reason": "missing route/potential after model checks",
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "63b57e9f70ed7271a836ffc802bb9482c0f2d5142c35cd844708782c8dfdda9e",
+      "name": "control:slack",
+      "result": {
+        "lower_bound": 0,
+        "reason": "feasible lower bound slack",
+        "route_ledger": [
+          {
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "total": 2
+          }
+        ],
+        "route_time": 2,
+        "slacks": [
+          2,
+          5,
+          0,
+          0
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": [
+              "a",
+              1
+            ],
+            "kind": "edge",
+            "vertex": "g"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "g"
+          }
+        ],
+        "status": "UNAVAILABLE",
+        "transitions": [
+          {
+            "cost": 2,
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "source": 0,
+            "target": 1
+          },
+          {
+            "cost": 5,
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "source": 0,
+            "target": 2
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 1,
+            "target": 3
+          },
+          {
+            "cost": 0,
+            "delay": 0,
+            "edge": null,
+            "source": 2,
+            "target": 3
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f4e8a5eda522415d2e25c8a4021c45c87f0de63a299e6fbfc42c5da4e7300960",
+      "name": "control:float",
+      "result": {
+        "reason": "signed integer potential cap",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "3899e4e0550c0f297c00381c513e2d227d4be195f8936db23d2040c7ba5bd906",
+      "name": "control:badrule",
+      "result": {
+        "reason": "edge ID absent",
+        "status": "INVALID"
+      },
+      "warnings": []
+    }
+  ],
+  "scope": "supplied turn-shortest-time potential proof, not search/clinical/compression"
+}
