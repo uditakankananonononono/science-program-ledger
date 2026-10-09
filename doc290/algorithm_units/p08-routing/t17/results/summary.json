@@ -1,0 +1,302 @@
+{
+  "agreement_count": 200,
+  "agreements_scope": {
+    "both_oracle_and_routes_none": 143,
+    "meaning": "includes agreement on nothing to find; T17 and T16 not distinguished at all",
+    "reachable_oracles": 57
+  },
+  "attempt_count": 400,
+  "baseline_commit": "dc80913bf7c6b9c03366f05b275de90b72b101b5",
+  "baseline_weighted_alignment": "comparison-layer zero only; immutable T16 payload/checker untouched",
+  "baseline_weighted_zero": "T16 comparison layer only; absent from immutable T16 receipt counters, not a measured count",
+  "chunks": 100,
+  "comparison": {
+    "candidate_edges": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "charged_bound_stronger": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "charged_reverse_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "charged_strict_exclusions": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "dominance_pruned": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "feasibility_pruned": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "forbidden_skipped": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "incumbent_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "labels_inserted": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "max_live_queue": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "objective_bound_pruned": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "pops": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "reverse_relaxations": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "scalar_candidate_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "scenario_reverse_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "stale_pops": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "weighted_candidate_inspections": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    }
+  },
+  "complete_result_review": {
+    "counters_report_summary_consistent": true,
+    "file_hashes": {
+      "checked": 612,
+      "matching": 612
+    },
+    "killed": 0,
+    "nonzero": 0,
+    "not_rerun_or_reverified": [
+      "solver",
+      "worker controls",
+      "freeze byte identity",
+      "chunk timings",
+      "oracle correctness beyond hash match"
+    ],
+    "ordered_plan_receipts": 400,
+    "pair_markers_match_receipt_bytes": 200,
+    "pass": 400,
+    "single_identity": true,
+    "timeout": 0
+  },
+  "external_worker_controls_review_status": "UNVERIFIED; complete-result reviewer read log, did not rerun",
+  "failure_count": 0,
+  "finalize_elapsed": 8.204667196000173,
+  "freeze_commit": "95f2617ffb4624c529282cfb6f09396a59472b7b",
+  "freeze_tree": "27c9d498428f007b568407928ddc5575aca4ff77",
+  "max_chunk_elapsed": 8.734585685000184,
+  "methods": {
+    "t16": {
+      "all_pass_counter_totals": {
+        "candidate_edges": 0,
+        "charged_bound_stronger": 0,
+        "charged_reverse_inspections": 24,
+        "charged_strict_exclusions": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 295,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 562,
+        "scalar_candidate_inspections": 7,
+        "scenario_reverse_inspections": 1173,
+        "stale_pops": 0,
+        "weighted_candidate_inspections": 0
+      },
+      "attempt_count": 200,
+      "candidate_activation_classes": {
+        "candidates_activated": 1,
+        "exposure_exit": 143,
+        "original_bound_equality": 56
+      },
+      "duplicate_candidate_rows": 0,
+      "eligible_candidate_rows": 2,
+      "failure_count": 0,
+      "last_equality_prefix_count": 0,
+      "omitted_route_eligibility": "UNKNOWN, not constructed/audited",
+      "overbudget_candidate_rows": 0,
+      "paired_pass_counter_totals": {
+        "candidate_edges": 0,
+        "charged_bound_stronger": 0,
+        "charged_reverse_inspections": 24,
+        "charged_strict_exclusions": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 295,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 562,
+        "scalar_candidate_inspections": 7,
+        "scenario_reverse_inspections": 1173,
+        "stale_pops": 0,
+        "weighted_candidate_inspections": 0
+      },
+      "pass_count": 200,
+      "positive_remaining_equality_prefix_count": 1,
+      "prefix_terminal_classes": {
+        "bound_equality": 1
+      },
+      "produced_candidate_rows": 2,
+      "remaining_scenario_index_count": 2
+    },
+    "variant": {
+      "all_pass_counter_totals": {
+        "candidate_edges": 0,
+        "charged_bound_stronger": 0,
+        "charged_reverse_inspections": 24,
+        "charged_strict_exclusions": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 295,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 562,
+        "scalar_candidate_inspections": 7,
+        "scenario_reverse_inspections": 1173,
+        "stale_pops": 0,
+        "weighted_candidate_inspections": 0
+      },
+      "attempt_count": 200,
+      "candidate_activation_classes": {
+        "candidates_activated": 1,
+        "exposure_exit": 143,
+        "original_bound_equality": 56
+      },
+      "duplicate_candidate_rows": 0,
+      "eligible_candidate_rows": 2,
+      "failure_count": 0,
+      "last_equality_prefix_count": 0,
+      "omitted_route_eligibility": "UNKNOWN, not constructed/audited",
+      "overbudget_candidate_rows": 0,
+      "paired_pass_counter_totals": {
+        "candidate_edges": 0,
+        "charged_bound_stronger": 0,
+        "charged_reverse_inspections": 24,
+        "charged_strict_exclusions": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 295,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 562,
+        "scalar_candidate_inspections": 7,
+        "scenario_reverse_inspections": 1173,
+        "stale_pops": 0,
+        "weighted_candidate_inspections": 0
+      },
+      "pass_count": 200,
+      "positive_remaining_equality_prefix_count": 1,
+      "prefix_terminal_classes": {
+        "bound_equality": 1
+      },
+      "produced_candidate_rows": 2,
+      "remaining_scenario_index_count": 2
+    }
+  },
+  "pair_count": 200,
+  "paired_failure_excluded": 0,
+  "pass_count": 400,
+  "reachable_oracle_count": 57,
+  "report_sha256": "30675819f63b334174c4fa3c2f055e76947d555ef37a77d6767774b103ff6cbe",
+  "retired_seed_list_completeness": "UNVERIFIED",
+  "review": "SCOPED PASS for null result publication; wording amendments applied",
+  "scope": "one preregistered fixed400 T17/T16 run only after reviewed published freeze; no speed/total-work/invention claim",
+  "seed": 316227,
+  "unreachable_oracle_count": 143,
+  "weighted_activated_W_vs_baseline": {
+    "denominator": 0,
+    "eligible_rows": 0,
+    "excluded_early_original_charged_prefix_skips": 200,
+    "excluded_failed_pairs": 0,
+    "improved": 0,
+    "overbudget_rows": 0,
+    "selected_weighted_rows": 0,
+    "tied": 0,
+    "worsened": 0
+  }
+}
