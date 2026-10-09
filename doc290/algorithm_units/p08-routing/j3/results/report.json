@@ -1,0 +1,747 @@
+{
+  "agreement_count": 20,
+  "baseline": [
+    {
+      "certificate_check_with_supplied_potential": {
+        "budget_charge": "2/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "1/1",
+            "target": "g",
+            "weighted_cost": "4/1"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "1/1",
+        "reason": "matching feasible worst/joint bound",
+        "route_exposure": 2,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 2,
+            "scenario_totals": [
+              1,
+              1
+            ]
+          }
+        ],
+        "route_worst": 1,
+        "scenario_totals": [
+          1,
+          1
+        ],
+        "status": "CERTIFIED_JOINT",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "3/1",
+        "weighted_scenario_sum": "1/1"
+      },
+      "name": "A",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          1,
+          1
+        ],
+        "worst_time": 1
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "budget_charge": "1/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "b",
+            "weighted_cost": "7/2"
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "7/2"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "6/1",
+        "reason": "matching feasible worst/joint bound",
+        "route_exposure": 2,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "scenario_totals": [
+              1,
+              5
+            ]
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "exposure": 2,
+            "scenario_totals": [
+              6,
+              6
+            ]
+          }
+        ],
+        "route_worst": 6,
+        "scenario_totals": [
+          6,
+          6
+        ],
+        "status": "CERTIFIED_JOINT",
+        "vertices": [
+          "a",
+          "b",
+          "g"
+        ],
+        "weighted_route_cost": "7/1",
+        "weighted_scenario_sum": "6/1"
+      },
+      "name": "B",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "g"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "b",
+          "g"
+        ],
+        "scenario_totals": [
+          6,
+          6
+        ],
+        "worst_time": 6
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "budget_charge": "0/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "3/1",
+            "target": "g",
+            "weighted_cost": "5/1"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "2/1",
+        "reason": "matching feasible worst/joint bound",
+        "route_exposure": 1,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "scenario_totals": [
+              2,
+              2
+            ]
+          }
+        ],
+        "route_worst": 2,
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "status": "CERTIFIED_JOINT",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "2/1",
+        "weighted_scenario_sum": "2/1"
+      },
+      "name": "C",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 1,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "worst_time": 2
+      }
+    },
+    {
+      "certificate_check_with_supplied_potential": {
+        "budget_charge": "1/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          }
+        ],
+        "gap": "1/1",
+        "lower_bound": "2/1",
+        "reason": "feasible incomplete joint bound",
+        "route_exposure": 0,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "exposure": 0,
+            "scenario_totals": [
+              3,
+              3
+            ]
+          }
+        ],
+        "route_worst": 3,
+        "scenario_totals": [
+          3,
+          3
+        ],
+        "status": "UNAVAILABLE",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "3/1",
+        "weighted_scenario_sum": "3/1"
+      },
+      "name": "D",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 1,
+            "source": "a",
+            "target": "g"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "a",
+          "g"
+        ],
+        "scenario_totals": [
+          3,
+          3
+        ],
+        "worst_time": 3
+      }
+    }
+  ],
+  "row_count": 20,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_JOINT",
+      "input_sha256": "2e1bd547347c7c2a59b95d0388acd2d33384721c3dc9604ed8b98906d4a2d721",
+      "name": "A",
+      "result": {
+        "budget_charge": "2/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "1/1",
+            "target": "g",
+            "weighted_cost": "4/1"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "1/1",
+        "reason": "matching feasible worst/joint bound",
+        "route_exposure": 2,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 2,
+            "scenario_totals": [
+              1,
+              1
+            ]
+          }
+        ],
+        "route_worst": 1,
+        "scenario_totals": [
+          1,
+          1
+        ],
+        "status": "CERTIFIED_JOINT",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "3/1",
+        "weighted_scenario_sum": "1/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "adf0d7ebe14856284d4ce7da7bcce4931b70d4422540b958e31a5263cf2de118",
+      "name": "A:exposure",
+      "result": {
+        "reason": "route exposure/budget",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "18978abc79964886dcb53b4ffd2b2c77742a73e91d7328cabe3f8de5a79a12ed",
+      "name": "A:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "fcc4ee3f18ac85abcc655f5c5cfdacf9607391f1600f966682d66d34baadc0b1",
+      "name": "A:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_JOINT",
+      "input_sha256": "07b1dee632f9df4275b70d8e60ae3494a0f21e39c7989b2320fcc5c0d1eb9191",
+      "name": "B",
+      "result": {
+        "budget_charge": "1/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "b",
+            "weighted_cost": "7/2"
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "7/2"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "6/1",
+        "reason": "matching feasible worst/joint bound",
+        "route_exposure": 2,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "scenario_totals": [
+              1,
+              5
+            ]
+          },
+          {
+            "edge": [
+              "b",
+              0
+            ],
+            "exposure": 2,
+            "scenario_totals": [
+              6,
+              6
+            ]
+          }
+        ],
+        "route_worst": 6,
+        "scenario_totals": [
+          6,
+          6
+        ],
+        "status": "CERTIFIED_JOINT",
+        "vertices": [
+          "a",
+          "b",
+          "g"
+        ],
+        "weighted_route_cost": "7/1",
+        "weighted_scenario_sum": "6/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b4abfdee99b314a3e17e36e333d6980381854107b9b1ec117b63af3252f90506",
+      "name": "B:exposure",
+      "result": {
+        "reason": "route exposure/budget",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "e5763a79d9f709294aba3dbe837f08b0974afb708c675ba3cd33440297e94bb0",
+      "name": "B:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "f6b2f0f06434067c5235f80f0c9c9f78b4d2c2985a640e26d42f1116fb8f7d97",
+      "name": "B:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "CERTIFIED_JOINT",
+      "input_sha256": "a44dd331d185bc5e909f929afb9180249cdb0353bdcfc6c20a60c283aa26a695",
+      "name": "C",
+      "result": {
+        "budget_charge": "0/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "2/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "3/1",
+            "target": "g",
+            "weighted_cost": "5/1"
+          }
+        ],
+        "gap": "0/1",
+        "lower_bound": "2/1",
+        "reason": "matching feasible worst/joint bound",
+        "route_exposure": 1,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "exposure": 1,
+            "scenario_totals": [
+              2,
+              2
+            ]
+          }
+        ],
+        "route_worst": 2,
+        "scenario_totals": [
+          2,
+          2
+        ],
+        "status": "CERTIFIED_JOINT",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "2/1",
+        "weighted_scenario_sum": "2/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "7c50765b39e4295b6c577368c840937c0c4eb290506f6da5ca63b1f7e7a5dbd0",
+      "name": "C:exposure",
+      "result": {
+        "reason": "route exposure/budget",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "1c903be1ec895643136387a61ccaf1e53f40363ae1767f5d9e69c9f6b0836be3",
+      "name": "C:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b25d00dc9eda1ea69e27a69ea26e9aa0767a1e5a7435a5e0598959e1a4f1159f",
+      "name": "C:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "6bebf4b38461b1eecb10bfd388da2b682fd6c523bb5b9c0ea2d8b27b34eee9e7",
+      "name": "D",
+      "result": {
+        "budget_charge": "1/1",
+        "edge_ledger": [
+          {
+            "edge": [
+              "a",
+              0
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          },
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "slack": "0/1",
+            "target": "g",
+            "weighted_cost": "3/1"
+          }
+        ],
+        "gap": "1/1",
+        "lower_bound": "2/1",
+        "reason": "feasible incomplete joint bound",
+        "route_exposure": 0,
+        "route_ledger": [
+          {
+            "edge": [
+              "a",
+              1
+            ],
+            "exposure": 0,
+            "scenario_totals": [
+              3,
+              3
+            ]
+          }
+        ],
+        "route_worst": 3,
+        "scenario_totals": [
+          3,
+          3
+        ],
+        "status": "UNAVAILABLE",
+        "vertices": [
+          "a",
+          "g"
+        ],
+        "weighted_route_cost": "3/1",
+        "weighted_scenario_sum": "3/1"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b971bbdf5f2142af654d4aef5938f32af8202353701201011e9569e5a904b533",
+      "name": "D:exposure",
+      "result": {
+        "reason": "route exposure/budget",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b0ba8e7543e5ff44dff059c0a1f5990d18504c48770473e0f9f614d4412fd04d",
+      "name": "D:negative",
+      "result": {
+        "reason": "negative multiplier",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "6702e0442ed6eed970b2f56b6923a044ead970b5d8902b9a16ff29d6102d645d",
+      "name": "D:source",
+      "result": {
+        "reason": "source potential",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "42607d9111a14b836357cfe91e33ed5b43441a3416bd4a17607c8ba26beb7c5a",
+      "name": "control:null",
+      "result": {
+        "reason": "missing route/proof after model checks",
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "52b4a1e4a085128107091267d7b9902fb73fc404090f58316d94665ec4d6de8d",
+      "name": "control:sum",
+      "result": {
+        "reason": "nonnegative simplex sum",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8e09d468e7d61fd18e1b4687890a867c1ed04a7228309e1f537ed1c61b1f8593",
+      "name": "control:budget",
+      "result": {
+        "reason": "route exposure/budget",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "84507f755d225d27876c7c604a39ef8bb9dde749d3bb3dcb75f4ba9acf4aab67",
+      "name": "control:infeasible",
+      "result": {
+        "reason": "weighted potential infeasible",
+        "status": "INVALID"
+      },
+      "warnings": []
+    }
+  ],
+  "scope": "joint budget/common-scenario certificate is sufficient, not complete/search/clinical"
+}
