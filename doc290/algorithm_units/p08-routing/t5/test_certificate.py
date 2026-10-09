@@ -28,4 +28,16 @@ class Development(unittest.TestCase):
     def test_disagreement(self):
         from compare import agreed
         self.assertFalse(agreed('CERTIFIED_NO_TURN_PATH',{'status':'INVALID'}))
+    def test_transitive_verify_identity(self):
+        from compare import gate,ROOT
+        import sys,types
+        from unittest.mock import patch
+        helper=(ROOT/'../../p08-field-planning/f3/verify.py').resolve()
+        fake=types.SimpleNamespace(__file__='/tmp/unpinned-verify.py')
+        with patch.dict(sys.modules,{'verify':fake}):
+            with self.assertRaises(Invalid):gate()
+        original=type(helper).read_bytes
+        def changed(path):return b'modified helper' if path.resolve()==helper else original(path)
+        with patch.object(type(helper),'read_bytes',changed):
+            with self.assertRaises(Invalid):gate()
 if __name__=='__main__':unittest.main()

@@ -25,3 +25,11 @@ All20outcomes/states/arcs/distances/source/budget/reasons/digests/warnings retai
 no postfreezeproof/code/fixture/rescore/rescue/drop. Exactresultreviewpublication.
 Source/runtimepinsnotOS/sharedlib/peakmemory/hardtimeout/sandboxproof, validator
 rowwarningcaptureonly. Allpriornegative/FAIL/gaps/float/rejectedhistoryunchanged.
+
+## Rejected transitive source-gate repair
+Rejected e6b82f45 retained: live transitive f3/verify.py helper omitted from source
+manifest. File existed at sibling field-planning; missing pin, not missing file.
+Exact helper now pinned; gate verifies loaded sys.modules verify path resolves
+that same original helper, rejecting alternate name/path or modified bytes.
+Dedicated dev controls reject modified helper and alternate loaded path.
+No fixed20 checks or4 fixed oracle calls performed; code/cases/proofs unchanged.

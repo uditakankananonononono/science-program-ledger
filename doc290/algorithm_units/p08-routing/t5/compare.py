@@ -4,6 +4,9 @@ from certificate import check as validate,load_bytes,Invalid
 ROOT=Path(__file__).resolve().parent
 
 def gate():
+    expected=(ROOT/'../../p08-field-planning/f3/verify.py').resolve()
+    loaded=sys.modules.get('verify')
+    if loaded is None or Path(getattr(loaded,'__file__','')).resolve()!=expected:raise Invalid('loaded verify helper path')
     for name,digest in json.loads((ROOT/'manifest.json').read_text())['files'].items():
         if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:raise Invalid('source identity '+name)
     env=json.loads((ROOT/'environment.json').read_text())
