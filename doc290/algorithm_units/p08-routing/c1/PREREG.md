@@ -24,12 +24,17 @@ Independently determine anchors: original vertices degree!=2, plus lexicographic
 minimum vertex of each all-degree-two connected component. Supplied compressed
 keys must exactly anchors. Each compressed edge has matching witnesspath >=2nodes,
 source/target consistent, internal nodes nonanchors degree2; adjacent steps present
-in original graph, each directed original edge covered exactly once across ALL
+in original graph. Each internal degree-2 node MUST follow its unique continuation
+(nextvertex != previous), never immediatebacktracking. No repeatedvertex except
+equalfirst/last for a full anchoredcycle, with allotherverticesdistinct. This
+rejects reciprocal-chain selfwalks [a,b,a] and [c,b,c] thatpartition edges butdestroy
+chainconnectivity. Each directed original edge covered exactly once across ALL
 witnesses, including both pure-cycle directions. Refuse unknown/duplicated coverage,
 missing edge, invented cost, heterogeneous vector. Sum original integer step costs
 must equal compressed time/exposure/scenario vector exactly. No production chain
 builder consulted as validation oracle. Original lookup preserves adjacency index.
 
+Representation, query-anchor and turnvalidation ALL precede nullroutehandling.
 Query start/goal MUSTanchors. Missing route null returns UNAVAILABLE, not proof
 of no feasible route. Route path first/last matchquery and each listed edge links
 consecutive compressed pathnodes via exact source/index/target; indices intnotbool,
@@ -64,6 +69,8 @@ success20/20expectedagreement. No postfreeze mutation/tolerance/parameter rescue
 Four production aggregate_chains + exposure_budget_route + expand_route descriptive
 calls on original fixtures, reported separately, NOT route construction proof or
 novelty/compression speed claim; C may return zero-length identityroute, retain it.
+Exposure-route baseline omits scenario fields: independently reconstruct scenario
+totals from its expanded original edges, never treat baseline as validatororacle.
 Pin unchanged routing/chain_aggregate/chain_costs/chain_compress/topology_audit;
 helper dependencies/source/runtime/executable gates before any case/baseline calls.
 Development separate literal independent topology/coverage, cycles/parallel direction,
@@ -76,3 +83,13 @@ No scientific/clinical/hardware/invention/optimality/general routing-equivalence
 claim. Anchor integer turn-free scope only. Caps not peak memory/sandbox/timeout;
 runtime pins not full OS/shared-library provenance. Known float non-equivalence
 unchanged. Research technical reviews do not establish user permission.
+
+## Rejected prereg retained and mandatory independent counterexample control
+
+4ab4c9a01fd1b83c3dd90b42020de04fe4a62336 HOLD: previous representation checks
+accepted walk partition, not actual chain compression. Reviewer counterexample
+reciprocalchain a-b-c -> selfedges a->a[a,b,a], c->c[c,b,c] has directedcoverage
+butdestroysreachability. Newcontinuation/no-repeatconditions required above.
+Add this as development rejectioncontrol plus nullroute-on-invalidrepresentation/
+interiorquery/turncontrol. Fixed20evaluationrows unchanged; no scoring occurred.
+No scope weakening to walkpartition, no invention/general equivalence claim.
