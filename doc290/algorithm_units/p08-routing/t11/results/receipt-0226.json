@@ -1,0 +1,204 @@
+{
+  "entry": {
+    "case_index": 113,
+    "input_sha256": "d3d041766f3488230fb46782392624caa1d9c9778ee3608b0ef4dde94fa576ae",
+    "method": "t9",
+    "name": "turn113",
+    "oracle": 2,
+    "order": [
+      "t9",
+      "variant"
+    ]
+  },
+  "identity": {
+    "manifest_sha256": "c258105358a4f30cd8b40581b493e803a9458004acbc9e57302db7924707e0f7",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "exposure": 4,
+      "ledger": [
+        {
+          "delay": 0,
+          "edge": [
+            "a",
+            0
+          ],
+          "exposure": 4,
+          "scenarios": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "scenario_totals": [
+        1,
+        1,
+        2
+      ],
+      "status": "PASS",
+      "turn_penalty": 0,
+      "worst_time": 2
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"bound_trace\": [], \"build_seconds\": 0.012995059005334042, \"certificate\": {\"budget\": 10, \"early_exit\": false, \"equality_exit\": true, \"lower\": 2, \"reason\": \"equality_exit\", \"upper\": 2}, \"charged_proof\": null, \"counters\": {\"candidate_edges\": 0, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"forbidden_skipped\": 0, \"incumbent_inspections\": 2, \"labels_inserted\": 0, \"max_live_queue\": 0, \"objective_bound_pruned\": 0, \"pops\": 0, \"reverse_relaxations\": 2, \"scenario_reverse_inspections\": 6, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"c258105358a4f30cd8b40581b493e803a9458004acbc9e57302db7924707e0f7\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"incumbent\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"d\"}], \"exposure\": 4, \"path\": [\"a\", \"d\"], \"scenario_totals\": [1, 1, 2], \"turn_penalty\": 0, \"worst_time\": 2}, \"proof\": {\"distances\": [4, 0, 0], \"start_minimum\": 4, \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"d\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"d\"}]}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"a\", \"target\": \"d\"}], \"exposure\": 4, \"path\": [\"a\", \"d\"], \"scenario_totals\": [1, 1, 2], \"turn_penalty\": 0, \"worst_time\": 2}, \"rss_kib\": 28724, \"scenario_proof\": {\"distances\": [[1, 0, 0], [1, 0, 0], [2, 0, 0]], \"states\": [{\"incoming\": null, \"kind\": \"source\", \"vertex\": \"a\"}, {\"incoming\": [\"a\", 0], \"kind\": \"edge\", \"vertex\": \"d\"}, {\"incoming\": null, \"kind\": \"goal\", \"vertex\": \"d\"}]}, \"solve_seconds\": 0.00030894300289219245, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "bound_trace": [],
+      "build_seconds": 0.012995059005334042,
+      "certificate": {
+        "budget": 10,
+        "early_exit": false,
+        "equality_exit": true,
+        "lower": 2,
+        "reason": "equality_exit",
+        "upper": 2
+      },
+      "charged_proof": null,
+      "counters": {
+        "candidate_edges": 0,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "forbidden_skipped": 0,
+        "incumbent_inspections": 2,
+        "labels_inserted": 0,
+        "max_live_queue": 0,
+        "objective_bound_pruned": 0,
+        "pops": 0,
+        "reverse_relaxations": 2,
+        "scenario_reverse_inspections": 6,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "c258105358a4f30cd8b40581b493e803a9458004acbc9e57302db7924707e0f7",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "incumbent": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "d"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "d"
+        ],
+        "scenario_totals": [
+          1,
+          1,
+          2
+        ],
+        "turn_penalty": 0,
+        "worst_time": 2
+      },
+      "proof": {
+        "distances": [
+          4,
+          0,
+          0
+        ],
+        "start_minimum": 4,
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "d"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "d"
+          }
+        ]
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "d"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "d"
+        ],
+        "scenario_totals": [
+          1,
+          1,
+          2
+        ],
+        "turn_penalty": 0,
+        "worst_time": 2
+      },
+      "rss_kib": 28724,
+      "scenario_proof": {
+        "distances": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "states": [
+          {
+            "incoming": null,
+            "kind": "source",
+            "vertex": "a"
+          },
+          {
+            "incoming": [
+              "a",
+              0
+            ],
+            "kind": "edge",
+            "vertex": "d"
+          },
+          {
+            "incoming": null,
+            "kind": "goal",
+            "vertex": "d"
+          }
+        ]
+      },
+      "solve_seconds": 0.00030894300289219245,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.093353742006002
+  },
+  "slot": 226
+}

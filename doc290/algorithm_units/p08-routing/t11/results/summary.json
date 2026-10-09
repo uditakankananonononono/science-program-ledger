@@ -1,0 +1,76 @@
+{
+  "agreement_count": 200,
+  "attempt_count": 400,
+  "baseline_classes": {
+    "budget_infeasible": 15,
+    "equality_exit": 49,
+    "no_allowed_turn_path": 134,
+    "strict_gap_search": 2
+  },
+  "baseline_counter_totals": {
+    "candidate_edges": 13,
+    "dominance_pruned": 2,
+    "feasibility_pruned": 0,
+    "forbidden_skipped": 0,
+    "incumbent_inspections": 299,
+    "labels_inserted": 8,
+    "max_live_queue": 4,
+    "objective_bound_pruned": 5,
+    "pops": 7,
+    "reverse_relaxations": 640,
+    "scenario_reverse_inspections": 1191,
+    "stale_pops": 0
+  },
+  "chunk_count": 100,
+  "chunk_max_seconds": 3.164966999000171,
+  "comparison": {
+    "candidate_edges": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    },
+    "labels_inserted": {
+      "denominator": 200,
+      "failure_excluded": 0,
+      "losses": 0,
+      "ties": 200,
+      "wins": 0
+    }
+  },
+  "extra_exclusion_cases": 0,
+  "finalize_seconds": 2.7030998520058347,
+  "freeze": "c3233d9f387dbcd85edb2e6c2a2a0c16e914f49d",
+  "orders": {
+    "t9/variant": 100,
+    "variant/t9": 100
+  },
+  "pair_count": 200,
+  "pass_count": 400,
+  "scope": "fresh synthetic paired400 one run, no timing superiority",
+  "source_bound_stronger": 0,
+  "variant_classes": {
+    "budget_infeasible": 15,
+    "equality_exit": 49,
+    "no_allowed_turn_path": 134,
+    "strict_gap_search": 2
+  },
+  "variant_counter_totals": {
+    "candidate_edges": 13,
+    "charged_bound_stronger": 0,
+    "charged_reverse_inspections": 1191,
+    "charged_strict_exclusions": 0,
+    "dominance_pruned": 2,
+    "feasibility_pruned": 0,
+    "forbidden_skipped": 0,
+    "incumbent_inspections": 299,
+    "labels_inserted": 8,
+    "max_live_queue": 4,
+    "objective_bound_pruned": 5,
+    "pops": 7,
+    "reverse_relaxations": 640,
+    "scenario_reverse_inspections": 1191,
+    "stale_pops": 0
+  }
+}
