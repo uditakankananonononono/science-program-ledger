@@ -33,3 +33,11 @@ weightedarc cap. Expectation/fixture corrected beforefreeze, no fixed20rescoring
 Dev capfixture second correction: original x edge had no source/incoming-to-x
 transition, so it was never an allowed weightedarc. Added u->x originaledge to
 exercise thatarc; all original states stillretained, no fabricated weightedcost.
+
+REJECTEDUNEXECUTED42d5434a666972ab6c32ba9dc4f8ae6b450c1928 retained:
+review acceptedfalse topgap/primal andFalseindex via incompleteparentreceipt
+verification. Notgenerator/fixed20failure, no scoredsubjects. Repair exactresult/
+row schemas, strictint index/selectedindex, topprimal/gap/best/status/selection
+rederived; emittedrows exactkeys, domainpartialstagepairs bounded, topology
+noemission precedence unchanged. Real successfulparentreceipt mutations topgap/
+primal/False/equalfloatindexes/missing/extra/count/order nowFAIL. I3unchanged.

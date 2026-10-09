@@ -61,13 +61,32 @@ def verify(s,result):
     from generator import candidates
     from model import Invalid,rational
     G,n,states,arcs,primal=model(s)
+    import json
+    canonical=lambda x:json.dumps(x,sort_keys=True,separators=(',',':'),ensure_ascii=False)
+    if type(result) is not dict:raise Failure('result dict schema')
     if s['route'] is None:
-        if result['status']!='UNAVAILABLE' or result['candidates']!=[]:raise Failure('missing route result')
+        if set(result)!={'status','reason','candidates'} or type(result['reason']) is not str or result['status']!='UNAVAILABLE' or result['candidates']!=[]:raise Failure('missing route result')
         return
+    if set(result)!={'status','reason','selected_index','best_lower','gap','primal','candidates'} or type(result['reason']) is not str:raise Failure('result exact schema')
+    if canonical(result['primal'])!=canonical(primal):raise Failure('top-level primal binding')
+    if result['selected_index'] is not None and type(result['selected_index']) is not int:raise Failure('selected index strict type')
     rows=result['candidates'];expected=candidates(n)
+    if type(rows) is not list:raise Failure('candidate list schema')
     if len(rows)!=len(expected):raise Failure('complete finite candidate coverage')
     best=None;selected=None
     for k,(row,(w,lam)) in enumerate(zip(rows,expected)):
+        if type(row) is not dict or type(row.get('index')) is not int:raise Failure('candidate index strict type')
+        basekeys={'index','weights','multiplier'}
+        status=row.get('status')
+        if status in ('CERTIFIED_INTEGRATED','UNAVAILABLE'):
+            if set(row)!=basekeys|{'states','distances','clamp','potential','status','checker','lower_bound','gap'}:raise Failure('emitted row exact schema')
+        elif status=='UNAVAILABLE_TOPOLOGY':
+            if set(row)!=basekeys|{'states','distances','status','reason'} or type(row['reason']) is not str:raise Failure('topology row exact schema')
+        elif status=='UNAVAILABLE_DOMAIN':
+            permitted=basekeys|{'states','distances','clamp','potential','status','reason'}
+            if not basekeys|{'status','reason'}<=set(row) or set(row)-permitted or type(row['reason']) is not str:raise Failure('domain row schema')
+            if ('states' in row)!=('distances' in row) or ('clamp' in row)!=('potential' in row):raise Failure('domain stage fields')
+        else:raise Failure('candidate status schema')
         if row['index']!=k or row['weights']!=[text(v) for v in w] or row['multiplier']!=text(lam):raise Failure('candidate order/parameters')
         try:
             st,aa,dd=distances(s,w,lam)
@@ -87,4 +106,5 @@ def verify(s,result):
         except Domain:
             if row['status']!='UNAVAILABLE_DOMAIN' or 'checker' in row:raise Failure('candidate domain category')
     status='UNAVAILABLE_DOMAIN' if best is None else 'CERTIFIED_INTEGRATED' if best==primal['worst_time'] else 'UNAVAILABLE'
-    if result['status']!=status or result['selected_index']!=selected or result['best_lower']!=(None if best is None else text(best)):raise Failure('selection/classification')
+    expectedgap=None if best is None else text(Fraction(primal['worst_time'])-best)
+    if result['status']!=status or result['selected_index']!=selected or result['best_lower']!=(None if best is None else text(best)) or result['gap']!=expectedgap:raise Failure('selection/classification')

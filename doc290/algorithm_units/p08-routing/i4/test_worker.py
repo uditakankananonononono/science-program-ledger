@@ -12,3 +12,19 @@ class Controls(unittest.TestCase):
         for field,value in (('rss_kib',True),('affinity',[]),('solve_seconds',True),('identity',{})):
             rr=copy.deepcopy(r);rr['worker'][field]=value;rr['stdout']=json.dumps(rr['worker']);self.assertEqual(validate_record(['devsubject',0],rr)['status'],'FAIL')
         rr=copy.deepcopy(r);rr['worker']['result']['candidates'][0]['clamp']='999/1';rr['stdout']=json.dumps(rr['worker']);self.assertEqual(validate_record(['devsubject',0],rr)['status'],'FAIL')
+    def test_real_success_top_level_schema_and_index_mutations(self):
+        r=launch(['devsubject',0]);self.assertEqual(r['status'],'PASS',r)
+        changes=[]
+        for key,value in (('gap','999/1'),('selected_index',False),('selected_index',0.0),('best_lower','999/1')):
+            rr=copy.deepcopy(r);rr['worker']['result'][key]=value;changes.append(rr)
+        rr=copy.deepcopy(r);rr['worker']['result']['primal']['worst_time']=999;changes.append(rr)
+        rr=copy.deepcopy(r);rr['worker']['result']['candidates'][0]['index']=False;changes.append(rr)
+        rr=copy.deepcopy(r);rr['worker']['result']['candidates'][0]['index']=0.0;changes.append(rr)
+        rr=copy.deepcopy(r);rr['worker']['result']['extra']=0;changes.append(rr)
+        rr=copy.deepcopy(r);del rr['worker']['result']['gap'];changes.append(rr)
+        rr=copy.deepcopy(r);rr['worker']['result']['candidates'][0]['extra']=0;changes.append(rr)
+        rr=copy.deepcopy(r);del rr['worker']['result']['candidates'][0]['potential'];changes.append(rr)
+        rr=copy.deepcopy(r);rr['worker']['result']['candidates'].pop();changes.append(rr)
+        rr=copy.deepcopy(r);rr['worker']['result']['candidates'].reverse();changes.append(rr)
+        for rr in changes:
+            rr['stdout']=json.dumps(rr['worker']);self.assertEqual(validate_record(['devsubject',0],rr)['status'],'FAIL')
