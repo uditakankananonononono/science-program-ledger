@@ -1,0 +1,202 @@
+{
+  "pair_count": 600,
+  "attempt_count": 1200,
+  "agreement_count": 600,
+  "pass_count": 1200,
+  "groups": {
+    "all_cases": {
+      "pair_denominator": 600,
+      "eligible_pairs": 600,
+      "exclusions": {},
+      "faster": 324,
+      "ties": 0,
+      "slower": 276,
+      "ratio_distribution": {
+        "count": 600,
+        "median": 0.9803375642078471,
+        "q25": 0.8030939255156313,
+        "q75": 1.088919730967191
+      },
+      "log_distribution": {
+        "count": 600,
+        "median": -0.01985831335461542,
+        "q25": -0.21928360361207852,
+        "q75": 0.08518613229680416
+      },
+      "case_denominator": 200,
+      "complete_cases": 200,
+      "incomplete_cases": 0,
+      "case_ratio_distribution": {
+        "count": 200,
+        "median": 0.9803375642078471,
+        "q25": 0.8519452999102115,
+        "q75": 1.0628313101250546
+      },
+      "actual_order_counts": {
+        "T8_first": 300,
+        "T9_first": 300
+      },
+      "deterministic_counts": {
+        "PASS": 200
+      }
+    },
+    "budget_infeasible": {
+      "pair_denominator": 36,
+      "eligible_pairs": 36,
+      "exclusions": {},
+      "faster": 19,
+      "ties": 0,
+      "slower": 17,
+      "ratio_distribution": {
+        "count": 36,
+        "median": 0.9941264921001345,
+        "q25": 0.816437520529427,
+        "q75": 1.0990417032175877
+      },
+      "log_distribution": {
+        "count": 36,
+        "median": -0.005890824787936227,
+        "q25": -0.20280489059022547,
+        "q75": 0.09443862121435222
+      },
+      "case_denominator": 12,
+      "complete_cases": 12,
+      "incomplete_cases": 0,
+      "case_ratio_distribution": {
+        "count": 12,
+        "median": 0.9844983881934812,
+        "q25": 0.8355824043698904,
+        "q75": 1.0212139945624326
+      },
+      "actual_order_counts": {
+        "T8_first": 19,
+        "T9_first": 17
+      },
+      "deterministic_counts": {
+        "PASS": 12
+      }
+    },
+    "equality_exit": {
+      "pair_denominator": 153,
+      "eligible_pairs": 153,
+      "exclusions": {},
+      "faster": 122,
+      "ties": 0,
+      "slower": 31,
+      "ratio_distribution": {
+        "count": 153,
+        "median": 0.8642964427644241,
+        "q25": 0.7531029870964044,
+        "q75": 0.9540933844023565
+      },
+      "log_distribution": {
+        "count": 153,
+        "median": -0.14583946397374273,
+        "q25": -0.2835532914819477,
+        "q75": -0.04699372511028112
+      },
+      "case_denominator": 51,
+      "complete_cases": 51,
+      "incomplete_cases": 0,
+      "case_ratio_distribution": {
+        "count": 51,
+        "median": 0.8714248386872057,
+        "q25": 0.7935254720654232,
+        "q75": 0.9465424088572885
+      },
+      "actual_order_counts": {
+        "T8_first": 74,
+        "T9_first": 79
+      },
+      "deterministic_counts": {
+        "PASS": 51
+      }
+    },
+    "no_allowed_turn_path": {
+      "pair_denominator": 405,
+      "eligible_pairs": 405,
+      "exclusions": {},
+      "faster": 180,
+      "ties": 0,
+      "slower": 225,
+      "ratio_distribution": {
+        "count": 405,
+        "median": 1.0159837494882682,
+        "q25": 0.8350311600502118,
+        "q75": 1.1135064892114683
+      },
+      "log_distribution": {
+        "count": 405,
+        "median": 0.015857354430213976,
+        "q25": -0.180286237402156,
+        "q75": 0.10751403545894006
+      },
+      "case_denominator": 135,
+      "complete_cases": 135,
+      "incomplete_cases": 0,
+      "case_ratio_distribution": {
+        "count": 135,
+        "median": 1.0158064315027613,
+        "q25": 0.9601574296101341,
+        "q75": 1.0765144209080835
+      },
+      "actual_order_counts": {
+        "T8_first": 205,
+        "T9_first": 200
+      },
+      "deterministic_counts": {
+        "PASS": 135
+      }
+    },
+    "strict_gap_search": {
+      "pair_denominator": 6,
+      "eligible_pairs": 6,
+      "exclusions": {},
+      "faster": 3,
+      "ties": 0,
+      "slower": 3,
+      "ratio_distribution": {
+        "count": 6,
+        "median": 0.9554867686110304,
+        "q25": 0.9308682392719032,
+        "q75": 1.0805787381988143
+      },
+      "log_distribution": {
+        "count": 6,
+        "median": -0.04553436300519179,
+        "q25": -0.07163753774455715,
+        "q75": 0.07749676631237287
+      },
+      "case_denominator": 2,
+      "complete_cases": 2,
+      "incomplete_cases": 0,
+      "case_ratio_distribution": {
+        "count": 2,
+        "median": 0.9308682392719032,
+        "q25": 0.9308682392719032,
+        "q75": 1.0805787381988143
+      },
+      "actual_order_counts": {
+        "T8_first": 2,
+        "T9_first": 4
+      },
+      "deterministic_counts": {
+        "PASS": 2
+      }
+    }
+  },
+  "execution": {
+    "chunks": 30,
+    "max_chunk_elapsed_seconds": 12.930254045000765,
+    "ledger": {
+      "next": 1200
+    },
+    "DONE": {
+      "plan_sha256": "d30c096048edcfbdeb9395063147519d7efc7a34c91a67177f77f4d93351d473",
+      "slots": 1200
+    },
+    "receipts": 1200,
+    "pair_markers": 600,
+    "FAIL": false
+  }
+}
