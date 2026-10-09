@@ -108,3 +108,19 @@ Fixedfixtures, not blind/heldout/externalvalidation. All T5/I3/P3/K1K2/M4
 negatives/M5failedharness/M6/I4/I5/I6rejections/outcomes retained unchanged.
 Chronology not cryptographic private-runabsence proof; historicalrepo blobissue
 prevents whole-repointegrity claim; scoped bundles/exacttip/rawreadback only.
+
+Accepted declaration boundaries verbatim:
+supplied distances preserved AND checked (corrupted proofs never silently
+repaired); no I3/D/G optimality or scenario-cost claim - a feasible minimum
+exposure still leaves T5 UNAVAILABLE; reverse integer Dijkstra justified by
+nonnegative ORIGINAL outgoing-edge exposure (turn delays affect scenario/time,
+not exposure); minimum simple-state suffix <= statecount-1 arcs fits unchanged
+T5 MAX*129 allowance over its <=128-edge model; None means no suffix to sink
+(not merely unreachable-from-source); source None certifies no allowed turn
+path, source > budget certifies budget infeasibility, source <= budget certifies
+ONLY exposure feasibility (not robust/minimax optimality); ALL unreachable/
+goal-outgoing/identity/zero/parallel states and arcs stay in the proof; no
+6-edge/64-path restriction (polynomial exposure problem under T5's existing
+32-vertex/128-edge limits, not a lifted general robust solver); I6 no-feasible
+cases map only as separately disclosed graph/query/rule projections - never
+changing I6 or pretending T5 consumes routes.
