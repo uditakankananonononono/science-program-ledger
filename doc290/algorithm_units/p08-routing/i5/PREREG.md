@@ -1,9 +1,11 @@
 # I5 exact small-domain parametric multiplier certificate search
 
-Parentc30c1b6be521eae4dd12cdaf2bad38d5b561499f. I4 finite multiplierlistmiss is
+Parentc30c1b6be521eae4dd12cdaf2bad38d5b561499f. I4 bounded-list shortfall is
 locked; I5 is prospective analytic search, NOTlambda4added/rescoredI4. Fixed
-scenario simplex weights remain incomplete; discretebudget dualitygapD remains
-with exactmultiplieroptimization. Established parametricsearch artifact, no
+scenario simplex weights remain incomplete; discretebudget dualitygapD andG remain
+with exactmultiplieroptimization. Exactlambdaoptimization closes a finite-list
+shortfall only when the unrestricted weighted dual actually reaches the primal;
+it does not remove fixed-weight or discretebudgetduality gaps. Established parametricsearch artifact, no
 completejoint/discreteoptimizer/invention/novelty/scienceclaim.
 
 Inputgraph/query/budget/forbidden/penalties/primalroute, unchangedI3integer/
@@ -69,10 +71,10 @@ path/arcs/BF/algebra/schedule, notwhollyindependentimplementation/authorship.
 Fixed20battery: eightoriginalI4basesA-H byteidenticalgraph/route plusworst+1
 mutationeach, fourI4controls nullroute/boolindex/emptydimension/negativeexposure.
 Inputs copiedprospectively, expectedA/B/C/E/F/H CERTIFIED asbefore; DUNAVAILABLE
-bestLB2/gap1; G nowCERTIFIED optimalLB7 atsmallestlambda7/2 (analyticintersection
-0+lambda2 with7+lambda1; budget1), NOTmanual lambda4rescue. Sixoriginalcertified+
-G=7CERTIFIED,1dualitygapUNAVAILABLE,8INVALIDmutations+3INVALIDcontrols,
-1missingrouteUNAVAILABLE=20. ALLpaths/points/weights/refusals/status retained;
+bestLB2/gap1; G remainsUNAVAILABLE withbestLB11/2 atsmallestlambda11/2,
+gap3/2. Its chargedlines are lambda,7,11-lambda; envelope maximum11/2
+atintersectionlambda=11/2, NOTcertificate7. SixCERTIFIED,2dualitygapUNAVAILABLE,
+8INVALIDmutations+3INVALIDcontrols,1missingrouteUNAVAILABLE=20. ALLpaths/points/weights/refusals/status retained;
 no fixed20run beforeexactpublishedfreeze. No oracle/primalroute fabrication.
 
 Outside20dev: same/duplicate/zero slopes, zero identity, plateau fromzero vs
@@ -92,3 +94,15 @@ publication. No postfreeze code/pathcap/weight/candidate/oracle/rule rescue.
 HistoricalI4misses/HOLDs/I3CFAIL/M4negative/M5lockedFAIL/M6rejections unchanged.
 No automaticintegration/productionkernel/completeoptimizer/novelty/speed/science/
 physiology/CIclaim; reportedchronology/private-runabsence notGitcryptographicproof.
+
+## Rejected prereg and I4 interpretation correction
+Initialunpublishedbb0a6efb HOLDretained: its G expectation7certified/lambda7/2
+was wrong. ExactchargedlinesF=min(lambda,7,11-lambda); max11/2at11/2,gap3/2
+againstfeasible7. Atlambda7/2 F7/2; atlambda4 F4, not7. No implementation/run.
+Reviewer correction relayed08:40:44: its I4resultreview wrongly asserted outside
+lambda4 algebra min(8,7,7)=7, omittingbudgetchargeonfirstline. Thatcertifiable/
+rescue implication isRETRACTED. I4actualLB2/gap5/classes6certified11invalid3
+unavailable/96proofs remaincorrect andimmutable; Gfinite-listmissinterpretation
+isincomplete, ALSOgenuinedualitygap. Our earlier I4prereg repeated that wrong
+lambda4 implication; retracted inthiscorrection, notsilentlyeditingpublishedI4.
+FurtherI4Guse mustcarry both finite-listshortfall anddualitygap. No rescoring.
