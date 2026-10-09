@@ -7,7 +7,7 @@ SSH freeze push and separate HTTPS exact-tip/raw byte readback. Engine unchanged
 agreement;0failures. No retries/dropping/resampling/corpus rescue/rescoring.
 
 Scalar2wins/198ties/0LOSSES, pairedPASSdenominator200/failureexcluded0. Actual13
-variantvs41baseline named scalar inspections=28saved. Each labels/candidateedges/
+variantvs34baseline named scalar inspections=21saved. Each labels/candidateedges/
 chargedreverse0wins/200ties/0losses; BOTHtotalactual0each. Allcategories explicit.
 
 Two named scalar-inspection wins are exactly the two activated prefixes.135early

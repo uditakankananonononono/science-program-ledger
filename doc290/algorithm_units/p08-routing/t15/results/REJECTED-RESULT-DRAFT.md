@@ -1,0 +1,1 @@
+Initial unpublished resultdraft9582827cf700c63bd3b9ce6e5d5ac8bd1b34caab mistyped prose baseline41/saved28; exact rawsummary was34/saved21. Prose repaired only, retained historical draft commit, no scoring/code/input change. Packaging script first failed substring match before writing result; no run repeated.
