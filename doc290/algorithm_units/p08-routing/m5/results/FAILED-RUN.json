@@ -1,0 +1,18 @@
+{
+  "status": "EVALUATION_INTERRUPTED_NO_DURABLE_RECEIPTS",
+  "freeze": "0714ffdb97f8be9b135bb77e10c0cfe4e7cd8487",
+  "planned_pairs": 600,
+  "planned_subjects": 1200,
+  "attempted_subject_count": null,
+  "completed_subject_count": null,
+  "method_pass_count": null,
+  "method_failure_count": null,
+  "timing_summary": null,
+  "report_exists": false,
+  "remaining_processes_after_inspection": false,
+  "rerun": false,
+  "reason": "Outer bash execution limit killed foreground compare before its end-only report write. No incremental subject receipts were persisted; attempted/completed prefix and payloads cannot be recovered from current state.",
+  "classification": "Harness durability/execution-lifetime failure, not established T9/T8 algorithm failure",
+  "two_state_checks": "Both checks found empty results directory and no compare/worker processes; local HEAD remained the published freeze.",
+  "scope": "No 1200-attempt, agreement, timing, class, exclusion, or deterministic-repeat claim can be made. Original run remains locked, no silent rerun or rescue."
+}
