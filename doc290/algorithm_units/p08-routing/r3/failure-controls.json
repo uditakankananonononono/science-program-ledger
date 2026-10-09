@@ -1,0 +1,35 @@
+{
+  "badjson": {
+    "kill_sent": false,
+    "reaped": true,
+    "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "returncode": 0,
+    "status": "FAIL",
+    "stderr": "",
+    "stdout": "not-json\n",
+    "timed_out": false,
+    "worker_elapsed_seconds": 0.0532789099997899
+  },
+  "gatefail": {
+    "kill_sent": false,
+    "reaped": true,
+    "reason": "worker nonzero",
+    "returncode": 2,
+    "status": "FAIL",
+    "stderr": "",
+    "stdout": "{\"exception\": \"intentional gate refusal after real gate\", \"exception_type\": \"Invalid\", \"status\": \"FAIL\"}\n",
+    "timed_out": false,
+    "worker_elapsed_seconds": 0.05331051299799583
+  },
+  "memory": {
+    "kill_sent": false,
+    "reaped": true,
+    "reason": "worker nonzero",
+    "returncode": 2,
+    "status": "FAIL",
+    "stderr": "",
+    "stdout": "{\"exception\": \"\", \"exception_type\": \"MemoryError\", \"status\": \"FAIL\"}\n",
+    "timed_out": false,
+    "worker_elapsed_seconds": 0.05606198999885237
+  }
+}
