@@ -1,0 +1,161 @@
+{
+  "baseline": {
+    "check": {
+      "exposure": 0,
+      "exposure_ledger": [
+        0
+      ],
+      "ledger": [
+        {
+          "edge": [
+            "q",
+            0
+          ],
+          "scenario_totals": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.0010373460027039982, \"counters\": null, \"identity\": {\"manifest_sha256\": \"0e15e059eb951d5946ba1197ba08293a820a7fa0f148b85b0548ce15ee6eec58\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"proof\": null, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"worst_time\": 4}, \"rss_kib\": 27424, \"solve_seconds\": 3.345599543536082e-05, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.0010373460027039982,
+      "counters": null,
+      "identity": {
+        "manifest_sha256": "0e15e059eb951d5946ba1197ba08293a820a7fa0f148b85b0548ce15ee6eec58",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "proof": null,
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "worst_time": 4
+      },
+      "rss_kib": 27424,
+      "solve_seconds": 3.345599543536082e-05,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.059147970998310484
+  },
+  "variant": {
+    "check": {
+      "exposure": 0,
+      "exposure_ledger": [
+        0
+      ],
+      "ledger": [
+        {
+          "edge": [
+            "q",
+            0
+          ],
+          "scenario_totals": [
+            3,
+            4
+          ]
+        }
+      ],
+      "scenario_totals": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "worst_time": 4
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.000888814996869769, \"counters\": {\"candidate_edges\": 1, \"dominance_pruned\": 0, \"feasibility_pruned\": 0, \"labels_inserted\": 2, \"max_live_queue\": 1, \"pops\": 2, \"reverse_relaxations\": 1, \"stale_pops\": 0}, \"identity\": {\"manifest_sha256\": \"0e15e059eb951d5946ba1197ba08293a820a7fa0f148b85b0548ce15ee6eec58\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"proof\": {\"reverse_exposure\": {\"q\": 0, \"z\": 0}, \"start_minimum\": 0}, \"route\": {\"edges\": [{\"edge_index\": 0, \"source\": \"q\", \"target\": \"z\"}], \"exposure\": 0, \"path\": [\"q\", \"z\"], \"scenario_totals\": [3, 4], \"worst_time\": 4}, \"rss_kib\": 27424, \"solve_seconds\": 7.009899854892865e-05, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.000888814996869769,
+      "counters": {
+        "candidate_edges": 1,
+        "dominance_pruned": 0,
+        "feasibility_pruned": 0,
+        "labels_inserted": 2,
+        "max_live_queue": 1,
+        "pops": 2,
+        "reverse_relaxations": 1,
+        "stale_pops": 0
+      },
+      "identity": {
+        "manifest_sha256": "0e15e059eb951d5946ba1197ba08293a820a7fa0f148b85b0548ce15ee6eec58",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "proof": {
+        "reverse_exposure": {
+          "q": 0,
+          "z": 0
+        },
+        "start_minimum": 0
+      },
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "q",
+            "target": "z"
+          }
+        ],
+        "exposure": 0,
+        "path": [
+          "q",
+          "z"
+        ],
+        "scenario_totals": [
+          3,
+          4
+        ],
+        "worst_time": 4
+      },
+      "rss_kib": 27424,
+      "solve_seconds": 7.009899854892865e-05,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.058913988003041595
+  }
+}
