@@ -1,0 +1,209 @@
+{
+  "agreements": 20,
+  "candidate_classes": {
+    "CERTIFIED_INTEGRATED": 18,
+    "UNAVAILABLE": 6
+  },
+  "candidates": 24,
+  "chunks": [
+    {
+      "ceiling": 30,
+      "elapsed": 0.5784990750034922,
+      "from": 0,
+      "headroom": 7,
+      "launched": 4,
+      "next": 4
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.5848172280020663,
+      "from": 4,
+      "headroom": 7,
+      "launched": 4,
+      "next": 8
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.6289794200056349,
+      "from": 8,
+      "headroom": 7,
+      "launched": 4,
+      "next": 12
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.6746093879992259,
+      "from": 12,
+      "headroom": 7,
+      "launched": 4,
+      "next": 16
+    },
+    {
+      "ceiling": 30,
+      "elapsed": 0.7649161930021364,
+      "from": 16,
+      "headroom": 7,
+      "launched": 4,
+      "next": 20
+    }
+  ],
+  "comparison": [
+    {
+      "i4_lower": "4/1",
+      "i4_status": "CERTIFIED_INTEGRATED",
+      "i5_lower": "4/1",
+      "i5_status": "CERTIFIED_INTEGRATED",
+      "name": "A"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "A:worst"
+    },
+    {
+      "i4_lower": "7/1",
+      "i4_status": "CERTIFIED_INTEGRATED",
+      "i5_lower": "7/1",
+      "i5_status": "CERTIFIED_INTEGRATED",
+      "name": "B"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "B:worst"
+    },
+    {
+      "i4_lower": "5/1",
+      "i4_status": "CERTIFIED_INTEGRATED",
+      "i5_lower": "5/1",
+      "i5_status": "CERTIFIED_INTEGRATED",
+      "name": "C"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "C:worst"
+    },
+    {
+      "i4_lower": "2/1",
+      "i4_status": "UNAVAILABLE",
+      "i5_lower": "2/1",
+      "i5_status": "UNAVAILABLE",
+      "name": "D"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "D:worst"
+    },
+    {
+      "i4_lower": "0/1",
+      "i4_status": "CERTIFIED_INTEGRATED",
+      "i5_lower": "0/1",
+      "i5_status": "CERTIFIED_INTEGRATED",
+      "name": "E"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "E:worst"
+    },
+    {
+      "i4_lower": "3/1",
+      "i4_status": "CERTIFIED_INTEGRATED",
+      "i5_lower": "3/1",
+      "i5_status": "CERTIFIED_INTEGRATED",
+      "name": "F"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "F:worst"
+    },
+    {
+      "i4_lower": "2/1",
+      "i4_status": "UNAVAILABLE",
+      "i5_lower": "11/2",
+      "i5_status": "UNAVAILABLE",
+      "name": "G"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "G:worst"
+    },
+    {
+      "i4_lower": "2/1",
+      "i4_status": "CERTIFIED_INTEGRATED",
+      "i5_lower": "2/1",
+      "i5_status": "CERTIFIED_INTEGRATED",
+      "name": "H"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "H:worst"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "UNAVAILABLE",
+      "i5_lower": null,
+      "i5_status": "UNAVAILABLE",
+      "name": "control:null"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "control:boolindex"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "control:dimension"
+    },
+    {
+      "i4_lower": null,
+      "i4_status": "INVALID",
+      "i5_lower": null,
+      "i5_status": "INVALID",
+      "name": "control:negative"
+    }
+  ],
+  "freeze": "cf23b0b6dacee68d73ca7a59215a9efefa988dd7",
+  "raw_paths_by_base": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "D": 2,
+    "E": 2,
+    "F": 2,
+    "G": 3,
+    "H": 1
+  },
+  "rows": 20,
+  "worker_classes": {
+    "CERTIFIED_INTEGRATED": 6,
+    "INVALID": 11,
+    "UNAVAILABLE": 3
+  }
+}

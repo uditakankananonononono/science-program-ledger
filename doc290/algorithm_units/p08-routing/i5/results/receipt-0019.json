@@ -1,0 +1,51 @@
+{
+  "entry": {
+    "case_index": 19,
+    "expected": "INVALID",
+    "input_sha256": "810128adcf1cf2bbb5d4f35f42631a86fb2e58c17fda7b8fc7f584463c8bdbd0",
+    "name": "control:negative"
+  },
+  "identity": {
+    "manifest_sha256": "8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "INVALID"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.014657216001069173, \"identity\": {\"manifest_sha256\": \"8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"paths\": [], \"reason\": \"integer cost/index domain\", \"status\": \"INVALID\", \"weights\": []}, \"rss_kib\": 24060, \"solve_seconds\": 3.1490999390371144e-05, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.014657216001069173,
+      "identity": {
+        "manifest_sha256": "8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "paths": [],
+        "reason": "integer cost/index domain",
+        "status": "INVALID",
+        "weights": []
+      },
+      "rss_kib": 24060,
+      "solve_seconds": 3.1490999390371144e-05,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.1244672789980541
+  },
+  "slot": 19
+}

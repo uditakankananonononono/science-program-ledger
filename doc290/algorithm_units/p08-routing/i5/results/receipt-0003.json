@@ -1,0 +1,51 @@
+{
+  "entry": {
+    "case_index": 3,
+    "expected": "INVALID",
+    "input_sha256": "7e917990b6ddbf47029ec7dfc8de2d65b697fa5fe8edba2641991649ce7be705",
+    "name": "B:worst"
+  },
+  "identity": {
+    "manifest_sha256": "8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "INVALID"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.014351976999023464, \"identity\": {\"manifest_sha256\": \"8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"paths\": [], \"reason\": \"route totals correspondence\", \"status\": \"INVALID\", \"weights\": []}, \"rss_kib\": 23832, \"solve_seconds\": 0.00015333299961639568, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.014351976999023464,
+      "identity": {
+        "manifest_sha256": "8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "paths": [],
+        "reason": "route totals correspondence",
+        "status": "INVALID",
+        "weights": []
+      },
+      "rss_kib": 23832,
+      "solve_seconds": 0.00015333299961639568,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.12532535700302105
+  },
+  "slot": 3
+}

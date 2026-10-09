@@ -1,0 +1,51 @@
+{
+  "entry": {
+    "case_index": 16,
+    "expected": "UNAVAILABLE",
+    "input_sha256": "157a085f79a8f04f4c5ba60df4f516c8487f53469482076942d3d368c3d67c76",
+    "name": "control:null"
+  },
+  "identity": {
+    "manifest_sha256": "8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd",
+    "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+  },
+  "result": {
+    "check": {
+      "candidate_count": 0,
+      "status": "PASS",
+      "verdict": "UNAVAILABLE"
+    },
+    "kill_sent": false,
+    "reaped": true,
+    "returncode": 0,
+    "status": "PASS",
+    "stderr": "",
+    "stdout": "{\"affinity\": [0], \"as_limit_bytes\": [134217728, 134217728], \"build_seconds\": 0.01447567200375488, \"identity\": {\"manifest_sha256\": \"8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd\", \"runtime_sha256\": \"100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1\"}, \"result\": {\"paths\": [], \"reason\": \"missing route after model\", \"status\": \"UNAVAILABLE\", \"weights\": []}, \"rss_kib\": 23348, \"solve_seconds\": 0.00010543099779170007, \"status\": \"OK\"}\n",
+    "timed_out": false,
+    "worker": {
+      "affinity": [
+        0
+      ],
+      "as_limit_bytes": [
+        134217728,
+        134217728
+      ],
+      "build_seconds": 0.01447567200375488,
+      "identity": {
+        "manifest_sha256": "8efb8c1bf5b83599670a02ff2d2c467233f38d48530cdeb6e4de106d13c312bd",
+        "runtime_sha256": "100965737be9e9075c44cb9158548449c90c0c6f1ca823fc18e08b7884e717b1"
+      },
+      "result": {
+        "paths": [],
+        "reason": "missing route after model",
+        "status": "UNAVAILABLE",
+        "weights": []
+      },
+      "rss_kib": 23348,
+      "solve_seconds": 0.00010543099779170007,
+      "status": "OK"
+    },
+    "worker_elapsed_seconds": 0.12192985900037456
+  },
+  "slot": 16
+}
