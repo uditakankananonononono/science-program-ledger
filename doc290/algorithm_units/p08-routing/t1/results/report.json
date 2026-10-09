@@ -1,0 +1,628 @@
+{
+  "agreement_count": 20,
+  "baseline": [
+    {
+      "independent_replay": {
+        "exposure": 2,
+        "ledger": [
+          {
+            "cumulative_exposure": 1,
+            "cumulative_scenarios": [
+              2,
+              3
+            ],
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "previous": null,
+            "target": "b"
+          },
+          {
+            "cumulative_exposure": 2,
+            "cumulative_scenarios": [
+              3,
+              7
+            ],
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "previous": [
+              "a",
+              0
+            ],
+            "target": "c"
+          }
+        ],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          3,
+          7
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 0,
+        "worst_time": 7
+      },
+      "name": "A",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          }
+        ],
+        "exposure": 2,
+        "path": [
+          "a",
+          "b",
+          "c"
+        ],
+        "scenario_totals": [
+          3,
+          7
+        ],
+        "turn_penalty": 0,
+        "worst_time": 7
+      }
+    },
+    {
+      "independent_replay": {
+        "exposure": 4,
+        "ledger": [
+          {
+            "cumulative_exposure": 1,
+            "cumulative_scenarios": [
+              1
+            ],
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "previous": null,
+            "target": "b"
+          },
+          {
+            "cumulative_exposure": 2,
+            "cumulative_scenarios": [
+              2
+            ],
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "previous": [
+              "a",
+              0
+            ],
+            "target": "c"
+          },
+          {
+            "cumulative_exposure": 3,
+            "cumulative_scenarios": [
+              3
+            ],
+            "delay": 0,
+            "edge": [
+              "c",
+              0
+            ],
+            "previous": [
+              "b",
+              0
+            ],
+            "target": "b"
+          },
+          {
+            "cumulative_exposure": 4,
+            "cumulative_scenarios": [
+              7
+            ],
+            "delay": 3,
+            "edge": [
+              "b",
+              1
+            ],
+            "previous": [
+              "c",
+              0
+            ],
+            "target": "d"
+          }
+        ],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          7
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 3,
+        "worst_time": 7
+      },
+      "name": "B",
+      "route": {
+        "edges": [
+          {
+            "edge_index": 0,
+            "source": "a",
+            "target": "b"
+          },
+          {
+            "edge_index": 0,
+            "source": "b",
+            "target": "c"
+          },
+          {
+            "edge_index": 0,
+            "source": "c",
+            "target": "b"
+          },
+          {
+            "edge_index": 1,
+            "source": "b",
+            "target": "d"
+          }
+        ],
+        "exposure": 4,
+        "path": [
+          "a",
+          "b",
+          "c",
+          "b",
+          "d"
+        ],
+        "scenario_totals": [
+          7
+        ],
+        "turn_penalty": 3,
+        "worst_time": 7
+      }
+    },
+    {
+      "independent_replay": {
+        "exposure": 0,
+        "ledger": [],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 0,
+        "worst_time": 0
+      },
+      "name": "C",
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "turn_penalty": 0,
+        "worst_time": 0
+      }
+    },
+    {
+      "independent_replay": {
+        "exposure": 0,
+        "ledger": [],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 0,
+        "worst_time": 0
+      },
+      "name": "D",
+      "route": {
+        "edges": [],
+        "exposure": 0,
+        "path": [
+          "a"
+        ],
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "turn_penalty": 0,
+        "worst_time": 0
+      }
+    }
+  ],
+  "row_count": 20,
+  "rows": [
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "d60b9de33254377d48327a39b23c5da5dd7d8c7ce875e8309ccfe3198b93e784",
+      "name": "A",
+      "result": {
+        "exposure": 3,
+        "ledger": [
+          {
+            "cumulative_exposure": 2,
+            "cumulative_scenarios": [
+              5,
+              1
+            ],
+            "delay": 0,
+            "edge": [
+              "a",
+              1
+            ],
+            "previous": null,
+            "target": "b"
+          },
+          {
+            "cumulative_exposure": 3,
+            "cumulative_scenarios": [
+              8,
+              7
+            ],
+            "delay": 2,
+            "edge": [
+              "b",
+              0
+            ],
+            "previous": [
+              "a",
+              1
+            ],
+            "target": "c"
+          }
+        ],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          8,
+          7
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 2,
+        "worst_time": 8
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "11bae94a67af492bb48d2eec01ff987132f65a322b0b8f47331896e447fb1af4",
+      "name": "A:negative",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "b31de7e179d92c58d1ee8e44ab7f7dd7446853ce2545c56a96f01fc902ee77a7",
+      "name": "A:turntotal",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "acb50a2f81738a25b002108d74dd819cd90076460133bcff660e1fa69c1b50b8",
+      "name": "A:scenario",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "2f224af1476c635fbfbb781564d5ccbcbd8f302768c916a31f3fc5f70c44e472",
+      "name": "B",
+      "result": {
+        "exposure": 4,
+        "ledger": [
+          {
+            "cumulative_exposure": 1,
+            "cumulative_scenarios": [
+              1
+            ],
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "previous": null,
+            "target": "b"
+          },
+          {
+            "cumulative_exposure": 2,
+            "cumulative_scenarios": [
+              2
+            ],
+            "delay": 0,
+            "edge": [
+              "b",
+              0
+            ],
+            "previous": [
+              "a",
+              0
+            ],
+            "target": "c"
+          },
+          {
+            "cumulative_exposure": 3,
+            "cumulative_scenarios": [
+              3
+            ],
+            "delay": 0,
+            "edge": [
+              "c",
+              0
+            ],
+            "previous": [
+              "b",
+              0
+            ],
+            "target": "b"
+          },
+          {
+            "cumulative_exposure": 4,
+            "cumulative_scenarios": [
+              7
+            ],
+            "delay": 3,
+            "edge": [
+              "b",
+              1
+            ],
+            "previous": [
+              "c",
+              0
+            ],
+            "target": "d"
+          }
+        ],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          7
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 3,
+        "worst_time": 7
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "e3fad2d340986100a697ddefe9c5e26c729028642cc8e73fb083fff1b59e5ecf",
+      "name": "B:negative",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "d230c881ecb4cfcbbe658ab99292ae81b1cedf581beccc90af8e488dd7e27be1",
+      "name": "B:turntotal",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "5cfa3fcb09c8d842def3960b9379036ca04ca7db6d4cfc4acd7bea1f5fbc2cb7",
+      "name": "B:scenario",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "f99af9f065e01c9bacaea14436eb7f47567ecb6ab45b8166201b2e3b1c01ca8d",
+      "name": "C",
+      "result": {
+        "exposure": 2,
+        "ledger": [
+          {
+            "cumulative_exposure": 1,
+            "cumulative_scenarios": [
+              1,
+              2
+            ],
+            "delay": 0,
+            "edge": [
+              "a",
+              0
+            ],
+            "previous": null,
+            "target": "a"
+          },
+          {
+            "cumulative_exposure": 2,
+            "cumulative_scenarios": [
+              6,
+              8
+            ],
+            "delay": 4,
+            "edge": [
+              "a",
+              0
+            ],
+            "previous": [
+              "a",
+              0
+            ],
+            "target": "a"
+          }
+        ],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          6,
+          8
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 4,
+        "worst_time": 8
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "50faaaaa9190e9afb39c48809faa8ef0dc8b375fc5d6c019b31906a68ef4dd41",
+      "name": "C:negative",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "7bcd3bc491e438d335b82fb7d2850153a344a2043c509f5e5a948f12e05bf655",
+      "name": "C:turntotal",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "c30df3f0267d8ac0009a671d758503cc21732ae952fbcf85f3bb1f4f8250c940",
+      "name": "C:scenario",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "FEASIBLE_WITNESS",
+      "input_sha256": "dcecb18411f9c8fe6c2a619ec0be420545c9a80627a6dedfa50347f4d82ff9f3",
+      "name": "D",
+      "result": {
+        "exposure": 0,
+        "ledger": [],
+        "reason": "checked original-edge turn route",
+        "scenario_totals": [
+          0,
+          0
+        ],
+        "status": "FEASIBLE_WITNESS",
+        "turn_penalty": 0,
+        "worst_time": 0
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "674e86f1df1af7cdf4ea3a18505f2667a5155ffa07523b65b7ca3bf776caee14",
+      "name": "D:negative",
+      "result": {
+        "reason": "route path/query shape",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "4813c9c0f6ed544cabeae77397e2c698f562232f7927f7e55e351f6440a013f5",
+      "name": "D:turntotal",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "46dd31f46de8287835c6d379eb4b136472f21b61b5ad1f729689a3f3a6d6c1c4",
+      "name": "D:scenario",
+      "result": {
+        "reason": "route totals correspondence",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8bcb44b441c8b537ad447ae79341d9e67f3da6731492afba512f71c44fe3adc0",
+      "name": "control:forbidden",
+      "result": {
+        "reason": "forbidden selected turn",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "8facfbb6c2d56d240677b2ffb3fe81244dd3bf57bd2ab0b8c71b8f0ddf461d54",
+      "name": "control:budget",
+      "result": {
+        "reason": "route exposure budget",
+        "status": "INVALID"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "UNAVAILABLE",
+      "input_sha256": "7f2d83e6b7120b1a9d35582543a3ea86ea94c4110a30764ece20f65c1d88937d",
+      "name": "control:null",
+      "result": {
+        "reason": "missing route after all input/rule checks",
+        "status": "UNAVAILABLE"
+      },
+      "warnings": []
+    },
+    {
+      "agreement": true,
+      "expected": "INVALID",
+      "input_sha256": "d766c6ffec7b950727f7c71c425ded9b0294a7d1e2c37c7a59ed3114f7ba6e5b",
+      "name": "control:badrule",
+      "result": {
+        "reason": "integer cost/index domain",
+        "status": "INVALID"
+      },
+      "warnings": []
+    }
+  ],
+  "scope": "original-edge integer turn witnesses, no optimality/compressed equivalence"
+}
