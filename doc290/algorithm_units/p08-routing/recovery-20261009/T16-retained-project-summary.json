@@ -1,0 +1,120 @@
+{
+  "both_counter_totals": {
+    "t15": {
+      "candidate_edges": 4,
+      "charged_bound_stronger": 1,
+      "charged_reverse_inspections": 27,
+      "charged_strict_exclusions": 0,
+      "dominance_pruned": 0,
+      "feasibility_pruned": 0,
+      "forbidden_skipped": 0,
+      "incumbent_inspections": 215,
+      "labels_inserted": 3,
+      "max_live_queue": 1,
+      "objective_bound_pruned": 2,
+      "pops": 3,
+      "reverse_relaxations": 554,
+      "scalar_candidate_inspections": 17,
+      "scenario_reverse_inspections": 858,
+      "stale_pops": 0
+    },
+    "variant": {
+      "candidate_edges": 4,
+      "charged_bound_stronger": 1,
+      "charged_reverse_inspections": 27,
+      "charged_strict_exclusions": 0,
+      "dominance_pruned": 0,
+      "feasibility_pruned": 0,
+      "forbidden_skipped": 0,
+      "incumbent_inspections": 215,
+      "labels_inserted": 3,
+      "max_live_queue": 1,
+      "objective_bound_pruned": 2,
+      "pops": 3,
+      "reverse_relaxations": 554,
+      "scalar_candidate_inspections": 17,
+      "scenario_reverse_inspections": 858,
+      "stale_pops": 0
+    }
+  },
+  "both_candidate_analysis": {
+    "t15": {
+      "candidate_ledger_PASS_denominator": 1,
+      "early_excluded": 152,
+      "skip_excluded": 47,
+      "failure_excluded": 0,
+      "ordered_candidates": 4,
+      "scenario_candidates": 3,
+      "eligible": 4,
+      "over_budget_valid_ineligible": 0,
+      "scenario_eligible": 3,
+      "scenario_over_budget": 0,
+      "duplicate_rows_after_first": 2,
+      "duplicate_cases": 1,
+      "selected_index_counts": {
+        "3": 1
+      },
+      "selected_objective_counts": {
+        "scenario": 1
+      },
+      "W_improved": 1,
+      "W_tied": 0,
+      "W_worsened": 0
+    },
+    "variant": {
+      "candidate_ledger_PASS_denominator": 1,
+      "early_excluded": 152,
+      "skip_excluded": 47,
+      "failure_excluded": 0,
+      "ordered_candidates": 4,
+      "scenario_candidates": 3,
+      "eligible": 4,
+      "over_budget_valid_ineligible": 0,
+      "scenario_eligible": 3,
+      "scenario_over_budget": 0,
+      "duplicate_rows_after_first": 2,
+      "duplicate_cases": 1,
+      "selected_index_counts": {
+        "3": 1
+      },
+      "selected_objective_counts": {
+        "scenario": 1
+      },
+      "W_improved": 1,
+      "W_tied": 0,
+      "W_worsened": 0
+    }
+  },
+  "scalar_saved": 0,
+  "development_provenance": {
+    "initial_PRE_final": true,
+    "initial_manifest_identities": [
+      "322a3c2980e9196a189d22b62f97a1b0d199ec2578d0a1b4319300f0143251c5"
+    ],
+    "final_author_manifest_identities": [
+      "f198b1d2c38b9a0f5d4d7b4ff5f6d6f38e82dc1e10e97fdab232a70171f163bc"
+    ],
+    "fixed_run_manifest_identity": "f198b1d2c38b9a0f5d4d7b4ff5f6d6f38e82dc1e10e97fdab232a70171f163bc",
+    "actual_frozen_manifest_sha256": "f198b1d2c38b9a0f5d4d7b4ff5f6d6f38e82dc1e10e97fdab232a70171f163bc",
+    "scope": "recorded ordering only, no private-run-absence proof"
+  },
+  "activated_details": [
+    {
+      "name": "turn159",
+      "originalW": 10,
+      "selectedW": 8,
+      "selected_index": 3,
+      "prefix": {
+        "bound_kind": "combined_fixed_lambda1",
+        "combined_L": 6,
+        "original_L": 6,
+        "remaining_scenario_indices": [],
+        "scenario_count": 3,
+        "selected_W": 8,
+        "selected_index": 3,
+        "semantics": "ordered produced PREFIX, omitted candidates NOT constructed/audited",
+        "terminal_reason": "all_candidates"
+      }
+    }
+  ]
+}
