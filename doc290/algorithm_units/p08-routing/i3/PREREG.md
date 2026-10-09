@@ -36,7 +36,7 @@ routea-b-g scenarios[7,7]/exposure2/turn1/W7;weights[1/2,1/2],lambda1/2,
 h[0,7/2,8,8],LB7 CERTIFIED_INTEGRATED. Wholeworst7 NOTedge-worst11.
 C a->b[1,1]/r0,a->g[5,5]/r0,b->g[1,1]/r0;
 forbid(a0,b0),budget0,routea-gindex1 scenarios[5,5]/exposure0/turn0/W5;
-weights[1,0],lambda0,h[0,1,5,0,5],LB5 CERTIFIED_INTEGRATED.
+weights[1,0],lambda0,h[0,1,5,5,5],LB5 CERTIFIED_INTEGRATED.
 D a->g[1,1]/r2,a->g[3,3]/r0;budget1,routeindex1W3/exposure0/turn0;
 no rules,weights[1/2,1/2],lambda1,h[0,3,3,3],LB2gap1 UNAVAILABLE.
 Eachbase mutationsreportedturn+1INVALID, multiplier-1INVALID, sourcepotential1INVALID.
@@ -54,3 +54,11 @@ unchanged pinned with runtime gates. Validatorrow warningcapture only; baseline
 provenanceincomplete. No automaticintegration/invention/clinical/calibration/
 physicalunits/science/CI/heldout claim. Pins/capsnotOS/sharedlib/peakmemory/
 timeout/sandboxproof. AllpriorFAILs/gaps/floatloss retained.
+
+## Prereg review repair, before implementation/freeze
+Rejected a00199b5 retained: C had hEb0=0 while unreachable Eb0->sink zero arc
+requires hEb0>=hsink5. Repaired C h[0,1,5,5,5]; all arcs remain.
+T2model admission also caps unused scalar edge.time+delay for every allowed
+transition. This is an explicit inherited restriction of the admitted domain,
+not the integrated objective. Weighted objective is recomputed from scenario+
+delay+lambda*exposure for every allowed arc, never T2scalarcost.
