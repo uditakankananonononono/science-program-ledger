@@ -1,7 +1,7 @@
 # T12 lazy charged-proof activation executable freeze candidate
 
 Published preregfd2d7ff9; corpus seed223606/200inputs+independent DFS oracles/
-400plan archived hashes in CORPUS-ARCHIVE BEFORE worker creation. This records
+400plan archived hashes in CORPUS-ARCHIVE BEFORE subject-worker process launch. This records
 process only, not private-run absence proof. No fixed200methodsubjects.
 OldL==actualvalidatedW skips charged reverse/audit, proofNone/traceempty/count0,
 activationold_bound_equality; exposureearly unchanged; oldL<W unchangedT11
@@ -35,3 +35,8 @@ DONE!=PASS; FAIL!=success; markersnotsolemetric; marginsnotlifetime; synthetic
 crashnotmidsolverorphanproof. Historical unreadableblob4340b673 preventswhole-repo
 integrityclaim; scopedancestry/bundle/rawreadback only. No production/science/
 speed/CI/inventionclaim. Allpreviousnegative/rejected/retractionhistoryunchanged.
+
+Caption correction after freeze review: worker.py SOURCE was copied before the
+archive; chronology claims only before subject-worker process launch, not before
+source creation. No method/corpus/plan change. Historical unreadableblob4340b673
+means scoped git-show materialization only, no whole-repo archive/integrity claim.
