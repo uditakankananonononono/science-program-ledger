@@ -1,0 +1,27 @@
+test_all_both_oracle_counts (test_method.Development) ... ok
+test_all_schema_and_counter_mutations (test_method.Development) ... ok
+test_charged_originalW_skip_absent (test_method.Development) ... ok
+test_combined_prefix_omitted_raise (test_method.Development) ... ok
+test_last_equality_and_audit_errors (test_method.Development) ... ok
+test_once_charged_reuse_and_added_tradeoff (test_method.Development) ... FAIL
+test_original_skips_raise (test_method.Development) ... ok
+test_real_both_final_and_parent_mutations (test_worker.Controls) ... ok
+test_real_controls (test_worker.Controls) ... ok
+test_concurrent_refusal_partial_and_guard (test_durable.RealDurability) ... ok
+test_corruption_foreign_identity_plan_coverage (test_durable.RealDurability) ... ok
+test_final_synthesis_interruption_idempotent (test_durable.RealDurability) ... ok
+test_real_crash_matrix_reconcile_no_duplicate (test_durable.RealDurability) ... ok
+test_unreceipted_uncertainty_locks_and_death_releases (test_durable.RealDurability) ... ok
+
+======================================================================
+FAIL: test_once_charged_reuse_and_added_tradeoff (test_method.Development)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/doc230/build_units/doc290/algorithm_units/p08-routing/t16/test_method.py", line 34, in test_once_charged_reuse_and_added_tradeoff
+    self.assertEqual(len(calls),1);self.assertEqual(len(checks),1);self.assertIs(r['charged_proof'],checks[0]);self.assertIs(r['charged_proof']['distances'],calls[0]);self.assertEqual(r['route']['worst_time'],oracle(s))
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 14 tests in 20.263s
+
+FAILED (failures=1)
