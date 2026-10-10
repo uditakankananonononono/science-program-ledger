@@ -25,3 +25,17 @@ The recorded source URL points to mutable master. Exact historical source commit
 - https://datacatalog.mskcc.org/dataset/11457 : Free to All access, not a substitute for reuse terms.
 
 Fine-Gray hold and existing verdicts unchanged.
+
+## Exact-object verification and alternative-route scout
+Live GitHub pointer declares oid SHA256 f2ec4e1badc6f3a49c5db323e90faf3cb091cd29e880f58b3163bf24d30f6b7c and size 303120338.
+Under a separately scoped verification instruction, the recorded object URL was streamed through SHA256 without storage or analysis:
+https://media.githubusercontent.com/media/cBioPortal/datahub/master/public/brca_metabric/data_mrna_illumina_microarray_zscores_ref_diploid_samples.txt
+Actual digest: f2ec4e1badc6f3a49c5db323e90faf3cb091cd29e880f58b3163bf24d30f6b7c. MATCH. Historical source commit remains unidentified; master is mutable. Byte identity to the recorded source hash is verified, not its analysis or licensing acceptance.
+
+No verified permissive route to the identical transformed matrix found in this bounded scout:
+- https://ega-archive.org/datasets/EGAD00010000210 : normalized expression discovery product; access request required.
+- https://ega-archive.org/datasets/EGAD00010000211 : normalized expression validation product; access request required.
+- https://rdrr.io/github/bhklab/MetaGxBreast/man/METABRIC.html : points to original EGA study; no verified exact-object equivalence or independent data license found in inspected documentation.
+These are possible research leads, not substitutes cleared for use. Original normalized data are not the same declared product as the cBioPortal diploid-reference z-score matrix.
+
+Admission remains held for owner share-alike acceptance; no access request, acceptance, derived output or manuscript change.
