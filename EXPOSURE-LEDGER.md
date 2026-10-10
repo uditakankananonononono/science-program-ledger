@@ -36,3 +36,11 @@ Earlier same-day check (16:05): GSE314342 absent program-wide; CZI cohort refere
 
 Approved development-only probe (item-27 lane via Main): S3 object GWCD4i.DE_stats.h5ad, ETag c9ff52fcc6d6ce8a387a76dc757a5b97-2002, version IJHj.CZ2Hhw9sa41IuovIGpBZimEZo7I. 21,498,456 bytes read via 86 HTTP 206 range requests; HDF5 metadata/layout only (six DE layers, 33,983 x 10,282). NO numerical DE cell values read.
 Lane finding noted: this matrix is pooled target/condition DE, NOT donor-specific labels; donor-heldout prediction would require the separate donor-pair .h5mu (not probed, not downloaded).
+
+## 2026-10-10 06:23 IST - mega27-13-synthetic-lethal-rl - PUBLIC visibility flip + 57 unrecorded commits
+
+Found during DOC-1-047 collision screen (Main 06:22 record-fix instruction):
+- Repo is now PUBLIC (GitHub API: private:false, updated_at 2026-10-08T10:07:40Z). Created PRIVATE 2026-09-26. No record in this ledger of who flipped visibility or when. The flip is consistent with her all-repos-public direction, but the missing record is noted here.
+- Live main HEAD 263e7d484cf98bb971abef417e12a641b09891c4; last ledger-recorded head was 3b12bd54 (2026-09-28). 57 commits landed between them, NONE recorded in this ledger: 43 authored "Instinct Agent <agent@instinct.com>", 13 "Udita PHOOKAN", 1 "lane <lane@example.invalid>". Latest commit 2026-10-08 04:32 IST.
+- Content of the unrecorded span: paper/ directory now exists (Sep 28 record said "no paper exists"), judge round R01 v2 archived with adjudication, frozen gene-disjoint contextual experiment (HARLE-GENE-DISJOINT-CONTEXTUAL-FREEZE/RESULT: frozen pre-run, executed, "no demonstrated value" recorded), Harle benchmark negatives (HARLE-CATEGORY-BENCHMARK-NEGATIVE), GSE154112 negatives. HEAD commit 263e7d4 is a README pointer to those recorded negatives.
+- Lane status: active as recently as 2026-10-08 04:32 IST by commit evidence; quiet since (~46h at time of record). Builder deploy keys synthetic-lethal-rl-builder-20260926/-20260928 remain the recorded write path; private halves in lane workspace(s) unknown to registry.
