@@ -1006,3 +1006,11 @@ Per Main 06:25 (auditor final PASS both seal repos; push seal tags):
 - Used once to push annotated tag seal-chandipura-2026-10-10 (tag object 6f3af7ed0fc3e11484798a0583c7edb5a19b0be7, target fd4ef6838d1bde76ca001fdfa80c8246f5dfc40f; ls-remote verified with peel). Key retained live in registry custody.
 - Same session pushed annotated tag seal-ndm-oxa-2026-10-10 (tag object dbc93369cf47ed9ce0f49ca54c44318064a21b6a, target c6e9f6b5ffcf25a1f613d7c316eb82b63be6cee9) on amr-carbapenem-structure via the existing amr-carbapenem-structure-deploy-20261010 key; ls-remote verified with peel.
 - DISCOVERY: chandipura-nipah-profiling also carries two unrecorded bioplex-era deploy keys, both Read/write, "last used within the last 3 weeks" at 06:26 IST: "B04-chandipura" SHA256:w/dmJFe0fWp4Sw/PMCvEZRlo/ZV44WzXvv0jB9WTVZY and "B05-nipah" SHA256:6raNwJOrK/mROAD1m5d3r156u5eO6Z4b5XNVKLEevRs. LEFT IN PLACE - revocation pattern (unrecorded + unclaimed both sides) requires the other-side claim check first; reported to Main.
+
+## 2026-10-10 06:28 IST - REVOKE chandipura-nipah-profiling bioplex-era keys (unclaimed both sides)
+
+Per Main 06:27 (other side denies claiming B04/B05, bounded absence-of-record, same pattern as B11/B12):
+- REVOKED "B04-chandipura" SHA256:w/dmJFe0fWp4Sw/PMCvEZRlo/ZV44WzXvv0jB9WTVZY (Read/write, last used <3 weeks).
+- REVOKED "B05-nipah" SHA256:6raNwJOrK/mROAD1m5d3r156u5eO6Z4b5XNVKLEevRs (Read/write, last used <3 weeks).
+- Reason: unrecorded bioplex-era deploy keys, unclaimed by any live lane on either side.
+- Verified on-page post-delete: "1 deploy key" remaining = chandipura-nipah-profiling-deploy-20261010 SHA256:BIjuAo09bCP4DpzXTcQjKQCqYYLzjVPTso/fPsvVKRI (the recorded live key; untouched). No sudo re-challenge.
