@@ -14,3 +14,8 @@ Directed by Main 09:10 IST (gate-reviewer recommendations; record repairs only, 
 
 ## Provenance
 The 08:04-08:20 material this stems from was parent-relayed executor content under the standing program grant, not user-channel originals (Main 09:10 note). The 06:25 IST tag pushes were executed by this agent on Main's relayed "auditor final PASS is in for both seal repos"; the gate reviewer's later read-only verification is the source of the repair recommendations.
+
+## Repo A tag retargeting (maintainer decision, Main 09:13 IST) - DONE ~09:14 IST
+- Erratum line 6 added to ndm-oxa/SEAL.md; main moved 851bdff4b7942bf4661c66b6830b8aa87bbb2fa5 -> f170b3d3656d5ab2cdcba2d716900d2a62032a0a (ls-remote readback match).
+- Tag seal-ndm-oxa-2026-10-10 force-updated: old object dbc93369cf47ed9ce0f49ca54c44318064a21b6a (-> c6e9f6b5...), NEW unsigned annotated object 2553d4045230eac5977f5ef5442611be22fb488c -> 75878a284c3e3aec72e0bdd8efcb8bd8f95eff0c (the recorded sealed commit). ls-remote readback confirms tag object + ^{} deref.
+- Root manifest re-verified 60/60 OK at f170b3d. No other seal changes. Repo B stays PROVISIONAL pending its auditor delta verification (watch item; trigger sits with Main).
