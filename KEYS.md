@@ -982,3 +982,11 @@ Per Main 10:21 (residual-intro corrections patch):
 | 2026-09-30 | orch-m14-builder9-20260930 | SHA256:r0/osKan9mVOk3gyLq9/XBggc+LnHk8ZTGtP97PlbNA | mega27-14-digital-embryo | deploy write | ADDED 10:38 IST, REMOVED 10:38 IST (on-page verified gone), local material shredded | one-shot push 4c1e717 (ode-semantics-audit) |
 | 2026-09-30 | orch-m14-builder10-20260930 | SHA256:Tp3BBzUyBjP/RwV2ygRHAZdJb71GgQXeRQLpr2pP1Mk | mega27-14-digital-embryo | deploy write | ADDED 10:39 IST, REMOVED 10:40 IST (on-page verified gone), local material shredded | one-shot push 354d0ea (turing-metric-audit) |
 | 2026-09-30 | orch-m20-evidence-20260930 | SHA256:St7ScP1MkZEKwJIlnWwq0Q6kDzMlN6dSdabGdd6DVtI | mega27-20-drug-target-prediction | deploy write | ADDED 11:20 IST, REMOVED 11:21 IST (on-page verified gone), local material shredded | one-shot workflow edit 3090be0 (terminal evidence upload step, per Main 11:19:53 correction) |
+
+## 2026-10-10 06:17 IST - ADD amr-carbapenem-structure deploy key (registry custody)
+
+Per Main 06:14 (push rebuilt ndm-oxa paper.pdf from custody; no key recorded in ledger for this repo):
+- "amr-carbapenem-structure-deploy-20261010", SHA256:2CUDxS7vJFb6v1gOsKbXyS8TW9DyuNiSfjB2uczq728, Read/write, repo-scoped deploy key. Generated fresh by registry holder; installed via repo web settings; verified on-page (title + fingerprint + Read/write).
+- GitHub required sudo-mode reauthentication for the add: completed via email OTP to the account Gmail, code read from connected Gmail (single use).
+- DISCOVERY: repo already carried two unrecorded bioplex-era deploy keys, both Read/write, added Sep 23 2026 by @uditakankananonononono: "B11-amr-kpc" SHA256:d3zd6exbVHsajMj7rcRH3FUA9+mm8kZ7F+vhQEGLSWw and "B12-amr-ndm-oxa-v2" SHA256:4NBdbv9LJll+90Cfv7J895kyt2DuLvLHT9FO+IeC/WU. Both showed "last used within the last 3 weeks" at 06:15 IST. Private halves were believed dead in the Sep 24 reset wave; no record of them existed in this ledger. Left in place - no removal instructed.
+- Used once to push 75878a284c3e3aec72e0bdd8efcb8bd8f95eff0c (rebuilt ndm-oxa/paper/paper.pdf, sha256 5bbb6816b27e4a0f11f3f460473bc0efbad5464e0fed2ddf8cabed85c5cf5503, commit-pinned raw-bytes verified post-push). Key retained live for follow-on custody pushes to this repo; private half with registry holder.
