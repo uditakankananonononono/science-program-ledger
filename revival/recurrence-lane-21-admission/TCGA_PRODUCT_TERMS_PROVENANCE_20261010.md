@@ -28,3 +28,13 @@ These are current local JSON-cache hashes, not certified original HTTP-response 
 ## Remaining documentary work
 Recover the full authoritative Broad GDAC license terms and map their scope to this exact transformed portal profile before a reuse verdict. Full historical source-byte provenance cannot be invented from local cache hashes. If no original response exists, report that as unavailable rather than an integrity pass.
 METABRIC ODbL acceptance and Fine-Gray holds stay; the TCGA path is separately UNKNOWN, not admitted.
+
+## Authoritative Broad policy recovered
+https://broadinstitute.atlassian.net/wiki/spaces/GDAC/pages/844333156/Data+Usage+Policy
+The visible text reader initially omitted the body; document-text extraction recovered it:
+"TCGA Data Use Policy and Publication Guidelines promote the responsible use of TCGA data sets. All investigators, and their institutions, seeking access and use of TCGA data must acknowledge their agreement with TCGA policies and procedures. Please note that downloading data from our Broad Institute GDAC constitutes an acknowledgement that you, and any collaborators who use this data with you, will conduct research and publish in accordance with TCGA guidelines on responsible use of data, as informed by The Fort Lauderdale Agreement."
+The page is dated 2012-04-04. This supplies acknowledgement/responsible-use conditions. It does not expressly establish a full standalone redistribution grant or share-alike determination for this transformed cBioPortal profile. No data download or terms acceptance occurred in this documentary unit. External download-as-agreement language is not owner authorization.
+
+https://github.com/cBioPortal/datahub/issues/1553 asks what the named license means; a response points to Broad Firehose. That discussion is contextual evidence, not a substitute license grant.
+
+Final state: authoritative policy text recovered; full standalone grant and transformed-profile reuse scope remain UNKNOWN. Current local cache pins do not establish original-response provenance. Documentary backlog closed; no new admission or analysis. METABRIC awaits the owner's ODbL decision separately.
