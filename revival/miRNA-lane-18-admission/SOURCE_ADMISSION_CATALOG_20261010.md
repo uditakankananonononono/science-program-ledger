@@ -49,3 +49,11 @@ https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs4
 
 Rights text, verbatim: "The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material."
 No separate exclusion or credit line appears in the supplement listing itself. In-file workbook credit lines remain unverified because this unit was documentary-only, with no table download. Admissibility is therefore conditional, not certified. Next necessary check is a bounded license/credit/header inspection with explicit download scope from the parent; no scoring or outcome analysis.
+
+## Bounded ST1 inspection
+Downloaded only the above publisher ST1 link under the parent's October 10, 06:40:01 IST scoped instruction: license/credit/header inspection, no scoring or content analysis.
+Bytes: 8,855,617. SHA256: 87a59fa0e70b55e5dcf75d9f225f91bc6fe099a342e2bb177118003db4d92830.
+Sheet names: 'Chimeras CLASH', 'High Confidence'. Both first rows contain structured headers including ID, gene annotation, category, family, replicate and confidence fields.
+No license/restriction/third-party-credit text found in workbook shared strings or other XML text; no comments, embedded images or objects found. Core metadata has lastModifiedBy 'Panagiotis Alexiou'; it is file metadata, not an authority grant.
+The standard Office text reader refused extraction because shared-string storage exceeded its limit. Bounded ZIP/XML inspection checked the requested metadata and restriction text without model scoring, sequence handling or data-value analysis. No visual/layout claim is made.
+ST1 is recorded as the admissible publisher CC BY 4.0 route with attribution, license-link and change-notice duties retained. This does not license the GEO archive or certify sufficiency. Stop before sufficiency until a fresh locked plan is approved.
