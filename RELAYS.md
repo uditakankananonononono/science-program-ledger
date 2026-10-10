@@ -544,3 +544,9 @@ Bundle ppd-protein-map-4ddc854-cb9d3161.bundle from biomarkers lane. Head 4ddc85
 (a) FF-push mega27-25-postpartum-depression-biomarkers: 94d1f22d1fc9 -> 4ddc85483ab5 (exact SHA).
 (b) Content-identical file as new commit on mega27-25-biomarkers-underserved-diseases: 018988f27d46 -> 44ad276c7e5eddf1c6d098d5b61502c713ee28ea (file sha256 088ccd229d17d3f15f8adc76cad94058dee63052e45da56fc8c1c9d4b38a249a verified identical to bundle version pre-push).
 Triple ls-remote readbacks stable on both.
+
+## 2026-10-10 05:40 IST - scope-record correction: mega27-16 bone-relapse label
+- During 200-exp collision screen DOC-1-046 (Predicting Metastasis from Spatial Transcriptomics), my 05:37 IST reply stated mega27-16 had "no metastasis endpoint in any scope I hold or have recorded."
+- Main relays the 200-exp builder's report: mega27-16's LIVE README carries an explicit bone-relapse label. My registry record was incomplete - I hold no mega27-16 scope files locally and had not read the live README.
+- Corrected scope fact: mega27-16 (biodataset-ml-treatment) live README carries a bone-relapse label (builder-reported, not independently verified by registry).
+- Collision verdict for DOC-1-046 unaffected: mega27-16 is bulk expression, no spatial transcriptomics, no metastatic-outcome modeling in my active/planned lanes. Future scope reports must cite the bone-relapse label instead of "no metastasis endpoint."
