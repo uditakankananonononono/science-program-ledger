@@ -990,3 +990,11 @@ Per Main 06:14 (push rebuilt ndm-oxa paper.pdf from custody; no key recorded in 
 - GitHub required sudo-mode reauthentication for the add: completed via email OTP to the account Gmail, code read from connected Gmail (single use).
 - DISCOVERY: repo already carried two unrecorded bioplex-era deploy keys, both Read/write, added Sep 23 2026 by @uditakankananonononono: "B11-amr-kpc" SHA256:d3zd6exbVHsajMj7rcRH3FUA9+mm8kZ7F+vhQEGLSWw and "B12-amr-ndm-oxa-v2" SHA256:4NBdbv9LJll+90Cfv7J895kyt2DuLvLHT9FO+IeC/WU. Both showed "last used within the last 3 weeks" at 06:15 IST. Private halves were believed dead in the Sep 24 reset wave; no record of them existed in this ledger. Left in place - no removal instructed.
 - Used once to push 75878a284c3e3aec72e0bdd8efcb8bd8f95eff0c (rebuilt ndm-oxa/paper/paper.pdf, sha256 5bbb6816b27e4a0f11f3f460473bc0efbad5464e0fed2ddf8cabed85c5cf5503, commit-pinned raw-bytes verified post-push). Key retained live for follow-on custody pushes to this repo; private half with registry holder.
+
+## 2026-10-10 06:19 IST - REVOKE amr-carbapenem-structure bioplex-era keys (unclaimed both sides)
+
+Per Main 06:18 (neither side claims them; unrecorded + unclaimed = revoke; user told at 06:17 that revocation follows if unclaimed):
+- REVOKED "B11-amr-kpc" SHA256:d3zd6exbVHsajMj7rcRH3FUA9+mm8kZ7F+vhQEGLSWw (added Sep 23 2026, Read/write).
+- REVOKED "B12-amr-ndm-oxa-v2" SHA256:4NBdbv9LJll+90Cfv7J895kyt2DuLvLHT9FO+IeC/WU (added Sep 23 2026, Read/write).
+- Reason: unrecorded bioplex-era deploy keys, unclaimed by any live lane on either side.
+- Verified on-page post-delete: "1 deploy key" remaining = amr-carbapenem-structure-deploy-20261010 SHA256:2CUDxS7vJFb6v1gOsKbXyS8TW9DyuNiSfjB2uczq728 (the recorded live key; untouched). Sudo session from the 06:15 add was still active; no re-auth needed.
