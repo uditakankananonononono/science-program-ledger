@@ -998,3 +998,11 @@ Per Main 06:18 (neither side claims them; unrecorded + unclaimed = revoke; user 
 - REVOKED "B12-amr-ndm-oxa-v2" SHA256:4NBdbv9LJll+90Cfv7J895kyt2DuLvLHT9FO+IeC/WU (added Sep 23 2026, Read/write).
 - Reason: unrecorded bioplex-era deploy keys, unclaimed by any live lane on either side.
 - Verified on-page post-delete: "1 deploy key" remaining = amr-carbapenem-structure-deploy-20261010 SHA256:2CUDxS7vJFb6v1gOsKbXyS8TW9DyuNiSfjB2uczq728 (the recorded live key; untouched). Sudo session from the 06:15 add was still active; no re-auth needed.
+
+## 2026-10-10 06:27 IST - ADD chandipura-nipah-profiling deploy key (registry custody, seal tag push)
+
+Per Main 06:25 (auditor final PASS both seal repos; push seal tags):
+- "chandipura-nipah-profiling-deploy-20261010", SHA256:BIjuAo09bCP4DpzXTcQjKQCqYYLzjVPTso/fPsvVKRI, Read/write, repo-scoped deploy key. Generated fresh by registry holder; installed via web settings; verified on-page (title + fingerprint + Read/write). No sudo re-challenge - the 06:15 email-OTP sudo session was still active. Scope of use: seal tag push (tag-push only).
+- Used once to push annotated tag seal-chandipura-2026-10-10 (tag object 6f3af7ed0fc3e11484798a0583c7edb5a19b0be7, target fd4ef6838d1bde76ca001fdfa80c8246f5dfc40f; ls-remote verified with peel). Key retained live in registry custody.
+- Same session pushed annotated tag seal-ndm-oxa-2026-10-10 (tag object dbc93369cf47ed9ce0f49ca54c44318064a21b6a, target c6e9f6b5ffcf25a1f613d7c316eb82b63be6cee9) on amr-carbapenem-structure via the existing amr-carbapenem-structure-deploy-20261010 key; ls-remote verified with peel.
+- DISCOVERY: chandipura-nipah-profiling also carries two unrecorded bioplex-era deploy keys, both Read/write, "last used within the last 3 weeks" at 06:26 IST: "B04-chandipura" SHA256:w/dmJFe0fWp4Sw/PMCvEZRlo/ZV44WzXvv0jB9WTVZY and "B05-nipah" SHA256:6raNwJOrK/mROAD1m5d3r156u5eO6Z4b5XNVKLEevRs. LEFT IN PLACE - revocation pattern (unrecorded + unclaimed both sides) requires the other-side claim check first; reported to Main.
