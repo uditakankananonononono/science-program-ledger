@@ -550,3 +550,6 @@ Triple ls-remote readbacks stable on both.
 - Main relays the 200-exp builder's report: mega27-16's LIVE README carries an explicit bone-relapse label. My registry record was incomplete - I hold no mega27-16 scope files locally and had not read the live README.
 - Corrected scope fact: mega27-16 (biodataset-ml-treatment) live README carries a bone-relapse label (builder-reported, not independently verified by registry).
 - Collision verdict for DOC-1-046 unaffected: mega27-16 is bulk expression, no spatial transcriptomics, no metastatic-outcome modeling in my active/planned lanes. Future scope reports must cite the bone-relapse label instead of "no metastasis endpoint."
+
+## 2026-10-10 06:24 IST - registry catch-up readback: mega27-13-synthetic-lethal-rl @ 263e7d4
+- Bookkeeping-only catch-up (Main 06:23; lane NOT revived/tasked). Full hash-pinned inventory: mega27-13-synthetic-lethal-rl/READBACK-20261010.md. 57 previously unrecorded commits (43 Instinct Agent, 13 "Udita PHOOKAN" authorship-of-record, 1 lane), paper/ draft (2,593 words, far under 50-page rule), judge R01 v2 archive, frozen gene-disjoint experiment (NO DEMONSTRATED VALUE), all major gates UNMET per the lane's own evidence-gate ledger.
